@@ -1,20 +1,59 @@
-# OpenSettings Docs
+# <img src="logo/open-settings-logo.png" alt="Header" width="24"/> OpenSettings Docs
 
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-brightgreen)](https://github.com/sponsors/ogulcanturan)
+Welcome to the official documentation repository for **OpenSettings**!
 
-## Introduction
+OpenSettings is a **centralized application settings management** system designed for **.NET applications**. It simplifies configuration management by providing a structured and scalable approach to handling settings.
 
-OpenSettings ...
+![Demo](https://github.com/OpenSettings/open-settings-docs/blob/master/docs/v1/assets/demo.gif)
 
-## Features
+## 🌍 Online Documentation
 
+The latest OpenSettings documentation is available at [**docs.opensettings.net**](https://docs.opensettings.net)
 
-## Installation
+## 📂 Repository Structure
 
-You can install the library via NuGet Package Manager:
+This repository contains all documentation files in **Markdown (`.md`) format**, and makes use of [DocFX](https://dotnet.github.io/docfx/) for generating static documentation.
 
-```bash
-dotnet add package OpenSettings
+## 🚀 Getting Started
+
+To contribute or run the documentation locally, follow these steps:
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/OpenSettings/open-settings-docs.git
+cd open-settings-docs/docs
 ```
 
-## Usage
+### 2️⃣ Install DocFX  
+If you don’t have **DocFX** installed, run:
+```sh
+dotnet tool install -g docfx
+```
+
+### 3️⃣ Build and Serve Documentation Locally
+```sh
+docfx build && docfx serve
+```
+
+Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)** to preview the documentation! 🚀
+
+## 🤝 Contributing
+
+We welcome contributions! Feel free to submit **issues** and **pull requests** to improve the documentation.
+
+## 💡 License  
+
+OpenSettings is licensed under the [OpenSettings License](https://opensettings.net/license).
+
+## 🔗 Useful Links
+
+- 🌍 **Website:** [opensettings.net](https://opensettings.net)
+- 📘 **Docs:** [docs.opensettings.net](https://docs.opensettings.net)
+- ❤️ **Become a Sponsor:** [opensettings.net/become-a-sponsor](https://opensettings.net/become-a-sponsor)
+- 📜 **License:** [opensettings.net/license](https://opensettings.net/license)
+- ⚖️ **Terms & Conditions:** [opensettings.net/terms-and-conditions](https://opensettings.net/terms-and-conditions)
+- 🔒 **Privacy Policy:** [opensettings.net/privacy-policy](https://opensettings.net/privacy-policy)
+
+<br>
+
+✨ *OpenSettings makes configuration management simple, powerful, and flexible!* 🚀
