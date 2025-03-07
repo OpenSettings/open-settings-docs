@@ -39,7 +39,7 @@ Open your browser and navigate to **[http://localhost:8080](http://localhost:808
 
 ## 🤝 Contributing
 
-We welcome contributions! Feel free to submit **issues** and **pull requests** to improve the documentation.
+By contributing this repository, you agree to the [Contribution Terms](https://opensettings.net/contribution-terms).
 
 ## 💡 License  
 
