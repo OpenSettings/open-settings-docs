@@ -1,0 +1,1490 @@
+### YamlMime:TableOfContent
+items:
+- uid: OpenSettings
+  name: OpenSettings
+  type: Namespace
+  items:
+  - uid: OpenSettings.Constants
+    name: Constants
+    type: Class
+  - uid: OpenSettings.Errors
+    name: Errors
+    type: Enum
+  - uid: OpenSettings.Helper
+    name: Helper
+    type: Class
+  - uid: OpenSettings.LicenseProvider
+    name: LicenseProvider
+    type: Class
+  - uid: OpenSettings.SettingsProvider
+    name: SettingsProvider
+    type: Class
+- uid: OpenSettings.AspNetCore
+  name: OpenSettings.AspNetCore
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.ApplicationBuilderExtensions
+    name: ApplicationBuilderExtensions
+    type: Class
+  - uid: OpenSettings.AspNetCore.ControllerOptions
+    name: ControllerOptions
+    type: Class
+  - uid: OpenSettings.AspNetCore.IOpenSettingsTokenService
+    name: IOpenSettingsTokenService
+    type: Interface
+  - uid: OpenSettings.AspNetCore.MvcBuilderExtensions
+    name: MvcBuilderExtensions
+    type: Class
+  - uid: OpenSettings.AspNetCore.OAuth2Options
+    name: OAuth2Options
+    type: Class
+- uid: OpenSettings.AspNetCore.Controllers.v1
+  name: OpenSettings.AspNetCore.Controllers.v1
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController
+    name: AppGroupsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.AppsController
+    name: AppsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController
+    name: AuthController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController
+    name: IdentifiersController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.InstancesController
+    name: InstancesController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.LicensesController
+    name: LicensesController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController
+    name: LocalSettingsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.NotificationsController
+    name: NotificationsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.OpenSettingsController
+    name: OpenSettingsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController
+    name: ProviderController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController
+    name: SettingHistoriesController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.SettingsController
+    name: SettingsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.TagsController
+    name: TagsController
+    type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.UsersController
+    name: UsersController
+    type: Class
+- uid: OpenSettings.AspNetCore.Models.Requests
+  name: OpenSettings.AspNetCore.Models.Requests
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
+    name: AuthenticatedResponse
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest
+    name: CopySettingToRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CopySettingToRequestBody
+    name: CopySettingToRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CopySettingToRequestBodyIdentifier
+    name: CopySettingToRequestBodyIdentifier
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppGroupRequest
+    name: CreateAppGroupRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppGroupRequestBody
+    name: CreateAppGroupRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppIdentifierMappingRequest
+    name: CreateAppIdentifierMappingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppIdentifierMappingRequestBody
+    name: CreateAppIdentifierMappingRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppIdentifierMappingRequestBodyIdentifier
+    name: CreateAppIdentifierMappingRequestBodyIdentifier
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequest
+    name: CreateAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+    name: CreateAppRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient
+    name: CreateAppRequestBodyClient
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup
+    name: CreateAppRequestBodyGroup
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag
+    name: CreateAppRequestBodyTag
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateIdentifierRequest
+    name: CreateIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateIdentifierRequestBody
+    name: CreateIdentifierRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateNotificationRequest
+    name: CreateNotificationRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateNotificationRequestBody
+    name: CreateNotificationRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequest
+    name: CreateSettingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+    name: CreateSettingRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
+    name: CreateSettingRequestBodyClass
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateTagRequest
+    name: CreateTagRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateTagRequestBody
+    name: CreateTagRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteAppGroupRequest
+    name: DeleteAppGroupRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteAppIdentifierMappingRequest
+    name: DeleteAppIdentifierMappingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteAppRequest
+    name: DeleteAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteIdentifierRequest
+    name: DeleteIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteInstanceRequest
+    name: DeleteInstanceRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteLicenseRequest
+    name: DeleteLicenseRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteSettingRequest
+    name: DeleteSettingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteTagRequest
+    name: DeleteTagRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest
+    name: DispatchNotificationsToUsersRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DragItemSortOrderRequest
+    name: DragItemSortOrderRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequest
+    name: FetchAppDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequestBody
+    name: FetchAppDataRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppGroupRequest
+    name: GetAppGroupRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppGroupsRequest
+    name: GetAppGroupsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingByAppAndIdentifierRequest
+    name: GetAppIdentifierMappingByAppAndIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingsRequest
+    name: GetAppIdentifierMappingsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppRequest
+    name: GetAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAppsRequest
+    name: GetAppsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetConfigurationByAppAndIdentifierRequest
+    name: GetConfigurationByAppAndIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetGroupedAppDataByAppAndIdentifierRequest
+    name: GetGroupedAppDataByAppAndIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetGroupedAppDataByAppRequest
+    name: GetGroupedAppDataByAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetGroupedAppsRequest
+    name: GetGroupedAppsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetIdentifierRequest
+    name: GetIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetIdentifiersRequest
+    name: GetIdentifiersRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesByAppAndIdentifierRequest
+    name: GetInstancesByAppAndIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesByAppRequest
+    name: GetInstancesByAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+    name: GetInstancesDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+    name: GetLocalSettingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest
+    name: GetNotificationsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest
+    name: GetPaginatedLicensesRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+    name: GetPaginatedRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetRegisteredAppRequest
+    name: GetRegisteredAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingByIdRequest
+    name: GetSettingByIdRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingDataRequest
+    name: GetSettingDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingHistoriesRequest
+    name: GetSettingHistoriesRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryDataRequest
+    name: GetSettingHistoryDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryRequest
+    name: GetSettingHistoryRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingsByAppAndIdentifierRequest
+    name: GetSettingsByAppAndIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingsDataRequest
+    name: GetSettingsDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetSettingsLastUpdatedComputedIdentifiersRequest
+    name: GetSettingsLastUpdatedComputedIdentifiersRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetTagRequest
+    name: GetTagRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetTagsRequest
+    name: GetTagsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetUserNotificationsRequest
+    name: GetUserNotificationsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.MarkNotificationAsRequest
+    name: MarkNotificationAsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.MarkNotificationsAsOpenedRequest
+    name: MarkNotificationsAsOpenedRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.PatchConfigurationRequest
+    name: PatchConfigurationRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.PatchConfigurationRequestBody
+    name: PatchConfigurationRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.RestoreSettingHistoryRequest
+    name: RestoreSettingHistoryRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.RestoreSettingHistoryRequestBody
+    name: RestoreSettingHistoryRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.SaveLicenseRequest
+    name: SaveLicenseRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.SyncAppDataRequest
+    name: SyncAppDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.SyncAppDataRequestBody
+    name: SyncAppDataRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.SyncAppDataRequestClient
+    name: SyncAppDataRequestClient
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppGroupRequest
+    name: UpdateAppGroupRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppGroupRequestBody
+    name: UpdateAppGroupRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppGroupSortOrderRequest
+    name: UpdateAppGroupSortOrderRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppIdentifierMappingOrderRequestBody
+    name: UpdateAppIdentifierMappingOrderRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppIdentifierMappingSortOrderRequest
+    name: UpdateAppIdentifierMappingSortOrderRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppRequest
+    name: UpdateAppRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppRequestBody
+    name: UpdateAppRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppRequestBodyClient
+    name: UpdateAppRequestBodyClient
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppRequestBodyGroup
+    name: UpdateAppRequestBodyGroup
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateAppRequestBodyTag
+    name: UpdateAppRequestBodyTag
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateIdentifierRequest
+    name: UpdateIdentifierRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateIdentifierRequestBody
+    name: UpdateIdentifierRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateIdentifierSortOrderRequest
+    name: UpdateIdentifierSortOrderRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateInstanceRequest
+    name: UpdateInstanceRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateInstanceRequestBody
+    name: UpdateInstanceRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateSettingDataRequest
+    name: UpdateSettingDataRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateSettingDataRequestBody
+    name: UpdateSettingDataRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateSettingRequest
+    name: UpdateSettingRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateSettingRequestBody
+    name: UpdateSettingRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateSettingRequestBodyClass
+    name: UpdateSettingRequestBodyClass
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateTagRequest
+    name: UpdateTagRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateTagRequestBody
+    name: UpdateTagRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateTagSortOrderRequest
+    name: UpdateTagSortOrderRequest
+    type: Class
+- uid: OpenSettings.AspNetCore.Models.Responses
+  name: OpenSettings.AspNetCore.Models.Responses
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Models.Responses.RefreshTokenResponse
+    name: RefreshTokenResponse
+    type: Class
+- uid: OpenSettings.AspNetCore.Spa
+  name: OpenSettings.AspNetCore.Spa
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaMiddleware
+    name: SettingsSpaMiddleware
+    type: Class
+  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
+    name: SettingsSpaOptions
+    type: Class
+- uid: OpenSettings.Attributes
+  name: OpenSettings.Attributes
+  type: Namespace
+  items:
+  - uid: OpenSettings.Attributes.ComputedIdentifierAttribute
+    name: ComputedIdentifierAttribute
+    type: Class
+  - uid: OpenSettings.Attributes.RegistrationModeAttribute
+    name: RegistrationModeAttribute
+    type: Class
+  - uid: OpenSettings.Attributes.StoreInSeparateFileAttribute
+    name: StoreInSeparateFileAttribute
+    type: Class
+- uid: OpenSettings.Configurations
+  name: OpenSettings.Configurations
+  type: Namespace
+  items:
+  - uid: OpenSettings.Configurations.ConsumerConfiguration
+    name: ConsumerConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.OpenSettingsConfiguration
+    name: OpenSettingsConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.OrmConfiguration
+    name: OrmConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+    name: PollingSettingsWorkerConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.ProviderConfiguration
+    name: ProviderConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.RedisConfiguration
+    name: RedisConfiguration
+    type: Class
+- uid: OpenSettings.Domains.Redis
+  name: OpenSettings.Domains.Redis
+  type: Namespace
+  items:
+  - uid: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+    name: IOpenSettingsDistributedCache
+    type: Interface
+  - uid: OpenSettings.Domains.Redis.OpenSettingsDistributedMemoryCache
+    name: OpenSettingsDistributedMemoryCache
+    type: Class
+  - uid: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
+    name: OpenSettingsDistributedRedisCache
+    type: Class
+- uid: OpenSettings.Domains.Redis.DataContext
+  name: OpenSettings.Domains.Redis.DataContext
+  type: Namespace
+  items:
+  - uid: OpenSettings.Domains.Redis.DataContext.Context
+    name: Context
+    type: Class
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext
+    name: RedisContext
+    type: Class
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContextOptions
+    name: RedisContextOptions
+    type: Class
+- uid: OpenSettings.Domains.Sql.DataContext
+  name: OpenSettings.Domains.Sql.DataContext
+  type: Namespace
+  items:
+  - uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+    name: OpenSettingsDbContext
+    type: Class
+- uid: OpenSettings.Domains.Sql.Entities
+  name: OpenSettings.Domains.Sql.Entities
+  type: Namespace
+  items:
+  - uid: OpenSettings.Domains.Sql.Entities.AppGroupSqlModel
+    name: AppGroupSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.AppIdentifierMappingSqlModel
+    name: AppIdentifierMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.AppSqlModel
+    name: AppSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.AppTagMappingSqlModel
+    name: AppTagMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+    name: ConfigurationSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase<TId>
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
+    name: IdentifierSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.InstanceSqlModel
+    name: InstanceSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+    name: LicenseSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.LockSqlModel
+    name: LockSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+    name: NotificationSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.SettingClassSqlModel
+    name: SettingClassSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel
+    name: SettingHistorySqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+    name: SettingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.TagSqlModel
+    name: TagSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserClaimMappingSqlModel
+    name: UserClaimMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserClaimSqlModel
+    name: UserClaimSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupClaimMappingModel
+    name: UserGroupClaimMappingModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupMappingSqlModel
+    name: UserGroupMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel
+    name: UserGroupNotificationMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupSqlModel
+    name: UserGroupSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel
+    name: UserNotificationMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleClaimMappingModel
+    name: UserRoleClaimMappingModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleGroupMappingModel
+    name: UserRoleGroupMappingModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel
+    name: UserRoleMappingSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+    name: UserRoleSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    name: UserSqlModel
+    type: Class
+- uid: OpenSettings.Exceptions
+  name: OpenSettings.Exceptions
+  type: Namespace
+  items:
+  - uid: OpenSettings.Exceptions.DuplicateSettingsNameException
+    name: DuplicateSettingsNameException
+    type: Class
+- uid: OpenSettings.Extensions
+  name: OpenSettings.Extensions
+  type: Namespace
+  items:
+  - uid: OpenSettings.Extensions.CacheModelExtensions
+    name: CacheModelExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.ConfigurationBuilderExtensions
+    name: ConfigurationBuilderExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.DictionaryExtensions
+    name: DictionaryExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.HostBuilderExtensions
+    name: HostBuilderExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.JsonHelper
+    name: JsonHelper
+    type: Class
+  - uid: OpenSettings.Extensions.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.ServiceProviderExtensions
+    name: ServiceProviderExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.SettingsExtensions
+    name: SettingsExtensions
+    type: Class
+- uid: OpenSettings.Models
+  name: OpenSettings.Models
+  type: Namespace
+  items:
+  - uid: OpenSettings.Models.AppType
+    name: AppType
+    type: Enum
+  - uid: OpenSettings.Models.CacheModel
+    name: CacheModel
+    type: Class
+  - uid: OpenSettings.Models.ClientInfo
+    name: ClientInfo
+    type: Class
+  - uid: OpenSettings.Models.ConcurrencyConflict
+    name: ConcurrencyConflict
+    type: Class
+  - uid: OpenSettings.Models.ConcurrencyConflictInfo
+    name: ConcurrencyConflictInfo
+    type: Class
+  - uid: OpenSettings.Models.ConcurrencyConflictValue
+    name: ConcurrencyConflictValue
+    type: Class
+  - uid: OpenSettings.Models.ConfigSource
+    name: ConfigSource
+    type: Enum
+  - uid: OpenSettings.Models.ConfigurationConsumer
+    name: ConfigurationConsumer
+    type: Class
+  - uid: OpenSettings.Models.ConfigurationConsumerPollingSettingsWorker
+    name: ConfigurationConsumerPollingSettingsWorker
+    type: Class
+  - uid: OpenSettings.Models.ConfigurationProvider
+    name: ConfigurationProvider
+    type: Class
+  - uid: OpenSettings.Models.ConflictModel
+    name: ConflictModel
+    type: Class
+  - uid: OpenSettings.Models.DataAccessType
+    name: DataAccessType
+    type: Enum
+  - uid: OpenSettings.Models.FileMergeResult
+    name: FileMergeResult
+    type: Class
+  - uid: OpenSettings.Models.FileModel
+    name: FileModel
+    type: Class
+  - uid: OpenSettings.Models.GeneratedSettingData
+    name: GeneratedSettingData
+    type: Class
+  - uid: OpenSettings.Models.ILocalSetting
+    name: ILocalSetting
+    type: Interface
+  - uid: OpenSettings.Models.JsonMergeResult
+    name: JsonMergeResult
+    type: Class
+  - uid: OpenSettings.Models.License
+    name: License
+    type: Class
+  - uid: OpenSettings.Models.LicenseEdition
+    name: LicenseEdition
+    type: Enum
+  - uid: OpenSettings.Models.LocalSyncDataResponse
+    name: LocalSyncDataResponse
+    type: Class
+  - uid: OpenSettings.Models.NotificationSource
+    name: NotificationSource
+    type: Enum
+  - uid: OpenSettings.Models.NotificationType
+    name: NotificationType
+    type: Enum
+  - uid: OpenSettings.Models.OAuth2Info
+    name: OAuth2Info
+    type: Class
+  - uid: OpenSettings.Models.OpenSettingsAssemblyInfo
+    name: OpenSettingsAssemblyInfo
+    type: Class
+  - uid: OpenSettings.Models.OpenSettingsConfigModel
+    name: OpenSettingsConfigModel
+    type: Class
+  - uid: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1
+    name: OpenSettingsConfigsDataCacheModel<T>
+    type: Class
+  - uid: OpenSettings.Models.OpenSettingsConfigsDataModel
+    name: OpenSettingsConfigsDataModel
+    type: Class
+  - uid: OpenSettings.Models.Operation
+    name: Operation
+    type: Enum
+  - uid: OpenSettings.Models.PagingInfo
+    name: PagingInfo
+    type: Class
+  - uid: OpenSettings.Models.PropertyInfoHelperModel
+    name: PropertyInfoHelperModel
+    type: Class
+  - uid: OpenSettings.Models.ProviderInfo
+    name: ProviderInfo
+    type: Class
+  - uid: OpenSettings.Models.ProviderInfoClient
+    name: ProviderInfoClient
+    type: Class
+  - uid: OpenSettings.Models.RedisInfo
+    name: RedisInfo
+    type: Class
+  - uid: OpenSettings.Models.RedisMessage
+    name: RedisMessage
+    type: Class
+  - uid: OpenSettings.Models.RedisMessageType
+    name: RedisMessageType
+    type: Enum
+  - uid: OpenSettings.Models.RegistrationMode
+    name: RegistrationMode
+    type: Enum
+  - uid: OpenSettings.Models.ReloadStrategy
+    name: ReloadStrategy
+    type: Enum
+  - uid: OpenSettings.Models.ReorderResponse
+    name: ReorderResponse
+    type: Class
+  - uid: OpenSettings.Models.ServiceType
+    name: ServiceType
+    type: Enum
+  - uid: OpenSettings.Models.SetSortOrderPosition
+    name: SetSortOrderPosition
+    type: Enum
+  - uid: OpenSettings.Models.SortDirection
+    name: SortDirection
+    type: Enum
+- uid: OpenSettings.Models.Inputs
+  name: OpenSettings.Models.Inputs
+  type: Namespace
+  items:
+  - uid: OpenSettings.Models.Inputs.AcquireLockInput
+    name: AcquireLockInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CopySettingToInput
+    name: CopySettingToInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput
+    name: CreateAppIdentifierMappingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInputIdentifier
+    name: CreateAppIdentifierMappingInputIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppInput
+    name: CreateAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppInputClient
+    name: CreateAppInputClient
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppInputGroup
+    name: CreateAppInputGroup
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateAppInputTag
+    name: CreateAppInputTag
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateGroupInput
+    name: CreateGroupInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateIdentifierInput
+    name: CreateIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateNotificationInput
+    name: CreateNotificationInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateSettingInput
+    name: CreateSettingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateTagInput
+    name: CreateTagInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
+    name: DeleteAppIdentifierMappingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteAppInput
+    name: DeleteAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteGroupInput
+    name: DeleteGroupInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteIdentifierInput
+    name: DeleteIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteInstanceInput
+    name: DeleteInstanceInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+    name: DeleteLicenseInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteNotificationInput
+    name: DeleteNotificationInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteSettingInput
+    name: DeleteSettingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteTagInput
+    name: DeleteTagInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+    name: DispatchNotificationsToUsersInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    name: DragItemSortOrderInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.FetchAppDataInput
+    name: FetchAppDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
+    name: GetAppIdentifierMappingByAppAndIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
+    name: GetAppIdentifierMappingsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAppInput
+    name: GetAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAppInstanceStatusInput
+    name: GetAppInstanceStatusInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAppsInput
+    name: GetAppsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
+    name: GetConfigurationByAppAndIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetGroupInput
+    name: GetGroupInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
+    name: GetGroupedAppDataByAppAndIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
+    name: GetGroupedAppDataByAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppsInput
+    name: GetGroupedAppsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetGroupsInput
+    name: GetGroupsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetIdentifierInput
+    name: GetIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetIdentifiersInput
+    name: GetIdentifiersInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetInstancesDataInput
+    name: GetInstancesDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetInstancesInput
+    name: GetInstancesInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetNotificationsInput
+    name: GetNotificationsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput
+    name: GetOrCreateUserInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetPaginatedInput
+    name: GetPaginatedInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+    name: GetPaginatedLicensesInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetRegisteredAppInput
+    name: GetRegisteredAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingByIdInput
+    name: GetSettingByIdInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingDataInput
+    name: GetSettingDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingHistoriesInput
+    name: GetSettingHistoriesInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingHistoryDataInput
+    name: GetSettingHistoryDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingHistoryInput
+    name: GetSettingHistoryInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingInput
+    name: GetSettingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+    name: GetSettingsByAppAndIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingsDataInput
+    name: GetSettingsDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
+    name: GetSettingsLastUpdatedComputedIdentifiersInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetTagInput
+    name: GetTagInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetTagsInput
+    name: GetTagsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
+    name: GetUserNotificationsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    name: MarkNotificationAsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+    name: MarkNotificationsAsOpenedInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.PatchConfigurationInput
+    name: PatchConfigurationInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.PatchConfigurationInputBody
+    name: PatchConfigurationInputBody
+    type: Class
+  - uid: OpenSettings.Models.Inputs.ReleaseLockInput
+    name: ReleaseLockInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.RestoreSettingHistoryInput
+    name: RestoreSettingHistoryInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput
+    name: SetLockExpiryTimeInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInput
+    name: SyncAppDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInputClient
+    name: SyncAppDataInputClient
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration
+    name: SyncAppDataInputConfiguration
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance
+    name: SyncAppDataInputInstance
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInputSetting
+    name: SyncAppDataInputSetting
+    type: Class
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInputSettingClass
+    name: SyncAppDataInputSettingClass
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput
+    name: UpdateAppIdentifierMappingSortOrderInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateAppInput
+    name: UpdateAppInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateAppInputGroup
+    name: UpdateAppInputGroup
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateAppInputTag
+    name: UpdateAppInputTag
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateGroupInput
+    name: UpdateGroupInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
+    name: UpdateGroupSortOrderInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateIdentifierInput
+    name: UpdateIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput
+    name: UpdateIdentifierSortOrderInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateInstanceInput
+    name: UpdateInstanceInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateLocalDataAndWriteToDiskInput
+    name: UpdateLocalDataAndWriteToDiskInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateNotificationInput
+    name: UpdateNotificationInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateSettingDataInput
+    name: UpdateSettingDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateSettingInput
+    name: UpdateSettingInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateTagInput
+    name: UpdateTagInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+    name: UpdateTagSortOrderInput
+    type: Class
+- uid: OpenSettings.Models.Responses
+  name: OpenSettings.Models.Responses
+  type: Namespace
+  items:
+  - uid: OpenSettings.Models.Responses.CopySettingToResponse
+    name: CopySettingToResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CopySettingToResponseIdentifier
+    name: CopySettingToResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.CopySettingToResponseSetting
+    name: CopySettingToResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateAppGroupResponse
+    name: CreateAppGroupResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateAppIdentifierMappingResponse
+    name: CreateAppIdentifierMappingResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateAppIdentifierMappingResponseIdentifier
+    name: CreateAppIdentifierMappingResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateIdentifierResponse
+    name: CreateIdentifierResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateNotificationResponse
+    name: CreateNotificationResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateSettingResponse
+    name: CreateSettingResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.CreateTagResponse
+    name: CreateTagResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.DeleteUnmappedItemsResponse
+    name: DeleteUnmappedItemsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.DragItemSortOrderResponse
+    name: DragItemSortOrderResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.DragItemSortOrderResponseSource
+    name: DragItemSortOrderResponseSource
+    type: Class
+  - uid: OpenSettings.Models.Responses.FetchAppDataResponse
+    name: FetchAppDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.FetchAppDataResponseSetting
+    name: FetchAppDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppGroupResponse
+    name: GetAppGroupResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppGroupsResponse
+    name: GetAppGroupsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppGroupsResponseGroup
+    name: GetAppGroupsResponseGroup
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppIdentifierMappingByAppAndIdentifierResponse
+    name: GetAppIdentifierMappingByAppAndIdentifierResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppIdentifierMappingByAppAndIdentifierResponseIdentifier
+    name: GetAppIdentifierMappingByAppAndIdentifierResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppIdentifierMappingsResponse
+    name: GetAppIdentifierMappingsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppIdentifierMappingsResponseIdentifier
+    name: GetAppIdentifierMappingsResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppResponse
+    name: GetAppResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppResponseClient
+    name: GetAppResponseClient
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppResponseGroup
+    name: GetAppResponseGroup
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppResponseTag
+    name: GetAppResponseTag
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppsResponseApp
+    name: GetAppsResponseApp
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAppsResponseAppClient
+    name: GetAppsResponseAppClient
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetAvailableNotificationsResponse
+    name: GetAvailableNotificationsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetConfigsDataResponse
+    name: GetConfigsDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetConfigsResponse
+    name: GetConfigsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetConfigurationByAppAndIdentifierResponse
+    name: GetConfigurationByAppAndIdentifierResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponse
+    name: GetGroupedAppDataByIdentifierIdResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponseConfiguration
+    name: GetGroupedAppDataByIdentifierIdResponseConfiguration
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponseIdentifier
+    name: GetGroupedAppDataByIdentifierIdResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponseInstance
+    name: GetGroupedAppDataByIdentifierIdResponseInstance
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponseSetting
+    name: GetGroupedAppDataByIdentifierIdResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataByIdentifierIdResponseSettingClass
+    name: GetGroupedAppDataByIdentifierIdResponseSettingClass
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponse
+    name: GetGroupedAppDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration
+    name: GetGroupedAppDataResponseConfiguration
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseIdentifier
+    name: GetGroupedAppDataResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseIdentifierInfo
+    name: GetGroupedAppDataResponseIdentifierInfo
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
+    name: GetGroupedAppDataResponseInstance
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting
+    name: GetGroupedAppDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
+    name: GetGroupedAppDataResponseSettingClass
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppsResponse
+    name: GetGroupedAppsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppsResponseApp
+    name: GetGroupedAppsResponseApp
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppClient
+    name: GetGroupedAppsResponseAppClient
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
+    name: GetGroupedAppsResponseAppGroup
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppTag
+    name: GetGroupedAppsResponseAppTag
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetIdentifierResponse
+    name: GetIdentifierResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetIdentifiersResponse
+    name: GetIdentifiersResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier
+    name: GetIdentifiersResponseIdentifier
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance
+    name: GetInstancesResponseInstance
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetNotificationsResponse
+    name: GetNotificationsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification
+    name: GetNotificationsResponseNotification
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+    name: GetOpenSettingsNotificationsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetOrCreateUserResponse
+    name: GetOrCreateUserResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
+    name: GetPaginatedAppGroupsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+    name: GetPaginatedIdentifiersResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse
+    name: GetPaginatedLicensesResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+    name: GetPaginatedLicensesResponseLicense
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPaginatedTagsResponse
+    name: GetPaginatedTagsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetRegisteredAppResponse
+    name: GetRegisteredAppResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingByIdResponse
+    name: GetSettingByIdResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingByIdResponseClass
+    name: GetSettingByIdResponseClass
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingDataResponse
+    name: GetSettingDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse
+    name: GetSettingHistoriesResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingHistoryDataResponse
+    name: GetSettingHistoryDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingHistoryResponse
+    name: GetSettingHistoryResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingResponse
+    name: GetSettingResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingsByAppAndIdentifierResponseSetting
+    name: GetSettingsByAppAndIdentifierResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingsByAppAndIdentifierResponseSettingClass
+    name: GetSettingsByAppAndIdentifierResponseSettingClass
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingsDataResponse
+    name: GetSettingsDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingsDataResponseSetting
+    name: GetSettingsDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse
+    name: GetSettingsLastUpdatedComputedIdentifiersResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetTagResponse
+    name: GetTagResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetTagsResponse
+    name: GetTagsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetTagsResponseTag
+    name: GetTagsResponseTag
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetUserNotificationsResponse
+    name: GetUserNotificationsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetUserNotificationsResponseNotification
+    name: GetUserNotificationsResponseNotification
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetUserNotificationsResponseNotificationCounts
+    name: GetUserNotificationsResponseNotificationCounts
+    type: Class
+  - uid: OpenSettings.Models.Responses.ModelForPaginatedResponseData
+    name: ModelForPaginatedResponseData
+    type: Class
+  - uid: OpenSettings.Models.Responses.PatchConfigurationResponse
+    name: PatchConfigurationResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.RestoreSettingHistoryResponse
+    name: RestoreSettingHistoryResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.RestoreSettingHistoryResponseSetting
+    name: RestoreSettingHistoryResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponse
+    name: SyncAppDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
+    name: SyncAppDataResponseConfiguration
+    type: Class
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+    name: SyncAppDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse
+    name: UpdateAppGroupResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateAppIdentifierMappingSortOrderResponse
+    name: UpdateAppIdentifierMappingSortOrderResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateAppResponse
+    name: UpdateAppResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateAppResponseTag
+    name: UpdateAppResponseTag
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateIdentifierResponse
+    name: UpdateIdentifierResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSettingDataResponse
+    name: UpdateSettingDataResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSettingDataResponseSetting
+    name: UpdateSettingDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSettingResponse
+    name: UpdateSettingResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSortOrderResponse
+    name: UpdateSortOrderResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSortOrderResponseNeighbour
+    name: UpdateSortOrderResponseNeighbour
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateSortOrderResponseSource
+    name: UpdateSortOrderResponseSource
+    type: Class
+  - uid: OpenSettings.Models.Responses.UpdateTagResponse
+    name: UpdateTagResponse
+    type: Class
+- uid: OpenSettings.Services
+  name: OpenSettings.Services
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.DataValidationService
+    name: DataValidationService
+    type: Class
+  - uid: OpenSettings.Services.OpenSettingsService
+    name: OpenSettingsService
+    type: Class
+- uid: OpenSettings.Services.Interfaces
+  name: OpenSettings.Services.Interfaces
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.Interfaces.IAppGroupsService
+    name: IAppGroupsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+    name: IAppIdentifierMappingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IAppTagMappingsService
+    name: IAppTagMappingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IAppsService
+    name: IAppsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IConfigurationsService
+    name: IConfigurationsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IDataChangeService
+    name: IDataChangeService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IIdentifiersService
+    name: IIdentifiersService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IInstancesService
+    name: IInstancesService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ILicensesService
+    name: ILicensesService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ILocalSettingsService
+    name: ILocalSettingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ILocksService
+    name: ILocksService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.INotificationsService
+    name: INotificationsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService
+    name: IOpenSettingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IProviderService
+    name: IProviderService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ISettingClassesService
+    name: ISettingClassesService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService
+    name: ISettingHistoriesService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ISettingsService
+    name: ISettingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ITagsService
+    name: ITagsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IUserNotificationMappingsService
+    name: IUserNotificationMappingsService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IUsersService
+    name: IUsersService
+    type: Interface
+- uid: OpenSettings.Services.MemoryCache
+  name: OpenSettings.Services.MemoryCache
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys
+    name: MemoryCacheKeys
+    type: Class
+  - uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+    name: OpenSettingsMemoryCache
+    type: Class
+- uid: OpenSettings.Services.Rest
+  name: OpenSettings.Services.Rest
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.Rest.AppGroupsRestService
+    name: AppGroupsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.AppIdentifierMappingsRestService
+    name: AppIdentifierMappingsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.AppTagMappingsRestService
+    name: AppTagMappingsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.AppsRestService
+    name: AppsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.ConfigurationsRestService
+    name: ConfigurationsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.IdentifiersRestService
+    name: IdentifiersRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.InstancesRestService
+    name: InstancesRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.LicensesRestService
+    name: LicensesRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.NotificationsRestService
+    name: NotificationsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.OpenSettingsRestService
+    name: OpenSettingsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.ProviderRestService
+    name: ProviderRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.QueryBuilder
+    name: QueryBuilder
+    type: Class
+  - uid: OpenSettings.Services.Rest.SettingClassesRestService
+    name: SettingClassesRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.SettingHistoriesRestService
+    name: SettingHistoriesRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.SettingsRestService
+    name: SettingsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.TagsRestService
+    name: TagsRestService
+    type: Class
+  - uid: OpenSettings.Services.Rest.UsersRestService
+    name: UsersRestService
+    type: Class
+- uid: OpenSettings.Services.Rest.Interfaces
+  name: OpenSettings.Services.Rest.Interfaces
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
+    name: IAppGroupsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
+    name: IAppIdentifierMappingsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
+    name: IAppTagMappingsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppsRestService
+    name: IAppsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
+    name: IConfigurationsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
+    name: IIdentifiersRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IInstancesRestService
+    name: IInstancesRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+    name: ILicensesRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+    name: INotificationsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
+    name: IOpenSettingsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IProviderRestService
+    name: IProviderRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
+    name: ISettingClassesRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
+    name: ISettingHistoriesRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.ISettingsRestService
+    name: ISettingsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.ITagsRestService
+    name: ITagsRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.IUsersRestService
+    name: IUsersRestService
+    type: Interface
+- uid: OpenSettings.Services.Sql.Interfaces
+  name: OpenSettings.Services.Sql.Interfaces
+  type: Namespace
+  items:
+  - uid: OpenSettings.Services.Sql.Interfaces.IUserNotificationMappingsSqlService
+    name: IUserNotificationMappingsSqlService
+    type: Interface
+memberLayout: SamePage

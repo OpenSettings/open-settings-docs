@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.RedisMessageType
+  commentId: T:OpenSettings.Models.RedisMessageType
+  id: RedisMessageType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.RedisMessageType.DataChange
+  langs:
+  - csharp
+  - vb
+  name: RedisMessageType
+  nameWithType: RedisMessageType
+  fullName: OpenSettings.Models.RedisMessageType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/RedisMessageType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RedisMessageType
+    path: ../../../open-settings/src/OpenSettings/Models/RedisMessageType.cs
+    startLine: 2
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum RedisMessageType
+    content.vb: Public Enum RedisMessageType
+- uid: OpenSettings.Models.RedisMessageType.DataChange
+  commentId: F:OpenSettings.Models.RedisMessageType.DataChange
+  id: DataChange
+  parent: OpenSettings.Models.RedisMessageType
+  langs:
+  - csharp
+  - vb
+  name: DataChange
+  nameWithType: RedisMessageType.DataChange
+  fullName: OpenSettings.Models.RedisMessageType.DataChange
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/RedisMessageType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DataChange
+    path: ../../../open-settings/src/OpenSettings/Models/RedisMessageType.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: DataChange = 1
+    return:
+      type: OpenSettings.Models.RedisMessageType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.RedisMessageType
+  commentId: T:OpenSettings.Models.RedisMessageType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RedisMessageType.html
+  name: RedisMessageType
+  nameWithType: RedisMessageType
+  fullName: OpenSettings.Models.RedisMessageType

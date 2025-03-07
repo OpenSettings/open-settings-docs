@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<AssemblyName>OpenSettings.Docs</AssemblyName>
+		<PackageId>OpenSettings.Docs</PackageId>
+		<Product>OpenSettings.Docs</Product>
+		<Authors>Oğulcan TURAN</Authors>
+		<Copyright>Copyright (c) OpenSettings 2024</Copyright>
+		<PackageProjectUrl>https://github.com/OpenSettings/open-settings-docs</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/OpenSettings/open-settings-docs</RepositoryUrl>
+		<PackageTags>dotnet;csharp;opensettings;docs;docfx</PackageTags>
+		<RepositoryType>git</RepositoryType>
+		<Description></Description>
+		<PackageIcon>open-settings-logo.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<NeutralLanguage>en</NeutralLanguage>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\logo\open-settings-logo.png" Pack="true" PackagePath="\" Visible="false" />
+		<None Include="README.md" Pack="true" PackagePath="\" Visible="false" />
+		<None Include="..\..\LICENSE.md" Pack="true" PackagePath="\" Visible="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="wwwroot\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

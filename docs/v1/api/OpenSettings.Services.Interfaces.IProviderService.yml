@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IProviderService
+  commentId: T:OpenSettings.Services.Interfaces.IProviderService
+  id: IProviderService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProviderService
+  nameWithType: IProviderService
+  fullName: OpenSettings.Services.Interfaces.IProviderService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IProviderService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IProviderService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IProviderService.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IProviderService
+    content.vb: Public Interface IProviderService
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  id: GetProviderAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IProviderService
+  langs:
+  - csharp
+  - vb
+  name: GetProviderAsync(CancellationToken)
+  nameWithType: IProviderService.GetProviderAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IProviderService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetProviderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IProviderService.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<ProviderInfo>> GetProviderAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
+    content.vb: Function GetProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of ProviderInfo))
+  overload: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync
+  href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetProviderAsync_System_Threading_CancellationToken_
+  name: GetProviderAsync
+  nameWithType: IProviderService.GetProviderAsync
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<ProviderInfo>>
+  nameWithType: Task<IJsonResponse<ProviderInfo>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.ProviderInfo>>
+  nameWithType.vb: Task(Of IJsonResponse(Of ProviderInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.ProviderInfo))
+  name.vb: Task(Of IJsonResponse(Of ProviderInfo))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.ProviderInfo
+    name: ProviderInfo
+    href: OpenSettings.Models.ProviderInfo.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.ProviderInfo
+    name: ProviderInfo
+    href: OpenSettings.Models.ProviderInfo.html
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

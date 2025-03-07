@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.NotificationSource
+  commentId: T:OpenSettings.Models.NotificationSource
+  id: NotificationSource
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.NotificationSource.OpenSettings
+  - OpenSettings.Models.NotificationSource.System
+  - OpenSettings.Models.NotificationSource.User
+  langs:
+  - csharp
+  - vb
+  name: NotificationSource
+  nameWithType: NotificationSource
+  fullName: OpenSettings.Models.NotificationSource
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/NotificationSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationSource
+    path: ../../../open-settings/src/OpenSettings/Models/NotificationSource.cs
+    startLine: 2
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum NotificationSource
+    content.vb: Public Enum NotificationSource
+- uid: OpenSettings.Models.NotificationSource.User
+  commentId: F:OpenSettings.Models.NotificationSource.User
+  id: User
+  parent: OpenSettings.Models.NotificationSource
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: NotificationSource.User
+  fullName: OpenSettings.Models.NotificationSource.User
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/NotificationSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: User
+    path: ../../../open-settings/src/OpenSettings/Models/NotificationSource.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents notifications created by the user.
+  example: []
+  syntax:
+    content: User = 1
+    return:
+      type: OpenSettings.Models.NotificationSource
+- uid: OpenSettings.Models.NotificationSource.System
+  commentId: F:OpenSettings.Models.NotificationSource.System
+  id: System
+  parent: OpenSettings.Models.NotificationSource
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: NotificationSource.System
+  fullName: OpenSettings.Models.NotificationSource.System
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/NotificationSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: System
+    path: ../../../open-settings/src/OpenSettings/Models/NotificationSource.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents notifications created by the system.
+  example: []
+  syntax:
+    content: System = 2
+    return:
+      type: OpenSettings.Models.NotificationSource
+- uid: OpenSettings.Models.NotificationSource.OpenSettings
+  commentId: F:OpenSettings.Models.NotificationSource.OpenSettings
+  id: OpenSettings
+  parent: OpenSettings.Models.NotificationSource
+  langs:
+  - csharp
+  - vb
+  name: OpenSettings
+  nameWithType: NotificationSource.OpenSettings
+  fullName: OpenSettings.Models.NotificationSource.OpenSettings
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/NotificationSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OpenSettings
+    path: ../../../open-settings/src/OpenSettings/Models/NotificationSource.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents notifications created by the OpenSettings.
+  example: []
+  syntax:
+    content: OpenSettings = 3
+    return:
+      type: OpenSettings.Models.NotificationSource
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.NotificationSource
+  commentId: T:OpenSettings.Models.NotificationSource
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.NotificationSource.html
+  name: NotificationSource
+  nameWithType: NotificationSource
+  fullName: OpenSettings.Models.NotificationSource

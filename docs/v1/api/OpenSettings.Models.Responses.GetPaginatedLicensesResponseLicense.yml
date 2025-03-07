@@ -1,0 +1,972 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  commentId: T:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  id: GetPaginatedLicensesResponseLicense
+  parent: OpenSettings.Models.Responses
+  children:
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedLicensesResponseLicense
+  nameWithType: GetPaginatedLicensesResponseLicense
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedLicensesResponseLicense
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public class GetPaginatedLicensesResponseLicense
+    content.vb: Public Class GetPaginatedLicensesResponseLicense
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)
+  commentId: M:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)
+  id: '#ctor(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)'
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedLicensesResponseLicense(LicenseSqlModel)
+  nameWithType: GetPaginatedLicensesResponseLicense.GetPaginatedLicensesResponseLicense(LicenseSqlModel)
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.GetPaginatedLicensesResponseLicense(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetPaginatedLicensesResponseLicense(LicenseSqlModel license)
+    parameters:
+    - id: license
+      type: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+    content.vb: Public Sub New(license As LicenseSqlModel)
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor*
+  nameWithType.vb: GetPaginatedLicensesResponseLicense.New(LicenseSqlModel)
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.New(OpenSettings.Domains.Sql.Entities.LicenseSqlModel)
+  name.vb: New(LicenseSqlModel)
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+  id: Id
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: GetPaginatedLicensesResponseLicense.Id
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Id
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+  id: ReferenceId
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: ReferenceId
+  nameWithType: GetPaginatedLicensesResponseLicense.ReferenceId
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReferenceId
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string ReferenceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReferenceId As String
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+  id: Features
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: Features
+  nameWithType: GetPaginatedLicensesResponseLicense.Features
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Features
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string[] Features { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Features As String()
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+  id: ExpiryDate
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: ExpiryDate
+  nameWithType: GetPaginatedLicensesResponseLicense.ExpiryDate
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiryDate
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 29
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime? ExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property ExpiryDate As Date?
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+  id: IsExpired
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: IsExpired
+  nameWithType: GetPaginatedLicensesResponseLicense.IsExpired
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsExpired
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public bool IsExpired { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsExpired As Boolean
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+  id: IsRevoked
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: IsRevoked
+  nameWithType: GetPaginatedLicensesResponseLicense.IsRevoked
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsRevoked
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 33
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public bool IsRevoked { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRevoked As Boolean
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+  id: RevokedOn
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: RevokedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.RevokedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RevokedOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 35
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime? RevokedOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property RevokedOn As Date?
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+  id: Key
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: GetPaginatedLicensesResponseLicense.Key
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Key
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 37
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+  id: Holder
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: Holder
+  nameWithType: GetPaginatedLicensesResponseLicense.Holder
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Holder
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 39
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Holder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Holder As String
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+  id: Edition
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: Edition
+  nameWithType: GetPaginatedLicensesResponseLicense.Edition
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Edition
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 41
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public LicenseEdition Edition { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.LicenseEdition
+    content.vb: Public Property Edition As LicenseEdition
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+  id: CreatedOn
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: CreatedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 43
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime CreatedOn { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedOn As Date
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn*
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn
+  id: UpdatedOn
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
+  langs:
+  - csharp
+  - vb
+  name: UpdatedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.UpdatedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponseLicense.cs
+    startLine: 45
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime? UpdatedOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property UpdatedOn As Date?
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn*
+references:
+- uid: OpenSettings.Models.Responses
+  commentId: N:OpenSettings.Models.Responses
+  href: OpenSettings.html
+  name: OpenSettings.Models.Responses
+  nameWithType: OpenSettings.Models.Responses
+  fullName: OpenSettings.Models.Responses
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.#ctor
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense__ctor_OpenSettings_Domains_Sql_Entities_LicenseSqlModel_
+  name: GetPaginatedLicensesResponseLicense
+  nameWithType: GetPaginatedLicensesResponseLicense.GetPaginatedLicensesResponseLicense
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.GetPaginatedLicensesResponseLicense
+  nameWithType.vb: GetPaginatedLicensesResponseLicense.New
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.New
+  name.vb: New
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html
+  name: LicenseSqlModel
+  nameWithType: LicenseSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_Id
+  name: Id
+  nameWithType: GetPaginatedLicensesResponseLicense.Id
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_ReferenceId
+  name: ReferenceId
+  nameWithType: GetPaginatedLicensesResponseLicense.ReferenceId
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ReferenceId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_Features
+  name: Features
+  nameWithType: GetPaginatedLicensesResponseLicense.Features
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Features
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_ExpiryDate
+  name: ExpiryDate
+  nameWithType: GetPaginatedLicensesResponseLicense.ExpiryDate
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.ExpiryDate
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_IsExpired
+  name: IsExpired
+  nameWithType: GetPaginatedLicensesResponseLicense.IsExpired
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsExpired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_IsRevoked
+  name: IsRevoked
+  nameWithType: GetPaginatedLicensesResponseLicense.IsRevoked
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.IsRevoked
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_RevokedOn
+  name: RevokedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.RevokedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.RevokedOn
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_Key
+  name: Key
+  nameWithType: GetPaginatedLicensesResponseLicense.Key
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Key
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_Holder
+  name: Holder
+  nameWithType: GetPaginatedLicensesResponseLicense.Holder
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Holder
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_Edition
+  name: Edition
+  nameWithType: GetPaginatedLicensesResponseLicense.Edition
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.Edition
+- uid: OpenSettings.Models.LicenseEdition
+  commentId: T:OpenSettings.Models.LicenseEdition
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.LicenseEdition.html
+  name: LicenseEdition
+  nameWithType: LicenseEdition
+  fullName: OpenSettings.Models.LicenseEdition
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_CreatedOn
+  name: CreatedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.CreatedOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense_UpdatedOn
+  name: UpdatedOn
+  nameWithType: GetPaginatedLicensesResponseLicense.UpdatedOn
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense.UpdatedOn

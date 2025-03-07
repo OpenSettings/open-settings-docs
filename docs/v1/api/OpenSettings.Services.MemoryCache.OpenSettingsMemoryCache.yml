@@ -1,0 +1,890 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  commentId: T:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  id: OpenSettingsMemoryCache
+  parent: OpenSettings.Services.MemoryCache
+  children:
+  - OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})
+  - OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory)
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsMemoryCache
+  nameWithType: OpenSettingsMemoryCache
+  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OpenSettingsMemoryCache
+    path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.MemoryCache
+  summary: >-
+    Represents a custom implementation of the <xref href="Microsoft.Extensions.Caching.Memory.MemoryCache" data-throw-if-not-resolved="false"></xref> 
+
+    to avoid conflicts with the default <xref href="OpenSettings.Services.MemoryCache" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class OpenSettingsMemoryCache : MemoryCache, IMemoryCache, IDisposable'
+    content.vb: Public Class OpenSettingsMemoryCache Inherits MemoryCache Implements IMemoryCache, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Extensions.Caching.Memory.MemoryCache
+  implements:
+  - Microsoft.Extensions.Caching.Memory.IMemoryCache
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(System.Object)
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(System.Object)
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Clear
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(System.Double)
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(System.Boolean)
+  - Microsoft.Extensions.Caching.Memory.MemoryCache.Count
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})
+  commentId: M:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})'
+  parent: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsMemoryCache(IOptions<MemoryCacheOptions>)
+  nameWithType: OpenSettingsMemoryCache.OpenSettingsMemoryCache(IOptions<MemoryCacheOptions>)
+  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.OpenSettingsMemoryCache(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.Memory.MemoryCacheOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.MemoryCache
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache" data-throw-if-not-resolved="false"></xref> class 
+
+    using the provided options for memory cache configuration.
+  example: []
+  syntax:
+    content: public OpenSettingsMemoryCache(IOptions<MemoryCacheOptions> optionsAccessor)
+    parameters:
+    - id: optionsAccessor
+      type: Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions}
+      description: The <xref href="Microsoft.Extensions.Options.IOptions%601" data-throw-if-not-resolved="false"></xref> used to configure the memory cache.
+    content.vb: Public Sub New(optionsAccessor As IOptions(Of MemoryCacheOptions))
+  overload: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor*
+  nameWithType.vb: OpenSettingsMemoryCache.New(IOptions(Of MemoryCacheOptions))
+  fullName.vb: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.New(Microsoft.Extensions.Options.IOptions(Of Microsoft.Extensions.Caching.Memory.MemoryCacheOptions))
+  name.vb: New(IOptions(Of MemoryCacheOptions))
+- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory)
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions},Microsoft.Extensions.Logging.ILoggerFactory)'
+  parent: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsMemoryCache(IOptions<MemoryCacheOptions>, ILoggerFactory)
+  nameWithType: OpenSettingsMemoryCache.OpenSettingsMemoryCache(IOptions<MemoryCacheOptions>, ILoggerFactory)
+  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.OpenSettingsMemoryCache(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.Memory.MemoryCacheOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/OpenSettingsMemoryCache.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.MemoryCache
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache" data-throw-if-not-resolved="false"></xref> class 
+
+    using the provided options and logger factory for memory cache configuration.
+  example: []
+  syntax:
+    content: public OpenSettingsMemoryCache(IOptions<MemoryCacheOptions> optionsAccessor, ILoggerFactory loggerFactory)
+    parameters:
+    - id: optionsAccessor
+      type: Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions}
+      description: The <xref href="Microsoft.Extensions.Options.IOptions%601" data-throw-if-not-resolved="false"></xref> used to configure the memory cache.
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+      description: The <xref href="Microsoft.Extensions.Logging.ILoggerFactory" data-throw-if-not-resolved="false"></xref> used to create loggers for the memory cache operations.
+    content.vb: Public Sub New(optionsAccessor As IOptions(Of MemoryCacheOptions), loggerFactory As ILoggerFactory)
+  overload: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor*
+  nameWithType.vb: OpenSettingsMemoryCache.New(IOptions(Of MemoryCacheOptions), ILoggerFactory)
+  fullName.vb: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.New(Microsoft.Extensions.Options.IOptions(Of Microsoft.Extensions.Caching.Memory.MemoryCacheOptions), Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: New(IOptions(Of MemoryCacheOptions), ILoggerFactory)
+references:
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.MemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache
+  name: MemoryCache
+  nameWithType: MemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache
+- uid: OpenSettings.Services.MemoryCache
+  commentId: N:OpenSettings.Services.MemoryCache
+  href: OpenSettings.html
+  name: OpenSettings.Services.MemoryCache
+  nameWithType: OpenSettings.Services.MemoryCache
+  fullName: OpenSettings.Services.MemoryCache
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.MemoryCache
+    name: MemoryCache
+    href: OpenSettings.Services.MemoryCache.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.MemoryCache
+    name: MemoryCache
+    href: OpenSettings.Services.MemoryCache.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(System.Object)
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(System.Object)
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.createentry
+  name: CreateEntry(object)
+  nameWithType: MemoryCache.CreateEntry(object)
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(object)
+  nameWithType.vb: MemoryCache.CreateEntry(Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(Object)
+  name.vb: CreateEntry(Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(System.Object)
+    name: CreateEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.createentry
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.CreateEntry(System.Object)
+    name: CreateEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.createentry
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.trygetvalue
+  name: TryGetValue(object, out object)
+  nameWithType: MemoryCache.TryGetValue(object, out object)
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(object, out object)
+  nameWithType.vb: MemoryCache.TryGetValue(Object, Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(Object, Object)
+  name.vb: TryGetValue(Object, Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(System.Object)
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(System.Object)
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.remove
+  name: Remove(object)
+  nameWithType: MemoryCache.Remove(object)
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(object)
+  nameWithType.vb: MemoryCache.Remove(Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Clear
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.Clear
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.clear
+  name: Clear()
+  nameWithType: MemoryCache.Clear()
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Clear()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.clear
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.getcurrentstatistics
+  name: GetCurrentStatistics()
+  nameWithType: MemoryCache.GetCurrentStatistics()
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics
+    name: GetCurrentStatistics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.getcurrentstatistics
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.GetCurrentStatistics
+    name: GetCurrentStatistics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.getcurrentstatistics
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(System.Double)
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(System.Double)
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.compact
+  name: Compact(double)
+  nameWithType: MemoryCache.Compact(double)
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(double)
+  nameWithType.vb: MemoryCache.Compact(Double)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(Double)
+  name.vb: Compact(Double)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(System.Double)
+    name: Compact
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.compact
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Compact(System.Double)
+    name: Compact
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.compact
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose
+  name: Dispose()
+  nameWithType: MemoryCache.Dispose()
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(System.Boolean)
+  commentId: M:Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(System.Boolean)
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose(system-boolean)
+  name: Dispose(bool)
+  nameWithType: MemoryCache.Dispose(bool)
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(bool)
+  nameWithType.vb: MemoryCache.Dispose(Boolean)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.dispose#microsoft-extensions-caching-memory-memorycache-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache.Count
+  commentId: P:Microsoft.Extensions.Caching.Memory.MemoryCache.Count
+  parent: Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache.count
+  name: Count
+  nameWithType: MemoryCache.Count
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache.Count
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  commentId: T:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+  parent: OpenSettings.Services.MemoryCache
+  href: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.html
+  name: OpenSettingsMemoryCache
+  nameWithType: OpenSettingsMemoryCache
+  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor*
+  commentId: Overload:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.#ctor
+  href: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.html#OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache__ctor_Microsoft_Extensions_Options_IOptions_Microsoft_Extensions_Caching_Memory_MemoryCacheOptions__
+  name: OpenSettingsMemoryCache
+  nameWithType: OpenSettingsMemoryCache.OpenSettingsMemoryCache
+  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.OpenSettingsMemoryCache
+  nameWithType.vb: OpenSettingsMemoryCache.New
+  fullName.vb: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.New
+  name.vb: New
+- uid: Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<MemoryCacheOptions>
+  nameWithType: IOptions<MemoryCacheOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.Memory.MemoryCacheOptions>
+  nameWithType.vb: IOptions(Of MemoryCacheOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Microsoft.Extensions.Caching.Memory.MemoryCacheOptions)
+  name.vb: IOptions(Of MemoryCacheOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheOptions
+    name: MemoryCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheoptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheOptions
+    name: MemoryCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheoptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging

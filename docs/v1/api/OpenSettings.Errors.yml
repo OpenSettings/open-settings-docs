@@ -1,0 +1,1559 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Errors
+  commentId: T:OpenSettings.Errors
+  id: Errors
+  parent: OpenSettings
+  children:
+  - OpenSettings.Errors.AppNotFound
+  - OpenSettings.Errors.ComputedIdentifierMustNotEmpty
+  - OpenSettings.Errors.ConfigSourceNotSupported
+  - OpenSettings.Errors.ConfigurationNotFound
+  - OpenSettings.Errors.ContentFetchFailed
+  - OpenSettings.Errors.DataChangeNotificationFailed
+  - OpenSettings.Errors.DbUpdateException
+  - OpenSettings.Errors.DuplicateComputedIdentifier
+  - OpenSettings.Errors.DuplicateSetting
+  - OpenSettings.Errors.DuplicateSortOrder
+  - OpenSettings.Errors.DuplicateTargetSetting
+  - OpenSettings.Errors.GeneratedSettingFileNotFound
+  - OpenSettings.Errors.GroupAlreadyExists
+  - OpenSettings.Errors.GroupNotFound
+  - OpenSettings.Errors.HistoryAlreadyRestored
+  - OpenSettings.Errors.HistoryNotFound
+  - OpenSettings.Errors.IdentifierAlreadyExists
+  - OpenSettings.Errors.IdentifierMustNotEmpty
+  - OpenSettings.Errors.IdentifierNotFound
+  - OpenSettings.Errors.IgnoreOnFileChangeNotSupported
+  - OpenSettings.Errors.InstanceNotFound
+  - OpenSettings.Errors.InvalidCredentials
+  - OpenSettings.Errors.InvalidLicenseKey
+  - OpenSettings.Errors.InvalidSettingData
+  - OpenSettings.Errors.LicenseAlreadyExists
+  - OpenSettings.Errors.LicenseExpired
+  - OpenSettings.Errors.LicenseNotFound
+  - OpenSettings.Errors.LicenseRevoked
+  - OpenSettings.Errors.LocalSettingNotFound
+  - OpenSettings.Errors.MappingAlreadyExists
+  - OpenSettings.Errors.MappingNotFound
+  - OpenSettings.Errors.MaxSortOrderReached
+  - OpenSettings.Errors.MinSortOrderReached
+  - OpenSettings.Errors.NameAlreadyExists
+  - OpenSettings.Errors.NoChanges
+  - OpenSettings.Errors.NotificationAlreadyExists
+  - OpenSettings.Errors.NotificationExpired
+  - OpenSettings.Errors.NotificationNotFound
+  - OpenSettings.Errors.ReferenceIdMustNotEmpty
+  - OpenSettings.Errors.RegistrationModeConfigureNotSupported
+  - OpenSettings.Errors.RegistrationModeSingletonNotSupported
+  - OpenSettings.Errors.SettingNotFound
+  - OpenSettings.Errors.SlugAlreadyExists
+  - OpenSettings.Errors.SortOrderBeingReprocessed
+  - OpenSettings.Errors.SourceGroupNotFound
+  - OpenSettings.Errors.SourceIdentifierNotFound
+  - OpenSettings.Errors.SourceTagNotFound
+  - OpenSettings.Errors.TagAlreadyExists
+  - OpenSettings.Errors.TagNotFound
+  - OpenSettings.Errors.TargetAppNotFound
+  - OpenSettings.Errors.TargetGroupNotFound
+  - OpenSettings.Errors.TargetIdentifierNotFound
+  - OpenSettings.Errors.TargetTagNotFound
+  - OpenSettings.Errors.UnrecognizedLicenseEdition
+  - OpenSettings.Errors.UserNotFound
+  - OpenSettings.Errors.UserNotMatched
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: Errors
+  fullName: OpenSettings.Errors
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Errors
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Defines error codes and their descriptions used throughout OpenSettings.
+
+    Error codes are categorized into ranges for better organization.
+  example: []
+  syntax:
+    content: public enum Errors
+    content.vb: Public Enum Errors
+- uid: OpenSettings.Errors.IdentifierMustNotEmpty
+  commentId: F:OpenSettings.Errors.IdentifierMustNotEmpty
+  id: IdentifierMustNotEmpty
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: IdentifierMustNotEmpty
+  nameWithType: Errors.IdentifierMustNotEmpty
+  fullName: OpenSettings.Errors.IdentifierMustNotEmpty
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierMustNotEmpty
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: IdentifierMustNotEmpty = 40000
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.ComputedIdentifierMustNotEmpty
+  commentId: F:OpenSettings.Errors.ComputedIdentifierMustNotEmpty
+  id: ComputedIdentifierMustNotEmpty
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: ComputedIdentifierMustNotEmpty
+  nameWithType: Errors.ComputedIdentifierMustNotEmpty
+  fullName: OpenSettings.Errors.ComputedIdentifierMustNotEmpty
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ComputedIdentifierMustNotEmpty
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: ComputedIdentifierMustNotEmpty = 40001
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.InvalidSettingData
+  commentId: F:OpenSettings.Errors.InvalidSettingData
+  id: InvalidSettingData
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: InvalidSettingData
+  nameWithType: Errors.InvalidSettingData
+  fullName: OpenSettings.Errors.InvalidSettingData
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InvalidSettingData
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: InvalidSettingData = 40002
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.NoChanges
+  commentId: F:OpenSettings.Errors.NoChanges
+  id: NoChanges
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: NoChanges
+  nameWithType: Errors.NoChanges
+  fullName: OpenSettings.Errors.NoChanges
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NoChanges
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: NoChanges = 40003
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MinSortOrderReached
+  commentId: F:OpenSettings.Errors.MinSortOrderReached
+  id: MinSortOrderReached
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MinSortOrderReached
+  nameWithType: Errors.MinSortOrderReached
+  fullName: OpenSettings.Errors.MinSortOrderReached
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MinSortOrderReached
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MinSortOrderReached = 40004
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MaxSortOrderReached
+  commentId: F:OpenSettings.Errors.MaxSortOrderReached
+  id: MaxSortOrderReached
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MaxSortOrderReached
+  nameWithType: Errors.MaxSortOrderReached
+  fullName: OpenSettings.Errors.MaxSortOrderReached
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MaxSortOrderReached
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MaxSortOrderReached = 40005
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SortOrderBeingReprocessed
+  commentId: F:OpenSettings.Errors.SortOrderBeingReprocessed
+  id: SortOrderBeingReprocessed
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SortOrderBeingReprocessed
+  nameWithType: Errors.SortOrderBeingReprocessed
+  fullName: OpenSettings.Errors.SortOrderBeingReprocessed
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SortOrderBeingReprocessed
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SortOrderBeingReprocessed = 40006
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.UserNotMatched
+  commentId: F:OpenSettings.Errors.UserNotMatched
+  id: UserNotMatched
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: UserNotMatched
+  nameWithType: Errors.UserNotMatched
+  fullName: OpenSettings.Errors.UserNotMatched
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserNotMatched
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 33
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: UserNotMatched = 40007
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.NotificationExpired
+  commentId: F:OpenSettings.Errors.NotificationExpired
+  id: NotificationExpired
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: NotificationExpired
+  nameWithType: Errors.NotificationExpired
+  fullName: OpenSettings.Errors.NotificationExpired
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationExpired
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 36
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: NotificationExpired = 40008
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.InvalidLicenseKey
+  commentId: F:OpenSettings.Errors.InvalidLicenseKey
+  id: InvalidLicenseKey
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: InvalidLicenseKey
+  nameWithType: Errors.InvalidLicenseKey
+  fullName: OpenSettings.Errors.InvalidLicenseKey
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InvalidLicenseKey
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 39
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: InvalidLicenseKey = 40009
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.LicenseExpired
+  commentId: F:OpenSettings.Errors.LicenseExpired
+  id: LicenseExpired
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: LicenseExpired
+  nameWithType: Errors.LicenseExpired
+  fullName: OpenSettings.Errors.LicenseExpired
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseExpired
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 42
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: LicenseExpired = 40010
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.LicenseRevoked
+  commentId: F:OpenSettings.Errors.LicenseRevoked
+  id: LicenseRevoked
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: LicenseRevoked
+  nameWithType: Errors.LicenseRevoked
+  fullName: OpenSettings.Errors.LicenseRevoked
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseRevoked
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 45
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: LicenseRevoked = 40011
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.ReferenceIdMustNotEmpty
+  commentId: F:OpenSettings.Errors.ReferenceIdMustNotEmpty
+  id: ReferenceIdMustNotEmpty
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: ReferenceIdMustNotEmpty
+  nameWithType: Errors.ReferenceIdMustNotEmpty
+  fullName: OpenSettings.Errors.ReferenceIdMustNotEmpty
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReferenceIdMustNotEmpty
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 48
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: ReferenceIdMustNotEmpty = 40012
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.UnrecognizedLicenseEdition
+  commentId: F:OpenSettings.Errors.UnrecognizedLicenseEdition
+  id: UnrecognizedLicenseEdition
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: UnrecognizedLicenseEdition
+  nameWithType: Errors.UnrecognizedLicenseEdition
+  fullName: OpenSettings.Errors.UnrecognizedLicenseEdition
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UnrecognizedLicenseEdition
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 51
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: UnrecognizedLicenseEdition = 40013
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.InvalidCredentials
+  commentId: F:OpenSettings.Errors.InvalidCredentials
+  id: InvalidCredentials
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: InvalidCredentials
+  nameWithType: Errors.InvalidCredentials
+  fullName: OpenSettings.Errors.InvalidCredentials
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InvalidCredentials
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 56
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: InvalidCredentials = 40100
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.IdentifierNotFound
+  commentId: F:OpenSettings.Errors.IdentifierNotFound
+  id: IdentifierNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: IdentifierNotFound
+  nameWithType: Errors.IdentifierNotFound
+  fullName: OpenSettings.Errors.IdentifierNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 62
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: IdentifierNotFound = 40400
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SourceIdentifierNotFound
+  commentId: F:OpenSettings.Errors.SourceIdentifierNotFound
+  id: SourceIdentifierNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SourceIdentifierNotFound
+  nameWithType: Errors.SourceIdentifierNotFound
+  fullName: OpenSettings.Errors.SourceIdentifierNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SourceIdentifierNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SourceIdentifierNotFound = 40401
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TargetIdentifierNotFound
+  commentId: F:OpenSettings.Errors.TargetIdentifierNotFound
+  id: TargetIdentifierNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TargetIdentifierNotFound
+  nameWithType: Errors.TargetIdentifierNotFound
+  fullName: OpenSettings.Errors.TargetIdentifierNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TargetIdentifierNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 68
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TargetIdentifierNotFound = 40402
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.HistoryNotFound
+  commentId: F:OpenSettings.Errors.HistoryNotFound
+  id: HistoryNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: HistoryNotFound
+  nameWithType: Errors.HistoryNotFound
+  fullName: OpenSettings.Errors.HistoryNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HistoryNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 71
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: HistoryNotFound = 40403
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SettingNotFound
+  commentId: F:OpenSettings.Errors.SettingNotFound
+  id: SettingNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SettingNotFound
+  nameWithType: Errors.SettingNotFound
+  fullName: OpenSettings.Errors.SettingNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SettingNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 74
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SettingNotFound = 40404
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.GroupNotFound
+  commentId: F:OpenSettings.Errors.GroupNotFound
+  id: GroupNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: GroupNotFound
+  nameWithType: Errors.GroupNotFound
+  fullName: OpenSettings.Errors.GroupNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GroupNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 77
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: GroupNotFound = 40405
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.InstanceNotFound
+  commentId: F:OpenSettings.Errors.InstanceNotFound
+  id: InstanceNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: InstanceNotFound
+  nameWithType: Errors.InstanceNotFound
+  fullName: OpenSettings.Errors.InstanceNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 80
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: InstanceNotFound = 40406
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.AppNotFound
+  commentId: F:OpenSettings.Errors.AppNotFound
+  id: AppNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: AppNotFound
+  nameWithType: Errors.AppNotFound
+  fullName: OpenSettings.Errors.AppNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AppNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 83
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: AppNotFound = 40407
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TagNotFound
+  commentId: F:OpenSettings.Errors.TagNotFound
+  id: TagNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TagNotFound
+  nameWithType: Errors.TagNotFound
+  fullName: OpenSettings.Errors.TagNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TagNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 86
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TagNotFound = 40408
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.UserNotFound
+  commentId: F:OpenSettings.Errors.UserNotFound
+  id: UserNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: UserNotFound
+  nameWithType: Errors.UserNotFound
+  fullName: OpenSettings.Errors.UserNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 89
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: UserNotFound = 40409
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SourceGroupNotFound
+  commentId: F:OpenSettings.Errors.SourceGroupNotFound
+  id: SourceGroupNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SourceGroupNotFound
+  nameWithType: Errors.SourceGroupNotFound
+  fullName: OpenSettings.Errors.SourceGroupNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SourceGroupNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 92
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SourceGroupNotFound = 40410
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TargetGroupNotFound
+  commentId: F:OpenSettings.Errors.TargetGroupNotFound
+  id: TargetGroupNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TargetGroupNotFound
+  nameWithType: Errors.TargetGroupNotFound
+  fullName: OpenSettings.Errors.TargetGroupNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TargetGroupNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 95
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TargetGroupNotFound = 40411
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TargetAppNotFound
+  commentId: F:OpenSettings.Errors.TargetAppNotFound
+  id: TargetAppNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TargetAppNotFound
+  nameWithType: Errors.TargetAppNotFound
+  fullName: OpenSettings.Errors.TargetAppNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TargetAppNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 98
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TargetAppNotFound = 40412
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SourceTagNotFound
+  commentId: F:OpenSettings.Errors.SourceTagNotFound
+  id: SourceTagNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SourceTagNotFound
+  nameWithType: Errors.SourceTagNotFound
+  fullName: OpenSettings.Errors.SourceTagNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SourceTagNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 101
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SourceTagNotFound = 40413
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TargetTagNotFound
+  commentId: F:OpenSettings.Errors.TargetTagNotFound
+  id: TargetTagNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TargetTagNotFound
+  nameWithType: Errors.TargetTagNotFound
+  fullName: OpenSettings.Errors.TargetTagNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TargetTagNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 104
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TargetTagNotFound = 40414
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MappingNotFound
+  commentId: F:OpenSettings.Errors.MappingNotFound
+  id: MappingNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MappingNotFound
+  nameWithType: Errors.MappingNotFound
+  fullName: OpenSettings.Errors.MappingNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MappingNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 107
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MappingNotFound = 40415
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.ConfigurationNotFound
+  commentId: F:OpenSettings.Errors.ConfigurationNotFound
+  id: ConfigurationNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationNotFound
+  nameWithType: Errors.ConfigurationNotFound
+  fullName: OpenSettings.Errors.ConfigurationNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ConfigurationNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 110
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: ConfigurationNotFound = 40416
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.LocalSettingNotFound
+  commentId: F:OpenSettings.Errors.LocalSettingNotFound
+  id: LocalSettingNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: LocalSettingNotFound
+  nameWithType: Errors.LocalSettingNotFound
+  fullName: OpenSettings.Errors.LocalSettingNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LocalSettingNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 113
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: LocalSettingNotFound = 40417
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.NotificationNotFound
+  commentId: F:OpenSettings.Errors.NotificationNotFound
+  id: NotificationNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: NotificationNotFound
+  nameWithType: Errors.NotificationNotFound
+  fullName: OpenSettings.Errors.NotificationNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 116
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: NotificationNotFound = 40418
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.GeneratedSettingFileNotFound
+  commentId: F:OpenSettings.Errors.GeneratedSettingFileNotFound
+  id: GeneratedSettingFileNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: GeneratedSettingFileNotFound
+  nameWithType: Errors.GeneratedSettingFileNotFound
+  fullName: OpenSettings.Errors.GeneratedSettingFileNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GeneratedSettingFileNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 119
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: GeneratedSettingFileNotFound = 40419
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.LicenseNotFound
+  commentId: F:OpenSettings.Errors.LicenseNotFound
+  id: LicenseNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: LicenseNotFound
+  nameWithType: Errors.LicenseNotFound
+  fullName: OpenSettings.Errors.LicenseNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 122
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: LicenseNotFound = 40420
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.ConfigSourceNotSupported
+  commentId: F:OpenSettings.Errors.ConfigSourceNotSupported
+  id: ConfigSourceNotSupported
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: ConfigSourceNotSupported
+  nameWithType: Errors.ConfigSourceNotSupported
+  fullName: OpenSettings.Errors.ConfigSourceNotSupported
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ConfigSourceNotSupported
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 127
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: ConfigSourceNotSupported = 40500
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.RegistrationModeSingletonNotSupported
+  commentId: F:OpenSettings.Errors.RegistrationModeSingletonNotSupported
+  id: RegistrationModeSingletonNotSupported
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: RegistrationModeSingletonNotSupported
+  nameWithType: Errors.RegistrationModeSingletonNotSupported
+  fullName: OpenSettings.Errors.RegistrationModeSingletonNotSupported
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationModeSingletonNotSupported
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 130
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: RegistrationModeSingletonNotSupported = 40501
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.RegistrationModeConfigureNotSupported
+  commentId: F:OpenSettings.Errors.RegistrationModeConfigureNotSupported
+  id: RegistrationModeConfigureNotSupported
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: RegistrationModeConfigureNotSupported
+  nameWithType: Errors.RegistrationModeConfigureNotSupported
+  fullName: OpenSettings.Errors.RegistrationModeConfigureNotSupported
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationModeConfigureNotSupported
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 133
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: RegistrationModeConfigureNotSupported = 40502
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.IgnoreOnFileChangeNotSupported
+  commentId: F:OpenSettings.Errors.IgnoreOnFileChangeNotSupported
+  id: IgnoreOnFileChangeNotSupported
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChangeNotSupported
+  nameWithType: Errors.IgnoreOnFileChangeNotSupported
+  fullName: OpenSettings.Errors.IgnoreOnFileChangeNotSupported
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChangeNotSupported
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 136
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: IgnoreOnFileChangeNotSupported = 40503
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.NameAlreadyExists
+  commentId: F:OpenSettings.Errors.NameAlreadyExists
+  id: NameAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: NameAlreadyExists
+  nameWithType: Errors.NameAlreadyExists
+  fullName: OpenSettings.Errors.NameAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NameAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 141
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: NameAlreadyExists = 40900
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.SlugAlreadyExists
+  commentId: F:OpenSettings.Errors.SlugAlreadyExists
+  id: SlugAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: SlugAlreadyExists
+  nameWithType: Errors.SlugAlreadyExists
+  fullName: OpenSettings.Errors.SlugAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SlugAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 144
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: SlugAlreadyExists = 40901
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.GroupAlreadyExists
+  commentId: F:OpenSettings.Errors.GroupAlreadyExists
+  id: GroupAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: GroupAlreadyExists
+  nameWithType: Errors.GroupAlreadyExists
+  fullName: OpenSettings.Errors.GroupAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GroupAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 147
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: GroupAlreadyExists = 40902
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.IdentifierAlreadyExists
+  commentId: F:OpenSettings.Errors.IdentifierAlreadyExists
+  id: IdentifierAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: IdentifierAlreadyExists
+  nameWithType: Errors.IdentifierAlreadyExists
+  fullName: OpenSettings.Errors.IdentifierAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 150
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: IdentifierAlreadyExists = 40903
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TagAlreadyExists
+  commentId: F:OpenSettings.Errors.TagAlreadyExists
+  id: TagAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TagAlreadyExists
+  nameWithType: Errors.TagAlreadyExists
+  fullName: OpenSettings.Errors.TagAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TagAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 153
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TagAlreadyExists = 40904
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MappingAlreadyExists
+  commentId: F:OpenSettings.Errors.MappingAlreadyExists
+  id: MappingAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MappingAlreadyExists
+  nameWithType: Errors.MappingAlreadyExists
+  fullName: OpenSettings.Errors.MappingAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MappingAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 156
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MappingAlreadyExists = 40905
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DuplicateSortOrder
+  commentId: F:OpenSettings.Errors.DuplicateSortOrder
+  id: DuplicateSortOrder
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DuplicateSortOrder
+  nameWithType: Errors.DuplicateSortOrder
+  fullName: OpenSettings.Errors.DuplicateSortOrder
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DuplicateSortOrder
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 159
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DuplicateSortOrder = 40906
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DuplicateSetting
+  commentId: F:OpenSettings.Errors.DuplicateSetting
+  id: DuplicateSetting
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DuplicateSetting
+  nameWithType: Errors.DuplicateSetting
+  fullName: OpenSettings.Errors.DuplicateSetting
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DuplicateSetting
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 162
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DuplicateSetting = 40907
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DuplicateTargetSetting
+  commentId: F:OpenSettings.Errors.DuplicateTargetSetting
+  id: DuplicateTargetSetting
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DuplicateTargetSetting
+  nameWithType: Errors.DuplicateTargetSetting
+  fullName: OpenSettings.Errors.DuplicateTargetSetting
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DuplicateTargetSetting
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 165
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DuplicateTargetSetting = 40908
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DuplicateComputedIdentifier
+  commentId: F:OpenSettings.Errors.DuplicateComputedIdentifier
+  id: DuplicateComputedIdentifier
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DuplicateComputedIdentifier
+  nameWithType: Errors.DuplicateComputedIdentifier
+  fullName: OpenSettings.Errors.DuplicateComputedIdentifier
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DuplicateComputedIdentifier
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 168
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DuplicateComputedIdentifier = 40909
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.HistoryAlreadyRestored
+  commentId: F:OpenSettings.Errors.HistoryAlreadyRestored
+  id: HistoryAlreadyRestored
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: HistoryAlreadyRestored
+  nameWithType: Errors.HistoryAlreadyRestored
+  fullName: OpenSettings.Errors.HistoryAlreadyRestored
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HistoryAlreadyRestored
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 171
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: HistoryAlreadyRestored = 40910
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.NotificationAlreadyExists
+  commentId: F:OpenSettings.Errors.NotificationAlreadyExists
+  id: NotificationAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: NotificationAlreadyExists
+  nameWithType: Errors.NotificationAlreadyExists
+  fullName: OpenSettings.Errors.NotificationAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 174
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: NotificationAlreadyExists = 40911
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.LicenseAlreadyExists
+  commentId: F:OpenSettings.Errors.LicenseAlreadyExists
+  id: LicenseAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: LicenseAlreadyExists
+  nameWithType: Errors.LicenseAlreadyExists
+  fullName: OpenSettings.Errors.LicenseAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 177
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: LicenseAlreadyExists = 40912
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DbUpdateException
+  commentId: F:OpenSettings.Errors.DbUpdateException
+  id: DbUpdateException
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DbUpdateException
+  nameWithType: Errors.DbUpdateException
+  fullName: OpenSettings.Errors.DbUpdateException
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DbUpdateException
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 182
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DbUpdateException = 50000
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.ContentFetchFailed
+  commentId: F:OpenSettings.Errors.ContentFetchFailed
+  id: ContentFetchFailed
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: ContentFetchFailed
+  nameWithType: Errors.ContentFetchFailed
+  fullName: OpenSettings.Errors.ContentFetchFailed
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ContentFetchFailed
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 185
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: ContentFetchFailed = 50001
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.DataChangeNotificationFailed
+  commentId: F:OpenSettings.Errors.DataChangeNotificationFailed
+  id: DataChangeNotificationFailed
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: DataChangeNotificationFailed
+  nameWithType: Errors.DataChangeNotificationFailed
+  fullName: OpenSettings.Errors.DataChangeNotificationFailed
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DataChangeNotificationFailed
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 188
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: DataChangeNotificationFailed = 50002
+    return:
+      type: OpenSettings.Errors
+references:
+- uid: OpenSettings
+  commentId: N:OpenSettings
+  href: OpenSettings.html
+  name: OpenSettings
+  nameWithType: OpenSettings
+  fullName: OpenSettings
+- uid: OpenSettings.Errors
+  commentId: T:OpenSettings.Errors
+  parent: OpenSettings
+  href: OpenSettings.Errors.html
+  name: Errors
+  nameWithType: Errors
+  fullName: OpenSettings.Errors

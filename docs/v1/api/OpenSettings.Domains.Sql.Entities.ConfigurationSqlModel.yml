@@ -1,0 +1,1369 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  id: ConfigurationSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationSqlModel
+  nameWithType: ConfigurationSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ConfigurationSqlModel
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents a configuration entity.
+  example: []
+  syntax:
+    content: >-
+      [Table("Configurations")]
+
+      public class ConfigurationSqlModel : EntityBase<int>
+    content.vb: >-
+      <Table("Configurations")>
+
+      Public Class ConfigurationSqlModel Inherits EntityBase(Of Integer)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Configurations
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+  id: AllowAnonymousAccess
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: AllowAnonymousAccess
+  nameWithType: ConfigurationSqlModel.AllowAnonymousAccess
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AllowAnonymousAccess
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Indicates whether anonymous access is allowed.
+  example: []
+  syntax:
+    content: public bool AllowAnonymousAccess { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AllowAnonymousAccess As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  id: StoreInSeparateFile
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: StoreInSeparateFile
+  nameWithType: ConfigurationSqlModel.StoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Determines whether the configuration should be stored in a separate file.
+  example: []
+  syntax:
+    content: public bool StoreInSeparateFile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StoreInSeparateFile As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  id: IgnoreIndividualStoreInSeparateFile
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IgnoreIndividualStoreInSeparateFile
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreIndividualStoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Specifies whether individual settings' <xref href="OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile" data-throw-if-not-resolved="false"></xref> values should be ignored,  
+
+    enforcing a global setting instead.
+  example: []
+  syntax:
+    content: public bool IgnoreIndividualStoreInSeparateFile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreIndividualStoreInSeparateFile As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+  id: IgnoreOnFileChange
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChange
+  nameWithType: ConfigurationSqlModel.IgnoreOnFileChange
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Indicates whether changes to the file should be ignored.
+  example: []
+  syntax:
+    content: public bool IgnoreOnFileChange { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreOnFileChange As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  id: IgnoreIndividualIgnoreOnFileChange
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IgnoreIndividualIgnoreOnFileChange
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreIndividualIgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 37
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Specifies whether individual settings' <xref href="OpenSettings.Domains.Sql.Entities.SettingSqlModel.IgnoreOnFileChange" data-throw-if-not-resolved="false"></xref> values should be ignored,  
+
+    enforcing a global setting instead.
+  example: []
+  syntax:
+    content: public bool IgnoreIndividualIgnoreOnFileChange { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreIndividualIgnoreOnFileChange As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: ConfigurationSqlModel.RegistrationMode
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 42
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Defines the registration mode used for the configuration.
+  example: []
+  syntax:
+    content: public RegistrationMode RegistrationMode { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RegistrationMode
+    content.vb: Public Property RegistrationMode As RegistrationMode
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  id: IgnoreIndividualRegistrationMode
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IgnoreIndividualRegistrationMode
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreIndividualRegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 48
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Specifies whether individual settings' <xref href="OpenSettings.Domains.Sql.Entities.SettingSqlModel.RegistrationMode" data-throw-if-not-resolved="false"></xref> values should be ignored,  
+
+    enforcing a global setting instead.
+  example: []
+  syntax:
+    content: public bool IgnoreIndividualRegistrationMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreIndividualRegistrationMode As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  id: Consumer
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Consumer
+  nameWithType: ConfigurationSqlModel.Consumer
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Consumer
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 54
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Represents the consumer associated with the configuration.  
+
+    When the service is running as a consumer, this will be used to define how the configuration is consumed or utilized.
+  example: []
+  syntax:
+    content: public ConfigurationConsumer Consumer { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationConsumer
+    content.vb: Public Property Consumer As ConfigurationConsumer
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+  id: Provider
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: ConfigurationSqlModel.Provider
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Provider
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 60
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Represents the provider associated with the configuration.  
+
+    When the service is running as a provider, this will be used to define how the configuration is supplied or retrieved.
+  example: []
+  syntax:
+    content: public ConfigurationProvider Provider { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationProvider
+    content.vb: Public Property Provider As ConfigurationProvider
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+  id: IdentifierId
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IdentifierId
+  nameWithType: ConfigurationSqlModel.IdentifierId
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The identifier associated with this configuration.
+  example: []
+  syntax:
+    content: public int IdentifierId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdentifierId As Integer
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+  id: AppId
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: AppId
+  nameWithType: ConfigurationSqlModel.AppId
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AppId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 70
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The app id associated with this configuration.
+  example: []
+  syntax:
+    content: public int AppId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AppId As Integer
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+  id: CreatedById
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedById
+  nameWithType: ConfigurationSqlModel.CreatedById
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedById
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 75
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The id of the user who created this configuration.
+  example: []
+  syntax:
+    content: public Guid? CreatedById { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property CreatedById As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+  id: UpdatedById
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UpdatedById
+  nameWithType: ConfigurationSqlModel.UpdatedById
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedById
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 80
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The id of the user who last updated this configuration.
+  example: []
+  syntax:
+    content: public Guid? UpdatedById { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property UpdatedById As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  id: RowVersion
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: RowVersion
+  nameWithType: ConfigurationSqlModel.RowVersion
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RowVersion
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 86
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    A concurrency token used for tracking changes.  
+
+    Helps prevent conflicts during concurrent updates.
+  example: []
+  syntax:
+    content: public byte[] RowVersion { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property RowVersion As Byte()
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+  id: Identifier
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: ConfigurationSqlModel.Identifier
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Identifier
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 91
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The identifier associated with this configuration.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("IdentifierId")]
+
+      public virtual IdentifierSqlModel Identifier { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
+    content.vb: >-
+      <ForeignKey("IdentifierId")>
+
+      Public Overridable Property Identifier As IdentifierSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IdentifierId
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+  id: App
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: App
+  nameWithType: ConfigurationSqlModel.App
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: App
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 97
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The application associated with this configuration.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("AppId")]
+
+      public virtual AppSqlModel App { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.AppSqlModel
+    content.vb: >-
+      <ForeignKey("AppId")>
+
+      Public Overridable Property App As AppSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AppId
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+  id: CreatedBy
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedBy
+  nameWithType: ConfigurationSqlModel.CreatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedBy
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 103
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The user who created this configuration.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("CreatedById")]
+
+      public virtual UserSqlModel CreatedBy { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    content.vb: >-
+      <ForeignKey("CreatedById")>
+
+      Public Overridable Property CreatedBy As UserSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CreatedById
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
+  id: UpdatedBy
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UpdatedBy
+  nameWithType: ConfigurationSqlModel.UpdatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedBy
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 109
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The user who last updated this configuration.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("UpdatedById")]
+
+      public virtual UserSqlModel UpdatedBy { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    content.vb: >-
+      <ForeignKey("UpdatedById")>
+
+      Public Overridable Property UpdatedBy As UserSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UpdatedById
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<int>
+  nameWithType: EntityBase<int>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>
+  nameWithType.vb: EntityBase(Of Integer)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer)
+  name.vb: EntityBase(Of Integer)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<int>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.Id
+  nameWithType.vb: EntityBase(Of Integer).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<int>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.CreatedOn
+  nameWithType.vb: EntityBase(Of Integer).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<int>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Integer).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_AllowAnonymousAccess
+  name: AllowAnonymousAccess
+  nameWithType: ConfigurationSqlModel.AllowAnonymousAccess
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: ConfigurationSqlModel.StoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: SettingSqlModel.StoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IgnoreIndividualStoreInSeparateFile
+  name: IgnoreIndividualStoreInSeparateFile
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualStoreInSeparateFile
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: ConfigurationSqlModel.IgnoreOnFileChange
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreOnFileChange
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IgnoreOnFileChange
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.IgnoreOnFileChange
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: SettingSqlModel.IgnoreOnFileChange
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IgnoreOnFileChange
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IgnoreIndividualIgnoreOnFileChange
+  name: IgnoreIndividualIgnoreOnFileChange
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualIgnoreOnFileChange
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_RegistrationMode
+  name: RegistrationMode
+  nameWithType: ConfigurationSqlModel.RegistrationMode
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.RegistrationMode
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.RegistrationMode
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_RegistrationMode
+  name: RegistrationMode
+  nameWithType: SettingSqlModel.RegistrationMode
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.RegistrationMode
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IgnoreIndividualRegistrationMode
+  name: IgnoreIndividualRegistrationMode
+  nameWithType: ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IgnoreIndividualRegistrationMode
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_Consumer
+  name: Consumer
+  nameWithType: ConfigurationSqlModel.Consumer
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+- uid: OpenSettings.Models.ConfigurationConsumer
+  commentId: T:OpenSettings.Models.ConfigurationConsumer
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationConsumer.html
+  name: ConfigurationConsumer
+  nameWithType: ConfigurationConsumer
+  fullName: OpenSettings.Models.ConfigurationConsumer
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_Provider
+  name: Provider
+  nameWithType: ConfigurationSqlModel.Provider
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
+- uid: OpenSettings.Models.ConfigurationProvider
+  commentId: T:OpenSettings.Models.ConfigurationProvider
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationProvider.html
+  name: ConfigurationProvider
+  nameWithType: ConfigurationProvider
+  fullName: OpenSettings.Models.ConfigurationProvider
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IdentifierId
+  name: IdentifierId
+  nameWithType: ConfigurationSqlModel.IdentifierId
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_AppId
+  name: AppId
+  nameWithType: ConfigurationSqlModel.AppId
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_CreatedById
+  name: CreatedById
+  nameWithType: ConfigurationSqlModel.CreatedById
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_UpdatedById
+  name: UpdatedById
+  nameWithType: ConfigurationSqlModel.UpdatedById
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_RowVersion
+  name: RowVersion
+  nameWithType: ConfigurationSqlModel.RowVersion
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_Identifier
+  name: Identifier
+  nameWithType: ConfigurationSqlModel.Identifier
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
+- uid: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel.html
+  name: IdentifierSqlModel
+  nameWithType: IdentifierSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_App
+  name: App
+  nameWithType: ConfigurationSqlModel.App
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
+- uid: OpenSettings.Domains.Sql.Entities.AppSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.AppSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.AppSqlModel.html
+  name: AppSqlModel
+  nameWithType: AppSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.AppSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_CreatedBy
+  name: CreatedBy
+  nameWithType: ConfigurationSqlModel.CreatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
+- uid: OpenSettings.Domains.Sql.Entities.UserSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.UserSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.UserSqlModel.html
+  name: UserSqlModel
+  nameWithType: UserSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.UserSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_UpdatedBy
+  name: UpdatedBy
+  nameWithType: ConfigurationSqlModel.UpdatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy

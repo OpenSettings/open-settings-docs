@@ -1,0 +1,1096 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.LicensesRestService
+  commentId: T:OpenSettings.Services.Rest.LicensesRestService
+  id: LicensesRestService
+  parent: OpenSettings.Services.Rest
+  children:
+  - OpenSettings.Services.Rest.LicensesRestService.#ctor(System.Net.Http.HttpClient)
+  - OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: LicensesRestService
+  nameWithType: LicensesRestService
+  fullName: OpenSettings.Services.Rest.LicensesRestService
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicensesRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: 'public class LicensesRestService : ILicensesRestService, ILicensesService'
+    content.vb: Public Class LicensesRestService Implements ILicensesRestService, ILicensesService
+  inheritance:
+  - System.Object
+  implements:
+  - OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  - OpenSettings.Services.Interfaces.ILicensesService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Services.Rest.LicensesRestService.#ctor(System.Net.Http.HttpClient)
+  commentId: M:OpenSettings.Services.Rest.LicensesRestService.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: OpenSettings.Services.Rest.LicensesRestService
+  langs:
+  - csharp
+  - vb
+  name: LicensesRestService(HttpClient)
+  nameWithType: LicensesRestService.LicensesRestService(HttpClient)
+  fullName: OpenSettings.Services.Rest.LicensesRestService.LicensesRestService(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public LicensesRestService(HttpClient httpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    content.vb: Public Sub New(httpClient As HttpClient)
+  overload: OpenSettings.Services.Rest.LicensesRestService.#ctor*
+  nameWithType.vb: LicensesRestService.New(HttpClient)
+  fullName.vb: OpenSettings.Services.Rest.LicensesRestService.New(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+- uid: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  id: GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.LicensesRestService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  nameWithType: LicensesRestService.GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedLicensesAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  summary: Retrieves a paginated list of licenses based on the provided input.
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> GetPaginatedLicensesAsync(GetPaginatedLicensesInput input, CancellationToken cancellationToken)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+      description: The input parameters for pagination and filtering.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      description: >-
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+
+        with the paginated list of licenses. See data type: <xref href="OpenSettings.Models.Responses.GetPaginatedLicensesResponse" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetPaginatedLicensesAsync(input As GetPaginatedLicensesInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  id: GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.LicensesRestService
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentLicenseAsync(CancellationToken)
+  nameWithType: LicensesRestService.GetCurrentLicenseAsync(CancellationToken)
+  fullName: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetCurrentLicenseAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 54
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  summary: Retrieves the current active license. This method never returns a failure.
+  example: []
+  syntax:
+    content: public Task<IJsonResponse<License>> GetCurrentLicenseAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
+      description: 'A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> with the license data. See data type: <xref href="OpenSettings.Models.License" data-throw-if-not-resolved="false"></xref>.'
+    content.vb: Public Function GetCurrentLicenseAsync(cancellationToken As CancellationToken) As Task(Of IJsonResponse(Of License))
+  overload: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  id: SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.LicensesRestService
+  langs:
+  - csharp
+  - vb
+  name: SaveLicenseAsync(string, CancellationToken)
+  nameWithType: LicensesRestService.SaveLicenseAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SaveLicenseAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 64
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  summary: Saves the provided license key.
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> SaveLicenseAsync(string licenseKey, CancellationToken cancellationToken)
+    parameters:
+    - id: licenseKey
+      type: System.String
+      description: The license key to be saved.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      description: >-
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+
+        with the license data. See data type: <xref href="OpenSettings.Models.License" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function SaveLicenseAsync(licenseKey As String, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: LicensesRestService.SaveLicenseAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync(String, System.Threading.CancellationToken)
+  name.vb: SaveLicenseAsync(String, CancellationToken)
+- uid: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  id: DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.LicensesRestService
+  langs:
+  - csharp
+  - vb
+  name: DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  nameWithType: LicensesRestService.DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/LicensesRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteLicenseAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
+    startLine: 77
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  summary: Deletes a license based on the provided input parameters.
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> DeleteLicenseAsync(DeleteLicenseInput input, CancellationToken cancellationToken)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteLicenseInput
+      description: The input parameters required to delete the license.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      description: >-
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+
+        indicating the success or failure of the operation.
+    content.vb: Public Function DeleteLicenseAsync(input As DeleteLicenseInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest
+  commentId: N:OpenSettings.Services.Rest
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest
+  nameWithType: OpenSettings.Services.Rest
+  fullName: OpenSettings.Services.Rest
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.Services.Rest.Interfaces.ILicensesRestService.html
+  name: ILicensesRestService
+  nameWithType: ILicensesRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+- uid: OpenSettings.Services.Interfaces.ILicensesService
+  commentId: T:OpenSettings.Services.Interfaces.ILicensesService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ILicensesService.html
+  name: ILicensesService
+  nameWithType: ILicensesService
+  fullName: OpenSettings.Services.Interfaces.ILicensesService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Rest.LicensesRestService.#ctor*
+  commentId: Overload:OpenSettings.Services.Rest.LicensesRestService.#ctor
+  href: OpenSettings.Services.Rest.LicensesRestService.html#OpenSettings_Services_Rest_LicensesRestService__ctor_System_Net_Http_HttpClient_
+  name: LicensesRestService
+  nameWithType: LicensesRestService.LicensesRestService
+  fullName: OpenSettings.Services.Rest.LicensesRestService.LicensesRestService
+  nameWithType.vb: LicensesRestService.New
+  fullName.vb: OpenSettings.Services.Rest.LicensesRestService.New
+  name.vb: New
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Ogu.Response.Json.IJsonResponse
+  commentId: T:Ogu.Response.Json.IJsonResponse
+  isExternal: true
+  name: IJsonResponse
+  nameWithType: IJsonResponse
+  fullName: Ogu.Response.Json.IJsonResponse
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse
+  commentId: T:OpenSettings.Models.Responses.GetPaginatedLicensesResponse
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.html
+  name: GetPaginatedLicensesResponse
+  nameWithType: GetPaginatedLicensesResponse
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponse
+- uid: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync*
+  commentId: Overload:OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync
+  href: OpenSettings.Services.Rest.LicensesRestService.html#OpenSettings_Services_Rest_LicensesRestService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  name: GetPaginatedLicensesAsync
+  nameWithType: LicensesRestService.GetPaginatedLicensesAsync
+  fullName: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync
+- uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  name: GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  nameWithType: ILicensesService.GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+    name: GetPaginatedLicensesAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+    name: GetPaginatedLicensesInput
+    href: OpenSettings.Models.Inputs.GetPaginatedLicensesInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+    name: GetPaginatedLicensesAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+    name: GetPaginatedLicensesInput
+    href: OpenSettings.Models.Inputs.GetPaginatedLicensesInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+  commentId: T:OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetPaginatedLicensesInput.html
+  name: GetPaginatedLicensesInput
+  nameWithType: GetPaginatedLicensesInput
+  fullName: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Models.License
+  commentId: T:OpenSettings.Models.License
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.License.html
+  name: License
+  nameWithType: License
+  fullName: OpenSettings.Models.License
+- uid: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync*
+  commentId: Overload:OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync
+  href: OpenSettings.Services.Rest.LicensesRestService.html#OpenSettings_Services_Rest_LicensesRestService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  name: GetCurrentLicenseAsync
+  nameWithType: LicensesRestService.GetCurrentLicenseAsync
+  fullName: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync
+- uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  name: GetCurrentLicenseAsync(CancellationToken)
+  nameWithType: ILicensesService.GetCurrentLicenseAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+    name: GetCurrentLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+    name: GetCurrentLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<License>>
+  nameWithType: Task<IJsonResponse<License>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.License>>
+  nameWithType.vb: Task(Of IJsonResponse(Of License))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.License))
+  name.vb: Task(Of IJsonResponse(Of License))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.License
+    name: License
+    href: OpenSettings.Models.License.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.License
+    name: License
+    href: OpenSettings.Models.License.html
+  - name: )
+  - name: )
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync*
+  commentId: Overload:OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync
+  href: OpenSettings.Services.Rest.LicensesRestService.html#OpenSettings_Services_Rest_LicensesRestService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  name: SaveLicenseAsync
+  nameWithType: LicensesRestService.SaveLicenseAsync
+  fullName: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync
+- uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  name: SaveLicenseAsync(string, CancellationToken)
+  nameWithType: ILicensesService.SaveLicenseAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: ILicensesService.SaveLicenseAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(String, System.Threading.CancellationToken)
+  name.vb: SaveLicenseAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+    name: SaveLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+    name: SaveLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync*
+  commentId: Overload:OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync
+  href: OpenSettings.Services.Rest.LicensesRestService.html#OpenSettings_Services_Rest_LicensesRestService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  name: DeleteLicenseAsync
+  nameWithType: LicensesRestService.DeleteLicenseAsync
+  fullName: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync
+- uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  name: DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  nameWithType: ILicensesService.DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+    name: DeleteLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+    name: DeleteLicenseInput
+    href: OpenSettings.Models.Inputs.DeleteLicenseInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+    name: DeleteLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+    name: DeleteLicenseInput
+    href: OpenSettings.Models.Inputs.DeleteLicenseInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteLicenseInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteLicenseInput.html
+  name: DeleteLicenseInput
+  nameWithType: DeleteLicenseInput
+  fullName: OpenSettings.Models.Inputs.DeleteLicenseInput

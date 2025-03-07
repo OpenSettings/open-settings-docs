@@ -1,0 +1,651 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IAppsRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppsRestService
+  id: IAppsRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAppsRestService
+  nameWithType: IAppsRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppsRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/IAppsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAppsRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/IAppsRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IAppsRestService : IAppsService'
+    content.vb: Public Interface IAppsRestService Inherits IAppsService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppsAsync_OpenSettings_Models_Inputs_GetGroupedAppsInput_System_Threading_CancellationToken_
+  name: GetGroupedAppsAsync(GetGroupedAppsInput, CancellationToken)
+  nameWithType: IAppsService.GetGroupedAppsAsync(GetGroupedAppsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
+    name: GetGroupedAppsAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppsAsync_OpenSettings_Models_Inputs_GetGroupedAppsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppsInput
+    name: GetGroupedAppsInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
+    name: GetGroupedAppsAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppsAsync_OpenSettings_Models_Inputs_GetGroupedAppsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppsInput
+    name: GetGroupedAppsInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppByIdAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  name: GetAppByIdAsync(GetAppInput, CancellationToken)
+  nameWithType: IAppsService.GetAppByIdAsync(GetAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+    name: GetAppByIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppByIdAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppInput
+    name: GetAppInput
+    href: OpenSettings.Models.Inputs.GetAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+    name: GetAppByIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppByIdAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppInput
+    name: GetAppInput
+    href: OpenSettings.Models.Inputs.GetAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppBySlugAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  name: GetAppBySlugAsync(GetAppInput, CancellationToken)
+  nameWithType: IAppsService.GetAppBySlugAsync(GetAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+    name: GetAppBySlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppBySlugAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppInput
+    name: GetAppInput
+    href: OpenSettings.Models.Inputs.GetAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
+    name: GetAppBySlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppBySlugAsync_OpenSettings_Models_Inputs_GetAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppInput
+    name: GetAppInput
+    href: OpenSettings.Models.Inputs.GetAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_UpdateAppAsync_OpenSettings_Models_Inputs_UpdateAppInput_System_Threading_CancellationToken_
+  name: UpdateAppAsync(UpdateAppInput, CancellationToken)
+  nameWithType: IAppsService.UpdateAppAsync(UpdateAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
+    name: UpdateAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_UpdateAppAsync_OpenSettings_Models_Inputs_UpdateAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppInput
+    name: UpdateAppInput
+    href: OpenSettings.Models.Inputs.UpdateAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
+    name: UpdateAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_UpdateAppAsync_OpenSettings_Models_Inputs_UpdateAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppInput
+    name: UpdateAppInput
+    href: OpenSettings.Models.Inputs.UpdateAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetRegisteredAppAsync_OpenSettings_Models_Inputs_GetRegisteredAppInput_System_Threading_CancellationToken_
+  name: GetRegisteredAppAsync(GetRegisteredAppInput, CancellationToken)
+  nameWithType: IAppsService.GetRegisteredAppAsync(GetRegisteredAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
+    name: GetRegisteredAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetRegisteredAppAsync_OpenSettings_Models_Inputs_GetRegisteredAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetRegisteredAppInput
+    name: GetRegisteredAppInput
+    href: OpenSettings.Models.Inputs.GetRegisteredAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
+    name: GetRegisteredAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetRegisteredAppAsync_OpenSettings_Models_Inputs_GetRegisteredAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetRegisteredAppInput
+    name: GetRegisteredAppInput
+    href: OpenSettings.Models.Inputs.GetRegisteredAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_FetchAppDataAsync_OpenSettings_Models_Inputs_FetchAppDataInput_System_Threading_CancellationToken_
+  name: FetchAppDataAsync(FetchAppDataInput, CancellationToken)
+  nameWithType: IAppsService.FetchAppDataAsync(FetchAppDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
+    name: FetchAppDataAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_FetchAppDataAsync_OpenSettings_Models_Inputs_FetchAppDataInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.FetchAppDataInput
+    name: FetchAppDataInput
+    href: OpenSettings.Models.Inputs.FetchAppDataInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
+    name: FetchAppDataAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_FetchAppDataAsync_OpenSettings_Models_Inputs_FetchAppDataInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.FetchAppDataInput
+    name: FetchAppDataInput
+    href: OpenSettings.Models.Inputs.FetchAppDataInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_SyncAppDataAsync_OpenSettings_Models_Inputs_SyncAppDataInput_System_Threading_CancellationToken_
+  name: SyncAppDataAsync(SyncAppDataInput, CancellationToken)
+  nameWithType: IAppsService.SyncAppDataAsync(SyncAppDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
+    name: SyncAppDataAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_SyncAppDataAsync_OpenSettings_Models_Inputs_SyncAppDataInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInput
+    name: SyncAppDataInput
+    href: OpenSettings.Models.Inputs.SyncAppDataInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
+    name: SyncAppDataAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_SyncAppDataAsync_OpenSettings_Models_Inputs_SyncAppDataInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.SyncAppDataInput
+    name: SyncAppDataInput
+    href: OpenSettings.Models.Inputs.SyncAppDataInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppsAsync_OpenSettings_Models_Inputs_GetAppsInput_System_Threading_CancellationToken_
+  name: GetAppsAsync(GetAppsInput, CancellationToken)
+  nameWithType: IAppsService.GetAppsAsync(GetAppsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
+    name: GetAppsAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppsAsync_OpenSettings_Models_Inputs_GetAppsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppsInput
+    name: GetAppsInput
+    href: OpenSettings.Models.Inputs.GetAppsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
+    name: GetAppsAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetAppsAsync_OpenSettings_Models_Inputs_GetAppsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppsInput
+    name: GetAppsInput
+    href: OpenSettings.Models.Inputs.GetAppsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_CreateAppAsync_OpenSettings_Models_Inputs_CreateAppInput_System_Threading_CancellationToken_
+  name: CreateAppAsync(CreateAppInput, CancellationToken)
+  nameWithType: IAppsService.CreateAppAsync(CreateAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
+    name: CreateAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_CreateAppAsync_OpenSettings_Models_Inputs_CreateAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppInput
+    name: CreateAppInput
+    href: OpenSettings.Models.Inputs.CreateAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
+    name: CreateAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_CreateAppAsync_OpenSettings_Models_Inputs_CreateAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppInput
+    name: CreateAppInput
+    href: OpenSettings.Models.Inputs.CreateAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  name: GetGroupedAppDataByAppIdAsync(GetGroupedAppDataByAppInput, CancellationToken)
+  nameWithType: IAppsService.GetGroupedAppDataByAppIdAsync(GetGroupedAppDataByAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
+    name: GetGroupedAppDataByAppInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
+    name: GetGroupedAppDataByAppInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  name: GetGroupedAppDataByAppSlugAsync(GetGroupedAppDataByAppInput, CancellationToken)
+  nameWithType: IAppsService.GetGroupedAppDataByAppSlugAsync(GetGroupedAppDataByAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
+    name: GetGroupedAppDataByAppInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
+    name: GetGroupedAppDataByAppInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetGroupedAppDataByAppIdAndIdentifierIdAsync(GetGroupedAppDataByAppAndIdentifierInput, CancellationToken)
+  nameWithType: IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(GetGroupedAppDataByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppIdAndIdentifierIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
+    name: GetGroupedAppDataByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppIdAndIdentifierIdAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
+    name: GetGroupedAppDataByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(GetGroupedAppDataByAppAndIdentifierInput, CancellationToken)
+  nameWithType: IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(GetGroupedAppDataByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppSlugAndIdentifierSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
+    name: GetGroupedAppDataByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetGroupedAppDataByAppSlugAndIdentifierSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_GetGroupedAppDataByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetGroupedAppDataByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
+    name: GetGroupedAppDataByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_DeleteAppAsync_OpenSettings_Models_Inputs_DeleteAppInput_System_Threading_CancellationToken_
+  name: DeleteAppAsync(DeleteAppInput, CancellationToken)
+  nameWithType: IAppsService.DeleteAppAsync(DeleteAppInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
+    name: DeleteAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_DeleteAppAsync_OpenSettings_Models_Inputs_DeleteAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppInput
+    name: DeleteAppInput
+    href: OpenSettings.Models.Inputs.DeleteAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
+    name: DeleteAppAsync
+    href: OpenSettings.Services.Interfaces.IAppsService.html#OpenSettings_Services_Interfaces_IAppsService_DeleteAppAsync_OpenSettings_Models_Inputs_DeleteAppInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppInput
+    name: DeleteAppInput
+    href: OpenSettings.Models.Inputs.DeleteAppInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppsService
+  commentId: T:OpenSettings.Services.Interfaces.IAppsService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IAppsService.html
+  name: IAppsService
+  nameWithType: IAppsService
+  fullName: OpenSettings.Services.Interfaces.IAppsService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

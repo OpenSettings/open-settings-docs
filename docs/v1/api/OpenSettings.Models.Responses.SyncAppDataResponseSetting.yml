@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  commentId: T:OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  id: SyncAppDataResponseSetting
+  parent: OpenSettings.Models.Responses
+  children:
+  - OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+  - OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+  - OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+  - OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+  - OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+  langs:
+  - csharp
+  - vb
+  name: SyncAppDataResponseSetting
+  nameWithType: SyncAppDataResponseSetting
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SyncAppDataResponseSetting
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public class SyncAppDataResponseSetting
+    content.vb: Public Class SyncAppDataResponseSetting
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+  id: ComputedIdentifier
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: ComputedIdentifier
+  nameWithType: SyncAppDataResponseSetting.ComputedIdentifier
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ComputedIdentifier
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Guid ComputedIdentifier { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ComputedIdentifier As Guid
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+  id: Data
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: SyncAppDataResponseSetting.Data
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Data
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Data { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Data As String
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+  id: StoreInSeparateFile
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: StoreInSeparateFile
+  nameWithType: SyncAppDataResponseSetting.StoreInSeparateFile
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public bool StoreInSeparateFile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StoreInSeparateFile As Boolean
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+  id: IgnoreOnFileChange
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChange
+  nameWithType: SyncAppDataResponseSetting.IgnoreOnFileChange
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public bool? IgnoreOnFileChange { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IgnoreOnFileChange As Boolean?
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: SyncAppDataResponseSetting.RegistrationMode
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseSetting.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public RegistrationMode RegistrationMode { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RegistrationMode
+    content.vb: Public Property RegistrationMode As RegistrationMode
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode*
+references:
+- uid: OpenSettings.Models.Responses
+  commentId: N:OpenSettings.Models.Responses
+  href: OpenSettings.html
+  name: OpenSettings.Models.Responses
+  nameWithType: OpenSettings.Models.Responses
+  fullName: OpenSettings.Models.Responses
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+  href: OpenSettings.Models.Responses.SyncAppDataResponseSetting.html#OpenSettings_Models_Responses_SyncAppDataResponseSetting_ComputedIdentifier
+  name: ComputedIdentifier
+  nameWithType: SyncAppDataResponseSetting.ComputedIdentifier
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.ComputedIdentifier
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+  href: OpenSettings.Models.Responses.SyncAppDataResponseSetting.html#OpenSettings_Models_Responses_SyncAppDataResponseSetting_Data
+  name: Data
+  nameWithType: SyncAppDataResponseSetting.Data
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.Data
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+  href: OpenSettings.Models.Responses.SyncAppDataResponseSetting.html#OpenSettings_Models_Responses_SyncAppDataResponseSetting_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: SyncAppDataResponseSetting.StoreInSeparateFile
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.StoreInSeparateFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+  href: OpenSettings.Models.Responses.SyncAppDataResponseSetting.html#OpenSettings_Models_Responses_SyncAppDataResponseSetting_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: SyncAppDataResponseSetting.IgnoreOnFileChange
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.IgnoreOnFileChange
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+  href: OpenSettings.Models.Responses.SyncAppDataResponseSetting.html#OpenSettings_Models_Responses_SyncAppDataResponseSetting_RegistrationMode
+  name: RegistrationMode
+  nameWithType: SyncAppDataResponseSetting.RegistrationMode
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseSetting.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html

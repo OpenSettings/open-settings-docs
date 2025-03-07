@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  commentId: T:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  id: GetPaginatedIdentifiersResponse
+  parent: OpenSettings.Models.Responses
+  children:
+  - OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
+  - OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+  - OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder
+  - OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+  - OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedIdentifiersResponse
+  nameWithType: GetPaginatedIdentifiersResponse
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedIdentifiersResponse
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public class GetPaginatedIdentifiersResponse
+    content.vb: Public Class GetPaginatedIdentifiersResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
+  commentId: M:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
+  id: '#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)'
+  parent: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedIdentifiersResponse(GetPaginatedInput, int, ModelForPaginatedResponseData[], int, int)
+  nameWithType: GetPaginatedIdentifiersResponse.GetPaginatedIdentifiersResponse(GetPaginatedInput, int, ModelForPaginatedResponseData[], int, int)
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.GetPaginatedIdentifiersResponse(OpenSettings.Models.Inputs.GetPaginatedInput, int, OpenSettings.Models.Responses.ModelForPaginatedResponseData[], int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetPaginatedIdentifiersResponse(GetPaginatedInput input, int itemCount, ModelForPaginatedResponseData[] identifiers, int minSortOrder, int maxSortOrder)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetPaginatedInput
+    - id: itemCount
+      type: System.Int32
+    - id: identifiers
+      type: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
+    - id: minSortOrder
+      type: System.Int32
+    - id: maxSortOrder
+      type: System.Int32
+    content.vb: Public Sub New(input As GetPaginatedInput, itemCount As Integer, identifiers As ModelForPaginatedResponseData(), minSortOrder As Integer, maxSortOrder As Integer)
+  overload: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor*
+  nameWithType.vb: GetPaginatedIdentifiersResponse.New(GetPaginatedInput, Integer, ModelForPaginatedResponseData(), Integer, Integer)
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.New(OpenSettings.Models.Inputs.GetPaginatedInput, Integer, OpenSettings.Models.Responses.ModelForPaginatedResponseData(), Integer, Integer)
+  name.vb: New(GetPaginatedInput, Integer, ModelForPaginatedResponseData(), Integer, Integer)
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+  id: PagingInfo
+  parent: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: PagingInfo
+  nameWithType: GetPaginatedIdentifiersResponse.PagingInfo
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PagingInfo
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public PagingInfo PagingInfo { get; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.PagingInfo
+    content.vb: Public ReadOnly Property PagingInfo As PagingInfo
+  overload: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo*
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+  id: Identifiers
+  parent: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: Identifiers
+  nameWithType: GetPaginatedIdentifiersResponse.Identifiers
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Identifiers
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ModelForPaginatedResponseData[] Identifiers { get; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
+    content.vb: Public ReadOnly Property Identifiers As ModelForPaginatedResponseData()
+  overload: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers*
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+  id: MinSortOrder
+  parent: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: MinSortOrder
+  nameWithType: GetPaginatedIdentifiersResponse.MinSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MinSortOrder
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public int MinSortOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MinSortOrder As Integer
+  overload: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder*
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder
+  id: MaxSortOrder
+  parent: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: MaxSortOrder
+  nameWithType: GetPaginatedIdentifiersResponse.MaxSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MaxSortOrder
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedSettingIdentifiersResponse.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public int MaxSortOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxSortOrder As Integer
+  overload: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder*
+references:
+- uid: OpenSettings.Models.Responses
+  commentId: N:OpenSettings.Models.Responses
+  href: OpenSettings.html
+  name: OpenSettings.Models.Responses
+  nameWithType: OpenSettings.Models.Responses
+  fullName: OpenSettings.Models.Responses
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.#ctor
+  href: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.html#OpenSettings_Models_Responses_GetPaginatedIdentifiersResponse__ctor_OpenSettings_Models_Inputs_GetPaginatedInput_System_Int32_OpenSettings_Models_Responses_ModelForPaginatedResponseData___System_Int32_System_Int32_
+  name: GetPaginatedIdentifiersResponse
+  nameWithType: GetPaginatedIdentifiersResponse.GetPaginatedIdentifiersResponse
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.GetPaginatedIdentifiersResponse
+  nameWithType.vb: GetPaginatedIdentifiersResponse.New
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.New
+  name.vb: New
+- uid: OpenSettings.Models.Inputs.GetPaginatedInput
+  commentId: T:OpenSettings.Models.Inputs.GetPaginatedInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  name: GetPaginatedInput
+  nameWithType: GetPaginatedInput
+  fullName: OpenSettings.Models.Inputs.GetPaginatedInput
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
+  isExternal: true
+  href: OpenSettings.Models.Responses.ModelForPaginatedResponseData.html
+  name: ModelForPaginatedResponseData[]
+  nameWithType: ModelForPaginatedResponseData[]
+  fullName: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
+  nameWithType.vb: ModelForPaginatedResponseData()
+  fullName.vb: OpenSettings.Models.Responses.ModelForPaginatedResponseData()
+  name.vb: ModelForPaginatedResponseData()
+  spec.csharp:
+  - uid: OpenSettings.Models.Responses.ModelForPaginatedResponseData
+    name: ModelForPaginatedResponseData
+    href: OpenSettings.Models.Responses.ModelForPaginatedResponseData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenSettings.Models.Responses.ModelForPaginatedResponseData
+    name: ModelForPaginatedResponseData
+    href: OpenSettings.Models.Responses.ModelForPaginatedResponseData.html
+  - name: (
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+  href: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.html#OpenSettings_Models_Responses_GetPaginatedIdentifiersResponse_PagingInfo
+  name: PagingInfo
+  nameWithType: GetPaginatedIdentifiersResponse.PagingInfo
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.PagingInfo
+- uid: OpenSettings.Models.PagingInfo
+  commentId: T:OpenSettings.Models.PagingInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.PagingInfo.html
+  name: PagingInfo
+  nameWithType: PagingInfo
+  fullName: OpenSettings.Models.PagingInfo
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+  href: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.html#OpenSettings_Models_Responses_GetPaginatedIdentifiersResponse_Identifiers
+  name: Identifiers
+  nameWithType: GetPaginatedIdentifiersResponse.Identifiers
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.Identifiers
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+  href: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.html#OpenSettings_Models_Responses_GetPaginatedIdentifiersResponse_MinSortOrder
+  name: MinSortOrder
+  nameWithType: GetPaginatedIdentifiersResponse.MinSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MinSortOrder
+- uid: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder
+  href: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.html#OpenSettings_Models_Responses_GetPaginatedIdentifiersResponse_MaxSortOrder
+  name: MaxSortOrder
+  nameWithType: GetPaginatedIdentifiersResponse.MaxSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedIdentifiersResponse.MaxSortOrder

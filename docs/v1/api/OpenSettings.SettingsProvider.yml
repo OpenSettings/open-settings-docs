@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.SettingsProvider
+  commentId: T:OpenSettings.SettingsProvider
+  id: SettingsProvider
+  parent: OpenSettings
+  children:
+  - OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.String)
+  - OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.Type)
+  - OpenSettings.SettingsProvider.GetLocalSettingOrDefault``1
+  - OpenSettings.SettingsProvider.GetRegistrationMode(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SettingsProvider
+  nameWithType: SettingsProvider
+  fullName: OpenSettings.SettingsProvider
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/SettingsProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SettingsProvider
+    path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Provides static methods to retrieve local setting data and registration modes 
+
+    associated with settings. This class allows accessing settings by their type, 
+
+    full name, or other criteria, without needing to instantiate individual setting objects.
+  example: []
+  syntax:
+    content: public static class SettingsProvider
+    content.vb: Public Module SettingsProvider
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.SettingsProvider.GetLocalSettingOrDefault``1
+  commentId: M:OpenSettings.SettingsProvider.GetLocalSettingOrDefault``1
+  id: GetLocalSettingOrDefault``1
+  parent: OpenSettings.SettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLocalSettingOrDefault<T>()
+  nameWithType: SettingsProvider.GetLocalSettingOrDefault<T>()
+  fullName: OpenSettings.SettingsProvider.GetLocalSettingOrDefault<T>()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/SettingsProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetLocalSettingOrDefault
+    path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Retrieves the local setting data associated with the specified <code class="typeparamref">T</code> setting type.
+
+    If the setting data is found, it is returned; otherwise, <code>null</code> is returned.
+  example: []
+  syntax:
+    content: 'public static T GetLocalSettingOrDefault<T>() where T : ISettings'
+    typeParameters:
+    - id: T
+      description: The type of the setting to retrieve. The type must implement <xref href="OpenSettings.Services.Interfaces.ISettings" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: '{T}'
+      description: The local setting data associated with the setting, or <code>null</code> if no data is found.
+    content.vb: Public Shared Function GetLocalSettingOrDefault(Of T As ISettings)() As T
+  overload: OpenSettings.SettingsProvider.GetLocalSettingOrDefault*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="typeparamref">T</code> is null.
+  nameWithType.vb: SettingsProvider.GetLocalSettingOrDefault(Of T)()
+  fullName.vb: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(Of T)()
+  name.vb: GetLocalSettingOrDefault(Of T)()
+- uid: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.Type)
+  commentId: M:OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.Type)
+  id: GetLocalSettingOrDefault(System.Type)
+  parent: OpenSettings.SettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLocalSettingOrDefault(Type)
+  nameWithType: SettingsProvider.GetLocalSettingOrDefault(Type)
+  fullName: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/SettingsProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetLocalSettingOrDefault
+    path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
+    startLine: 32
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Retrieves the local setting data associated with the specified <xref href="System.Type" data-throw-if-not-resolved="false"></xref> setting type.
+
+    If the setting data is found, it is returned; otherwise, <code>null</code> is returned.
+  example: []
+  syntax:
+    content: public static object GetLocalSettingOrDefault(Type settingType)
+    parameters:
+    - id: settingType
+      type: System.Type
+      description: The type of the setting to retrieve.
+    return:
+      type: System.Object
+      description: The local setting data associated with the setting, or <code>null</code> if no data is found.
+    content.vb: Public Shared Function GetLocalSettingOrDefault(settingType As Type) As Object
+  overload: OpenSettings.SettingsProvider.GetLocalSettingOrDefault*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">settingType</code> is null.
+- uid: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.String)
+  commentId: M:OpenSettings.SettingsProvider.GetLocalSettingOrDefault(System.String)
+  id: GetLocalSettingOrDefault(System.String)
+  parent: OpenSettings.SettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLocalSettingOrDefault(string)
+  nameWithType: SettingsProvider.GetLocalSettingOrDefault(string)
+  fullName: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/SettingsProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetLocalSettingOrDefault
+    path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
+    startLine: 44
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Retrieves the local setting data associated with the specified setting's full name.
+
+    If the setting data is found, it is returned; otherwise, <code>null</code> is returned.
+  example: []
+  syntax:
+    content: public static object GetLocalSettingOrDefault(string settingFullName)
+    parameters:
+    - id: settingFullName
+      type: System.String
+      description: The full name of the setting to retrieve.
+    return:
+      type: System.Object
+      description: The local setting data associated with the setting, or <code>null</code> if no data is found.
+    content.vb: Public Shared Function GetLocalSettingOrDefault(settingFullName As String) As Object
+  overload: OpenSettings.SettingsProvider.GetLocalSettingOrDefault*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">settingFullName</code> is null or empty.
+  nameWithType.vb: SettingsProvider.GetLocalSettingOrDefault(String)
+  fullName.vb: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(String)
+  name.vb: GetLocalSettingOrDefault(String)
+- uid: OpenSettings.SettingsProvider.GetRegistrationMode(System.String)
+  commentId: M:OpenSettings.SettingsProvider.GetRegistrationMode(System.String)
+  id: GetRegistrationMode(System.String)
+  parent: OpenSettings.SettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: GetRegistrationMode(string)
+  nameWithType: SettingsProvider.GetRegistrationMode(string)
+  fullName: OpenSettings.SettingsProvider.GetRegistrationMode(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/SettingsProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetRegistrationMode
+    path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
+    startLine: 58
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Retrieves the registration mode associated with the specified setting's full name.
+
+    If the registration mode is found, it is returned; otherwise, <code>null</code> is returned.
+  example: []
+  syntax:
+    content: public static RegistrationMode? GetRegistrationMode(string settingFullName)
+    parameters:
+    - id: settingFullName
+      type: System.String
+      description: The full name of the setting to retrieve the registration mode for.
+    return:
+      type: System.Nullable{OpenSettings.Models.RegistrationMode}
+      description: A nullable <xref href="OpenSettings.Models.RegistrationMode" data-throw-if-not-resolved="false"></xref> indicating the registration mode of the setting, or <code>null</code> if not found.
+    content.vb: Public Shared Function GetRegistrationMode(settingFullName As String) As RegistrationMode?
+  overload: OpenSettings.SettingsProvider.GetRegistrationMode*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">settingFullName</code> is null or empty.
+  nameWithType.vb: SettingsProvider.GetRegistrationMode(String)
+  fullName.vb: OpenSettings.SettingsProvider.GetRegistrationMode(String)
+  name.vb: GetRegistrationMode(String)
+references:
+- uid: OpenSettings
+  commentId: N:OpenSettings
+  href: OpenSettings.html
+  name: OpenSettings
+  nameWithType: OpenSettings
+  fullName: OpenSettings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.Interfaces.ISettings
+  commentId: T:OpenSettings.Services.Interfaces.ISettings
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ISettings.html
+  name: ISettings
+  nameWithType: ISettings
+  fullName: OpenSettings.Services.Interfaces.ISettings
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: OpenSettings.SettingsProvider.GetLocalSettingOrDefault*
+  commentId: Overload:OpenSettings.SettingsProvider.GetLocalSettingOrDefault
+  href: OpenSettings.SettingsProvider.html#OpenSettings_SettingsProvider_GetLocalSettingOrDefault__1
+  name: GetLocalSettingOrDefault
+  nameWithType: SettingsProvider.GetLocalSettingOrDefault
+  fullName: OpenSettings.SettingsProvider.GetLocalSettingOrDefault
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.SettingsProvider.GetRegistrationMode*
+  commentId: Overload:OpenSettings.SettingsProvider.GetRegistrationMode
+  href: OpenSettings.SettingsProvider.html#OpenSettings_SettingsProvider_GetRegistrationMode_System_String_
+  name: GetRegistrationMode
+  nameWithType: SettingsProvider.GetRegistrationMode
+  fullName: OpenSettings.SettingsProvider.GetRegistrationMode
+- uid: System.Nullable{OpenSettings.Models.RegistrationMode}
+  commentId: T:System.Nullable{OpenSettings.Models.RegistrationMode}
+  parent: System
+  definition: System.Nullable`1
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode?
+  nameWithType: RegistrationMode?
+  fullName: OpenSettings.Models.RegistrationMode?
+  spec.csharp:
+  - uid: OpenSettings.Models.RegistrationMode
+    name: RegistrationMode
+    href: OpenSettings.Models.RegistrationMode.html
+  - name: '?'
+  spec.vb:
+  - uid: OpenSettings.Models.RegistrationMode
+    name: RegistrationMode
+    href: OpenSettings.Models.RegistrationMode.html
+  - name: '?'
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

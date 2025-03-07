@@ -1,0 +1,898 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ITagsService
+  commentId: T:OpenSettings.Services.Interfaces.ITagsService
+  id: ITagsService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync(OpenSettings.Models.Inputs.CreateTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync(OpenSettings.Models.Inputs.DeleteTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.DragTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync(OpenSettings.Models.Inputs.GetTagsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.ReorderAsync
+  - OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync(OpenSettings.Models.Inputs.UpdateTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateTagSortOrderInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITagsService
+  nameWithType: ITagsService
+  fullName: OpenSettings.Services.Interfaces.ITagsService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ITagsService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface ITagsService
+    content.vb: Public Interface ITagsService
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  id: GetPaginatedTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedTagsAsync(GetPaginatedInput, CancellationToken)
+  nameWithType: ITagsService.GetPaginatedTagsAsync(GetPaginatedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedTagsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetPaginatedTagsAsync(GetPaginatedInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetPaginatedInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetPaginatedTagsAsync(input As GetPaginatedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync(System.Threading.CancellationToken)
+  id: DeleteUnmappedTagsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUnmappedTagsAsync(CancellationToken)
+  nameWithType: ITagsService.DeleteUnmappedTagsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteUnmappedTagsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteUnmappedTagsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteUnmappedTagsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync(OpenSettings.Models.Inputs.GetTagsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync(OpenSettings.Models.Inputs.GetTagsInput,System.Threading.CancellationToken)
+  id: GetTagsAsync(OpenSettings.Models.Inputs.GetTagsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: GetTagsAsync(GetTagsInput, CancellationToken)
+  nameWithType: ITagsService.GetTagsAsync(GetTagsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync(OpenSettings.Models.Inputs.GetTagsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetTagsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetTagsAsync(GetTagsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetTagsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetTagsAsync(input As GetTagsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync(OpenSettings.Models.Inputs.CreateTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync(OpenSettings.Models.Inputs.CreateTagInput,System.Threading.CancellationToken)
+  id: CreateTagAsync(OpenSettings.Models.Inputs.CreateTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: CreateTagAsync(CreateTagInput, CancellationToken)
+  nameWithType: ITagsService.CreateTagAsync(CreateTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync(OpenSettings.Models.Inputs.CreateTagInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateTagAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CreateTagAsync(CreateTagInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateTagInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CreateTagAsync(input As CreateTagInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  id: GetTagByIdAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: GetTagByIdAsync(GetTagInput, CancellationToken)
+  nameWithType: ITagsService.GetTagByIdAsync(GetTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync(OpenSettings.Models.Inputs.GetTagInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetTagByIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetTagByIdAsync(GetTagInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetTagInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetTagByIdAsync(input As GetTagInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  id: GetTagBySlugAsync(OpenSettings.Models.Inputs.GetTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: GetTagBySlugAsync(GetTagInput, CancellationToken)
+  nameWithType: ITagsService.GetTagBySlugAsync(GetTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync(OpenSettings.Models.Inputs.GetTagInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetTagBySlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetTagBySlugAsync(GetTagInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetTagInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetTagBySlugAsync(input As GetTagInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync(OpenSettings.Models.Inputs.UpdateTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync(OpenSettings.Models.Inputs.UpdateTagInput,System.Threading.CancellationToken)
+  id: UpdateTagAsync(OpenSettings.Models.Inputs.UpdateTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagAsync(UpdateTagInput, CancellationToken)
+  nameWithType: ITagsService.UpdateTagAsync(UpdateTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync(OpenSettings.Models.Inputs.UpdateTagInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateTagAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateTagAsync(UpdateTagInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateTagInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateTagAsync(input As UpdateTagInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync(OpenSettings.Models.Inputs.DeleteTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync(OpenSettings.Models.Inputs.DeleteTagInput,System.Threading.CancellationToken)
+  id: DeleteTagAsync(OpenSettings.Models.Inputs.DeleteTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteTagAsync(DeleteTagInput, CancellationToken)
+  nameWithType: ITagsService.DeleteTagAsync(DeleteTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync(OpenSettings.Models.Inputs.DeleteTagInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteTagAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteTagAsync(DeleteTagInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteTagInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteTagAsync(input As DeleteTagInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateTagSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateTagSortOrderInput,System.Threading.CancellationToken)
+  id: UpdateTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateTagSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagSortOrderAsync(UpdateTagSortOrderInput, CancellationToken)
+  nameWithType: ITagsService.UpdateTagSortOrderAsync(UpdateTagSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateTagSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateTagSortOrderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateTagSortOrderAsync(UpdateTagSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateTagSortOrderAsync(input As UpdateTagSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.DragTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.DragTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  id: DragTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: DragTagAsync(DragItemSortOrderInput, CancellationToken)
+  nameWithType: ITagsService.DragTagAsync(DragItemSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DragTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DragTagAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DragTagAsync(DragItemSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DragTagAsync(input As DragItemSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.DragTagAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.ReorderAsync
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.ReorderAsync
+  id: ReorderAsync
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: ReorderAsync()
+  nameWithType: ITagsService.ReorderAsync()
+  fullName: OpenSettings.Services.Interfaces.ITagsService.ReorderAsync()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReorderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 32
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> ReorderAsync()
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function ReorderAsync() As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ITagsService.ReorderAsync*
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  id: GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITagsService
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  nameWithType: ITagsService.GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync(string, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITagsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITagsService.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<GetOrCreateResponse>> GetOrCreateAsync(string name, SetSortOrderPosition setSortOrderPosition, Guid? createdById, CancellationToken cancellationToken = default)
+    parameters:
+    - id: name
+      type: System.String
+    - id: setSortOrderPosition
+      type: OpenSettings.Models.SetSortOrderPosition
+    - id: createdById
+      type: System.Nullable{System.Guid}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+    content.vb: Function GetOrCreateAsync(name As String, setSortOrderPosition As SetSortOrderPosition, createdById As Guid?, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetOrCreateResponse))
+  overload: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync*
+  nameWithType.vb: ITagsService.GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync(String, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_GetPaginatedTagsAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  name: GetPaginatedTagsAsync
+  nameWithType: ITagsService.GetPaginatedTagsAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetPaginatedTagsAsync
+- uid: OpenSettings.Models.Inputs.GetPaginatedInput
+  commentId: T:OpenSettings.Models.Inputs.GetPaginatedInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  name: GetPaginatedInput
+  nameWithType: GetPaginatedInput
+  fullName: OpenSettings.Models.Inputs.GetPaginatedInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_DeleteUnmappedTagsAsync_System_Threading_CancellationToken_
+  name: DeleteUnmappedTagsAsync
+  nameWithType: ITagsService.DeleteUnmappedTagsAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DeleteUnmappedTagsAsync
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_GetTagsAsync_OpenSettings_Models_Inputs_GetTagsInput_System_Threading_CancellationToken_
+  name: GetTagsAsync
+  nameWithType: ITagsService.GetTagsAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagsAsync
+- uid: OpenSettings.Models.Inputs.GetTagsInput
+  commentId: T:OpenSettings.Models.Inputs.GetTagsInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetTagsInput.html
+  name: GetTagsInput
+  nameWithType: GetTagsInput
+  fullName: OpenSettings.Models.Inputs.GetTagsInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_CreateTagAsync_OpenSettings_Models_Inputs_CreateTagInput_System_Threading_CancellationToken_
+  name: CreateTagAsync
+  nameWithType: ITagsService.CreateTagAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.CreateTagAsync
+- uid: OpenSettings.Models.Inputs.CreateTagInput
+  commentId: T:OpenSettings.Models.Inputs.CreateTagInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateTagInput.html
+  name: CreateTagInput
+  nameWithType: CreateTagInput
+  fullName: OpenSettings.Models.Inputs.CreateTagInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_GetTagByIdAsync_OpenSettings_Models_Inputs_GetTagInput_System_Threading_CancellationToken_
+  name: GetTagByIdAsync
+  nameWithType: ITagsService.GetTagByIdAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagByIdAsync
+- uid: OpenSettings.Models.Inputs.GetTagInput
+  commentId: T:OpenSettings.Models.Inputs.GetTagInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetTagInput.html
+  name: GetTagInput
+  nameWithType: GetTagInput
+  fullName: OpenSettings.Models.Inputs.GetTagInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_GetTagBySlugAsync_OpenSettings_Models_Inputs_GetTagInput_System_Threading_CancellationToken_
+  name: GetTagBySlugAsync
+  nameWithType: ITagsService.GetTagBySlugAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetTagBySlugAsync
+- uid: OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_UpdateTagAsync_OpenSettings_Models_Inputs_UpdateTagInput_System_Threading_CancellationToken_
+  name: UpdateTagAsync
+  nameWithType: ITagsService.UpdateTagAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.UpdateTagAsync
+- uid: OpenSettings.Models.Inputs.UpdateTagInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateTagInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateTagInput.html
+  name: UpdateTagInput
+  nameWithType: UpdateTagInput
+  fullName: OpenSettings.Models.Inputs.UpdateTagInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_DeleteTagAsync_OpenSettings_Models_Inputs_DeleteTagInput_System_Threading_CancellationToken_
+  name: DeleteTagAsync
+  nameWithType: ITagsService.DeleteTagAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DeleteTagAsync
+- uid: OpenSettings.Models.Inputs.DeleteTagInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteTagInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteTagInput.html
+  name: DeleteTagInput
+  nameWithType: DeleteTagInput
+  fullName: OpenSettings.Models.Inputs.DeleteTagInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_UpdateTagSortOrderAsync_OpenSettings_Models_Inputs_UpdateTagSortOrderInput_System_Threading_CancellationToken_
+  name: UpdateTagSortOrderAsync
+  nameWithType: ITagsService.UpdateTagSortOrderAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.UpdateTagSortOrderAsync
+- uid: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateTagSortOrderInput.html
+  name: UpdateTagSortOrderInput
+  nameWithType: UpdateTagSortOrderInput
+  fullName: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.DragTagAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.DragTagAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_DragTagAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  name: DragTagAsync
+  nameWithType: ITagsService.DragTagAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.DragTagAsync
+- uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.DragItemSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DragItemSortOrderInput.html
+  name: DragItemSortOrderInput
+  nameWithType: DragItemSortOrderInput
+  fullName: OpenSettings.Models.Inputs.DragItemSortOrderInput
+- uid: OpenSettings.Services.Interfaces.ITagsService.ReorderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.ReorderAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_ReorderAsync
+  name: ReorderAsync
+  nameWithType: ITagsService.ReorderAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.ReorderAsync
+- uid: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync
+  href: OpenSettings.Services.Interfaces.ITagsService.html#OpenSettings_Services_Interfaces_ITagsService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  name: GetOrCreateAsync
+  nameWithType: ITagsService.GetOrCreateAsync
+  fullName: OpenSettings.Services.Interfaces.ITagsService.GetOrCreateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.SetSortOrderPosition
+  commentId: T:OpenSettings.Models.SetSortOrderPosition
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SetSortOrderPosition.html
+  name: SetSortOrderPosition
+  nameWithType: SetSortOrderPosition
+  fullName: OpenSettings.Models.SetSortOrderPosition
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<GetOrCreateResponse>>
+  nameWithType: Task<IJsonResponse<GetOrCreateResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetOrCreateResponse>>
+  nameWithType.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetOrCreateResponse))
+  name.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

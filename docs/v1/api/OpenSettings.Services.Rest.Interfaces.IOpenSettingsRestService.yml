@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
+  id: IOpenSettingsRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IOpenSettingsRestService
+  nameWithType: IOpenSettingsRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/IOpenSettingsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IOpenSettingsRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/IOpenSettingsRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IOpenSettingsRestService : IOpenSettingsService'
+    content.vb: Public Interface IOpenSettingsRestService Inherits IOpenSettingsService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsAsync_System_Threading_CancellationToken_
+  name: GetConfigsAsync(CancellationToken)
+  nameWithType: IOpenSettingsService.GetConfigsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+    name: GetConfigsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+    name: GetConfigsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsDataAsync_System_String_System_Threading_CancellationToken_
+  name: GetConfigsDataAsync(string, CancellationToken)
+  nameWithType: IOpenSettingsService.GetConfigsDataAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IOpenSettingsService.GetConfigsDataAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(String, System.Threading.CancellationToken)
+  name.vb: GetConfigsDataAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+    name: GetConfigsDataAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsDataAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+    name: GetConfigsDataAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsDataAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService
+  commentId: T:OpenSettings.Services.Interfaces.IOpenSettingsService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html
+  name: IOpenSettingsService
+  nameWithType: IOpenSettingsService
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

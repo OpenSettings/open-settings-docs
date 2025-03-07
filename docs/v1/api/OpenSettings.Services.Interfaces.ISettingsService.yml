@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ISettingsService
+  commentId: T:OpenSettings.Services.Interfaces.ISettingsService
+  id: ISettingsService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync(OpenSettings.Models.Inputs.GetSettingByIdInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync(OpenSettings.Models.Inputs.GetSettingDataInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync(OpenSettings.Models.Inputs.GetSettingsDataInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync(OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync(OpenSettings.Models.Inputs.UpdateSettingInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync(OpenSettings.Models.Inputs.UpdateSettingDataInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ISettingsService
+  nameWithType: ISettingsService
+  fullName: OpenSettings.Services.Interfaces.ISettingsService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ISettingsService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface ISettingsService
+    content.vb: Public Interface ISettingsService
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  id: GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsByAppIdAndIdentifierIdAsync(GetSettingsByAppAndIdentifierInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync(GetSettingsByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingsByAppIdAndIdentifierIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetSettingsByAppIdAndIdentifierIdAsync(GetSettingsByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetSettingsByAppIdAndIdentifierIdAsync(input As GetSettingsByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  id: GetSettingsByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsByAppSlugAndIdentifierSlugAsync(GetSettingsByAppAndIdentifierInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync(GetSettingsByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingsByAppSlugAndIdentifierSlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetSettingsByAppSlugAndIdentifierSlugAsync(GetSettingsByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetSettingsByAppSlugAndIdentifierSlugAsync(input As GetSettingsByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync(OpenSettings.Models.Inputs.GetSettingsDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync(OpenSettings.Models.Inputs.GetSettingsDataInput,System.Threading.CancellationToken)
+  id: GetSettingsDataAsync(OpenSettings.Models.Inputs.GetSettingsDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsDataAsync(GetSettingsDataInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingsDataAsync(GetSettingsDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync(OpenSettings.Models.Inputs.GetSettingsDataInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingsDataAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetSettingsDataAsync(GetSettingsDataInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingsDataInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetSettingsDataAsync(input As GetSettingsDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput,System.Threading.CancellationToken)
+  id: CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: CopySettingToAsync(CopySettingToInput, CancellationToken)
+  nameWithType: ISettingsService.CopySettingToAsync(CopySettingToInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CopySettingToAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CopySettingToAsync(CopySettingToInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CopySettingToInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CopySettingToAsync(input As CopySettingToInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync(OpenSettings.Models.Inputs.GetSettingDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync(OpenSettings.Models.Inputs.GetSettingDataInput,System.Threading.CancellationToken)
+  id: GetSettingDataAsync(OpenSettings.Models.Inputs.GetSettingDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingDataAsync(GetSettingDataInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingDataAsync(GetSettingDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync(OpenSettings.Models.Inputs.GetSettingDataInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingDataAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetSettingDataAsync(GetSettingDataInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingDataInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetSettingDataAsync(input As GetSettingDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput,System.Threading.CancellationToken)
+  id: DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteSettingAsync(DeleteSettingInput, CancellationToken)
+  nameWithType: ISettingsService.DeleteSettingAsync(DeleteSettingInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteSettingAsync(DeleteSettingInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteSettingInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteSettingAsync(input As DeleteSettingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync(OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync(OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput,System.Threading.CancellationToken)
+  id: GetSettingsLastUpdatedComputedIdentifiersAsync(OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsLastUpdatedComputedIdentifiersAsync(GetSettingsLastUpdatedComputedIdentifiersInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync(GetSettingsLastUpdatedComputedIdentifiersInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync(OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingsLastUpdatedComputedIdentifiersAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<GetSettingsLastUpdatedComputedIdentifiersResponse>> GetSettingsLastUpdatedComputedIdentifiersAsync(GetSettingsLastUpdatedComputedIdentifiersInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse}}
+    content.vb: Function GetSettingsLastUpdatedComputedIdentifiersAsync(input As GetSettingsLastUpdatedComputedIdentifiersInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetSettingsLastUpdatedComputedIdentifiersResponse))
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync(OpenSettings.Models.Inputs.GetSettingByIdInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync(OpenSettings.Models.Inputs.GetSettingByIdInput,System.Threading.CancellationToken)
+  id: GetSettingByIdAsync(OpenSettings.Models.Inputs.GetSettingByIdInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingByIdAsync(GetSettingByIdInput, CancellationToken)
+  nameWithType: ISettingsService.GetSettingByIdAsync(GetSettingByIdInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync(OpenSettings.Models.Inputs.GetSettingByIdInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingByIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetSettingByIdAsync(GetSettingByIdInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetSettingByIdInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetSettingByIdAsync(input As GetSettingByIdInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync(OpenSettings.Models.Inputs.UpdateSettingInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync(OpenSettings.Models.Inputs.UpdateSettingInput,System.Threading.CancellationToken)
+  id: UpdateSettingAsync(OpenSettings.Models.Inputs.UpdateSettingInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateSettingAsync(UpdateSettingInput, CancellationToken)
+  nameWithType: ISettingsService.UpdateSettingAsync(UpdateSettingInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync(OpenSettings.Models.Inputs.UpdateSettingInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateSettingAsync(UpdateSettingInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateSettingInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateSettingAsync(input As UpdateSettingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput,System.Threading.CancellationToken)
+  id: CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: CreateSettingAsync(CreateSettingInput, CancellationToken)
+  nameWithType: ISettingsService.CreateSettingAsync(CreateSettingInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CreateSettingAsync(CreateSettingInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateSettingInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CreateSettingAsync(input As CreateSettingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync*
+- uid: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync(OpenSettings.Models.Inputs.UpdateSettingDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync(OpenSettings.Models.Inputs.UpdateSettingDataInput,System.Threading.CancellationToken)
+  id: UpdateSettingDataAsync(OpenSettings.Models.Inputs.UpdateSettingDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ISettingsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateSettingDataAsync(UpdateSettingDataInput, CancellationToken)
+  nameWithType: ISettingsService.UpdateSettingDataAsync(UpdateSettingDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync(OpenSettings.Models.Inputs.UpdateSettingDataInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateSettingDataAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingsService.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<UpdateSettingDataResponse>> UpdateSettingDataAsync(UpdateSettingDataInput input, CancellationToken cancellationToken)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateSettingDataInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.UpdateSettingDataResponse}}
+    content.vb: Function UpdateSettingDataAsync(input As UpdateSettingDataInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse(Of UpdateSettingDataResponse))
+  overload: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingsByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetSettingsByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetSettingsByAppIdAndIdentifierIdAsync
+  nameWithType: ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppIdAndIdentifierIdAsync
+- uid: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+  commentId: T:OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput.html
+  name: GetSettingsByAppAndIdentifierInput
+  nameWithType: GetSettingsByAppAndIdentifierInput
+  fullName: OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingsByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetSettingsByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetSettingsByAppSlugAndIdentifierSlugAsync
+  nameWithType: ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsByAppSlugAndIdentifierSlugAsync
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingsDataAsync_OpenSettings_Models_Inputs_GetSettingsDataInput_System_Threading_CancellationToken_
+  name: GetSettingsDataAsync
+  nameWithType: ISettingsService.GetSettingsDataAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsDataAsync
+- uid: OpenSettings.Models.Inputs.GetSettingsDataInput
+  commentId: T:OpenSettings.Models.Inputs.GetSettingsDataInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetSettingsDataInput.html
+  name: GetSettingsDataInput
+  nameWithType: GetSettingsDataInput
+  fullName: OpenSettings.Models.Inputs.GetSettingsDataInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_CopySettingToAsync_OpenSettings_Models_Inputs_CopySettingToInput_System_Threading_CancellationToken_
+  name: CopySettingToAsync
+  nameWithType: ISettingsService.CopySettingToAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.CopySettingToAsync
+- uid: OpenSettings.Models.Inputs.CopySettingToInput
+  commentId: T:OpenSettings.Models.Inputs.CopySettingToInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CopySettingToInput.html
+  name: CopySettingToInput
+  nameWithType: CopySettingToInput
+  fullName: OpenSettings.Models.Inputs.CopySettingToInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingDataAsync_OpenSettings_Models_Inputs_GetSettingDataInput_System_Threading_CancellationToken_
+  name: GetSettingDataAsync
+  nameWithType: ISettingsService.GetSettingDataAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingDataAsync
+- uid: OpenSettings.Models.Inputs.GetSettingDataInput
+  commentId: T:OpenSettings.Models.Inputs.GetSettingDataInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetSettingDataInput.html
+  name: GetSettingDataInput
+  nameWithType: GetSettingDataInput
+  fullName: OpenSettings.Models.Inputs.GetSettingDataInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_DeleteSettingAsync_OpenSettings_Models_Inputs_DeleteSettingInput_System_Threading_CancellationToken_
+  name: DeleteSettingAsync
+  nameWithType: ISettingsService.DeleteSettingAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.DeleteSettingAsync
+- uid: OpenSettings.Models.Inputs.DeleteSettingInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteSettingInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteSettingInput.html
+  name: DeleteSettingInput
+  nameWithType: DeleteSettingInput
+  fullName: OpenSettings.Models.Inputs.DeleteSettingInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingsLastUpdatedComputedIdentifiersAsync_OpenSettings_Models_Inputs_GetSettingsLastUpdatedComputedIdentifiersInput_System_Threading_CancellationToken_
+  name: GetSettingsLastUpdatedComputedIdentifiersAsync
+  nameWithType: ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingsLastUpdatedComputedIdentifiersAsync
+- uid: OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
+  commentId: T:OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput.html
+  name: GetSettingsLastUpdatedComputedIdentifiersInput
+  nameWithType: GetSettingsLastUpdatedComputedIdentifiersInput
+  fullName: OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<GetSettingsLastUpdatedComputedIdentifiersResponse>>
+  nameWithType: Task<IJsonResponse<GetSettingsLastUpdatedComputedIdentifiersResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse>>
+  nameWithType.vb: Task(Of IJsonResponse(Of GetSettingsLastUpdatedComputedIdentifiersResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse))
+  name.vb: Task(Of IJsonResponse(Of GetSettingsLastUpdatedComputedIdentifiersResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse
+    name: GetSettingsLastUpdatedComputedIdentifiersResponse
+    href: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse
+    name: GetSettingsLastUpdatedComputedIdentifiersResponse
+    href: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse.html
+  - name: )
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_GetSettingByIdAsync_OpenSettings_Models_Inputs_GetSettingByIdInput_System_Threading_CancellationToken_
+  name: GetSettingByIdAsync
+  nameWithType: ISettingsService.GetSettingByIdAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.GetSettingByIdAsync
+- uid: OpenSettings.Models.Inputs.GetSettingByIdInput
+  commentId: T:OpenSettings.Models.Inputs.GetSettingByIdInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetSettingByIdInput.html
+  name: GetSettingByIdInput
+  nameWithType: GetSettingByIdInput
+  fullName: OpenSettings.Models.Inputs.GetSettingByIdInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_UpdateSettingAsync_OpenSettings_Models_Inputs_UpdateSettingInput_System_Threading_CancellationToken_
+  name: UpdateSettingAsync
+  nameWithType: ISettingsService.UpdateSettingAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingAsync
+- uid: OpenSettings.Models.Inputs.UpdateSettingInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateSettingInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateSettingInput.html
+  name: UpdateSettingInput
+  nameWithType: UpdateSettingInput
+  fullName: OpenSettings.Models.Inputs.UpdateSettingInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_CreateSettingAsync_OpenSettings_Models_Inputs_CreateSettingInput_System_Threading_CancellationToken_
+  name: CreateSettingAsync
+  nameWithType: ISettingsService.CreateSettingAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.CreateSettingAsync
+- uid: OpenSettings.Models.Inputs.CreateSettingInput
+  commentId: T:OpenSettings.Models.Inputs.CreateSettingInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateSettingInput.html
+  name: CreateSettingInput
+  nameWithType: CreateSettingInput
+  fullName: OpenSettings.Models.Inputs.CreateSettingInput
+- uid: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync
+  href: OpenSettings.Services.Interfaces.ISettingsService.html#OpenSettings_Services_Interfaces_ISettingsService_UpdateSettingDataAsync_OpenSettings_Models_Inputs_UpdateSettingDataInput_System_Threading_CancellationToken_
+  name: UpdateSettingDataAsync
+  nameWithType: ISettingsService.UpdateSettingDataAsync
+  fullName: OpenSettings.Services.Interfaces.ISettingsService.UpdateSettingDataAsync
+- uid: OpenSettings.Models.Inputs.UpdateSettingDataInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateSettingDataInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateSettingDataInput.html
+  name: UpdateSettingDataInput
+  nameWithType: UpdateSettingDataInput
+  fullName: OpenSettings.Models.Inputs.UpdateSettingDataInput
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.UpdateSettingDataResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.UpdateSettingDataResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<UpdateSettingDataResponse>>
+  nameWithType: Task<IJsonResponse<UpdateSettingDataResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.UpdateSettingDataResponse>>
+  nameWithType.vb: Task(Of IJsonResponse(Of UpdateSettingDataResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.UpdateSettingDataResponse))
+  name.vb: Task(Of IJsonResponse(Of UpdateSettingDataResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.UpdateSettingDataResponse
+    name: UpdateSettingDataResponse
+    href: OpenSettings.Models.Responses.UpdateSettingDataResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.UpdateSettingDataResponse
+    name: UpdateSettingDataResponse
+    href: OpenSettings.Models.Responses.UpdateSettingDataResponse.html
+  - name: )
+  - name: )

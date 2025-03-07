@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ServiceType
+  commentId: T:OpenSettings.Models.ServiceType
+  id: ServiceType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ServiceType.Consumer
+  - OpenSettings.Models.ServiceType.Provider
+  langs:
+  - csharp
+  - vb
+  name: ServiceType
+  nameWithType: ServiceType
+  fullName: OpenSettings.Models.ServiceType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/ServiceType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ServiceType
+    path: ../../../open-settings/src/OpenSettings/Models/ServiceType.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Defines the types of service configurations for the settings service.
+
+    This enum specifies whether the service operates as a provider or consumer.
+  example: []
+  syntax:
+    content: public enum ServiceType
+    content.vb: Public Enum ServiceType
+- uid: OpenSettings.Models.ServiceType.Provider
+  commentId: F:OpenSettings.Models.ServiceType.Provider
+  id: Provider
+  parent: OpenSettings.Models.ServiceType
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: ServiceType.Provider
+  fullName: OpenSettings.Models.ServiceType.Provider
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ServiceType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Provider
+    path: ../../../open-settings/src/OpenSettings/Models/ServiceType.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents the service functioning as a provider.
+
+    <p>
+
+    This type configures the service to provide settings to other services or clients.
+
+    </p>
+  example: []
+  syntax:
+    content: Provider = 1
+    return:
+      type: OpenSettings.Models.ServiceType
+- uid: OpenSettings.Models.ServiceType.Consumer
+  commentId: F:OpenSettings.Models.ServiceType.Consumer
+  id: Consumer
+  parent: OpenSettings.Models.ServiceType
+  langs:
+  - csharp
+  - vb
+  name: Consumer
+  nameWithType: ServiceType.Consumer
+  fullName: OpenSettings.Models.ServiceType.Consumer
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ServiceType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Consumer
+    path: ../../../open-settings/src/OpenSettings/Models/ServiceType.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents the service functioning as a consumer. 
+
+    <p>
+
+    This type configures the service to consume settings from a provider service.
+
+    </p>
+  example: []
+  syntax:
+    content: Consumer = 2
+    return:
+      type: OpenSettings.Models.ServiceType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ServiceType
+  commentId: T:OpenSettings.Models.ServiceType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ServiceType.html
+  name: ServiceType
+  nameWithType: ServiceType
+  fullName: OpenSettings.Models.ServiceType

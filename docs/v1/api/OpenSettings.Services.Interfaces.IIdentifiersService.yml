@@ -1,0 +1,898 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService
+  commentId: T:OpenSettings.Services.Interfaces.IIdentifiersService
+  id: IIdentifiersService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync(OpenSettings.Models.Inputs.CreateIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync(OpenSettings.Models.Inputs.DeleteIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync(OpenSettings.Models.Inputs.GetIdentifiersInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync
+  - OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync(OpenSettings.Models.Inputs.UpdateIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync(OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IIdentifiersService
+  nameWithType: IIdentifiersService
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IIdentifiersService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IIdentifiersService
+    content.vb: Public Interface IIdentifiersService
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  id: GetPaginatedIdentifiersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedIdentifiersAsync(GetPaginatedInput, CancellationToken)
+  nameWithType: IIdentifiersService.GetPaginatedIdentifiersAsync(GetPaginatedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync(OpenSettings.Models.Inputs.GetPaginatedInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedIdentifiersAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetPaginatedIdentifiersAsync(GetPaginatedInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetPaginatedInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetPaginatedIdentifiersAsync(input As GetPaginatedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync(System.Threading.CancellationToken)
+  id: DeleteUnmappedIdentifiersAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUnmappedIdentifiersAsync(CancellationToken)
+  nameWithType: IIdentifiersService.DeleteUnmappedIdentifiersAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteUnmappedIdentifiersAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteUnmappedIdentifiersAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteUnmappedIdentifiersAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync(OpenSettings.Models.Inputs.GetIdentifiersInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync(OpenSettings.Models.Inputs.GetIdentifiersInput,System.Threading.CancellationToken)
+  id: GetIdentifiersAsync(OpenSettings.Models.Inputs.GetIdentifiersInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: GetIdentifiersAsync(GetIdentifiersInput, CancellationToken)
+  nameWithType: IIdentifiersService.GetIdentifiersAsync(GetIdentifiersInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync(OpenSettings.Models.Inputs.GetIdentifiersInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetIdentifiersAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetIdentifiersAsync(GetIdentifiersInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetIdentifiersInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetIdentifiersAsync(input As GetIdentifiersInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync(OpenSettings.Models.Inputs.CreateIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync(OpenSettings.Models.Inputs.CreateIdentifierInput,System.Threading.CancellationToken)
+  id: CreateIdentifierAsync(OpenSettings.Models.Inputs.CreateIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: CreateIdentifierAsync(CreateIdentifierInput, CancellationToken)
+  nameWithType: IIdentifiersService.CreateIdentifierAsync(CreateIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync(OpenSettings.Models.Inputs.CreateIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateIdentifierAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CreateIdentifierAsync(CreateIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CreateIdentifierAsync(input As CreateIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  id: GetIdentifierByIdAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: GetIdentifierByIdAsync(GetIdentifierInput, CancellationToken)
+  nameWithType: IIdentifiersService.GetIdentifierByIdAsync(GetIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync(OpenSettings.Models.Inputs.GetIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetIdentifierByIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetIdentifierByIdAsync(GetIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetIdentifierByIdAsync(input As GetIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  id: GetIdentifierBySlugAsync(OpenSettings.Models.Inputs.GetIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: GetIdentifierBySlugAsync(GetIdentifierInput, CancellationToken)
+  nameWithType: IIdentifiersService.GetIdentifierBySlugAsync(GetIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync(OpenSettings.Models.Inputs.GetIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetIdentifierBySlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetIdentifierBySlugAsync(GetIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetIdentifierBySlugAsync(input As GetIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync(OpenSettings.Models.Inputs.UpdateIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync(OpenSettings.Models.Inputs.UpdateIdentifierInput,System.Threading.CancellationToken)
+  id: UpdateIdentifierAsync(OpenSettings.Models.Inputs.UpdateIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: UpdateIdentifierAsync(UpdateIdentifierInput, CancellationToken)
+  nameWithType: IIdentifiersService.UpdateIdentifierAsync(UpdateIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync(OpenSettings.Models.Inputs.UpdateIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateIdentifierAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateIdentifierAsync(UpdateIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateIdentifierAsync(input As UpdateIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync(OpenSettings.Models.Inputs.DeleteIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync(OpenSettings.Models.Inputs.DeleteIdentifierInput,System.Threading.CancellationToken)
+  id: DeleteIdentifierAsync(OpenSettings.Models.Inputs.DeleteIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: DeleteIdentifierAsync(DeleteIdentifierInput, CancellationToken)
+  nameWithType: IIdentifiersService.DeleteIdentifierAsync(DeleteIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync(OpenSettings.Models.Inputs.DeleteIdentifierInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteIdentifierAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteIdentifierAsync(DeleteIdentifierInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteIdentifierInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteIdentifierAsync(input As DeleteIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync(OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync(OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput,System.Threading.CancellationToken)
+  id: UpdateIdentifierSortOrderAsync(OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: UpdateIdentifierSortOrderAsync(UpdateIdentifierSortOrderInput, CancellationToken)
+  nameWithType: IIdentifiersService.UpdateIdentifierSortOrderAsync(UpdateIdentifierSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync(OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateIdentifierSortOrderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateIdentifierSortOrderAsync(UpdateIdentifierSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateIdentifierSortOrderAsync(input As UpdateIdentifierSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  id: DragIdentifierAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: DragIdentifierAsync(DragItemSortOrderInput, CancellationToken)
+  nameWithType: IIdentifiersService.DragIdentifierAsync(DragItemSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DragIdentifierAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DragIdentifierAsync(DragItemSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DragIdentifierAsync(input As DragItemSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync
+  id: ReorderAsync
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: ReorderAsync()
+  nameWithType: IIdentifiersService.ReorderAsync()
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReorderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 32
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> ReorderAsync()
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function ReorderAsync() As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync*
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  id: GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IIdentifiersService
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  nameWithType: IIdentifiersService.GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync(string, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettingIdentifiersService.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<GetOrCreateResponse>> GetOrCreateAsync(string name, SetSortOrderPosition setSortOrderPosition, Guid? createdById, CancellationToken cancellationToken = default)
+    parameters:
+    - id: name
+      type: System.String
+    - id: setSortOrderPosition
+      type: OpenSettings.Models.SetSortOrderPosition
+    - id: createdById
+      type: System.Nullable{System.Guid}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+    content.vb: Function GetOrCreateAsync(name As String, setSortOrderPosition As SetSortOrderPosition, createdById As Guid?, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetOrCreateResponse))
+  overload: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync*
+  nameWithType.vb: IIdentifiersService.GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync(String, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_GetPaginatedIdentifiersAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  name: GetPaginatedIdentifiersAsync
+  nameWithType: IIdentifiersService.GetPaginatedIdentifiersAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetPaginatedIdentifiersAsync
+- uid: OpenSettings.Models.Inputs.GetPaginatedInput
+  commentId: T:OpenSettings.Models.Inputs.GetPaginatedInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  name: GetPaginatedInput
+  nameWithType: GetPaginatedInput
+  fullName: OpenSettings.Models.Inputs.GetPaginatedInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_DeleteUnmappedIdentifiersAsync_System_Threading_CancellationToken_
+  name: DeleteUnmappedIdentifiersAsync
+  nameWithType: IIdentifiersService.DeleteUnmappedIdentifiersAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteUnmappedIdentifiersAsync
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_GetIdentifiersAsync_OpenSettings_Models_Inputs_GetIdentifiersInput_System_Threading_CancellationToken_
+  name: GetIdentifiersAsync
+  nameWithType: IIdentifiersService.GetIdentifiersAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifiersAsync
+- uid: OpenSettings.Models.Inputs.GetIdentifiersInput
+  commentId: T:OpenSettings.Models.Inputs.GetIdentifiersInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetIdentifiersInput.html
+  name: GetIdentifiersInput
+  nameWithType: GetIdentifiersInput
+  fullName: OpenSettings.Models.Inputs.GetIdentifiersInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_CreateIdentifierAsync_OpenSettings_Models_Inputs_CreateIdentifierInput_System_Threading_CancellationToken_
+  name: CreateIdentifierAsync
+  nameWithType: IIdentifiersService.CreateIdentifierAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.CreateIdentifierAsync
+- uid: OpenSettings.Models.Inputs.CreateIdentifierInput
+  commentId: T:OpenSettings.Models.Inputs.CreateIdentifierInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateIdentifierInput.html
+  name: CreateIdentifierInput
+  nameWithType: CreateIdentifierInput
+  fullName: OpenSettings.Models.Inputs.CreateIdentifierInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_GetIdentifierByIdAsync_OpenSettings_Models_Inputs_GetIdentifierInput_System_Threading_CancellationToken_
+  name: GetIdentifierByIdAsync
+  nameWithType: IIdentifiersService.GetIdentifierByIdAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierByIdAsync
+- uid: OpenSettings.Models.Inputs.GetIdentifierInput
+  commentId: T:OpenSettings.Models.Inputs.GetIdentifierInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetIdentifierInput.html
+  name: GetIdentifierInput
+  nameWithType: GetIdentifierInput
+  fullName: OpenSettings.Models.Inputs.GetIdentifierInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_GetIdentifierBySlugAsync_OpenSettings_Models_Inputs_GetIdentifierInput_System_Threading_CancellationToken_
+  name: GetIdentifierBySlugAsync
+  nameWithType: IIdentifiersService.GetIdentifierBySlugAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetIdentifierBySlugAsync
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_UpdateIdentifierAsync_OpenSettings_Models_Inputs_UpdateIdentifierInput_System_Threading_CancellationToken_
+  name: UpdateIdentifierAsync
+  nameWithType: IIdentifiersService.UpdateIdentifierAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierAsync
+- uid: OpenSettings.Models.Inputs.UpdateIdentifierInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateIdentifierInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateIdentifierInput.html
+  name: UpdateIdentifierInput
+  nameWithType: UpdateIdentifierInput
+  fullName: OpenSettings.Models.Inputs.UpdateIdentifierInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_DeleteIdentifierAsync_OpenSettings_Models_Inputs_DeleteIdentifierInput_System_Threading_CancellationToken_
+  name: DeleteIdentifierAsync
+  nameWithType: IIdentifiersService.DeleteIdentifierAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DeleteIdentifierAsync
+- uid: OpenSettings.Models.Inputs.DeleteIdentifierInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteIdentifierInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteIdentifierInput.html
+  name: DeleteIdentifierInput
+  nameWithType: DeleteIdentifierInput
+  fullName: OpenSettings.Models.Inputs.DeleteIdentifierInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_UpdateIdentifierSortOrderAsync_OpenSettings_Models_Inputs_UpdateIdentifierSortOrderInput_System_Threading_CancellationToken_
+  name: UpdateIdentifierSortOrderAsync
+  nameWithType: IIdentifiersService.UpdateIdentifierSortOrderAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.UpdateIdentifierSortOrderAsync
+- uid: OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput.html
+  name: UpdateIdentifierSortOrderInput
+  nameWithType: UpdateIdentifierSortOrderInput
+  fullName: OpenSettings.Models.Inputs.UpdateIdentifierSortOrderInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_DragIdentifierAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  name: DragIdentifierAsync
+  nameWithType: IIdentifiersService.DragIdentifierAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.DragIdentifierAsync
+- uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.DragItemSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DragItemSortOrderInput.html
+  name: DragItemSortOrderInput
+  nameWithType: DragItemSortOrderInput
+  fullName: OpenSettings.Models.Inputs.DragItemSortOrderInput
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_ReorderAsync
+  name: ReorderAsync
+  nameWithType: IIdentifiersService.ReorderAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.ReorderAsync
+- uid: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync
+  href: OpenSettings.Services.Interfaces.IIdentifiersService.html#OpenSettings_Services_Interfaces_IIdentifiersService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  name: GetOrCreateAsync
+  nameWithType: IIdentifiersService.GetOrCreateAsync
+  fullName: OpenSettings.Services.Interfaces.IIdentifiersService.GetOrCreateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.SetSortOrderPosition
+  commentId: T:OpenSettings.Models.SetSortOrderPosition
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SetSortOrderPosition.html
+  name: SetSortOrderPosition
+  nameWithType: SetSortOrderPosition
+  fullName: OpenSettings.Models.SetSortOrderPosition
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<GetOrCreateResponse>>
+  nameWithType: Task<IJsonResponse<GetOrCreateResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetOrCreateResponse>>
+  nameWithType.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetOrCreateResponse))
+  name.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

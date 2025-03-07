@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  id: CreateSettingRequestBody
+  parent: OpenSettings.AspNetCore.Models.Requests
+  children:
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+  - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+  langs:
+  - csharp
+  - vb
+  name: CreateSettingRequestBody
+  nameWithType: CreateSettingRequestBody
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateSettingRequestBody
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public class CreateSettingRequestBody
+    content.vb: Public Class CreateSettingRequestBody
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+  id: AppId
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: AppId
+  nameWithType: CreateSettingRequestBody.AppId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AppId
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [Required(AllowEmptyStrings = false)]
+
+      public string AppId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(AllowEmptyStrings:=False)>
+
+      Public Property AppId As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AllowEmptyStrings
+      type: System.Boolean
+      value: false
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+  id: Data
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: CreateSettingRequestBody.Data
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Data
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string Data { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Data As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+  id: ComputedIdentifier
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: ComputedIdentifier
+  nameWithType: CreateSettingRequestBody.ComputedIdentifier
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ComputedIdentifier
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [Required(AllowEmptyStrings = false)]
+
+      public Guid ComputedIdentifier { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required(AllowEmptyStrings:=False)>
+
+      Public Property ComputedIdentifier As Guid
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AllowEmptyStrings
+      type: System.Boolean
+      value: false
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+  id: IdentifierId
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: IdentifierId
+  nameWithType: CreateSettingRequestBody.IdentifierId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierId
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [Required(AllowEmptyStrings = false)]
+
+      public string IdentifierId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(AllowEmptyStrings:=False)>
+
+      Public Property IdentifierId As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AllowEmptyStrings
+      type: System.Boolean
+      value: false
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+  id: Class
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Class
+  nameWithType: CreateSettingRequestBody.Class
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Class
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public CreateSettingRequestBodyClass Class { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
+    content.vb: Public Property [Class] As CreateSettingRequestBodyClass
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+  id: StoreInSeparateFile
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: StoreInSeparateFile
+  nameWithType: CreateSettingRequestBody.StoreInSeparateFile
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public bool StoreInSeparateFile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StoreInSeparateFile As Boolean
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+  id: IgnoreOnFileChange
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChange
+  nameWithType: CreateSettingRequestBody.IgnoreOnFileChange
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public bool IgnoreOnFileChange { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IgnoreOnFileChange As Boolean
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: CreateSettingRequestBody.RegistrationMode
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateSettingRequestBody.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public RegistrationMode RegistrationMode { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RegistrationMode
+    content.vb: Public Property RegistrationMode As RegistrationMode
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode*
+references:
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_AppId
+  name: AppId
+  nameWithType: CreateSettingRequestBody.AppId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.AppId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_Data
+  name: Data
+  nameWithType: CreateSettingRequestBody.Data
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Data
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_ComputedIdentifier
+  name: ComputedIdentifier
+  nameWithType: CreateSettingRequestBody.ComputedIdentifier
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.ComputedIdentifier
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_IdentifierId
+  name: IdentifierId
+  nameWithType: CreateSettingRequestBody.IdentifierId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IdentifierId
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_Class
+  name: Class
+  nameWithType: CreateSettingRequestBody.Class
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.Class
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass.html
+  name: CreateSettingRequestBodyClass
+  nameWithType: CreateSettingRequestBodyClass
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: CreateSettingRequestBody.StoreInSeparateFile
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.StoreInSeparateFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: CreateSettingRequestBody.IgnoreOnFileChange
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.IgnoreOnFileChange
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+  href: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateSettingRequestBody_RegistrationMode
+  name: RegistrationMode
+  nameWithType: CreateSettingRequestBody.RegistrationMode
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBody.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html

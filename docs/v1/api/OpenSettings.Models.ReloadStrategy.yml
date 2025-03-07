@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ReloadStrategy
+  commentId: T:OpenSettings.Models.ReloadStrategy
+  id: ReloadStrategy
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ReloadStrategy.Polling
+  - OpenSettings.Models.ReloadStrategy.Redis
+  langs:
+  - csharp
+  - vb
+  name: ReloadStrategy
+  nameWithType: ReloadStrategy
+  fullName: OpenSettings.Models.ReloadStrategy
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/ReloadStrategy.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReloadStrategy
+    path: ../../../open-settings/src/OpenSettings/Models/ReloadStrategy.cs
+    startLine: 2
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum ReloadStrategy
+    content.vb: Public Enum ReloadStrategy
+- uid: OpenSettings.Models.ReloadStrategy.Polling
+  commentId: F:OpenSettings.Models.ReloadStrategy.Polling
+  id: Polling
+  parent: OpenSettings.Models.ReloadStrategy
+  langs:
+  - csharp
+  - vb
+  name: Polling
+  nameWithType: ReloadStrategy.Polling
+  fullName: OpenSettings.Models.ReloadStrategy.Polling
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ReloadStrategy.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Polling
+    path: ../../../open-settings/src/OpenSettings/Models/ReloadStrategy.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Polling = 1
+    return:
+      type: OpenSettings.Models.ReloadStrategy
+- uid: OpenSettings.Models.ReloadStrategy.Redis
+  commentId: F:OpenSettings.Models.ReloadStrategy.Redis
+  id: Redis
+  parent: OpenSettings.Models.ReloadStrategy
+  langs:
+  - csharp
+  - vb
+  name: Redis
+  nameWithType: ReloadStrategy.Redis
+  fullName: OpenSettings.Models.ReloadStrategy.Redis
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ReloadStrategy.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Redis
+    path: ../../../open-settings/src/OpenSettings/Models/ReloadStrategy.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Redis = 2
+    return:
+      type: OpenSettings.Models.ReloadStrategy
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ReloadStrategy
+  commentId: T:OpenSettings.Models.ReloadStrategy
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ReloadStrategy.html
+  name: ReloadStrategy
+  nameWithType: ReloadStrategy
+  fullName: OpenSettings.Models.ReloadStrategy

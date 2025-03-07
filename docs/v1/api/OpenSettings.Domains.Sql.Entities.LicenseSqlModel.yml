@@ -1,0 +1,1124 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  id: LicenseSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+  - OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+  langs:
+  - csharp
+  - vb
+  name: LicenseSqlModel
+  nameWithType: LicenseSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseSqlModel
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents a license entity.
+  example: []
+  syntax:
+    content: >-
+      [Table("Licenses")]
+
+      public class LicenseSqlModel : EntityBase<int>
+    content.vb: >-
+      <Table("Licenses")>
+
+      Public Class LicenseSqlModel Inherits EntityBase(Of Integer)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Licenses
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  id: ReferenceId
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ReferenceId
+  nameWithType: LicenseSqlModel.ReferenceId
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReferenceId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The unique reference identifier for the license.
+  example: []
+  syntax:
+    content: public string ReferenceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReferenceId As String
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+  id: ReferenceIdLowercase
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ReferenceIdLowercase
+  nameWithType: LicenseSqlModel.ReferenceIdLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReferenceIdLowercase
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The lowercase version of the <xref href="OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId" data-throw-if-not-resolved="false"></xref>, typically used for case-insensitive comparisons.
+  example: []
+  syntax:
+    content: public string ReferenceIdLowercase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReferenceIdLowercase As String
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+  id: Features
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Features
+  nameWithType: LicenseSqlModel.Features
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Features
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The list of features enabled by this license.
+  example: []
+  syntax:
+    content: public string[] Features { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Features As String()
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+  id: ExpiryDate
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ExpiryDate
+  nameWithType: LicenseSqlModel.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiryDate
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the license expires, if applicable.
+  example: []
+  syntax:
+    content: public DateTime? ExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property ExpiryDate As Date?
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+  id: IsExpired
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IsExpired
+  nameWithType: LicenseSqlModel.IsExpired
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsExpired
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 35
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Indicates whether the license is expired.
+  example: []
+  syntax:
+    content: public bool IsExpired { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsExpired As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+  id: ExpiredOn
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ExpiredOn
+  nameWithType: LicenseSqlModel.ExpiredOn
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiredOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 40
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the license was marked as expired.
+  example: []
+  syntax:
+    content: public DateTime? ExpiredOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property ExpiredOn As Date?
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+  id: IsRevoked
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IsRevoked
+  nameWithType: LicenseSqlModel.IsRevoked
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsRevoked
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 45
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Indicates whether the license has been revoked.
+  example: []
+  syntax:
+    content: public bool IsRevoked { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRevoked As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+  id: RevokedOn
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: RevokedOn
+  nameWithType: LicenseSqlModel.RevokedOn
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RevokedOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 50
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the license was revoked.
+  example: []
+  syntax:
+    content: public DateTime? RevokedOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property RevokedOn As Date?
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+  id: Key
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: LicenseSqlModel.Key
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Key
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 55
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The key associated with the license.
+  example: []
+  syntax:
+    content: public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  id: Holder
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Holder
+  nameWithType: LicenseSqlModel.Holder
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Holder
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 60
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The name of the license holder.
+  example: []
+  syntax:
+    content: public string Holder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Holder As String
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+  id: HolderLowercase
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: HolderLowercase
+  nameWithType: LicenseSqlModel.HolderLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HolderLowercase
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The lowercase version of the <xref href="OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder" data-throw-if-not-resolved="false"></xref>, typically used for case-insensitive comparisons.
+  example: []
+  syntax:
+    content: public string HolderLowercase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HolderLowercase As String
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+  id: Edition
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Edition
+  nameWithType: LicenseSqlModel.Edition
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Edition
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 70
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The edition of the license, defining its features and scope.
+  example: []
+  syntax:
+    content: public LicenseEdition Edition { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.LicenseEdition
+    content.vb: Public Property Edition As LicenseEdition
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+  id: IssuedAt
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IssuedAt
+  nameWithType: LicenseSqlModel.IssuedAt
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IssuedAt
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 75
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the license was issued.
+  example: []
+  syntax:
+    content: public DateTime IssuedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property IssuedAt As Date
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt*
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore
+  id: NotBefore
+  parent: OpenSettings.Domains.Sql.Entities.LicenseSqlModel
+  langs:
+  - csharp
+  - vb
+  name: NotBefore
+  nameWithType: LicenseSqlModel.NotBefore
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotBefore
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LicenseSqlModel.cs
+    startLine: 80
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time before which the license is not valid.
+  example: []
+  syntax:
+    content: public DateTime NotBefore { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property NotBefore As Date
+  overload: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore*
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<int>
+  nameWithType: EntityBase<int>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>
+  nameWithType.vb: EntityBase(Of Integer)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer)
+  name.vb: EntityBase(Of Integer)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<int>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.Id
+  nameWithType.vb: EntityBase(Of Integer).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<int>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.CreatedOn
+  nameWithType.vb: EntityBase(Of Integer).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<int>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Integer).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_ReferenceId
+  name: ReferenceId
+  nameWithType: LicenseSqlModel.ReferenceId
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_ReferenceId
+  name: ReferenceId
+  nameWithType: LicenseSqlModel.ReferenceId
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceId
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_ReferenceIdLowercase
+  name: ReferenceIdLowercase
+  nameWithType: LicenseSqlModel.ReferenceIdLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ReferenceIdLowercase
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_Features
+  name: Features
+  nameWithType: LicenseSqlModel.Features
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Features
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_ExpiryDate
+  name: ExpiryDate
+  nameWithType: LicenseSqlModel.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiryDate
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_IsExpired
+  name: IsExpired
+  nameWithType: LicenseSqlModel.IsExpired
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsExpired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_ExpiredOn
+  name: ExpiredOn
+  nameWithType: LicenseSqlModel.ExpiredOn
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.ExpiredOn
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_IsRevoked
+  name: IsRevoked
+  nameWithType: LicenseSqlModel.IsRevoked
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IsRevoked
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_RevokedOn
+  name: RevokedOn
+  nameWithType: LicenseSqlModel.RevokedOn
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.RevokedOn
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_Key
+  name: Key
+  nameWithType: LicenseSqlModel.Key
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Key
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_Holder
+  name: Holder
+  nameWithType: LicenseSqlModel.Holder
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  commentId: P:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_Holder
+  name: Holder
+  nameWithType: LicenseSqlModel.Holder
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Holder
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_HolderLowercase
+  name: HolderLowercase
+  nameWithType: LicenseSqlModel.HolderLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.HolderLowercase
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_Edition
+  name: Edition
+  nameWithType: LicenseSqlModel.Edition
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.Edition
+- uid: OpenSettings.Models.LicenseEdition
+  commentId: T:OpenSettings.Models.LicenseEdition
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.LicenseEdition.html
+  name: LicenseEdition
+  nameWithType: LicenseEdition
+  fullName: OpenSettings.Models.LicenseEdition
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_IssuedAt
+  name: IssuedAt
+  nameWithType: LicenseSqlModel.IssuedAt
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.IssuedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore
+  href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html#OpenSettings_Domains_Sql_Entities_LicenseSqlModel_NotBefore
+  name: NotBefore
+  nameWithType: LicenseSqlModel.NotBefore
+  fullName: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.NotBefore

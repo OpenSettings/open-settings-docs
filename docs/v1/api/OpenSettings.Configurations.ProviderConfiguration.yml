@@ -1,0 +1,883 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Configurations.ProviderConfiguration
+  commentId: T:OpenSettings.Configurations.ProviderConfiguration
+  id: ProviderConfiguration
+  parent: OpenSettings.Configurations
+  children:
+  - OpenSettings.Configurations.ProviderConfiguration.#ctor
+  - OpenSettings.Configurations.ProviderConfiguration.#ctor(OpenSettings.Models.DataAccessType)
+  - OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  - OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  - OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+  - OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+  - OpenSettings.Configurations.ProviderConfiguration.Orm
+  - OpenSettings.Configurations.ProviderConfiguration.Redis
+  - OpenSettings.Configurations.ProviderConfiguration.Selection
+  langs:
+  - csharp
+  - vb
+  name: ProviderConfiguration
+  nameWithType: ProviderConfiguration
+  fullName: OpenSettings.Configurations.ProviderConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderConfiguration
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Represents the configuration for the provider service, including data access settings, 
+
+    compression options, and the selection of specific data access strategies.
+  example: []
+  syntax:
+    content: public class ProviderConfiguration
+    content.vb: Public Class ProviderConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Configurations.ProviderConfiguration.#ctor
+  commentId: M:OpenSettings.Configurations.ProviderConfiguration.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProviderConfiguration()
+  nameWithType: ProviderConfiguration.ProviderConfiguration()
+  fullName: OpenSettings.Configurations.ProviderConfiguration.ProviderConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> class with the default 
+
+    <xref href="OpenSettings.Models.DataAccessType.Orm" data-throw-if-not-resolved="false"></xref> selection.
+  example: []
+  syntax:
+    content: public ProviderConfiguration()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Configurations.ProviderConfiguration.#ctor*
+  nameWithType.vb: ProviderConfiguration.New()
+  fullName.vb: OpenSettings.Configurations.ProviderConfiguration.New()
+  name.vb: New()
+- uid: OpenSettings.Configurations.ProviderConfiguration.#ctor(OpenSettings.Models.DataAccessType)
+  commentId: M:OpenSettings.Configurations.ProviderConfiguration.#ctor(OpenSettings.Models.DataAccessType)
+  id: '#ctor(OpenSettings.Models.DataAccessType)'
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProviderConfiguration(DataAccessType)
+  nameWithType: ProviderConfiguration.ProviderConfiguration(DataAccessType)
+  fullName: OpenSettings.Configurations.ProviderConfiguration.ProviderConfiguration(OpenSettings.Models.DataAccessType)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 37
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Initializes a new instance of the <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> class with a specific data access type.
+  example: []
+  syntax:
+    content: public ProviderConfiguration(DataAccessType selection)
+    parameters:
+    - id: selection
+      type: OpenSettings.Models.DataAccessType
+      description: The <xref href="OpenSettings.Models.DataAccessType" data-throw-if-not-resolved="false"></xref> that determines which data access method (e.g., Orm) is selected.
+    content.vb: Public Sub New(selection As DataAccessType)
+  overload: OpenSettings.Configurations.ProviderConfiguration.#ctor*
+  nameWithType.vb: ProviderConfiguration.New(DataAccessType)
+  fullName.vb: OpenSettings.Configurations.ProviderConfiguration.New(OpenSettings.Models.DataAccessType)
+  name.vb: New(DataAccessType)
+- uid: OpenSettings.Configurations.ProviderConfiguration.Selection
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.Selection
+  id: Selection
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Selection
+  nameWithType: ProviderConfiguration.Selection
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Selection
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Selection
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 60
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the current data access method selected for the provider.
+
+    The selection determines the type of data persistence used.
+  example: []
+  syntax:
+    content: public DataAccessType Selection { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.DataAccessType
+      description: A <xref href="OpenSettings.Models.DataAccessType" data-throw-if-not-resolved="false"></xref> value indicating the current data access strategy (e.g., <xref href="OpenSettings.Models.DataAccessType.Orm" data-throw-if-not-resolved="false"></xref>).
+    content.vb: Public Property Selection As DataAccessType
+  overload: OpenSettings.Configurations.ProviderConfiguration.Selection*
+- uid: OpenSettings.Configurations.ProviderConfiguration.Orm
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.Orm
+  id: Orm
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Orm
+  nameWithType: ProviderConfiguration.Orm
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Orm
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Orm
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 82
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the configuration settings for the Orm (Object-Relational Mapper).
+
+    This property is used when the <xref href="OpenSettings.Configurations.ProviderConfiguration.Selection" data-throw-if-not-resolved="false"></xref> is set to <xref href="OpenSettings.Models.DataAccessType.Orm" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public OrmConfiguration Orm { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.OrmConfiguration
+      description: An <xref href="OpenSettings.Configurations.OrmConfiguration" data-throw-if-not-resolved="false"></xref> object containing settings related to the Orm configuration.
+    content.vb: Public Property Orm As OrmConfiguration
+  overload: OpenSettings.Configurations.ProviderConfiguration.Orm*
+- uid: OpenSettings.Configurations.ProviderConfiguration.Redis
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.Redis
+  id: Redis
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Redis
+  nameWithType: ProviderConfiguration.Redis
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Redis
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Redis
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 90
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the configuration settings for Redis.
+  example: []
+  syntax:
+    content: public RedisConfiguration Redis { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.RedisConfiguration
+      description: A <xref href="OpenSettings.Configurations.RedisConfiguration" data-throw-if-not-resolved="false"></xref> object containing Redis-related configuration.
+    content.vb: Public Property Redis As RedisConfiguration
+  overload: OpenSettings.Configurations.ProviderConfiguration.Redis*
+- uid: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+  id: IsOrmSelected
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsOrmSelected
+  nameWithType: ProviderConfiguration.IsOrmSelected
+  fullName: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsOrmSelected
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 102
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets a value indicating whether the Orm data access type is selected.
+
+    This property is automatically updated based on the <xref href="OpenSettings.Configurations.ProviderConfiguration.Selection" data-throw-if-not-resolved="false"></xref>.
+  remarks: This property is ignored in Json serialization.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public bool IsOrmSelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: A <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> indicating whether ORM is selected (<code>true</code>) or not (<code>false</code>).
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property IsOrmSelected As Boolean
+  overload: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+  id: LicenseKey
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LicenseKey
+  nameWithType: ProviderConfiguration.LicenseKey
+  fullName: OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LicenseKey
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 123
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the license key. This property is ignored in Json serialization.
+
+    If provided, it is used as the primary source for validation.
+
+    If invalid or missing, the system will check for a license key in the project directory.
+
+    If still not found or invalid, it will retrieve the license key from the database.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string LicenseKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property LicenseKey As String
+  overload: OpenSettings.Configurations.ProviderConfiguration.LicenseKey*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  id: CompressionType
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CompressionType
+  nameWithType: ProviderConfiguration.CompressionType
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CompressionType
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 132
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the compression type used by the provider when storing setting data. Default type is <xref href="Ogu.Compressions.Abstractions.CompressionType.None" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public CompressionType CompressionType { get; set; }
+    parameters: []
+    return:
+      type: Ogu.Compressions.Abstractions.CompressionType
+      description: A <xref href="OpenSettings.Configurations.ProviderConfiguration.CompressionType" data-throw-if-not-resolved="false"></xref> value indicating the type of compression used.
+    content.vb: Public Property CompressionType As CompressionType
+  overload: OpenSettings.Configurations.ProviderConfiguration.CompressionType*
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  id: CompressionLevel
+  parent: OpenSettings.Configurations.ProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CompressionLevel
+  nameWithType: ProviderConfiguration.CompressionLevel
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/ProviderConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CompressionLevel
+    path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
+    startLine: 140
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the compression level used by the provider when storing setting data. Default level is <xref href="System.IO.Compression.CompressionLevel.Fastest" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public CompressionLevel CompressionLevel { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Compression.CompressionLevel
+      description: A <xref href="OpenSettings.Configurations.ProviderConfiguration.CompressionLevel" data-throw-if-not-resolved="false"></xref> value indicating the compression level.
+    content.vb: Public Property CompressionLevel As CompressionLevel
+  overload: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel*
+references:
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Configurations.ProviderConfiguration
+  commentId: T:OpenSettings.Configurations.ProviderConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.ProviderConfiguration.html
+  name: ProviderConfiguration
+  nameWithType: ProviderConfiguration
+  fullName: OpenSettings.Configurations.ProviderConfiguration
+- uid: OpenSettings.Models.DataAccessType.Orm
+  commentId: F:OpenSettings.Models.DataAccessType.Orm
+  href: OpenSettings.Models.DataAccessType.html#OpenSettings_Models_DataAccessType_Orm
+  name: Orm
+  nameWithType: DataAccessType.Orm
+  fullName: OpenSettings.Models.DataAccessType.Orm
+- uid: OpenSettings.Configurations.ProviderConfiguration.#ctor*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.#ctor
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration__ctor
+  name: ProviderConfiguration
+  nameWithType: ProviderConfiguration.ProviderConfiguration
+  fullName: OpenSettings.Configurations.ProviderConfiguration.ProviderConfiguration
+  nameWithType.vb: ProviderConfiguration.New
+  fullName.vb: OpenSettings.Configurations.ProviderConfiguration.New
+  name.vb: New
+- uid: OpenSettings.Models.DataAccessType
+  commentId: T:OpenSettings.Models.DataAccessType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.DataAccessType.html
+  name: DataAccessType
+  nameWithType: DataAccessType
+  fullName: OpenSettings.Models.DataAccessType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Configurations.ProviderConfiguration.Selection*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.Selection
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_Selection
+  name: Selection
+  nameWithType: ProviderConfiguration.Selection
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Selection
+- uid: OpenSettings.Configurations.ProviderConfiguration.Selection
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.Selection
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_Selection
+  name: Selection
+  nameWithType: ProviderConfiguration.Selection
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Selection
+- uid: OpenSettings.Configurations.OrmConfiguration
+  commentId: T:OpenSettings.Configurations.OrmConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.OrmConfiguration.html
+  name: OrmConfiguration
+  nameWithType: OrmConfiguration
+  fullName: OpenSettings.Configurations.OrmConfiguration
+- uid: OpenSettings.Configurations.ProviderConfiguration.Orm*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.Orm
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_Orm
+  name: Orm
+  nameWithType: ProviderConfiguration.Orm
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Orm
+- uid: OpenSettings.Configurations.RedisConfiguration
+  commentId: T:OpenSettings.Configurations.RedisConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.RedisConfiguration.html
+  name: RedisConfiguration
+  nameWithType: RedisConfiguration
+  fullName: OpenSettings.Configurations.RedisConfiguration
+- uid: OpenSettings.Configurations.ProviderConfiguration.Redis*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.Redis
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_Redis
+  name: Redis
+  nameWithType: ProviderConfiguration.Redis
+  fullName: OpenSettings.Configurations.ProviderConfiguration.Redis
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_IsOrmSelected
+  name: IsOrmSelected
+  nameWithType: ProviderConfiguration.IsOrmSelected
+  fullName: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected
+- uid: OpenSettings.Configurations.ProviderConfiguration.LicenseKey*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_LicenseKey
+  name: LicenseKey
+  nameWithType: ProviderConfiguration.LicenseKey
+  fullName: OpenSettings.Configurations.ProviderConfiguration.LicenseKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Ogu.Compressions.Abstractions.CompressionType.None
+  commentId: F:Ogu.Compressions.Abstractions.CompressionType.None
+  isExternal: true
+  name: None
+  nameWithType: CompressionType.None
+  fullName: Ogu.Compressions.Abstractions.CompressionType.None
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_CompressionType
+  name: CompressionType
+  nameWithType: ProviderConfiguration.CompressionType
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionType
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionType*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.CompressionType
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_CompressionType
+  name: CompressionType
+  nameWithType: ProviderConfiguration.CompressionType
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionType
+- uid: Ogu.Compressions.Abstractions.CompressionType
+  commentId: T:Ogu.Compressions.Abstractions.CompressionType
+  parent: Ogu.Compressions.Abstractions
+  isExternal: true
+  name: CompressionType
+  nameWithType: CompressionType
+  fullName: Ogu.Compressions.Abstractions.CompressionType
+- uid: Ogu.Compressions.Abstractions
+  commentId: N:Ogu.Compressions.Abstractions
+  isExternal: true
+  name: Ogu.Compressions.Abstractions
+  nameWithType: Ogu.Compressions.Abstractions
+  fullName: Ogu.Compressions.Abstractions
+  spec.csharp:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions
+    name: Compressions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions
+    name: Compressions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: System.IO.Compression.CompressionLevel.Fastest
+  commentId: F:System.IO.Compression.CompressionLevel.Fastest
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel#system-io-compression-compressionlevel-fastest
+  name: Fastest
+  nameWithType: CompressionLevel.Fastest
+  fullName: System.IO.Compression.CompressionLevel.Fastest
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  commentId: P:OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_CompressionLevel
+  name: CompressionLevel
+  nameWithType: ProviderConfiguration.CompressionLevel
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+- uid: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel*
+  commentId: Overload:OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+  href: OpenSettings.Configurations.ProviderConfiguration.html#OpenSettings_Configurations_ProviderConfiguration_CompressionLevel
+  name: CompressionLevel
+  nameWithType: ProviderConfiguration.CompressionLevel
+  fullName: OpenSettings.Configurations.ProviderConfiguration.CompressionLevel
+- uid: System.IO.Compression.CompressionLevel
+  commentId: T:System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel
+  name: CompressionLevel
+  nameWithType: CompressionLevel
+  fullName: System.IO.Compression.CompressionLevel
+- uid: System.IO.Compression
+  commentId: N:System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Compression
+  nameWithType: System.IO.Compression
+  fullName: System.IO.Compression
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression

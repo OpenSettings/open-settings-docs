@@ -1,0 +1,433 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Inputs.AcquireLockInput
+  commentId: T:OpenSettings.Models.Inputs.AcquireLockInput
+  id: AcquireLockInput
+  parent: OpenSettings.Models.Inputs
+  children:
+  - OpenSettings.Models.Inputs.AcquireLockInput.Key
+  - OpenSettings.Models.Inputs.AcquireLockInput.Owner
+  - OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+  langs:
+  - csharp
+  - vb
+  name: AcquireLockInput
+  nameWithType: AcquireLockInput
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AcquireLockInput
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public class AcquireLockInput
+    content.vb: Public Class AcquireLockInput
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Key
+  commentId: P:OpenSettings.Models.Inputs.AcquireLockInput.Key
+  id: Key
+  parent: OpenSettings.Models.Inputs.AcquireLockInput
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: AcquireLockInput.Key
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Key
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Key
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: OpenSettings.Models.Inputs.AcquireLockInput.Key*
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Owner
+  commentId: P:OpenSettings.Models.Inputs.AcquireLockInput.Owner
+  id: Owner
+  parent: OpenSettings.Models.Inputs.AcquireLockInput
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: AcquireLockInput.Owner
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Owner
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Owner
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public string Owner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Owner As String
+  overload: OpenSettings.Models.Inputs.AcquireLockInput.Owner*
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+  commentId: P:OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+  id: Timeout
+  parent: OpenSettings.Models.Inputs.AcquireLockInput
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: AcquireLockInput.Timeout
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Timeout
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/AcquireLockInput.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public TimeSpan Timeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Timeout As TimeSpan
+  overload: OpenSettings.Models.Inputs.AcquireLockInput.Timeout*
+references:
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Key*
+  commentId: Overload:OpenSettings.Models.Inputs.AcquireLockInput.Key
+  href: OpenSettings.Models.Inputs.AcquireLockInput.html#OpenSettings_Models_Inputs_AcquireLockInput_Key
+  name: Key
+  nameWithType: AcquireLockInput.Key
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Owner*
+  commentId: Overload:OpenSettings.Models.Inputs.AcquireLockInput.Owner
+  href: OpenSettings.Models.Inputs.AcquireLockInput.html#OpenSettings_Models_Inputs_AcquireLockInput_Owner
+  name: Owner
+  nameWithType: AcquireLockInput.Owner
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Owner
+- uid: OpenSettings.Models.Inputs.AcquireLockInput.Timeout*
+  commentId: Overload:OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+  href: OpenSettings.Models.Inputs.AcquireLockInput.html#OpenSettings_Models_Inputs_AcquireLockInput_Timeout
+  name: Timeout
+  nameWithType: AcquireLockInput.Timeout
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput.Timeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

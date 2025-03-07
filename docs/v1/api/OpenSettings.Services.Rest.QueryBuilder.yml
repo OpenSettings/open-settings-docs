@@ -1,0 +1,663 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.QueryBuilder
+  commentId: T:OpenSettings.Services.Rest.QueryBuilder
+  id: QueryBuilder
+  parent: OpenSettings.Services.Rest
+  children:
+  - OpenSettings.Services.Rest.QueryBuilder.#ctor
+  - OpenSettings.Services.Rest.QueryBuilder.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - OpenSettings.Services.Rest.QueryBuilder.#ctor(System.String,System.Object)
+  - OpenSettings.Services.Rest.QueryBuilder.Append(System.String,System.Object)
+  - OpenSettings.Services.Rest.QueryBuilder.ToString
+  - OpenSettings.Services.Rest.QueryBuilder.ToString(System.String)
+  langs:
+  - csharp
+  - vb
+  name: QueryBuilder
+  nameWithType: QueryBuilder
+  fullName: OpenSettings.Services.Rest.QueryBuilder
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: QueryBuilder
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public class QueryBuilder
+    content.vb: Public Class QueryBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: OpenSettings.Services.Rest.QueryBuilder.#ctor
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: QueryBuilder()
+  nameWithType: QueryBuilder.QueryBuilder()
+  fullName: OpenSettings.Services.Rest.QueryBuilder.QueryBuilder()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public QueryBuilder()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Services.Rest.QueryBuilder.#ctor*
+  nameWithType.vb: QueryBuilder.New()
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.New()
+  name.vb: New()
+- uid: OpenSettings.Services.Rest.QueryBuilder.#ctor(System.String,System.Object)
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.#ctor(System.String,System.Object)
+  id: '#ctor(System.String,System.Object)'
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: QueryBuilder(string, object)
+  nameWithType: QueryBuilder.QueryBuilder(string, object)
+  fullName: OpenSettings.Services.Rest.QueryBuilder.QueryBuilder(string, object)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public QueryBuilder(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    content.vb: Public Sub New(key As String, value As Object)
+  overload: OpenSettings.Services.Rest.QueryBuilder.#ctor*
+  nameWithType.vb: QueryBuilder.New(String, Object)
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.New(String, Object)
+  name.vb: New(String, Object)
+- uid: OpenSettings.Services.Rest.QueryBuilder.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: '#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})'
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: QueryBuilder(IDictionary<string, object>)
+  nameWithType: QueryBuilder.QueryBuilder(IDictionary<string, object>)
+  fullName: OpenSettings.Services.Rest.QueryBuilder.QueryBuilder(System.Collections.Generic.IDictionary<string, object>)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public QueryBuilder(IDictionary<string, object> dictionary)
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Sub New(dictionary As IDictionary(Of String, Object))
+  overload: OpenSettings.Services.Rest.QueryBuilder.#ctor*
+  nameWithType.vb: QueryBuilder.New(IDictionary(Of String, Object))
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.New(System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: New(IDictionary(Of String, Object))
+- uid: OpenSettings.Services.Rest.QueryBuilder.Append(System.String,System.Object)
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.Append(System.String,System.Object)
+  id: Append(System.String,System.Object)
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: Append(string, object)
+  nameWithType: QueryBuilder.Append(string, object)
+  fullName: OpenSettings.Services.Rest.QueryBuilder.Append(string, object)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Append
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 35
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public QueryBuilder Append(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    return:
+      type: OpenSettings.Services.Rest.QueryBuilder
+    content.vb: Public Function Append(key As String, value As Object) As QueryBuilder
+  overload: OpenSettings.Services.Rest.QueryBuilder.Append*
+  nameWithType.vb: QueryBuilder.Append(String, Object)
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.Append(String, Object)
+  name.vb: Append(String, Object)
+- uid: OpenSettings.Services.Rest.QueryBuilder.ToString(System.String)
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.ToString(System.String)
+  id: ToString(System.String)
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString(string)
+  nameWithType: QueryBuilder.ToString(string)
+  fullName: OpenSettings.Services.Rest.QueryBuilder.ToString(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ToString
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 49
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public string ToString(string uri)
+    parameters:
+    - id: uri
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(uri As String) As String
+  overload: OpenSettings.Services.Rest.QueryBuilder.ToString*
+  nameWithType.vb: QueryBuilder.ToString(String)
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.ToString(String)
+  name.vb: ToString(String)
+- uid: OpenSettings.Services.Rest.QueryBuilder.ToString
+  commentId: M:OpenSettings.Services.Rest.QueryBuilder.ToString
+  id: ToString
+  parent: OpenSettings.Services.Rest.QueryBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: QueryBuilder.ToString()
+  fullName: OpenSettings.Services.Rest.QueryBuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/QueryBuilder.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ToString
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/QueryBuilder.cs
+    startLine: 54
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: OpenSettings.Services.Rest.QueryBuilder.ToString*
+references:
+- uid: OpenSettings.Services.Rest
+  commentId: N:OpenSettings.Services.Rest
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest
+  nameWithType: OpenSettings.Services.Rest
+  fullName: OpenSettings.Services.Rest
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.Rest.QueryBuilder.#ctor*
+  commentId: Overload:OpenSettings.Services.Rest.QueryBuilder.#ctor
+  href: OpenSettings.Services.Rest.QueryBuilder.html#OpenSettings_Services_Rest_QueryBuilder__ctor
+  name: QueryBuilder
+  nameWithType: QueryBuilder.QueryBuilder
+  fullName: OpenSettings.Services.Rest.QueryBuilder.QueryBuilder
+  nameWithType.vb: QueryBuilder.New
+  fullName.vb: OpenSettings.Services.Rest.QueryBuilder.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, object>
+  nameWithType: IDictionary<string, object>
+  fullName: System.Collections.Generic.IDictionary<string, object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenSettings.Services.Rest.QueryBuilder.Append*
+  commentId: Overload:OpenSettings.Services.Rest.QueryBuilder.Append
+  href: OpenSettings.Services.Rest.QueryBuilder.html#OpenSettings_Services_Rest_QueryBuilder_Append_System_String_System_Object_
+  name: Append
+  nameWithType: QueryBuilder.Append
+  fullName: OpenSettings.Services.Rest.QueryBuilder.Append
+- uid: OpenSettings.Services.Rest.QueryBuilder
+  commentId: T:OpenSettings.Services.Rest.QueryBuilder
+  parent: OpenSettings.Services.Rest
+  href: OpenSettings.Services.Rest.QueryBuilder.html
+  name: QueryBuilder
+  nameWithType: QueryBuilder
+  fullName: OpenSettings.Services.Rest.QueryBuilder
+- uid: OpenSettings.Services.Rest.QueryBuilder.ToString*
+  commentId: Overload:OpenSettings.Services.Rest.QueryBuilder.ToString
+  href: OpenSettings.Services.Rest.QueryBuilder.html#OpenSettings_Services_Rest_QueryBuilder_ToString_System_String_
+  name: ToString
+  nameWithType: QueryBuilder.ToString
+  fullName: OpenSettings.Services.Rest.QueryBuilder.ToString
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )

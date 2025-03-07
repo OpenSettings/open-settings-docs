@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ProviderInfo
+  commentId: T:OpenSettings.Models.ProviderInfo
+  id: ProviderInfo
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ProviderInfo.Authorize
+  - OpenSettings.Models.ProviderInfo.Client
+  - OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
+  - OpenSettings.Models.ProviderInfo.OAuth2
+  - OpenSettings.Models.ProviderInfo.PackVersion
+  - OpenSettings.Models.ProviderInfo.PackVersionScore
+  - OpenSettings.Models.ProviderInfo.Redis
+  - OpenSettings.Models.ProviderInfo.Version
+  langs:
+  - csharp
+  - vb
+  name: ProviderInfo
+  nameWithType: ProviderInfo
+  fullName: OpenSettings.Models.ProviderInfo
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderInfo
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents information about a provider, including client details, authorization status, version information,
+
+    and configuration related to OpenSettings, OAuth2, and Redis.
+  example: []
+  syntax:
+    content: public class ProviderInfo
+    content.vb: Public Class ProviderInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.ProviderInfo.Client
+  commentId: P:OpenSettings.Models.ProviderInfo.Client
+  id: Client
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: ProviderInfo.Client
+  fullName: OpenSettings.Models.ProviderInfo.Client
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Client
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the client information associated with the provider.
+  example: []
+  syntax:
+    content: public ProviderInfoClient Client { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ProviderInfoClient
+    content.vb: Public Property Client As ProviderInfoClient
+  overload: OpenSettings.Models.ProviderInfo.Client*
+- uid: OpenSettings.Models.ProviderInfo.Authorize
+  commentId: P:OpenSettings.Models.ProviderInfo.Authorize
+  id: Authorize
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: Authorize
+  nameWithType: ProviderInfo.Authorize
+  fullName: OpenSettings.Models.ProviderInfo.Authorize
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Authorize
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets a value indicating whether the provider is authorized.
+  example: []
+  syntax:
+    content: public bool Authorize { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Authorize As Boolean
+  overload: OpenSettings.Models.ProviderInfo.Authorize*
+- uid: OpenSettings.Models.ProviderInfo.Version
+  commentId: P:OpenSettings.Models.ProviderInfo.Version
+  id: Version
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ProviderInfo.Version
+  fullName: OpenSettings.Models.ProviderInfo.Version
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Version
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the client's version.
+  remarks: e.g. "1.0.0"
+  example: []
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: OpenSettings.Models.ProviderInfo.Version*
+- uid: OpenSettings.Models.ProviderInfo.PackVersion
+  commentId: P:OpenSettings.Models.ProviderInfo.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: ProviderInfo.PackVersion
+  fullName: OpenSettings.Models.ProviderInfo.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the version of the OpenSettings.
+  remarks: e.g. "1.0.0"
+  example: []
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Models.ProviderInfo.PackVersion*
+- uid: OpenSettings.Models.ProviderInfo.PackVersionScore
+  commentId: P:OpenSettings.Models.ProviderInfo.PackVersionScore
+  id: PackVersionScore
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: PackVersionScore
+  nameWithType: ProviderInfo.PackVersionScore
+  fullName: OpenSettings.Models.ProviderInfo.PackVersionScore
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersionScore
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 43
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Gets or sets the numerical score of the OpenSettings version, used for comparing versions.
+
+    A higher score indicates a more recent version.
+  remarks: e.g. "281474976710656"
+  example: []
+  syntax:
+    content: public long PackVersionScore { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property PackVersionScore As Long
+  overload: OpenSettings.Models.ProviderInfo.PackVersionScore*
+- uid: OpenSettings.Models.ProviderInfo.OAuth2
+  commentId: P:OpenSettings.Models.ProviderInfo.OAuth2
+  id: OAuth2
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: OAuth2
+  nameWithType: ProviderInfo.OAuth2
+  fullName: OpenSettings.Models.ProviderInfo.OAuth2
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OAuth2
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 48
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the OAuth2 configuration for the provider.
+  example: []
+  syntax:
+    content: public OAuth2Info OAuth2 { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.OAuth2Info
+    content.vb: Public Property OAuth2 As OAuth2Info
+  overload: OpenSettings.Models.ProviderInfo.OAuth2*
+- uid: OpenSettings.Models.ProviderInfo.Redis
+  commentId: P:OpenSettings.Models.ProviderInfo.Redis
+  id: Redis
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: Redis
+  nameWithType: ProviderInfo.Redis
+  fullName: OpenSettings.Models.ProviderInfo.Redis
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Redis
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 53
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the Redis configuration for the provider.
+  example: []
+  syntax:
+    content: public RedisInfo Redis { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RedisInfo
+    content.vb: Public Property Redis As RedisInfo
+  overload: OpenSettings.Models.ProviderInfo.Redis*
+- uid: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
+  commentId: M:OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
+  id: GetAsKeyValuePairs
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: GetAsKeyValuePairs()
+  nameWithType: ProviderInfo.GetAsKeyValuePairs()
+  fullName: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAsKeyValuePairs
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 55
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public KeyValuePair<string, string>[] GetAsKeyValuePairs()
+    return:
+      type: System.Collections.Generic.KeyValuePair{System.String,System.String}[]
+    content.vb: Public Function GetAsKeyValuePairs() As KeyValuePair(Of String, String)()
+  overload: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs*
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.ProviderInfo.Client*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.Client
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Client
+  name: Client
+  nameWithType: ProviderInfo.Client
+  fullName: OpenSettings.Models.ProviderInfo.Client
+- uid: OpenSettings.Models.ProviderInfoClient
+  commentId: T:OpenSettings.Models.ProviderInfoClient
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderInfoClient.html
+  name: ProviderInfoClient
+  nameWithType: ProviderInfoClient
+  fullName: OpenSettings.Models.ProviderInfoClient
+- uid: OpenSettings.Models.ProviderInfo.Authorize*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.Authorize
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Authorize
+  name: Authorize
+  nameWithType: ProviderInfo.Authorize
+  fullName: OpenSettings.Models.ProviderInfo.Authorize
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.ProviderInfo.Version*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.Version
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Version
+  name: Version
+  nameWithType: ProviderInfo.Version
+  fullName: OpenSettings.Models.ProviderInfo.Version
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.ProviderInfo.PackVersion*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.PackVersion
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_PackVersion
+  name: PackVersion
+  nameWithType: ProviderInfo.PackVersion
+  fullName: OpenSettings.Models.ProviderInfo.PackVersion
+- uid: OpenSettings.Models.ProviderInfo.PackVersionScore*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.PackVersionScore
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_PackVersionScore
+  name: PackVersionScore
+  nameWithType: ProviderInfo.PackVersionScore
+  fullName: OpenSettings.Models.ProviderInfo.PackVersionScore
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: OpenSettings.Models.ProviderInfo.OAuth2*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.OAuth2
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_OAuth2
+  name: OAuth2
+  nameWithType: ProviderInfo.OAuth2
+  fullName: OpenSettings.Models.ProviderInfo.OAuth2
+- uid: OpenSettings.Models.OAuth2Info
+  commentId: T:OpenSettings.Models.OAuth2Info
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.OAuth2Info.html
+  name: OAuth2Info
+  nameWithType: OAuth2Info
+  fullName: OpenSettings.Models.OAuth2Info
+- uid: OpenSettings.Models.ProviderInfo.Redis*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.Redis
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Redis
+  name: Redis
+  nameWithType: ProviderInfo.Redis
+  fullName: OpenSettings.Models.ProviderInfo.Redis
+- uid: OpenSettings.Models.RedisInfo
+  commentId: T:OpenSettings.Models.RedisInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RedisInfo.html
+  name: RedisInfo
+  nameWithType: RedisInfo
+  fullName: OpenSettings.Models.RedisInfo
+- uid: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_GetAsKeyValuePairs
+  name: GetAsKeyValuePairs
+  nameWithType: ProviderInfo.GetAsKeyValuePairs
+  fullName: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.String}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<string, string>[]
+  nameWithType: KeyValuePair<string, string>[]
+  fullName: System.Collections.Generic.KeyValuePair<string, string>[]
+  nameWithType.vb: KeyValuePair(Of String, String)()
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of String, String)()
+  name.vb: KeyValuePair(Of String, String)()
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: (
+  - name: )

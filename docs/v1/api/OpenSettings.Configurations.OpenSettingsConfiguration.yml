@@ -1,0 +1,1597 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration
+  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
+  id: OpenSettingsConfiguration
+  parent: OpenSettings.Configurations
+  children:
+  - OpenSettings.Configurations.OpenSettingsConfiguration.#ctor
+  - OpenSettings.Configurations.OpenSettingsConfiguration.#ctor(OpenSettings.Models.ServiceType)
+  - OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Client
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  - OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
+  - OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  - OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+  - OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+  - OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+  - OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+  - OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+  - OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+  - OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  - OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+  - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsConfiguration
+  nameWithType: OpenSettingsConfiguration
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OpenSettingsConfiguration
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Represents the configuration for the open settings. 
+
+    This class is responsible for handling different configurations s
+
+    based on the selected service type and the selection status.
+  example: []
+  syntax:
+    content: public class OpenSettingsConfiguration
+    content.vb: Public Class OpenSettingsConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.#ctor
+  commentId: M:OpenSettings.Configurations.OpenSettingsConfiguration.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsConfiguration()
+  nameWithType: OpenSettingsConfiguration.OpenSettingsConfiguration()
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.OpenSettingsConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Configurations.OpenSettingsConfiguration" data-throw-if-not-resolved="false"></xref> class
+
+    with the default service type of <xref href="OpenSettings.Models.ServiceType.Provider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public OpenSettingsConfiguration()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.#ctor*
+  nameWithType.vb: OpenSettingsConfiguration.New()
+  fullName.vb: OpenSettings.Configurations.OpenSettingsConfiguration.New()
+  name.vb: New()
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.#ctor(OpenSettings.Models.ServiceType)
+  commentId: M:OpenSettings.Configurations.OpenSettingsConfiguration.#ctor(OpenSettings.Models.ServiceType)
+  id: '#ctor(OpenSettings.Models.ServiceType)'
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsConfiguration(ServiceType)
+  nameWithType: OpenSettingsConfiguration.OpenSettingsConfiguration(ServiceType)
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.OpenSettingsConfiguration(OpenSettings.Models.ServiceType)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 35
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Configurations.OpenSettingsConfiguration" data-throw-if-not-resolved="false"></xref> class
+
+    with the specified <code class="paramref">selection</code> representing the type of service to configure.
+  example: []
+  syntax:
+    content: public OpenSettingsConfiguration(ServiceType selection)
+    parameters:
+    - id: selection
+      type: OpenSettings.Models.ServiceType
+      description: >-
+        The type of service to be configured. This is an instance of the <xref href="OpenSettings.Models.ServiceType" data-throw-if-not-resolved="false"></xref> enumeration.
+
+        The possible values are:
+
+        <xref href="OpenSettings.Models.ServiceType.Provider" data-throw-if-not-resolved="false"></xref> (the provider service configuration),
+
+        <xref href="OpenSettings.Models.ServiceType.Consumer" data-throw-if-not-resolved="false"></xref> (the consumer service configuration)
+    content.vb: Public Sub New(selection As ServiceType)
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.#ctor*
+  nameWithType.vb: OpenSettingsConfiguration.New(ServiceType)
+  fullName.vb: OpenSettings.Configurations.OpenSettingsConfiguration.New(OpenSettings.Models.ServiceType)
+  name.vb: New(ServiceType)
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+  id: InstanceDynamicId
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: InstanceDynamicId
+  nameWithType: OpenSettingsConfiguration.InstanceDynamicId
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceDynamicId
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 44
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Assigns a random guid at runtime unless a value is manually specified.
+  example: []
+  syntax:
+    content: public string InstanceDynamicId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstanceDynamicId As String
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+  id: InstanceName
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: InstanceName
+  nameWithType: OpenSettingsConfiguration.InstanceName
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceName
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 56
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the case-insensitive name of the instance.
+  example: []
+  syntax:
+    content: public string InstanceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: >-
+        The instance name. This value can be set to any non-empty string.
+
+        If the provided value is null, empty, or whitespace, the instance name will remain unchanged.
+
+        The default value is <code>"default"</code>.
+    content.vb: Public Property InstanceName As String
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  id: IdentifierName
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IdentifierName
+  nameWithType: OpenSettingsConfiguration.IdentifierName
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierName
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 85
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the case-insensitive name of the identifier.
+
+    This identifier can be used to distinguish between different environments, such as Production, Development, etc.
+  example: []
+  syntax:
+    content: public string IdentifierName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: >-
+        The identifier name. This value can be set to any non-empty string.
+
+        If the provided value is null, empty, or whitespace, the setting identifier name will remain unchanged.
+
+        The default value is <code>"Default"</code>.
+
+        The identifier helps to differentiate settings for different application environments, like Production, Development, etc.
+    content.vb: Public Property IdentifierName As String
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Client
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Client
+  id: Client
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: OpenSettingsConfiguration.Client
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Client
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Client
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 106
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the client information, including the client's id, name, and secret.
+
+    This information is used to identify the client.
+  example: []
+  syntax:
+    content: public ClientInfo Client { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ClientInfo
+    content.vb: Public Property Client As ClientInfo
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Client*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  id: Selection
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Selection
+  nameWithType: OpenSettingsConfiguration.Selection
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Selection
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 113
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Specifies whether the service acts as a Provider or a Consumer.
+  example: []
+  syntax:
+    content: public ServiceType Selection { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ServiceType
+    content.vb: Public Property Selection As ServiceType
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Selection*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  id: Consumer
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Consumer
+  nameWithType: OpenSettingsConfiguration.Consumer
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Consumer
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 134
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the configuration for the consumer service.
+  example: []
+  syntax:
+    content: public ConsumerConfiguration Consumer { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.ConsumerConfiguration
+      description: A <xref href="OpenSettings.Configurations.ConsumerConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the settings for the consumer service.
+    content.vb: Public Property Consumer As ConsumerConfiguration
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+  id: Provider
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: OpenSettingsConfiguration.Provider
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Provider
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 142
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the configuration for the provider service.
+  example: []
+  syntax:
+    content: public ProviderConfiguration Provider { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.ProviderConfiguration
+      description: A <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the settings for the provider service.
+    content.vb: Public Property Provider As ProviderConfiguration
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Provider*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  id: SyncAppDataMaxRetryCount
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SyncAppDataMaxRetryCount
+  nameWithType: OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SyncAppDataMaxRetryCount
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 172
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the maximum number of retries for initial syncing data. The retry behavior is determined as follows:
+
+    <ul><li>
+            <code>0</code> or any negative value other than <code>-1</code>: No retries (operation will fail immediately on failure).
+        </li><li>
+            <code>-1</code>: Infinite retries (operation will continue retrying until success).
+        </li><li>
+            Any positive integer: Retry up to the specified number of attempts.
+        </li></ul>
+    <p>
+
+    By default, the value is <code>-1</code>, which means infinite retries. Negative values other than <code>-1</code> are interpreted as "no retries" (equivalent to <code>0</code> retries), while <code>-1</code> signifies infinite retries. 
+
+    If set to a positive value, the system will attempt the operation that many times before giving up.
+
+    </p>
+  example: []
+  syntax:
+    content: public int SyncAppDataMaxRetryCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SyncAppDataMaxRetryCount As Integer
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  id: SyncAppDataRetryDelayMilliseconds
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SyncAppDataRetryDelayMilliseconds
+  nameWithType: OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SyncAppDataRetryDelayMilliseconds
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 180
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the delay time in milliseconds between retry attempts when a sync app data operation fails.
+  example: []
+  syntax:
+    content: public int SyncAppDataRetryDelayMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of milliseconds to wait before retrying a failed sync app data operation. The default value is 1000 milliseconds.
+    content.vb: Public Property SyncAppDataRetryDelayMilliseconds As Integer
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+  id: AllowAnonymousAccess
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AllowAnonymousAccess
+  nameWithType: OpenSettingsConfiguration.AllowAnonymousAccess
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AllowAnonymousAccess
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 192
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets a flag indicating whether anonymous access is allowed.
+
+    <p>
+
+    When set to false, its typically forces to pre-registration of the app or user
+
+    </p>
+  example: []
+  syntax:
+    content: public bool AllowAnonymousAccess { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        A boolean value that determines whether anonymous access is permitted. 
+
+        The default is <code>false</code>.
+    content.vb: Public Property AllowAnonymousAccess As Boolean
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  id: Operation
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: OpenSettingsConfiguration.Operation
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Operation
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 199
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the operation to perform during the setup process.
+
+    The default is <xref href="OpenSettings.Models.Operation.ReadOrInitialize" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Operation Operation { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.Operation
+      description: The <xref href="OpenSettings.Configurations.OpenSettingsConfiguration.Operation" data-throw-if-not-resolved="false"></xref> value indicating what operation to perform.
+    content.vb: Public Property Operation As Operation
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Operation*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+  id: StoreInSeparateFile
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StoreInSeparateFile
+  nameWithType: OpenSettingsConfiguration.StoreInSeparateFile
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 211
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets a value indicating whether the settings should be stored in a separate file, such as 
+
+    <code>settings-generated.*.json</code>, rather than the default <code>settings-generated.json</code> file.
+  remarks: >-
+    If not explicitly specified in the specific setting, this will be used 
+
+    as the default behavior for the first creation of the settings.
+
+    When set to <code>true</code>, settings are stored in a separate file; otherwise, they are stored in the default 
+
+    <code>settings-generated.json</code> file.
+  example: []
+  syntax:
+    content: public bool StoreInSeparateFile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StoreInSeparateFile As Boolean
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+  id: IgnoreOnFileChange
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChange
+  nameWithType: OpenSettingsConfiguration.IgnoreOnFileChange
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 228
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets a value indicating whether changes to the <code>settings-generated.json</code> file should be ignored 
+
+    when reloading the configuration.
+
+    <p>
+
+    This property applies specifically to the general <code>settings-generated.json</code> file. For all other settings, 
+
+    unless explicitly specified in its own setting, this will be used.
+
+    Its works in conjunction with the <xref href="Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder%2cSystem.String)" data-throw-if-not-resolved="false"></xref> method. When set to <code>true</code>,
+
+    changes to the file will not trigger a reload of the configuration. When set to <code>false</code>,
+
+    the file will be reloaded automatically if changes are detected. This property is typically used to
+
+    control the reloading behavior for the main settings file.
+
+    </p>
+  example: []
+  syntax:
+    content: public bool IgnoreOnFileChange { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> to ignore changes to the <code>settings-generated.json</code> file; otherwise, <code>false</code>.
+    content.vb: Public Property IgnoreOnFileChange As Boolean
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: OpenSettingsConfiguration.RegistrationMode
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 237
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the registration mode to use during the setup.
+
+    The default is <xref href="OpenSettings.Models.RegistrationMode.Configure" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public RegistrationMode RegistrationMode { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RegistrationMode
+      description: The <xref href="OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode" data-throw-if-not-resolved="false"></xref> value that determines the registration behavior.
+    content.vb: Public Property RegistrationMode As RegistrationMode
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+  id: IsConsumerSelected
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsConsumerSelected
+  nameWithType: OpenSettingsConfiguration.IsConsumerSelected
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsConsumerSelected
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 247
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets a value indicating whether the consumer service is currently selected.
+
+    This property is ignored during serialization (marked with <xref href="System.Text.Json.Serialization.JsonIgnoreAttribute" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public bool IsConsumerSelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        A boolean value that indicates if the consumer service is selected. 
+
+        This value is determined internally and cannot be set directly.
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property IsConsumerSelected As Boolean
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+  id: IsProviderSelected
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsProviderSelected
+  nameWithType: OpenSettingsConfiguration.IsProviderSelected
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsProviderSelected
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 258
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets a value indicating whether the provider service is currently selected.
+
+    This property is ignored during serialization (marked with <xref href="System.Text.Json.Serialization.JsonIgnoreAttribute" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public bool IsProviderSelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        A boolean value that indicates if the provider service is selected. 
+
+        This value is determined internally and cannot be set directly.
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property IsProviderSelected As Boolean
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  id: LoggerFactory
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoggerFactory
+  nameWithType: OpenSettingsConfiguration.LoggerFactory
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LoggerFactory
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 266
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: An optional logger factory used for logging information during the settings building process.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public ILoggerFactory LoggerFactory { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILoggerFactory
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property LoggerFactory As ILoggerFactory
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
+  commentId: M:OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
+  id: GetReloadStrategies
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetReloadStrategies()
+  nameWithType: OpenSettingsConfiguration.GetReloadStrategies()
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetReloadStrategies
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 286
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets the service reload strategies for the settings.
+  example: []
+  syntax:
+    content: public List<ReloadStrategy> GetReloadStrategies()
+    return:
+      type: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+      description: >-
+        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representing the reload strategy for the settings. 
+
+        The returned value may indicate how the settings are reloaded, such as the method or frequency of reload.
+    content.vb: Public Function GetReloadStrategies() As List(Of ReloadStrategy)
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies*
+references:
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration
+  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
+  name: OpenSettingsConfiguration
+  nameWithType: OpenSettingsConfiguration
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
+- uid: OpenSettings.Models.ServiceType.Provider
+  commentId: F:OpenSettings.Models.ServiceType.Provider
+  href: OpenSettings.Models.ServiceType.html#OpenSettings_Models_ServiceType_Provider
+  name: Provider
+  nameWithType: ServiceType.Provider
+  fullName: OpenSettings.Models.ServiceType.Provider
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.#ctor*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.#ctor
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration__ctor
+  name: OpenSettingsConfiguration
+  nameWithType: OpenSettingsConfiguration.OpenSettingsConfiguration
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.OpenSettingsConfiguration
+  nameWithType.vb: OpenSettingsConfiguration.New
+  fullName.vb: OpenSettings.Configurations.OpenSettingsConfiguration.New
+  name.vb: New
+- uid: OpenSettings.Models.ServiceType
+  commentId: T:OpenSettings.Models.ServiceType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ServiceType.html
+  name: ServiceType
+  nameWithType: ServiceType
+  fullName: OpenSettings.Models.ServiceType
+- uid: OpenSettings.Models.ServiceType.Consumer
+  commentId: F:OpenSettings.Models.ServiceType.Consumer
+  href: OpenSettings.Models.ServiceType.html#OpenSettings_Models_ServiceType_Consumer
+  name: Consumer
+  nameWithType: ServiceType.Consumer
+  fullName: OpenSettings.Models.ServiceType.Consumer
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_InstanceDynamicId
+  name: InstanceDynamicId
+  nameWithType: OpenSettingsConfiguration.InstanceDynamicId
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_InstanceName
+  name: InstanceName
+  nameWithType: OpenSettingsConfiguration.InstanceName
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IdentifierName
+  name: IdentifierName
+  nameWithType: OpenSettingsConfiguration.IdentifierName
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Client*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Client
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Client
+  name: Client
+  nameWithType: OpenSettingsConfiguration.Client
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Client
+- uid: OpenSettings.Models.ClientInfo
+  commentId: T:OpenSettings.Models.ClientInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ClientInfo.html
+  name: ClientInfo
+  nameWithType: ClientInfo
+  fullName: OpenSettings.Models.ClientInfo
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Selection*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Selection
+  name: Selection
+  nameWithType: OpenSettingsConfiguration.Selection
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+- uid: OpenSettings.Configurations.ConsumerConfiguration
+  commentId: T:OpenSettings.Configurations.ConsumerConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.ConsumerConfiguration.html
+  name: ConsumerConfiguration
+  nameWithType: ConsumerConfiguration
+  fullName: OpenSettings.Configurations.ConsumerConfiguration
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Consumer
+  name: Consumer
+  nameWithType: OpenSettingsConfiguration.Consumer
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+- uid: OpenSettings.Configurations.ProviderConfiguration
+  commentId: T:OpenSettings.Configurations.ProviderConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.ProviderConfiguration.html
+  name: ProviderConfiguration
+  nameWithType: ProviderConfiguration
+  fullName: OpenSettings.Configurations.ProviderConfiguration
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Provider*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Provider
+  name: Provider
+  nameWithType: OpenSettingsConfiguration.Provider
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataMaxRetryCount
+  name: SyncAppDataMaxRetryCount
+  nameWithType: OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataRetryDelayMilliseconds
+  name: SyncAppDataRetryDelayMilliseconds
+  nameWithType: OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_AllowAnonymousAccess
+  name: AllowAnonymousAccess
+  nameWithType: OpenSettingsConfiguration.AllowAnonymousAccess
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Operation.ReadOrInitialize
+  commentId: F:OpenSettings.Models.Operation.ReadOrInitialize
+  href: OpenSettings.Models.Operation.html#OpenSettings_Models_Operation_ReadOrInitialize
+  name: ReadOrInitialize
+  nameWithType: Operation.ReadOrInitialize
+  fullName: OpenSettings.Models.Operation.ReadOrInitialize
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Operation
+  name: Operation
+  nameWithType: OpenSettingsConfiguration.Operation
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Operation*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Operation
+  name: Operation
+  nameWithType: OpenSettingsConfiguration.Operation
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
+- uid: OpenSettings.Models.Operation
+  commentId: T:OpenSettings.Models.Operation
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: OpenSettings.Models.Operation
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: OpenSettingsConfiguration.StoreInSeparateFile
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+- uid: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
+  commentId: M:Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile#microsoft-extensions-configuration-jsonconfigurationextensions-addjsonfile(microsoft-extensions-configuration-iconfigurationbuilder-system-string)
+  name: AddJsonFile(IConfigurationBuilder, string)
+  nameWithType: JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder, string)
+  fullName: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder, string)
+  nameWithType.vb: JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder, String)
+  fullName.vb: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder, String)
+  name.vb: AddJsonFile(IConfigurationBuilder, String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
+    name: AddJsonFile
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile#microsoft-extensions-configuration-jsonconfigurationextensions-addjsonfile(microsoft-extensions-configuration-iconfigurationbuilder-system-string)
+  - name: (
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
+    name: AddJsonFile
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile#microsoft-extensions-configuration-jsonconfigurationextensions-addjsonfile(microsoft-extensions-configuration-iconfigurationbuilder-system-string)
+  - name: (
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: OpenSettingsConfiguration.IgnoreOnFileChange
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
+- uid: OpenSettings.Models.RegistrationMode.Configure
+  commentId: F:OpenSettings.Models.RegistrationMode.Configure
+  href: OpenSettings.Models.RegistrationMode.html#OpenSettings_Models_RegistrationMode_Configure
+  name: Configure
+  nameWithType: RegistrationMode.Configure
+  fullName: OpenSettings.Models.RegistrationMode.Configure
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode
+  name: RegistrationMode
+  nameWithType: OpenSettingsConfiguration.RegistrationMode
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode
+  name: RegistrationMode
+  nameWithType: OpenSettingsConfiguration.RegistrationMode
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: System.Text.Json.Serialization.JsonIgnoreAttribute
+  commentId: T:System.Text.Json.Serialization.JsonIgnoreAttribute
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonignoreattribute
+  name: JsonIgnoreAttribute
+  nameWithType: JsonIgnoreAttribute
+  fullName: System.Text.Json.Serialization.JsonIgnoreAttribute
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IsConsumerSelected
+  name: IsConsumerSelected
+  nameWithType: OpenSettingsConfiguration.IsConsumerSelected
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.serialization
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IsProviderSelected
+  name: IsProviderSelected
+  nameWithType: OpenSettingsConfiguration.IsProviderSelected
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_LoggerFactory
+  name: LoggerFactory
+  nameWithType: OpenSettingsConfiguration.LoggerFactory
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_GetReloadStrategies
+  name: GetReloadStrategies
+  nameWithType: OpenSettingsConfiguration.GetReloadStrategies
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
+- uid: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+  commentId: T:System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ReloadStrategy>
+  nameWithType: List<ReloadStrategy>
+  fullName: System.Collections.Generic.List<OpenSettings.Models.ReloadStrategy>
+  nameWithType.vb: List(Of ReloadStrategy)
+  fullName.vb: System.Collections.Generic.List(Of OpenSettings.Models.ReloadStrategy)
+  name.vb: List(Of ReloadStrategy)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: OpenSettings.Models.ReloadStrategy
+    name: ReloadStrategy
+    href: OpenSettings.Models.ReloadStrategy.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.ReloadStrategy
+    name: ReloadStrategy
+    href: OpenSettings.Models.ReloadStrategy.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,1409 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  id: NotificationSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+  - OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+  langs:
+  - csharp
+  - vb
+  name: NotificationSqlModel
+  nameWithType: NotificationSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationSqlModel
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents a notification entity.
+  example: []
+  syntax:
+    content: >-
+      [Table("Notifications")]
+
+      public class NotificationSqlModel : EntityBase<Guid>
+    content.vb: >-
+      <Table("Notifications")>
+
+      Public Class NotificationSqlModel Inherits EntityBase(Of Guid)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Notifications
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+  id: Title
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: NotificationSqlModel.Title
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Title
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The title of the notification.
+  example: []
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+  id: Message
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: NotificationSqlModel.Message
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Message
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The message content of the notification.
+  example: []
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+  id: Type
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: NotificationSqlModel.Type
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Type
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The type of the notification, specifying its category or purpose.
+  example: []
+  syntax:
+    content: public NotificationType Type { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.NotificationType
+    content.vb: Public Property Type As NotificationType
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+  id: Source
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: NotificationSqlModel.Source
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Source
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The source of the notification, indicating where it originated from.
+  example: []
+  syntax:
+    content: public NotificationSource Source { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.NotificationSource
+    content.vb: Public Property Source As NotificationSource
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+  id: Metadata
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: NotificationSqlModel.Metadata
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Metadata
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 36
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Additional metadata associated with the notification, stored as key-value pairs.
+  example: []
+  syntax:
+    content: public Dictionary<string, object> Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Property Metadata As Dictionary(Of String, Object)
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+  id: ExpiresIn
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ExpiresIn
+  nameWithType: NotificationSqlModel.ExpiresIn
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiresIn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 41
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The duration after which the notification expires. If null, the notification does not expire.
+  example: []
+  syntax:
+    content: public TimeSpan? ExpiresIn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property ExpiresIn As TimeSpan?
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+  id: IsExpired
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IsExpired
+  nameWithType: NotificationSqlModel.IsExpired
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsExpired
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 47
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Indicates whether the notification has expired.  
+
+    If <code>true</code>, new user mappings will not be created for this notification.
+  example: []
+  syntax:
+    content: public bool IsExpired { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsExpired As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+  id: ExpiredOn
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: ExpiredOn
+  nameWithType: NotificationSqlModel.ExpiredOn
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiredOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 52
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the notification was marked as expired.
+  example: []
+  syntax:
+    content: public DateTime? ExpiredOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property ExpiredOn As Date?
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+  id: CreatorName
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CreatorName
+  nameWithType: NotificationSqlModel.CreatorName
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatorName
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 57
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The name of the user who created this notification.
+  example: []
+  syntax:
+    content: public string CreatorName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CreatorName As String
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+  id: CreatedById
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedById
+  nameWithType: NotificationSqlModel.CreatedById
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedById
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 62
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The id of the user who created this notification.
+  example: []
+  syntax:
+    content: public Guid? CreatedById { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property CreatedById As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+  id: UpdatedById
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UpdatedById
+  nameWithType: NotificationSqlModel.UpdatedById
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedById
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 67
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The id of the user who last updated this notification.
+  example: []
+  syntax:
+    content: public Guid? UpdatedById { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property UpdatedById As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+  id: CreatedBy
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedBy
+  nameWithType: NotificationSqlModel.CreatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedBy
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 72
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The user who created this notification.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("CreatedById")]
+
+      public virtual UserSqlModel CreatedBy { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    content.vb: >-
+      <ForeignKey("CreatedById")>
+
+      Public Overridable Property CreatedBy As UserSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CreatedById
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+  id: UpdatedBy
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UpdatedBy
+  nameWithType: NotificationSqlModel.UpdatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedBy
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 78
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The user who last updated this notification.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("UpdatedById")]
+
+      public virtual UserSqlModel UpdatedBy { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    content.vb: >-
+      <ForeignKey("UpdatedById")>
+
+      Public Overridable Property UpdatedBy As UserSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UpdatedById
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+  id: UserNotificationMappings
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserNotificationMappings
+  nameWithType: NotificationSqlModel.UserNotificationMappings
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserNotificationMappings
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 84
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The collection of user-notification mappings associated with this notification.
+  example: []
+  syntax:
+    content: public virtual ICollection<UserNotificationMappingSqlModel> UserNotificationMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel}
+    content.vb: Public Overridable Property UserNotificationMappings As ICollection(Of UserNotificationMappingSqlModel)
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings*
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+  commentId: P:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+  id: UserGroupNotificationMappings
+  parent: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserGroupNotificationMappings
+  nameWithType: NotificationSqlModel.UserGroupNotificationMappings
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserGroupNotificationMappings
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/NotificationSqlModel.cs
+    startLine: 89
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The collection of user group-notification mappings associated with this notification.
+  example: []
+  syntax:
+    content: public virtual ICollection<UserGroupNotificationMappingSqlModel> UserGroupNotificationMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel}
+    content.vb: Public Overridable Property UserGroupNotificationMappings As ICollection(Of UserGroupNotificationMappingSqlModel)
+  overload: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings*
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<Guid>
+  nameWithType: EntityBase<Guid>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>
+  nameWithType.vb: EntityBase(Of Guid)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid)
+  name.vb: EntityBase(Of Guid)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<Guid>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.Id
+  nameWithType.vb: EntityBase(Of Guid).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<Guid>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.CreatedOn
+  nameWithType.vb: EntityBase(Of Guid).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<Guid>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Guid).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_Title
+  name: Title
+  nameWithType: NotificationSqlModel.Title
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_Message
+  name: Message
+  nameWithType: NotificationSqlModel.Message
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Message
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_Type
+  name: Type
+  nameWithType: NotificationSqlModel.Type
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Type
+- uid: OpenSettings.Models.NotificationType
+  commentId: T:OpenSettings.Models.NotificationType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.NotificationType.html
+  name: NotificationType
+  nameWithType: NotificationType
+  fullName: OpenSettings.Models.NotificationType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_Source
+  name: Source
+  nameWithType: NotificationSqlModel.Source
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Source
+- uid: OpenSettings.Models.NotificationSource
+  commentId: T:OpenSettings.Models.NotificationSource
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.NotificationSource.html
+  name: NotificationSource
+  nameWithType: NotificationSource
+  fullName: OpenSettings.Models.NotificationSource
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_Metadata
+  name: Metadata
+  nameWithType: NotificationSqlModel.Metadata
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.Metadata
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_ExpiresIn
+  name: ExpiresIn
+  nameWithType: NotificationSqlModel.ExpiresIn
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiresIn
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_IsExpired
+  name: IsExpired
+  nameWithType: NotificationSqlModel.IsExpired
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.IsExpired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_ExpiredOn
+  name: ExpiredOn
+  nameWithType: NotificationSqlModel.ExpiredOn
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.ExpiredOn
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_CreatorName
+  name: CreatorName
+  nameWithType: NotificationSqlModel.CreatorName
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatorName
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_CreatedById
+  name: CreatedById
+  nameWithType: NotificationSqlModel.CreatedById
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedById
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_UpdatedById
+  name: UpdatedById
+  nameWithType: NotificationSqlModel.UpdatedById
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedById
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_CreatedBy
+  name: CreatedBy
+  nameWithType: NotificationSqlModel.CreatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.CreatedBy
+- uid: OpenSettings.Domains.Sql.Entities.UserSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.UserSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.UserSqlModel.html
+  name: UserSqlModel
+  nameWithType: UserSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.UserSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_UpdatedBy
+  name: UpdatedBy
+  nameWithType: NotificationSqlModel.UpdatedBy
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UpdatedBy
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_UserNotificationMappings
+  name: UserNotificationMappings
+  nameWithType: NotificationSqlModel.UserNotificationMappings
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserNotificationMappings
+- uid: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel}
+  commentId: T:System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<UserNotificationMappingSqlModel>
+  nameWithType: ICollection<UserNotificationMappingSqlModel>
+  fullName: System.Collections.Generic.ICollection<OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel>
+  nameWithType.vb: ICollection(Of UserNotificationMappingSqlModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel)
+  name.vb: ICollection(Of UserNotificationMappingSqlModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel
+    name: UserNotificationMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel
+    name: UserNotificationMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserNotificationMappingSqlModel.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+  href: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.html#OpenSettings_Domains_Sql_Entities_NotificationSqlModel_UserGroupNotificationMappings
+  name: UserGroupNotificationMappings
+  nameWithType: NotificationSqlModel.UserGroupNotificationMappings
+  fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel.UserGroupNotificationMappings
+- uid: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel}
+  commentId: T:System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<UserGroupNotificationMappingSqlModel>
+  nameWithType: ICollection<UserGroupNotificationMappingSqlModel>
+  fullName: System.Collections.Generic.ICollection<OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel>
+  nameWithType.vb: ICollection(Of UserGroupNotificationMappingSqlModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel)
+  name.vb: ICollection(Of UserGroupNotificationMappingSqlModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel
+    name: UserGroupNotificationMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel
+    name: UserGroupNotificationMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserGroupNotificationMappingSqlModel.html
+  - name: )

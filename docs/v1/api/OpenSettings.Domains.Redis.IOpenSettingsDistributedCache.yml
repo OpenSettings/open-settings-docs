@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  commentId: T:OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  id: IOpenSettingsDistributedCache
+  parent: OpenSettings.Domains.Redis
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IOpenSettingsDistributedCache
+  nameWithType: IOpenSettingsDistributedCache
+  fullName: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Redis/IOpenSettingsDistributedCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IOpenSettingsDistributedCache
+    path: ../../../open-settings/src/OpenSettings/Domains/Redis/IOpenSettingsDistributedCache.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Redis
+  syntax:
+    content: 'public interface IOpenSettingsDistributedCache : IDistributedCache'
+    content.vb: Public Interface IOpenSettingsDistributedCache Inherits IDistributedCache
+  inheritedMembers:
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(System.String)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(System.String)
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Domains.Redis
+  commentId: N:OpenSettings.Domains.Redis
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Redis
+  nameWithType: OpenSettings.Domains.Redis
+  fullName: OpenSettings.Domains.Redis
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.get
+  name: Get(string)
+  nameWithType: IDistributedCache.Get(string)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(string)
+  nameWithType.vb: IDistributedCache.Get(String)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(String)
+  name.vb: Get(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
+    name: Get
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.get
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
+    name: Get
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.get
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.getasync
+  name: GetAsync(string, CancellationToken)
+  nameWithType: IDistributedCache.GetAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IDistributedCache.GetAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.getasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.GetAsync(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.getasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.set
+  name: Set(string, byte[], DistributedCacheEntryOptions)
+  nameWithType: IDistributedCache.Set(string, byte[], DistributedCacheEntryOptions)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(string, byte[], Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  nameWithType.vb: IDistributedCache.Set(String, Byte(), DistributedCacheEntryOptions)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(String, Byte(), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: Set(String, Byte(), DistributedCacheEntryOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.set
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.set
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.setasync
+  name: SetAsync(string, byte[], DistributedCacheEntryOptions, CancellationToken)
+  nameWithType: IDistributedCache.SetAsync(string, byte[], DistributedCacheEntryOptions, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(string, byte[], Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  nameWithType.vb: IDistributedCache.SetAsync(String, Byte(), DistributedCacheEntryOptions, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(String, Byte(), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  name.vb: SetAsync(String, Byte(), DistributedCacheEntryOptions, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.setasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.setasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(System.String)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(System.String)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refresh
+  name: Refresh(string)
+  nameWithType: IDistributedCache.Refresh(string)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(string)
+  nameWithType.vb: IDistributedCache.Refresh(String)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(String)
+  name.vb: Refresh(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(System.String)
+    name: Refresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refresh
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh(System.String)
+    name: Refresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refresh
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refreshasync
+  name: RefreshAsync(string, CancellationToken)
+  nameWithType: IDistributedCache.RefreshAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IDistributedCache.RefreshAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(String, System.Threading.CancellationToken)
+  name.vb: RefreshAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+    name: RefreshAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refreshasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+    name: RefreshAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.refreshasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(System.String)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(System.String)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.remove
+  name: Remove(string)
+  nameWithType: IDistributedCache.Remove(string)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(string)
+  nameWithType.vb: IDistributedCache.Remove(String)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(String)
+  name.vb: Remove(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.remove
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.remove
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.removeasync
+  name: RemoveAsync(string, CancellationToken)
+  nameWithType: IDistributedCache.RemoveAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IDistributedCache.RemoveAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(String, System.Threading.CancellationToken)
+  name.vb: RemoveAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+    name: RemoveAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.removeasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+    name: RemoveAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache.removeasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed

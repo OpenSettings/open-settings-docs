@@ -1,0 +1,590 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  commentId: T:OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  id: PollingSettingsWorkerConfiguration
+  parent: OpenSettings.Configurations
+  children:
+  - OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.String,System.String)
+  - OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.TimeSpan,System.TimeSpan)
+  - OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+  - OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period
+  - OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+  langs:
+  - csharp
+  - vb
+  name: PollingSettingsWorkerConfiguration
+  nameWithType: PollingSettingsWorkerConfiguration
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PollingSettingsWorkerConfiguration
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Represents a worker that handles polling for the latest settings within a specified period.
+
+    <p>
+
+    This class allows you to configure the initial wait time before starting the polling, 
+
+    the interval at which the polling occurs, and whether the worker is currently active.
+
+    </p>
+
+    <p>It also validates the input for time spans and sets default values if none are provided.</p>
+  example: []
+  syntax:
+    content: public class PollingSettingsWorkerConfiguration
+    content.vb: Public Class PollingSettingsWorkerConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.TimeSpan,System.TimeSpan)
+  commentId: M:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.TimeSpan,System.TimeSpan)
+  id: '#ctor(System.Boolean,System.TimeSpan,System.TimeSpan)'
+  parent: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PollingSettingsWorkerConfiguration(bool, TimeSpan, TimeSpan)
+  nameWithType: PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration(bool, TimeSpan, TimeSpan)
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration(bool, System.TimeSpan, System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  syntax:
+    content: public PollingSettingsWorkerConfiguration(bool isActive, TimeSpan startsIn, TimeSpan period)
+    parameters:
+    - id: isActive
+      type: System.Boolean
+    - id: startsIn
+      type: System.TimeSpan
+    - id: period
+      type: System.TimeSpan
+    content.vb: Public Sub New(isActive As Boolean, startsIn As TimeSpan, period As TimeSpan)
+  overload: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor*
+  nameWithType.vb: PollingSettingsWorkerConfiguration.New(Boolean, TimeSpan, TimeSpan)
+  fullName.vb: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.New(Boolean, System.TimeSpan, System.TimeSpan)
+  name.vb: New(Boolean, TimeSpan, TimeSpan)
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.String,System.String)
+  commentId: M:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor(System.Boolean,System.String,System.String)
+  id: '#ctor(System.Boolean,System.String,System.String)'
+  parent: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PollingSettingsWorkerConfiguration(bool, string, string)
+  nameWithType: PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration(bool, string, string)
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration(bool, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 40
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Initializes a new instance of the <xref href="OpenSettings.Configurations.PollingSettingsWorkerConfiguration" data-throw-if-not-resolved="false"></xref> class.
+
+    <p>
+
+    This constructor takes parameters to set the initial wait time, polling interval, and the active state of the worker.
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public PollingSettingsWorkerConfiguration(bool isActive = false, string startsIn = null, string period = null)
+    parameters:
+    - id: isActive
+      type: System.Boolean
+      description: Indicates whether the polling worker is active.
+    - id: startsIn
+      type: System.String
+      description: The time span to wait before starting the polling. Defaults to 5 minutes if not specified.
+    - id: period
+      type: System.String
+      description: The time span between polling period. Defaults to 5 minutes if not specified.
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New(isActive As Boolean = False, startsIn As String = Nothing, period As String = Nothing)
+  overload: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor*
+  exceptions:
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      Thrown when the format of the <code class="paramref">startsIn</code> 
+
+      or <code class="paramref">period</code> parameters is incorrect.
+  attributes:
+  - type: System.Text.Json.Serialization.JsonConstructorAttribute
+    ctor: System.Text.Json.Serialization.JsonConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: PollingSettingsWorkerConfiguration.New(Boolean, String, String)
+  fullName.vb: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.New(Boolean, String, String)
+  name.vb: New(Boolean, String, String)
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+  commentId: P:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+  id: IsActive
+  parent: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: PollingSettingsWorkerConfiguration.IsActive
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsActive
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 79
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets a value indicating whether the polling worker is active.
+
+    <p>If true, the worker is actively polling at the specified intervals; otherwise, it is paused.</p>
+  example: []
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive*
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+  commentId: P:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+  id: StartsIn
+  parent: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StartsIn
+  nameWithType: PollingSettingsWorkerConfiguration.StartsIn
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StartsIn
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 85
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets the time span to wait before starting the first polling.
+
+    <p>This value determines how long the worker will wait before initiating the first polling process.</p>
+  example: []
+  syntax:
+    content: public TimeSpan StartsIn { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property StartsIn As TimeSpan
+  overload: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn*
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period
+  commentId: P:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period
+  id: Period
+  parent: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: PollingSettingsWorkerConfiguration.Period
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Period
+    path: ../../../open-settings/src/OpenSettings/Configurations/PollingSettingsWorkerConfiguration.cs
+    startLine: 91
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets the time span between each polling interval.
+
+    <p>This value specifies how frequently the worker should poll for updates.</p>
+  example: []
+  syntax:
+    content: public TimeSpan Period { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Period As TimeSpan
+  overload: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period*
+references:
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor*
+  commentId: Overload:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.#ctor
+  href: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.html#OpenSettings_Configurations_PollingSettingsWorkerConfiguration__ctor_System_Boolean_System_TimeSpan_System_TimeSpan_
+  name: PollingSettingsWorkerConfiguration
+  nameWithType: PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.PollingSettingsWorkerConfiguration
+  nameWithType.vb: PollingSettingsWorkerConfiguration.New
+  fullName.vb: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  commentId: T:OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.html
+  name: PollingSettingsWorkerConfiguration
+  nameWithType: PollingSettingsWorkerConfiguration
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive*
+  commentId: Overload:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+  href: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.html#OpenSettings_Configurations_PollingSettingsWorkerConfiguration_IsActive
+  name: IsActive
+  nameWithType: PollingSettingsWorkerConfiguration.IsActive
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.IsActive
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn*
+  commentId: Overload:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+  href: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.html#OpenSettings_Configurations_PollingSettingsWorkerConfiguration_StartsIn
+  name: StartsIn
+  nameWithType: PollingSettingsWorkerConfiguration.StartsIn
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.StartsIn
+- uid: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period*
+  commentId: Overload:OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period
+  href: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.html#OpenSettings_Configurations_PollingSettingsWorkerConfiguration_Period
+  name: Period
+  nameWithType: PollingSettingsWorkerConfiguration.Period
+  fullName: OpenSettings.Configurations.PollingSettingsWorkerConfiguration.Period

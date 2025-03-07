@@ -1,0 +1,1003 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService
+  commentId: T:OpenSettings.Services.Interfaces.ILocalSettingsService
+  id: ILocalSettingsService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(System.String)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource[])
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,OpenSettings.Models.ConfigSource[])
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting``1
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync(System.Guid,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ILocalSettingsService
+  nameWithType: ILocalSettingsService
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ILocalSettingsService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface ILocalSettingsService
+    content.vb: Public Interface ILocalSettingsService
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.String,System.Threading.CancellationToken)
+  id: GetSettingAsync``1(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingAsync<T>(string, CancellationToken)
+  nameWithType: ILocalSettingsService.GetSettingAsync<T>(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync<T>(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Asynchronously retrieves a settings object of type <code class="typeparamref">T</code> using the specified identifier name.
+  example: []
+  syntax:
+    content: 'Task<T> GetSettingAsync<T>(string identifierName, CancellationToken cancellationToken = default) where T : ISettings'
+    parameters:
+    - id: identifierName
+      type: System.String
+      description: The identifier name used to retrieve the settings object. It cannot be null, empty, or whitespace.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the asynchronous operation if requested. The default value is <xref href="System.Threading.CancellationToken.None" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: A task representing the asynchronous operation, with a result of type <code class="typeparamref">T</code> that implements <xref href="OpenSettings.Services.Interfaces.ISettings" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function GetSettingAsync(Of T As ISettings)(identifierName As String, cancellationToken As CancellationToken = Nothing) As Task(Of T)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the <code class="paramref">identifierName</code> is null, empty, or whitespace.
+  - type: System.Threading.Tasks.TaskCanceledException
+    commentId: T:System.Threading.Tasks.TaskCanceledException
+    description: Thrown if the operation is canceled before completion.
+  nameWithType.vb: ILocalSettingsService.GetSettingAsync(Of T)(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(Of T)(String, System.Threading.CancellationToken)
+  name.vb: GetSettingAsync(Of T)(String, CancellationToken)
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting``1
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting``1
+  id: GetSetting``1
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSetting<T>()
+  nameWithType: ILocalSettingsService.GetSetting<T>()
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting<T>()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSetting
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Gets a local setting object of type <code class="typeparamref">T</code> or returns the default value if not found.
+  example: []
+  syntax:
+    content: 'T GetSetting<T>() where T : ISettings'
+    typeParameters:
+    - id: T
+      description: The type of the settings object.
+    return:
+      type: '{T}'
+      description: The settings object of type <code class="typeparamref">T</code> or the default value if not found.
+    content.vb: Function GetSetting(Of T As ISettings)() As T
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting*
+  nameWithType.vb: ILocalSettingsService.GetSetting(Of T)()
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting(Of T)()
+  name.vb: GetSetting(Of T)()
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,OpenSettings.Models.ConfigSource[])
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,OpenSettings.Models.ConfigSource[])
+  id: GetSettingAsync``1(System.IServiceProvider,OpenSettings.Models.ConfigSource[])
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingAsync<T>(IServiceProvider, params ConfigSource[])
+  nameWithType: ILocalSettingsService.GetSettingAsync<T>(IServiceProvider, params ConfigSource[])
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync<T>(System.IServiceProvider, params OpenSettings.Models.ConfigSource[])
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 41
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Gets a local setting object of type <code class="typeparamref">T</code> or returns the default value if not found.
+
+    If configuration sources are not provided, the default value of <code class="typeparamref">T</code> is returned. Based on the order of config sources, it will attempt to retrieve the value. 
+
+    The config sources are: File, Local, Singleton, Options, OptionsSnapshot, or OptionsMonitor. If the first config source does not contain the value, it will try the second one, and so on.
+  remarks: <b>Note:</b> If <code class="paramref">serviceProvider</code> is resolving from a Singleton, an exception will be thrown if <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> is used because it is scoped and cannot be resolved from a Singleton instance.
+  example: []
+  syntax:
+    content: Task<T> GetSettingAsync<T>(IServiceProvider serviceProvider, params ConfigSource[] configSources)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> used to resolve dependencies.
+    - id: configSources
+      type: OpenSettings.Models.ConfigSource[]
+      description: An array of config sources to attempt to fetch the value from, in the given order.
+    typeParameters:
+    - id: T
+      description: The type of the settings object.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: A task that represents the asynchronous operation, containing the settings object of type <code class="typeparamref">T</code> or the default value if not found.
+    content.vb: Function GetSettingAsync(Of T)(serviceProvider As IServiceProvider, ParamArray configSources As ConfigSource()) As Task(Of T)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  nameWithType.vb: ILocalSettingsService.GetSettingAsync(Of T)(IServiceProvider, ParamArray ConfigSource())
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(Of T)(System.IServiceProvider, ParamArray OpenSettings.Models.ConfigSource())
+  name.vb: GetSettingAsync(Of T)(IServiceProvider, ParamArray ConfigSource())
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  id: GetSettingAsync``1(System.IServiceProvider,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingAsync<T>(IServiceProvider, CancellationToken, params ConfigSource[])
+  nameWithType: ILocalSettingsService.GetSettingAsync<T>(IServiceProvider, CancellationToken, params ConfigSource[])
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync<T>(System.IServiceProvider, System.Threading.CancellationToken, params OpenSettings.Models.ConfigSource[])
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 56
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Gets a local setting object of type <code class="typeparamref">T</code> or returns the default value if not found.
+
+    If configuration sources are not provided, the default value of <code class="typeparamref">T</code> is returned. Based on the order of config sources, it will attempt to retrieve the value. 
+
+    The config sources are: File, Local, Singleton, Options, OptionsSnapshot, or OptionsMonitor. If the first config source does not contain the value, it will try the second one, and so on.
+  remarks: <b>Note:</b> If <code class="paramref">serviceProvider</code> is resolving from a Singleton, an exception will be thrown if <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> is used because it is scoped and cannot be resolved from a Singleton instance.
+  example: []
+  syntax:
+    content: Task<T> GetSettingAsync<T>(IServiceProvider serviceProvider, CancellationToken cancellationToken, params ConfigSource[] configSources)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> used to resolve dependencies.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the operation if requested.
+    - id: configSources
+      type: OpenSettings.Models.ConfigSource[]
+      description: An array of config sources to attempt to fetch the value from, in the given order.
+    typeParameters:
+    - id: T
+      description: The type of the settings object.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: A task that represents the asynchronous operation, containing the settings object of type <code class="typeparamref">T</code> or the default value if not found.
+    content.vb: Function GetSettingAsync(Of T)(serviceProvider As IServiceProvider, cancellationToken As CancellationToken, ParamArray configSources As ConfigSource()) As Task(Of T)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  nameWithType.vb: ILocalSettingsService.GetSettingAsync(Of T)(IServiceProvider, CancellationToken, ParamArray ConfigSource())
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(Of T)(System.IServiceProvider, System.Threading.CancellationToken, ParamArray OpenSettings.Models.ConfigSource())
+  name.vb: GetSettingAsync(Of T)(IServiceProvider, CancellationToken, ParamArray ConfigSource())
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource[])
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource[])
+  id: GetSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource[])
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingAsync(IServiceProvider, Guid, params ConfigSource[])
+  nameWithType: ILocalSettingsService.GetSettingAsync(IServiceProvider, Guid, params ConfigSource[])
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider, System.Guid, params OpenSettings.Models.ConfigSource[])
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 68
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Retrieves a local setting object by a unique identifier, based on the provided config sources. Returns the default value if not found.
+  remarks: <b>Note:</b> If <code class="paramref">serviceProvider</code> is resolving from a Singleton, an exception will be thrown if <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> is used because it is scoped and cannot be resolved from a Singleton instance.
+  example: []
+  syntax:
+    content: Task<object> GetSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, params ConfigSource[] configSources)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> used to resolve dependencies.
+    - id: computedIdentifier
+      type: System.Guid
+      description: A unique identifier for the setting.
+    - id: configSources
+      type: OpenSettings.Models.ConfigSource[]
+      description: An array of config sources to attempt to fetch the value from, in the given order.
+    return:
+      type: System.Threading.Tasks.Task{System.Object}
+      description: A task that represents the asynchronous operation, containing the setting object, or the default value if not found.
+    content.vb: Function GetSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, ParamArray configSources As ConfigSource()) As Task(Of Object)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  nameWithType.vb: ILocalSettingsService.GetSettingAsync(IServiceProvider, Guid, ParamArray ConfigSource())
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider, System.Guid, ParamArray OpenSettings.Models.ConfigSource())
+  name.vb: GetSettingAsync(IServiceProvider, Guid, ParamArray ConfigSource())
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  id: GetSettingAsync(System.IServiceProvider,System.Guid,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettingAsync(IServiceProvider, Guid, CancellationToken, params ConfigSource[])
+  nameWithType: ILocalSettingsService.GetSettingAsync(IServiceProvider, Guid, CancellationToken, params ConfigSource[])
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider, System.Guid, System.Threading.CancellationToken, params OpenSettings.Models.ConfigSource[])
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 81
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Retrieves a local setting object by a unique identifier, based on the provided config sources. Returns the default value if not found.
+  remarks: <b>Note:</b> If <code class="paramref">serviceProvider</code> is resolving from a Singleton, an exception will be thrown if <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> is used because it is scoped and cannot be resolved from a Singleton instance.
+  example: []
+  syntax:
+    content: Task<object> GetSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, CancellationToken cancellationToken, params ConfigSource[] configSources)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> used to resolve dependencies.
+    - id: computedIdentifier
+      type: System.Guid
+      description: A unique identifier for the setting.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the operation if requested.
+    - id: configSources
+      type: OpenSettings.Models.ConfigSource[]
+      description: An array of config sources to attempt to fetch the value from, in the given order.
+    return:
+      type: System.Threading.Tasks.Task{System.Object}
+      description: A task that represents the asynchronous operation, containing the setting object, or the default value if not found.
+    content.vb: Function GetSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, cancellationToken As CancellationToken, ParamArray configSources As ConfigSource()) As Task(Of Object)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  nameWithType.vb: ILocalSettingsService.GetSettingAsync(IServiceProvider, Guid, CancellationToken, ParamArray ConfigSource())
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider, System.Guid, System.Threading.CancellationToken, ParamArray OpenSettings.Models.ConfigSource())
+  name.vb: GetSettingAsync(IServiceProvider, Guid, CancellationToken, ParamArray ConfigSource())
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync(System.Guid,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync(System.Guid,System.Threading.CancellationToken)
+  id: SettingDataChangeNotifiedAsync(System.Guid,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: SettingDataChangeNotifiedAsync(Guid, CancellationToken)
+  nameWithType: ILocalSettingsService.SettingDataChangeNotifiedAsync(Guid, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync(System.Guid, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SettingDataChangeNotifiedAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 89
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: When a change notification is triggered, this method attempts to fetch the latest value for the specified <code class="paramref">computedIdentifier</code> based on recent updates.
+  example: []
+  syntax:
+    content: Task SettingDataChangeNotifiedAsync(Guid computedIdentifier, CancellationToken cancellationToken = default)
+    parameters:
+    - id: computedIdentifier
+      type: System.Guid
+      description: The identifier for the data that was changed and needs to be reloaded.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the operation if requested. The default is <xref href="System.Threading.CancellationToken.None" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function SettingDataChangeNotifiedAsync(computedIdentifier As Guid, cancellationToken As CancellationToken = Nothing) As Task
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync*
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.String,System.Threading.CancellationToken)
+  id: ReloadSettingsAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: ReloadSettingsAsync(string, CancellationToken)
+  nameWithType: ILocalSettingsService.ReloadSettingsAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReloadSettingsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 98
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Attempts to reload all settings based on the specified identifier name.
+  example: []
+  syntax:
+    content: Task<bool> ReloadSettingsAsync(string identifierName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: identifierName
+      type: System.String
+      description: The identifier name of the settings to reload. It cannot be null, empty, or whitespace.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the operation if requested. The default is <xref href="System.Threading.CancellationToken.None" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task representing the asynchronous operation. The task result is <code>true</code> if the reload was successful, otherwise <code>false</code>.
+    content.vb: Function ReloadSettingsAsync(identifierName As String, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the <code class="paramref">identifierName</code> is null, empty, or whitespace.
+  nameWithType.vb: ILocalSettingsService.ReloadSettingsAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(String, System.Threading.CancellationToken)
+  name.vb: ReloadSettingsAsync(String, CancellationToken)
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.Threading.CancellationToken)
+  id: ReloadSettingsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: ReloadSettingsAsync(CancellationToken)
+  nameWithType: ILocalSettingsService.ReloadSettingsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReloadSettingsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 106
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Reloads all settings in the current identifier without specifying a name.
+  example: []
+  syntax:
+    content: Task<bool> ReloadSettingsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token used to cancel the operation if requested. The default is <xref href="System.Threading.CancellationToken.None" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task representing the asynchronous operation. The task result is <code>true</code> if the reload was successful, otherwise <code>false</code>.
+    content.vb: Function ReloadSettingsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the identifier name is null, empty, or whitespace.
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(System.String)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(System.String)
+  id: DeleteSettings(System.String)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteSettings(string)
+  nameWithType: ILocalSettingsService.DeleteSettings(string)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteSettings
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 118
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Deletes all locally stored settings associated with the specified identifier name. 
+
+    If the identifier name matches the runtime identifier name specified in 
+
+    <xref href="OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName" data-throw-if-not-resolved="false"></xref>, the operation 
+
+    is skipped. Additionally, if the identifier has not been fetched, no settings will 
+
+    be removed.
+  example: []
+  syntax:
+    content: void DeleteSettings(string identifierName)
+    parameters:
+    - id: identifierName
+      type: System.String
+      description: The name of the identifier whose associated local settings are to be deleted.
+    content.vb: Sub DeleteSettings(identifierName As String)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings*
+  nameWithType.vb: ILocalSettingsService.DeleteSettings(String)
+  fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(String)
+  name.vb: DeleteSettings(String)
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  id: GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocalSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetLocalSettingAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
+  nameWithType: ILocalSettingsService.GetLocalSettingAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider, System.Guid, OpenSettings.Models.ConfigSource, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetLocalSettingAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+    startLine: 133
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Retrieves the local setting based on the specified computed identifier and configuration source. 
+
+    If the setting is not found, an error corresponding to the <code class="paramref">configSource</code> retrieval is returned. 
+
+    If the operation is successful, the retrieved setting is available in the <code>Data</code> field of the response.
+  example: []
+  syntax:
+    content: Task<IJsonResponse> GetLocalSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, ConfigSource configSource, CancellationToken cancellationToken = default)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: The service provider used to resolve dependencies required for the operation.
+    - id: computedIdentifier
+      type: System.Guid
+      description: A unique identifier used to locate the specific local setting.
+    - id: configSource
+      type: OpenSettings.Models.ConfigSource
+      description: The source of the configuration that determines how the setting is retrieved.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that can be used to cancel the asynchronous operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      description: >-
+        A task representing the asynchronous operation. The result contains a JSON response with the 
+
+        retrieved local setting or an error message if the setting is not found.
+    content.vb: Function GetLocalSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, configSource As ConfigSource, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: System.Threading.CancellationToken.None
+  commentId: P:System.Threading.CancellationToken.None
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none
+  name: None
+  nameWithType: CancellationToken.None
+  fullName: System.Threading.CancellationToken.None
+- uid: OpenSettings.Services.Interfaces.ISettings
+  commentId: T:OpenSettings.Services.Interfaces.ISettings
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ISettings.html
+  name: ISettings
+  nameWithType: ISettings
+  fullName: OpenSettings.Services.Interfaces.ISettings
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Threading.Tasks.TaskCanceledException
+  commentId: T:System.Threading.Tasks.TaskCanceledException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcanceledexception
+  name: TaskCanceledException
+  nameWithType: TaskCanceledException
+  fullName: System.Threading.Tasks.TaskCanceledException
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_GetSettingAsync__1_System_String_System_Threading_CancellationToken_
+  name: GetSettingAsync
+  nameWithType: ILocalSettingsService.GetSettingAsync
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_GetSetting__1
+  name: GetSetting
+  nameWithType: ILocalSettingsService.GetSetting
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetSetting
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsSnapshot`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  name: IOptionsSnapshot<TOptions>
+  nameWithType: IOptionsSnapshot<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsSnapshot<TOptions>
+  nameWithType.vb: IOptionsSnapshot(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsSnapshot(Of TOptions)
+  name.vb: IOptionsSnapshot(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+    name: IOptionsSnapshot
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+    name: IOptionsSnapshot
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: OpenSettings.Models.ConfigSource[]
+  isExternal: true
+  href: OpenSettings.Models.ConfigSource.html
+  name: ConfigSource[]
+  nameWithType: ConfigSource[]
+  fullName: OpenSettings.Models.ConfigSource[]
+  nameWithType.vb: ConfigSource()
+  fullName.vb: OpenSettings.Models.ConfigSource()
+  name.vb: ConfigSource()
+  spec.csharp:
+  - uid: OpenSettings.Models.ConfigSource
+    name: ConfigSource
+    href: OpenSettings.Models.ConfigSource.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenSettings.Models.ConfigSource
+    name: ConfigSource
+    href: OpenSettings.Models.ConfigSource.html
+  - name: (
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Object}
+  commentId: T:System.Threading.Tasks.Task{System.Object}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<object>
+  nameWithType: Task<object>
+  fullName: System.Threading.Tasks.Task<object>
+  nameWithType.vb: Task(Of Object)
+  fullName.vb: System.Threading.Tasks.Task(Of Object)
+  name.vb: Task(Of Object)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_SettingDataChangeNotifiedAsync_System_Guid_System_Threading_CancellationToken_
+  name: SettingDataChangeNotifiedAsync
+  nameWithType: ILocalSettingsService.SettingDataChangeNotifiedAsync
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.SettingDataChangeNotifiedAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_ReloadSettingsAsync_System_String_System_Threading_CancellationToken_
+  name: ReloadSettingsAsync
+  nameWithType: ILocalSettingsService.ReloadSettingsAsync
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.ReloadSettingsAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IdentifierName
+  name: IdentifierName
+  nameWithType: OpenSettingsConfiguration.IdentifierName
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_DeleteSettings_System_String_
+  name: DeleteSettings
+  nameWithType: ILocalSettingsService.DeleteSettings
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_GetLocalSettingAsync_System_IServiceProvider_System_Guid_OpenSettings_Models_ConfigSource_System_Threading_CancellationToken_
+  name: GetLocalSettingAsync
+  nameWithType: ILocalSettingsService.GetLocalSettingAsync
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync
+- uid: OpenSettings.Models.ConfigSource
+  commentId: T:OpenSettings.Models.ConfigSource
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigSource.html
+  name: ConfigSource
+  nameWithType: ConfigSource
+  fullName: OpenSettings.Models.ConfigSource
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html

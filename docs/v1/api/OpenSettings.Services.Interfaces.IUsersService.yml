@@ -1,0 +1,269 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IUsersService
+  commentId: T:OpenSettings.Services.Interfaces.IUsersService
+  id: IUsersService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IUsersService
+  nameWithType: IUsersService
+  fullName: OpenSettings.Services.Interfaces.IUsersService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IUsersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IUsersService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IUsersService.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IUsersService
+    content.vb: Public Interface IUsersService
+- uid: OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  id: GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUsersService
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateUserAsync(GetOrCreateUserInput, CancellationToken)
+  nameWithType: IUsersService.GetOrCreateUserAsync(GetOrCreateUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IUsersService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateUserAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IUsersService.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<GetOrCreateUserResponse> GetOrCreateUserAsync(GetOrCreateUserInput input, CancellationToken cancellationToken)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetOrCreateUserInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOrCreateUserResponse}
+    content.vb: Function GetOrCreateUserAsync(input As GetOrCreateUserInput, cancellationToken As CancellationToken) As Task(Of GetOrCreateUserResponse)
+  overload: OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync
+  href: OpenSettings.Services.Interfaces.IUsersService.html#OpenSettings_Services_Interfaces_IUsersService_GetOrCreateUserAsync_OpenSettings_Models_Inputs_GetOrCreateUserInput_System_Threading_CancellationToken_
+  name: GetOrCreateUserAsync
+  nameWithType: IUsersService.GetOrCreateUserAsync
+  fullName: OpenSettings.Services.Interfaces.IUsersService.GetOrCreateUserAsync
+- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput
+  commentId: T:OpenSettings.Models.Inputs.GetOrCreateUserInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html
+  name: GetOrCreateUserInput
+  nameWithType: GetOrCreateUserInput
+  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOrCreateUserResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOrCreateUserResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetOrCreateUserResponse>
+  nameWithType: Task<GetOrCreateUserResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.GetOrCreateUserResponse>
+  nameWithType.vb: Task(Of GetOrCreateUserResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.GetOrCreateUserResponse)
+  name.vb: Task(Of GetOrCreateUserResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOrCreateUserResponse
+    name: GetOrCreateUserResponse
+    href: OpenSettings.Models.Responses.GetOrCreateUserResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOrCreateUserResponse
+    name: GetOrCreateUserResponse
+    href: OpenSettings.Models.Responses.GetOrCreateUserResponse.html
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,889 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Redis.DataContext.Context
+  commentId: T:OpenSettings.Domains.Redis.DataContext.Context
+  id: Context
+  parent: OpenSettings.Domains.Redis.DataContext
+  children:
+  - OpenSettings.Domains.Redis.DataContext.Context.#ctor(StackExchange.Redis.ConfigurationOptions,OpenSettings.Domains.Redis.DataContext.RedisContextOptions)
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: Context
+  fullName: OpenSettings.Domains.Redis.DataContext.Context
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Redis/DataContext/Context.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Context
+    path: ../../../open-settings/src/OpenSettings/Domains/Redis/DataContext/Context.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Redis.DataContext
+  syntax:
+    content: 'public class Context : RedisContext, IAsyncDisposable, IDisposable'
+    content.vb: Public Class Context Inherits RedisContext Implements IAsyncDisposable, IDisposable
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Redis.DataContext.RedisContext
+  implements:
+  - System.IAsyncDisposable
+  - System.IDisposable
+  inheritedMembers:
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.Connect
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.Connection
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.Endpoints
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(System.String)
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(System.String)
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{{T}}})
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,{T}})
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(System.Boolean)
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync
+  - OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Domains.Redis.DataContext.Context.#ctor(StackExchange.Redis.ConfigurationOptions,OpenSettings.Domains.Redis.DataContext.RedisContextOptions)
+  commentId: M:OpenSettings.Domains.Redis.DataContext.Context.#ctor(StackExchange.Redis.ConfigurationOptions,OpenSettings.Domains.Redis.DataContext.RedisContextOptions)
+  id: '#ctor(StackExchange.Redis.ConfigurationOptions,OpenSettings.Domains.Redis.DataContext.RedisContextOptions)'
+  parent: OpenSettings.Domains.Redis.DataContext.Context
+  langs:
+  - csharp
+  - vb
+  name: Context(ConfigurationOptions, RedisContextOptions)
+  nameWithType: Context.Context(ConfigurationOptions, RedisContextOptions)
+  fullName: OpenSettings.Domains.Redis.DataContext.Context.Context(StackExchange.Redis.ConfigurationOptions, OpenSettings.Domains.Redis.DataContext.RedisContextOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Redis/DataContext/Context.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Domains/Redis/DataContext/Context.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Redis.DataContext
+  syntax:
+    content: public Context(ConfigurationOptions opts, RedisContextOptions redisContextOptions)
+    parameters:
+    - id: opts
+      type: StackExchange.Redis.ConfigurationOptions
+    - id: redisContextOptions
+      type: OpenSettings.Domains.Redis.DataContext.RedisContextOptions
+    content.vb: Public Sub New(opts As ConfigurationOptions, redisContextOptions As RedisContextOptions)
+  overload: OpenSettings.Domains.Redis.DataContext.Context.#ctor*
+  nameWithType.vb: Context.New(ConfigurationOptions, RedisContextOptions)
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.Context.New(StackExchange.Redis.ConfigurationOptions, OpenSettings.Domains.Redis.DataContext.RedisContextOptions)
+  name.vb: New(ConfigurationOptions, RedisContextOptions)
+references:
+- uid: OpenSettings.Domains.Redis.DataContext
+  commentId: N:OpenSettings.Domains.Redis.DataContext
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Redis.DataContext
+  nameWithType: OpenSettings.Domains.Redis.DataContext
+  fullName: OpenSettings.Domains.Redis.DataContext
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis.DataContext
+    name: DataContext
+    href: OpenSettings.Domains.Redis.DataContext.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis.DataContext
+    name: DataContext
+    href: OpenSettings.Domains.Redis.DataContext.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext
+  commentId: T:OpenSettings.Domains.Redis.DataContext.RedisContext
+  parent: OpenSettings.Domains.Redis.DataContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html
+  name: RedisContext
+  nameWithType: RedisContext
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_ConnectAsync
+  name: ConnectAsync()
+  nameWithType: RedisContext.ConnectAsync()
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync()
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync
+    name: ConnectAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_ConnectAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.ConnectAsync
+    name: ConnectAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_ConnectAsync
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Connect
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.Connect
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Connect
+  name: Connect()
+  nameWithType: RedisContext.Connect()
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.Connect()
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Connect
+    name: Connect
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Connect
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Connect
+    name: Connect
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Connect
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Connection
+  commentId: P:OpenSettings.Domains.Redis.DataContext.RedisContext.Connection
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Connection
+  name: Connection
+  nameWithType: RedisContext.Connection
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.Connection
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Endpoints
+  commentId: P:OpenSettings.Domains.Redis.DataContext.RedisContext.Endpoints
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Endpoints
+  name: Endpoints
+  nameWithType: RedisContext.Endpoints
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.Endpoints
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(System.String)
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(System.String)
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  isExternal: true
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetSubscriber_System_String_
+  name: GetSubscriber(string)
+  nameWithType: RedisContext.GetSubscriber(string)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(string)
+  nameWithType.vb: RedisContext.GetSubscriber(String)
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(String)
+  name.vb: GetSubscriber(String)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(System.String)
+    name: GetSubscriber
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetSubscriber_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetSubscriber(System.String)
+    name: GetSubscriber
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetSubscriber_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(System.String)
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(System.String)
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  isExternal: true
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetServer_System_String_
+  name: GetServer(string)
+  nameWithType: RedisContext.GetServer(string)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(string)
+  nameWithType.vb: RedisContext.GetServer(String)
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(String)
+  name.vb: GetServer(String)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(System.String)
+    name: GetServer
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetServer_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.GetServer(System.String)
+    name: GetServer
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_GetServer_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{{T}}})
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  definition: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  name: SafetyExecuteAsync<T>(Func<IConnectionMultiplexer, Task<T>>)
+  nameWithType: RedisContext.SafetyExecuteAsync<T>(Func<IConnectionMultiplexer, Task<T>>)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync<T>(System.Func<StackExchange.Redis.IConnectionMultiplexer, System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: RedisContext.SafetyExecuteAsync(Of T)(Func(Of IConnectionMultiplexer, Task(Of T)))
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync(Of T)(System.Func(Of StackExchange.Redis.IConnectionMultiplexer, System.Threading.Tasks.Task(Of T)))
+  name.vb: SafetyExecuteAsync(Of T)(Func(Of IConnectionMultiplexer, Task(Of T)))
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+    name: SafetyExecuteAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+    name: SafetyExecuteAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,{T}})
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  definition: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  name: SafetyExecute<T>(Func<IConnectionMultiplexer, T>)
+  nameWithType: RedisContext.SafetyExecute<T>(Func<IConnectionMultiplexer, T>)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute<T>(System.Func<StackExchange.Redis.IConnectionMultiplexer, T>)
+  nameWithType.vb: RedisContext.SafetyExecute(Of T)(Func(Of IConnectionMultiplexer, T))
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute(Of T)(System.Func(Of StackExchange.Redis.IConnectionMultiplexer, T))
+  name.vb: SafetyExecute(Of T)(Func(Of IConnectionMultiplexer, T))
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+    name: SafetyExecute
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+    name: SafetyExecute
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose
+  name: Dispose()
+  nameWithType: RedisContext.Dispose()
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose()
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose
+    name: Dispose
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose
+    name: Dispose
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(System.Boolean)
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(System.Boolean)
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  isExternal: true
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: RedisContext.Dispose(bool)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(bool)
+  nameWithType.vb: RedisContext.Dispose(Boolean)
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(System.Boolean)
+    name: Dispose
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.Dispose(System.Boolean)
+    name: Dispose
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: RedisContext.DisposeAsync()
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync()
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync
+    name: DisposeAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsync
+    name: DisposeAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsync
+  - name: (
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore
+  parent: OpenSettings.Domains.Redis.DataContext.RedisContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsyncCore
+  name: DisposeAsyncCore()
+  nameWithType: RedisContext.DisposeAsyncCore()
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore()
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore
+    name: DisposeAsyncCore
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsyncCore
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.DisposeAsyncCore
+    name: DisposeAsyncCore
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_DisposeAsyncCore
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+  isExternal: true
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  name: SafetyExecuteAsync<T>(Func<IConnectionMultiplexer, Task<T>>)
+  nameWithType: RedisContext.SafetyExecuteAsync<T>(Func<IConnectionMultiplexer, Task<T>>)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync<T>(System.Func<StackExchange.Redis.IConnectionMultiplexer, System.Threading.Tasks.Task<T>>)
+  nameWithType.vb: RedisContext.SafetyExecuteAsync(Of T)(Func(Of IConnectionMultiplexer, Task(Of T)))
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync(Of T)(System.Func(Of StackExchange.Redis.IConnectionMultiplexer, System.Threading.Tasks.Task(Of T)))
+  name.vb: SafetyExecuteAsync(Of T)(Func(Of IConnectionMultiplexer, Task(Of T)))
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+    name: SafetyExecuteAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecuteAsync``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,System.Threading.Tasks.Task{``0}})
+    name: SafetyExecuteAsync
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecuteAsync__1_System_Func_StackExchange_Redis_IConnectionMultiplexer_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+  commentId: M:OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+  isExternal: true
+  href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  name: SafetyExecute<T>(Func<IConnectionMultiplexer, T>)
+  nameWithType: RedisContext.SafetyExecute<T>(Func<IConnectionMultiplexer, T>)
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute<T>(System.Func<StackExchange.Redis.IConnectionMultiplexer, T>)
+  nameWithType.vb: RedisContext.SafetyExecute(Of T)(Func(Of IConnectionMultiplexer, T))
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute(Of T)(System.Func(Of StackExchange.Redis.IConnectionMultiplexer, T))
+  name.vb: SafetyExecute(Of T)(Func(Of IConnectionMultiplexer, T))
+  spec.csharp:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+    name: SafetyExecute
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Domains.Redis.DataContext.RedisContext.SafetyExecute``1(System.Func{StackExchange.Redis.IConnectionMultiplexer,``0})
+    name: SafetyExecute
+    href: OpenSettings.Domains.Redis.DataContext.RedisContext.html#OpenSettings_Domains_Redis_DataContext_RedisContext_SafetyExecute__1_System_Func_StackExchange_Redis_IConnectionMultiplexer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StackExchange.Redis.IConnectionMultiplexer
+    name: IConnectionMultiplexer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: OpenSettings.Domains.Redis.DataContext.Context.#ctor*
+  commentId: Overload:OpenSettings.Domains.Redis.DataContext.Context.#ctor
+  href: OpenSettings.Domains.Redis.DataContext.Context.html#OpenSettings_Domains_Redis_DataContext_Context__ctor_StackExchange_Redis_ConfigurationOptions_OpenSettings_Domains_Redis_DataContext_RedisContextOptions_
+  name: Context
+  nameWithType: Context.Context
+  fullName: OpenSettings.Domains.Redis.DataContext.Context.Context
+  nameWithType.vb: Context.New
+  fullName.vb: OpenSettings.Domains.Redis.DataContext.Context.New
+  name.vb: New
+- uid: StackExchange.Redis.ConfigurationOptions
+  commentId: T:StackExchange.Redis.ConfigurationOptions
+  parent: StackExchange.Redis
+  isExternal: true
+  name: ConfigurationOptions
+  nameWithType: ConfigurationOptions
+  fullName: StackExchange.Redis.ConfigurationOptions
+- uid: OpenSettings.Domains.Redis.DataContext.RedisContextOptions
+  commentId: T:OpenSettings.Domains.Redis.DataContext.RedisContextOptions
+  parent: OpenSettings.Domains.Redis.DataContext
+  href: OpenSettings.Domains.Redis.DataContext.RedisContextOptions.html
+  name: RedisContextOptions
+  nameWithType: RedisContextOptions
+  fullName: OpenSettings.Domains.Redis.DataContext.RedisContextOptions
+- uid: StackExchange.Redis
+  commentId: N:StackExchange.Redis
+  isExternal: true
+  name: StackExchange.Redis
+  nameWithType: StackExchange.Redis
+  fullName: StackExchange.Redis
+  spec.csharp:
+  - uid: StackExchange
+    name: StackExchange
+    isExternal: true
+  - name: .
+  - uid: StackExchange.Redis
+    name: Redis
+    isExternal: true
+  spec.vb:
+  - uid: StackExchange
+    name: StackExchange
+    isExternal: true
+  - name: .
+  - uid: StackExchange.Redis
+    name: Redis
+    isExternal: true

@@ -1,0 +1,898 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService
+  commentId: T:OpenSettings.Services.Interfaces.IAppGroupsService
+  id: IAppGroupsService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
+  - OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAppGroupsService
+  nameWithType: IAppGroupsService
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAppGroupsService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IAppGroupsService
+    content.vb: Public Interface IAppGroupsService
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  id: GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedGroupsAsync(GetPaginatedInput, CancellationToken)
+  nameWithType: IAppGroupsService.GetPaginatedGroupsAsync(GetPaginatedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedGroupsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetPaginatedGroupsAsync(GetPaginatedInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetPaginatedInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetPaginatedGroupsAsync(input As GetPaginatedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
+  id: DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUnmappedGroupsAsync(CancellationToken)
+  nameWithType: IAppGroupsService.DeleteUnmappedGroupsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteUnmappedGroupsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteUnmappedGroupsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteUnmappedGroupsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput,System.Threading.CancellationToken)
+  id: GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetGroupsAsync(GetGroupsInput, CancellationToken)
+  nameWithType: IAppGroupsService.GetGroupsAsync(GetGroupsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetGroupsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetGroupsAsync(GetGroupsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetGroupsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetGroupsAsync(input As GetGroupsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput,System.Threading.CancellationToken)
+  id: CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: CreateGroupAsync(CreateGroupInput, CancellationToken)
+  nameWithType: IAppGroupsService.CreateGroupAsync(CreateGroupInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateGroupAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CreateGroupAsync(CreateGroupInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateGroupInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CreateGroupAsync(input As CreateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  id: GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetGroupByIdAsync(GetGroupInput, CancellationToken)
+  nameWithType: IAppGroupsService.GetGroupByIdAsync(GetGroupInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetGroupByIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetGroupByIdAsync(GetGroupInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetGroupInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetGroupByIdAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  id: GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetGroupBySlugAsync(GetGroupInput, CancellationToken)
+  nameWithType: IAppGroupsService.GetGroupBySlugAsync(GetGroupInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetGroupBySlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetGroupBySlugAsync(GetGroupInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetGroupInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetGroupBySlugAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput,System.Threading.CancellationToken)
+  id: UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateGroupAsync(UpdateGroupInput, CancellationToken)
+  nameWithType: IAppGroupsService.UpdateGroupAsync(UpdateGroupInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateGroupAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateGroupAsync(UpdateGroupInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateGroupInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateGroupAsync(input As UpdateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput,System.Threading.CancellationToken)
+  id: DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteGroupAsync(DeleteGroupInput, CancellationToken)
+  nameWithType: IAppGroupsService.DeleteGroupAsync(DeleteGroupInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteGroupAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteGroupAsync(DeleteGroupInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteGroupInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteGroupAsync(input As DeleteGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput,System.Threading.CancellationToken)
+  id: UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateGroupSortOrderAsync(UpdateGroupSortOrderInput, CancellationToken)
+  nameWithType: IAppGroupsService.UpdateGroupSortOrderAsync(UpdateGroupSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateGroupSortOrderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateGroupSortOrderAsync(UpdateGroupSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateGroupSortOrderAsync(input As UpdateGroupSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  id: DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: DragGroupAsync(DragItemSortOrderInput, CancellationToken)
+  nameWithType: IAppGroupsService.DragGroupAsync(DragItemSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DragGroupAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DragGroupAsync(DragItemSortOrderInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DragGroupAsync(input As DragItemSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
+  id: ReorderAsync
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: ReorderAsync()
+  nameWithType: IAppGroupsService.ReorderAsync()
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReorderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 32
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> ReorderAsync()
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function ReorderAsync() As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync*
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  id: GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  nameWithType: IAppGroupsService.GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(string, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppGroupsService.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse<GetOrCreateResponse>> GetOrCreateAsync(string name, SetSortOrderPosition setSortOrderPosition, Guid? createdById, CancellationToken cancellationToken = default)
+    parameters:
+    - id: name
+      type: System.String
+    - id: setSortOrderPosition
+      type: OpenSettings.Models.SetSortOrderPosition
+    - id: createdById
+      type: System.Nullable{System.Guid}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+    content.vb: Function GetOrCreateAsync(name As String, setSortOrderPosition As SetSortOrderPosition, createdById As Guid?, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetOrCreateResponse))
+  overload: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync*
+  nameWithType.vb: IAppGroupsService.GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(String, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_GetPaginatedGroupsAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  name: GetPaginatedGroupsAsync
+  nameWithType: IAppGroupsService.GetPaginatedGroupsAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync
+- uid: OpenSettings.Models.Inputs.GetPaginatedInput
+  commentId: T:OpenSettings.Models.Inputs.GetPaginatedInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  name: GetPaginatedInput
+  nameWithType: GetPaginatedInput
+  fullName: OpenSettings.Models.Inputs.GetPaginatedInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_DeleteUnmappedGroupsAsync_System_Threading_CancellationToken_
+  name: DeleteUnmappedGroupsAsync
+  nameWithType: IAppGroupsService.DeleteUnmappedGroupsAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_GetGroupsAsync_OpenSettings_Models_Inputs_GetGroupsInput_System_Threading_CancellationToken_
+  name: GetGroupsAsync
+  nameWithType: IAppGroupsService.GetGroupsAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync
+- uid: OpenSettings.Models.Inputs.GetGroupsInput
+  commentId: T:OpenSettings.Models.Inputs.GetGroupsInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetGroupsInput.html
+  name: GetGroupsInput
+  nameWithType: GetGroupsInput
+  fullName: OpenSettings.Models.Inputs.GetGroupsInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_CreateGroupAsync_OpenSettings_Models_Inputs_CreateGroupInput_System_Threading_CancellationToken_
+  name: CreateGroupAsync
+  nameWithType: IAppGroupsService.CreateGroupAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync
+- uid: OpenSettings.Models.Inputs.CreateGroupInput
+  commentId: T:OpenSettings.Models.Inputs.CreateGroupInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateGroupInput.html
+  name: CreateGroupInput
+  nameWithType: CreateGroupInput
+  fullName: OpenSettings.Models.Inputs.CreateGroupInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_GetGroupByIdAsync_OpenSettings_Models_Inputs_GetGroupInput_System_Threading_CancellationToken_
+  name: GetGroupByIdAsync
+  nameWithType: IAppGroupsService.GetGroupByIdAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync
+- uid: OpenSettings.Models.Inputs.GetGroupInput
+  commentId: T:OpenSettings.Models.Inputs.GetGroupInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetGroupInput.html
+  name: GetGroupInput
+  nameWithType: GetGroupInput
+  fullName: OpenSettings.Models.Inputs.GetGroupInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_GetGroupBySlugAsync_OpenSettings_Models_Inputs_GetGroupInput_System_Threading_CancellationToken_
+  name: GetGroupBySlugAsync
+  nameWithType: IAppGroupsService.GetGroupBySlugAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_UpdateGroupAsync_OpenSettings_Models_Inputs_UpdateGroupInput_System_Threading_CancellationToken_
+  name: UpdateGroupAsync
+  nameWithType: IAppGroupsService.UpdateGroupAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync
+- uid: OpenSettings.Models.Inputs.UpdateGroupInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateGroupInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateGroupInput.html
+  name: UpdateGroupInput
+  nameWithType: UpdateGroupInput
+  fullName: OpenSettings.Models.Inputs.UpdateGroupInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_DeleteGroupAsync_OpenSettings_Models_Inputs_DeleteGroupInput_System_Threading_CancellationToken_
+  name: DeleteGroupAsync
+  nameWithType: IAppGroupsService.DeleteGroupAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync
+- uid: OpenSettings.Models.Inputs.DeleteGroupInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteGroupInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteGroupInput.html
+  name: DeleteGroupInput
+  nameWithType: DeleteGroupInput
+  fullName: OpenSettings.Models.Inputs.DeleteGroupInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_UpdateGroupSortOrderAsync_OpenSettings_Models_Inputs_UpdateGroupSortOrderInput_System_Threading_CancellationToken_
+  name: UpdateGroupSortOrderAsync
+  nameWithType: IAppGroupsService.UpdateGroupSortOrderAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync
+- uid: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput.html
+  name: UpdateGroupSortOrderInput
+  nameWithType: UpdateGroupSortOrderInput
+  fullName: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_DragGroupAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  name: DragGroupAsync
+  nameWithType: IAppGroupsService.DragGroupAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync
+- uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+  commentId: T:OpenSettings.Models.Inputs.DragItemSortOrderInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DragItemSortOrderInput.html
+  name: DragItemSortOrderInput
+  nameWithType: DragItemSortOrderInput
+  fullName: OpenSettings.Models.Inputs.DragItemSortOrderInput
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_ReorderAsync
+  name: ReorderAsync
+  nameWithType: IAppGroupsService.ReorderAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
+- uid: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync
+  href: OpenSettings.Services.Interfaces.IAppGroupsService.html#OpenSettings_Services_Interfaces_IAppGroupsService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  name: GetOrCreateAsync
+  nameWithType: IAppGroupsService.GetOrCreateAsync
+  fullName: OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.SetSortOrderPosition
+  commentId: T:OpenSettings.Models.SetSortOrderPosition
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SetSortOrderPosition.html
+  name: SetSortOrderPosition
+  nameWithType: SetSortOrderPosition
+  fullName: OpenSettings.Models.SetSortOrderPosition
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse<GetOrCreateResponse>>
+  nameWithType: Task<IJsonResponse<GetOrCreateResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetOrCreateResponse>>
+  nameWithType.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetOrCreateResponse))
+  name.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse`1
+    name: IJsonResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOrCreateResponse
+    name: GetOrCreateResponse
+    href: OpenSettings.Models.Responses.GetOrCreateResponse.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

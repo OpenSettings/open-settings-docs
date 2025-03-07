@@ -1,0 +1,1426 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.NotificationsRestService
+  commentId: T:OpenSettings.Services.Rest.NotificationsRestService
+  id: NotificationsRestService
+  parent: OpenSettings.Services.Rest
+  children:
+  - OpenSettings.Services.Rest.NotificationsRestService.#ctor(System.Net.Http.HttpClient)
+  - OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: NotificationsRestService
+  nameWithType: NotificationsRestService
+  fullName: OpenSettings.Services.Rest.NotificationsRestService
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotificationsRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: 'public class NotificationsRestService : INotificationsRestService, INotificationsService'
+    content.vb: Public Class NotificationsRestService Implements INotificationsRestService, INotificationsService
+  inheritance:
+  - System.Object
+  implements:
+  - OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  - OpenSettings.Services.Interfaces.INotificationsService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Services.Rest.NotificationsRestService.#ctor(System.Net.Http.HttpClient)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.#ctor(System.Net.Http.HttpClient)
+  id: '#ctor(System.Net.Http.HttpClient)'
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: NotificationsRestService(HttpClient)
+  nameWithType: NotificationsRestService.NotificationsRestService(HttpClient)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.NotificationsRestService(System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  syntax:
+    content: public NotificationsRestService(HttpClient httpClient)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    content.vb: Public Sub New(httpClient As HttpClient)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.#ctor*
+  nameWithType.vb: NotificationsRestService.New(HttpClient)
+  fullName.vb: OpenSettings.Services.Rest.NotificationsRestService.New(System.Net.Http.HttpClient)
+  name.vb: New(HttpClient)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  id: GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationsAsync(GetNotificationsInput, CancellationToken)
+  nameWithType: NotificationsRestService.GetNotificationsAsync(GetNotificationsInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetNotificationsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> GetNotificationsAsync(GetNotificationsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetNotificationsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function GetNotificationsAsync(input As GetNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  id: CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: CreateNotificationAsync(CreateNotificationInput, CancellationToken)
+  nameWithType: NotificationsRestService.CreateNotificationAsync(CreateNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateNotificationAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 33
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> CreateNotificationAsync(CreateNotificationInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateNotificationInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function CreateNotificationAsync(input As CreateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  id: UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: UpdateNotificationAsync(UpdateNotificationInput, CancellationToken)
+  nameWithType: NotificationsRestService.UpdateNotificationAsync(UpdateNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateNotificationAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 54
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> UpdateNotificationAsync(UpdateNotificationInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateNotificationInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function UpdateNotificationAsync(input As UpdateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  id: DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: DeleteNotificationAsync(DeleteNotificationInput, CancellationToken)
+  nameWithType: NotificationsRestService.DeleteNotificationAsync(DeleteNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteNotificationAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 73
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> DeleteNotificationAsync(DeleteNotificationInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteNotificationInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function DeleteNotificationAsync(input As DeleteNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  id: GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: GetUserNotificationsAsync(GetUserNotificationsInput, CancellationToken)
+  nameWithType: NotificationsRestService.GetUserNotificationsAsync(GetUserNotificationsInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetUserNotificationsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 85
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> GetUserNotificationsAsync(GetUserNotificationsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetUserNotificationsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function GetUserNotificationsAsync(input As GetUserNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  id: MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput, CancellationToken)
+  nameWithType: NotificationsRestService.MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MarkNotificationsAsOpenedAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 124
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function MarkNotificationsAsOpenedAsync(input As MarkNotificationsAsOpenedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  id: MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: MarkNotificationAsViewedAsync(MarkNotificationAsInput, CancellationToken)
+  nameWithType: NotificationsRestService.MarkNotificationAsViewedAsync(MarkNotificationAsInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MarkNotificationAsViewedAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 135
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> MarkNotificationAsViewedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function MarkNotificationAsViewedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  id: MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: MarkNotificationAsDismissedAsync(MarkNotificationAsInput, CancellationToken)
+  nameWithType: NotificationsRestService.MarkNotificationAsDismissedAsync(MarkNotificationAsInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MarkNotificationAsDismissedAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 145
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> MarkNotificationAsDismissedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function MarkNotificationAsDismissedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  id: DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.NotificationsRestService
+  langs:
+  - csharp
+  - vb
+  name: DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput, CancellationToken)
+  nameWithType: NotificationsRestService.DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput, CancellationToken)
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/NotificationsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DispatchNotificationsToUsersAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/NotificationsRestService.cs
+    startLine: 155
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IJsonResponse> DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Public Function DispatchNotificationsToUsersAsync(input As DispatchNotificationsToUsersInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest
+  commentId: N:OpenSettings.Services.Rest
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest
+  nameWithType: OpenSettings.Services.Rest
+  fullName: OpenSettings.Services.Rest
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.Services.Rest.Interfaces.INotificationsRestService.html
+  name: INotificationsRestService
+  nameWithType: INotificationsRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+- uid: OpenSettings.Services.Interfaces.INotificationsService
+  commentId: T:OpenSettings.Services.Interfaces.INotificationsService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.INotificationsService.html
+  name: INotificationsService
+  nameWithType: INotificationsService
+  fullName: OpenSettings.Services.Interfaces.INotificationsService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Rest.NotificationsRestService.#ctor*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.#ctor
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService__ctor_System_Net_Http_HttpClient_
+  name: NotificationsRestService
+  nameWithType: NotificationsRestService.NotificationsRestService
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.NotificationsRestService
+  nameWithType.vb: NotificationsRestService.New
+  fullName.vb: OpenSettings.Services.Rest.NotificationsRestService.New
+  name.vb: New
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_GetNotificationsAsync_OpenSettings_Models_Inputs_GetNotificationsInput_System_Threading_CancellationToken_
+  name: GetNotificationsAsync
+  nameWithType: NotificationsRestService.GetNotificationsAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.GetNotificationsAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetNotificationsAsync_OpenSettings_Models_Inputs_GetNotificationsInput_System_Threading_CancellationToken_
+  name: GetNotificationsAsync(GetNotificationsInput, CancellationToken)
+  nameWithType: INotificationsService.GetNotificationsAsync(GetNotificationsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetNotificationsAsync_OpenSettings_Models_Inputs_GetNotificationsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetNotificationsInput
+    name: GetNotificationsInput
+    href: OpenSettings.Models.Inputs.GetNotificationsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync(OpenSettings.Models.Inputs.GetNotificationsInput,System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetNotificationsAsync_OpenSettings_Models_Inputs_GetNotificationsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetNotificationsInput
+    name: GetNotificationsInput
+    href: OpenSettings.Models.Inputs.GetNotificationsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.GetNotificationsInput
+  commentId: T:OpenSettings.Models.Inputs.GetNotificationsInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetNotificationsInput.html
+  name: GetNotificationsInput
+  nameWithType: GetNotificationsInput
+  fullName: OpenSettings.Models.Inputs.GetNotificationsInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_CreateNotificationAsync_OpenSettings_Models_Inputs_CreateNotificationInput_System_Threading_CancellationToken_
+  name: CreateNotificationAsync
+  nameWithType: NotificationsRestService.CreateNotificationAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.CreateNotificationAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_CreateNotificationAsync_OpenSettings_Models_Inputs_CreateNotificationInput_System_Threading_CancellationToken_
+  name: CreateNotificationAsync(CreateNotificationInput, CancellationToken)
+  nameWithType: INotificationsService.CreateNotificationAsync(CreateNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+    name: CreateNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_CreateNotificationAsync_OpenSettings_Models_Inputs_CreateNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateNotificationInput
+    name: CreateNotificationInput
+    href: OpenSettings.Models.Inputs.CreateNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
+    name: CreateNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_CreateNotificationAsync_OpenSettings_Models_Inputs_CreateNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateNotificationInput
+    name: CreateNotificationInput
+    href: OpenSettings.Models.Inputs.CreateNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.CreateNotificationInput
+  commentId: T:OpenSettings.Models.Inputs.CreateNotificationInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateNotificationInput.html
+  name: CreateNotificationInput
+  nameWithType: CreateNotificationInput
+  fullName: OpenSettings.Models.Inputs.CreateNotificationInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_UpdateNotificationAsync_OpenSettings_Models_Inputs_UpdateNotificationInput_System_Threading_CancellationToken_
+  name: UpdateNotificationAsync
+  nameWithType: NotificationsRestService.UpdateNotificationAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.UpdateNotificationAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_UpdateNotificationAsync_OpenSettings_Models_Inputs_UpdateNotificationInput_System_Threading_CancellationToken_
+  name: UpdateNotificationAsync(UpdateNotificationInput, CancellationToken)
+  nameWithType: INotificationsService.UpdateNotificationAsync(UpdateNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+    name: UpdateNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_UpdateNotificationAsync_OpenSettings_Models_Inputs_UpdateNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateNotificationInput
+    name: UpdateNotificationInput
+    href: OpenSettings.Models.Inputs.UpdateNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
+    name: UpdateNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_UpdateNotificationAsync_OpenSettings_Models_Inputs_UpdateNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateNotificationInput
+    name: UpdateNotificationInput
+    href: OpenSettings.Models.Inputs.UpdateNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.UpdateNotificationInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateNotificationInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateNotificationInput.html
+  name: UpdateNotificationInput
+  nameWithType: UpdateNotificationInput
+  fullName: OpenSettings.Models.Inputs.UpdateNotificationInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_DeleteNotificationAsync_OpenSettings_Models_Inputs_DeleteNotificationInput_System_Threading_CancellationToken_
+  name: DeleteNotificationAsync
+  nameWithType: NotificationsRestService.DeleteNotificationAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.DeleteNotificationAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DeleteNotificationAsync_OpenSettings_Models_Inputs_DeleteNotificationInput_System_Threading_CancellationToken_
+  name: DeleteNotificationAsync(DeleteNotificationInput, CancellationToken)
+  nameWithType: INotificationsService.DeleteNotificationAsync(DeleteNotificationInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+    name: DeleteNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DeleteNotificationAsync_OpenSettings_Models_Inputs_DeleteNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteNotificationInput
+    name: DeleteNotificationInput
+    href: OpenSettings.Models.Inputs.DeleteNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
+    name: DeleteNotificationAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DeleteNotificationAsync_OpenSettings_Models_Inputs_DeleteNotificationInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteNotificationInput
+    name: DeleteNotificationInput
+    href: OpenSettings.Models.Inputs.DeleteNotificationInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.DeleteNotificationInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteNotificationInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteNotificationInput.html
+  name: DeleteNotificationInput
+  nameWithType: DeleteNotificationInput
+  fullName: OpenSettings.Models.Inputs.DeleteNotificationInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_GetUserNotificationsAsync_OpenSettings_Models_Inputs_GetUserNotificationsInput_System_Threading_CancellationToken_
+  name: GetUserNotificationsAsync
+  nameWithType: NotificationsRestService.GetUserNotificationsAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.GetUserNotificationsAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetUserNotificationsAsync_OpenSettings_Models_Inputs_GetUserNotificationsInput_System_Threading_CancellationToken_
+  name: GetUserNotificationsAsync(GetUserNotificationsInput, CancellationToken)
+  nameWithType: INotificationsService.GetUserNotificationsAsync(GetUserNotificationsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+    name: GetUserNotificationsAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetUserNotificationsAsync_OpenSettings_Models_Inputs_GetUserNotificationsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
+    name: GetUserNotificationsInput
+    href: OpenSettings.Models.Inputs.GetUserNotificationsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
+    name: GetUserNotificationsAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_GetUserNotificationsAsync_OpenSettings_Models_Inputs_GetUserNotificationsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
+    name: GetUserNotificationsInput
+    href: OpenSettings.Models.Inputs.GetUserNotificationsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
+  commentId: T:OpenSettings.Models.Inputs.GetUserNotificationsInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetUserNotificationsInput.html
+  name: GetUserNotificationsInput
+  nameWithType: GetUserNotificationsInput
+  fullName: OpenSettings.Models.Inputs.GetUserNotificationsInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_MarkNotificationsAsOpenedAsync_OpenSettings_Models_Inputs_MarkNotificationsAsOpenedInput_System_Threading_CancellationToken_
+  name: MarkNotificationsAsOpenedAsync
+  nameWithType: NotificationsRestService.MarkNotificationsAsOpenedAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationsAsOpenedAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationsAsOpenedAsync_OpenSettings_Models_Inputs_MarkNotificationsAsOpenedInput_System_Threading_CancellationToken_
+  name: MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput, CancellationToken)
+  nameWithType: INotificationsService.MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+    name: MarkNotificationsAsOpenedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationsAsOpenedAsync_OpenSettings_Models_Inputs_MarkNotificationsAsOpenedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+    name: MarkNotificationsAsOpenedInput
+    href: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
+    name: MarkNotificationsAsOpenedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationsAsOpenedAsync_OpenSettings_Models_Inputs_MarkNotificationsAsOpenedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+    name: MarkNotificationsAsOpenedInput
+    href: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+  commentId: T:OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput.html
+  name: MarkNotificationsAsOpenedInput
+  nameWithType: MarkNotificationsAsOpenedInput
+  fullName: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_MarkNotificationAsViewedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  name: MarkNotificationAsViewedAsync
+  nameWithType: NotificationsRestService.MarkNotificationAsViewedAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsViewedAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsViewedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  name: MarkNotificationAsViewedAsync(MarkNotificationAsInput, CancellationToken)
+  nameWithType: INotificationsService.MarkNotificationAsViewedAsync(MarkNotificationAsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+    name: MarkNotificationAsViewedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsViewedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    name: MarkNotificationAsInput
+    href: OpenSettings.Models.Inputs.MarkNotificationAsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+    name: MarkNotificationAsViewedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsViewedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    name: MarkNotificationAsInput
+    href: OpenSettings.Models.Inputs.MarkNotificationAsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+  commentId: T:OpenSettings.Models.Inputs.MarkNotificationAsInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.MarkNotificationAsInput.html
+  name: MarkNotificationAsInput
+  nameWithType: MarkNotificationAsInput
+  fullName: OpenSettings.Models.Inputs.MarkNotificationAsInput
+- uid: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_MarkNotificationAsDismissedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  name: MarkNotificationAsDismissedAsync
+  nameWithType: NotificationsRestService.MarkNotificationAsDismissedAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.MarkNotificationAsDismissedAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsDismissedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  name: MarkNotificationAsDismissedAsync(MarkNotificationAsInput, CancellationToken)
+  nameWithType: INotificationsService.MarkNotificationAsDismissedAsync(MarkNotificationAsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+    name: MarkNotificationAsDismissedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsDismissedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    name: MarkNotificationAsInput
+    href: OpenSettings.Models.Inputs.MarkNotificationAsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
+    name: MarkNotificationAsDismissedAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_MarkNotificationAsDismissedAsync_OpenSettings_Models_Inputs_MarkNotificationAsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
+    name: MarkNotificationAsInput
+    href: OpenSettings.Models.Inputs.MarkNotificationAsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync*
+  commentId: Overload:OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync
+  href: OpenSettings.Services.Rest.NotificationsRestService.html#OpenSettings_Services_Rest_NotificationsRestService_DispatchNotificationsToUsersAsync_OpenSettings_Models_Inputs_DispatchNotificationsToUsersInput_System_Threading_CancellationToken_
+  name: DispatchNotificationsToUsersAsync
+  nameWithType: NotificationsRestService.DispatchNotificationsToUsersAsync
+  fullName: OpenSettings.Services.Rest.NotificationsRestService.DispatchNotificationsToUsersAsync
+- uid: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.INotificationsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DispatchNotificationsToUsersAsync_OpenSettings_Models_Inputs_DispatchNotificationsToUsersInput_System_Threading_CancellationToken_
+  name: DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput, CancellationToken)
+  nameWithType: INotificationsService.DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+    name: DispatchNotificationsToUsersAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DispatchNotificationsToUsersAsync_OpenSettings_Models_Inputs_DispatchNotificationsToUsersInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+    name: DispatchNotificationsToUsersInput
+    href: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
+    name: DispatchNotificationsToUsersAsync
+    href: OpenSettings.Services.Interfaces.INotificationsService.html#OpenSettings_Services_Interfaces_INotificationsService_DispatchNotificationsToUsersAsync_OpenSettings_Models_Inputs_DispatchNotificationsToUsersInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+    name: DispatchNotificationsToUsersInput
+    href: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+  commentId: T:OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput.html
+  name: DispatchNotificationsToUsersInput
+  nameWithType: DispatchNotificationsToUsersInput
+  fullName: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput

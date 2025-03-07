@@ -1,0 +1,253 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.RegistrationMode.Both
+  - OpenSettings.Models.RegistrationMode.Configure
+  - OpenSettings.Models.RegistrationMode.Singleton
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/Registration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Models/Registration.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Specifies how single settings file ( separate setting files should be configured its own setting or setting class ) can be registered and resolved within the service.
+
+    Supports resolving via configuration options or as a singleton service.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum RegistrationMode
+    content.vb: >-
+      <Flags>
+
+      Public Enum RegistrationMode
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Models.RegistrationMode.Configure
+  commentId: F:OpenSettings.Models.RegistrationMode.Configure
+  id: Configure
+  parent: OpenSettings.Models.RegistrationMode
+  langs:
+  - csharp
+  - vb
+  name: Configure
+  nameWithType: RegistrationMode.Configure
+  fullName: OpenSettings.Models.RegistrationMode.Configure
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Registration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Configure
+    path: ../../../open-settings/src/OpenSettings/Models/Registration.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Settings can be resolved through configuration options interfaces,
+
+    such as <xref href="Microsoft.Extensions.Options.IOptions%601" data-throw-if-not-resolved="false"></xref>, <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> or <xref href="Microsoft.Extensions.Options.IOptionsMonitor%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Configure = 1
+    return:
+      type: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode.Singleton
+  commentId: F:OpenSettings.Models.RegistrationMode.Singleton
+  id: Singleton
+  parent: OpenSettings.Models.RegistrationMode
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: RegistrationMode.Singleton
+  fullName: OpenSettings.Models.RegistrationMode.Singleton
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Registration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Singleton
+    path: ../../../open-settings/src/OpenSettings/Models/Registration.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Settings can be resolved directly through its own class as a singleton instance.
+  example: []
+  syntax:
+    content: Singleton = 2
+    return:
+      type: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode.Both
+  commentId: F:OpenSettings.Models.RegistrationMode.Both
+  id: Both
+  parent: OpenSettings.Models.RegistrationMode
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: RegistrationMode.Both
+  fullName: OpenSettings.Models.RegistrationMode.Both
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Registration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Both
+    path: ../../../open-settings/src/OpenSettings/Models/Registration.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Settings can be resolved both through singleton instances and through
+
+    configuration options interfaces
+
+    such as <xref href="Microsoft.Extensions.Options.IOptions%601" data-throw-if-not-resolved="false"></xref>, <xref href="Microsoft.Extensions.Options.IOptionsSnapshot%601" data-throw-if-not-resolved="false"></xref> or <xref href="Microsoft.Extensions.Options.IOptionsMonitor%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Both = Configure | Singleton
+    return:
+      type: OpenSettings.Models.RegistrationMode
+    content.vb: Both = Configure Or Singleton
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsSnapshot`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  name: IOptionsSnapshot<TOptions>
+  nameWithType: IOptionsSnapshot<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsSnapshot<TOptions>
+  nameWithType.vb: IOptionsSnapshot(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsSnapshot(Of TOptions)
+  name.vb: IOptionsSnapshot(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+    name: IOptionsSnapshot
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsSnapshot`1
+    name: IOptionsSnapshot
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionsmonitor-1
+  name: IOptionsMonitor<TOptions>
+  nameWithType: IOptionsMonitor<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>
+  nameWithType.vb: IOptionsMonitor(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions)
+  name.vb: IOptionsMonitor(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionsmonitor-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionsmonitor-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode

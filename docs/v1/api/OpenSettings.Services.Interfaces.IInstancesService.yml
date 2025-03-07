@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IInstancesService
+  commentId: T:OpenSettings.Services.Interfaces.IInstancesService
+  id: IInstancesService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IInstancesService
+  nameWithType: IInstancesService
+  fullName: OpenSettings.Services.Interfaces.IInstancesService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IInstancesService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IInstancesService
+    content.vb: Public Interface IInstancesService
+- uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
+  id: UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: UpdateInstanceAsync(UpdateInstanceInput, CancellationToken)
+  nameWithType: IInstancesService.UpdateInstanceAsync(UpdateInstanceInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateInstanceAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> UpdateInstanceAsync(UpdateInstanceInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.UpdateInstanceInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function UpdateInstanceAsync(input As UpdateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync*
+- uid: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
+  id: DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: DeleteInstanceAsync(DeleteInstanceInput, CancellationToken)
+  nameWithType: IInstancesService.DeleteInstanceAsync(DeleteInstanceInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteInstanceAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> DeleteInstanceAsync(DeleteInstanceInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.DeleteInstanceInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function DeleteInstanceAsync(input As DeleteInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync*
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  id: GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByAppIdAsync(GetInstancesInput, CancellationToken)
+  nameWithType: IInstancesService.GetInstancesByAppIdAsync(GetInstancesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetInstancesByAppIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetInstancesByAppIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetInstancesInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetInstancesByAppIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync*
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  id: GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByAppSlugAsync(GetInstancesInput, CancellationToken)
+  nameWithType: IInstancesService.GetInstancesByAppSlugAsync(GetInstancesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetInstancesByAppSlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetInstancesByAppSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetInstancesInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetInstancesByAppSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync*
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  id: GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByAppIdAndIdentifierIdAsync(GetInstancesInput, CancellationToken)
+  nameWithType: IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(GetInstancesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetInstancesByAppIdAndIdentifierIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetInstancesByAppIdAndIdentifierIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetInstancesInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetInstancesByAppIdAndIdentifierIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync*
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  id: GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesByAppSlugAndIdentifierSlugAsync(GetInstancesInput, CancellationToken)
+  nameWithType: IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(GetInstancesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetInstancesByAppSlugAndIdentifierSlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> GetInstancesByAppSlugAndIdentifierSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetInstancesInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function GetInstancesByAppSlugAndIdentifierSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_UpdateInstanceAsync_OpenSettings_Models_Inputs_UpdateInstanceInput_System_Threading_CancellationToken_
+  name: UpdateInstanceAsync
+  nameWithType: IInstancesService.UpdateInstanceAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
+- uid: OpenSettings.Models.Inputs.UpdateInstanceInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateInstanceInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateInstanceInput.html
+  name: UpdateInstanceInput
+  nameWithType: UpdateInstanceInput
+  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IJsonResponse>
+  nameWithType: Task<IJsonResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
+  nameWithType.vb: Task(Of IJsonResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
+  name.vb: Task(Of IJsonResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Json.IJsonResponse
+    name: IJsonResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_DeleteInstanceAsync_OpenSettings_Models_Inputs_DeleteInstanceInput_System_Threading_CancellationToken_
+  name: DeleteInstanceAsync
+  nameWithType: IInstancesService.DeleteInstanceAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync
+- uid: OpenSettings.Models.Inputs.DeleteInstanceInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteInstanceInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteInstanceInput.html
+  name: DeleteInstanceInput
+  nameWithType: DeleteInstanceInput
+  fullName: OpenSettings.Models.Inputs.DeleteInstanceInput
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_GetInstancesByAppIdAsync_OpenSettings_Models_Inputs_GetInstancesInput_System_Threading_CancellationToken_
+  name: GetInstancesByAppIdAsync
+  nameWithType: IInstancesService.GetInstancesByAppIdAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync
+- uid: OpenSettings.Models.Inputs.GetInstancesInput
+  commentId: T:OpenSettings.Models.Inputs.GetInstancesInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetInstancesInput.html
+  name: GetInstancesInput
+  nameWithType: GetInstancesInput
+  fullName: OpenSettings.Models.Inputs.GetInstancesInput
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_GetInstancesByAppSlugAsync_OpenSettings_Models_Inputs_GetInstancesInput_System_Threading_CancellationToken_
+  name: GetInstancesByAppSlugAsync
+  nameWithType: IInstancesService.GetInstancesByAppSlugAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_GetInstancesByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetInstancesInput_System_Threading_CancellationToken_
+  name: GetInstancesByAppIdAndIdentifierIdAsync
+  nameWithType: IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync
+- uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_GetInstancesByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetInstancesInput_System_Threading_CancellationToken_
+  name: GetInstancesByAppSlugAndIdentifierSlugAsync
+  nameWithType: IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync

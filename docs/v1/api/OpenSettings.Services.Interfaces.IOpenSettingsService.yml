@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService
+  commentId: T:OpenSettings.Services.Interfaces.IOpenSettingsService
+  id: IOpenSettingsService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IOpenSettingsService
+  nameWithType: IOpenSettingsService
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IOpenSettingsService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IOpenSettingsService
+    content.vb: Public Interface IOpenSettingsService
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  id: GetConfigsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetConfigsAsync(CancellationToken)
+  nameWithType: IOpenSettingsService.GetConfigsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetConfigsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<GetConfigsResponse> GetConfigsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsResponse}
+    content.vb: Function GetConfigsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of GetConfigsResponse)
+  overload: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync*
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  id: GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetConfigsDataAsync(string, CancellationToken)
+  nameWithType: IOpenSettingsService.GetConfigsDataAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetConfigsDataAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<GetConfigsDataResponse> GetConfigsDataAsync(string configName, CancellationToken cancellationToken = default)
+    parameters:
+    - id: configName
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsDataResponse}
+    content.vb: Function GetConfigsDataAsync(configName As String, cancellationToken As CancellationToken = Nothing) As Task(Of GetConfigsDataResponse)
+  overload: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync*
+  nameWithType.vb: IOpenSettingsService.GetConfigsDataAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(String, System.Threading.CancellationToken)
+  name.vb: GetConfigsDataAsync(String, CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsAsync_System_Threading_CancellationToken_
+  name: GetConfigsAsync
+  nameWithType: IOpenSettingsService.GetConfigsAsync
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetConfigsResponse>
+  nameWithType: Task<GetConfigsResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.GetConfigsResponse>
+  nameWithType.vb: Task(Of GetConfigsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.GetConfigsResponse)
+  name.vb: Task(Of GetConfigsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetConfigsResponse
+    name: GetConfigsResponse
+    href: OpenSettings.Models.Responses.GetConfigsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetConfigsResponse
+    name: GetConfigsResponse
+    href: OpenSettings.Models.Responses.GetConfigsResponse.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetConfigsDataAsync_System_String_System_Threading_CancellationToken_
+  name: GetConfigsDataAsync
+  nameWithType: IOpenSettingsService.GetConfigsDataAsync
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsDataResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetConfigsDataResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetConfigsDataResponse>
+  nameWithType: Task<GetConfigsDataResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.GetConfigsDataResponse>
+  nameWithType.vb: Task(Of GetConfigsDataResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.GetConfigsDataResponse)
+  name.vb: Task(Of GetConfigsDataResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetConfigsDataResponse
+    name: GetConfigsDataResponse
+    href: OpenSettings.Models.Responses.GetConfigsDataResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetConfigsDataResponse
+    name: GetConfigsDataResponse
+    href: OpenSettings.Models.Responses.GetConfigsDataResponse.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
