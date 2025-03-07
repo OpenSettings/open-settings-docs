@@ -37,13 +37,13 @@ docfx build && docfx serve
 
 Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)** to preview the documentation! 🚀
 
-## 🤝 Contributing
-
-By contributing this repository, you agree to the [Contribution Terms](https://opensettings.net/contribution-terms).
-
 ## 💡 License  
 
 OpenSettings is licensed under the [OpenSettings License](https://opensettings.net/license).
+
+## 🤝 Contributing
+
+By contributing this repository, you agree to the [Contribution Terms](https://opensettings.net/contribution-terms).
 
 ## 🔗 Useful Links
 
