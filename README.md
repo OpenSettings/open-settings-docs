@@ -48,7 +48,6 @@ By contributing this repository, you agree to the [Contribution Terms](https://o
 ## 🔗 Useful Links
 
 - 🌍 **Website:** [opensettings.net](https://opensettings.net)
-- 📘 **Docs:** [docs.opensettings.net](https://docs.opensettings.net)
 - ❤️ **Become a Sponsor:** [opensettings.net/become-a-sponsor](https://opensettings.net/become-a-sponsor)
 - 📜 **License:** [opensettings.net/license](https://opensettings.net/license)
 - ⚖️ **Terms & Conditions:** [opensettings.net/terms-and-conditions](https://opensettings.net/terms-and-conditions)
