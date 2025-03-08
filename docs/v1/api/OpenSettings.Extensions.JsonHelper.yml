@@ -172,7 +172,7 @@ items:
       description: A cancellation token to support cancellation of the operation.
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
-      description: A Task&lt;Dictionary&lt;string, object&gt;&gt; containing the dictionary representation of the JSON data.
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> containing a <b>Dictionary&lt;string, object&gt;</b> with the JSON data.
     content.vb: Public Shared Function GetJsonFileAsync(filePath As String, cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, Object))
   overload: OpenSettings.Extensions.JsonHelper.GetJsonFileAsync*
   nameWithType.vb: JsonHelper.GetJsonFileAsync(String, CancellationToken)
@@ -216,7 +216,7 @@ items:
       description: A cancellation token to support cancellation of the operation.
     return:
       type: System.Threading.Tasks.Task{OpenSettings.Models.JsonMergeResult}
-      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, with the result of the merge operation.
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, with the result as a <xref href="OpenSettings.Models.JsonMergeResult" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function MergeFileAsync(baseFilePath As String, patchFilePath As String, cancellationToken As CancellationToken = Nothing) As Task(Of JsonMergeResult)
   overload: OpenSettings.Extensions.JsonHelper.MergeFileAsync*
   nameWithType.vb: JsonHelper.MergeFileAsync(String, String, CancellationToken)
@@ -602,6 +602,14 @@ references:
   name: JsonSerializerOptions
   nameWithType: JsonSerializerOptions
   fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
 - uid: OpenSettings.Extensions.JsonHelper.GetJsonFileAsync*
   commentId: Overload:OpenSettings.Extensions.JsonHelper.GetJsonFileAsync
   href: OpenSettings.Extensions.JsonHelper.html#OpenSettings_Extensions_JsonHelper_GetJsonFileAsync_System_String_System_Threading_CancellationToken_
@@ -688,6 +696,43 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true
@@ -743,43 +788,13 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Models.JsonMergeResult
+  commentId: T:OpenSettings.Models.JsonMergeResult
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.JsonMergeResult.html
+  name: JsonMergeResult
+  nameWithType: JsonMergeResult
+  fullName: OpenSettings.Models.JsonMergeResult
 - uid: OpenSettings.Extensions.JsonHelper.MergeFileAsync*
   commentId: Overload:OpenSettings.Extensions.JsonHelper.MergeFileAsync
   href: OpenSettings.Extensions.JsonHelper.html#OpenSettings_Extensions_JsonHelper_MergeFileAsync_System_String_System_String_System_Threading_CancellationToken_
@@ -819,19 +834,6 @@ references:
     name: JsonMergeResult
     href: OpenSettings.Models.JsonMergeResult.html
   - name: )
-- uid: OpenSettings.Models.JsonMergeResult
-  commentId: T:OpenSettings.Models.JsonMergeResult
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.JsonMergeResult.html
-  name: JsonMergeResult
-  nameWithType: JsonMergeResult
-  fullName: OpenSettings.Models.JsonMergeResult
-- uid: OpenSettings.Extensions.JsonHelper.Merge*
-  commentId: Overload:OpenSettings.Extensions.JsonHelper.Merge
-  href: OpenSettings.Extensions.JsonHelper.html#OpenSettings_Extensions_JsonHelper_Merge_System_String_System_String_
-  name: Merge
-  nameWithType: JsonHelper.Merge
-  fullName: OpenSettings.Extensions.JsonHelper.Merge
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
   href: OpenSettings.html
@@ -854,3 +856,9 @@ references:
   - uid: OpenSettings.Models
     name: Models
     href: OpenSettings.Models.html
+- uid: OpenSettings.Extensions.JsonHelper.Merge*
+  commentId: Overload:OpenSettings.Extensions.JsonHelper.Merge
+  href: OpenSettings.Extensions.JsonHelper.html#OpenSettings_Extensions_JsonHelper_Merge_System_String_System_String_
+  name: Merge
+  nameWithType: JsonHelper.Merge
+  fullName: OpenSettings.Extensions.JsonHelper.Merge

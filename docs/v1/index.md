@@ -20,7 +20,7 @@ If you're using a different database, replace this package with the appropriate 
 
 ## 🏗 Configuring OpenSettings
 
-OpenSettings can run in two modes: **Provider** or **Consumer**. Choose the appropriate configuration based on your application’s role. For more information check out the [Basics](basics.md)
+OpenSettings can run in two modes: **Provider** or **Consumer**. Choose the appropriate configuration based on your application’s role. For more information check out the [Consumer vs Provider](docs/introduction.md#consumer-vs-provider-what-do-they-mean)
 
 ### 🔹 Provider Configuration
 
@@ -112,11 +112,11 @@ public class MyFirstSetting : ISettings
 
 Run the application and navigate to ".../settings" to view and manage your settings.
 
-![Getting Started My First Setting](assets/getting-started-my-first-setting.png)
+![Demo](assets/demo.gif)
 
 ---
 
-## 🔹 Resolving Settings In The Application
+## 🔹 Resolving Settings in the Application
 
 You can inject and access your settings using **dependency injection**.
 
@@ -136,7 +136,7 @@ public class MyService
 }
 ```
 
-### 🔹 Using IOptions<T> For Configuration Binding
+### 🔹 Using IOptions<T> for Configuration Binding
 
 Alternatively, use `IOptions<T>` for accessing configuration-based settings:
 
@@ -156,6 +156,19 @@ public class MyService
 
 This approach is useful when the settings are dynamically **loaded from configuration sources**.
 
+> [!NOTE]
+> The default settings registration mode is `Both`, meaning it supports both **Singleton** and **IOptions<T>** interfaces. You can change this behavior as needed.
+
+### 🔹 Resolving Settings Without Dependency Injection  
+
+If you need to access settings outside of DI, use `SettingsProvider.GetLocalSettingOrDefault<T>()`. This method returns the setting if found or falls back to the default value if not available.
+
+```csharp
+using OpenSettings;
+
+var myFirstSetting = SettingsProvider.GetLocalSettingOrDefault<MyFirstSetting>();
+```
+
 ## ✅ What's Next?
 
 🔹 **Explore More Quick Start Guides** 
@@ -163,11 +176,10 @@ This approach is useful when the settings are dynamically **loaded from configur
    - [Setting Up The Consumer](docs/quick-start-consumer.md)  
 
 🔹 **Deep Dive into OpenSettings**  
+   - [Configuration Guide](docs/configuration-guide.md) - Learn how to configure OpenSettings.
    - [Consumer Guide](docs/consumer-guide.md) - Learn how to integrate your services to OpenSettings.
-   - [Provider Guide](docs/provider-guide.md) - Learn how to configure your OpenSettings.
-
-🔹 **Security Considerations**  
-   - Implement authentication & authorization to control access to OpenSettings.  
+   - [Provider Guide](docs/provider-guide.md) - Learn how to configure your Provider.
+   - [Security Guide](docs/security-guide.md) to restrict unauthorized access to settings.
 
 ---
 

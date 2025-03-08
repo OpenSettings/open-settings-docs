@@ -1,3 +1,5 @@
+Remove-Item .\_site\* -Force -Recurse
+
 # docfx metadata .\v1\docfx.json
 
 docfx build .\v1\docfx.json

@@ -46,7 +46,7 @@ items:
   summary: >-
     Represents the configuration for the open settings. 
 
-    This class is responsible for handling different configurations s
+    This class is responsible for handling different configurations
 
     based on the selected service type and the selection status.
   example: []
@@ -652,17 +652,11 @@ items:
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
-  summary: >-
-    Gets or sets the registration mode to use during the setup.
-
-    The default is <xref href="OpenSettings.Models.RegistrationMode.Configure" data-throw-if-not-resolved="false"></xref>.
-  example: []
   syntax:
     content: public RegistrationMode RegistrationMode { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.RegistrationMode
-      description: The <xref href="OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode" data-throw-if-not-resolved="false"></xref> value that determines the registration behavior.
     content.vb: Public Property RegistrationMode As RegistrationMode
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
@@ -1348,18 +1342,6 @@ references:
   name: IgnoreOnFileChange
   nameWithType: OpenSettingsConfiguration.IgnoreOnFileChange
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
-- uid: OpenSettings.Models.RegistrationMode.Configure
-  commentId: F:OpenSettings.Models.RegistrationMode.Configure
-  href: OpenSettings.Models.RegistrationMode.html#OpenSettings_Models_RegistrationMode_Configure
-  name: Configure
-  nameWithType: RegistrationMode.Configure
-  fullName: OpenSettings.Models.RegistrationMode.Configure
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
-  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode
-  name: RegistrationMode
-  nameWithType: OpenSettingsConfiguration.RegistrationMode
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
   commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
   href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode

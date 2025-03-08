@@ -13,12 +13,12 @@ dotnet new web -o OpenSettings.Api
 cd OpenSettings.Api
 ```
 
-### 1️⃣ Install OpenSettings
+### 2️⃣ Install OpenSettings
 ```sh
 dotnet add package OpenSettings.AspNetCore
 ```
 
-### 2️⃣ Install a Storage Provider
+### 3️⃣ Install a Storage Provider
 For this quick start, we'll use **InMemory storage**. You can install it with:
 
 ```sh
@@ -31,7 +31,7 @@ If you're using a different database, replace this package with the appropriate 
 
 ## 🏗 Setting Up
 
-Now, let's configure OpenSettings as a **Provider** and use InMemory storage.
+Now, let's configure OpenSettings for the **Consumer** application and use **InMemory** storage.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -125,17 +125,12 @@ That's it! OpenSettings will be up and running in seconds. 🎉
 
 ## ✅ What's Next?
 
-🔹 **Using OpenSettings as a Consumer:**  
-If you want to use OpenSettings in a consumer application, check out the [Consumer Guide](consumer-guide.md).
-
-🔹 **Choosing a Different Storage Provider:**  
-If you need persistent storage (SQL Server, PostgreSQL, etc.), configure `ConfigureDbContext` accordingly.
-
-🔹 **Securing OpenSettings:**  
-Set authentication and authorization to restrict access to the settings.
-
-For more details, visit the [full documentation](../index.md).
+- **Set up your first consumer application:** [Setting Up The Consumer](quick-start-consumer.md)
+- **Explore the provider functionality:** [Provider Guide](provider-guide.md)
+- **Explore the consumer functionality:** [Consumer Guide](consumer-guide.md)
+- **Need persistent storage?** Check out the [Persistent Storage](quick-start-persistent-storage.md) options (SQL Server, PostgreSQL, etc.)
+- **Secure your OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 
 ---
 
-✨ *OpenSettings makes configuration management simple and efficient!* 🚀
+✨ *OpenSettings makes configuration management simple and efficient!*

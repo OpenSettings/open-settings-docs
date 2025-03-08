@@ -60,7 +60,7 @@ OpenSettings is built as a **modular system** with three main components:
 
 1️⃣ **OpenSettings** → The **core library** that handles configuration management logic.  
 
-2️⃣ **OpenSettings.AspNetCore** → Enables an application to **run as a Provider** (expose controllers etc.).  
+2️⃣ **OpenSettings.AspNetCore** → Exposing controllers and authentication handlers to manage and interact with OpenSettings.  
 
 3️⃣ **OpenSettings.AspNetCore.Spa** → Serves the **Settings Page UI**, allowing easy management of configurations.  
 
@@ -109,7 +109,7 @@ To avoid this, OpenSettings supports **pre-generated settings files** that can b
 
 OpenSettings also allows **offline mode**, where an **initial hardcoded settings file** is used before switching to the provider.  
 
-## OpenSettings: Current Scope and Future Potential
+## Current Scope and Future Potential
 
 While OpenSettings is primarily designed to work with .NET applications, its architecture is flexible enough that, in the future, it could support other programming languages.
 

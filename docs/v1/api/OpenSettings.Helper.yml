@@ -6,6 +6,7 @@ items:
   parent: OpenSettings
   children:
   - OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - OpenSettings.Helper.GetEnvironmentName
   - OpenSettings.Helper.GetInitials(System.String)
   langs:
   - csharp
@@ -125,6 +126,42 @@ items:
   nameWithType.vb: Helper.DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
   fullName.vb: OpenSettings.Helper.DistinctBy(Of TSource, TKey)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey))
   name.vb: DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
+- uid: OpenSettings.Helper.GetEnvironmentName
+  commentId: M:OpenSettings.Helper.GetEnvironmentName
+  id: GetEnvironmentName
+  parent: OpenSettings.Helper
+  langs:
+  - csharp
+  - vb
+  name: GetEnvironmentName()
+  nameWithType: Helper.GetEnvironmentName()
+  fullName: OpenSettings.Helper.GetEnvironmentName()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Helper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetEnvironmentName
+    path: ../../../open-settings/src/OpenSettings/Helper.cs
+    startLine: 89
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  summary: >-
+    Retrieves the current environment name from environment variables. 
+
+    It checks the following variables in order: ASPNETCORE_ENVIRONMENT, DOTNET_ENVIRONMENT, and ENVIRONMENT. 
+
+    If none are set, it defaults to "Production".
+  example: []
+  syntax:
+    content: public static string GetEnvironmentName()
+    return:
+      type: System.String
+      description: The detected environment name or "Production" if none are found.
+    content.vb: Public Shared Function GetEnvironmentName() As String
+  overload: OpenSettings.Helper.GetEnvironmentName*
 references:
 - uid: OpenSettings
   commentId: N:OpenSettings
@@ -555,3 +592,9 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: OpenSettings.Helper.GetEnvironmentName*
+  commentId: Overload:OpenSettings.Helper.GetEnvironmentName
+  href: OpenSettings.Helper.html#OpenSettings_Helper_GetEnvironmentName
+  name: GetEnvironmentName
+  nameWithType: Helper.GetEnvironmentName
+  fullName: OpenSettings.Helper.GetEnvironmentName
