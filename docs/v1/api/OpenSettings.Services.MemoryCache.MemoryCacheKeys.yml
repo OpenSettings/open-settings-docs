@@ -6,7 +6,7 @@ items:
   parent: OpenSettings.Services.MemoryCache
   children:
   - OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
-  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
+  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
   langs:
   - csharp
   - vb
@@ -72,35 +72,35 @@ items:
     return:
       type: OpenSettings.Models.CacheModel
     content.vb: Public Shared GetAvailableNotificationIds As CacheModel
-- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
-  commentId: F:OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
-  id: OpenSettingsSpaMiddlewareHtml
+- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
+  commentId: F:OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
+  id: SettingsSpaMiddlewareHtml
   parent: OpenSettings.Services.MemoryCache.MemoryCacheKeys
   langs:
   - csharp
   - vb
-  name: OpenSettingsSpaMiddlewareHtml
-  nameWithType: MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
-  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
+  name: SettingsSpaMiddlewareHtml
+  nameWithType: MemoryCacheKeys.SettingsSpaMiddlewareHtml
+  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
   type: Field
   source:
     remote:
       path: src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OpenSettingsSpaMiddlewareHtml
+    id: SettingsSpaMiddlewareHtml
     path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
     startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.MemoryCache
-  summary: The cache key for the OpenSettings Spa Middleware Html content.
+  summary: The cache key for the Settings Spa Middleware Html content.
   example: []
   syntax:
-    content: public static CacheModel OpenSettingsSpaMiddlewareHtml
+    content: public static CacheModel SettingsSpaMiddlewareHtml
     return:
       type: OpenSettings.Models.CacheModel
-    content.vb: Public Shared OpenSettingsSpaMiddlewareHtml As CacheModel
+    content.vb: Public Shared SettingsSpaMiddlewareHtml As CacheModel
 references:
 - uid: OpenSettings.Services.MemoryCache
   commentId: N:OpenSettings.Services.MemoryCache

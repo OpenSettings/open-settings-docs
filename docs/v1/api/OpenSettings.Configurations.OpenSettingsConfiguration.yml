@@ -7,7 +7,6 @@ items:
   children:
   - OpenSettings.Configurations.OpenSettingsConfiguration.#ctor
   - OpenSettings.Configurations.OpenSettingsConfiguration.#ctor(OpenSettings.Models.ServiceType)
-  - OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
   - OpenSettings.Configurations.OpenSettingsConfiguration.Client
   - OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
   - OpenSettings.Configurations.OpenSettingsConfiguration.GetReloadStrategies
@@ -460,48 +459,6 @@ items:
       description: The number of milliseconds to wait before retrying a failed sync app data operation. The default value is 1000 milliseconds.
     content.vb: Public Property SyncAppDataRetryDelayMilliseconds As Integer
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds*
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
-  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
-  id: AllowAnonymousAccess
-  parent: OpenSettings.Configurations.OpenSettingsConfiguration
-  langs:
-  - csharp
-  - vb
-  name: AllowAnonymousAccess
-  nameWithType: OpenSettingsConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AllowAnonymousAccess
-    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 192
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Configurations
-  summary: >-
-    Gets or sets a flag indicating whether anonymous access is allowed.
-
-    <p>
-
-    When set to false, its typically forces to pre-registration of the app or user
-
-    </p>
-  example: []
-  syntax:
-    content: public bool AllowAnonymousAccess { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-      description: >-
-        A boolean value that determines whether anonymous access is permitted. 
-
-        The default is <code>false</code>.
-    content.vb: Public Property AllowAnonymousAccess As Boolean
-  overload: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
   commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Operation
   id: Operation
@@ -520,7 +477,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Operation
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 199
+    startLine: 187
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -555,7 +512,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 211
+    startLine: 199
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -597,7 +554,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 228
+    startLine: 216
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -648,7 +605,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 237
+    startLine: 225
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -677,7 +634,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsConsumerSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 247
+    startLine: 235
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -725,7 +682,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsProviderSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 258
+    startLine: 246
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -773,7 +730,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LoggerFactory
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 266
+    startLine: 254
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -814,7 +771,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetReloadStrategies
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 286
+    startLine: 274
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -1244,23 +1201,6 @@ references:
   name: SyncAppDataRetryDelayMilliseconds
   nameWithType: OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess*
-  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_AllowAnonymousAccess
-  name: AllowAnonymousAccess
-  nameWithType: OpenSettingsConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.AllowAnonymousAccess
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: OpenSettings.Models.Operation.ReadOrInitialize
   commentId: F:OpenSettings.Models.Operation.ReadOrInitialize
   href: OpenSettings.Models.Operation.html#OpenSettings_Models_Operation_ReadOrInitialize
@@ -1292,6 +1232,17 @@ references:
   name: StoreInSeparateFile
   nameWithType: OpenSettingsConfiguration.StoreInSeparateFile
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
   commentId: M:Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)
   isExternal: true

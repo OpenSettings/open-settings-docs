@@ -34,10 +34,6 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Provid
 };
 ```
 
-> [!TIP]
-> Want to enable **auto-registration** of consumers?
-> Set `AllowAnonymousAccess` to **true** in the configuration.
-
 #### 🗄 Configuring Database Storage
 
 ```csharp

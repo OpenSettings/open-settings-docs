@@ -5,7 +5,6 @@ items:
   id: ConfigurationSqlModel
   parent: OpenSettings.Domains.Sql.Entities
   children:
-  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
@@ -72,37 +71,6 @@ items:
     arguments:
     - type: System.String
       value: Configurations
-- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
-  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
-  id: AllowAnonymousAccess
-  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
-  langs:
-  - csharp
-  - vb
-  name: AllowAnonymousAccess
-  nameWithType: ConfigurationSqlModel.AllowAnonymousAccess
-  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AllowAnonymousAccess
-    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 15
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Domains.Sql.Entities
-  summary: Indicates whether anonymous access is allowed.
-  example: []
-  syntax:
-    content: public bool AllowAnonymousAccess { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property AllowAnonymousAccess As Boolean
-  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess*
 - uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
   commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
   id: StoreInSeparateFile
@@ -121,7 +89,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 20
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -152,7 +120,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreIndividualStoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 26
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -186,7 +154,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 31
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -217,7 +185,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreIndividualIgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 37
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -251,7 +219,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 42
+    startLine: 37
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -282,7 +250,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreIndividualRegistrationMode
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 48
+    startLine: 43
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -316,7 +284,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Consumer
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 54
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -350,7 +318,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Provider
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 60
+    startLine: 55
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -384,7 +352,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 65
+    startLine: 60
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -415,7 +383,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 70
+    startLine: 65
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -446,7 +414,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 75
+    startLine: 70
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -477,7 +445,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 80
+    startLine: 75
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -508,7 +476,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 86
+    startLine: 81
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -542,7 +510,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Identifier
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 91
+    startLine: 86
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -585,7 +553,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: App
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 97
+    startLine: 92
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -628,7 +596,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 103
+    startLine: 98
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -671,7 +639,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 109
+    startLine: 104
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -1084,12 +1052,12 @@ references:
   fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
   nameWithType.vb: EntityBase(Of TId).UpdatedOn
   fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
-- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
-  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_AllowAnonymousAccess
-  name: AllowAnonymousAccess
-  nameWithType: ConfigurationSqlModel.AllowAnonymousAccess
-  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AllowAnonymousAccess
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: ConfigurationSqlModel.StoreInSeparateFile
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1101,12 +1069,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
-  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_StoreInSeparateFile
-  name: StoreInSeparateFile
-  nameWithType: ConfigurationSqlModel.StoreInSeparateFile
-  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_StoreInSeparateFile

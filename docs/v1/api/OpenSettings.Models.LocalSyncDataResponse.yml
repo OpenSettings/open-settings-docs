@@ -6,7 +6,6 @@ items:
   parent: OpenSettings.Models
   children:
   - OpenSettings.Models.LocalSyncDataResponse.#ctor(OpenSettings.Models.Responses.SyncAppDataResponse,OpenSettings.Configurations.OpenSettingsConfiguration)
-  - OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
   - OpenSettings.Models.LocalSyncDataResponse.IgnoreOnFileChange
   - OpenSettings.Models.LocalSyncDataResponse.IsSynced
   - OpenSettings.Models.LocalSyncDataResponse.ProviderInfo
@@ -95,7 +94,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderInfo
     path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 43
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -106,35 +105,6 @@ items:
       type: OpenSettings.Models.ProviderInfo
     content.vb: Public ReadOnly Property ProviderInfo As ProviderInfo
   overload: OpenSettings.Models.LocalSyncDataResponse.ProviderInfo*
-- uid: OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
-  commentId: P:OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
-  id: AllowAnonymousAccess
-  parent: OpenSettings.Models.LocalSyncDataResponse
-  langs:
-  - csharp
-  - vb
-  name: AllowAnonymousAccess
-  nameWithType: LocalSyncDataResponse.AllowAnonymousAccess
-  fullName: OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/LocalSyncDataResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AllowAnonymousAccess
-    path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 45
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  syntax:
-    content: public bool AllowAnonymousAccess { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property AllowAnonymousAccess As Boolean
-  overload: OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess*
 - uid: OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
   commentId: P:OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
   id: StoreInSeparateFile
@@ -153,7 +123,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 47
+    startLine: 43
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -182,7 +152,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 49
+    startLine: 45
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -211,7 +181,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 51
+    startLine: 47
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -240,7 +210,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsSynced
     path: ../../../open-settings/src/OpenSettings/Models/LocalSyncDataResponse.cs
-    startLine: 53
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -599,12 +569,12 @@ references:
   name: ProviderInfo
   nameWithType: ProviderInfo
   fullName: OpenSettings.Models.ProviderInfo
-- uid: OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess*
-  commentId: Overload:OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
-  href: OpenSettings.Models.LocalSyncDataResponse.html#OpenSettings_Models_LocalSyncDataResponse_AllowAnonymousAccess
-  name: AllowAnonymousAccess
-  nameWithType: LocalSyncDataResponse.AllowAnonymousAccess
-  fullName: OpenSettings.Models.LocalSyncDataResponse.AllowAnonymousAccess
+- uid: OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
+  href: OpenSettings.Models.LocalSyncDataResponse.html#OpenSettings_Models_LocalSyncDataResponse_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: LocalSyncDataResponse.StoreInSeparateFile
+  fullName: OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -616,12 +586,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile*
-  commentId: Overload:OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
-  href: OpenSettings.Models.LocalSyncDataResponse.html#OpenSettings_Models_LocalSyncDataResponse_StoreInSeparateFile
-  name: StoreInSeparateFile
-  nameWithType: LocalSyncDataResponse.StoreInSeparateFile
-  fullName: OpenSettings.Models.LocalSyncDataResponse.StoreInSeparateFile
 - uid: OpenSettings.Models.LocalSyncDataResponse.IgnoreOnFileChange*
   commentId: Overload:OpenSettings.Models.LocalSyncDataResponse.IgnoreOnFileChange
   href: OpenSettings.Models.LocalSyncDataResponse.html#OpenSettings_Models_LocalSyncDataResponse_IgnoreOnFileChange

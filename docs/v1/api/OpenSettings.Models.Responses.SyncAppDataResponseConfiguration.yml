@@ -5,7 +5,6 @@ items:
   id: SyncAppDataResponseConfiguration
   parent: OpenSettings.Models.Responses
   children:
-  - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Consumer
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.IgnoreOnFileChange
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Provider
@@ -42,35 +41,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  id: AllowAnonymousAccess
-  parent: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
-  langs:
-  - csharp
-  - vb
-  name: AllowAnonymousAccess
-  nameWithType: SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AllowAnonymousAccess
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 4
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public bool AllowAnonymousAccess { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property AllowAnonymousAccess As Boolean
-  overload: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess*
 - uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
   commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
   id: StoreInSeparateFile
@@ -89,7 +59,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 6
+    startLine: 4
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -118,7 +88,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 8
+    startLine: 6
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -147,7 +117,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 10
+    startLine: 8
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -176,7 +146,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Consumer
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -205,7 +175,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Provider
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -484,12 +454,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess*
-  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_AllowAnonymousAccess
-  name: AllowAnonymousAccess
-  nameWithType: SyncAppDataResponseConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.AllowAnonymousAccess
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
+  href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: SyncAppDataResponseConfiguration.StoreInSeparateFile
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -501,12 +471,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile*
-  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
-  href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_StoreInSeparateFile
-  name: StoreInSeparateFile
-  nameWithType: SyncAppDataResponseConfiguration.StoreInSeparateFile
-  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
 - uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.IgnoreOnFileChange*
   commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.IgnoreOnFileChange
   href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_IgnoreOnFileChange

@@ -5,7 +5,6 @@ items:
   id: GetGroupedAppDataResponseConfiguration
   parent: OpenSettings.Models.Responses
   children:
-  - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Consumer
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Id
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.IgnoreOnFileChange
@@ -73,35 +72,6 @@ items:
       type: System.String
     content.vb: Public Property Id As String
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Id*
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  id: AllowAnonymousAccess
-  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration
-  langs:
-  - csharp
-  - vb
-  name: AllowAnonymousAccess
-  nameWithType: GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AllowAnonymousAccess
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 8
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public bool AllowAnonymousAccess { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property AllowAnonymousAccess As Boolean
-  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
   id: StoreInSeparateFile
@@ -120,7 +90,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 10
+    startLine: 8
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -149,7 +119,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -178,7 +148,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -207,7 +177,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Consumer
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -236,7 +206,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Provider
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -265,7 +235,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -561,12 +531,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_AllowAnonymousAccess
-  name: AllowAnonymousAccess
-  nameWithType: GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.AllowAnonymousAccess
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -578,12 +548,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_StoreInSeparateFile
-  name: StoreInSeparateFile
-  nameWithType: GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.IgnoreOnFileChange*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.IgnoreOnFileChange
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_IgnoreOnFileChange

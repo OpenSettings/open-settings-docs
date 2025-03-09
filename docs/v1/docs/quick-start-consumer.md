@@ -76,27 +76,6 @@ public class MyFirstSetting : ISettings
 
 ---
 
-## 🔑 Allowing Consumer Registration in the Provider
-
-Before running the consumer, we need to adjust the provider’s configuration to allow anonymous access. This ensures that the consumer can register itself without manual intervention.
-
-Modify your provider configuration by setting **AllowAnonymousAccess** to **true**:
-
-```csharp
-var openSettingsProviderConfiguration = new OpenSettingsConfiguration(ServiceType.Provider)
-{
-    Client = new ClientInfo(
-        new Guid("adbdf741-bb4d-4673-b2a8-23e677fcf454"), // The unique identifier for the client. 
-        new Guid("4294a5e3-0839-4358-a03d-1ac52585ae5f")), // The secret key for the client.
-    AllowAnonymousAccess = true // Consumers can register themselves automatically. (Pre-registration no longer needed) 
-};
-```
-
-> [!WARNING]
-> Enabling **AllowAnonymousAccess** may allow unauthorized access. Use this setting only if the service runs in a secure, internal environment.
-
----
-
 ## 🔎 Accessing the Settings Page  
 
 First, start the **Provider** application (OpenSettings.Api), then run the **Consumer** application (Consumer.Api). The logs should display where the servers are running:
