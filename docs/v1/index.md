@@ -183,4 +183,4 @@ var myFirstSetting = SettingsProvider.GetLocalSettingOrDefault<MyFirstSetting>()
 
 ---
 
-✨ *OpenSettings makes configuration management simple and efficient!* 🚀
+✨ *OpenSettings makes settings management simple and efficient!* 🚀

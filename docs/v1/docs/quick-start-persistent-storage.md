@@ -152,4 +152,4 @@ That's it! **OpenSettings.Api** will be up and running in seconds. 🎉
 
 ---
 
-✨ *OpenSettings makes configuration management simple and efficient!* 🚀
+✨ *OpenSettings makes settings management simple and efficient!* 🚀

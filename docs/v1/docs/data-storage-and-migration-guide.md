@@ -78,4 +78,4 @@ This command applies the migration scripts to create/update the database schema.
 
 ---
 
-✨ *OpenSettings makes configuration management simple and efficient!* 🚀
+✨ *OpenSettings makes settings management simple and efficient!* 🚀
