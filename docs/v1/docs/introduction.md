@@ -58,7 +58,7 @@ No need to manually edit config files—simply update values in the **dashboard*
 ### 🔧 **Three Core Libraries**  
 OpenSettings is built as a **modular system** with three main components:  
 
-1️⃣ **OpenSettings** → The **core library** that handles configuration management logic.  
+1️⃣ **OpenSettings** → The **core library** responsible for managing settings logic.
 
 2️⃣ **OpenSettings.AspNetCore** → Exposing controllers and authentication handlers to manage and interact with OpenSettings.  
 
