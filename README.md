@@ -2,7 +2,7 @@
 
 Welcome to the official documentation repository for **OpenSettings**!
 
-OpenSettings is a **centralized application settings management** system designed for **.NET applications**. It simplifies settings management by providing a structured and scalable approach to handling settings.
+OpenSettings is a **centralized application settings management** system designed for **.NET applications**. It simplifies app settings management by providing a structured and scalable approach to handling settings.
 
 ![Demo](https://github.com/OpenSettings/open-settings-docs/blob/master/docs/v1/assets/demo.gif)
 
