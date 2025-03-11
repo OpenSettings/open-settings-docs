@@ -36,7 +36,7 @@ Once the application is **deployed**, updating configuration values can be **pai
 - ⏳ **Instant changes are not possible**—a full redeployment is required.  
 - ❌ **Wasted time and effort** for minor updates.  
 
-## The OpenSettings Solution 🚀  
+## 🚀 The OpenSettings Solution  
 
 Instead of managing configurations manually, **why not store them in persistent storage** and let services sync them automatically?  
 
@@ -53,7 +53,7 @@ OpenSettings provides a **user-friendly UI** where settings can be managed **wit
 
 No need to manually edit config files—simply update values in the **dashboard**!  
 
-![Introduction Setting List Page](../assets/introduction-setting-list-page.png)
+![Introduction Setting List Page](../assets/images/introduction-setting-list-page.png)
 
 ### 🔧 **Three Core Libraries**  
 OpenSettings is built as a **modular system** with three main components:  

@@ -108,7 +108,7 @@ public class MyFirstSetting : ISettings
 
 Run the application and navigate to ".../settings" to view and manage your settings.
 
-![Demo](assets/demo.gif)
+![Demo](assets/gifs/demo.gif)
 
 ---
 

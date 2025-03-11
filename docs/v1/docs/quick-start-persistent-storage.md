@@ -57,7 +57,7 @@ Migrations generate database schemas and relationships.
 
 Now, run the application to verify that your database is created.
 
-![Quick Start Persistent Storage Spa](../assets/quick-start-persistent-storage-spa.png)
+![Quick Start Persistent Storage Spa](../assets/images/quick-start-persistent-storage-spa.png)
 
 ---
 

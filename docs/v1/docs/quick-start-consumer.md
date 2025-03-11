@@ -100,6 +100,8 @@ By default, the **OpenSettings Spa** is accessible at the relative URL `/setting
 
 🔗 To open the Consumer's settings page in your browser: **[http://localhost:5290/settings](http://localhost:5290/settings)**
 
+![Quick Start Consumer Spa](../assets/images/quick-start-consumer-spa.png)
+
 🔗 To open the Provider's settings page in your browser: **[http://localhost:5288/settings](http://localhost:5288/settings)**
 
 > [!NOTE]
@@ -127,7 +129,7 @@ That's it! OpenSettings.Api & Consumer.Api will be up and running in seconds. �
 ## ✅ What's Next?
 
 - **Explore the consumer functionality:** [Consumer Guide](consumer-guide.md)
-- **Secure your OpenSettings:** Learn more in the [Security Guide](security-guide.md)
+- **Securing OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 
 ---
 

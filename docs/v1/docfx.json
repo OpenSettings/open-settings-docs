@@ -12,7 +12,7 @@
 					]
 				}
 			],
-			"dest": "api"
+			"output": "api"
 		}
 	],
 	"build": {
@@ -34,16 +34,17 @@
 		"resource": [
 			{
 				"files": [
-					"assets/**",
+					"assets/**/*",
 					"logo.svg",
 					"favicon.ico"
 				]
 			}
 		],
-		"dest": "../_site/v1",
+		"output": "../_site/v1",
 		"template": [
 			"default",
-			"modern"
+			"modern",
+			"custom-template"
 		],
 		"globalMetadata": {
 			"_appLogoPath": "logo.svg",

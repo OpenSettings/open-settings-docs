@@ -105,7 +105,7 @@ By default, the **OpenSettings Spa** is accessible at the relative URL `/setting
 
 This page allows you to **view and edit your application settings** directly through the OpenSettings Spa (Single Page Application).
 
-![Quick Start Provider Spa](../assets/quick-start-provider-spa.png)
+![Quick Start Provider Spa](../assets/images/quick-start-provider-spa.png)
 
 ---
 
@@ -129,7 +129,7 @@ That's it! OpenSettings will be up and running in seconds. 🎉
 - **Explore the provider functionality:** [Provider Guide](provider-guide.md)
 - **Explore the consumer functionality:** [Consumer Guide](consumer-guide.md)
 - **Need persistent storage?** Check out the [Persistent Storage](quick-start-persistent-storage.md) options (SQL Server, PostgreSQL, etc.)
-- **Secure your OpenSettings:** Learn more in the [Security Guide](security-guide.md)
+- **Securing OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 
 ---
 
