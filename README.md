@@ -39,7 +39,7 @@ Open your browser and navigate to **[http://localhost:8080](http://localhost:808
 
 ## 💡 License  
 
-OpenSettings is licensed under the [OpenSettings License](https://opensettings.net/license).
+Licensed under the [OpenSettings License](https://opensettings.net/license).
 
 ## 🤝 Contributing
 
