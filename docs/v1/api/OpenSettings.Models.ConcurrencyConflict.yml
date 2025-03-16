@@ -63,7 +63,7 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
   extensionMethods:
-  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}}.OpenSettings.Helper.DistinctBy``2(System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},{TKey}})
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}}.OpenSettings.Helpers.Helper.DistinctBy``2(System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},{TKey}})
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -1048,21 +1048,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}}.OpenSettings.Helper.DistinctBy``2(System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},{TKey}})
-  commentId: M:OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  parent: OpenSettings.Helper
-  definition: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}}.OpenSettings.Helpers.Helper.DistinctBy``2(System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},{TKey}})
+  commentId: M:OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  parent: OpenSettings.Helpers.Helper
+  definition: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   name: DistinctBy<KeyValuePair<string, ConcurrencyConflictInfo>, TKey>(IEnumerable<KeyValuePair<string, ConcurrencyConflictInfo>>, Func<KeyValuePair<string, ConcurrencyConflictInfo>, TKey>)
   nameWithType: Helper.DistinctBy<KeyValuePair<string, ConcurrencyConflictInfo>, TKey>(IEnumerable<KeyValuePair<string, ConcurrencyConflictInfo>>, Func<KeyValuePair<string, ConcurrencyConflictInfo>, TKey>)
-  fullName: OpenSettings.Helper.DistinctBy<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>, TKey>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>>, System.Func<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>, TKey>)
+  fullName: OpenSettings.Helpers.Helper.DistinctBy<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>, TKey>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>>, System.Func<System.Collections.Generic.KeyValuePair<string, OpenSettings.Models.ConcurrencyConflictInfo>, TKey>)
   nameWithType.vb: Helper.DistinctBy(Of KeyValuePair(Of String, ConcurrencyConflictInfo), TKey)(IEnumerable(Of KeyValuePair(Of String, ConcurrencyConflictInfo)), Func(Of KeyValuePair(Of String, ConcurrencyConflictInfo), TKey))
-  fullName.vb: OpenSettings.Helper.DistinctBy(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo), TKey)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo)), System.Func(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo), TKey))
+  fullName.vb: OpenSettings.Helpers.Helper.DistinctBy(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo), TKey)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo)), System.Func(Of System.Collections.Generic.KeyValuePair(Of String, OpenSettings.Models.ConcurrencyConflictInfo), TKey))
   name.vb: DistinctBy(Of KeyValuePair(Of String, ConcurrencyConflictInfo), TKey)(IEnumerable(Of KeyValuePair(Of String, ConcurrencyConflictInfo)), Func(Of KeyValuePair(Of String, ConcurrencyConflictInfo), TKey))
   spec.csharp:
-  - uid: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}},System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},``1})
+  - uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}},System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},``1})
     name: DistinctBy
-    href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   - name: <
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
@@ -1133,9 +1133,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}},System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},``1})
+  - uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo}},System.Func{System.Collections.Generic.KeyValuePair{System.String,OpenSettings.Models.ConcurrencyConflictInfo},``1})
     name: DistinctBy
-    href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   - name: (
   - name: Of
   - name: " "
@@ -1831,20 +1831,20 @@ references:
   fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Values
   nameWithType.vb: Dictionary(Of TKey, TValue).Values
   fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Values
-- uid: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  commentId: M:OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+- uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   isExternal: true
-  href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   name: DistinctBy<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>)
   nameWithType: Helper.DistinctBy<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>)
-  fullName: OpenSettings.Helper.DistinctBy<TSource, TKey>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>)
+  fullName: OpenSettings.Helpers.Helper.DistinctBy<TSource, TKey>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>)
   nameWithType.vb: Helper.DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
-  fullName.vb: OpenSettings.Helper.DistinctBy(Of TSource, TKey)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey))
+  fullName.vb: OpenSettings.Helpers.Helper.DistinctBy(Of TSource, TKey)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey))
   name.vb: DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
   spec.csharp:
-  - uid: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
     name: DistinctBy
-    href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   - name: <
   - name: TSource
   - name: ','
@@ -1873,9 +1873,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: OpenSettings.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
     name: DistinctBy
-    href: OpenSettings.Helper.html#OpenSettings_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   - name: (
   - name: Of
   - name: " "
@@ -1909,16 +1909,32 @@ references:
   - name: TKey
   - name: )
   - name: )
-- uid: OpenSettings.Helper
-  commentId: T:OpenSettings.Helper
-  parent: OpenSettings
-  href: OpenSettings.Helper.html
+- uid: OpenSettings.Helpers.Helper
+  commentId: T:OpenSettings.Helpers.Helper
+  parent: OpenSettings.Helpers
+  href: OpenSettings.Helpers.Helper.html
   name: Helper
   nameWithType: Helper
-  fullName: OpenSettings.Helper
-- uid: OpenSettings
-  commentId: N:OpenSettings
+  fullName: OpenSettings.Helpers.Helper
+- uid: OpenSettings.Helpers
+  commentId: N:OpenSettings.Helpers
   href: OpenSettings.html
-  name: OpenSettings
-  nameWithType: OpenSettings
-  fullName: OpenSettings
+  name: OpenSettings.Helpers
+  nameWithType: OpenSettings.Helpers
+  fullName: OpenSettings.Helpers
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Helpers
+    name: Helpers
+    href: OpenSettings.Helpers.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Helpers
+    name: Helpers
+    href: OpenSettings.Helpers.html

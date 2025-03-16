@@ -27,6 +27,7 @@ items:
     content: 'public interface IInstancesRestService : IInstancesService'
     content.vb: Public Interface IInstancesRestService Inherits IInstancesService
   inheritedMembers:
+  - OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -72,6 +73,44 @@ references:
   - uid: OpenSettings.Services.Rest.Interfaces
     name: Interfaces
     href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_CreateInstanceAsync_OpenSettings_Models_Inputs_CreateInstanceInput_System_Threading_CancellationToken_
+  name: CreateInstanceAsync(CreateInstanceInput, CancellationToken)
+  nameWithType: IInstancesService.CreateInstanceAsync(CreateInstanceInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+    name: CreateInstanceAsync
+    href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_CreateInstanceAsync_OpenSettings_Models_Inputs_CreateInstanceInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateInstanceInput
+    name: CreateInstanceInput
+    href: OpenSettings.Models.Inputs.CreateInstanceInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+    name: CreateInstanceAsync
+    href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_CreateInstanceAsync_OpenSettings_Models_Inputs_CreateInstanceInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateInstanceInput
+    name: CreateInstanceInput
+    href: OpenSettings.Models.Inputs.CreateInstanceInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
 - uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   parent: OpenSettings.Services.Interfaces.IInstancesService

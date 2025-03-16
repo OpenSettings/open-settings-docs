@@ -73,7 +73,7 @@ This command applies the migration scripts to create/update the database schema.
 
 ## ✅ **What's Next?**
 
-- **Explore the provider functionality:** [Provider Guide](provider-guide.md)
+- **Explore the provider functionality:** [Configuration Guide](configuration-guide.md#provider-configuration)
 - **Securing OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 
 ---

@@ -25,7 +25,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConsumerConfiguration
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -62,14 +62,15 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderUrl
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
   summary: >-
-    Gets or sets the URL of the provider for fetching and syncing data.
+    Gets or sets the Url of the provider for fetching and syncing data.
 
-    This URL is required by the consumer to connect to the provider and retrieve data.
+    This Url is required by the consumer to connect to the provider and retrieve data.
+  remarks: This Url should point to the endpoint for the api. e.g. 'https://.../api/settings'
   example: []
   syntax:
     content: public string ProviderUrl { get; set; }
@@ -77,7 +78,7 @@ items:
     return:
       type: System.String
       description: >-
-        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representing the URL of the settings provider service. 
+        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> representing the Url of the settings provider service. 
 
         Any trailing slashes will be trimmed automatically when setting the value.
     content.vb: Public Property ProviderUrl As String
@@ -100,7 +101,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RequestEncodings
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -140,7 +141,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsRedisActive
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -173,7 +174,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SkipInitialSyncAppData
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -211,7 +212,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PollingSettingsWorker
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -243,7 +244,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigureHttpClient
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 88
+    startLine: 90
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations

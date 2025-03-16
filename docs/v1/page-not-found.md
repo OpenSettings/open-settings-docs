@@ -12,7 +12,7 @@ We're sorry, but the page you're looking for doesn't exist or has been moved.
 ## 🔍 What can you do?
 
 - Double-check the URL for any typos.  
-- Go back to the [Homepage](index.md).  
+- Go back to the [Index](index.md).  
 
 <br />
 

@@ -10,9 +10,6 @@ items:
   - uid: OpenSettings.Errors
     name: Errors
     type: Enum
-  - uid: OpenSettings.Helper
-    name: Helper
-    type: Class
   - uid: OpenSettings.LicenseProvider
     name: LicenseProvider
     type: Class
@@ -135,6 +132,12 @@ items:
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.CreateIdentifierRequestBody
     name: CreateIdentifierRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
+    name: CreateInstanceRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody
+    name: CreateInstanceRequestBody
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.CreateNotificationRequest
     name: CreateNotificationRequest
@@ -562,6 +565,12 @@ items:
   - uid: OpenSettings.Exceptions.DuplicateSettingsNameException
     name: DuplicateSettingsNameException
     type: Class
+  - uid: OpenSettings.Exceptions.MissingConfigurationWhenSkipInitialSyncAppDataException
+    name: MissingConfigurationWhenSkipInitialSyncAppDataException
+    type: Class
+  - uid: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
+    name: SyncAppDataMaxRetryExceededException
+    type: Class
 - uid: OpenSettings.Extensions
   name: OpenSettings.Extensions
   type: Namespace
@@ -578,9 +587,6 @@ items:
   - uid: OpenSettings.Extensions.HostBuilderExtensions
     name: HostBuilderExtensions
     type: Class
-  - uid: OpenSettings.Extensions.JsonHelper
-    name: JsonHelper
-    type: Class
   - uid: OpenSettings.Extensions.ServiceCollectionExtensions
     name: ServiceCollectionExtensions
     type: Class
@@ -589,6 +595,16 @@ items:
     type: Class
   - uid: OpenSettings.Extensions.SettingsExtensions
     name: SettingsExtensions
+    type: Class
+- uid: OpenSettings.Helpers
+  name: OpenSettings.Helpers
+  type: Namespace
+  items:
+  - uid: OpenSettings.Helpers.Helper
+    name: Helper
+    type: Class
+  - uid: OpenSettings.Helpers.JsonHelper
+    name: JsonHelper
     type: Class
 - uid: OpenSettings.Models
   name: OpenSettings.Models
@@ -651,9 +667,6 @@ items:
   - uid: OpenSettings.Models.LicenseEdition
     name: LicenseEdition
     type: Enum
-  - uid: OpenSettings.Models.LocalSyncDataResponse
-    name: LocalSyncDataResponse
-    type: Class
   - uid: OpenSettings.Models.NotificationSource
     name: NotificationSource
     type: Enum
@@ -750,6 +763,9 @@ items:
     type: Class
   - uid: OpenSettings.Models.Inputs.CreateIdentifierInput
     name: CreateIdentifierInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.CreateInstanceInput
+    name: CreateInstanceInput
     type: Class
   - uid: OpenSettings.Models.Inputs.CreateNotificationInput
     name: CreateNotificationInput

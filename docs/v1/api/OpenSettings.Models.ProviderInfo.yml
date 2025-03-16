@@ -7,7 +7,6 @@ items:
   children:
   - OpenSettings.Models.ProviderInfo.Authorize
   - OpenSettings.Models.ProviderInfo.Client
-  - OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
   - OpenSettings.Models.ProviderInfo.OAuth2
   - OpenSettings.Models.ProviderInfo.PackVersion
   - OpenSettings.Models.ProviderInfo.PackVersionScore
@@ -27,7 +26,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderInfo
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 8
+    startLine: 6
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -67,7 +66,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Client
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 13
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -98,7 +97,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Authorize
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -129,7 +128,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -161,7 +160,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PackVersion
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 34
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -193,7 +192,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PackVersionScore
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 43
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -228,7 +227,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OAuth2
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 48
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -259,7 +258,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Redis
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 53
+    startLine: 51
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -272,34 +271,6 @@ items:
       type: OpenSettings.Models.RedisInfo
     content.vb: Public Property Redis As RedisInfo
   overload: OpenSettings.Models.ProviderInfo.Redis*
-- uid: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
-  commentId: M:OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
-  id: GetAsKeyValuePairs
-  parent: OpenSettings.Models.ProviderInfo
-  langs:
-  - csharp
-  - vb
-  name: GetAsKeyValuePairs()
-  nameWithType: ProviderInfo.GetAsKeyValuePairs()
-  fullName: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs()
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings/Models/ProviderInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: GetAsKeyValuePairs
-    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 55
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  syntax:
-    content: public KeyValuePair<string, string>[] GetAsKeyValuePairs()
-    return:
-      type: System.Collections.Generic.KeyValuePair{System.String,System.String}[]
-    content.vb: Public Function GetAsKeyValuePairs() As KeyValuePair(Of String, String)()
-  overload: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs*
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -656,58 +627,3 @@ references:
   name: RedisInfo
   nameWithType: RedisInfo
   fullName: OpenSettings.Models.RedisInfo
-- uid: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_GetAsKeyValuePairs
-  name: GetAsKeyValuePairs
-  nameWithType: ProviderInfo.GetAsKeyValuePairs
-  fullName: OpenSettings.Models.ProviderInfo.GetAsKeyValuePairs
-- uid: System.Collections.Generic.KeyValuePair{System.String,System.String}[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
-  name: KeyValuePair<string, string>[]
-  nameWithType: KeyValuePair<string, string>[]
-  fullName: System.Collections.Generic.KeyValuePair<string, string>[]
-  nameWithType.vb: KeyValuePair(Of String, String)()
-  fullName.vb: System.Collections.Generic.KeyValuePair(Of String, String)()
-  name.vb: KeyValuePair(Of String, String)()
-  spec.csharp:
-  - uid: System.Collections.Generic.KeyValuePair`2
-    name: KeyValuePair
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '>'
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Collections.Generic.KeyValuePair`2
-    name: KeyValuePair
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  - name: (
-  - name: )

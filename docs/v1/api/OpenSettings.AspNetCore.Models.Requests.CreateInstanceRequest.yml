@@ -1,38 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo
-  commentId: T:OpenSettings.Models.OpenSettingsAssemblyInfo
-  id: OpenSettingsAssemblyInfo
-  parent: OpenSettings.Models
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
+  id: CreateInstanceRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
   children:
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.Instance
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.Name
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
+  - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
+  - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
   langs:
   - csharp
   - vb
-  name: OpenSettingsAssemblyInfo
-  nameWithType: OpenSettingsAssemblyInfo
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo
+  name: CreateInstanceRequest
+  nameWithType: CreateInstanceRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
   type: Class
   source:
     remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OpenSettingsAssemblyInfo
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 8
+    id: CreateInstanceRequest
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
+    startLine: 5
   assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Represents the assembly information for the OpenSettings library.
-  example: []
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
   syntax:
-    content: public class OpenSettingsAssemblyInfo
-    content.vb: Public Class OpenSettingsAssemblyInfo
+    content: public class CreateInstanceRequest
+    content.vb: Public Class CreateInstanceRequest
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,194 +38,123 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.Instance
-  commentId: F:OpenSettings.Models.OpenSettingsAssemblyInfo.Instance
-  id: Instance
-  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
+  id: ClientId
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
   langs:
   - csharp
   - vb
-  name: Instance
-  nameWithType: OpenSettingsAssemblyInfo.Instance
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Instance
-  type: Field
-  source:
-    remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Instance
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 13
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Singleton instance of the <xref href="OpenSettings.Models.OpenSettingsAssemblyInfo" data-throw-if-not-resolved="false"></xref> class.
-  example: []
-  syntax:
-    content: public static readonly OpenSettingsAssemblyInfo Instance
-    return:
-      type: OpenSettings.Models.OpenSettingsAssemblyInfo
-    content.vb: Public Shared ReadOnly Instance As OpenSettingsAssemblyInfo
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
-  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
-  id: FullName
-  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
-  langs:
-  - csharp
-  - vb
-  name: FullName
-  nameWithType: OpenSettingsAssemblyInfo.FullName
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
+  name: ClientId
+  nameWithType: CreateInstanceRequest.ClientId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
   type: Property
   source:
     remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: FullName
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 35
+    id: ClientId
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
+    startLine: 7
   assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: >-
-    Gets the OpenSettings full name. 
-
-    e.g. '<code>OpenSettings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</code>'.
-  example: []
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
   syntax:
-    content: public string FullName { get; }
+    content: >-
+      [FromRoute]
+
+      public Guid ClientId { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property FullName As String
-  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.FullName*
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.Name
-  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.Name
-  id: Name
-  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
+      type: System.Guid
+    content.vb: >-
+      <FromRoute>
+
+      Public Property ClientId As Guid
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
+  id: Body
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest
   langs:
   - csharp
   - vb
-  name: Name
-  nameWithType: OpenSettingsAssemblyInfo.Name
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Name
+  name: Body
+  nameWithType: CreateInstanceRequest.Body
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
   type: Property
   source:
     remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Name
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 41
+    id: Body
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequest.cs
+    startLine: 10
   assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: >-
-    Gets the OpenSettings name. 
-
-    e.g. '<code>OpenSettings</code>'.
-  example: []
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
   syntax:
-    content: public string Name { get; }
+    content: >-
+      [FromBody]
+
+      public CreateInstanceRequestBody Body { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property Name As String
-  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.Name*
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  id: Version
-  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
-  langs:
-  - csharp
-  - vb
-  name: Version
-  nameWithType: OpenSettingsAssemblyInfo.Version
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Version
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 47
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: >-
-    Gets the OpenSettings version information without the '<code>v</code>' prefix. 
+      type: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody
+    content.vb: >-
+      <FromBody>
 
-    e.g. '<code>1.0.0</code>'.
-  example: []
-  syntax:
-    content: public string Version { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property Version As String
-  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.Version*
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  id: VersionScore
-  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
-  langs:
-  - csharp
-  - vb
-  name: VersionScore
-  nameWithType: OpenSettingsAssemblyInfo.VersionScore
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: VersionScore
-    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 53
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: >-
-    Gets the OpenSettings version score information.
-
-    e.g. '<code>281474976710656</code>'.
-  example: []
-  syntax:
-    content: public long VersionScore { get; }
-    parameters: []
-    return:
-      type: System.Int64
-    content.vb: Public ReadOnly Property VersionScore As Long
-  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore*
+      Public Property Body As CreateInstanceRequestBody
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+    arguments: []
 references:
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
   href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
   spec.csharp:
   - uid: OpenSettings
     name: OpenSettings
     href: OpenSettings.html
   - name: .
-  - uid: OpenSettings.Models
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
     name: Models
-    href: OpenSettings.Models.html
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
   spec.vb:
   - uid: OpenSettings
     name: OpenSettings
     href: OpenSettings.html
   - name: .
-  - uid: OpenSettings.Models
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
     name: Models
-    href: OpenSettings.Models.html
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -468,56 +392,30 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo
-  commentId: T:OpenSettings.Models.OpenSettingsAssemblyInfo
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html
-  name: OpenSettingsAssemblyInfo
-  nameWithType: OpenSettingsAssemblyInfo
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.FullName*
-  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_FullName
-  name: FullName
-  nameWithType: OpenSettingsAssemblyInfo.FullName
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
-- uid: System.String
-  commentId: T:System.String
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
+  href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.html#OpenSettings_AspNetCore_Models_Requests_CreateInstanceRequest_ClientId
+  name: ClientId
+  nameWithType: CreateInstanceRequest.ClientId
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.ClientId
+- uid: System.Guid
+  commentId: T:System.Guid
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.Name*
-  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.Name
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_Name
-  name: Name
-  nameWithType: OpenSettingsAssemblyInfo.Name
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Name
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.Version*
-  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_Version
-  name: Version
-  nameWithType: OpenSettingsAssemblyInfo.Version
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore*
-  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_VersionScore
-  name: VersionScore
-  nameWithType: OpenSettingsAssemblyInfo.VersionScore
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
+  href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.html#OpenSettings_AspNetCore_Models_Requests_CreateInstanceRequest_Body
+  name: Body
+  nameWithType: CreateInstanceRequest.Body
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest.Body
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.html
+  name: CreateInstanceRequestBody
+  nameWithType: CreateInstanceRequestBody
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody

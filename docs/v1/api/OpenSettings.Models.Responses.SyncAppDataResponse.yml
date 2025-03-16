@@ -6,8 +6,12 @@ items:
   parent: OpenSettings.Models.Responses
   children:
   - OpenSettings.Models.Responses.SyncAppDataResponse.Configuration
+  - OpenSettings.Models.Responses.SyncAppDataResponse.Get(Microsoft.Extensions.Configuration.IConfiguration)
+  - OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync(System.Threading.CancellationToken)
+  - OpenSettings.Models.Responses.SyncAppDataResponse.InstanceFullName
   - OpenSettings.Models.Responses.SyncAppDataResponse.ProviderInfo
   - OpenSettings.Models.Responses.SyncAppDataResponse.Settings
+  - OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -22,7 +26,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataResponse
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
-    startLine: 5
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -39,6 +43,33 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.InstanceFullName
+  commentId: F:OpenSettings.Models.Responses.SyncAppDataResponse.InstanceFullName
+  id: InstanceFullName
+  parent: OpenSettings.Models.Responses.SyncAppDataResponse
+  langs:
+  - csharp
+  - vb
+  name: InstanceFullName
+  nameWithType: SyncAppDataResponse.InstanceFullName
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.InstanceFullName
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceFullName
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public const string InstanceFullName = "OpenSettings.Models.Responses.SyncAppDataResponse"
+    return:
+      type: System.String
+    content.vb: Public Const InstanceFullName As String = "OpenSettings.Models.Responses.SyncAppDataResponse"
 - uid: OpenSettings.Models.Responses.SyncAppDataResponse.Settings
   commentId: P:OpenSettings.Models.Responses.SyncAppDataResponse.Settings
   id: Settings
@@ -57,7 +88,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Settings
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -86,7 +117,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderInfo
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
-    startLine: 9
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -115,7 +146,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Configuration
     path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
-    startLine: 11
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -126,6 +157,99 @@ items:
       type: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
     content.vb: Public Property Configuration As SyncAppDataResponseConfiguration
   overload: OpenSettings.Models.Responses.SyncAppDataResponse.Configuration*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.Get(Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:OpenSettings.Models.Responses.SyncAppDataResponse.Get(Microsoft.Extensions.Configuration.IConfiguration)
+  id: Get(Microsoft.Extensions.Configuration.IConfiguration)
+  parent: OpenSettings.Models.Responses.SyncAppDataResponse
+  langs:
+  - csharp
+  - vb
+  name: Get(IConfiguration)
+  nameWithType: SyncAppDataResponse.Get(IConfiguration)
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.Get(Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Get
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public static SyncAppDataResponse Get(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    return:
+      type: OpenSettings.Models.Responses.SyncAppDataResponse
+    content.vb: Public Shared Function [Get](configuration As IConfiguration) As SyncAppDataResponse
+  overload: OpenSettings.Models.Responses.SyncAppDataResponse.Get*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync(System.Threading.CancellationToken)
+  id: GetAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Models.Responses.SyncAppDataResponse
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(CancellationToken)
+  nameWithType: SyncAppDataResponse.GetAsync(CancellationToken)
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAsync
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+    startLine: 29
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public static Task<SyncAppDataResponse> GetAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.SyncAppDataResponse}
+    content.vb: Public Shared Function GetAsync(cancellationToken As CancellationToken = Nothing) As Task(Of SyncAppDataResponse)
+  overload: OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync(System.Threading.CancellationToken)
+  id: WriteToFileAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Models.Responses.SyncAppDataResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteToFileAsync(CancellationToken)
+  nameWithType: SyncAppDataResponse.WriteToFileAsync(CancellationToken)
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: WriteToFileAsync
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponse.cs
+    startLine: 47
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Task WriteToFileAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteToFileAsync(cancellationToken As CancellationToken = Nothing) As Task
+  overload: OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -394,6 +518,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: OpenSettings.Models.Responses.SyncAppDataResponse.Settings*
   commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponse.Settings
   href: OpenSettings.Models.Responses.SyncAppDataResponse.html#OpenSettings_Models_Responses_SyncAppDataResponse_Settings
@@ -546,3 +681,214 @@ references:
   name: SyncAppDataResponseConfiguration
   nameWithType: SyncAppDataResponseConfiguration
   fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.Get*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponse.Get
+  href: OpenSettings.Models.Responses.SyncAppDataResponse.html#OpenSettings_Models_Responses_SyncAppDataResponse_Get_Microsoft_Extensions_Configuration_IConfiguration_
+  name: Get
+  nameWithType: SyncAppDataResponse.Get
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.Get
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse
+  commentId: T:OpenSettings.Models.Responses.SyncAppDataResponse
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.SyncAppDataResponse.html
+  name: SyncAppDataResponse
+  nameWithType: SyncAppDataResponse
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync
+  href: OpenSettings.Models.Responses.SyncAppDataResponse.html#OpenSettings_Models_Responses_SyncAppDataResponse_GetAsync_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: SyncAppDataResponse.GetAsync
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.GetAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.SyncAppDataResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.SyncAppDataResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SyncAppDataResponse>
+  nameWithType: Task<SyncAppDataResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.SyncAppDataResponse>
+  nameWithType.vb: Task(Of SyncAppDataResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.SyncAppDataResponse)
+  name.vb: Task(Of SyncAppDataResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponse
+    name: SyncAppDataResponse
+    href: OpenSettings.Models.Responses.SyncAppDataResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponse
+    name: SyncAppDataResponse
+    href: OpenSettings.Models.Responses.SyncAppDataResponse.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync
+  href: OpenSettings.Models.Responses.SyncAppDataResponse.html#OpenSettings_Models_Responses_SyncAppDataResponse_WriteToFileAsync_System_Threading_CancellationToken_
+  name: WriteToFileAsync
+  nameWithType: SyncAppDataResponse.WriteToFileAsync
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponse.WriteToFileAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

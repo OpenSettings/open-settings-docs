@@ -173,8 +173,6 @@ var myFirstSetting = SettingsProvider.GetLocalSettingOrDefault<MyFirstSetting>()
 
 🔹 **Deep Dive into OpenSettings**  
    - [Configuration Guide](docs/configuration-guide.md) - Learn how to configure OpenSettings.
-   - [Consumer Guide](docs/consumer-guide.md) - Learn how to integrate your services to OpenSettings.
-   - [Provider Guide](docs/provider-guide.md) - Learn how to configure your Provider.
    - [Security Guide](docs/security-guide.md) to restrict unauthorized access to settings.
 
 ---

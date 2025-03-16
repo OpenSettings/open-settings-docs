@@ -162,7 +162,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Authorize
     path: ../../../open-settings/src/OpenSettings.AspNetCore.Spa/ControllerOptions.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - OpenSettings.AspNetCore.Spa
   namespace: OpenSettings.AspNetCore
@@ -186,6 +186,8 @@ items:
     to determine access based on priority or configuration rank).
 
     </p>
+
+    <p>The default value is '<code>false</code>'.</p>
   example: []
   syntax:
     content: public bool Authorize { get; set; }
@@ -212,7 +214,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OAuth2Options
     path: ../../../open-settings/src/OpenSettings.AspNetCore.Spa/ControllerOptions.cs
-    startLine: 49
+    startLine: 50
   assemblies:
   - OpenSettings.AspNetCore.Spa
   namespace: OpenSettings.AspNetCore

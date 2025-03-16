@@ -5,6 +5,7 @@ items:
   id: IInstancesService
   parent: OpenSettings.Services.Interfaces
   children:
+  - OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -32,6 +33,39 @@ items:
   syntax:
     content: public interface IInstancesService
     content.vb: Public Interface IInstancesService
+- uid: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+  id: CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IInstancesService
+  langs:
+  - csharp
+  - vb
+  name: CreateInstanceAsync(CreateInstanceInput, CancellationToken)
+  nameWithType: IInstancesService.CreateInstanceAsync(CreateInstanceInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync(OpenSettings.Models.Inputs.CreateInstanceInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstancesService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateInstanceAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IJsonResponse> CreateInstanceAsync(CreateInstanceInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.CreateInstanceInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+    content.vb: Function CreateInstanceAsync(input As CreateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+  overload: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   id: UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
@@ -50,7 +84,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateInstanceAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -83,7 +117,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteInstanceAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -116,7 +150,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -149,7 +183,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppSlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -182,7 +216,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppIdAndIdentifierIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -215,7 +249,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppSlugAndIdentifierSlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstancesService.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -261,19 +295,19 @@ references:
   - uid: OpenSettings.Services.Interfaces
     name: Interfaces
     href: OpenSettings.Services.Interfaces.html
-- uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync*
-  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
-  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_UpdateInstanceAsync_OpenSettings_Models_Inputs_UpdateInstanceInput_System_Threading_CancellationToken_
-  name: UpdateInstanceAsync
-  nameWithType: IInstancesService.UpdateInstanceAsync
-  fullName: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
-- uid: OpenSettings.Models.Inputs.UpdateInstanceInput
-  commentId: T:OpenSettings.Models.Inputs.UpdateInstanceInput
+- uid: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_CreateInstanceAsync_OpenSettings_Models_Inputs_CreateInstanceInput_System_Threading_CancellationToken_
+  name: CreateInstanceAsync
+  nameWithType: IInstancesService.CreateInstanceAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync
+- uid: OpenSettings.Models.Inputs.CreateInstanceInput
+  commentId: T:OpenSettings.Models.Inputs.CreateInstanceInput
   parent: OpenSettings.Models.Inputs
-  href: OpenSettings.Models.Inputs.UpdateInstanceInput.html
-  name: UpdateInstanceInput
-  nameWithType: UpdateInstanceInput
-  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput
+  href: OpenSettings.Models.Inputs.CreateInstanceInput.html
+  name: CreateInstanceInput
+  nameWithType: CreateInstanceInput
+  fullName: OpenSettings.Models.Inputs.CreateInstanceInput
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -437,6 +471,19 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
+  href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_UpdateInstanceAsync_OpenSettings_Models_Inputs_UpdateInstanceInput_System_Threading_CancellationToken_
+  name: UpdateInstanceAsync
+  nameWithType: IInstancesService.UpdateInstanceAsync
+  fullName: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync
+- uid: OpenSettings.Models.Inputs.UpdateInstanceInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateInstanceInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateInstanceInput.html
+  name: UpdateInstanceInput
+  nameWithType: UpdateInstanceInput
+  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput
 - uid: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync*
   commentId: Overload:OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync
   href: OpenSettings.Services.Interfaces.IInstancesService.html#OpenSettings_Services_Interfaces_IInstancesService_DeleteInstanceAsync_OpenSettings_Models_Inputs_DeleteInstanceInput_System_Threading_CancellationToken_

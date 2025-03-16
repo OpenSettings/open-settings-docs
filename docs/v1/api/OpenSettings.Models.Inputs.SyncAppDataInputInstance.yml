@@ -9,7 +9,8 @@ items:
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.DynamicId
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.Environment
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.InstanceName
-  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
+  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.ReloadStrategies
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.ServiceType
@@ -29,7 +30,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataInputInstance
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -64,7 +65,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -93,7 +94,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DynamicId
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -122,7 +123,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Urls
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -133,6 +134,103 @@ items:
       type: System.String[]
     content.vb: Public Property Urls As String()
   overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Urls*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+  id: Version
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: SyncAppDataInputInstance.Version
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Version
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
+  id: IsActive
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: SyncAppDataInputInstance.IsActive
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsActive
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  id: IpAddress
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  nameWithType: SyncAppDataInputInstance.IpAddress
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IpAddress
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string IpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property IpAddress As String
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
 - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
   commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
   id: MachineName
@@ -151,7 +249,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MachineName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 25
+    startLine: 33
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -180,7 +278,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Environment
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 27
+    startLine: 35
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -209,7 +307,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReloadStrategies
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 29
+    startLine: 37
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -238,7 +336,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 31
+    startLine: 39
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -267,7 +365,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataAccessType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 33
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -278,64 +376,6 @@ items:
       type: System.Nullable{OpenSettings.Models.DataAccessType}
     content.vb: Public Property DataAccessType As DataAccessType?
   overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.DataAccessType*
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
-  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
-  id: Version
-  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
-  langs:
-  - csharp
-  - vb
-  name: Version
-  nameWithType: SyncAppDataInputInstance.Version
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Version
-    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 35
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Inputs
-  syntax:
-    content: public string Version { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Version As String
-  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version*
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
-  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
-  id: IsDisabled
-  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
-  langs:
-  - csharp
-  - vb
-  name: IsDisabled
-  nameWithType: SyncAppDataInputInstance.IsDisabled
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: IsDisabled
-    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 37
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Inputs
-  syntax:
-    content: public bool IsDisabled { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsDisabled As Boolean
-  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled*
 references:
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
@@ -656,6 +696,35 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_Version
+  name: Version
+  nameWithType: SyncAppDataInputInstance.Version
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
+  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_IsActive
+  name: IsActive
+  nameWithType: SyncAppDataInputInstance.IsActive
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_IpAddress
+  name: IpAddress
+  nameWithType: SyncAppDataInputInstance.IpAddress
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
 - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName*
   commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
   href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_MachineName
@@ -859,26 +928,3 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version*
-  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
-  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_Version
-  name: Version
-  nameWithType: SyncAppDataInputInstance.Version
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled*
-  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
-  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_IsDisabled
-  name: IsDisabled
-  nameWithType: SyncAppDataInputInstance.IsDisabled
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsDisabled
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean

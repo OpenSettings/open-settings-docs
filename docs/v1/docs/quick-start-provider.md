@@ -126,8 +126,7 @@ That's it! OpenSettings will be up and running in seconds. 🎉
 ## ✅ What's Next?
 
 - **Set up your first consumer application:** [Setting Up The Consumer](quick-start-consumer.md)
-- **Explore the provider functionality:** [Provider Guide](provider-guide.md)
-- **Explore the consumer functionality:** [Consumer Guide](consumer-guide.md)
+- **Explore the configuration:** [Configuration Guide](configuration-guide.md)
 - **Need persistent storage?** Check out the [Persistent Storage](quick-start-persistent-storage.md) options (SQL Server, PostgreSQL, etc.)
 - **Securing OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 

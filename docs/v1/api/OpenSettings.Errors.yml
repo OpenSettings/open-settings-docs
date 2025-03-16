@@ -5,6 +5,7 @@ items:
   id: Errors
   parent: OpenSettings
   children:
+  - OpenSettings.Errors.AppIdentifierMappingNotFound
   - OpenSettings.Errors.AppNotFound
   - OpenSettings.Errors.ComputedIdentifierMustNotEmpty
   - OpenSettings.Errors.ConfigSourceNotSupported
@@ -25,6 +26,7 @@ items:
   - OpenSettings.Errors.IdentifierMustNotEmpty
   - OpenSettings.Errors.IdentifierNotFound
   - OpenSettings.Errors.IgnoreOnFileChangeNotSupported
+  - OpenSettings.Errors.InstanceAlreadyExists
   - OpenSettings.Errors.InstanceNotFound
   - OpenSettings.Errors.InvalidCredentials
   - OpenSettings.Errors.InvalidLicenseKey
@@ -38,6 +40,8 @@ items:
   - OpenSettings.Errors.MappingNotFound
   - OpenSettings.Errors.MaxSortOrderReached
   - OpenSettings.Errors.MinSortOrderReached
+  - OpenSettings.Errors.MismatchedClientId
+  - OpenSettings.Errors.MismatchedClientName
   - OpenSettings.Errors.NameAlreadyExists
   - OpenSettings.Errors.NoChanges
   - OpenSettings.Errors.NotificationAlreadyExists
@@ -451,6 +455,58 @@ items:
     content: UnrecognizedLicenseEdition = 40013
     return:
       type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MismatchedClientName
+  commentId: F:OpenSettings.Errors.MismatchedClientName
+  id: MismatchedClientName
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MismatchedClientName
+  nameWithType: Errors.MismatchedClientName
+  fullName: OpenSettings.Errors.MismatchedClientName
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MismatchedClientName
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 54
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MismatchedClientName = 40014
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MismatchedClientId
+  commentId: F:OpenSettings.Errors.MismatchedClientId
+  id: MismatchedClientId
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MismatchedClientId
+  nameWithType: Errors.MismatchedClientId
+  fullName: OpenSettings.Errors.MismatchedClientId
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MismatchedClientId
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 57
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MismatchedClientId = 40015
+    return:
+      type: OpenSettings.Errors
 - uid: OpenSettings.Errors.InvalidCredentials
   commentId: F:OpenSettings.Errors.InvalidCredentials
   id: InvalidCredentials
@@ -469,7 +525,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InvalidCredentials
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 56
+    startLine: 62
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -495,7 +551,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 62
+    startLine: 68
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -521,7 +577,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceIdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 65
+    startLine: 71
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -547,7 +603,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetIdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 68
+    startLine: 74
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -573,7 +629,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: HistoryNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 71
+    startLine: 77
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -599,7 +655,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 74
+    startLine: 80
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -625,7 +681,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 77
+    startLine: 83
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -651,7 +707,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 80
+    startLine: 86
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -677,7 +733,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 83
+    startLine: 89
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -703,7 +759,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 86
+    startLine: 92
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -729,7 +785,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 89
+    startLine: 95
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -755,7 +811,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceGroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 92
+    startLine: 98
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -781,7 +837,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetGroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 95
+    startLine: 101
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -807,7 +863,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetAppNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 98
+    startLine: 104
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -833,7 +889,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceTagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 101
+    startLine: 107
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -859,7 +915,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetTagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 104
+    startLine: 110
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -885,7 +941,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MappingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 107
+    startLine: 113
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -911,7 +967,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigurationNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 110
+    startLine: 116
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -937,7 +993,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LocalSettingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 113
+    startLine: 119
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -963,7 +1019,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NotificationNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 116
+    startLine: 122
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -989,7 +1045,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GeneratedSettingFileNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 119
+    startLine: 125
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1015,12 +1071,38 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 122
+    startLine: 128
   assemblies:
   - OpenSettings
   namespace: OpenSettings
   syntax:
     content: LicenseNotFound = 40420
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.AppIdentifierMappingNotFound
+  commentId: F:OpenSettings.Errors.AppIdentifierMappingNotFound
+  id: AppIdentifierMappingNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: AppIdentifierMappingNotFound
+  nameWithType: Errors.AppIdentifierMappingNotFound
+  fullName: OpenSettings.Errors.AppIdentifierMappingNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AppIdentifierMappingNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 131
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: AppIdentifierMappingNotFound = 40421
     return:
       type: OpenSettings.Errors
 - uid: OpenSettings.Errors.ConfigSourceNotSupported
@@ -1041,7 +1123,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigSourceNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 127
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1067,7 +1149,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationModeSingletonNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 130
+    startLine: 139
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1093,7 +1175,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationModeConfigureNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 133
+    startLine: 142
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1119,7 +1201,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChangeNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 136
+    startLine: 145
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1145,7 +1227,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NameAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 141
+    startLine: 150
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1171,7 +1253,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SlugAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 144
+    startLine: 153
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1197,7 +1279,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GroupAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 147
+    startLine: 156
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1223,7 +1305,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 150
+    startLine: 159
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1249,7 +1331,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TagAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 153
+    startLine: 162
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1275,7 +1357,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MappingAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 156
+    startLine: 165
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1301,7 +1383,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateSortOrder
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 159
+    startLine: 168
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1327,7 +1409,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateSetting
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 162
+    startLine: 171
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1353,7 +1435,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateTargetSetting
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 165
+    startLine: 174
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1379,7 +1461,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateComputedIdentifier
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 168
+    startLine: 177
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1405,7 +1487,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: HistoryAlreadyRestored
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 171
+    startLine: 180
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1431,7 +1513,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NotificationAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 174
+    startLine: 183
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1457,12 +1539,38 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 177
+    startLine: 186
   assemblies:
   - OpenSettings
   namespace: OpenSettings
   syntax:
     content: LicenseAlreadyExists = 40912
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.InstanceAlreadyExists
+  commentId: F:OpenSettings.Errors.InstanceAlreadyExists
+  id: InstanceAlreadyExists
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: InstanceAlreadyExists
+  nameWithType: Errors.InstanceAlreadyExists
+  fullName: OpenSettings.Errors.InstanceAlreadyExists
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceAlreadyExists
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 189
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: InstanceAlreadyExists = 40913
     return:
       type: OpenSettings.Errors
 - uid: OpenSettings.Errors.DbUpdateException
@@ -1483,7 +1591,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DbUpdateException
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 182
+    startLine: 194
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1509,7 +1617,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ContentFetchFailed
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 185
+    startLine: 197
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1535,7 +1643,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataChangeNotificationFailed
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 188
+    startLine: 200
   assemblies:
   - OpenSettings
   namespace: OpenSettings

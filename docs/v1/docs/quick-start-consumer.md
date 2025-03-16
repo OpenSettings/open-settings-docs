@@ -128,7 +128,7 @@ That's it! OpenSettings.Api & Consumer.Api will be up and running in seconds. ðŸ
 
 ## âœ… What's Next?
 
-- **Explore the consumer functionality:** [Consumer Guide](consumer-guide.md)
+- **Explore the configuration:** [Configuration Guide](configuration-guide.md)
 - **Securing OpenSettings:** Learn more in the [Security Guide](security-guide.md)
 
 ---

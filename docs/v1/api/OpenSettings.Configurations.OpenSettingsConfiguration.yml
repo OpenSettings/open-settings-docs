@@ -38,7 +38,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsConfiguration
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -80,7 +80,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceDynamicId
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -190,7 +190,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceName
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 56
+    startLine: 58
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -227,7 +227,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierName
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -269,7 +269,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Client
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 106
+    startLine: 108
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -303,7 +303,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Selection
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 113
+    startLine: 115
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -334,7 +334,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Consumer
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 134
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -366,7 +366,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Provider
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 142
+    startLine: 144
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -398,7 +398,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataMaxRetryCount
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 172
+    startLine: 177
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -419,6 +419,12 @@ items:
     If set to a positive value, the system will attempt the operation that many times before giving up.
 
     </p>
+
+    <remarks>
+
+    If the maximum retry count is reached, a <xref href="OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException" data-throw-if-not-resolved="false"></xref> will be thrown.
+
+    </remarks>
   example: []
   syntax:
     content: public int SyncAppDataMaxRetryCount { get; set; }
@@ -445,7 +451,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataRetryDelayMilliseconds
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 180
+    startLine: 185
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -477,7 +483,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Operation
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 187
+    startLine: 192
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -512,7 +518,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 199
+    startLine: 204
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -554,7 +560,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 216
+    startLine: 221
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -605,15 +611,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 225
+    startLine: 230
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the registration mode to use during the setup.
+
+    The default is <xref href="OpenSettings.Models.RegistrationMode.Singleton" data-throw-if-not-resolved="false"></xref> &amp; <xref href="OpenSettings.Models.RegistrationMode.Configure" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public RegistrationMode RegistrationMode { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.RegistrationMode
+      description: The <xref href="OpenSettings.Models.RegistrationMode" data-throw-if-not-resolved="false"></xref> value that determines the registration behavior.
     content.vb: Public Property RegistrationMode As RegistrationMode
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.IsConsumerSelected
@@ -634,7 +646,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsConsumerSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 235
+    startLine: 240
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -682,7 +694,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsProviderSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 246
+    startLine: 251
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -730,7 +742,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LoggerFactory
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 254
+    startLine: 259
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -771,7 +783,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetReloadStrategies
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 274
+    startLine: 279
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -1178,6 +1190,12 @@ references:
   name: Provider
   nameWithType: OpenSettingsConfiguration.Provider
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+- uid: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
+  commentId: T:OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
+  href: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException.html
+  name: SyncAppDataMaxRetryExceededException
+  nameWithType: SyncAppDataMaxRetryExceededException
+  fullName: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount*
   commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
   href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataMaxRetryCount
@@ -1293,12 +1311,18 @@ references:
   name: IgnoreOnFileChange
   nameWithType: OpenSettingsConfiguration.IgnoreOnFileChange
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
-  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode
-  name: RegistrationMode
-  nameWithType: OpenSettingsConfiguration.RegistrationMode
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode.Singleton
+  commentId: F:OpenSettings.Models.RegistrationMode.Singleton
+  href: OpenSettings.Models.RegistrationMode.html#OpenSettings_Models_RegistrationMode_Singleton
+  name: Singleton
+  nameWithType: RegistrationMode.Singleton
+  fullName: OpenSettings.Models.RegistrationMode.Singleton
+- uid: OpenSettings.Models.RegistrationMode.Configure
+  commentId: F:OpenSettings.Models.RegistrationMode.Configure
+  href: OpenSettings.Models.RegistrationMode.html#OpenSettings_Models_RegistrationMode_Configure
+  name: Configure
+  nameWithType: RegistrationMode.Configure
+  fullName: OpenSettings.Models.RegistrationMode.Configure
 - uid: OpenSettings.Models.RegistrationMode
   commentId: T:OpenSettings.Models.RegistrationMode
   parent: OpenSettings.Models
@@ -1306,6 +1330,12 @@ references:
   name: RegistrationMode
   nameWithType: RegistrationMode
   fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_RegistrationMode
+  name: RegistrationMode
+  nameWithType: OpenSettingsConfiguration.RegistrationMode
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
 - uid: System.Text.Json.Serialization.JsonIgnoreAttribute
   commentId: T:System.Text.Json.Serialization.JsonIgnoreAttribute
   parent: System.Text.Json.Serialization

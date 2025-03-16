@@ -114,19 +114,32 @@ items:
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
+  summary: >-
+    Adds OpenSettings services to the application's <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>. This registers services
+
+    necessary to run OpenSettings, based on the inherited <xref href="OpenSettings.Services.Interfaces.ISettings" data-throw-if-not-resolved="false"></xref> types and the registration type.
+  example: []
   syntax:
     content: public static IServiceCollection AddOpenSettings(this IServiceCollection services, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> to which OpenSettings services will be added.
     - id: openSettingsConfiguration
       type: OpenSettings.Configurations.OpenSettingsConfiguration
+      description: 'The configuration that governs the behavior of OpenSettings (such as the service type: Provider or Consumer).'
     - id: providerInfo
       type: OpenSettings.Models.ProviderInfo
+      description: Information about the provider being registered.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> with OpenSettings services registered.
     content.vb: Public Shared Function AddOpenSettings(services As IServiceCollection, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo) As IServiceCollection
   overload: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">openSettingsConfiguration</code> is null.
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
   commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
   id: Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
@@ -584,6 +597,20 @@ references:
     name: Configuration
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: OpenSettings.Services.Interfaces.ISettings
+  commentId: T:OpenSettings.Services.Interfaces.ISettings
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ISettings.html
+  name: ISettings
+  nameWithType: ISettings
+  fullName: OpenSettings.Services.Interfaces.ISettings
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings*
   commentId: Overload:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings
   href: OpenSettings.Extensions.ServiceCollectionExtensions.html#OpenSettings_Extensions_ServiceCollectionExtensions_AddOpenSettings_Microsoft_Extensions_DependencyInjection_IServiceCollection_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_
@@ -604,6 +631,36 @@ references:
   name: ProviderInfo
   nameWithType: ProviderInfo
   fullName: OpenSettings.Models.ProviderInfo
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
 - uid: OpenSettings.Configurations
   commentId: N:OpenSettings.Configurations
   href: OpenSettings.html

@@ -44,6 +44,10 @@ var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
 
 var latestVersion = majorVersionToModel.First().Value;
 
+const string slashString = "/";
+const char slashChar = '/';
+const char vChar = 'v';
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.Use(async (context, next) =>
@@ -54,19 +58,19 @@ app.Use(async (context, next) =>
     {
         context.Response.StatusCode = 200;
 
-        if (!context.Request.Path.HasValue || context.Request.Path.Value == "/")
+        if (!context.Request.Path.HasValue || context.Request.Path.Value == slashString)
         {
             context.Response.Redirect(latestVersion.IndexHtml);
         }
         else
         {
             var pathValue = context.Request.Path.Value;
-
-            var requestMajorVersion = pathValue.Split('/').Skip(1).First();
+            
+            var requestMajorVersion = pathValue.Split(slashChar).Skip(1).First();
 
             var hasExtension = !string.IsNullOrWhiteSpace(Path.GetExtension(pathValue));
 
-            if (requestMajorVersion.StartsWith('v'))
+            if (requestMajorVersion.StartsWith(vChar))
             {
                 if (majorVersionToModel.TryGetValue(requestMajorVersion, out var version))
                 {
