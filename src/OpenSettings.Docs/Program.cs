@@ -6,7 +6,13 @@ using System.Linq;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-var wwwrootPath = Path.Combine(Environment.CurrentDirectory, "wwwroot");
+const string slashString = "/";
+const char slashChar = '/';
+const char vChar = 'v';
+const string maxAge300CacheControl = "public, max-age=300";
+const string maxAge1800CacheControl = "public, max-age=600";
+
+var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
 
 var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
     .Where(v => File.Exists(Path.Combine(v, "index.html")))
@@ -20,7 +26,7 @@ var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
             {
                 var directoryName = Path.GetDirectoryName(Path.GetRelativePath(wwwrootPath, file)) ?? string.Empty;
                 var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(file);
-                var relativePath = $"/{Path.Combine(directoryName, fileNameWithoutExtension).Replace('\\', '/')}";
+                var relativePath = $"/{Path.Combine(directoryName, fileNameWithoutExtension).Replace('\\', slashChar)}";
                 var extension = Path.GetExtension(file)[1..];
 
                 return new
@@ -44,12 +50,18 @@ var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
 
 var latestVersion = majorVersionToModel.First().Value;
 
-const string slashString = "/";
-const char slashChar = '/';
-const char vChar = 'v';
-
 app.UseDefaultFiles();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = context =>
+    {
+        var cacheControl = context.File.Name.EndsWith(".json")
+            ? maxAge300CacheControl
+            : maxAge1800CacheControl;
+
+        context.Context.Response.Headers.CacheControl = cacheControl;
+    }
+});
 app.Use(async (context, next) =>
 {
     await next();
@@ -113,6 +125,5 @@ app.Use(async (context, next) =>
         }
     }
 });
-
 
 app.Run();
