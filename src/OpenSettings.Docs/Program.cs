@@ -2,15 +2,18 @@ using Microsoft.AspNetCore.Builder;
 using System;
 using System.IO;
 using System.Linq;
+using OpenSettings.Docs;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+const string jsonExtension = ".json";
 const string slashString = "/";
 const char slashChar = '/';
 const char vChar = 'v';
-const string maxAge300CacheControl = "public, max-age=300";
-const string maxAge600CacheControl = "public, max-age=600";
+
+var maxAge300 = new CacheControl(300);
+var maxAge600 = new CacheControl(600);
 
 var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
 
@@ -55,11 +58,12 @@ app.UseStaticFiles(new StaticFileOptions
 {
     OnPrepareResponse = context =>
     {
-        var cacheControl = context.File.Name.EndsWith(".json")
-            ? maxAge300CacheControl
-            : maxAge600CacheControl;
+        var cacheControl = context.File.Name.EndsWith(jsonExtension)
+            ? maxAge300
+            : maxAge600;
 
-        context.Context.Response.Headers.CacheControl = cacheControl;
+        context.Context.Response.Headers.CacheControl = cacheControl.ToString();
+        context.Context.Response.Headers.Expires = cacheControl.GetHttpExpiresHeader();
     }
 });
 app.Use(async (context, next) =>
