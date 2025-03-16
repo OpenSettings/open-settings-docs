@@ -10,7 +10,7 @@ const string slashString = "/";
 const char slashChar = '/';
 const char vChar = 'v';
 const string maxAge300CacheControl = "public, max-age=300";
-const string maxAge1800CacheControl = "public, max-age=600";
+const string maxAge600CacheControl = "public, max-age=600";
 
 var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
 
@@ -57,7 +57,7 @@ app.UseStaticFiles(new StaticFileOptions
     {
         var cacheControl = context.File.Name.EndsWith(".json")
             ? maxAge300CacheControl
-            : maxAge1800CacheControl;
+            : maxAge600CacheControl;
 
         context.Context.Response.Headers.CacheControl = cacheControl;
     }
