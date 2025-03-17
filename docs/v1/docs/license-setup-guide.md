@@ -7,7 +7,7 @@ This guide explains how to set up the license for OpenSettings.
 
 There are 3 ways to set up the license:
 
-* ### **Via OpenSettingsConfiguration**
+* ### Via OpenSettingsConfiguration
 
     ```csharp
     var openSettingsProviderConfiguration = new OpenSettingsConfiguration(ServiceType.Provider)
@@ -25,13 +25,13 @@ There are 3 ways to set up the license:
 
     If the license key is invalid or missing, it will search for the `OpenSettings-License.key` file.
 
-* ### **From Folder**
+* ### From Folder
 
     Create a file named `OpenSettings-License.key`, paste your license key into the file, and place it next to the executable DLL.
 
     If the file is not found or the license is invalid, it will try to retrieve the license from the database.
 
-* ### **Via Settings Page**
+* ### Via Settings Page
 
     This can also be added through the settings page. Simply navigate to your service's settings page and follow the steps shown in the gif below:
 

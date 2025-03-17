@@ -53,8 +53,11 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 Run the following command inside your executable folder:
 
 ```sh
-dotnet ef migrations add OpenSettingsDbMigration -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb
+dotnet ef migrations add OpenSettingsDbMigration -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb --configuration Migration
 ```
+
+> [!TIP]
+> Make sure not to forget to pass the **--configuration Migration** parameter when generating migrations.
 
 This command:
 - Generates database schema changes based on your entity models.

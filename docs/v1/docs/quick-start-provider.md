@@ -73,12 +73,12 @@ await app.RunAsync();
 
 Now, let's create a simple setting model.
 
-Create a new class called `MyFirstSetting` and implement `ISettings`:
+Create a new class called `MyFirstSettings` and implement `ISettings`:
 
 ```csharp
 using OpenSettings.Services.Interfaces;
 
-public class MyFirstSetting : ISettings
+public class MyFirstSettings : ISettings
 {
     public string Name { get; set; }
     public string Description { get; set; }

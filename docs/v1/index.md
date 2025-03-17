@@ -99,7 +99,7 @@ Define a setting by creating a new class that implements `ISettings`.
 ```csharp
 using OpenSettings.Services.Interfaces;
 
-public class MyFirstSetting : ISettings
+public class MyFirstSettings : ISettings
 {
     public string Name { get; set; }
     public string Description { get; set; }
@@ -123,11 +123,11 @@ Inject the setting directly into your constructor:
 ```csharp
 public class MyService
 {
-    private readonly MyFirstSetting _myFirstSetting;
+    private readonly MyFirstSettings _MyFirstSettings;
 
-    public MyService(MyFirstSetting myFirstSetting)
+    public MyService(MyFirstSettings MyFirstSettings)
     {
-        _myFirstSetting = myFirstSetting;
+        _MyFirstSettings = MyFirstSettings;
     }
 }
 ```
@@ -141,11 +141,11 @@ using Microsoft.Extensions.Options;
 
 public class MyService
 {
-    private readonly MyFirstSetting _myFirstSetting;
+    private readonly MyFirstSettings _MyFirstSettings;
 
-    public MyService(IOptions<MyFirstSetting> options)
+    public MyService(IOptions<MyFirstSettings> options)
     {
-        _myFirstSetting = options.Value;
+        _MyFirstSettings = options.Value;
     }
 }
 ```
@@ -162,7 +162,7 @@ If you need to access settings outside of DI, use `SettingsProvider.GetLocalSett
 ```csharp
 using OpenSettings;
 
-var myFirstSetting = SettingsProvider.GetLocalSettingOrDefault<MyFirstSetting>();
+var MyFirstSettings = SettingsProvider.GetLocalSettingOrDefault<MyFirstSettings>();
 ```
 
 ## ✅ What's Next?

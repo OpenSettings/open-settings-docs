@@ -44,7 +44,7 @@ This guide explains how to configure OpenSettings.
 | **ProviderUrl**           | The URL of the provider for fetching and syncing data.            | Used to connect to the provider API (e.g., `https://.../api/settings`). |
 | **RequestEncodings**      | Desired encodings for the data. Provider decides whether to send them. | Controls the data encoding preferences.                   |
 | **IsRedisActive**         | Flag to indicate whether Redis is active for pub/sub updates.     |                                                                                                                                                  |
-| **SkipInitialSyncAppData**| Whether the initial sync of app data should be skipped.           | For more details, see the [Skipping Initial Sync Guide](skipping-initial-sync-guide.md). |
+| **SkipInitialSyncAppData**| Whether the initial sync of app data should be skipped.           | For more details, see the [Skipping Initial Sync Guide](skipping-initial-sync-consumer-guide.md). |
 | **PollingSettingsWorker** | Configuration for polling settings worker.                        |                                                                                                                                                  |
 | **- IsActive**            | Flag to indicate whether polling is active.                       |                                                                                                                                                  |
 | **- StartsIn**            | Time span to wait before starting the first polling. Default is `TimeSpan.FromMinutes(5)`. |                                                                                                                                                  |
@@ -278,6 +278,149 @@ app.UseOpenSettingsSpa(opts =>
     opts.DocumentTitle = "OpenSettings Spa";
 });
 ```
+
+## Built-in Attributes
+
+There are three built-in attributes that can be applied to settings classes:
+
+- **ComputedIdentifierAttribute**
+- **RegistrationModeAttribute**
+- **StoreInSeparateFileAttribute**
+
+### ComputedIdentifierAttribute
+
+This attribute uniquely identifies a settings class. OpenSettings uses this identifier to determine which settings class it belongs to and how to match it.
+
+```csharp
+namespace OpenSettings.Api;
+
+public class MyFirstSettings : ISettings
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+}
+```
+
+For the above class, the **computed identifier** follows the default format:
+
+```csharp
+{namespace}.{className}
+```
+
+So in this case, the computed identifier will be:
+
+```
+OpenSettings.Api.MyFirstSettings = new Guid("121eec96-36e6-a787-1d72-905311bd8493")
+```
+
+The identifier is computed using the following method:
+
+```csharp
+internal static Guid ComputeIdentifier(MD5 md5, string identifier)
+{
+    var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(identifier));
+
+    return new Guid(hash);
+}
+```
+
+#### Handling Class Name Changes
+
+If you rename the class from `MyFirstSettings` to something else, even if its properties remain unchanged, OpenSettings will treat it as a **new settings file** and will not match it with existing data.
+
+To avoid this, explicitly specify the computed identifier using the `ComputedIdentifierAttribute`:
+
+```csharp
+using OpenSettings.Attributes;
+
+namespace OpenSettings.Api;
+
+// Alternatively, use the GUID directly:
+// [ComputedIdentifier("121eec96-36e6-a787-1d72-905311bd8493")]
+[ComputedIdentifier("OpenSettings.Api.MyFirstSettings")] 
+public class SpecialSetting : ISettings
+{
+    public string Name { get; set; }
+
+    public string Description { get; set; }
+}
+```
+
+With this approach, settings synchronization will continue smoothly even after renaming the class.
+
+### RegistrationModeAttribute
+
+By default, `OpenSettingsConfiguration.RegistrationMode` determines how settings files are resolved. However, if you want to control the registration mode for a specific settings file, you can use the `RegistrationModeAttribute`.
+
+> [!NOTE]
+> This attribute only affects **new** settings files. If a settings file has already been created, applying this attribute will have no effect.  
+
+```csharp
+using OpenSettings.Attributes;
+
+namespace OpenSettings.Api;
+
+[RegistrationMode(RegistrationMode.Both)]
+public class MyFirstSettings : ISettings
+{
+    public string Name { get; set; } = "Open";
+
+    public string Description { get; set; }
+}
+```
+
+#### Registration Mode Precedence
+
+The **final registration mode** is determined in the following order:
+
+1. **Provider Source Value** – If the provider specifies a registration mode, it overrides all other configurations.
+2. **Attribute Value** – If no provider value is found, the value from `RegistrationModeAttribute` is used.
+3. **Configuration Value** – If neither the provider nor the attribute specifies a mode, the configuration from the provider source is applied.
+4. **Default Configuration Value** – If no other values are found, the default configuration is applied.
+
+> [!CAUTION] 
+> Be careful when changing the registration mode!  
+> * Switching from `Both` to `Configure` can break your system. If your application resolves settings via **Singleton**, this could cause an error: `Unable to resolve service for type while attempting to activate.`  
+> * Switching from `Both` to `Singleton` can break your system. If your application resolves settings via **IOptions interfaces**, this could cause an error: `Unable to resolve service for type while attempting to activate.`
+
+---
+
+### StoreInSeparateFileAttribute
+
+This attribute allows settings to be stored in a **separate file**, such as:
+
+```
+settings-generated.MyFirstSettings.json
+```
+
+instead of being included in:
+
+```
+settings-generated.json
+```
+
+#### Why Use Separate Files?
+
+- To **isolate** large settings for better management.
+- To **avoid conflicts** when modifying settings dynamically.
+- To **organize** settings into logical groups.
+
+> [!NOTE]
+> This attribute **only applies to new settings**. If the settings file already exists, marking it with `StoreInSeparateFileAttribute` **will not move it to a separate file**.
+
+#### Storage Behavior
+
+1. **If the settings are new and marked with `StoreInSeparateFileAttribute`**, they will be stored in:
+
+   ```
+   settings-generated.MyFirstSettings.json
+   ```
+
+2. **If the settings are new but not marked with the attribute**, they will be stored in a separate file **only if** `OpenSettingsConfiguration.StoreInSeparateFile` is set to `true`.
+3. **If the settings already exist**, their storage behavior is determined via the **settings page** (`.../settings`).  
+
+> [!NOTE]
+> The general configuration (OpenSettingsConfiguration.StoreInSeparateFile) and attribute will not affect **existing** settings.
 
 ---
 
