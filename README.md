@@ -1,6 +1,7 @@
 # <img src="logo/open-settings-logo.png" alt="Header" width="24"/> OpenSettings Docs
 
-[![Docs](https://img.shields.io/badge/docs-online-blue)](https://docs.opensettings.net)
+[![Docs](https://img.shields.io/badge/Docs-online-blue)](https://docs.opensettings.net)
+[![GitHub](https://img.shields.io/badge/GitHub-open--settings-blue?logo=github)](https://github.com/OpenSettings/open-settings)
 
 Welcome to the official documentation repository for **OpenSettings**!
 
