@@ -3,12 +3,22 @@ uid: debugging
 title: Debugging
 ---
 
-# Debugging Guide
+# Debugging Guide for OpenSettings Developers
 
 ## Getting Started
 
+Project structure:
+
+```
+├── OpenSettings/
+│   └── open-settings
+│   └── open-settings-spa
+│   └── OpenSettings.Api
+```
+
 ### 1. Create a Folder for OpenSettings
-Start by creating a folder and navigating to it:
+
+Start by creating the `OpenSettings` folder and navigating to it:
 
 ```bash
 mkdir OpenSettings
@@ -46,7 +56,7 @@ The SPA project uses **Angular CLI version 17.1.3**. If you don't have Angular C
 npm install -g @angular/cli@17.1.3
 ```
 
-### 5. Install NPM Packages for OpenSettings SPA
+### 5. Install NPM Packages for OpenSettings Spa
 Now, navigate to the `open-settings-spa` directory and install the required NPM packages:
 
 ```bash
@@ -104,10 +114,10 @@ When you run **OpenSettings.Api** and navigate to your URL (`.../settings`), you
 
 ---
 
-## Handling SPA Builds and Running Separately
+## Handling Spa Builds and Running Separately
 
 ### 11. Enabling BuildSpa Target
-To reflect changes in the **OpenSettings SPA** (Angular) folder, you need to enable the **BuildSpa** target in the **OpenSettings.AspNetCore.Spa** project.
+To reflect changes in the **open-settings-spa** (Angular) folder, you need to enable the **BuildSpa** target in the **OpenSettings.AspNetCore.Spa** project.
 
 Right-click the **OpenSettings.AspNetCore.Spa** project and edit the `.csproj` file. Un-comment the following line to enable the build process:
 
@@ -130,7 +140,9 @@ ng serve --host 0.0.0.0 --port 4200
 
 When testing the development server, you may need to update the `index.html` file. In the `<script>` section, there is a try-catch loop that tries to parse variables into appropriate types. Since it is running on a dev server, it will throw an exception. The **SettingsSpaMiddleware** usually replaces the content based on the information it receives, but since this isn't possible in the dev server, you will need to manually set the values in the catch scope.
 
-Make sure to update the route to your dev server's listening port to OpenSettings.Api's port
+Make sure to update the route to your dev server's listening port (OpenSettings.Api's port), which you can find in `launchSettings.json`.
+
+In the file `open-settings-spa/src/index.html`, update the controllerOptions as shown below:
 
 ```javascript
 controllerOptions = {
@@ -141,4 +153,4 @@ controllerOptions = {
 
 ---
 
-Happy debugging! Let us know if this guide was helpful.
+✨ *OpenSettings makes settings management simple and efficient!* 🚀

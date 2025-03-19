@@ -10,7 +10,7 @@ You can register the settings Spa (Single Page Application) with:
 app.UseOpenSettingsSpa();
 ```
 
-By default, the settings page is available at the relative URI settings. You can customize this by configuring the options as follows:
+By default, the settings page is available at the relative URI `.../settings`. You can customize this by configuring the options as follows:
 
 ```csharp
 app.UseOpenSettingsSpa(opts =>

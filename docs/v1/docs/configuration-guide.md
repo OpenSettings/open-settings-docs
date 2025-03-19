@@ -324,9 +324,9 @@ internal static Guid ComputeIdentifier(MD5 md5, string identifier)
 }
 ```
 
-#### Handling Class Name Changes
+#### Handling Changes to Class Names or Namespaces
 
-If you rename the class from `MyFirstSettings` to something else, even if its properties remain unchanged, OpenSettings will treat it as a **new settings file** and will not match it with existing data.
+If you rename the class from `MyFirstSettings` to something else or move the file to a different folder (which could cause the namespace to change), OpenSettings will treat it as a new settings file, even if the properties are the same, and won't match it with the existing data.
 
 To avoid this, explicitly specify the computed identifier using the `ComputedIdentifierAttribute`:
 
@@ -346,7 +346,7 @@ public class SpecialSetting : ISettings
 }
 ```
 
-With this approach, settings synchronization will continue smoothly even after renaming the class.
+With this approach, settings synchronization will continue smoothly even after renaming the class or namespace.
 
 ### RegistrationModeAttribute
 

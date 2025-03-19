@@ -110,6 +110,10 @@ Run the application and navigate to ".../settings" to view and manage your setti
 
 ![Demo](assets/gifs/demo.gif)
 
+> [!WARNING]
+> If you later change the class name or namespace, the settings may no longer match existing data unless you specify the new name/namespace explicitly.
+> [Learn more about handling class name or namespace changes](docs/configuration-guide.md#handling-changes-to-class-names-or-namespaces).
+
 ---
 
 ## 🔹 Resolving Settings in the Application
@@ -157,7 +161,7 @@ This approach is useful when the settings are dynamically **loaded from configur
 
 ### 🔹 Resolving Settings Without Dependency Injection  
 
-If you need to access settings outside of DI, use `SettingsProvider.GetLocalSettingOrDefault<T>()`. This method returns the setting if found or falls back to the default value if not available.
+If you need to access settings outside of DI, use `SettingsProvider.GetLocalSettingOrDefault<T>()`. This method returns the setting if found or falls back to the default value (which, in our case, is `null`).
 
 ```csharp
 using OpenSettings;
