@@ -12,6 +12,7 @@ We're sorry, but the page you're looking for doesn't exist or has been moved.
 ## 🔍 What can you do?
 
 - Double-check the URL for any typos.  
+- Clear your browser cache.
 - Go back to the [Index](index.md).  
 
 <br />
@@ -26,4 +27,4 @@ If you believe this is an error, please reach out to us at **[support@opensettin
 
 <br />
 
-✨ *Thank you for being a part of OpenSettings!* ✨  
+✨ *Thank you for being a part of OpenSettings!* ✨
