@@ -1,5 +1,7 @@
 # <img src="logo/open-settings-logo.png" alt="Header" width="24"/> OpenSettings Docs
 
+[![Docs](https://img.shields.io/badge/docs-online-blue)](https://docs.opensettings.net)
+
 Welcome to the official documentation repository for **OpenSettings**!
 
 OpenSettings is a **centralized settings management** system designed for **.NET applications**. It simplifies app settings management by providing a structured and scalable approach to handling settings.
