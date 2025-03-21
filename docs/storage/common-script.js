@@ -13,15 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var githubRepos = [
         {
             textContent: 'open-settings',
-            name: 'open-settings'
+            name: 'open-settings',
+            openInNewTab: true
         },
         {
             textContent: 'open-settings-spa',
-            name: 'open-settings-spa'
+            name: 'open-settings-spa',
+            openInNewTab: true
         },
         {
             textContent: 'open-settings-docs',
-            name: 'open-settings-docs'
+            name: 'open-settings-docs',
+            openInNewTab: true
         }
     ]
 
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             menuLink.className = 'dropdown-item';
             menuLink.href = `https://github.com/OpenSettings/${repo.name}`;
             menuLink.textContent = repo.textContent;
+            menuLink.target = repo.openInNewTab ? '_blank' : '_self';
 
             menuItem.appendChild(menuLink);
             dropdownMenu.appendChild(menuItem);

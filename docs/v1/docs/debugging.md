@@ -7,7 +7,7 @@ title: Debugging
 
 ## Getting Started
 
-Project structure:
+Folder structure:
 
 ```
 ├── OpenSettings/
