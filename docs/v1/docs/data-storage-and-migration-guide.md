@@ -53,7 +53,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 Run the following command inside your executable folder:
 
 ```sh
-dotnet ef migrations add OpenSettingsDbMigration -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb --configuration Migration
+dotnet ef migrations add InitialOpenSettingsDbMigration -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb
 ```
 
 > [!TIP]
