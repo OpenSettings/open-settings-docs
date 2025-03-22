@@ -6,7 +6,7 @@ When the app is running as a **consumer**, it can choose to skip the initial syn
 
 ## Enabling Skipping of Initial Sync
 
-To enable this behavior, configure your **Consumer & Integration (C&I)** process, build your app, and set the configuration as follows:
+To enable this behavior, configure your **Continuous Integration (C&I) and Continuous Deployment (C&D)** process, build your app, and set the configuration as follows:
 
 ```csharp
 var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Consumer)
