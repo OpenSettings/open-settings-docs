@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.SerializerType
+  commentId: T:OpenSettings.Models.SerializerType
+  id: SerializerType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.SerializerType.Json
+  langs:
+  - csharp
+  - vb
+  name: SerializerType
+  nameWithType: SerializerType
+  fullName: OpenSettings.Models.SerializerType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/SerializerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SerializerType
+    path: ../../../open-settings/src/OpenSettings/Models/SerializerType.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents the type of serialization format to be used.
+
+    This enum is used to specify how data should be serialized or deserialized.
+  example: []
+  syntax:
+    content: public enum SerializerType
+    content.vb: Public Enum SerializerType
+- uid: OpenSettings.Models.SerializerType.Json
+  commentId: F:OpenSettings.Models.SerializerType.Json
+  id: Json
+  parent: OpenSettings.Models.SerializerType
+  langs:
+  - csharp
+  - vb
+  name: Json
+  nameWithType: SerializerType.Json
+  fullName: OpenSettings.Models.SerializerType.Json
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/SerializerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Json
+    path: ../../../open-settings/src/OpenSettings/Models/SerializerType.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents the Json serialization format.
+
+    This is the default serialization format.
+  example: []
+  syntax:
+    content: Json = 0
+    return:
+      type: OpenSettings.Models.SerializerType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.SerializerType
+  commentId: T:OpenSettings.Models.SerializerType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SerializerType.html
+  name: SerializerType
+  nameWithType: SerializerType
+  fullName: OpenSettings.Models.SerializerType

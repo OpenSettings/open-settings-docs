@@ -8,6 +8,7 @@ items:
   - OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   - OpenSettings.Helpers.Helper.GetEnvironmentName
   - OpenSettings.Helpers.Helper.GetInitials(System.String)
+  - OpenSettings.Helpers.Helper.IsMigrationEnabled
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Helper
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -59,7 +60,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInitials
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -98,7 +99,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DistinctBy
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -126,6 +127,40 @@ items:
   nameWithType.vb: Helper.DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
   fullName.vb: OpenSettings.Helpers.Helper.DistinctBy(Of TSource, TKey)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey))
   name.vb: DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
+- uid: OpenSettings.Helpers.Helper.IsMigrationEnabled
+  commentId: P:OpenSettings.Helpers.Helper.IsMigrationEnabled
+  id: IsMigrationEnabled
+  parent: OpenSettings.Helpers.Helper
+  langs:
+  - csharp
+  - vb
+  name: IsMigrationEnabled
+  nameWithType: Helper.IsMigrationEnabled
+  fullName: OpenSettings.Helpers.Helper.IsMigrationEnabled
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Helpers/Helper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsMigrationEnabled
+    path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
+    startLine: 87
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Helpers
+  summary: >-
+    Indicates whether the application is running in "Migration" mode.
+
+    Used to determine if Entity Framework Core migration should be generated.
+  example: []
+  syntax:
+    content: public static bool IsMigrationEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsMigrationEnabled As Boolean
+  overload: OpenSettings.Helpers.Helper.IsMigrationEnabled*
 - uid: OpenSettings.Helpers.Helper.GetEnvironmentName
   commentId: M:OpenSettings.Helpers.Helper.GetEnvironmentName
   id: GetEnvironmentName
@@ -144,7 +179,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetEnvironmentName
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 88
+    startLine: 95
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -608,6 +643,23 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: OpenSettings.Helpers.Helper.IsMigrationEnabled*
+  commentId: Overload:OpenSettings.Helpers.Helper.IsMigrationEnabled
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_IsMigrationEnabled
+  name: IsMigrationEnabled
+  nameWithType: Helper.IsMigrationEnabled
+  fullName: OpenSettings.Helpers.Helper.IsMigrationEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: OpenSettings.Helpers.Helper.GetEnvironmentName*
   commentId: Overload:OpenSettings.Helpers.Helper.GetEnvironmentName
   href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetEnvironmentName

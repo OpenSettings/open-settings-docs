@@ -7,9 +7,11 @@ items:
   children:
   - OpenSettings.Models.OpenSettingsAssemblyInfo.FullName
   - OpenSettings.Models.OpenSettingsAssemblyInfo.Instance
+  - OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
   - OpenSettings.Models.OpenSettingsAssemblyInfo.Name
+  - OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
+  - OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
   - OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-  - OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
   langs:
   - csharp
   - vb
@@ -24,7 +26,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsAssemblyInfo
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -61,7 +63,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Instance
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -90,7 +92,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: FullName
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 35
+    startLine: 43
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -124,7 +126,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Name
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 41
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -158,7 +160,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 47
+    startLine: 55
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -174,40 +176,105 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Version As String
   overload: OpenSettings.Models.OpenSettingsAssemblyInfo.Version*
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  id: VersionScore
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
+  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
+  id: PackVersion
   parent: OpenSettings.Models.OpenSettingsAssemblyInfo
   langs:
   - csharp
   - vb
-  name: VersionScore
-  nameWithType: OpenSettingsAssemblyInfo.VersionScore
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
+  name: PackVersion
+  nameWithType: OpenSettingsAssemblyInfo.PackVersion
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: VersionScore
+    id: PackVersion
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
-    startLine: 53
+    startLine: 61
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
   summary: >-
-    Gets the OpenSettings version score information.
+    Gets the OpenSettings pack version information without the '<code>v</code>' prefix. 
 
-    e.g. '<code>281474976710656</code>'.
+    e.g. '<code>1.0.0</code>', '<code>1.0.0-preview.1.0.1</code>'.
   example: []
   syntax:
-    content: public long VersionScore { get; }
+    content: public string PackVersion { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PackVersion As String
+  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion*
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
+  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
+  id: PackVersionScore
+  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: PackVersionScore
+  nameWithType: OpenSettingsAssemblyInfo.PackVersionScore
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersionScore
+    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+    startLine: 67
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Gets the OpenSettings pack version score information.
+
+    e.g. '<code>1000000500000</code>'.
+  example: []
+  syntax:
+    content: public long PackVersionScore { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: Public ReadOnly Property VersionScore As Long
-  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore*
+    content.vb: Public ReadOnly Property PackVersionScore As Long
+  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore*
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
+  commentId: P:OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
+  id: IsPreviewVersion
+  parent: OpenSettings.Models.OpenSettingsAssemblyInfo
+  langs:
+  - csharp
+  - vb
+  name: IsPreviewVersion
+  nameWithType: OpenSettingsAssemblyInfo.IsPreviewVersion
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsPreviewVersion
+    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsAssemblyInfo.cs
+    startLine: 72
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Specifies whether the OpenSettings version is a preview version.
+  example: []
+  syntax:
+    content: public bool IsPreviewVersion { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPreviewVersion As Boolean
+  overload: OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion*
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -504,12 +571,18 @@ references:
   name: Version
   nameWithType: OpenSettingsAssemblyInfo.Version
   fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.Version
-- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore*
-  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
-  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_VersionScore
-  name: VersionScore
-  nameWithType: OpenSettingsAssemblyInfo.VersionScore
-  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.VersionScore
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion*
+  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
+  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_PackVersion
+  name: PackVersion
+  nameWithType: OpenSettingsAssemblyInfo.PackVersion
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersion
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore*
+  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
+  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_PackVersionScore
+  name: PackVersionScore
+  nameWithType: OpenSettingsAssemblyInfo.PackVersionScore
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.PackVersionScore
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -521,3 +594,20 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
+- uid: OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion*
+  commentId: Overload:OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
+  href: OpenSettings.Models.OpenSettingsAssemblyInfo.html#OpenSettings_Models_OpenSettingsAssemblyInfo_IsPreviewVersion
+  name: IsPreviewVersion
+  nameWithType: OpenSettingsAssemblyInfo.IsPreviewVersion
+  fullName: OpenSettings.Models.OpenSettingsAssemblyInfo.IsPreviewVersion
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

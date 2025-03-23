@@ -13,6 +13,7 @@ items:
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredBy
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RowVersion
+  - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Setting
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SettingId
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Slug
@@ -31,7 +32,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingHistorySqlModel
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -84,10 +85,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Data
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: The binary data associated with the setting history.
+  example: []
   syntax:
     content: public byte[] Data { get; set; }
     parameters: []
@@ -95,6 +98,42 @@ items:
       type: System.Byte[]
     content.vb: Public Property Data As Byte()
   overload: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Data*
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
+  id: SerializerType
+  parent: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel
+  langs:
+  - csharp
+  - vb
+  name: SerializerType
+  nameWithType: SettingHistorySqlModel.SerializerType
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SerializerType
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Defines the serialization type used for data serialization and deserialization.
+
+    Currently, only <xref href="OpenSettings.Models.SerializerType.Json" data-throw-if-not-resolved="false"></xref> is supported.
+
+    Future support for other formats may be added.
+  example: []
+  syntax:
+    content: public SerializerType SerializerType { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.SerializerType
+    content.vb: Public Property SerializerType As SerializerType
+  overload: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType*
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.CompressionType
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.CompressionType
   id: CompressionType
@@ -113,10 +152,15 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionType
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 15
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Specifies the type of compression applied to the data.  
+
+    Determines which decoding method should be used.
+  example: []
   syntax:
     content: public CompressionType CompressionType { get; set; }
     parameters: []
@@ -142,10 +186,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionLevel
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 17
+    startLine: 35
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: Defines the level of compression used.
+  example: []
   syntax:
     content: public CompressionLevel CompressionLevel { get; set; }
     parameters: []
@@ -171,7 +217,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 22
+    startLine: 40
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -202,7 +248,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Slug
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 28
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -236,10 +282,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 30
+    startLine: 51
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: The setting id associated with this setting history.
+  example: []
   syntax:
     content: public int SettingId { get; set; }
     parameters: []
@@ -265,7 +313,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 35
+    startLine: 56
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -296,7 +344,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RestoredById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 40
+    startLine: 61
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -327,7 +375,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 46
+    startLine: 67
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -361,7 +409,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Setting
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 48
+    startLine: 69
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -402,7 +450,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 54
+    startLine: 75
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -445,7 +493,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RestoredBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 60
+    startLine: 81
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -887,6 +935,47 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.byte
   - name: (
   - name: )
+- uid: OpenSettings.Models.SerializerType.Json
+  commentId: F:OpenSettings.Models.SerializerType.Json
+  href: OpenSettings.Models.SerializerType.html#OpenSettings_Models_SerializerType_Json
+  name: Json
+  nameWithType: SerializerType.Json
+  fullName: OpenSettings.Models.SerializerType.Json
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
+  href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_SerializerType
+  name: SerializerType
+  nameWithType: SettingHistorySqlModel.SerializerType
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
+- uid: OpenSettings.Models.SerializerType
+  commentId: T:OpenSettings.Models.SerializerType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SerializerType.html
+  name: SerializerType
+  nameWithType: SerializerType
+  fullName: OpenSettings.Models.SerializerType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.CompressionType*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.CompressionType
   href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_CompressionType

@@ -10,6 +10,9 @@ items:
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionLevel
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionType
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.ComputedIdentifier
+  - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+  - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+  - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedBy
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedById
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.Data
@@ -18,9 +21,11 @@ items:
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.Identifier
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.IdentifierId
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.IgnoreOnFileChange
+  - OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsDraft
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.RegistrationMode
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.RowVersion
+  - OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.SettingClass
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.SettingHistories
   - OpenSettings.Domains.Sql.Entities.SettingSqlModel.StoreInSeparateFile
@@ -139,6 +144,42 @@ items:
       type: System.Guid
     content.vb: Public Property ComputedIdentifier As Guid
   overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.ComputedIdentifier*
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
+  id: SerializerType
+  parent: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  langs:
+  - csharp
+  - vb
+  name: SerializerType
+  nameWithType: SettingSqlModel.SerializerType
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SerializerType
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    Defines the serialization type used for data serialization and deserialization.
+
+    Currently, only <xref href="OpenSettings.Models.SerializerType.Json" data-throw-if-not-resolved="false"></xref> is supported.
+
+    Future support for other formats may be added.
+  example: []
+  syntax:
+    content: public SerializerType SerializerType { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.SerializerType
+    content.vb: Public Property SerializerType As SerializerType
+  overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType*
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionType
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionType
   id: CompressionType
@@ -157,7 +198,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionType
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 27
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -191,7 +232,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionLevel
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 32
+    startLine: 39
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -222,7 +263,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -253,7 +294,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataRestored
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 42
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -284,7 +325,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataValidationDisabled
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 47
+    startLine: 54
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -315,7 +356,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 52
+    startLine: 59
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -346,7 +387,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 58
+    startLine: 65
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -380,7 +421,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 63
+    startLine: 70
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -411,7 +452,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsDraft
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 70
+    startLine: 77
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -429,6 +470,76 @@ items:
       type: System.Boolean
     content.vb: Public Property IsDraft As Boolean
   overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsDraft*
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
+  id: IsCopied
+  parent: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  langs:
+  - csharp
+  - vb
+  name: IsCopied
+  nameWithType: SettingSqlModel.IsCopied
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsCopied
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+    startLine: 86
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: A value indicating whether this setting was copied or cloned from another setting.
+  remarks: >-
+    This property is used to track whether the setting is a duplicate of another setting,
+
+    either by being copied or cloned.
+  example: []
+  syntax:
+    content: public bool IsCopied { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCopied As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied*
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
+  id: CopiedOn
+  parent: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CopiedOn
+  nameWithType: SettingSqlModel.CopiedOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CopiedOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+    startLine: 95
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the setting was copied or cloned.
+  remarks: >-
+    If the setting was copied or cloned, this value will contain the date and time of the operation.
+
+    If the setting was not copied or cloned, this property will be null.
+  example: []
+  syntax:
+    content: public DateTime? CopiedOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property CopiedOn As Date?
+  overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn*
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IdentifierId
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.IdentifierId
   id: IdentifierId
@@ -447,7 +558,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 75
+    startLine: 100
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -478,7 +589,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 80
+    startLine: 105
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -491,6 +602,37 @@ items:
       type: System.Int32
     content.vb: Public Property AppId As Integer
   overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.AppId*
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+  id: CopiedFromId
+  parent: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CopiedFromId
+  nameWithType: SettingSqlModel.CopiedFromId
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CopiedFromId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+    startLine: 110
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The id of the setting from which this setting was copied or cloned.
+  example: []
+  syntax:
+    content: public int? CopiedFromId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property CopiedFromId As Integer?
+  overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId*
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedById
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedById
   id: CreatedById
@@ -509,7 +651,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 85
+    startLine: 115
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -540,7 +682,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 90
+    startLine: 120
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -571,7 +713,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 96
+    startLine: 126
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -605,7 +747,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingClass
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 101
+    startLine: 131
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -636,7 +778,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingHistories
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 106
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -667,7 +809,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Identifier
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 111
+    startLine: 141
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -710,7 +852,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: App
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 117
+    startLine: 147
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -735,6 +877,49 @@ items:
     arguments:
     - type: System.String
       value: AppId
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+  id: CopiedFrom
+  parent: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  langs:
+  - csharp
+  - vb
+  name: CopiedFrom
+  nameWithType: SettingSqlModel.CopiedFrom
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CopiedFrom
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
+    startLine: 153
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The setting from which this setting was copied or cloned.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("CopiedFromId")]
+
+      public SettingSqlModel CopiedFrom { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+    content.vb: >-
+      <ForeignKey("CopiedFromId")>
+
+      Public Property CopiedFrom As SettingSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CopiedFromId
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedBy
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedBy
   id: CreatedBy
@@ -753,7 +938,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 123
+    startLine: 159
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -796,7 +981,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingSqlModel.cs
-    startLine: 129
+    startLine: 165
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -1252,6 +1437,47 @@ references:
   name: Guid
   nameWithType: Guid
   fullName: System.Guid
+- uid: OpenSettings.Models.SerializerType.Json
+  commentId: F:OpenSettings.Models.SerializerType.Json
+  href: OpenSettings.Models.SerializerType.html#OpenSettings_Models_SerializerType_Json
+  name: Json
+  nameWithType: SerializerType.Json
+  fullName: OpenSettings.Models.SerializerType.Json
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_SerializerType
+  name: SerializerType
+  nameWithType: SettingSqlModel.SerializerType
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.SerializerType
+- uid: OpenSettings.Models.SerializerType
+  commentId: T:OpenSettings.Models.SerializerType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SerializerType.html
+  name: SerializerType
+  nameWithType: SerializerType
+  fullName: OpenSettings.Models.SerializerType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionType*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CompressionType
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CompressionType
@@ -1468,28 +1694,6 @@ references:
   name: RegistrationMode
   nameWithType: RegistrationMode
   fullName: OpenSettings.Models.RegistrationMode
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.Identifier
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingSqlModel.Identifier
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_Identifier
@@ -1508,6 +1712,41 @@ references:
   name: IsDraft
   nameWithType: SettingSqlModel.IsDraft
   fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsDraft
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_IsCopied
+  name: IsCopied
+  nameWithType: SettingSqlModel.IsCopied
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IsCopied
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CopiedOn
+  name: CopiedOn
+  nameWithType: SettingSqlModel.CopiedOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedOn
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.IdentifierId*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.IdentifierId
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_IdentifierId
@@ -1531,6 +1770,35 @@ references:
   name: AppId
   nameWithType: SettingSqlModel.AppId
   fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.AppId
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CopiedFromId
+  name: CopiedFromId
+  nameWithType: SettingSqlModel.CopiedFromId
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFromId
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedById*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedById
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CreatedById
@@ -1712,6 +1980,19 @@ references:
   name: AppSqlModel
   nameWithType: AppSqlModel
   fullName: OpenSettings.Domains.Sql.Entities.AppSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CopiedFrom
+  name: CopiedFrom
+  nameWithType: SettingSqlModel.CopiedFrom
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CopiedFrom
+- uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.SettingSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html
+  name: SettingSqlModel
+  nameWithType: SettingSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.SettingSqlModel
 - uid: OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedBy*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingSqlModel.CreatedBy
   href: OpenSettings.Domains.Sql.Entities.SettingSqlModel.html#OpenSettings_Domains_Sql_Entities_SettingSqlModel_CreatedBy

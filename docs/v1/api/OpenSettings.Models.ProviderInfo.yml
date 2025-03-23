@@ -7,6 +7,7 @@ items:
   children:
   - OpenSettings.Models.ProviderInfo.Authorize
   - OpenSettings.Models.ProviderInfo.Client
+  - OpenSettings.Models.ProviderInfo.IsPreviewVersion
   - OpenSettings.Models.ProviderInfo.OAuth2
   - OpenSettings.Models.ProviderInfo.PackVersion
   - OpenSettings.Models.ProviderInfo.PackVersionScore
@@ -200,7 +201,7 @@ items:
     Gets or sets the numerical score of the OpenSettings version, used for comparing versions.
 
     A higher score indicates a more recent version.
-  remarks: e.g. "281474976710656"
+  remarks: e.g. "1000000500000"
   example: []
   syntax:
     content: public long PackVersionScore { get; set; }
@@ -209,6 +210,37 @@ items:
       type: System.Int64
     content.vb: Public Property PackVersionScore As Long
   overload: OpenSettings.Models.ProviderInfo.PackVersionScore*
+- uid: OpenSettings.Models.ProviderInfo.IsPreviewVersion
+  commentId: P:OpenSettings.Models.ProviderInfo.IsPreviewVersion
+  id: IsPreviewVersion
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: IsPreviewVersion
+  nameWithType: ProviderInfo.IsPreviewVersion
+  fullName: OpenSettings.Models.ProviderInfo.IsPreviewVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsPreviewVersion
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 46
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Specifies whether the OpenSettings version is a preview version.
+  example: []
+  syntax:
+    content: public bool IsPreviewVersion { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPreviewVersion As Boolean
+  overload: OpenSettings.Models.ProviderInfo.IsPreviewVersion*
 - uid: OpenSettings.Models.ProviderInfo.OAuth2
   commentId: P:OpenSettings.Models.ProviderInfo.OAuth2
   id: OAuth2
@@ -227,7 +259,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OAuth2
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 46
+    startLine: 51
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -258,7 +290,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Redis
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 51
+    startLine: 56
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -601,6 +633,12 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
+- uid: OpenSettings.Models.ProviderInfo.IsPreviewVersion*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.IsPreviewVersion
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_IsPreviewVersion
+  name: IsPreviewVersion
+  nameWithType: ProviderInfo.IsPreviewVersion
+  fullName: OpenSettings.Models.ProviderInfo.IsPreviewVersion
 - uid: OpenSettings.Models.ProviderInfo.OAuth2*
   commentId: Overload:OpenSettings.Models.ProviderInfo.OAuth2
   href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_OAuth2
