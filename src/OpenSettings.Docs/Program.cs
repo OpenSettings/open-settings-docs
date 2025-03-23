@@ -40,7 +40,7 @@ var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
                     FileName = fileNameWithoutExtension,
                     Extension = extension
                 };
-            }).ToArray();
+            }).Where(f => f.Extension != "gz").OrderByDescending(f => f.RelativePathWithExtension).ToArray();
 
         return new
         {
@@ -84,7 +84,9 @@ app.Use(async (context, next) =>
             
             var requestMajorVersion = pathValue.Split(slashChar).Skip(1).First();
 
-            var hasExtension = !string.IsNullOrWhiteSpace(Path.GetExtension(pathValue));
+            var extension = Path.GetExtension(pathValue)?[1..];
+
+            var hasExtension = !string.IsNullOrWhiteSpace(extension) && !int.TryParse(extension, out _);
 
             if (requestMajorVersion.StartsWith(vChar))
             {
