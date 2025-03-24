@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Builder;
+using OpenSettings.Docs;
 using System;
 using System.IO;
 using System.Linq;
-using OpenSettings.Docs;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -40,7 +40,10 @@ var majorVersionToModel = Directory.GetDirectories(wwwrootPath, "v*")
                     FileName = fileNameWithoutExtension,
                     Extension = extension
                 };
-            }).Where(f => f.Extension != "gz").OrderByDescending(f => f.RelativePathWithExtension).ToArray();
+            })
+            .OrderBy(f => f.RelativePath)
+            .ThenBy(f => GetExtensionPriority(f.Extension))
+            .ToArray();
 
         return new
         {
@@ -84,9 +87,10 @@ app.Use(async (context, next) =>
             
             var requestMajorVersion = pathValue.Split(slashChar).Skip(1).First();
 
-            var extension = Path.GetExtension(pathValue)?[1..];
+            var extension = Path.GetExtension(pathValue);
+            var extensionWithoutDot = extension.Length > 0 ? extension[1..] : string.Empty;
 
-            var hasExtension = !string.IsNullOrWhiteSpace(extension) && !int.TryParse(extension, out _);
+            var hasExtension = !string.IsNullOrWhiteSpace(extensionWithoutDot) && !int.TryParse(extensionWithoutDot, out _);
 
             if (requestMajorVersion.StartsWith(vChar))
             {
@@ -133,3 +137,15 @@ app.Use(async (context, next) =>
 });
 
 app.Run();
+return;
+
+static int GetExtensionPriority(string extension)
+{
+    return extension.ToLowerInvariant() switch
+    {
+        "html" => 1,
+        "json" => 2,
+        "js" => 3,
+        _ => 4
+    };
+}
