@@ -9,7 +9,7 @@ OpenSettings is a **centralized settings management** system designed for **.NET
 
 ![Demo](https://github.com/OpenSettings/open-settings-docs/blob/master/docs/v1/assets/gifs/demo.gif)
 
-## 🌍 Online Documentation
+## 📖 Documentation
 
 The latest OpenSettings documentation is available at [**docs.opensettings.net**](https://docs.opensettings.net)
 
