@@ -1,39 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: OpenSettings.Constants
-  commentId: T:OpenSettings.Constants
-  id: Constants
-  parent: OpenSettings
+- uid: OpenSettings.Models.ConfigurationSpa
+  commentId: T:OpenSettings.Models.ConfigurationSpa
+  id: ConfigurationSpa
+  parent: OpenSettings.Models
   children:
-  - OpenSettings.Constants.EmbeddedIndexHtmlFileNamespace
-  - OpenSettings.Constants.OpenSettingsBasicAuthScheme
-  - OpenSettings.Constants.OpenSettingsCookieScheme
-  - OpenSettings.Constants.OpenSettingsOAuth2Scheme
-  - OpenSettings.Constants.PackVersionName
-  - OpenSettings.Constants.PackVersionScoreName
+  - OpenSettings.Models.ConfigurationSpa.DocumentTitle
+  - OpenSettings.Models.ConfigurationSpa.IsActive
+  - OpenSettings.Models.ConfigurationSpa.RoutePrefix
   langs:
   - csharp
   - vb
-  name: Constants
-  nameWithType: Constants
-  fullName: OpenSettings.Constants
+  name: ConfigurationSpa
+  nameWithType: ConfigurationSpa
+  fullName: OpenSettings.Models.ConfigurationSpa
   type: Class
   source:
     remote:
-      path: src/OpenSettings/Constants.cs
+      path: src/OpenSettings/Models/ConfigurationSpa.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Constants
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 13
+    id: ConfigurationSpa
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationSpa.cs
+    startLine: 2
   assemblies:
   - OpenSettings
-  namespace: OpenSettings
-  summary: Provides constant values for authentication schemes and pack version metadata used in OpenSettings.
-  example: []
+  namespace: OpenSettings.Models
   syntax:
-    content: public static class Constants
-    content.vb: Public Module Constants
+    content: public class ConfigurationSpa
+    content.vb: Public Class ConfigurationSpa
   inheritance:
   - System.Object
   inheritedMembers:
@@ -44,187 +39,116 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Constants.OpenSettingsBasicAuthScheme
-  commentId: F:OpenSettings.Constants.OpenSettingsBasicAuthScheme
-  id: OpenSettingsBasicAuthScheme
-  parent: OpenSettings.Constants
+- uid: OpenSettings.Models.ConfigurationSpa.RoutePrefix
+  commentId: P:OpenSettings.Models.ConfigurationSpa.RoutePrefix
+  id: RoutePrefix
+  parent: OpenSettings.Models.ConfigurationSpa
   langs:
   - csharp
   - vb
-  name: OpenSettingsBasicAuthScheme
-  nameWithType: Constants.OpenSettingsBasicAuthScheme
-  fullName: OpenSettings.Constants.OpenSettingsBasicAuthScheme
-  type: Field
+  name: RoutePrefix
+  nameWithType: ConfigurationSpa.RoutePrefix
+  fullName: OpenSettings.Models.ConfigurationSpa.RoutePrefix
+  type: Property
   source:
     remote:
-      path: src/OpenSettings/Constants.cs
+      path: src/OpenSettings/Models/ConfigurationSpa.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OpenSettingsBasicAuthScheme
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 18
+    id: RoutePrefix
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationSpa.cs
+    startLine: 4
   assemblies:
   - OpenSettings
-  namespace: OpenSettings
-  summary: The authentication scheme for Basic Authentication in OpenSettings.
-  example: []
+  namespace: OpenSettings.Models
   syntax:
-    content: public const string OpenSettingsBasicAuthScheme = "OpenSettingsBasicAuth"
+    content: public string RoutePrefix { get; set; }
+    parameters: []
     return:
       type: System.String
-    content.vb: Public Const OpenSettingsBasicAuthScheme As String = "OpenSettingsBasicAuth"
-- uid: OpenSettings.Constants.OpenSettingsCookieScheme
-  commentId: F:OpenSettings.Constants.OpenSettingsCookieScheme
-  id: OpenSettingsCookieScheme
-  parent: OpenSettings.Constants
+    content.vb: Public Property RoutePrefix As String
+  overload: OpenSettings.Models.ConfigurationSpa.RoutePrefix*
+- uid: OpenSettings.Models.ConfigurationSpa.DocumentTitle
+  commentId: P:OpenSettings.Models.ConfigurationSpa.DocumentTitle
+  id: DocumentTitle
+  parent: OpenSettings.Models.ConfigurationSpa
   langs:
   - csharp
   - vb
-  name: OpenSettingsCookieScheme
-  nameWithType: Constants.OpenSettingsCookieScheme
-  fullName: OpenSettings.Constants.OpenSettingsCookieScheme
-  type: Field
+  name: DocumentTitle
+  nameWithType: ConfigurationSpa.DocumentTitle
+  fullName: OpenSettings.Models.ConfigurationSpa.DocumentTitle
+  type: Property
   source:
     remote:
-      path: src/OpenSettings/Constants.cs
+      path: src/OpenSettings/Models/ConfigurationSpa.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OpenSettingsCookieScheme
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 23
+    id: DocumentTitle
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationSpa.cs
+    startLine: 6
   assemblies:
   - OpenSettings
-  namespace: OpenSettings
-  summary: The authentication scheme for Cookie-based Authentication in OpenSettings.
-  example: []
+  namespace: OpenSettings.Models
   syntax:
-    content: public const string OpenSettingsCookieScheme = "OpenSettingsCookieScheme"
+    content: public string DocumentTitle { get; set; }
+    parameters: []
     return:
       type: System.String
-    content.vb: Public Const OpenSettingsCookieScheme As String = "OpenSettingsCookieScheme"
-- uid: OpenSettings.Constants.OpenSettingsOAuth2Scheme
-  commentId: F:OpenSettings.Constants.OpenSettingsOAuth2Scheme
-  id: OpenSettingsOAuth2Scheme
-  parent: OpenSettings.Constants
+    content.vb: Public Property DocumentTitle As String
+  overload: OpenSettings.Models.ConfigurationSpa.DocumentTitle*
+- uid: OpenSettings.Models.ConfigurationSpa.IsActive
+  commentId: P:OpenSettings.Models.ConfigurationSpa.IsActive
+  id: IsActive
+  parent: OpenSettings.Models.ConfigurationSpa
   langs:
   - csharp
   - vb
-  name: OpenSettingsOAuth2Scheme
-  nameWithType: Constants.OpenSettingsOAuth2Scheme
-  fullName: OpenSettings.Constants.OpenSettingsOAuth2Scheme
-  type: Field
+  name: IsActive
+  nameWithType: ConfigurationSpa.IsActive
+  fullName: OpenSettings.Models.ConfigurationSpa.IsActive
+  type: Property
   source:
     remote:
-      path: src/OpenSettings/Constants.cs
+      path: src/OpenSettings/Models/ConfigurationSpa.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OpenSettingsOAuth2Scheme
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 28
+    id: IsActive
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationSpa.cs
+    startLine: 8
   assemblies:
   - OpenSettings
-  namespace: OpenSettings
-  summary: The authentication scheme for OAuth2 Authentication in OpenSettings.
-  example: []
+  namespace: OpenSettings.Models
   syntax:
-    content: public const string OpenSettingsOAuth2Scheme = "OpenSettingsOAuth2"
+    content: public bool IsActive { get; set; }
+    parameters: []
     return:
-      type: System.String
-    content.vb: Public Const OpenSettingsOAuth2Scheme As String = "OpenSettingsOAuth2"
-- uid: OpenSettings.Constants.PackVersionName
-  commentId: F:OpenSettings.Constants.PackVersionName
-  id: PackVersionName
-  parent: OpenSettings.Constants
-  langs:
-  - csharp
-  - vb
-  name: PackVersionName
-  nameWithType: Constants.PackVersionName
-  fullName: OpenSettings.Constants.PackVersionName
-  type: Field
-  source:
-    remote:
-      path: src/OpenSettings/Constants.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: PackVersionName
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 33
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings
-  summary: The name used to represent the pack version in OpenSettings.
-  example: []
-  syntax:
-    content: public const string PackVersionName = "PackVersion"
-    return:
-      type: System.String
-    content.vb: Public Const PackVersionName As String = "PackVersion"
-- uid: OpenSettings.Constants.PackVersionScoreName
-  commentId: F:OpenSettings.Constants.PackVersionScoreName
-  id: PackVersionScoreName
-  parent: OpenSettings.Constants
-  langs:
-  - csharp
-  - vb
-  name: PackVersionScoreName
-  nameWithType: Constants.PackVersionScoreName
-  fullName: OpenSettings.Constants.PackVersionScoreName
-  type: Field
-  source:
-    remote:
-      path: src/OpenSettings/Constants.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: PackVersionScoreName
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 38
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings
-  summary: The name used to represent the pack version score in OpenSettings.
-  example: []
-  syntax:
-    content: public const string PackVersionScoreName = "PackVersionScore"
-    return:
-      type: System.String
-    content.vb: Public Const PackVersionScoreName As String = "PackVersionScore"
-- uid: OpenSettings.Constants.EmbeddedIndexHtmlFileNamespace
-  commentId: F:OpenSettings.Constants.EmbeddedIndexHtmlFileNamespace
-  id: EmbeddedIndexHtmlFileNamespace
-  parent: OpenSettings.Constants
-  langs:
-  - csharp
-  - vb
-  name: EmbeddedIndexHtmlFileNamespace
-  nameWithType: Constants.EmbeddedIndexHtmlFileNamespace
-  fullName: OpenSettings.Constants.EmbeddedIndexHtmlFileNamespace
-  type: Field
-  source:
-    remote:
-      path: src/OpenSettings/Constants.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: EmbeddedIndexHtmlFileNamespace
-    path: ../../../open-settings/src/OpenSettings/Constants.cs
-    startLine: 43
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings
-  summary: The current embedded index html file namespace for the OpenSettings Spa.
-  example: []
-  syntax:
-    content: public const string EmbeddedIndexHtmlFileNamespace = "OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html"
-    return:
-      type: System.String
-    content.vb: Public Const EmbeddedIndexHtmlFileNamespace As String = "OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html"
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: OpenSettings.Models.ConfigurationSpa.IsActive*
 references:
-- uid: OpenSettings
-  commentId: N:OpenSettings
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
   href: OpenSettings.html
-  name: OpenSettings
-  nameWithType: OpenSettings
-  fullName: OpenSettings
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -462,6 +386,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Models.ConfigurationSpa.RoutePrefix*
+  commentId: Overload:OpenSettings.Models.ConfigurationSpa.RoutePrefix
+  href: OpenSettings.Models.ConfigurationSpa.html#OpenSettings_Models_ConfigurationSpa_RoutePrefix
+  name: RoutePrefix
+  nameWithType: ConfigurationSpa.RoutePrefix
+  fullName: OpenSettings.Models.ConfigurationSpa.RoutePrefix
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -473,3 +403,26 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: OpenSettings.Models.ConfigurationSpa.DocumentTitle*
+  commentId: Overload:OpenSettings.Models.ConfigurationSpa.DocumentTitle
+  href: OpenSettings.Models.ConfigurationSpa.html#OpenSettings_Models_ConfigurationSpa_DocumentTitle
+  name: DocumentTitle
+  nameWithType: ConfigurationSpa.DocumentTitle
+  fullName: OpenSettings.Models.ConfigurationSpa.DocumentTitle
+- uid: OpenSettings.Models.ConfigurationSpa.IsActive*
+  commentId: Overload:OpenSettings.Models.ConfigurationSpa.IsActive
+  href: OpenSettings.Models.ConfigurationSpa.html#OpenSettings_Models_ConfigurationSpa_IsActive
+  name: IsActive
+  nameWithType: ConfigurationSpa.IsActive
+  fullName: OpenSettings.Models.ConfigurationSpa.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

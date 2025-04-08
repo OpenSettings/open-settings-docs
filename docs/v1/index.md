@@ -84,7 +84,6 @@ Ensure OpenSettings is registered in the pipeline **between** `UseRouting` and `
 app.UseRouting();
 
 app.UseOpenSettings(); // Updates instance status when the application starts or stops.
-app.UseOpenSettingsSpa(); // Enables OpenSettings SPA for viewing & editing settings.
 
 app.MapControllers();
 ...

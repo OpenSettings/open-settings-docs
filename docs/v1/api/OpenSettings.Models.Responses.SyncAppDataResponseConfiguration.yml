@@ -6,9 +6,11 @@ items:
   parent: OpenSettings.Models.Responses
   children:
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Consumer
+  - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.IgnoreOnFileChange
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Provider
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.RegistrationMode
+  - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.StoreInSeparateFile
   langs:
   - csharp
@@ -186,6 +188,64 @@ items:
       type: OpenSettings.Models.ConfigurationProvider
     content.vb: Public Property Provider As ConfigurationProvider
   overload: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Provider*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
+  id: Controller
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: SyncAppDataResponseConfiguration.Controller
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Controller
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ConfigurationController Controller { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationController
+    content.vb: Public Property Controller As ConfigurationController
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller*
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
+  commentId: P:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
+  id: Spa
+  parent: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: SyncAppDataResponseConfiguration.Spa
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/SyncAppDataResponseConfiguration.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ConfigurationSpa Spa { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationSpa
+    content.vb: Public Property Spa As ConfigurationSpa
+  overload: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -538,3 +598,29 @@ references:
   name: ConfigurationProvider
   nameWithType: ConfigurationProvider
   fullName: OpenSettings.Models.ConfigurationProvider
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
+  href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_Controller
+  name: Controller
+  nameWithType: SyncAppDataResponseConfiguration.Controller
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Controller
+- uid: OpenSettings.Models.ConfigurationController
+  commentId: T:OpenSettings.Models.ConfigurationController
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationController.html
+  name: ConfigurationController
+  nameWithType: ConfigurationController
+  fullName: OpenSettings.Models.ConfigurationController
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa*
+  commentId: Overload:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
+  href: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.html#OpenSettings_Models_Responses_SyncAppDataResponseConfiguration_Spa
+  name: Spa
+  nameWithType: SyncAppDataResponseConfiguration.Spa
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration.Spa
+- uid: OpenSettings.Models.ConfigurationSpa
+  commentId: T:OpenSettings.Models.ConfigurationSpa
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationSpa.html
+  name: ConfigurationSpa
+  nameWithType: ConfigurationSpa
+  fullName: OpenSettings.Models.ConfigurationSpa

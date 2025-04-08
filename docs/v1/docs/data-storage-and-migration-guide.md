@@ -56,9 +56,6 @@ Run the following command inside your executable folder:
 dotnet ef migrations add InitialOpenSettingsDbMigration -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb
 ```
 
-> [!TIP]
-> Make sure not to forget to pass the **--configuration Migration** parameter when generating migrations.
-
 This command:
 - Generates database schema changes based on your entity models.
 - Stores migration files in `Data/Migrations/OpenSettings/OpenSettingsDb`.

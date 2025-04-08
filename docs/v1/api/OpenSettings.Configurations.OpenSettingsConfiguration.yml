@@ -9,6 +9,7 @@ items:
   - OpenSettings.Configurations.OpenSettingsConfiguration.#ctor(OpenSettings.Models.ServiceType)
   - OpenSettings.Configurations.OpenSettingsConfiguration.Client
   - OpenSettings.Configurations.OpenSettingsConfiguration.Consumer
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Controller
   - OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
   - OpenSettings.Configurations.OpenSettingsConfiguration.IgnoreOnFileChange
   - OpenSettings.Configurations.OpenSettingsConfiguration.InstanceDynamicId
@@ -20,6 +21,7 @@ items:
   - OpenSettings.Configurations.OpenSettingsConfiguration.Provider
   - OpenSettings.Configurations.OpenSettingsConfiguration.RegistrationMode
   - OpenSettings.Configurations.OpenSettingsConfiguration.Selection
+  - OpenSettings.Configurations.OpenSettingsConfiguration.Spa
   - OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
   - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
   - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
@@ -245,7 +247,7 @@ items:
 
         If the provided value is null, empty, or whitespace, the setting identifier name will remain unchanged.
 
-        The default value is <code>"Default"</code>.
+        The default value is automatically calculates using <xref href="OpenSettings.Helpers.Helper.GetEnvironmentName" data-throw-if-not-resolved="false"></xref>.
 
         The identifier helps to differentiate settings for different application environments, like Production, Development, etc.
     content.vb: Public Property IdentifierName As String
@@ -344,7 +346,7 @@ items:
     parameters: []
     return:
       type: OpenSettings.Configurations.ConsumerConfiguration
-      description: A <xref href="OpenSettings.Configurations.ConsumerConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the settings for the consumer service.
+      description: A <xref href="OpenSettings.Configurations.ConsumerConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the configuration for the consumer service.
     content.vb: Public Property Consumer As ConsumerConfiguration
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.Consumer*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
@@ -376,9 +378,73 @@ items:
     parameters: []
     return:
       type: OpenSettings.Configurations.ProviderConfiguration
-      description: A <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the settings for the provider service.
+      description: A <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the configuration for the provider service.
     content.vb: Public Property Provider As ProviderConfiguration
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.Provider*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Controller
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Controller
+  id: Controller
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: OpenSettingsConfiguration.Controller
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Controller
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Controller
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 152
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the configuration for the OpenSettings controller.
+  example: []
+  syntax:
+    content: public ControllerConfiguration Controller { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.ControllerConfiguration
+      description: A <xref href="OpenSettings.Configurations.ControllerConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the configuration for the OpenSettings Controller.
+    content.vb: Public Property Controller As ControllerConfiguration
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Controller*
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Spa
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Spa
+  id: Spa
+  parent: OpenSettings.Configurations.OpenSettingsConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: OpenSettingsConfiguration.Spa
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Spa
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
+    startLine: 160
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the configuration for the OpenSettings Spa.
+  example: []
+  syntax:
+    content: public SpaConfiguration Spa { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.SpaConfiguration
+      description: A <xref href="OpenSettings.Configurations.SpaConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the configuration for the OpenSettings Spa.
+    content.vb: Public Property Spa As SpaConfiguration
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.Spa*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
   commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
   id: SyncAppDataMaxRetryCount
@@ -397,7 +463,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataMaxRetryCount
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 177
+    startLine: 183
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -450,7 +516,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataRetryDelayMilliseconds
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 185
+    startLine: 191
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -482,7 +548,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Operation
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 192
+    startLine: 198
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -517,7 +583,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 204
+    startLine: 210
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -559,7 +625,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 221
+    startLine: 227
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -610,7 +676,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 230
+    startLine: 236
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -645,7 +711,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsConsumerSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 240
+    startLine: 246
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -693,7 +759,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsProviderSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 251
+    startLine: 257
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -741,7 +807,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LoggerFactory
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 259
+    startLine: 265
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -1104,6 +1170,24 @@ references:
   name: InstanceName
   nameWithType: OpenSettingsConfiguration.InstanceName
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.InstanceName
+- uid: OpenSettings.Helpers.Helper.GetEnvironmentName
+  commentId: M:OpenSettings.Helpers.Helper.GetEnvironmentName
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetEnvironmentName
+  name: GetEnvironmentName()
+  nameWithType: Helper.GetEnvironmentName()
+  fullName: OpenSettings.Helpers.Helper.GetEnvironmentName()
+  spec.csharp:
+  - uid: OpenSettings.Helpers.Helper.GetEnvironmentName
+    name: GetEnvironmentName
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetEnvironmentName
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Helpers.Helper.GetEnvironmentName
+    name: GetEnvironmentName
+    href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetEnvironmentName
+  - name: (
+  - name: )
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName*
   commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.IdentifierName
   href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_IdentifierName
@@ -1155,6 +1239,32 @@ references:
   name: Provider
   nameWithType: OpenSettingsConfiguration.Provider
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Provider
+- uid: OpenSettings.Configurations.ControllerConfiguration
+  commentId: T:OpenSettings.Configurations.ControllerConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.ControllerConfiguration.html
+  name: ControllerConfiguration
+  nameWithType: ControllerConfiguration
+  fullName: OpenSettings.Configurations.ControllerConfiguration
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Controller*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Controller
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Controller
+  name: Controller
+  nameWithType: OpenSettingsConfiguration.Controller
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Controller
+- uid: OpenSettings.Configurations.SpaConfiguration
+  commentId: T:OpenSettings.Configurations.SpaConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.SpaConfiguration.html
+  name: SpaConfiguration
+  nameWithType: SpaConfiguration
+  fullName: OpenSettings.Configurations.SpaConfiguration
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.Spa*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.Spa
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_Spa
+  name: Spa
+  nameWithType: OpenSettingsConfiguration.Spa
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Spa
 - uid: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
   commentId: T:OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
   href: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException.html

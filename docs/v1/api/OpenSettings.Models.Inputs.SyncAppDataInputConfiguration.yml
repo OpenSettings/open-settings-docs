@@ -6,9 +6,11 @@ items:
   parent: OpenSettings.Models.Inputs
   children:
   - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Consumer
+  - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
   - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.IgnoreOnFileChange
   - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Provider
   - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.RegistrationMode
+  - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
   - OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.StoreInSeparateFile
   langs:
   - csharp
@@ -186,6 +188,64 @@ items:
       type: OpenSettings.Models.ConfigurationProvider
     content.vb: Public Property Provider As ConfigurationProvider
   overload: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Provider*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
+  id: Controller
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: SyncAppDataInputConfiguration.Controller
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Controller
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputConfiguration.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public ConfigurationController Controller { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationController
+    content.vb: Public Property Controller As ConfigurationController
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
+  id: Spa
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: SyncAppDataInputConfiguration.Spa
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputConfiguration.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public ConfigurationSpa Spa { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationSpa
+    content.vb: Public Property Spa As ConfigurationSpa
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa*
 references:
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
@@ -538,3 +598,29 @@ references:
   name: ConfigurationProvider
   nameWithType: ConfigurationProvider
   fullName: OpenSettings.Models.ConfigurationProvider
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
+  href: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.html#OpenSettings_Models_Inputs_SyncAppDataInputConfiguration_Controller
+  name: Controller
+  nameWithType: SyncAppDataInputConfiguration.Controller
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Controller
+- uid: OpenSettings.Models.ConfigurationController
+  commentId: T:OpenSettings.Models.ConfigurationController
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationController.html
+  name: ConfigurationController
+  nameWithType: ConfigurationController
+  fullName: OpenSettings.Models.ConfigurationController
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
+  href: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.html#OpenSettings_Models_Inputs_SyncAppDataInputConfiguration_Spa
+  name: Spa
+  nameWithType: SyncAppDataInputConfiguration.Spa
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputConfiguration.Spa
+- uid: OpenSettings.Models.ConfigurationSpa
+  commentId: T:OpenSettings.Models.ConfigurationSpa
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationSpa.html
+  name: ConfigurationSpa
+  nameWithType: ConfigurationSpa
+  fullName: OpenSettings.Models.ConfigurationSpa

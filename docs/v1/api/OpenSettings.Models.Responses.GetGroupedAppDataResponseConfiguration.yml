@@ -6,11 +6,13 @@ items:
   parent: OpenSettings.Models.Responses
   children:
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Consumer
+  - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Id
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.IgnoreOnFileChange
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Provider
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RegistrationMode
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RowVersion
+  - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.StoreInSeparateFile
   langs:
   - csharp
@@ -217,6 +219,64 @@ items:
       type: OpenSettings.Models.ConfigurationProvider
     content.vb: Public Property Provider As ConfigurationProvider
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Provider*
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
+  id: Controller
+  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: GetGroupedAppDataResponseConfiguration.Controller
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Controller
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ConfigurationController Controller { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationController
+    content.vb: Public Property Controller As ConfigurationController
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller*
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
+  id: Spa
+  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: GetGroupedAppDataResponseConfiguration.Spa
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ConfigurationSpa Spa { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationSpa
+    content.vb: Public Property Spa As ConfigurationSpa
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RowVersion
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RowVersion
   id: RowVersion
@@ -235,7 +295,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseConfiguration.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -615,6 +675,32 @@ references:
   name: ConfigurationProvider
   nameWithType: ConfigurationProvider
   fullName: OpenSettings.Models.ConfigurationProvider
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_Controller
+  name: Controller
+  nameWithType: GetGroupedAppDataResponseConfiguration.Controller
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Controller
+- uid: OpenSettings.Models.ConfigurationController
+  commentId: T:OpenSettings.Models.ConfigurationController
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationController.html
+  name: ConfigurationController
+  nameWithType: ConfigurationController
+  fullName: OpenSettings.Models.ConfigurationController
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_Spa
+  name: Spa
+  nameWithType: GetGroupedAppDataResponseConfiguration.Spa
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.Spa
+- uid: OpenSettings.Models.ConfigurationSpa
+  commentId: T:OpenSettings.Models.ConfigurationSpa
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationSpa.html
+  name: ConfigurationSpa
+  nameWithType: ConfigurationSpa
+  fullName: OpenSettings.Models.ConfigurationSpa
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RowVersion*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.RowVersion
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseConfiguration.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseConfiguration_RowVersion

@@ -5,8 +5,8 @@ items:
   id: MemoryCacheKeys
   parent: OpenSettings.Services.MemoryCache
   children:
-  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
-  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
+  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds(System.String)
+  - OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
   langs:
   - csharp
   - vb
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MemoryCacheKeys
     path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.MemoryCache
@@ -43,17 +43,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
-  commentId: F:OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
-  id: GetAvailableNotificationIds
+- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds(System.String)
+  commentId: M:OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds(System.String)
+  id: GetAvailableNotificationIds(System.String)
   parent: OpenSettings.Services.MemoryCache.MemoryCacheKeys
   langs:
   - csharp
   - vb
-  name: GetAvailableNotificationIds
-  nameWithType: MemoryCacheKeys.GetAvailableNotificationIds
-  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
-  type: Field
+  name: GetAvailableNotificationIds(string)
+  nameWithType: MemoryCacheKeys.GetAvailableNotificationIds(string)
+  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds(string)
+  type: Method
   source:
     remote:
       path: src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
@@ -61,46 +61,53 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAvailableNotificationIds
     path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.MemoryCache
   summary: The cache key for available notification ids, with a 5-minute expiration time.
   example: []
   syntax:
-    content: public static CacheModel GetAvailableNotificationIds
+    content: public static CacheModel GetAvailableNotificationIds(string packVersion)
+    parameters:
+    - id: packVersion
+      type: System.String
     return:
       type: OpenSettings.Models.CacheModel
-    content.vb: Public Shared GetAvailableNotificationIds As CacheModel
-- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
-  commentId: F:OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
-  id: SettingsSpaMiddlewareHtml
+    content.vb: Public Shared Function GetAvailableNotificationIds(packVersion As String) As CacheModel
+  overload: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds*
+  nameWithType.vb: MemoryCacheKeys.GetAvailableNotificationIds(String)
+  fullName.vb: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds(String)
+  name.vb: GetAvailableNotificationIds(String)
+- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
+  commentId: F:OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
+  id: OpenSettingsSpaMiddlewareHtml
   parent: OpenSettings.Services.MemoryCache.MemoryCacheKeys
   langs:
   - csharp
   - vb
-  name: SettingsSpaMiddlewareHtml
-  nameWithType: MemoryCacheKeys.SettingsSpaMiddlewareHtml
-  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.SettingsSpaMiddlewareHtml
+  name: OpenSettingsSpaMiddlewareHtml
+  nameWithType: MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
+  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.OpenSettingsSpaMiddlewareHtml
   type: Field
   source:
     remote:
       path: src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: SettingsSpaMiddlewareHtml
+    id: OpenSettingsSpaMiddlewareHtml
     path: ../../../open-settings/src/OpenSettings/Services/MemoryCache/MemoryCacheKeys.cs
-    startLine: 19
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.MemoryCache
   summary: The cache key for the Settings Spa Middleware Html content.
   example: []
   syntax:
-    content: public static CacheModel SettingsSpaMiddlewareHtml
+    content: public static CacheModel OpenSettingsSpaMiddlewareHtml
     return:
       type: OpenSettings.Models.CacheModel
-    content.vb: Public Shared SettingsSpaMiddlewareHtml As CacheModel
+    content.vb: Public Shared OpenSettingsSpaMiddlewareHtml As CacheModel
 references:
 - uid: OpenSettings.Services.MemoryCache
   commentId: N:OpenSettings.Services.MemoryCache
@@ -369,6 +376,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds*
+  commentId: Overload:OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
+  href: OpenSettings.Services.MemoryCache.MemoryCacheKeys.html#OpenSettings_Services_MemoryCache_MemoryCacheKeys_GetAvailableNotificationIds_System_String_
+  name: GetAvailableNotificationIds
+  nameWithType: MemoryCacheKeys.GetAvailableNotificationIds
+  fullName: OpenSettings.Services.MemoryCache.MemoryCacheKeys.GetAvailableNotificationIds
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: OpenSettings.Models.CacheModel
   commentId: T:OpenSettings.Models.CacheModel
   parent: OpenSettings.Models

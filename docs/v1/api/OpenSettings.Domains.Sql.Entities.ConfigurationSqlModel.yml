@@ -8,6 +8,7 @@ items:
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.App
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.AppId
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Consumer
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedBy
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.CreatedById
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Identifier
@@ -19,6 +20,7 @@ items:
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RegistrationMode
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.RowVersion
+  - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.StoreInSeparateFile
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedBy
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.UpdatedById
@@ -334,6 +336,68 @@ items:
       type: OpenSettings.Models.ConfigurationProvider
     content.vb: Public Property Provider As ConfigurationProvider
   overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Provider*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
+  id: Controller
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: ConfigurationSqlModel.Controller
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Controller
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 60
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents the controller running options associated with the configuration.
+  example: []
+  syntax:
+    content: public ConfigurationController Controller { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationController
+    content.vb: Public Property Controller As ConfigurationController
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller*
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
+  commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
+  id: Spa
+  parent: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: ConfigurationSqlModel.Spa
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents the spa running options associated with the configuration.
+  example: []
+  syntax:
+    content: public ConfigurationSpa Spa { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ConfigurationSpa
+    content.vb: Public Property Spa As ConfigurationSpa
+  overload: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa*
 - uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
   commentId: P:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
   id: IdentifierId
@@ -352,7 +416,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 60
+    startLine: 70
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -383,7 +447,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 65
+    startLine: 75
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -414,7 +478,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 70
+    startLine: 80
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -445,7 +509,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 75
+    startLine: 85
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -476,7 +540,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 81
+    startLine: 91
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -510,7 +574,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Identifier
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 86
+    startLine: 96
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -553,7 +617,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: App
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 92
+    startLine: 102
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -596,7 +660,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 98
+    startLine: 108
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -639,7 +703,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ConfigurationSqlModel.cs
-    startLine: 104
+    startLine: 114
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -1172,6 +1236,32 @@ references:
   name: ConfigurationProvider
   nameWithType: ConfigurationProvider
   fullName: OpenSettings.Models.ConfigurationProvider
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_Controller
+  name: Controller
+  nameWithType: ConfigurationSqlModel.Controller
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Controller
+- uid: OpenSettings.Models.ConfigurationController
+  commentId: T:OpenSettings.Models.ConfigurationController
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationController.html
+  name: ConfigurationController
+  nameWithType: ConfigurationController
+  fullName: OpenSettings.Models.ConfigurationController
+- uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
+  href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_Spa
+  name: Spa
+  nameWithType: ConfigurationSqlModel.Spa
+  fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.Spa
+- uid: OpenSettings.Models.ConfigurationSpa
+  commentId: T:OpenSettings.Models.ConfigurationSpa
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigurationSpa.html
+  name: ConfigurationSpa
+  nameWithType: ConfigurationSpa
+  fullName: OpenSettings.Models.ConfigurationSpa
 - uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.IdentifierId
   href: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel.html#OpenSettings_Domains_Sql_Entities_ConfigurationSqlModel_IdentifierId

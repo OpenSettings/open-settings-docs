@@ -4,22 +4,23 @@
 
 The Settings page is the OpenSettings settings management user interface. The `OpenSettings.AspNetCore.Spa` library provides this functionality, and in this guide, we'll explore how to configure and use it.
 
-You can register the settings Spa (Single Page Application) with:
+If this is the first app registration, you can enable the Open Settings Spa (Single Page Application) with the following configuration:
 
 ```csharp
-app.UseOpenSettingsSpa();
+openSettingsConfiguration.Spa.IsActive = true;
 ```
 
 By default, the settings page is available at the relative URI `.../settings`. You can customize this by configuring the options as follows:
 
 ```csharp
-app.UseOpenSettingsSpa(opts =>
-{
-    opts.RoutePrefix = "my-new-route";
-});
+openSettingsConfiguration.Spa.RoutePrefix = "my-new-route";
 ```
 
 Now, the settings page will be accessible at `.../my-new-route`. The `...` represents your service's host address (e.g., `https://localhost:5000/my-new-route`).
+
+Once the app is registered, you can manage and update it through the Open Settings Spa interface.
+
+![Settings Page Guide App View Page Configuration Tab Spa](../assets/images/settings-page-guide-app-view-page-configuration-tab-spa.png)
 
 ---
 
@@ -28,7 +29,7 @@ Now, the settings page will be accessible at `.../my-new-route`. The `...` repre
 ![Settings Page Guide Initial Page](../assets/images/settings-page-guide-apps-page.webp)
 
 1) **Menu Toggle**: Toggles the menu.
-2) **Document Title**: Can be customized using `app.UseOpenSettingsSpa(opts => opts.DocumentTitle = "OpenSettings Spa");`
+2) **Document Title**: Can be customized using `openSettingsConfiguration.Spa.DocumentTitle = "OpenSettings Spa");`
 3) **Service Type**: Shows whether the accessed site is running as Provider or Consumer.  
 4) **Data Access Type**: If running as a provider, shows which data access type is in use.  
 5) **Database Provider Name**: If running as a provider, shows which database provider is used.  

@@ -23,17 +23,11 @@ items:
   - uid: OpenSettings.AspNetCore.ApplicationBuilderExtensions
     name: ApplicationBuilderExtensions
     type: Class
-  - uid: OpenSettings.AspNetCore.ControllerOptions
-    name: ControllerOptions
-    type: Class
   - uid: OpenSettings.AspNetCore.IOpenSettingsTokenService
     name: IOpenSettingsTokenService
     type: Interface
   - uid: OpenSettings.AspNetCore.MvcBuilderExtensions
     name: MvcBuilderExtensions
-    type: Class
-  - uid: OpenSettings.AspNetCore.OAuth2Options
-    name: OAuth2Options
     type: Class
 - uid: OpenSettings.AspNetCore.Controllers.v1
   name: OpenSettings.AspNetCore.Controllers.v1
@@ -399,11 +393,8 @@ items:
   name: OpenSettings.AspNetCore.Spa
   type: Namespace
   items:
-  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaMiddleware
-    name: SettingsSpaMiddleware
-    type: Class
-  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-    name: SettingsSpaOptions
+  - uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware
+    name: OpenSettingsSpaMiddleware
     type: Class
 - uid: OpenSettings.Attributes
   name: OpenSettings.Attributes
@@ -425,6 +416,12 @@ items:
   - uid: OpenSettings.Configurations.ConsumerConfiguration
     name: ConsumerConfiguration
     type: Class
+  - uid: OpenSettings.Configurations.ControllerConfiguration
+    name: ControllerConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.OAuth2Configuration
+    name: OAuth2Configuration
+    type: Class
   - uid: OpenSettings.Configurations.OpenSettingsConfiguration
     name: OpenSettingsConfiguration
     type: Class
@@ -439,6 +436,9 @@ items:
     type: Class
   - uid: OpenSettings.Configurations.RedisConfiguration
     name: RedisConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.SpaConfiguration
+    name: SpaConfiguration
     type: Class
 - uid: OpenSettings.Domains.Redis
   name: OpenSettings.Domains.Redis
@@ -640,8 +640,14 @@ items:
   - uid: OpenSettings.Models.ConfigurationConsumerPollingSettingsWorker
     name: ConfigurationConsumerPollingSettingsWorker
     type: Class
+  - uid: OpenSettings.Models.ConfigurationController
+    name: ConfigurationController
+    type: Class
   - uid: OpenSettings.Models.ConfigurationProvider
     name: ConfigurationProvider
+    type: Class
+  - uid: OpenSettings.Models.ConfigurationSpa
+    name: ConfigurationSpa
     type: Class
   - uid: OpenSettings.Models.ConflictModel
     name: ConflictModel

@@ -5,7 +5,7 @@ items:
   id: MvcBuilderExtensions
   parent: OpenSettings.AspNetCore
   children:
-  - OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{OpenSettings.AspNetCore.ControllerOptions})
+  - OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration)
   langs:
   - csharp
   - vb
@@ -44,17 +44,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{OpenSettings.AspNetCore.ControllerOptions})
-  commentId: M:OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{OpenSettings.AspNetCore.ControllerOptions})
-  id: AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Action{OpenSettings.AspNetCore.ControllerOptions})
+- uid: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration)
+  id: AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder,Microsoft.Extensions.Configuration.IConfiguration)
   isExtensionMethod: true
   parent: OpenSettings.AspNetCore.MvcBuilderExtensions
   langs:
   - csharp
   - vb
-  name: AddOpenSettingsController(IMvcBuilder, IConfiguration, Action<ControllerOptions>)
-  nameWithType: MvcBuilderExtensions.AddOpenSettingsController(IMvcBuilder, IConfiguration, Action<ControllerOptions>)
-  fullName: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, System.Action<OpenSettings.AspNetCore.ControllerOptions>)
+  name: AddOpenSettingsController(IMvcBuilder, IConfiguration)
+  nameWithType: MvcBuilderExtensions.AddOpenSettingsController(IMvcBuilder, IConfiguration)
+  fullName: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration)
   type: Method
   source:
     remote:
@@ -63,7 +63,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AddOpenSettingsController
     path: ../../../open-settings/src/OpenSettings.AspNetCore/MvcBuilderExtensions.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore
@@ -75,7 +75,7 @@ items:
     depending on whether the service type is a provider or consumer.
   example: []
   syntax:
-    content: public static IMvcBuilder AddOpenSettingsController(this IMvcBuilder mvcBuilder, IConfiguration configuration, Action<ControllerOptions> opts = null)
+    content: public static IMvcBuilder AddOpenSettingsController(this IMvcBuilder mvcBuilder, IConfiguration configuration)
     parameters:
     - id: mvcBuilder
       type: Microsoft.Extensions.DependencyInjection.IMvcBuilder
@@ -83,17 +83,11 @@ items:
     - id: configuration
       type: Microsoft.Extensions.Configuration.IConfiguration
       description: The <xref href="Microsoft.Extensions.Configuration.IConfiguration" data-throw-if-not-resolved="false"></xref> used to retrieve app settings and configuration values.
-    - id: opts
-      type: System.Action{OpenSettings.AspNetCore.ControllerOptions}
-      description: An optional delegate to configure <xref href="OpenSettings.AspNetCore.ControllerOptions" data-throw-if-not-resolved="false"></xref>.
     return:
       type: Microsoft.Extensions.DependencyInjection.IMvcBuilder
       description: Returns the <xref href="Microsoft.Extensions.DependencyInjection.IMvcBuilder" data-throw-if-not-resolved="false"></xref> to allow further configuration of MVC services.
-    content.vb: Public Shared Function AddOpenSettingsController(mvcBuilder As IMvcBuilder, configuration As IConfiguration, opts As Action(Of ControllerOptions) = Nothing) As IMvcBuilder
+    content.vb: Public Shared Function AddOpenSettingsController(mvcBuilder As IMvcBuilder, configuration As IConfiguration) As IMvcBuilder
   overload: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController*
-  nameWithType.vb: MvcBuilderExtensions.AddOpenSettingsController(IMvcBuilder, IConfiguration, Action(Of ControllerOptions))
-  fullName.vb: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.Extensions.Configuration.IConfiguration, System.Action(Of OpenSettings.AspNetCore.ControllerOptions))
-  name.vb: AddOpenSettingsController(IMvcBuilder, IConfiguration, Action(Of ControllerOptions))
 references:
 - uid: OpenSettings.AspNetCore
   commentId: N:OpenSettings.AspNetCore
@@ -377,50 +371,12 @@ references:
   name: IConfiguration
   nameWithType: IConfiguration
   fullName: Microsoft.Extensions.Configuration.IConfiguration
-- uid: OpenSettings.AspNetCore.ControllerOptions
-  commentId: T:OpenSettings.AspNetCore.ControllerOptions
-  parent: OpenSettings.AspNetCore
-  href: OpenSettings.AspNetCore.ControllerOptions.html
-  name: ControllerOptions
-  nameWithType: ControllerOptions
-  fullName: OpenSettings.AspNetCore.ControllerOptions
 - uid: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController*
   commentId: Overload:OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController
-  href: OpenSettings.AspNetCore.MvcBuilderExtensions.html#OpenSettings_AspNetCore_MvcBuilderExtensions_AddOpenSettingsController_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_System_Action_OpenSettings_AspNetCore_ControllerOptions__
+  href: OpenSettings.AspNetCore.MvcBuilderExtensions.html#OpenSettings_AspNetCore_MvcBuilderExtensions_AddOpenSettingsController_Microsoft_Extensions_DependencyInjection_IMvcBuilder_Microsoft_Extensions_Configuration_IConfiguration_
   name: AddOpenSettingsController
   nameWithType: MvcBuilderExtensions.AddOpenSettingsController
   fullName: OpenSettings.AspNetCore.MvcBuilderExtensions.AddOpenSettingsController
-- uid: System.Action{OpenSettings.AspNetCore.ControllerOptions}
-  commentId: T:System.Action{OpenSettings.AspNetCore.ControllerOptions}
-  parent: System
-  definition: System.Action`1
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
-  name: Action<ControllerOptions>
-  nameWithType: Action<ControllerOptions>
-  fullName: System.Action<OpenSettings.AspNetCore.ControllerOptions>
-  nameWithType.vb: Action(Of ControllerOptions)
-  fullName.vb: System.Action(Of OpenSettings.AspNetCore.ControllerOptions)
-  name.vb: Action(Of ControllerOptions)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: <
-  - uid: OpenSettings.AspNetCore.ControllerOptions
-    name: ControllerOptions
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: OpenSettings.AspNetCore.ControllerOptions
-    name: ControllerOptions
-  - name: )
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
   href: OpenSettings.html
@@ -517,31 +473,3 @@ references:
     name: Configuration
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
-- uid: System.Action`1
-  commentId: T:System.Action`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
-  name: Action<T>
-  nameWithType: Action<T>
-  fullName: System.Action<T>
-  nameWithType.vb: Action(Of T)
-  fullName.vb: System.Action(Of T)
-  name.vb: Action(Of T)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )

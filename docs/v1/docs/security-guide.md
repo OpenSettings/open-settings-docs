@@ -6,14 +6,12 @@ OpenSettings provides **built-in Basic Authentication**, and API communication *
 
 ## 🔹 Enabling Authorization  
 
-To protect controllers, modify the OpenSettings controller registration:
+To protect controllers, enable the OpenSettings controller configuration from the Open Settings Spa:
 
-```csharp
-builder.Services.AddControllers().AddOpenSettingsControllers(builder.Configuration, opts =>
-{
-    opts.Authorize = true;
-});
-```
+![Security Guide App View Page Configuration Tab Controller](../assets/images/security-guide-app-view-page-configuration-tab-controller.png)
+
+> [!TIP]
+> Don’t forget to press the Save button on the right side of the section. A restart is required after saving for the changes to take effect.
 
 If your application acts as a **consumer** and `Authorize = false`, this does **not** necessarily mean the service is insecure, as the **ultimate decision depends on the provider**.
 
@@ -49,23 +47,10 @@ If you prefer to use **OAuth2 authentication**, OpenSettings allows integration 
 
 Modify the configuration as follows:
 
-```csharp
-builder.Services.AddControllers().AddOpenSettingsControllers(builder.Configuration, opts =>
-{
-    opts.Authorize = true;
-    opts.OAuth2Options = new OAuth2Options
-    {
-        Authority = "https://localhost:5001", // Identity provider's URL
-        ClientId = "web",
-        ClientSecret = "secret",
-        AllowOfflineAccess = true,
-        IsActive = true,
-    };
-});
-```
+![Security Guide App View Page Configuration Tab Controller OAuth2](../assets/images/security-guide-app-view-page-configuration-tab-controller-oauth2.png)
 
-### OAuth2Options Explained:
-- **Authority:** The URL of your identity provider.
+### OAuth2 Configuration Explained:
+- **Authority:** The Url of your identity provider. For instance, https://idm.opensettings.net
 - **ClientId & ClientSecret:** Must be configured in your identity provider.
 - **AllowOfflineAccess:** Enables refresh tokens.
 - **IsActive:** Determines if OAuth2 is enabled.
@@ -84,7 +69,6 @@ A typical pipeline setup looks like this:
 ...
 app.UseRouting();
 app.UseOpenSettings();
-app.UseOpenSettingsSpa();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

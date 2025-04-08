@@ -6,7 +6,6 @@ items:
   parent: OpenSettings.AspNetCore
   children:
   - OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  - OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions})
   langs:
   - csharp
   - vb
@@ -21,7 +20,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ApplicationBuilderExtensions
     path: ../../../open-settings/src/OpenSettings.AspNetCore/ApplicationBuilderExtensions.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore
@@ -62,7 +61,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UseOpenSettings
     path: ../../../open-settings/src/OpenSettings.AspNetCore/ApplicationBuilderExtensions.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore
@@ -88,57 +87,6 @@ items:
   - type: System.Exception
     commentId: T:System.Exception
     description: Thrown if settings have not been properly configured.
-- uid: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions})
-  commentId: M:OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions})
-  id: UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions})
-  isExtensionMethod: true
-  parent: OpenSettings.AspNetCore.ApplicationBuilderExtensions
-  langs:
-  - csharp
-  - vb
-  name: UseOpenSettingsSpa(IApplicationBuilder, Action<SettingsSpaOptions>)
-  nameWithType: ApplicationBuilderExtensions.UseOpenSettingsSpa(IApplicationBuilder, Action<SettingsSpaOptions>)
-  fullName: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<OpenSettings.AspNetCore.Spa.SettingsSpaOptions>)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings.AspNetCore/ApplicationBuilderExtensions.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: UseOpenSettingsSpa
-    path: ../../../open-settings/src/OpenSettings.AspNetCore/ApplicationBuilderExtensions.cs
-    startLine: 117
-  assemblies:
-  - OpenSettings.AspNetCore
-  namespace: OpenSettings.AspNetCore
-  summary: >-
-    Registers the open settings spa middleware and configures its options.
-
-    This method must be called after <code>AddOpenSettingsController</code> has been configured,
-
-    otherwise, a <xref href="System.NullReferenceException" data-throw-if-not-resolved="false"></xref> will be thrown.
-  example: []
-  syntax:
-    content: public static IApplicationBuilder UseOpenSettingsSpa(this IApplicationBuilder app, Action<SettingsSpaOptions> configure = null)
-    parameters:
-    - id: app
-      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
-      description: The <xref href="Microsoft.AspNetCore.Builder.IApplicationBuilder" data-throw-if-not-resolved="false"></xref> used to configure the request pipeline.
-    - id: configure
-      type: System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions}
-      description: An optional delegate to configure <xref href="OpenSettings.AspNetCore.Spa.SettingsSpaOptions" data-throw-if-not-resolved="false"></xref>.
-    return:
-      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
-      description: Returns the <xref href="Microsoft.AspNetCore.Builder.IApplicationBuilder" data-throw-if-not-resolved="false"></xref> to allow further configuration in the middleware pipeline.
-    content.vb: Public Shared Function UseOpenSettingsSpa(app As IApplicationBuilder, configure As Action(Of SettingsSpaOptions) = Nothing) As IApplicationBuilder
-  overload: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa*
-  exceptions:
-  - type: System.NullReferenceException
-    commentId: T:System.NullReferenceException
-    description: Thrown if <code>AddOpenSettingsController</code> was not called before this method.
-  nameWithType.vb: ApplicationBuilderExtensions.UseOpenSettingsSpa(IApplicationBuilder, Action(Of SettingsSpaOptions))
-  fullName.vb: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action(Of OpenSettings.AspNetCore.Spa.SettingsSpaOptions))
-  name.vb: UseOpenSettingsSpa(IApplicationBuilder, Action(Of SettingsSpaOptions))
 references:
 - uid: OpenSettings.AspNetCore
   commentId: N:OpenSettings.AspNetCore
@@ -597,112 +545,3 @@ references:
     name: Builder
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
-- uid: System.NullReferenceException
-  commentId: T:System.NullReferenceException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullreferenceexception
-  name: NullReferenceException
-  nameWithType: NullReferenceException
-  fullName: System.NullReferenceException
-- uid: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-  commentId: T:OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-  parent: OpenSettings.AspNetCore.Spa
-  href: OpenSettings.AspNetCore.Spa.SettingsSpaOptions.html
-  name: SettingsSpaOptions
-  nameWithType: SettingsSpaOptions
-  fullName: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-- uid: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa*
-  commentId: Overload:OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa
-  href: OpenSettings.AspNetCore.ApplicationBuilderExtensions.html#OpenSettings_AspNetCore_ApplicationBuilderExtensions_UseOpenSettingsSpa_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Action_OpenSettings_AspNetCore_Spa_SettingsSpaOptions__
-  name: UseOpenSettingsSpa
-  nameWithType: ApplicationBuilderExtensions.UseOpenSettingsSpa
-  fullName: OpenSettings.AspNetCore.ApplicationBuilderExtensions.UseOpenSettingsSpa
-- uid: System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions}
-  commentId: T:System.Action{OpenSettings.AspNetCore.Spa.SettingsSpaOptions}
-  parent: System
-  definition: System.Action`1
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
-  name: Action<SettingsSpaOptions>
-  nameWithType: Action<SettingsSpaOptions>
-  fullName: System.Action<OpenSettings.AspNetCore.Spa.SettingsSpaOptions>
-  nameWithType.vb: Action(Of SettingsSpaOptions)
-  fullName.vb: System.Action(Of OpenSettings.AspNetCore.Spa.SettingsSpaOptions)
-  name.vb: Action(Of SettingsSpaOptions)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: <
-  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-    name: SettingsSpaOptions
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: OpenSettings.AspNetCore.Spa.SettingsSpaOptions
-    name: SettingsSpaOptions
-  - name: )
-- uid: OpenSettings.AspNetCore.Spa
-  commentId: N:OpenSettings.AspNetCore.Spa
-  href: OpenSettings.html
-  name: OpenSettings.AspNetCore.Spa
-  nameWithType: OpenSettings.AspNetCore.Spa
-  fullName: OpenSettings.AspNetCore.Spa
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.AspNetCore
-    name: AspNetCore
-    href: OpenSettings.AspNetCore.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Spa
-    name: Spa
-    href: OpenSettings.AspNetCore.Spa.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.AspNetCore
-    name: AspNetCore
-    href: OpenSettings.AspNetCore.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Spa
-    name: Spa
-    href: OpenSettings.AspNetCore.Spa.html
-- uid: System.Action`1
-  commentId: T:System.Action`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
-  name: Action<T>
-  nameWithType: Action<T>
-  fullName: System.Action<T>
-  nameWithType.vb: Action(Of T)
-  fullName.vb: System.Action(Of T)
-  name.vb: Action(Of T)
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )

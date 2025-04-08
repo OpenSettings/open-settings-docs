@@ -67,6 +67,33 @@ This guide explains how to configure OpenSettings.
 
 ---
 
+### Controller Configuration
+
+
+| **Property**              | **Definition**                                                     | **Default**                                              |
+|---------------------------|--------------------------------------------------------------------|----------------------------------------------------------|
+| **Route**                 | Base route for the service controller’s endpoints.                | `api/settings`                                           |
+| **AllowFromExploring**     | Whether the controller’s endpoints should be exposed in API documentation (e.g., Swagger). | `false`                                                  |
+| **Authorize**              | Whether authentication is required. When `true`, authentication is enforced. | `false`                                                  |
+| **OAuth2**          | OAuth2 configuration for authentication and authorization.         |                                                          |
+| **- Authority**            | The OAuth2 provider’s authority URL.                               |                                                          |
+| **- ClientId**             | The OAuth2 client ID.                                              |                                                          |
+| **- ClientSecret**         | The OAuth2 client secret.                                          |                                                          |
+| **- SignedOutRedirectUri** | URI to redirect to after sign-out. Default is `settings`.          | `settings`                                               |
+| **- AllowOfflineAccess**   | Whether offline access is allowed.                                 |                                                          |
+| **- IsActive**             | Whether the OAuth2 configuration is active.                        |                                                          |
+
+#### Spa Configuration
+
+| **Property**     | **Definition**                                                                                                           | **Default**                                                  |
+|------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| **RoutePrefix**  | Prefix used to access the OpenSettings page.                                                                               | `settings`                                                   |
+| **IndexStream**  | Function that returns a `Stream` representing the index HTML file for the OpenSettings SPA.                                | Default embedded `OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html`.                              |
+| **DocumentTitle**| Title of the settings page, used in the HTML `<title>` element and displayed in the browser's title bar.                   | `OpenSettings Spa`                                           |
+| **IsActive**     | Indicating whether the open settings Spa (Single Page Application) is active.                                              |   `true`                                           |
+
+---
+
 ### SyncAppDataMaxRetryCount
 - **Definition:** Maximum number of retries for initial data sync. Default is `-1` for infinite retries.
 - **Retry Behavior:**
@@ -149,7 +176,7 @@ This guide explains how to configure OpenSettings.
 
 ---
 
-<p>🔹 <strong>Provider</strong></p>
+#### 🔹 Provider 🔹 
 
 ```csharp
 var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Provider)
@@ -187,7 +214,7 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Provid
 await builder.Host.UseOpenSettingsAsync(openSettingsConfiguration);
 ```
 
-<p>🔹 <strong>Consumer</strong></p>
+#### 🔹 Consumer 🔹 
 
 ```csharp
 var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Consumer)
@@ -220,64 +247,6 @@ await builder.Host.UseOpenSettingsAsync(openSettingsProviderConfiguration);
 ```
 
 ---
-
-## Looking Up ControllerOptions
-
-### Configuring the `AddOpenSettingsControllers`
-
-| **Property**              | **Definition**                                                     | **Default**                                              |
-|---------------------------|--------------------------------------------------------------------|----------------------------------------------------------|
-| **Route**                 | Base route for the service controller’s endpoints.                | `api/settings`                                           |
-| **AllowFromExploring**     | Whether the controller’s endpoints should be exposed in API documentation (e.g., Swagger). | `false`                                                  |
-| **Authorize**              | Whether authentication is required. When `true`, authentication is enforced. | `false`                                                  |
-| **OAuth2Options**          | OAuth2 configuration for authentication and authorization.         |                                                          |
-| **- Authority**            | The OAuth2 provider’s authority URL.                               |                                                          |
-| **- ClientId**             | The OAuth2 client ID.                                              |                                                          |
-| **- ClientSecret**         | The OAuth2 client secret.                                          |                                                          |
-| **- SignedOutRedirectUri** | URI to redirect to after sign-out. Default is `settings`.          | `settings`                                               |
-| **- AllowOfflineAccess**   | Whether offline access is allowed.                                 |                                                          |
-| **- IsActive**             | Whether the OAuth2 configuration is active.                        |                                                          |
-
-```csharp
-builder.Services
-    .AddControllers()
-    .AddOpenSettingsController(builder.Configuration, opts =>
-    {
-        opts.Route = "api/settings";
-        opts.AllowFromExploring = true;
-        opts.Authorize = true;
-        opts.OAuth2Options = new OAuth2Options
-        {
-            Authority = "https://localhost:5001",
-            ClientId = "web",
-            ClientSecret = "secret",
-            AllowOfflineAccess = true,
-            IsActive = true
-        };
-    });
-```
-
----
-
-## Looking Up SettingsSpaOptions
-
-### Configuring `app.UseOpenSettingsSpa()`
-
-| **Property**    | **Definition**                                                                                                           | **Default**                                                  |
-|------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **RoutePrefix**  | Prefix used to access the OpenSettings page.                                                                               | `settings`                                                   |
-| **IndexStream**  | Function that returns a `Stream` representing the index HTML file for the OpenSettings SPA.                                | Default embedded `index.html`.                              |
-| **DocumentTitle**| Title of the settings page, used in the HTML `<title>` element and displayed in the browser's title bar.                   | `OpenSettings Spa`                                           |
-
-```csharp
-app.UseOpenSettingsSpa(opts =>
-{
-    opts.RoutePrefix = "settings";
-    opts.IndexStream = () => typeof(SettingsSpaOptions).GetTypeInfo().Assembly
-        .GetManifestResourceStream("OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html");
-    opts.DocumentTitle = "OpenSettings Spa";
-});
-```
 
 ## Built-in Attributes
 
