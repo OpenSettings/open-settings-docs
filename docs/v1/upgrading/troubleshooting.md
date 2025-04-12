@@ -42,7 +42,7 @@ try running the EF command with the `-v` prefix for verbose logs:
 dotnet ef migrations add OpenSettingsDbMigration_Troubleshooting -c OpenSettingsDbContext -o Data/Migrations/OpenSettings/OpenSettingsDb -v
 ```
 
-Search on the web if there is already a solution out there. If not, please [open an issue on GitHub](https://github.com/OpenSettings/open-settings/issues/new) with the following details:
+Search on the web if there is already a solution out there. If not, please [open an issue on GitHub](https://github.com/OpenSettings/open-settings/issues/new/choose) with the following details:
 
 - Exact error message and stack trace (if possible)
 - Version of OpenSettings you're using
