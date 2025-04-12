@@ -5,7 +5,7 @@ title: Introduction
 
 # Introduction
 
-## Why OpenSettings?  
+## ❓ Why OpenSettings?  
 
 When starting a new project, dotnet developers often need to configure application settings, typically using **IConfiguration** and `appsettings.json` or `app.config`.  
 
@@ -121,4 +121,8 @@ OpenSettings **is not a one-day project**—it's a powerful tool that solves **r
 
 It eliminates **boilerplate**, simplifies updates, and **improves maintainability** across multiple services.  
 
-🚀 As the project grows, **OpenSettings can become an even more versatile and efficient settings management tool!** 
+As the project grows, **OpenSettings can become an even more versatile and efficient settings management tool!** 
+
+---
+
+✨ *OpenSettings makes settings management simple and efficient!* 🚀

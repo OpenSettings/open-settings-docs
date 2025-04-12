@@ -1,6 +1,12 @@
 # Getting Started
 
-To integrate OpenSettings into your project, you'll first need to install the required libraries.
+## 📌 Introduction  
+
+Before you begin, here’s a quick preview of what the OpenSettings looks like after completing the steps below:
+
+![Demo](assets/gifs/demo.gif)
+
+Once you’re ready, follow these steps to integrate OpenSettings into your project:
 
 ### 1️⃣ Install OpenSettings
 ```sh
@@ -20,7 +26,7 @@ If you're using a different database, replace this package with the appropriate 
 
 ## 🏗 Configuring OpenSettings
 
-OpenSettings can run in two modes: **Provider** or **Consumer**. Choose the appropriate configuration based on your application’s role. For more information check out the [Consumer vs Provider](docs/introduction.md#consumer-vs-provider-what-do-they-mean)
+OpenSettings can run in two modes: **Provider** or **Consumer**. Choose the appropriate configuration based on your application’s role. For more information check out the [Consumer vs Provider](docs/introduction.md#consumer-vs-provider-what-do-they-mean) comparison.
 
 ### 🔹 Provider Configuration
 
@@ -106,8 +112,6 @@ public class MyFirstSettings : ISettings
 ```
 
 Run the application and navigate to ".../settings" to view and manage your settings.
-
-![Demo](assets/gifs/demo.gif)
 
 > [!WARNING]
 > If you later change the class name or namespace, the settings may no longer match existing data unless you specify the new name/namespace explicitly.

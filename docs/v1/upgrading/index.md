@@ -1,8 +1,12 @@
 # 🚀 Upgrading OpenSettings
 
+## 📌 Introduction  
+
 Welcome to the **upgrading** page for OpenSettings!
 
 To ensure a smooth transition between versions, please follow the version-specific pages listed here. Each page outlines the breaking changes, new features, and migration steps.
+
+---
 
 ## 📌 How to Upgrade
 
@@ -22,6 +26,16 @@ To ensure a smooth transition between versions, please follow the version-specif
 
 ---
 
-### 📞 **Contact Us**
+## ❓ Did you encounter an issue while upgrading?
+
+Check out our [Troubleshooting page](troubleshooting.md) for common issues and solutions.
+
+---
+
+## 📞 **Contact Us**
 
 For any inquiries, please feel free to reach out at [contact@opensettings.net](mailto:contact@opensettings.net).
+
+---
+
+✨ *OpenSettings makes settings management simple and efficient!* 🚀

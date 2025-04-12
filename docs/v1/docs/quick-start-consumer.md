@@ -1,6 +1,6 @@
 # Setting Up The Consumer
 
-## Installation and Setup
+## 📥 Installation and Setup
 
 To get started with OpenSettings as a consumer, you must first complete the [Setting Up The Provider](quick-start-provider.md) quick start. The consumer relies on a provider to function correctly. Once you've completed, follow this guide to set up the consumer.
 

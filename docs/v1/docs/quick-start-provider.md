@@ -1,6 +1,6 @@
 # Setting Up The Provider
 
-## Installation and Setup
+## 📥 Installation and Setup
 
 To get started with OpenSettings as a provider, you'll first need to create a new web project and install the required libraries.
 

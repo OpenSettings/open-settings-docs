@@ -1,6 +1,6 @@
 # Persistent Storage
 
-## Installation and Setup
+## 📥 Installation and Setup
 
 To start, you must first complete the [Setting Up The Provider](quick-start-provider.md) quick start. Once you've completed it, you can proceed.
 
@@ -15,6 +15,8 @@ For this quick start, we'll use **SQL Server**, but the steps are similar for ot
 ```sh
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ```
+
+The next step is to register it in your application's DbContext configuration. This tells Entity Framework to use SQL Server when connecting to your database.
 
 ```csharp
 var migrationsAssembly = typeof(Program).Assembly.GetName().Name;
@@ -103,14 +105,14 @@ static OpenSettingsConfiguration GetOpenSettingsConfiguration(IConfiguration con
 {
     var migrationsAssembly = typeof(Program).Assembly.GetName().Name;
 
-    var settingsServiceConfiguration = configuration.GetSection(nameof(OpenSettingsConfiguration)).Get<OpenSettingsConfiguration>();
+    var openSettingsServiceConfiguration = configuration.GetSection(nameof(OpenSettingsConfiguration)).Get<OpenSettingsConfiguration>();
 
-    settingsServiceConfiguration.Provider.Orm.ConfigureDbContext = optsBuilder =>
+    openSettingsServiceConfiguration.Provider.Orm.ConfigureDbContext = optsBuilder =>
     {
         optsBuilder.UseSqlServer(configuration["SqlServerConnectionString"], opts => opts.MigrationsAssembly(migrationsAssembly));
     };
 
-    return settingsServiceConfiguration;
+    return openSettingsServiceConfiguration;
 }
 ```
 
@@ -134,7 +136,7 @@ cd open-settings-samples/versions/v1/quick-starts/3-quick-start-persistent-stora
 Before running the project, update your database configuration:
 
 - Modify **`SqlServerConnectionString`** in `appsettings.json` to match your database.
-- If you're using a different database provider (e.g., PostgreSQL, MySQL), install the required package, update the database configuration in `settingsServiceConfiguration.Provider.Orm.ConfigureDbContext`, **delete the `Data` folder**, and rerun migrations (see [Generate Database Migrations](#3-generate-database-migrations)).
+- If you're using a different database provider (e.g., PostgreSQL, MySQL), install the required package, update the database configuration in `settingsServiceProviderConfiguration.Provider.Orm.ConfigureDbContext`, **delete the `Data` folder**, and re-run migrations (see [Generate Database Migrations](#3-generate-database-migrations)).
 
 ### ▶️ Run the Project  
 

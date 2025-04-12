@@ -142,10 +142,10 @@ When testing the development server, you may need to update the `index.html` fil
 
 Make sure to update the route to your dev server's listening port (OpenSettings.Api's port), which you can find in `launchSettings.json`.
 
-In the file `open-settings-spa/src/index.html`, update the controllerOptions & oAuth2 as shown below:
+In the file `open-settings-spa/src/index.html`, update the controllerConfiguration & oAuth2 as shown below:
 
 ```javascript
-controllerOptions = {
+controllerConfiguration = {
   route: 'http://localhost:5288/api/settings',
   ...
 };

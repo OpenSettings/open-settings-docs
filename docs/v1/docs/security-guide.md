@@ -1,8 +1,12 @@
 # Securing OpenSettings
 
+## 📌 Introduction  
+
 By default, OpenSettings does **not** enforce authorization. To secure the application, you must explicitly protect controller access.  
 
 OpenSettings provides **built-in Basic Authentication**, and API communication **defaults to Basic Authentication**.
+
+---
 
 ## 🔹 Enabling Authorization  
 
