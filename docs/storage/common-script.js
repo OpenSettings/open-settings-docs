@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
             textContent: 'open-settings-docker',
             name: 'open-settings-docker',
             openInNewTab: true
+        },
+        {
+            textContent: 'open-settings-samples',
+            name: 'open-settings-samples',
+            openInNewTab: true
         }
     ]
 

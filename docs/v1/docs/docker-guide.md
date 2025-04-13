@@ -1,4 +1,4 @@
-# Docker Guide  
+# Docker Guide 🐳
 
 ## 📌 Introduction  
 This guide explains how to configure OpenSettings for Docker.  

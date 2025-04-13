@@ -124,6 +124,7 @@ That's it! OpenSettings will be up and running in seconds. 🎉
 
 ## ✅ What's Next?
 
+- **Set up your provider application with docker:** [Setting Up The Provider With Docker](quick-start-provider-docker.md)
 - **Set up your first consumer application:** [Setting Up The Consumer](quick-start-consumer.md)
 - **Explore the configuration:** [Configuration Guide](configuration-guide.md)
 - **Need persistent storage?** Check out the [Persistent Storage](quick-start-persistent-storage.md) options (SQL Server, PostgreSQL, etc.)
