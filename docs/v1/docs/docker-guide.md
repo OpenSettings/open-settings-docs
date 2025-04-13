@@ -19,40 +19,40 @@ By default, the OpenSettings Docker setup uses **Sqlite** storage.
 
 ### 📌 Environment Variables  
 
-| Environment Variable                                             | Default Value                            | Description                                                                                |
-|------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|
-| `OPENSETTINGS_Configuration__DbProviderName`                     | `Sqlite`                                 | Available values: `MySql`, `Oracle`, `PostgreSql`, `Sqlite`, `SqlServer`, `InMemory`.      |
-| `OPENSETTINGS_Configuration__ConnectionString`                   | `""`                                     | Database connection string.                                                                |
-| `OPENSETTINGS_Configuration__LicenseKey`                         | `YOUR-LICENSE-KEY`                       | If not specified default license is **Community Edition**.                                 |
-| `OPENSETTINGS_Configuration__InstanceName`                       | `provider-1`                             | Used to distinguish between different instances (e.g., `Instance-1`, `Instance-2`).        |
-| `OPENSETTINGS_Configuration__IdentifierName`                     | `""`                                     | Used to distinguish between different environments (e.g., `Production`, `Development`).    |
-| `OPENSETTINGS_Configuration__Client__Id`                         | `adbdf741-bb4d-4673-b2a8-23e677fcf454`   | Unique ID of the client.                                                                   |
-| `OPENSETTINGS_Configuration__Client__Secret`                     | `4294a5e3-0839-4358-a03d-1ac52585ae5f`   | Secret of the client.                                                                      |
-| `OPENSETTINGS_Configuration__Provider__Orm__EnablePooling`       | `true`                                   | Whether DbContext pooling is enabled.                                                      |
-| `OPENSETTINGS_Configuration__Provider__Orm__PoolSize`            | `null`                                   | Pool size when DbContext pooling is enabled (default is `128`).                            |
-| `OPENSETTINGS_Configuration__Provider__Orm__Redis__IsActive`     | `false`                                  | Enable Redis for instant updates.                                                          |
-| `OPENSETTINGS_Configuration__Provider__Orm__Redis__Configuration`| `localhost:6379`                         | Redis configuration endpoint.                                                              |
-| `OPENSETTINGS_Configuration__Provider__Orm__Redis__Channel`      | `Settings`                               | Redis channel name used for pub/sub.                                                       |
-| `OPENSETTINGS_Configuration__Provider__CompressionType`          | `5`                                      | Compression type: 0 (None), 1 (Snappy), 2 (Deflate), 3 (Gzip), 4 (Zstd), 5 (Brotli).       |
-| `OPENSETTINGS_Configuration__Provider__CompressionLevel`         | `0`                                      | Compression level: 0 (Optimal), 1 (Fastest), 2 (NoCompression).                            |
-| `OPENSETTINGS_Configuration__Controller__Route`                  | `api/settings`                           | The base route for the service controller's endpoints.                            |
-| `OPENSETTINGS_Configuration__Controller__AllowFromExploring`     | `false`                                  | Specifies whether the open settings controller's endpoints should be exposed in Api docs (e.g., for Swagger or Other Api Explorers.) |
-| `OPENSETTINGS_Configuration__Controller__Authorize`              | `false`                                  | Indicates whether the controller requires authentication for access.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__Authority`       | `null`                                   | The authority URL for the OAuth2 provider.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__ClientId`        | `null`                                   | The client id used to authenticate with the OAuth2 provider.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__ClientSecret`    | `null`                                   | The client secret used to authenticate with the OAuth2 provider.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__SignedOutRedirectUri`| `settings`                           | The URI to redirect to after the user is signed out.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__AllowOfflineAccess`  | `false`                              | Indicates whether offline access is allowed.                            |
-| `OPENSETTINGS_Configuration__Controller__OAuth2__IsActive`        | `false`                                  | Indicates whether the OAuth2 configuration is active.                            |
-| `OPENSETTINGS_Configuration__Spa__RoutePrefix`                   | `0`                                      | Specifies the prefix used to access the open settings Spa page.                            |
-| `OPENSETTINGS_Configuration__Spa__DocumentTitle`                 | `0`                                      | The title of the document for the open settings page.                            |
-| `OPENSETTINGS_Configuration__Spa__IsActive`                      | `true`                                   | Indicates whether the open settings Spa (Single Page Application) is active.                            |
-| `OPENSETTINGS_Configuration__SyncAppDataMaxRetryCount`           | `-1`                                     | -1 = Infinite retries, 0 or any negative (other than -1) = No Retries.                     |
-| `OPENSETTINGS_Configuration__SyncAppDataRetryDelayMilliseconds`  | `1000`                                   | Delay in milliseconds between retry attempts.                                              |
-| `OPENSETTINGS_Configuration__Operation`                          | `1`                                      | Operation mode: 1 (ReadOrInitialize), 2 (Read).                                            |
-| `OPENSETTINGS_Configuration__StoreInSeparateFile`                | `false`                                  | Whether to store settings in a separate file.                                              |
-| `OPENSETTINGS_Configuration__IgnoreOnFileChange`                 | `false`                                  | Whether to ignore changes on the configuration file.                                       |
-| `OPENSETTINGS_Configuration__RegistrationMode`                   | `3`                                      | Registration mode: 1 (Configure), 2 (Singleton), 3 (Both).                                 |
+| Environment Variable                                                  | Default Value                            | Description                                                                                |
+|-----------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|
+| `OPENSETTINGS_Configuration__DbProviderName`                          | `Sqlite`                                 | Available values: `MySql`, `Oracle`, `PostgreSql`, `Sqlite`, `SqlServer`, `InMemory`.      |
+| `OPENSETTINGS_Configuration__ConnectionString`                        | `""`                                     | Database connection string.                                                                |
+| `OPENSETTINGS_Configuration__LicenseKey`                              | `YOUR-LICENSE-KEY`                       | If not specified default license is **Community Edition**.                                 |
+| `OPENSETTINGS_Configuration__InstanceName`                            | `provider-1`                             | Used to distinguish between different instances (e.g., `Instance-1`, `Instance-2`).        |
+| `OPENSETTINGS_Configuration__IdentifierName`                          | `""`                                     | Used to distinguish between different environments (e.g., `Production`, `Development`).    |
+| `OPENSETTINGS_Configuration__Client__Id`                              | `adbdf741-bb4d-4673-b2a8-23e677fcf454`   | Unique ID of the client.                                                                   |
+| `OPENSETTINGS_Configuration__Client__Secret`                          | `4294a5e3-0839-4358-a03d-1ac52585ae5f`   | Secret of the client.                                                                      |
+| `OPENSETTINGS_Configuration__Provider__Orm__EnablePooling`            | `true`                                   | Whether DbContext pooling is enabled.                                                      |
+| `OPENSETTINGS_Configuration__Provider__Orm__PoolSize`                 | `null`                                   | Pool size when DbContext pooling is enabled (default is `128`).                            |
+| `OPENSETTINGS_Configuration__Provider__Orm__Redis__IsActive`          | `false`                                  | Enable Redis for instant updates.                                                          |
+| `OPENSETTINGS_Configuration__Provider__Orm__Redis__Configuration`     | `localhost:6379`                         | Redis configuration endpoint.                                                              |
+| `OPENSETTINGS_Configuration__Provider__Orm__Redis__Channel`           | `Settings`                               | Redis channel name used for pub/sub.                                                       |
+| `OPENSETTINGS_Configuration__Provider__CompressionType`               | `5`                                      | Compression type: 0 (None), 1 (Snappy), 2 (Deflate), 3 (Gzip), 4 (Zstd), 5 (Brotli).       |
+| `OPENSETTINGS_Configuration__Provider__CompressionLevel`              | `0`                                      | Compression level: 0 (Optimal), 1 (Fastest), 2 (NoCompression).                            |
+| `OPENSETTINGS_Configuration__Controller__Route`                       | `api/settings`                           | The base route for the service controller's endpoints.                                     |
+| `OPENSETTINGS_Configuration__Controller__AllowFromExploring`          | `false`                                  | Specifies whether the open settings controller's endpoints should be exposed in Api docs (e.g., for Swagger or Other Api Explorers.) |
+| `OPENSETTINGS_Configuration__Controller__Authorize`                   | `false`                                  | Indicates whether the controller requires authentication for access.                       |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__Authority`           | `null`                                   | The authority URL for the OAuth2 provider.                                                 |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__ClientId`            | `null`                                   | The client id used to authenticate with the OAuth2 provider.                               |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__ClientSecret`        | `null`                                   | The client secret used to authenticate with the OAuth2 provider.                           |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__SignedOutRedirectUri`| `settings`                               | The URI to redirect to after the user is signed out.                                       |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__AllowOfflineAccess`  | `false`                                  | Indicates whether offline access is allowed.                                               |
+| `OPENSETTINGS_Configuration__Controller__OAuth2__IsActive`            | `false`                                  | Indicates whether the OAuth2 configuration is active.                                      |
+| `OPENSETTINGS_Configuration__Spa__RoutePrefix`                        | `settings`                               | Specifies the prefix used to access the open settings Spa page.                            |
+| `OPENSETTINGS_Configuration__Spa__DocumentTitle`                      | `OpenSettings Spa`                       | The title of the document for the open settings page.                                      |
+| `OPENSETTINGS_Configuration__Spa__IsActive`                           | `true`                                   | Indicates whether the open settings Spa (Single Page Application) is active.               |
+| `OPENSETTINGS_Configuration__SyncAppDataMaxRetryCount`                | `-1`                                     | -1 = Infinite retries, 0 or any negative (other than -1) = No Retries.                     |
+| `OPENSETTINGS_Configuration__SyncAppDataRetryDelayMilliseconds`       | `1000`                                   | Delay in milliseconds between retry attempts.                                              |
+| `OPENSETTINGS_Configuration__Operation`                               | `1`                                      | Operation mode: 1 (ReadOrInitialize), 2 (Read).                                            |
+| `OPENSETTINGS_Configuration__StoreInSeparateFile`                     | `false`                                  | Whether to store settings in a separate file.                                              |
+| `OPENSETTINGS_Configuration__IgnoreOnFileChange`                      | `false`                                  | Whether to ignore changes on the configuration file.                                       |
+| `OPENSETTINGS_Configuration__RegistrationMode`                        | `3`                                      | Registration mode: 1 (Configure), 2 (Singleton), 3 (Both).                                 |
 
 ### 📌 YAML Configuration for a Docker setup Example
 
@@ -76,6 +76,18 @@ services:
       - OPENSETTINGS_Configuration__Provider__Orm__Redis__Channel=Settings
       - OPENSETTINGS_Configuration__Provider__CompressionType=5
       - OPENSETTINGS_Configuration__Provider__CompressionLevel=0
+      - OPENSETTINGS_Configuration__Controller__Route=api/settings
+      - OPENSETTINGS_Configuration__Controller__AllowFromExploring=false
+      - OPENSETTINGS_Configuration__Controller__Authorize=false
+      - OPENSETTINGS_Configuration__Controller__OAuth2__Authority=null
+      - OPENSETTINGS_Configuration__Controller__OAuth2__ClientId=null
+      - OPENSETTINGS_Configuration__Controller__OAuth2__ClientSecret=null
+      - OPENSETTINGS_Configuration__Controller__OAuth2__SignedOutRedirectUri=settings
+      - OPENSETTINGS_Configuration__Controller__OAuth2__AllowOfflineAccess=false
+      - OPENSETTINGS_Configuration__Controller__OAuth2__IsActive=false
+      - OPENSETTINGS_Configuration__Spa__RoutePrefix=settings
+      - OPENSETTINGS_Configuration__Spa__DocumentTitle=OpenSettings Spa
+      - OPENSETTINGS_Configuration__Spa__IsActive=true
       - OPENSETTINGS_Configuration__SyncAppDataMaxRetryCount=-1
       - OPENSETTINGS_Configuration__SyncAppDataRetryDelayMilliseconds=1000
       - OPENSETTINGS_Configuration__Operation=1
