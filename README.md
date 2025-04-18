@@ -21,10 +21,11 @@ This repository contains all documentation files in **Markdown (`.md`) format**,
 
 To contribute or run the documentation locally, follow these steps:
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Create Directory and Clone the Repository
 ```sh
+mkdir OpenSettings
 git clone https://github.com/OpenSettings/open-settings-docs.git
-cd open-settings-docs/docs
+cd OpenSettings/open-settings-docs/docs
 ```
 
 ### 2️⃣ Install DocFX  
@@ -33,12 +34,43 @@ If you don’t have **DocFX** installed, run:
 dotnet tool install -g docfx
 ```
 
+> ⚠️ **Warning:** PDF generation may require **Node.js**.  
+You can download it from: [https://nodejs.org/en/download](https://nodejs.org/en/download)
+
+If you don’t need PDF support, you can comment out or remove the following line from `./build.ps1`:
+
+```ps1
+docfx pdf .\v1\docfx.json
+```
+
 ### 3️⃣ Build and Serve Documentation Locally
 ```sh
-docfx build && docfx serve
+./build.ps1
 ```
 
 Open your browser and navigate to **[http://localhost:8080](http://localhost:8080)** to preview the documentation! 🚀
+
+### 4️⃣ (Optional) Generate API Reference Files
+
+To include API documentation:
+
+1. Clone the main OpenSettings repo into the same root folder:
+
+   ```sh
+   git clone https://github.com/OpenSettings/open-settings.git
+   ```
+
+2. Open `build.ps1` in a text editor and uncomment the following line by removing the `#`:
+
+   ```ps1
+   docfx metadata .\v1\docfx.json
+   ```
+
+3. Run the build script again:
+
+   ```sh
+   ./build.ps1
+   ```
 
 ## 💡 License  
 
