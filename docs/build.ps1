@@ -18,4 +18,6 @@ Remove-Item .\..\src\OpenSettings.Docs\wwwroot\* -Force -Recurse
 
 Copy-Item -Path .\_site\* -Destination .\..\src\OpenSettings.Docs\wwwroot\ -Recurse
 
+Copy-Item .\storage\index.html .\_site\
+
 docfx serve .\_site
