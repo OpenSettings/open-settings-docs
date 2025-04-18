@@ -34,8 +34,9 @@ If you don’t have **DocFX** installed, run:
 dotnet tool install -g docfx
 ```
 
-> ⚠️ **Warning:** PDF generation may require **Node.js**.  
-You can download it from: [https://nodejs.org/en/download](https://nodejs.org/en/download)
+> [!WARNING]
+> PDF generation may require **Node.js**.  
+> You can download it from: [https://nodejs.org/en/download](https://nodejs.org/en/download)  
 
 If you don’t need PDF support, you can comment out or remove the following line from `./build.ps1`:
 
