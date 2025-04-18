@@ -63,7 +63,13 @@ namespace OpenSettings.Docs
 
             if (!requestInfo.HasMajorVersion)
             {
-                httpContext.Response.Redirect($"/{docSet.MajorVersion}{requestInfo.RequestPath}");
+                httpContext.Response.Redirect($"/{docSet.MajorVersion}{requestInfo.RequestPath.TrimEnd('/')}");
+                return;
+            }
+
+            if (requestInfo.RequestPath.EndsWith('/'))
+            {
+                httpContext.Response.Redirect(requestInfo.RequestPath.TrimEnd(('/')));
                 return;
             }
 
