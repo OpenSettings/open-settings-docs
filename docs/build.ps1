@@ -4,6 +4,8 @@ Remove-Item .\_site\* -Force -Recurse
 
 docfx build .\v1\docfx.json
 
+docfx pdf .\v1\docfx.json
+
 Remove-Item .\_site\v1\public\*.map -Force
 
 Copy-Item .\storage\common-script.js .\_site\
