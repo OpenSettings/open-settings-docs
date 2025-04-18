@@ -7,7 +7,7 @@ title: Page Not Found
 
 We're sorry, but the page you're looking for doesn't exist or has been moved.
 
-<br />
+%(Suggestion)
 
 ## 🔍 What can you do?
 

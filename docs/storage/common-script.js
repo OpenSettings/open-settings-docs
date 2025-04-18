@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var dropdownMenu = document.createElement('ul');
         dropdownMenu.className = 'dropdown-menu dropdown-menu-end';
 
-        githubRepos.forEach(function (repo){
+        githubRepos.forEach(function (repo) {
             var menuItem = document.createElement('li');
             var menuLink = document.createElement('a');
-            
+
             menuLink.className = 'dropdown-item';
             menuLink.href = `https://github.com/OpenSettings/${repo.name}`;
             menuLink.textContent = repo.textContent;
@@ -132,21 +132,52 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.appendChild(versionDropdown);
     }
 
-    var interval = setInterval(function () {
+    const iconsReady = () => {
         if (document.querySelector('.icons')) {
-            clearInterval(interval);
             addGithubDropdown();
             addVersionDropdown();
+            return true;
         }
-    }, 500);
+        return false;
+    };
 
-    var observer = new MutationObserver(function () {
-        if (document.querySelector('.icons')) {
-            observer.disconnect();
-            addGithubDropdown();
-            addVersionDropdown();
-        }
-    });
+    if (!iconsReady()) {
+        const observer = new MutationObserver(() => {
+            if (iconsReady()) observer.disconnect();
+        });
 
-    observer.observe(document.body, { childList: true, subtree: true });
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
 });
+
+(function () {
+    const url = new URL(window.location.href);
+    const queryName = "originalPath";
+    const originalPath = url.searchParams.get(queryName);
+
+    if (!originalPath) {
+        return;
+    }
+
+    const warnDiv = document.createElement("div");
+    warnDiv.style.display = "unset";
+    warnDiv.className = "WARNING alert alert-warning";
+    warnDiv.innerHTML = `
+      <button style="float: right; font-size: 1.5em; border: none; background: transparent; cursor: pointer;" aria-label="Close warning">&times;</button>
+      <h5>Warning</h5>
+      <p><strong>The requested path '<code>${originalPath}</code>' was not found.</strong>
+      You have been redirected to a proximate page.</p>
+    `;
+
+    warnDiv.querySelector("button").addEventListener("click", () => {
+        warnDiv.remove();
+      });
+
+    const contentDiv = document.querySelector(".content");
+    if (contentDiv) {
+        contentDiv.prepend(warnDiv);
+    }
+
+    url.searchParams.delete(queryName);
+    window.history.replaceState({}, document.title, url.pathname + url.search);
+})();
