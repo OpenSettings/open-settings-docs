@@ -72,6 +72,38 @@ To include API documentation:
    ./build.ps1
    ```
 
+### 5️⃣ (Optional) Serve the Docs via .NET App
+
+When you run the `open-settings-docs/docs/build.ps1` script, it automatically generates the documentation and copies the `open-settings-docs/docs/_site` folder into:
+
+```
+open-settings-docs/src/OpenSettings.Docs/wwwroot/
+```
+
+To host it via a .NET application:
+
+1. Make sure you have the .NET SDK installed.
+2. Navigate to the app directory:
+
+   ```sh
+   open-settings-docs/src/OpenSettings.Docs
+   ```
+
+3. Run the app:
+
+   ```sh
+   dotnet run
+   ```
+
+This will serve the generated documentation using the built-in .NET Core web server.
+
+```bash
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7186
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5184
+```
+
 ## 💡 License  
 
 Licensed under the [OpenSettings License](https://opensettings.net/license).
