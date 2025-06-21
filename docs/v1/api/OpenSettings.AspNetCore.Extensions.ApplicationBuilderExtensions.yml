@@ -1,35 +1,37 @@
 ### YamlMime:ManagedReference
 items:
-- uid: OpenSettings.LicenseProvider
-  commentId: T:OpenSettings.LicenseProvider
-  id: LicenseProvider
-  parent: OpenSettings
+- uid: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions
+  commentId: T:OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions
+  id: ApplicationBuilderExtensions
+  parent: OpenSettings.AspNetCore.Extensions
   children:
-  - OpenSettings.LicenseProvider.CurrentLicense
-  - OpenSettings.LicenseProvider.Instance
+  - OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
   langs:
   - csharp
   - vb
-  name: LicenseProvider
-  nameWithType: LicenseProvider
-  fullName: OpenSettings.LicenseProvider
+  name: ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+  fullName: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions
   type: Class
   source:
     remote:
-      path: src/OpenSettings/LicenseProvider.cs
+      path: src/OpenSettings.AspNetCore/Extensions/ApplicationBuilderExtensions.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: LicenseProvider
-    path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
+    id: ApplicationBuilderExtensions
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Extensions/ApplicationBuilderExtensions.cs
     startLine: 21
   assemblies:
-  - OpenSettings
-  namespace: OpenSettings
-  summary: Provides functionality to initialize and manage the current license for the application.
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Extensions
+  summary: >-
+    Provides extension methods for configuring OpenSettings within an ASP.NET Core application pipeline.
+
+    This class contains methods to update instance status and ensure proper integration with OpenSettings.
   example: []
   syntax:
-    content: public class LicenseProvider
-    content.vb: Public Class LicenseProvider
+    content: public static class ApplicationBuilderExtensions
+    content.vb: Public Module ApplicationBuilderExtensions
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,78 +42,82 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.LicenseProvider.Instance
-  commentId: F:OpenSettings.LicenseProvider.Instance
-  id: Instance
-  parent: OpenSettings.LicenseProvider
+- uid: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions
   langs:
   - csharp
   - vb
-  name: Instance
-  nameWithType: LicenseProvider.Instance
-  fullName: OpenSettings.LicenseProvider.Instance
-  type: Field
+  name: UseOpenSettings(IApplicationBuilder)
+  nameWithType: ApplicationBuilderExtensions.UseOpenSettings(IApplicationBuilder)
+  fullName: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
   source:
     remote:
-      path: src/OpenSettings/LicenseProvider.cs
+      path: src/OpenSettings.AspNetCore/Extensions/ApplicationBuilderExtensions.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Instance
-    path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
-    startLine: 26
+    id: UseOpenSettings
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Extensions/ApplicationBuilderExtensions.cs
+    startLine: 31
   assemblies:
-  - OpenSettings
-  namespace: OpenSettings
-  summary: Singleton instance of the <xref href="OpenSettings.LicenseProvider" data-throw-if-not-resolved="false"></xref> class.
-  example: []
-  syntax:
-    content: public static readonly LicenseProvider Instance
-    return:
-      type: OpenSettings.LicenseProvider
-    content.vb: Public Shared ReadOnly Instance As LicenseProvider
-- uid: OpenSettings.LicenseProvider.CurrentLicense
-  commentId: P:OpenSettings.LicenseProvider.CurrentLicense
-  id: CurrentLicense
-  parent: OpenSettings.LicenseProvider
-  langs:
-  - csharp
-  - vb
-  name: CurrentLicense
-  nameWithType: LicenseProvider.CurrentLicense
-  fullName: OpenSettings.LicenseProvider.CurrentLicense
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/LicenseProvider.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: CurrentLicense
-    path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
-    startLine: 38
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Extensions
   summary: >-
-    Gets the currently active license, which is assigned internally during a call to 
+    Updates instance status when the application is starting or stopping.  
 
-    <xref href="OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder%2cOpenSettings.Configurations.OpenSettingsConfiguration%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref> or
+    <p>This includes updating the instance's activity status, urls, and other relevant data.</p>
 
-    <xref href="OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder%2cOpenSettings.Configurations.OpenSettingsConfiguration%2cSystem.Func%7bMicrosoft.Extensions.Configuration.IConfiguration%2cSystem.Threading.Tasks.Task%7d%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref>.
+    <p>Throws an exception if <xref href="OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder%2cOpenSettings.Configurations.OpenSettingsConfiguration%2cSystem.Func%7bMicrosoft.Extensions.Configuration.IConfiguration%2cSystem.Threading.Tasks.Task%7d%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref> and <xref href="OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection%2cOpenSettings.Configurations.OpenSettingsConfiguration%2cOpenSettings.Models.ProviderInfo)" data-throw-if-not-resolved="false"></xref> have not been configured yet.</p>
   example: []
   syntax:
-    content: public License CurrentLicense { get; }
-    parameters: []
+    content: public static IApplicationBuilder UseOpenSettings(this IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+      description: The <xref href="Microsoft.AspNetCore.Builder.IApplicationBuilder" data-throw-if-not-resolved="false"></xref> instance used to configure the application's request pipeline.
     return:
-      type: OpenSettings.Models.License
-    content.vb: Public Property CurrentLicense As License
-  overload: OpenSettings.LicenseProvider.CurrentLicense*
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+      description: The modified <xref href="Microsoft.AspNetCore.Builder.IApplicationBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function UseOpenSettings(app As IApplicationBuilder) As IApplicationBuilder
+  overload: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown if settings have not been properly configured.
 references:
-- uid: OpenSettings
-  commentId: N:OpenSettings
+- uid: OpenSettings.AspNetCore.Extensions
+  commentId: N:OpenSettings.AspNetCore.Extensions
   href: OpenSettings.html
-  name: OpenSettings
-  nameWithType: OpenSettings
-  fullName: OpenSettings
+  name: OpenSettings.AspNetCore.Extensions
+  nameWithType: OpenSettings.AspNetCore.Extensions
+  fullName: OpenSettings.AspNetCore.Extensions
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Extensions
+    name: Extensions
+    href: OpenSettings.AspNetCore.Extensions.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Extensions
+    name: Extensions
+    href: OpenSettings.AspNetCore.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -349,73 +355,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.LicenseProvider
-  commentId: T:OpenSettings.LicenseProvider
-  parent: OpenSettings
-  href: OpenSettings.LicenseProvider.html
-  name: LicenseProvider
-  nameWithType: LicenseProvider
-  fullName: OpenSettings.LicenseProvider
-- uid: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
-  commentId: M:OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
-  isExternal: true
-  href: OpenSettings.Extensions.HostBuilderExtensions.html#OpenSettings_Extensions_HostBuilderExtensions_UseOpenSettingsAsync_Microsoft_Extensions_Hosting_IHostBuilder_OpenSettings_Configurations_OpenSettingsConfiguration_System_Type___
-  name: UseOpenSettingsAsync(IHostBuilder, OpenSettingsConfiguration, params Type[])
-  nameWithType: HostBuilderExtensions.UseOpenSettingsAsync(IHostBuilder, OpenSettingsConfiguration, params Type[])
-  fullName: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder, OpenSettings.Configurations.OpenSettingsConfiguration, params System.Type[])
-  nameWithType.vb: HostBuilderExtensions.UseOpenSettingsAsync(IHostBuilder, OpenSettingsConfiguration, ParamArray Type())
-  fullName.vb: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder, OpenSettings.Configurations.OpenSettingsConfiguration, ParamArray System.Type())
-  name.vb: UseOpenSettingsAsync(IHostBuilder, OpenSettingsConfiguration, ParamArray Type())
-  spec.csharp:
-  - uid: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
-    name: UseOpenSettingsAsync
-    href: OpenSettings.Extensions.HostBuilderExtensions.html#OpenSettings_Extensions_HostBuilderExtensions_UseOpenSettingsAsync_Microsoft_Extensions_Hosting_IHostBuilder_OpenSettings_Configurations_OpenSettingsConfiguration_System_Type___
-  - name: (
-  - uid: Microsoft.Extensions.Hosting.IHostBuilder
-    name: IHostBuilder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
-  - name: ','
-  - name: " "
-  - uid: OpenSettings.Configurations.OpenSettingsConfiguration
-    name: OpenSettingsConfiguration
-    href: OpenSettings.Configurations.OpenSettingsConfiguration.html
-  - name: ','
-  - name: " "
-  - name: params
-  - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: '['
-  - name: ']'
-  - name: )
-  spec.vb:
-  - uid: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
-    name: UseOpenSettingsAsync
-    href: OpenSettings.Extensions.HostBuilderExtensions.html#OpenSettings_Extensions_HostBuilderExtensions_UseOpenSettingsAsync_Microsoft_Extensions_Hosting_IHostBuilder_OpenSettings_Configurations_OpenSettingsConfiguration_System_Type___
-  - name: (
-  - uid: Microsoft.Extensions.Hosting.IHostBuilder
-    name: IHostBuilder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
-  - name: ','
-  - name: " "
-  - uid: OpenSettings.Configurations.OpenSettingsConfiguration
-    name: OpenSettingsConfiguration
-    href: OpenSettings.Configurations.OpenSettingsConfiguration.html
-  - name: ','
-  - name: " "
-  - name: ParamArray
-  - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: (
-  - name: )
-  - name: )
 - uid: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Func{Microsoft.Extensions.Configuration.IConfiguration,System.Threading.Tasks.Task},System.Type[])
   commentId: M:OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Func{Microsoft.Extensions.Configuration.IConfiguration,System.Threading.Tasks.Task},System.Type[])
   isExternal: true
@@ -514,38 +453,103 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: OpenSettings.LicenseProvider.CurrentLicense*
-  commentId: Overload:OpenSettings.LicenseProvider.CurrentLicense
-  href: OpenSettings.LicenseProvider.html#OpenSettings_LicenseProvider_CurrentLicense
-  name: CurrentLicense
-  nameWithType: LicenseProvider.CurrentLicense
-  fullName: OpenSettings.LicenseProvider.CurrentLicense
-- uid: OpenSettings.Models.License
-  commentId: T:OpenSettings.Models.License
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.License.html
-  name: License
-  nameWithType: License
-  fullName: OpenSettings.Models.License
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
+- uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: AddOpenSettings(IServiceCollection, OpenSettingsConfiguration, ProviderInfo)
+  nameWithType: ServiceCollectionExtensions.AddOpenSettings(IServiceCollection, OpenSettingsConfiguration, ProviderInfo)
+  fullName: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
   spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
+  - uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+    name: AddOpenSettings
+  - name: (
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Configurations.OpenSettingsConfiguration
+    name: OpenSettingsConfiguration
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Models.ProviderInfo
+    name: ProviderInfo
+  - name: )
   spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
+  - uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+    name: AddOpenSettings
+  - name: (
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Configurations.OpenSettingsConfiguration
+    name: OpenSettingsConfiguration
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Models.ProviderInfo
+    name: ProviderInfo
+  - name: )
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings*
+  commentId: Overload:OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings
+  href: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.html#OpenSettings_AspNetCore_Extensions_ApplicationBuilderExtensions_UseOpenSettings_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  name: UseOpenSettings
+  nameWithType: ApplicationBuilderExtensions.UseOpenSettings
+  fullName: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions.UseOpenSettings
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder

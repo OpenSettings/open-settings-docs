@@ -32,7 +32,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppGroupsRestService
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -69,7 +69,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -101,21 +101,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetPaginatedGroupsAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetPaginatedGroupsAsync(GetPaginatedInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetPaginatedGroupsAsync(GetPaginatedInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetPaginatedInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetPaginatedGroupsAsync(input As GetPaginatedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetPaginatedGroupsAsync(input As GetPaginatedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.GetPaginatedGroupsAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.GetPaginatedGroupsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
@@ -137,19 +137,19 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteUnmappedGroupsAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> DeleteUnmappedGroupsAsync(CancellationToken cancellationToken = default)
+    content: public Task<IResponse> DeleteUnmappedGroupsAsync(CancellationToken cancellationToken = default)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function DeleteUnmappedGroupsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function DeleteUnmappedGroupsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.DeleteUnmappedGroupsAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.DeleteUnmappedGroupsAsync(System.Threading.CancellationToken)
@@ -171,21 +171,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupsAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupsAsync(GetGroupsInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupsAsync(GetGroupsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupsAsync(input As GetGroupsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupsAsync(input As GetGroupsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.GetGroupsAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupsAsync(OpenSettings.Models.Inputs.GetGroupsInput,System.Threading.CancellationToken)
@@ -207,21 +207,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreateGroupAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 92
+    startLine: 93
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> CreateGroupAsync(CreateGroupInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> CreateGroupAsync(CreateGroupInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.CreateGroupInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function CreateGroupAsync(input As CreateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function CreateGroupAsync(input As CreateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.CreateGroupAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.CreateGroupAsync(OpenSettings.Models.Inputs.CreateGroupInput,System.Threading.CancellationToken)
@@ -243,21 +243,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupByIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupByIdAsync(GetGroupInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupByIdAsync(GetGroupInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupByIdAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupByIdAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.GetGroupByIdAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupByIdAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
@@ -279,21 +279,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupBySlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupBySlugAsync(GetGroupInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupBySlugAsync(GetGroupInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupBySlugAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupBySlugAsync(input As GetGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.GetGroupBySlugAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.GetGroupBySlugAsync(OpenSettings.Models.Inputs.GetGroupInput,System.Threading.CancellationToken)
@@ -315,21 +315,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteGroupAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 134
+    startLine: 135
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> DeleteGroupAsync(DeleteGroupInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> DeleteGroupAsync(DeleteGroupInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteGroupInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function DeleteGroupAsync(input As DeleteGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function DeleteGroupAsync(input As DeleteGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.DeleteGroupAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.DeleteGroupAsync(OpenSettings.Models.Inputs.DeleteGroupInput,System.Threading.CancellationToken)
@@ -351,21 +351,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateGroupSortOrderAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 146
+    startLine: 147
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> UpdateGroupSortOrderAsync(UpdateGroupSortOrderInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> UpdateGroupSortOrderAsync(UpdateGroupSortOrderInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateGroupSortOrderInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function UpdateGroupSortOrderAsync(input As UpdateGroupSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function UpdateGroupSortOrderAsync(input As UpdateGroupSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.UpdateGroupSortOrderAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupSortOrderAsync(OpenSettings.Models.Inputs.UpdateGroupSortOrderInput,System.Threading.CancellationToken)
@@ -387,21 +387,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DragGroupAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 163
+    startLine: 164
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> DragGroupAsync(DragItemSortOrderInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> DragGroupAsync(DragItemSortOrderInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DragItemSortOrderInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function DragGroupAsync(input As DragItemSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function DragGroupAsync(input As DragItemSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.DragGroupAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.DragGroupAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
@@ -423,21 +423,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateGroupAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 175
+    startLine: 176
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> UpdateGroupAsync(UpdateGroupInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> UpdateGroupAsync(UpdateGroupInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateGroupInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function UpdateGroupAsync(input As UpdateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function UpdateGroupAsync(input As UpdateGroupInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.UpdateGroupAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.UpdateGroupAsync(OpenSettings.Models.Inputs.UpdateGroupInput,System.Threading.CancellationToken)
@@ -459,13 +459,13 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetOrCreateAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 196
+    startLine: 197
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<GetOrCreateResponse>> GetOrCreateAsync(string name, SetSortOrderPosition setSortOrderPosition, Guid? createdById, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<GetOrCreateResponse>> GetOrCreateAsync(string name, SetSortOrderPosition setSortOrderPosition, Guid? createdById, CancellationToken cancellationToken = default)
     parameters:
     - id: name
       type: System.String
@@ -476,8 +476,8 @@ items:
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
-    content.vb: Public Function GetOrCreateAsync(name As String, setSortOrderPosition As SetSortOrderPosition, createdById As Guid?, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetOrCreateResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+    content.vb: Public Function GetOrCreateAsync(name As String, setSortOrderPosition As SetSortOrderPosition, createdById As Guid?, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of GetOrCreateResponse))
   overload: OpenSettings.Services.Rest.AppGroupsRestService.GetOrCreateAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
@@ -502,16 +502,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReorderAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppGroupsRestService.cs
-    startLine: 201
+    startLine: 202
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> ReorderAsync()
+    content: public Task<IResponse> ReorderAsync()
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function ReorderAsync() As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function ReorderAsync() As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppGroupsRestService.ReorderAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppGroupsService.ReorderAsync
@@ -954,25 +954,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -983,8 +983,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs
@@ -1655,25 +1655,25 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: '?'
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetOrCreateResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<GetOrCreateResponse>>
-  nameWithType: Task<IJsonResponse<GetOrCreateResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetOrCreateResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetOrCreateResponse))
-  name.vb: Task(Of IJsonResponse(Of GetOrCreateResponse))
+  name: Task<IResponse<GetOrCreateResponse>>
+  nameWithType: Task<IResponse<GetOrCreateResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.GetOrCreateResponse>>
+  nameWithType.vb: Task(Of IResponse(Of GetOrCreateResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.GetOrCreateResponse))
+  name.vb: Task(Of IResponse(Of GetOrCreateResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.GetOrCreateResponse
@@ -1689,8 +1689,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of

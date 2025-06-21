@@ -58,15 +58,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetNotificationsAsync(GetNotificationsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetNotificationsAsync(GetNotificationsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetNotificationsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetNotificationsAsync(input As GetNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetNotificationsAsync(input As GetNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.GetNotificationsAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync(OpenSettings.Models.Inputs.CreateNotificationInput,System.Threading.CancellationToken)
@@ -91,15 +91,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> CreateNotificationAsync(CreateNotificationInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> CreateNotificationAsync(CreateNotificationInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.CreateNotificationInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function CreateNotificationAsync(input As CreateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function CreateNotificationAsync(input As CreateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.CreateNotificationAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync(OpenSettings.Models.Inputs.UpdateNotificationInput,System.Threading.CancellationToken)
@@ -124,15 +124,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> UpdateNotificationAsync(UpdateNotificationInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> UpdateNotificationAsync(UpdateNotificationInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateNotificationInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function UpdateNotificationAsync(input As UpdateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function UpdateNotificationAsync(input As UpdateNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.UpdateNotificationAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync(OpenSettings.Models.Inputs.DeleteNotificationInput,System.Threading.CancellationToken)
@@ -157,15 +157,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> DeleteNotificationAsync(DeleteNotificationInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> DeleteNotificationAsync(DeleteNotificationInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteNotificationInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function DeleteNotificationAsync(input As DeleteNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function DeleteNotificationAsync(input As DeleteNotificationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.DeleteNotificationAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync(OpenSettings.Models.Inputs.GetUserNotificationsInput,System.Threading.CancellationToken)
@@ -190,15 +190,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetUserNotificationsAsync(GetUserNotificationsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetUserNotificationsAsync(GetUserNotificationsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetUserNotificationsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetUserNotificationsAsync(input As GetUserNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetUserNotificationsAsync(input As GetUserNotificationsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.GetUserNotificationsAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync(OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput,System.Threading.CancellationToken)
@@ -223,15 +223,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> MarkNotificationsAsOpenedAsync(MarkNotificationsAsOpenedInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function MarkNotificationsAsOpenedAsync(input As MarkNotificationsAsOpenedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function MarkNotificationsAsOpenedAsync(input As MarkNotificationsAsOpenedInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationsAsOpenedAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
@@ -256,15 +256,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> MarkNotificationAsViewedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> MarkNotificationAsViewedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.MarkNotificationAsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function MarkNotificationAsViewedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function MarkNotificationAsViewedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsViewedAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync(OpenSettings.Models.Inputs.MarkNotificationAsInput,System.Threading.CancellationToken)
@@ -289,15 +289,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> MarkNotificationAsDismissedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> MarkNotificationAsDismissedAsync(MarkNotificationAsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.MarkNotificationAsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function MarkNotificationAsDismissedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function MarkNotificationAsDismissedAsync(input As MarkNotificationAsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.MarkNotificationAsDismissedAsync*
 - uid: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync(OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput,System.Threading.CancellationToken)
@@ -322,15 +322,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> DispatchNotificationsToUsersAsync(DispatchNotificationsToUsersInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function DispatchNotificationsToUsersAsync(input As DispatchNotificationsToUsersInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function DispatchNotificationsToUsersAsync(input As DispatchNotificationsToUsersInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.INotificationsService.DispatchNotificationsToUsersAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -384,25 +384,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -413,8 +413,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs

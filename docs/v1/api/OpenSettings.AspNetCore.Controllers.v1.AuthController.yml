@@ -5,7 +5,7 @@ items:
   id: AuthController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
+  - OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
   - OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
   - OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(System.String,System.String,System.String)
   - OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(System.String,System.String)
@@ -26,7 +26,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AuthController
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -219,16 +219,16 @@ items:
     arguments:
     - type: System.String
       value: v1/auth
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
-  id: '#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
+  id: '#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)'
   parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
   langs:
   - csharp
   - vb
   name: AuthController(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
   nameWithType: AuthController.AuthController(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
   type: Constructor
   source:
     remote:
@@ -237,7 +237,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -251,13 +251,13 @@ items:
     - id: providerInfo
       type: OpenSettings.Models.ProviderInfo
     - id: tokenService
-      type: OpenSettings.AspNetCore.IOpenSettingsTokenService
+      type: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
     - id: httpClientFactory
       type: System.Net.Http.IHttpClientFactory
     content.vb: Public Sub New(openSettingsMemoryCache As OpenSettingsMemoryCache, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo, tokenService As IOpenSettingsTokenService, httpClientFactory As IHttpClientFactory)
   overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor*
   nameWithType.vb: AuthController.New(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.New(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.New(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
   name.vb: New(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
 - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
@@ -277,7 +277,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Authenticated
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -330,7 +330,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: WhoAmI
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 82
+    startLine: 84
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -382,7 +382,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReturnTo
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 146
+    startLine: 148
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -451,7 +451,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Login
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 158
+    startLine: 160
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -520,7 +520,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Logout
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 242
+    startLine: 244
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -583,7 +583,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RefreshToken
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 292
+    startLine: 294
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -9252,7 +9252,7 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController__ctor_OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_OpenSettings_AspNetCore_IOpenSettingsTokenService_System_Net_Http_IHttpClientFactory_
+  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController__ctor_OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_OpenSettings_AspNetCore_Services_Interfaces_IOpenSettingsTokenService_System_Net_Http_IHttpClientFactory_
   name: AuthController
   nameWithType: AuthController.AuthController
   fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController
@@ -9280,13 +9280,13 @@ references:
   name: ProviderInfo
   nameWithType: ProviderInfo
   fullName: OpenSettings.Models.ProviderInfo
-- uid: OpenSettings.AspNetCore.IOpenSettingsTokenService
-  commentId: T:OpenSettings.AspNetCore.IOpenSettingsTokenService
-  parent: OpenSettings.AspNetCore
-  href: OpenSettings.AspNetCore.IOpenSettingsTokenService.html
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  commentId: T:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  parent: OpenSettings.AspNetCore.Services.Interfaces
+  href: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.html
   name: IOpenSettingsTokenService
   nameWithType: IOpenSettingsTokenService
-  fullName: OpenSettings.AspNetCore.IOpenSettingsTokenService
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
 - uid: System.Net.Http.IHttpClientFactory
   commentId: T:System.Net.Http.IHttpClientFactory
   parent: System.Net.Http
@@ -9369,12 +9369,12 @@ references:
   - uid: OpenSettings.Models
     name: Models
     href: OpenSettings.Models.html
-- uid: OpenSettings.AspNetCore
-  commentId: N:OpenSettings.AspNetCore
+- uid: OpenSettings.AspNetCore.Services.Interfaces
+  commentId: N:OpenSettings.AspNetCore.Services.Interfaces
   href: OpenSettings.html
-  name: OpenSettings.AspNetCore
-  nameWithType: OpenSettings.AspNetCore
-  fullName: OpenSettings.AspNetCore
+  name: OpenSettings.AspNetCore.Services.Interfaces
+  nameWithType: OpenSettings.AspNetCore.Services.Interfaces
+  fullName: OpenSettings.AspNetCore.Services.Interfaces
   spec.csharp:
   - uid: OpenSettings
     name: OpenSettings
@@ -9383,6 +9383,14 @@ references:
   - uid: OpenSettings.AspNetCore
     name: AspNetCore
     href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services
+    name: Services
+    href: OpenSettings.AspNetCore.Services.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.AspNetCore.Services.Interfaces.html
   spec.vb:
   - uid: OpenSettings
     name: OpenSettings
@@ -9391,6 +9399,14 @@ references:
   - uid: OpenSettings.AspNetCore
     name: AspNetCore
     href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services
+    name: Services
+    href: OpenSettings.AspNetCore.Services.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.AspNetCore.Services.Interfaces.html
 - uid: System.Net.Http
   commentId: N:System.Net.Http
   isExternal: true

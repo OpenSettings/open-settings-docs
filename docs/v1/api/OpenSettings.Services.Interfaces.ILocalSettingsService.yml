@@ -516,7 +516,7 @@ items:
     If the operation is successful, the retrieved setting is available in the <code>Data</code> field of the response.
   example: []
   syntax:
-    content: Task<IJsonResponse> GetLocalSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, ConfigSource configSource, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetLocalSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, ConfigSource configSource, CancellationToken cancellationToken = default)
     parameters:
     - id: serviceProvider
       type: System.IServiceProvider
@@ -531,12 +531,12 @@ items:
       type: System.Threading.CancellationToken
       description: A token that can be used to cancel the asynchronous operation.
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
       description: >-
         A task representing the asynchronous operation. The result contains a JSON response with the 
 
         retrieved local setting or an error message if the setting is not found.
-    content.vb: Function GetLocalSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, configSource As ConfigSource, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+    content.vb: Function GetLocalSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, configSource As ConfigSource, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -946,25 +946,25 @@ references:
   name: ConfigSource
   nameWithType: ConfigSource
   fullName: OpenSettings.Models.ConfigSource
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -975,8 +975,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models

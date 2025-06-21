@@ -24,7 +24,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicensesRestService
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -94,14 +94,14 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetPaginatedLicensesAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   summary: Retrieves a paginated list of licenses based on the provided input.
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetPaginatedLicensesAsync(GetPaginatedLicensesInput input, CancellationToken cancellationToken)
+    content: public Task<IResponse> GetPaginatedLicensesAsync(GetPaginatedLicensesInput input, CancellationToken cancellationToken)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
@@ -110,12 +110,12 @@ items:
       type: System.Threading.CancellationToken
       description: A cancellation token to cancel the operation.
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
       description: >-
-        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Abstractions.IResponse" data-throw-if-not-resolved="false"></xref> 
 
         with the paginated list of licenses. See data type: <xref href="OpenSettings.Models.Responses.GetPaginatedLicensesResponse" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Function GetPaginatedLicensesAsync(input As GetPaginatedLicensesInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+    content.vb: Public Function GetPaginatedLicensesAsync(input As GetPaginatedLicensesInput, cancellationToken As CancellationToken) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.LicensesRestService.GetPaginatedLicensesAsync*
   implements:
   - OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
@@ -137,22 +137,22 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetCurrentLicenseAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 53
+    startLine: 55
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   summary: Retrieves the current active license. This method never returns a failure.
   example: []
   syntax:
-    content: public Task<IJsonResponse<License>> GetCurrentLicenseAsync(CancellationToken cancellationToken)
+    content: public Task<IResponse<License>> GetCurrentLicenseAsync(CancellationToken cancellationToken)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
       description: A cancellation token to cancel the operation.
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
-      description: 'A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> with the license data. See data type: <xref href="OpenSettings.Models.License" data-throw-if-not-resolved="false"></xref>.'
-    content.vb: Public Function GetCurrentLicenseAsync(cancellationToken As CancellationToken) As Task(Of IJsonResponse(Of License))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.License}}
+      description: 'A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Abstractions.IResponse" data-throw-if-not-resolved="false"></xref> with the license data. See data type: <xref href="OpenSettings.Models.License" data-throw-if-not-resolved="false"></xref>.'
+    content.vb: Public Function GetCurrentLicenseAsync(cancellationToken As CancellationToken) As Task(Of IResponse(Of License))
   overload: OpenSettings.Services.Rest.LicensesRestService.GetCurrentLicenseAsync*
   implements:
   - OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
@@ -174,14 +174,14 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SaveLicenseAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   summary: Saves the provided license key.
   example: []
   syntax:
-    content: public Task<IJsonResponse> SaveLicenseAsync(string licenseKey, CancellationToken cancellationToken)
+    content: public Task<IResponse> SaveLicenseAsync(string licenseKey, CancellationToken cancellationToken)
     parameters:
     - id: licenseKey
       type: System.String
@@ -190,12 +190,12 @@ items:
       type: System.Threading.CancellationToken
       description: A cancellation token to cancel the operation.
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
       description: >-
-        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Abstractions.IResponse" data-throw-if-not-resolved="false"></xref> 
 
         with the license data. See data type: <xref href="OpenSettings.Models.License" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Function SaveLicenseAsync(licenseKey As String, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+    content.vb: Public Function SaveLicenseAsync(licenseKey As String, cancellationToken As CancellationToken) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.LicensesRestService.SaveLicenseAsync*
   implements:
   - OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
@@ -220,14 +220,14 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteLicenseAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/LicensesRestService.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   summary: Deletes a license based on the provided input parameters.
   example: []
   syntax:
-    content: public Task<IJsonResponse> DeleteLicenseAsync(DeleteLicenseInput input, CancellationToken cancellationToken)
+    content: public Task<IResponse> DeleteLicenseAsync(DeleteLicenseInput input, CancellationToken cancellationToken)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteLicenseInput
@@ -236,12 +236,12 @@ items:
       type: System.Threading.CancellationToken
       description: A cancellation token to cancel the operation.
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
       description: >-
-        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Json.IJsonResponse" data-throw-if-not-resolved="false"></xref> 
+        A task that represents the asynchronous operation. The task result contains an <xref href="Ogu.Response.Abstractions.IResponse" data-throw-if-not-resolved="false"></xref> 
 
         indicating the success or failure of the operation.
-    content.vb: Public Function DeleteLicenseAsync(input As DeleteLicenseInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+    content.vb: Public Function DeleteLicenseAsync(input As DeleteLicenseInput, cancellationToken As CancellationToken) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.LicensesRestService.DeleteLicenseAsync*
   implements:
   - OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
@@ -649,12 +649,13 @@ references:
     name: Http
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.net.http
-- uid: Ogu.Response.Json.IJsonResponse
-  commentId: T:Ogu.Response.Json.IJsonResponse
+- uid: Ogu.Response.Abstractions.IResponse
+  commentId: T:Ogu.Response.Abstractions.IResponse
+  parent: Ogu.Response.Abstractions
   isExternal: true
-  name: IJsonResponse
-  nameWithType: IJsonResponse
-  fullName: Ogu.Response.Json.IJsonResponse
+  name: IResponse
+  nameWithType: IResponse
+  fullName: Ogu.Response.Abstractions.IResponse
 - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse
   commentId: T:OpenSettings.Models.Responses.GetPaginatedLicensesResponse
   href: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.html
@@ -720,25 +721,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -749,10 +750,40 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
+- uid: Ogu.Response.Abstractions
+  commentId: N:Ogu.Response.Abstractions
+  isExternal: true
+  name: Ogu.Response.Abstractions
+  nameWithType: Ogu.Response.Abstractions
+  fullName: Ogu.Response.Abstractions
+  spec.csharp:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Response
+    name: Response
+    isExternal: true
+  - name: .
+  - uid: Ogu.Response.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Response
+    name: Response
+    isExternal: true
+  - name: .
+  - uid: Ogu.Response.Abstractions
+    name: Abstractions
+    isExternal: true
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
   href: OpenSettings.html
@@ -916,25 +947,25 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.License}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.License}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.License}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<License>>
-  nameWithType: Task<IJsonResponse<License>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.License>>
-  nameWithType.vb: Task(Of IJsonResponse(Of License))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.License))
-  name.vb: Task(Of IJsonResponse(Of License))
+  name: Task<IResponse<License>>
+  nameWithType: Task<IResponse<License>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.License>>
+  nameWithType.vb: Task(Of IResponse(Of License))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.License))
+  name.vb: Task(Of IResponse(Of License))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.License
@@ -950,8 +981,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of

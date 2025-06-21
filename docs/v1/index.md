@@ -1,6 +1,6 @@
 # Getting Started
 
-## 📌 Introduction  
+## Introduction  
 
 Before you begin, here’s a quick preview of what the OpenSettings looks like after completing the steps below:
 
@@ -24,7 +24,7 @@ If you're using a different database, replace this package with the appropriate 
 
 ---
 
-## 🏗 Configuring OpenSettings
+## Configuring OpenSettings
 
 OpenSettings can run in two modes: **Provider** or **Consumer**. Choose the appropriate configuration based on your application’s role. For more information check out the [Consumer vs Provider](docs/introduction.md#consumer-vs-provider-what-do-they-mean) comparison.
 
@@ -40,7 +40,7 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Provid
 };
 ```
 
-#### 🗄 Configuring Database Storage
+#### Configuring Database Storage
 
 ```csharp
 // Configure database storage (InMemory for this example)
@@ -66,7 +66,7 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Consum
 };
 ```
 
-## 🔧 Registering OpenSettings
+## Registering OpenSettings
 
 ### 1️⃣ Enable OpenSettings In The Host Builder
 
@@ -97,7 +97,7 @@ app.MapControllers();
 
 ---
 
-## 📌 Defining Your First Setting
+## Defining Your First Setting
 
 Define a setting by creating a new class that implements `ISettings`.
 
@@ -119,7 +119,7 @@ Run the application and navigate to ".../settings" to view and manage your setti
 
 ---
 
-## 🔹 Resolving Settings in the Application
+## Resolving Settings in the Application
 
 You can inject and access your settings using **dependency injection**.
 
@@ -130,11 +130,11 @@ Inject the setting directly into your constructor:
 ```csharp
 public class MyService
 {
-    private readonly MyFirstSettings _MyFirstSettings;
+    private readonly MyFirstSettings _myFirstSettings;
 
     public MyService(MyFirstSettings MyFirstSettings)
     {
-        _MyFirstSettings = MyFirstSettings;
+        _myFirstSettings = MyFirstSettings;
     }
 }
 ```
@@ -148,11 +148,11 @@ using Microsoft.Extensions.Options;
 
 public class MyService
 {
-    private readonly MyFirstSettings _MyFirstSettings;
+    private readonly MyFirstSettings _myFirstSettings;
 
     public MyService(IOptions<MyFirstSettings> options)
     {
-        _MyFirstSettings = options.Value;
+        _myFirstSettings = options.Value;
     }
 }
 ```

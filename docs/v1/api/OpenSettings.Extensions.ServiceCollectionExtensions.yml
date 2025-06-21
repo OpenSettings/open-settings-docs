@@ -60,7 +60,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigureOpenSettings
     path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
@@ -91,6 +91,10 @@ items:
       description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> with OpenSettings services configured.
     content.vb: Public Shared Function ConfigureOpenSettings(services As IServiceCollection, configuration As IConfiguration) As IServiceCollection
   overload: OpenSettings.Extensions.ServiceCollectionExtensions.ConfigureOpenSettings*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">services</code> is null.
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
   commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
   id: AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
@@ -110,7 +114,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AddOpenSettings
     path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 64
+    startLine: 70
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
@@ -139,7 +143,7 @@ items:
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: Thrown if <code class="paramref">openSettingsConfiguration</code> is null.
+    description: Thrown if <code class="paramref">services</code> or <code class="paramref">openSettingsConfiguration</code> is null.
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
   commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
   id: Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
@@ -159,7 +163,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Configure
     path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 302
+    startLine: 313
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
@@ -554,6 +558,13 @@ references:
   name: IConfiguration
   nameWithType: IConfiguration
   fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.ConfigureOpenSettings*
   commentId: Overload:OpenSettings.Extensions.ServiceCollectionExtensions.ConfigureOpenSettings
   href: OpenSettings.Extensions.ServiceCollectionExtensions.html#OpenSettings_Extensions_ServiceCollectionExtensions_ConfigureOpenSettings_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
@@ -604,13 +615,6 @@ references:
   name: ISettings
   nameWithType: ISettings
   fullName: OpenSettings.Services.Interfaces.ISettings
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
-  name: ArgumentNullException
-  nameWithType: ArgumentNullException
-  fullName: System.ArgumentNullException
 - uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings*
   commentId: Overload:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings
   href: OpenSettings.Extensions.ServiceCollectionExtensions.html#OpenSettings_Extensions_ServiceCollectionExtensions_AddOpenSettings_Microsoft_Extensions_DependencyInjection_IServiceCollection_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_

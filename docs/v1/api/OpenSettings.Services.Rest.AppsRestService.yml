@@ -34,7 +34,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppsRestService
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -106,21 +106,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppDataAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<SyncAppDataResponse>> SyncAppDataAsync(SyncAppDataInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<SyncAppDataResponse>> SyncAppDataAsync(SyncAppDataInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.SyncAppDataInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
-    content.vb: Public Function SyncAppDataAsync(input As SyncAppDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of SyncAppDataResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
+    content.vb: Public Function SyncAppDataAsync(input As SyncAppDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of SyncAppDataResponse))
   overload: OpenSettings.Services.Rest.AppsRestService.SyncAppDataAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.SyncAppDataAsync(OpenSettings.Models.Inputs.SyncAppDataInput,System.Threading.CancellationToken)
@@ -142,21 +142,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppsAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 155
+    startLine: 156
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupedAppsAsync(GetGroupedAppsInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupedAppsAsync(GetGroupedAppsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupedAppsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupedAppsAsync(input As GetGroupedAppsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupedAppsAsync(input As GetGroupedAppsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetGroupedAppsAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppsAsync(OpenSettings.Models.Inputs.GetGroupedAppsInput,System.Threading.CancellationToken)
@@ -178,21 +178,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: FetchAppDataAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 165
+    startLine: 166
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<FetchAppDataResponse>> FetchAppDataAsync(FetchAppDataInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<FetchAppDataResponse>> FetchAppDataAsync(FetchAppDataInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.FetchAppDataInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
-    content.vb: Public Function FetchAppDataAsync(input As FetchAppDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of FetchAppDataResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
+    content.vb: Public Function FetchAppDataAsync(input As FetchAppDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of FetchAppDataResponse))
   overload: OpenSettings.Services.Rest.AppsRestService.FetchAppDataAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.FetchAppDataAsync(OpenSettings.Models.Inputs.FetchAppDataInput,System.Threading.CancellationToken)
@@ -214,21 +214,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppByIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 184
+    startLine: 185
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<GetAppResponse>> GetAppByIdAsync(GetAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<GetAppResponse>> GetAppByIdAsync(GetAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetAppResponse}}
-    content.vb: Public Function GetAppByIdAsync(input As GetAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetAppResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetAppResponse}}
+    content.vb: Public Function GetAppByIdAsync(input As GetAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of GetAppResponse))
   overload: OpenSettings.Services.Rest.AppsRestService.GetAppByIdAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetAppByIdAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
@@ -250,21 +250,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppBySlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 194
+    startLine: 195
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<GetAppResponse>> GetAppBySlugAsync(GetAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<GetAppResponse>> GetAppBySlugAsync(GetAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetAppResponse}}
-    content.vb: Public Function GetAppBySlugAsync(input As GetAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetAppResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetAppResponse}}
+    content.vb: Public Function GetAppBySlugAsync(input As GetAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of GetAppResponse))
   overload: OpenSettings.Services.Rest.AppsRestService.GetAppBySlugAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetAppBySlugAsync(OpenSettings.Models.Inputs.GetAppInput,System.Threading.CancellationToken)
@@ -286,21 +286,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppsAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 204
+    startLine: 205
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetAppsAsync(GetAppsInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetAppsAsync(GetAppsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetAppsAsync(input As GetAppsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetAppsAsync(input As GetAppsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetAppsAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetAppsAsync(OpenSettings.Models.Inputs.GetAppsInput,System.Threading.CancellationToken)
@@ -322,21 +322,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateAppAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 223
+    startLine: 224
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> UpdateAppAsync(UpdateAppInput input, CancellationToken cancellationToken)
+    content: public Task<IResponse> UpdateAppAsync(UpdateAppInput input, CancellationToken cancellationToken)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function UpdateAppAsync(input As UpdateAppInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function UpdateAppAsync(input As UpdateAppInput, cancellationToken As CancellationToken) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.UpdateAppAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.UpdateAppAsync(OpenSettings.Models.Inputs.UpdateAppInput,System.Threading.CancellationToken)
@@ -358,21 +358,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetRegisteredAppAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 259
+    startLine: 260
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse<GetRegisteredAppResponse>> GetRegisteredAppAsync(GetRegisteredAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse<GetRegisteredAppResponse>> GetRegisteredAppAsync(GetRegisteredAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetRegisteredAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
-    content.vb: Public Function GetRegisteredAppAsync(input As GetRegisteredAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of GetRegisteredAppResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
+    content.vb: Public Function GetRegisteredAppAsync(input As GetRegisteredAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of GetRegisteredAppResponse))
   overload: OpenSettings.Services.Rest.AppsRestService.GetRegisteredAppAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetRegisteredAppAsync(OpenSettings.Models.Inputs.GetRegisteredAppInput,System.Threading.CancellationToken)
@@ -394,21 +394,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreateAppAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 272
+    startLine: 273
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> CreateAppAsync(CreateAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> CreateAppAsync(CreateAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.CreateAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function CreateAppAsync(input As CreateAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function CreateAppAsync(input As CreateAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.CreateAppAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.CreateAppAsync(OpenSettings.Models.Inputs.CreateAppInput,System.Threading.CancellationToken)
@@ -430,21 +430,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 314
+    startLine: 315
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupedAppDataByAppIdAsync(GetGroupedAppDataByAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupedAppDataByAppIdAsync(GetGroupedAppDataByAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupedAppDataByAppIdAsync(input As GetGroupedAppDataByAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupedAppDataByAppIdAsync(input As GetGroupedAppDataByAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetGroupedAppDataByAppIdAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
@@ -466,21 +466,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppSlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 324
+    startLine: 325
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupedAppDataByAppSlugAsync(GetGroupedAppDataByAppInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupedAppDataByAppSlugAsync(GetGroupedAppDataByAppInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupedAppDataByAppSlugAsync(input As GetGroupedAppDataByAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupedAppDataByAppSlugAsync(input As GetGroupedAppDataByAppInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetGroupedAppDataByAppSlugAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppInput,System.Threading.CancellationToken)
@@ -502,21 +502,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppIdAndIdentifierIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 334
+    startLine: 335
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupedAppDataByAppIdAndIdentifierIdAsync(GetGroupedAppDataByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupedAppDataByAppIdAndIdentifierIdAsync(GetGroupedAppDataByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupedAppDataByAppIdAndIdentifierIdAsync(input As GetGroupedAppDataByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupedAppDataByAppIdAndIdentifierIdAsync(input As GetGroupedAppDataByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetGroupedAppDataByAppIdAndIdentifierIdAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -538,21 +538,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppSlugAndIdentifierSlugAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 344
+    startLine: 345
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(GetGroupedAppDataByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(GetGroupedAppDataByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(input As GetGroupedAppDataByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(input As GetGroupedAppDataByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.GetGroupedAppDataByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -574,21 +574,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteAppAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/AppsRestService.cs
-    startLine: 354
+    startLine: 355
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> DeleteAppAsync(DeleteAppInput input, CancellationToken cancellationToken)
+    content: public Task<IResponse> DeleteAppAsync(DeleteAppInput input, CancellationToken cancellationToken)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteAppInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function DeleteAppAsync(input As DeleteAppInput, cancellationToken As CancellationToken) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function DeleteAppAsync(input As DeleteAppInput, cancellationToken As CancellationToken) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.AppsRestService.DeleteAppAsync*
   implements:
   - OpenSettings.Services.Interfaces.IAppsService.DeleteAppAsync(OpenSettings.Models.Inputs.DeleteAppInput,System.Threading.CancellationToken)
@@ -1084,25 +1084,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.SyncAppDataResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<SyncAppDataResponse>>
-  nameWithType: Task<IJsonResponse<SyncAppDataResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.SyncAppDataResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of SyncAppDataResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.SyncAppDataResponse))
-  name.vb: Task(Of IJsonResponse(Of SyncAppDataResponse))
+  name: Task<IResponse<SyncAppDataResponse>>
+  nameWithType: Task<IResponse<SyncAppDataResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.SyncAppDataResponse>>
+  nameWithType.vb: Task(Of IResponse(Of SyncAppDataResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.SyncAppDataResponse))
+  name.vb: Task(Of IResponse(Of SyncAppDataResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.SyncAppDataResponse
@@ -1118,8 +1118,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of
@@ -1302,25 +1302,25 @@ references:
   name: GetGroupedAppsInput
   nameWithType: GetGroupedAppsInput
   fullName: OpenSettings.Models.Inputs.GetGroupedAppsInput
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -1331,8 +1331,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Services.Rest.AppsRestService.FetchAppDataAsync*
@@ -1386,25 +1386,25 @@ references:
   name: FetchAppDataInput
   nameWithType: FetchAppDataInput
   fullName: OpenSettings.Models.Inputs.FetchAppDataInput
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.FetchAppDataResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<FetchAppDataResponse>>
-  nameWithType: Task<IJsonResponse<FetchAppDataResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.FetchAppDataResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of FetchAppDataResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.FetchAppDataResponse))
-  name.vb: Task(Of IJsonResponse(Of FetchAppDataResponse))
+  name: Task<IResponse<FetchAppDataResponse>>
+  nameWithType: Task<IResponse<FetchAppDataResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.FetchAppDataResponse>>
+  nameWithType.vb: Task(Of IResponse(Of FetchAppDataResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.FetchAppDataResponse))
+  name.vb: Task(Of IResponse(Of FetchAppDataResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.FetchAppDataResponse
@@ -1420,8 +1420,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of
@@ -1482,25 +1482,25 @@ references:
   name: GetAppInput
   nameWithType: GetAppInput
   fullName: OpenSettings.Models.Inputs.GetAppInput
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetAppResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetAppResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetAppResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetAppResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<GetAppResponse>>
-  nameWithType: Task<IJsonResponse<GetAppResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetAppResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of GetAppResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetAppResponse))
-  name.vb: Task(Of IJsonResponse(Of GetAppResponse))
+  name: Task<IResponse<GetAppResponse>>
+  nameWithType: Task<IResponse<GetAppResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.GetAppResponse>>
+  nameWithType.vb: Task(Of IResponse(Of GetAppResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.GetAppResponse))
+  name.vb: Task(Of IResponse(Of GetAppResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.GetAppResponse
@@ -1516,8 +1516,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of
@@ -1724,25 +1724,25 @@ references:
   name: GetRegisteredAppInput
   nameWithType: GetRegisteredAppInput
   fullName: OpenSettings.Models.Inputs.GetRegisteredAppInput
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GetRegisteredAppResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<GetRegisteredAppResponse>>
-  nameWithType: Task<IJsonResponse<GetRegisteredAppResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.GetRegisteredAppResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of GetRegisteredAppResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.GetRegisteredAppResponse))
-  name.vb: Task(Of IJsonResponse(Of GetRegisteredAppResponse))
+  name: Task<IResponse<GetRegisteredAppResponse>>
+  nameWithType: Task<IResponse<GetRegisteredAppResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.GetRegisteredAppResponse>>
+  nameWithType.vb: Task(Of IResponse(Of GetRegisteredAppResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.GetRegisteredAppResponse))
+  name.vb: Task(Of IResponse(Of GetRegisteredAppResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.GetRegisteredAppResponse
@@ -1758,8 +1758,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of

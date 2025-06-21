@@ -1,0 +1,537 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  commentId: T:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  id: IOpenSettingsTokenService
+  parent: OpenSettings.AspNetCore.Services.Interfaces
+  children:
+  - OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  - OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)
+  - OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken(System.String)
+  - OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync(Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IOpenSettingsTokenService
+  nameWithType: IOpenSettingsTokenService
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IOpenSettingsTokenService
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Services.Interfaces
+  summary: >-
+    Defines methods for handling and managing OpenSettings token validation and refresh functionality.
+
+    This service provides functionality for checking token expiration, reading JWT tokens, and refreshing tokens.
+  example: []
+  syntax:
+    content: public interface IOpenSettingsTokenService
+    content.vb: Public Interface IOpenSettingsTokenService
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)
+  commentId: M:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)
+  id: IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)
+  parent: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  langs:
+  - csharp
+  - vb
+  name: IsTokenExpiredAsync(HttpContext, string)
+  nameWithType: IOpenSettingsTokenService.IsTokenExpiredAsync(HttpContext, string)
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext, string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsTokenExpiredAsync
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Services.Interfaces
+  summary: Checks if the specified access token has expired.
+  example: []
+  syntax:
+    content: Task<bool> IsTokenExpiredAsync(HttpContext httpContext, string accessToken)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> instance for the current HTTP request.
+    - id: accessToken
+      type: System.String
+      description: The access token to check for expiration.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation, with a result indicating whether the token is expired.
+    content.vb: Function IsTokenExpiredAsync(httpContext As HttpContext, accessToken As String) As Task(Of Boolean)
+  overload: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync*
+  nameWithType.vb: IOpenSettingsTokenService.IsTokenExpiredAsync(HttpContext, String)
+  fullName.vb: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext, String)
+  name.vb: IsTokenExpiredAsync(HttpContext, String)
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  commentId: M:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  id: IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext,System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  parent: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  langs:
+  - csharp
+  - vb
+  name: IsTokenExpiredAsync(HttpContext, JwtSecurityToken)
+  nameWithType: IOpenSettingsTokenService.IsTokenExpiredAsync(HttpContext, JwtSecurityToken)
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync(Microsoft.AspNetCore.Http.HttpContext, System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsTokenExpiredAsync
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Services.Interfaces
+  summary: Checks if the specified JWT security token has expired.
+  example: []
+  syntax:
+    content: Task<bool> IsTokenExpiredAsync(HttpContext httpContext, JwtSecurityToken jwtSecurityToken)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> instance for the current HTTP request.
+    - id: jwtSecurityToken
+      type: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+      description: The <xref href="System.IdentityModel.Tokens.Jwt.JwtSecurityToken" data-throw-if-not-resolved="false"></xref> to check for expiration.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation, with a result indicating whether the token is expired.
+    content.vb: Function IsTokenExpiredAsync(httpContext As HttpContext, jwtSecurityToken As JwtSecurityToken) As Task(Of Boolean)
+  overload: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync*
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken(System.String)
+  commentId: M:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken(System.String)
+  id: ReadJwtToken(System.String)
+  parent: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  langs:
+  - csharp
+  - vb
+  name: ReadJwtToken(string)
+  nameWithType: IOpenSettingsTokenService.ReadJwtToken(string)
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReadJwtToken
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Services.Interfaces
+  summary: Reads the specified access token and returns the corresponding <xref href="System.IdentityModel.Tokens.Jwt.JwtSecurityToken" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: JwtSecurityToken ReadJwtToken(string accessToken)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The access token to read.
+    return:
+      type: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+      description: The decoded <xref href="System.IdentityModel.Tokens.Jwt.JwtSecurityToken" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function ReadJwtToken(accessToken As String) As JwtSecurityToken
+  overload: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken*
+  nameWithType.vb: IOpenSettingsTokenService.ReadJwtToken(String)
+  fullName.vb: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken(String)
+  name.vb: ReadJwtToken(String)
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync(Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync(Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken)
+  id: RefreshTokenAsync(Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenAsync(HttpContext, CancellationToken)
+  nameWithType: IOpenSettingsTokenService.RefreshTokenAsync(HttpContext, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync(Microsoft.AspNetCore.Http.HttpContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RefreshTokenAsync
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Services/Interfaces/IOpenSettingsTokenService.cs
+    startLine: 42
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Services.Interfaces
+  summary: Refreshes the access token asynchronously.
+  example: []
+  syntax:
+    content: Task<string> RefreshTokenAsync(HttpContext httpContext, CancellationToken cancellationToken = default)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> instance for the current HTTP request.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that can be used to cancel the operation (optional).
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A task that represents the asynchronous operation, with a result of the refreshed access token.
+    content.vb: Function RefreshTokenAsync(httpContext As HttpContext, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync*
+references:
+- uid: OpenSettings.AspNetCore.Services.Interfaces
+  commentId: N:OpenSettings.AspNetCore.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Services.Interfaces
+  nameWithType: OpenSettings.AspNetCore.Services.Interfaces
+  fullName: OpenSettings.AspNetCore.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services
+    name: Services
+    href: OpenSettings.AspNetCore.Services.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.AspNetCore.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services
+    name: Services
+    href: OpenSettings.AspNetCore.Services.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.AspNetCore.Services.Interfaces.html
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync*
+  commentId: Overload:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync
+  href: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.html#OpenSettings_AspNetCore_Services_Interfaces_IOpenSettingsTokenService_IsTokenExpiredAsync_Microsoft_AspNetCore_Http_HttpContext_System_String_
+  name: IsTokenExpiredAsync
+  nameWithType: IOpenSettingsTokenService.IsTokenExpiredAsync
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.IsTokenExpiredAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+  commentId: T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+  parent: System.IdentityModel.Tokens.Jwt
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytoken
+  name: JwtSecurityToken
+  nameWithType: JwtSecurityToken
+  fullName: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+- uid: System.IdentityModel.Tokens.Jwt
+  commentId: N:System.IdentityModel.Tokens.Jwt
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IdentityModel.Tokens.Jwt
+  nameWithType: System.IdentityModel.Tokens.Jwt
+  fullName: System.IdentityModel.Tokens.Jwt
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel
+  - name: .
+  - uid: System.IdentityModel.Tokens
+    name: Tokens
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens
+  - name: .
+  - uid: System.IdentityModel.Tokens.Jwt
+    name: Jwt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel
+  - name: .
+  - uid: System.IdentityModel.Tokens
+    name: Tokens
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens
+  - name: .
+  - uid: System.IdentityModel.Tokens.Jwt
+    name: Jwt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken*
+  commentId: Overload:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken
+  href: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.html#OpenSettings_AspNetCore_Services_Interfaces_IOpenSettingsTokenService_ReadJwtToken_System_String_
+  name: ReadJwtToken
+  nameWithType: IOpenSettingsTokenService.ReadJwtToken
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.ReadJwtToken
+- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync*
+  commentId: Overload:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync
+  href: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.html#OpenSettings_AspNetCore_Services_Interfaces_IOpenSettingsTokenService_RefreshTokenAsync_Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationToken_
+  name: RefreshTokenAsync
+  nameWithType: IOpenSettingsTokenService.RefreshTokenAsync
+  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.RefreshTokenAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading

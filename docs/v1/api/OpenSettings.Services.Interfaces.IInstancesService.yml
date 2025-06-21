@@ -56,15 +56,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> CreateInstanceAsync(CreateInstanceInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> CreateInstanceAsync(CreateInstanceInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.CreateInstanceInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function CreateInstanceAsync(input As CreateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function CreateInstanceAsync(input As CreateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.CreateInstanceAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync(OpenSettings.Models.Inputs.UpdateInstanceInput,System.Threading.CancellationToken)
@@ -89,15 +89,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> UpdateInstanceAsync(UpdateInstanceInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> UpdateInstanceAsync(UpdateInstanceInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateInstanceInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function UpdateInstanceAsync(input As UpdateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function UpdateInstanceAsync(input As UpdateInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.UpdateInstanceAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync(OpenSettings.Models.Inputs.DeleteInstanceInput,System.Threading.CancellationToken)
@@ -122,15 +122,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> DeleteInstanceAsync(DeleteInstanceInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> DeleteInstanceAsync(DeleteInstanceInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteInstanceInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function DeleteInstanceAsync(input As DeleteInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function DeleteInstanceAsync(input As DeleteInstanceInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.DeleteInstanceAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -155,15 +155,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetInstancesByAppIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetInstancesByAppIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetInstancesInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetInstancesByAppIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetInstancesByAppIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -188,15 +188,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetInstancesByAppSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetInstancesByAppSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetInstancesInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetInstancesByAppSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetInstancesByAppSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -221,15 +221,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetInstancesByAppIdAndIdentifierIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetInstancesByAppIdAndIdentifierIdAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetInstancesInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetInstancesByAppIdAndIdentifierIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetInstancesByAppIdAndIdentifierIdAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppIdAndIdentifierIdAsync*
 - uid: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetInstancesInput,System.Threading.CancellationToken)
@@ -254,15 +254,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetInstancesByAppSlugAndIdentifierSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetInstancesByAppSlugAndIdentifierSlugAsync(GetInstancesInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetInstancesInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetInstancesByAppSlugAndIdentifierSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetInstancesByAppSlugAndIdentifierSlugAsync(input As GetInstancesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IInstancesService.GetInstancesByAppSlugAndIdentifierSlugAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -316,25 +316,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -345,8 +345,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs

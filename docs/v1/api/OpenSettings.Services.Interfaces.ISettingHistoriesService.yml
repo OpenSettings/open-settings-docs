@@ -54,15 +54,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetSettingHistoryDataAsync(GetSettingHistoryDataInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetSettingHistoryDataAsync(GetSettingHistoryDataInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetSettingHistoryDataInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetSettingHistoryDataAsync(input As GetSettingHistoryDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetSettingHistoryDataAsync(input As GetSettingHistoryDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryDataAsync*
 - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetSettingHistoryInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetSettingHistoryInput,System.Threading.CancellationToken)
@@ -87,15 +87,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetSettingHistoryByIdAsync(GetSettingHistoryInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetSettingHistoryByIdAsync(GetSettingHistoryInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetSettingHistoryInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetSettingHistoryByIdAsync(input As GetSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetSettingHistoryByIdAsync(input As GetSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryByIdAsync*
 - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetSettingHistoryInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetSettingHistoryInput,System.Threading.CancellationToken)
@@ -120,15 +120,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetSettingHistoryBySlugAsync(GetSettingHistoryInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetSettingHistoryBySlugAsync(GetSettingHistoryInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetSettingHistoryInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetSettingHistoryBySlugAsync(input As GetSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetSettingHistoryBySlugAsync(input As GetSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoryBySlugAsync*
 - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoriesAsync(OpenSettings.Models.Inputs.GetSettingHistoriesInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoriesAsync(OpenSettings.Models.Inputs.GetSettingHistoriesInput,System.Threading.CancellationToken)
@@ -153,15 +153,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetSettingHistoriesAsync(GetSettingHistoriesInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetSettingHistoriesAsync(GetSettingHistoriesInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetSettingHistoriesInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetSettingHistoriesAsync(input As GetSettingHistoriesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetSettingHistoriesAsync(input As GetSettingHistoriesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.ISettingHistoriesService.GetSettingHistoriesAsync*
 - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService.RestoreSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreSettingHistoryInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.ISettingHistoriesService.RestoreSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreSettingHistoryInput,System.Threading.CancellationToken)
@@ -186,15 +186,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse<RestoreSettingHistoryResponse>> RestoreSettingHistoryAsync(RestoreSettingHistoryInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse<RestoreSettingHistoryResponse>> RestoreSettingHistoryAsync(RestoreSettingHistoryInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.RestoreSettingHistoryInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
-    content.vb: Function RestoreSettingHistoryAsync(input As RestoreSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of RestoreSettingHistoryResponse))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
+    content.vb: Function RestoreSettingHistoryAsync(input As RestoreSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of RestoreSettingHistoryResponse))
   overload: OpenSettings.Services.Interfaces.ISettingHistoriesService.RestoreSettingHistoryAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -248,25 +248,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -277,8 +277,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs
@@ -448,25 +448,25 @@ references:
   name: RestoreSettingHistoryInput
   nameWithType: RestoreSettingHistoryInput
   fullName: OpenSettings.Models.Inputs.RestoreSettingHistoryInput
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreSettingHistoryResponse}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<RestoreSettingHistoryResponse>>
-  nameWithType: Task<IJsonResponse<RestoreSettingHistoryResponse>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.Responses.RestoreSettingHistoryResponse>>
-  nameWithType.vb: Task(Of IJsonResponse(Of RestoreSettingHistoryResponse))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.Responses.RestoreSettingHistoryResponse))
-  name.vb: Task(Of IJsonResponse(Of RestoreSettingHistoryResponse))
+  name: Task<IResponse<RestoreSettingHistoryResponse>>
+  nameWithType: Task<IResponse<RestoreSettingHistoryResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.RestoreSettingHistoryResponse>>
+  nameWithType.vb: Task(Of IResponse(Of RestoreSettingHistoryResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.RestoreSettingHistoryResponse))
+  name.vb: Task(Of IResponse(Of RestoreSettingHistoryResponse))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.Responses.RestoreSettingHistoryResponse
@@ -482,8 +482,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of

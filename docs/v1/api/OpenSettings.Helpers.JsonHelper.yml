@@ -10,6 +10,7 @@ items:
   - OpenSettings.Helpers.JsonHelper.DefaultJsonWriterOptions
   - OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(System.String,System.Threading.CancellationToken)
   - OpenSettings.Helpers.JsonHelper.Merge(System.String,System.String)
+  - OpenSettings.Helpers.JsonHelper.Merge(System.Text.Json.JsonDocument,System.Text.Json.JsonDocument)
   - OpenSettings.Helpers.JsonHelper.MergeFileAsync(System.String,System.String,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: JsonHelper
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -62,7 +63,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DefaultJsonDocumentOptions
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -93,7 +94,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DefaultJsonWriterOptions
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -124,7 +125,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DefaultJsonSerializerOptions
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -155,7 +156,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetJsonFileAsync
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -196,7 +197,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MergeFileAsync
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 67
+    startLine: 68
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -240,7 +241,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Merge
     path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
-    startLine: 136
+    startLine: 88
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -254,7 +255,7 @@ items:
       description: The base JSON string to be merged with the patch.
     - id: patchJson
       type: System.String
-      description: The JSON string containing the changes to be applied to the base JSON.
+      description: The patch JSON string containing the changes to be applied to the base JSON.
     return:
       type: OpenSettings.Models.JsonMergeResult
       description: A <xref href="OpenSettings.Models.JsonMergeResult" data-throw-if-not-resolved="false"></xref> containing the result of the merge operation.
@@ -263,6 +264,45 @@ items:
   nameWithType.vb: JsonHelper.Merge(String, String)
   fullName.vb: OpenSettings.Helpers.JsonHelper.Merge(String, String)
   name.vb: Merge(String, String)
+- uid: OpenSettings.Helpers.JsonHelper.Merge(System.Text.Json.JsonDocument,System.Text.Json.JsonDocument)
+  commentId: M:OpenSettings.Helpers.JsonHelper.Merge(System.Text.Json.JsonDocument,System.Text.Json.JsonDocument)
+  id: Merge(System.Text.Json.JsonDocument,System.Text.Json.JsonDocument)
+  parent: OpenSettings.Helpers.JsonHelper
+  langs:
+  - csharp
+  - vb
+  name: Merge(JsonDocument, JsonDocument)
+  nameWithType: JsonHelper.Merge(JsonDocument, JsonDocument)
+  fullName: OpenSettings.Helpers.JsonHelper.Merge(System.Text.Json.JsonDocument, System.Text.Json.JsonDocument)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Helpers/JsonHelper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Merge
+    path: ../../../open-settings/src/OpenSettings/Helpers/JsonHelper.cs
+    startLine: 106
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Helpers
+  summary: Merges two JSON strings (baseDoc and patchDoc) into a single JSON object.
+  remarks: Both <code class="paramref">baseDoc</code> and <code class="paramref">patchDoc</code> should be disposed after the merge operation is complete.
+  example: []
+  syntax:
+    content: public static JsonMergeResult Merge(JsonDocument baseDoc, JsonDocument patchDoc)
+    parameters:
+    - id: baseDoc
+      type: System.Text.Json.JsonDocument
+      description: The base JsonDocument to be merged with the patch.
+    - id: patchDoc
+      type: System.Text.Json.JsonDocument
+      description: The patch JsonDocument containing the changes to be applied to the base JSON.
+    return:
+      type: OpenSettings.Models.JsonMergeResult
+      description: A <xref href="OpenSettings.Models.JsonMergeResult" data-throw-if-not-resolved="false"></xref> containing the result of the merge operation.
+    content.vb: Public Shared Function Merge(baseDoc As JsonDocument, patchDoc As JsonDocument) As JsonMergeResult
+  overload: OpenSettings.Helpers.JsonHelper.Merge*
 references:
 - uid: OpenSettings.Helpers
   commentId: N:OpenSettings.Helpers
@@ -862,3 +902,11 @@ references:
   name: Merge
   nameWithType: JsonHelper.Merge
   fullName: OpenSettings.Helpers.JsonHelper.Merge
+- uid: System.Text.Json.JsonDocument
+  commentId: T:System.Text.Json.JsonDocument
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsondocument
+  name: JsonDocument
+  nameWithType: JsonDocument
+  fullName: System.Text.Json.JsonDocument

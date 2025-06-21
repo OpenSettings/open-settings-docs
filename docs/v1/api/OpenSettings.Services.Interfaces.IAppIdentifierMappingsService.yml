@@ -56,15 +56,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> CreateAppIdentifierMappingAsync(CreateAppIdentifierMappingInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> CreateAppIdentifierMappingAsync(CreateAppIdentifierMappingInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function CreateAppIdentifierMappingAsync(input As CreateAppIdentifierMappingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function CreateAppIdentifierMappingAsync(input As CreateAppIdentifierMappingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -89,15 +89,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(GetAppIdentifierMappingByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(GetAppIdentifierMappingByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(input As GetAppIdentifierMappingByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(input As GetAppIdentifierMappingByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -122,15 +122,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(GetAppIdentifierMappingByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(GetAppIdentifierMappingByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(input As GetAppIdentifierMappingByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(input As GetAppIdentifierMappingByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
@@ -155,15 +155,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> DeleteAppIdentifierMappingAsync(DeleteAppIdentifierMappingInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> DeleteAppIdentifierMappingAsync(DeleteAppIdentifierMappingInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function DeleteAppIdentifierMappingAsync(input As DeleteAppIdentifierMappingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function DeleteAppIdentifierMappingAsync(input As DeleteAppIdentifierMappingInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
@@ -188,15 +188,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetAppIdentifierMappingsByAppIdAsync(GetAppIdentifierMappingsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetAppIdentifierMappingsByAppIdAsync(GetAppIdentifierMappingsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetAppIdentifierMappingsByAppIdAsync(input As GetAppIdentifierMappingsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppIdentifierMappingsByAppIdAsync(input As GetAppIdentifierMappingsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
@@ -221,15 +221,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> GetAppIdentifierMappingsByAppSlugAsync(GetAppIdentifierMappingsInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetAppIdentifierMappingsByAppSlugAsync(GetAppIdentifierMappingsInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function GetAppIdentifierMappingsByAppSlugAsync(input As GetAppIdentifierMappingsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppIdentifierMappingsByAppSlugAsync(input As GetAppIdentifierMappingsInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync*
 - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
@@ -254,15 +254,15 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse> UpdateAppIdentifierMappingSortOrderAsync(UpdateAppIdentifierMappingSortOrderInput input, CancellationToken cancellationToken = default)
+    content: Task<IResponse> UpdateAppIdentifierMappingSortOrderAsync(UpdateAppIdentifierMappingSortOrderInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Function UpdateAppIdentifierMappingSortOrderAsync(input As UpdateAppIdentifierMappingSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function UpdateAppIdentifierMappingSortOrderAsync(input As UpdateAppIdentifierMappingSortOrderInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -316,25 +316,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -345,8 +345,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs

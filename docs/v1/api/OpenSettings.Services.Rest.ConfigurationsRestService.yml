@@ -22,7 +22,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigurationsRestService
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ConfigurationsRestService.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ConfigurationsRestService.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -92,21 +92,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetConfigurationByAppIdAndIdentifierIdAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ConfigurationsRestService.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> GetConfigurationByAppIdAndIdentifierIdAsync(GetConfigurationByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> GetConfigurationByAppIdAndIdentifierIdAsync(GetConfigurationByAppAndIdentifierInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function GetConfigurationByAppIdAndIdentifierIdAsync(input As GetConfigurationByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetConfigurationByAppIdAndIdentifierIdAsync(input As GetConfigurationByAppAndIdentifierInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.ConfigurationsRestService.GetConfigurationByAppIdAndIdentifierIdAsync*
   implements:
   - OpenSettings.Services.Interfaces.IConfigurationsService.GetConfigurationByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -128,21 +128,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PatchConfigurationAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ConfigurationsRestService.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   example: []
   syntax:
-    content: public Task<IJsonResponse> PatchConfigurationAsync(PatchConfigurationInput input, CancellationToken cancellationToken = default)
+    content: public Task<IResponse> PatchConfigurationAsync(PatchConfigurationInput input, CancellationToken cancellationToken = default)
     parameters:
     - id: input
       type: OpenSettings.Models.Inputs.PatchConfigurationInput
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-    content.vb: Public Function PatchConfigurationAsync(input As PatchConfigurationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function PatchConfigurationAsync(input As PatchConfigurationInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
   overload: OpenSettings.Services.Rest.ConfigurationsRestService.PatchConfigurationAsync*
   implements:
   - OpenSettings.Services.Interfaces.IConfigurationsService.PatchConfigurationAsync(OpenSettings.Models.Inputs.PatchConfigurationInput,System.Threading.CancellationToken)
@@ -609,25 +609,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse>
-  nameWithType: Task<IJsonResponse>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse>
-  nameWithType.vb: Task(Of IJsonResponse)
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse)
-  name.vb: Task(Of IJsonResponse)
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: '>'
   spec.vb:
@@ -638,8 +638,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
     isExternal: true
   - name: )
 - uid: OpenSettings.Models.Inputs

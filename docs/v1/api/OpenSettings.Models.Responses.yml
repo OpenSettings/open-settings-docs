@@ -17,6 +17,8 @@ items:
   - OpenSettings.Models.Responses.DeleteUnmappedItemsResponse
   - OpenSettings.Models.Responses.DragItemSortOrderResponse
   - OpenSettings.Models.Responses.DragItemSortOrderResponseSource
+  - OpenSettings.Models.Responses.DtoExtensions
+  - OpenSettings.Models.Responses.ErrorDto
   - OpenSettings.Models.Responses.FetchAppDataResponse
   - OpenSettings.Models.Responses.FetchAppDataResponseSetting
   - OpenSettings.Models.Responses.GetAppGroupResponse
@@ -89,6 +91,8 @@ items:
   - OpenSettings.Models.Responses.GetUserNotificationsResponseNotificationCounts
   - OpenSettings.Models.Responses.ModelForPaginatedResponseData
   - OpenSettings.Models.Responses.PatchConfigurationResponse
+  - OpenSettings.Models.Responses.ResponseDto
+  - OpenSettings.Models.Responses.ResponseDto`1
   - OpenSettings.Models.Responses.RestoreSettingHistoryResponse
   - OpenSettings.Models.Responses.RestoreSettingHistoryResponseSetting
   - OpenSettings.Models.Responses.SyncAppDataResponse
@@ -106,6 +110,7 @@ items:
   - OpenSettings.Models.Responses.UpdateSortOrderResponseNeighbour
   - OpenSettings.Models.Responses.UpdateSortOrderResponseSource
   - OpenSettings.Models.Responses.UpdateTagResponse
+  - OpenSettings.Models.Responses.ValidationFailureDto
   langs:
   - csharp
   - vb
@@ -644,6 +649,57 @@ references:
   name: PatchConfigurationResponse
   nameWithType: PatchConfigurationResponse
   fullName: OpenSettings.Models.Responses.PatchConfigurationResponse
+- uid: OpenSettings.Models.Responses.ResponseDto
+  commentId: T:OpenSettings.Models.Responses.ResponseDto
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.ResponseDto.html
+  name: ResponseDto
+  nameWithType: ResponseDto
+  fullName: OpenSettings.Models.Responses.ResponseDto
+- uid: OpenSettings.Models.Responses.ResponseDto`1
+  commentId: T:OpenSettings.Models.Responses.ResponseDto`1
+  href: OpenSettings.Models.Responses.ResponseDto-1.html
+  name: ResponseDto<T>
+  nameWithType: ResponseDto<T>
+  fullName: OpenSettings.Models.Responses.ResponseDto<T>
+  nameWithType.vb: ResponseDto(Of T)
+  fullName.vb: OpenSettings.Models.Responses.ResponseDto(Of T)
+  name.vb: ResponseDto(Of T)
+  spec.csharp:
+  - uid: OpenSettings.Models.Responses.ResponseDto`1
+    name: ResponseDto
+    href: OpenSettings.Models.Responses.ResponseDto-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Models.Responses.ResponseDto`1
+    name: ResponseDto
+    href: OpenSettings.Models.Responses.ResponseDto-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Models.Responses.ErrorDto
+  commentId: T:OpenSettings.Models.Responses.ErrorDto
+  href: OpenSettings.Models.Responses.ErrorDto.html
+  name: ErrorDto
+  nameWithType: ErrorDto
+  fullName: OpenSettings.Models.Responses.ErrorDto
+- uid: OpenSettings.Models.Responses.ValidationFailureDto
+  commentId: T:OpenSettings.Models.Responses.ValidationFailureDto
+  href: OpenSettings.Models.Responses.ValidationFailureDto.html
+  name: ValidationFailureDto
+  nameWithType: ValidationFailureDto
+  fullName: OpenSettings.Models.Responses.ValidationFailureDto
+- uid: OpenSettings.Models.Responses.DtoExtensions
+  commentId: T:OpenSettings.Models.Responses.DtoExtensions
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.DtoExtensions.html
+  name: DtoExtensions
+  nameWithType: DtoExtensions
+  fullName: OpenSettings.Models.Responses.DtoExtensions
 - uid: OpenSettings.Models.Responses.RestoreSettingHistoryResponse
   commentId: T:OpenSettings.Models.Responses.RestoreSettingHistoryResponse
   href: OpenSettings.Models.Responses.RestoreSettingHistoryResponse.html

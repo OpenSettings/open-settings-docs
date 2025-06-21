@@ -16,19 +16,6 @@ items:
   - uid: OpenSettings.SettingsProvider
     name: SettingsProvider
     type: Class
-- uid: OpenSettings.AspNetCore
-  name: OpenSettings.AspNetCore
-  type: Namespace
-  items:
-  - uid: OpenSettings.AspNetCore.ApplicationBuilderExtensions
-    name: ApplicationBuilderExtensions
-    type: Class
-  - uid: OpenSettings.AspNetCore.IOpenSettingsTokenService
-    name: IOpenSettingsTokenService
-    type: Interface
-  - uid: OpenSettings.AspNetCore.MvcBuilderExtensions
-    name: MvcBuilderExtensions
-    type: Class
 - uid: OpenSettings.AspNetCore.Controllers.v1
   name: OpenSettings.AspNetCore.Controllers.v1
   type: Namespace
@@ -74,6 +61,16 @@ items:
     type: Class
   - uid: OpenSettings.AspNetCore.Controllers.v1.UsersController
     name: UsersController
+    type: Class
+- uid: OpenSettings.AspNetCore.Extensions
+  name: OpenSettings.AspNetCore.Extensions
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Extensions.ApplicationBuilderExtensions
+    name: ApplicationBuilderExtensions
+    type: Class
+  - uid: OpenSettings.AspNetCore.Extensions.MvcBuilderExtensions
+    name: MvcBuilderExtensions
     type: Class
 - uid: OpenSettings.AspNetCore.Models.Requests
   name: OpenSettings.AspNetCore.Models.Requests
@@ -389,6 +386,16 @@ items:
   - uid: OpenSettings.AspNetCore.Models.Responses.RefreshTokenResponse
     name: RefreshTokenResponse
     type: Class
+- uid: OpenSettings.AspNetCore.Services.Interfaces
+  name: OpenSettings.AspNetCore.Services.Interfaces
+  type: Namespace
+  items:
+  - uid: OpenSettings.AspNetCore.Services.Interfaces.IInstanceUrlResolverService
+    name: IInstanceUrlResolverService
+    type: Interface
+  - uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
+    name: IOpenSettingsTokenService
+    type: Interface
 - uid: OpenSettings.AspNetCore.Spa
   name: OpenSettings.AspNetCore.Spa
   type: Namespace
@@ -439,19 +446,6 @@ items:
     type: Class
   - uid: OpenSettings.Configurations.SpaConfiguration
     name: SpaConfiguration
-    type: Class
-- uid: OpenSettings.Domains.Redis
-  name: OpenSettings.Domains.Redis
-  type: Namespace
-  items:
-  - uid: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
-    name: IOpenSettingsDistributedCache
-    type: Interface
-  - uid: OpenSettings.Domains.Redis.OpenSettingsDistributedMemoryCache
-    name: OpenSettingsDistributedMemoryCache
-    type: Class
-  - uid: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
-    name: OpenSettingsDistributedRedisCache
     type: Class
 - uid: OpenSettings.Domains.Redis.DataContext
   name: OpenSettings.Domains.Redis.DataContext
@@ -586,6 +580,9 @@ items:
     type: Class
   - uid: OpenSettings.Extensions.HostBuilderExtensions
     name: HostBuilderExtensions
+    type: Class
+  - uid: OpenSettings.Extensions.HttpContentResponseExtensions
+    name: HttpContentResponseExtensions
     type: Class
   - uid: OpenSettings.Extensions.ServiceCollectionExtensions
     name: ServiceCollectionExtensions
@@ -1047,6 +1044,12 @@ items:
   - uid: OpenSettings.Models.Responses.DragItemSortOrderResponseSource
     name: DragItemSortOrderResponseSource
     type: Class
+  - uid: OpenSettings.Models.Responses.DtoExtensions
+    name: DtoExtensions
+    type: Class
+  - uid: OpenSettings.Models.Responses.ErrorDto
+    name: ErrorDto
+    type: Class
   - uid: OpenSettings.Models.Responses.FetchAppDataResponse
     name: FetchAppDataResponse
     type: Class
@@ -1263,6 +1266,12 @@ items:
   - uid: OpenSettings.Models.Responses.PatchConfigurationResponse
     name: PatchConfigurationResponse
     type: Class
+  - uid: OpenSettings.Models.Responses.ResponseDto
+    name: ResponseDto
+    type: Class
+  - uid: OpenSettings.Models.Responses.ResponseDto`1
+    name: ResponseDto<T>
+    type: Class
   - uid: OpenSettings.Models.Responses.RestoreSettingHistoryResponse
     name: RestoreSettingHistoryResponse
     type: Class
@@ -1314,13 +1323,13 @@ items:
   - uid: OpenSettings.Models.Responses.UpdateTagResponse
     name: UpdateTagResponse
     type: Class
+  - uid: OpenSettings.Models.Responses.ValidationFailureDto
+    name: ValidationFailureDto
+    type: Class
 - uid: OpenSettings.Services
   name: OpenSettings.Services
   type: Namespace
   items:
-  - uid: OpenSettings.Services.DataValidationService
-    name: DataValidationService
-    type: Class
   - uid: OpenSettings.Services.OpenSettingsService
     name: OpenSettingsService
     type: Class

@@ -1,142 +1,143 @@
 ### YamlMime:ManagedReference
 items:
-- uid: OpenSettings.Services.Rest.ProviderRestService
-  commentId: T:OpenSettings.Services.Rest.ProviderRestService
-  id: ProviderRestService
-  parent: OpenSettings.Services.Rest
+- uid: OpenSettings.Extensions.HttpContentResponseExtensions
+  commentId: T:OpenSettings.Extensions.HttpContentResponseExtensions
+  id: HttpContentResponseExtensions
+  parent: OpenSettings.Extensions
   children:
-  - OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
-  - OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
+  - OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  - OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync``1(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
-  name: ProviderRestService
-  nameWithType: ProviderRestService
-  fullName: OpenSettings.Services.Rest.ProviderRestService
+  name: HttpContentResponseExtensions
+  nameWithType: HttpContentResponseExtensions
+  fullName: OpenSettings.Extensions.HttpContentResponseExtensions
   type: Class
   source:
     remote:
-      path: src/OpenSettings/Services/Rest/ProviderRestService.cs
+      path: src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: ProviderRestService
-    path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
+    id: HttpContentResponseExtensions
+    path: ../../../open-settings/src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
     startLine: 10
   assemblies:
   - OpenSettings
-  namespace: OpenSettings.Services.Rest
+  namespace: OpenSettings.Extensions
   syntax:
-    content: 'public sealed class ProviderRestService : IProviderRestService, IProviderService'
-    content.vb: Public NotInheritable Class ProviderRestService Implements IProviderRestService, IProviderService
+    content: public static class HttpContentResponseExtensions
+    content.vb: Public Module HttpContentResponseExtensions
   inheritance:
   - System.Object
-  implements:
-  - OpenSettings.Services.Rest.Interfaces.IProviderRestService
-  - OpenSettings.Services.Interfaces.IProviderService
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
-  commentId: M:OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
-  id: '#ctor(System.Net.Http.HttpClient)'
-  parent: OpenSettings.Services.Rest.ProviderRestService
+- uid: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  id: ToResponseAsync(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.HttpContentResponseExtensions
   langs:
   - csharp
   - vb
-  name: ProviderRestService(HttpClient)
-  nameWithType: ProviderRestService.ProviderRestService(HttpClient)
-  fullName: OpenSettings.Services.Rest.ProviderRestService.ProviderRestService(System.Net.Http.HttpClient)
-  type: Constructor
-  source:
-    remote:
-      path: src/OpenSettings/Services/Rest/ProviderRestService.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: .ctor
-    path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
-    startLine: 14
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Services.Rest
-  syntax:
-    content: public ProviderRestService(HttpClient httpClient)
-    parameters:
-    - id: httpClient
-      type: System.Net.Http.HttpClient
-    content.vb: Public Sub New(httpClient As HttpClient)
-  overload: OpenSettings.Services.Rest.ProviderRestService.#ctor*
-  nameWithType.vb: ProviderRestService.New(HttpClient)
-  fullName.vb: OpenSettings.Services.Rest.ProviderRestService.New(System.Net.Http.HttpClient)
-  name.vb: New(HttpClient)
-- uid: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
-  commentId: M:OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
-  id: GetProviderAsync(System.Threading.CancellationToken)
-  parent: OpenSettings.Services.Rest.ProviderRestService
-  langs:
-  - csharp
-  - vb
-  name: GetProviderAsync(CancellationToken)
-  nameWithType: ProviderRestService.GetProviderAsync(CancellationToken)
-  fullName: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
+  name: ToResponseAsync(HttpContent, JsonSerializerOptions, CancellationToken)
+  nameWithType: HttpContentResponseExtensions.ToResponseAsync(HttpContent, JsonSerializerOptions, CancellationToken)
+  fullName: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync(System.Net.Http.HttpContent, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Rest/ProviderRestService.cs
+      path: src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: GetProviderAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
-    startLine: 19
+    id: ToResponseAsync
+    path: ../../../open-settings/src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
+    startLine: 12
   assemblies:
   - OpenSettings
-  namespace: OpenSettings.Services.Rest
-  example: []
+  namespace: OpenSettings.Extensions
   syntax:
-    content: public Task<IResponse<ProviderInfo>> GetProviderAsync(CancellationToken cancellationToken = default)
+    content: public static Task<IResponse> ToResponseAsync(this HttpContent content, JsonSerializerOptions serializerOptions = null, CancellationToken cancellationToken = default)
     parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: serializerOptions
+      type: System.Text.Json.JsonSerializerOptions
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
-    content.vb: Public Function GetProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of ProviderInfo))
-  overload: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync*
-  implements:
-  - OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Shared Function ToResponseAsync(content As HttpContent, serializerOptions As JsonSerializerOptions = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync*
+- uid: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync``1(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync``1(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  id: ToResponseAsync``1(System.Net.Http.HttpContent,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.HttpContentResponseExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToResponseAsync<T>(HttpContent, JsonSerializerOptions, CancellationToken)
+  nameWithType: HttpContentResponseExtensions.ToResponseAsync<T>(HttpContent, JsonSerializerOptions, CancellationToken)
+  fullName: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync<T>(System.Net.Http.HttpContent, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ToResponseAsync
+    path: ../../../open-settings/src/OpenSettings/Extensions/HttpContentResponseExtensions.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  syntax:
+    content: public static Task<IResponse<T>> ToResponseAsync<T>(this HttpContent content, JsonSerializerOptions serializerOptions = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: serializerOptions
+      type: System.Text.Json.JsonSerializerOptions
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{{T}}}
+    content.vb: Public Shared Function ToResponseAsync(Of T)(content As HttpContent, serializerOptions As JsonSerializerOptions = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of T))
+  overload: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync*
+  nameWithType.vb: HttpContentResponseExtensions.ToResponseAsync(Of T)(HttpContent, JsonSerializerOptions, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync(Of T)(System.Net.Http.HttpContent, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
+  name.vb: ToResponseAsync(Of T)(HttpContent, JsonSerializerOptions, CancellationToken)
 references:
-- uid: OpenSettings.Services.Rest
-  commentId: N:OpenSettings.Services.Rest
+- uid: OpenSettings.Extensions
+  commentId: N:OpenSettings.Extensions
   href: OpenSettings.html
-  name: OpenSettings.Services.Rest
-  nameWithType: OpenSettings.Services.Rest
-  fullName: OpenSettings.Services.Rest
+  name: OpenSettings.Extensions
+  nameWithType: OpenSettings.Extensions
+  fullName: OpenSettings.Extensions
   spec.csharp:
   - uid: OpenSettings
     name: OpenSettings
     href: OpenSettings.html
   - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Rest
-    name: Rest
-    href: OpenSettings.Services.Rest.html
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
   spec.vb:
   - uid: OpenSettings
     name: OpenSettings
     href: OpenSettings.html
   - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Rest
-    name: Rest
-    href: OpenSettings.Services.Rest.html
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -148,20 +149,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: OpenSettings.Services.Rest.Interfaces.IProviderRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IProviderRestService
-  parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IProviderRestService.html
-  name: IProviderRestService
-  nameWithType: IProviderRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IProviderRestService
-- uid: OpenSettings.Services.Interfaces.IProviderService
-  commentId: T:OpenSettings.Services.Interfaces.IProviderService
-  parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IProviderService.html
-  name: IProviderService
-  nameWithType: IProviderService
-  fullName: OpenSettings.Services.Interfaces.IProviderService
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -288,6 +275,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -364,91 +375,69 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.Services.Rest.Interfaces
-  commentId: N:OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.html
-  name: OpenSettings.Services.Rest.Interfaces
-  nameWithType: OpenSettings.Services.Rest.Interfaces
-  fullName: OpenSettings.Services.Rest.Interfaces
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Rest
-    name: Rest
-    href: OpenSettings.Services.Rest.html
-  - name: .
-  - uid: OpenSettings.Services.Rest.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Rest.Interfaces.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Rest
-    name: Rest
-    href: OpenSettings.Services.Rest.html
-  - name: .
-  - uid: OpenSettings.Services.Rest.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Rest.Interfaces.html
-- uid: OpenSettings.Services.Interfaces
-  commentId: N:OpenSettings.Services.Interfaces
-  href: OpenSettings.html
-  name: OpenSettings.Services.Interfaces
-  nameWithType: OpenSettings.Services.Interfaces
-  fullName: OpenSettings.Services.Interfaces
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Interfaces.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Interfaces.html
-- uid: OpenSettings.Services.Rest.ProviderRestService.#ctor*
-  commentId: Overload:OpenSettings.Services.Rest.ProviderRestService.#ctor
-  href: OpenSettings.Services.Rest.ProviderRestService.html#OpenSettings_Services_Rest_ProviderRestService__ctor_System_Net_Http_HttpClient_
-  name: ProviderRestService
-  nameWithType: ProviderRestService.ProviderRestService
-  fullName: OpenSettings.Services.Rest.ProviderRestService.ProviderRestService
-  nameWithType.vb: ProviderRestService.New
-  fullName.vb: OpenSettings.Services.Rest.ProviderRestService.New
-  name.vb: New
-- uid: System.Net.Http.HttpClient
-  commentId: T:System.Net.Http.HttpClient
+- uid: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync*
+  commentId: Overload:OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync
+  href: OpenSettings.Extensions.HttpContentResponseExtensions.html#OpenSettings_Extensions_HttpContentResponseExtensions_ToResponseAsync_System_Net_Http_HttpContent_System_Text_Json_JsonSerializerOptions_System_Threading_CancellationToken_
+  name: ToResponseAsync
+  nameWithType: HttpContentResponseExtensions.ToResponseAsync
+  fullName: OpenSettings.Extensions.HttpContentResponseExtensions.ToResponseAsync
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
   parent: System.Net.Http
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
-  name: HttpClient
-  nameWithType: HttpClient
-  fullName: System.Net.Http.HttpClient
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: )
 - uid: System.Net.Http
   commentId: N:System.Net.Http
   isExternal: true
@@ -486,93 +475,43 @@ references:
     name: Http
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.net.http
-- uid: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync*
-  commentId: Overload:OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync
-  href: OpenSettings.Services.Rest.ProviderRestService.html#OpenSettings_Services_Rest_ProviderRestService_GetProviderAsync_System_Threading_CancellationToken_
-  name: GetProviderAsync
-  nameWithType: ProviderRestService.GetProviderAsync
-  fullName: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync
-- uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
-  commentId: M:OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
-  parent: OpenSettings.Services.Interfaces.IProviderService
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
   isExternal: true
-  href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetProviderAsync_System_Threading_CancellationToken_
-  name: GetProviderAsync(CancellationToken)
-  nameWithType: IProviderService.GetProviderAsync(CancellationToken)
-  fullName: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
   spec.csharp:
-  - uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
-    name: GetProviderAsync
-    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetProviderAsync_System_Threading_CancellationToken_
-  - name: (
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
+  - uid: System
+    name: System
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
   spec.vb:
-  - uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
-    name: GetProviderAsync
-    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetProviderAsync_System_Threading_CancellationToken_
-  - name: (
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
+  - uid: System
+    name: System
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
-  - name: )
-- uid: System.Threading.CancellationToken
-  commentId: T:System.Threading.CancellationToken
-  parent: System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
-  name: CancellationToken
-  nameWithType: CancellationToken
-  fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IResponse<ProviderInfo>>
-  nameWithType: Task<IResponse<ProviderInfo>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.ProviderInfo>>
-  nameWithType.vb: Task(Of IResponse(Of ProviderInfo))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.ProviderInfo))
-  name.vb: Task(Of IResponse(Of ProviderInfo))
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  - name: <
-  - uid: Ogu.Response.Abstractions.IResponse`1
-    name: IResponse
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
     isExternal: true
-  - name: <
-  - uid: OpenSettings.Models.ProviderInfo
-    name: ProviderInfo
-    href: OpenSettings.Models.ProviderInfo.html
-  - name: '>'
-  - name: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Ogu.Response.Abstractions.IResponse`1
-    name: IResponse
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: OpenSettings.Models.ProviderInfo
-    name: ProviderInfo
-    href: OpenSettings.Models.ProviderInfo.html
-  - name: )
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true
@@ -665,3 +604,44 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{{T}}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse<T>>
+  nameWithType: Task<IResponse<T>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<T>>
+  nameWithType.vb: Task(Of IResponse(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of T))
+  name.vb: Task(Of IResponse(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )

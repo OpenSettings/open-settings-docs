@@ -50,13 +50,13 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
   syntax:
-    content: Task<IJsonResponse<ProviderInfo>> GetProviderAsync(CancellationToken cancellationToken = default)
+    content: Task<IResponse<ProviderInfo>> GetProviderAsync(CancellationToken cancellationToken = default)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
-      type: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
-    content.vb: Function GetProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IJsonResponse(Of ProviderInfo))
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
+    content.vb: Function GetProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of ProviderInfo))
   overload: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
@@ -103,25 +103,25 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
-  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Json.IJsonResponse{OpenSettings.Models.ProviderInfo}}
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<IJsonResponse<ProviderInfo>>
-  nameWithType: Task<IJsonResponse<ProviderInfo>>
-  fullName: System.Threading.Tasks.Task<Ogu.Response.Json.IJsonResponse<OpenSettings.Models.ProviderInfo>>
-  nameWithType.vb: Task(Of IJsonResponse(Of ProviderInfo))
-  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Json.IJsonResponse(Of OpenSettings.Models.ProviderInfo))
-  name.vb: Task(Of IJsonResponse(Of ProviderInfo))
+  name: Task<IResponse<ProviderInfo>>
+  nameWithType: Task<IResponse<ProviderInfo>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.ProviderInfo>>
+  nameWithType.vb: Task(Of IResponse(Of ProviderInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.ProviderInfo))
+  name.vb: Task(Of IResponse(Of ProviderInfo))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: <
   - uid: OpenSettings.Models.ProviderInfo
@@ -137,8 +137,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Ogu.Response.Json.IJsonResponse`1
-    name: IJsonResponse
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
     isExternal: true
   - name: (
   - name: Of
