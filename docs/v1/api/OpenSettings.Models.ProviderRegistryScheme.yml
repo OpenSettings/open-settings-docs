@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ProviderRegistryScheme
+  commentId: T:OpenSettings.Models.ProviderRegistryScheme
+  id: ProviderRegistryScheme
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ProviderRegistryScheme.Grpc
+  - OpenSettings.Models.ProviderRegistryScheme.Http
+  - OpenSettings.Models.ProviderRegistryScheme.Https
+  - OpenSettings.Models.ProviderRegistryScheme.Tcp
+  - OpenSettings.Models.ProviderRegistryScheme.WebSocket
+  langs:
+  - csharp
+  - vb
+  name: ProviderRegistryScheme
+  nameWithType: ProviderRegistryScheme
+  fullName: OpenSettings.Models.ProviderRegistryScheme
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderRegistryScheme
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum ProviderRegistryScheme
+    content.vb: Public Enum ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.Tcp
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.Tcp
+  id: Tcp
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: Tcp
+  nameWithType: ProviderRegistryScheme.Tcp
+  fullName: OpenSettings.Models.ProviderRegistryScheme.Tcp
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Tcp
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Tcp = 1
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.Grpc
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.Grpc
+  id: Grpc
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: Grpc
+  nameWithType: ProviderRegistryScheme.Grpc
+  fullName: OpenSettings.Models.ProviderRegistryScheme.Grpc
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Grpc
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Grpc = 2
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.Http
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.Http
+  id: Http
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: Http
+  nameWithType: ProviderRegistryScheme.Http
+  fullName: OpenSettings.Models.ProviderRegistryScheme.Http
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Http
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Http = 3
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.Https
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.Https
+  id: Https
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: Https
+  nameWithType: ProviderRegistryScheme.Https
+  fullName: OpenSettings.Models.ProviderRegistryScheme.Https
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Https
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Https = 4
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.WebSocket
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.WebSocket
+  id: WebSocket
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: WebSocket
+  nameWithType: ProviderRegistryScheme.WebSocket
+  fullName: OpenSettings.Models.ProviderRegistryScheme.WebSocket
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: WebSocket
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: WebSocket = 5
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ProviderRegistryScheme
+  commentId: T:OpenSettings.Models.ProviderRegistryScheme
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryScheme.html
+  name: ProviderRegistryScheme
+  nameWithType: ProviderRegistryScheme
+  fullName: OpenSettings.Models.ProviderRegistryScheme

@@ -6,6 +6,7 @@ items:
   parent: OpenSettings.Models
   children:
   - OpenSettings.Models.DataAccessType.Orm
+  - OpenSettings.Models.DataAccessType.Unset
   langs:
   - csharp
   - vb
@@ -32,6 +33,34 @@ items:
   syntax:
     content: public enum DataAccessType
     content.vb: Public Enum DataAccessType
+- uid: OpenSettings.Models.DataAccessType.Unset
+  commentId: F:OpenSettings.Models.DataAccessType.Unset
+  id: Unset
+  parent: OpenSettings.Models.DataAccessType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: DataAccessType.Unset
+  fullName: OpenSettings.Models.DataAccessType.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/DataAccessType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/DataAccessType.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents an unset or undefined data access type.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.DataAccessType
 - uid: OpenSettings.Models.DataAccessType.Orm
   commentId: F:OpenSettings.Models.DataAccessType.Orm
   id: Orm
@@ -50,7 +79,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Orm
     path: ../../../open-settings/src/OpenSettings/Models/DataAccessType.cs
-    startLine: 13
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
