@@ -72,9 +72,9 @@ A typical pipeline setup looks like this:
 ```csharp
 ...
 app.UseRouting();
-app.UseOpenSettings();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseOpenSettings();
 app.MapControllers();
 ...
 ```
