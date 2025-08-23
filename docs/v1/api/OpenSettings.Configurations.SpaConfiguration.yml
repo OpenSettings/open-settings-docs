@@ -65,7 +65,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RoutePrefix
     path: ../../../open-settings/src/OpenSettings/Configurations/SpaConfiguration.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -82,6 +82,10 @@ items:
       type: System.String
     content.vb: Public Property RoutePrefix As String
   overload: OpenSettings.Configurations.SpaConfiguration.RoutePrefix*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Throws an exception when assigned null or whitespace.
 - uid: OpenSettings.Configurations.SpaConfiguration.IndexStream
   commentId: P:OpenSettings.Configurations.SpaConfiguration.IndexStream
   id: IndexStream
@@ -100,7 +104,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IndexStream
     path: ../../../open-settings/src/OpenSettings/Configurations/SpaConfiguration.cs
-    startLine: 45
+    startLine: 51
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -136,7 +140,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DocumentTitle
     path: ../../../open-settings/src/OpenSettings/Configurations/SpaConfiguration.cs
-    startLine: 54
+    startLine: 60
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -144,7 +148,7 @@ items:
     Gets or sets the title of the document for the open settings page.  
 
     <p>This title is used in the HTML document's title element and will be displayed in the browser's title bar.</p>
-  remarks: The default value is '<code>OpenSettings Spa</code>'.
+  remarks: The default value is '<code><xref href="OpenSettings.OpenSettingsDefaults.Spa.DefaultDocumentTitle" data-throw-if-not-resolved="false"></xref></code>'.
   example: []
   syntax:
     content: public string DocumentTitle { get; set; }
@@ -171,7 +175,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsActive
     path: ../../../open-settings/src/OpenSettings/Configurations/SpaConfiguration.cs
-    startLine: 64
+    startLine: 76
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -180,9 +184,17 @@ items:
 
     The default value is <code>true</code>.
   remarks: >-
-    Setting this property to <code>true</code> does not guarantee that the Spa will be accessible.
+    Setting this property to <code>true</code> does not guarantee that the Spa will be accessible. Should be done as follows:
 
-    Make sure to register <code>AddOpenSettingsController(...)</code> and <code>app.UseOpenSettings(...)</code> after <code>UseRouting()</code> and before <code>UseEndpoints()</code>.
+    <pre><code class="lang-csharp">services.AddOpenSettingsController(builder.Configuration);
+
+    ...
+
+    app.UseRouting();
+
+    app.UseOpenSettings();
+
+    app.UseEndpoints();</code></pre>
   example: []
   syntax:
     content: public bool IsActive { get; set; }
@@ -451,6 +463,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
 - uid: OpenSettings.Configurations.SpaConfiguration.RoutePrefix*
   commentId: Overload:OpenSettings.Configurations.SpaConfiguration.RoutePrefix
   href: OpenSettings.Configurations.SpaConfiguration.html#OpenSettings_Configurations_SpaConfiguration_RoutePrefix
@@ -544,6 +564,11 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: OpenSettings.OpenSettingsDefaults.Spa.DefaultDocumentTitle
+  commentId: F:OpenSettings.OpenSettingsDefaults.Spa.DefaultDocumentTitle
+  name: DefaultDocumentTitle
+  nameWithType: OpenSettingsDefaults.Spa.DefaultDocumentTitle
+  fullName: OpenSettings.OpenSettingsDefaults.Spa.DefaultDocumentTitle
 - uid: OpenSettings.Configurations.SpaConfiguration.DocumentTitle*
   commentId: Overload:OpenSettings.Configurations.SpaConfiguration.DocumentTitle
   href: OpenSettings.Configurations.SpaConfiguration.html#OpenSettings_Configurations_SpaConfiguration_DocumentTitle

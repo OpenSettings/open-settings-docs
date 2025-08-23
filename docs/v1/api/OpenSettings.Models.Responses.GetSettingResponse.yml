@@ -111,35 +111,6 @@ items:
       type: System.IO.Compression.CompressionLevel
     content.vb: Public Property CompressionLevel As CompressionLevel
   overload: OpenSettings.Models.Responses.GetSettingResponse.CompressionLevel*
-- uid: OpenSettings.Models.Responses.GetSettingResponse.Data
-  commentId: P:OpenSettings.Models.Responses.GetSettingResponse.Data
-  id: Data
-  parent: OpenSettings.Models.Responses.GetSettingResponse
-  langs:
-  - csharp
-  - vb
-  name: Data
-  nameWithType: GetSettingResponse.Data
-  fullName: OpenSettings.Models.Responses.GetSettingResponse.Data
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetSettingResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Data
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 12
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public byte[] Data { get; set; }
-    parameters: []
-    return:
-      type: System.Byte[]
-    content.vb: Public Property Data As Byte()
-  overload: OpenSettings.Models.Responses.GetSettingResponse.Data*
 - uid: OpenSettings.Models.Responses.GetSettingResponse.DataRestored
   commentId: P:OpenSettings.Models.Responses.GetSettingResponse.DataRestored
   id: DataRestored
@@ -158,7 +129,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataRestored
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -187,7 +158,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataValidationDisabled
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -216,7 +187,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -245,7 +216,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -274,7 +245,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -303,7 +274,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ComputedIdentifier
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -332,7 +303,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -361,7 +332,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierId
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 28
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -390,7 +361,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppId
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 30
+    startLine: 28
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -419,7 +390,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -448,7 +419,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedById
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 34
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -477,7 +448,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 36
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -506,7 +477,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
-    startLine: 38
+    startLine: 36
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -517,6 +488,35 @@ items:
       type: System.Nullable{System.DateTime}
     content.vb: Public Property UpdatedOn As Date?
   overload: OpenSettings.Models.Responses.GetSettingResponse.UpdatedOn*
+- uid: OpenSettings.Models.Responses.GetSettingResponse.Data
+  commentId: P:OpenSettings.Models.Responses.GetSettingResponse.Data
+  id: Data
+  parent: OpenSettings.Models.Responses.GetSettingResponse
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: GetSettingResponse.Data
+  fullName: OpenSettings.Models.Responses.GetSettingResponse.Data
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetSettingResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Data
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingResponse.cs
+    startLine: 38
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public byte[] Data { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Data As Byte()
+  overload: OpenSettings.Models.Responses.GetSettingResponse.Data*
 - uid: OpenSettings.Models.Responses.GetSettingResponse.RowVersion
   commentId: P:OpenSettings.Models.Responses.GetSettingResponse.RowVersion
   id: RowVersion
@@ -908,35 +908,6 @@ references:
     name: Compression
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.io.compression
-- uid: OpenSettings.Models.Responses.GetSettingResponse.Data*
-  commentId: Overload:OpenSettings.Models.Responses.GetSettingResponse.Data
-  href: OpenSettings.Models.Responses.GetSettingResponse.html#OpenSettings_Models_Responses_GetSettingResponse_Data
-  name: Data
-  nameWithType: GetSettingResponse.Data
-  fullName: OpenSettings.Models.Responses.GetSettingResponse.Data
-- uid: System.Byte[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte[]
-  nameWithType: byte[]
-  fullName: byte[]
-  nameWithType.vb: Byte()
-  fullName.vb: Byte()
-  name.vb: Byte()
-  spec.csharp:
-  - uid: System.Byte
-    name: byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Byte
-    name: Byte
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.byte
-  - name: (
-  - name: )
 - uid: OpenSettings.Models.Responses.GetSettingResponse.DataRestored*
   commentId: Overload:OpenSettings.Models.Responses.GetSettingResponse.DataRestored
   href: OpenSettings.Models.Responses.GetSettingResponse.html#OpenSettings_Models_Responses_GetSettingResponse_DataRestored
@@ -1179,6 +1150,35 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.datetime
   - name: '?'
+- uid: OpenSettings.Models.Responses.GetSettingResponse.Data*
+  commentId: Overload:OpenSettings.Models.Responses.GetSettingResponse.Data
+  href: OpenSettings.Models.Responses.GetSettingResponse.html#OpenSettings_Models_Responses_GetSettingResponse_Data
+  name: Data
+  nameWithType: GetSettingResponse.Data
+  fullName: OpenSettings.Models.Responses.GetSettingResponse.Data
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
 - uid: OpenSettings.Models.Responses.GetSettingResponse.RowVersion*
   commentId: Overload:OpenSettings.Models.Responses.GetSettingResponse.RowVersion
   href: OpenSettings.Models.Responses.GetSettingResponse.html#OpenSettings_Models_Responses_GetSettingResponse_RowVersion

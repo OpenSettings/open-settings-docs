@@ -97,37 +97,6 @@ items:
   nameWithType.vb: ClientInfo.New(Guid?, Guid?, String, String)
   fullName.vb: OpenSettings.Models.ClientInfo.New(System.Guid?, System.Guid?, String, String)
   name.vb: New(Guid?, Guid?, String, String)
-- uid: OpenSettings.Models.ClientInfo.Name
-  commentId: P:OpenSettings.Models.ClientInfo.Name
-  id: Name
-  parent: OpenSettings.Models.ClientInfo
-  langs:
-  - csharp
-  - vb
-  name: Name
-  nameWithType: ClientInfo.Name
-  fullName: OpenSettings.Models.ClientInfo.Name
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/ClientInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Name
-    path: ../../../open-settings/src/OpenSettings/Models/ClientInfo.cs
-    startLine: 45
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Gets or sets the name of the client.
-  example: []
-  syntax:
-    content: public string Name { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property Name As String
-  overload: OpenSettings.Models.ClientInfo.Name*
 - uid: OpenSettings.Models.ClientInfo.Id
   commentId: P:OpenSettings.Models.ClientInfo.Id
   id: Id
@@ -146,7 +115,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Id
     path: ../../../open-settings/src/OpenSettings/Models/ClientInfo.cs
-    startLine: 50
+    startLine: 45
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -177,7 +146,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Secret
     path: ../../../open-settings/src/OpenSettings/Models/ClientInfo.cs
-    startLine: 55
+    startLine: 50
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -190,6 +159,37 @@ items:
       type: System.Guid
     content.vb: Public ReadOnly Property Secret As Guid
   overload: OpenSettings.Models.ClientInfo.Secret*
+- uid: OpenSettings.Models.ClientInfo.Name
+  commentId: P:OpenSettings.Models.ClientInfo.Name
+  id: Name
+  parent: OpenSettings.Models.ClientInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ClientInfo.Name
+  fullName: OpenSettings.Models.ClientInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ClientInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Name
+    path: ../../../open-settings/src/OpenSettings/Models/ClientInfo.cs
+    startLine: 55
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the name of the client.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: OpenSettings.Models.ClientInfo.Name*
 - uid: OpenSettings.Models.ClientInfo.Version
   commentId: P:OpenSettings.Models.ClientInfo.Version
   id: Version
@@ -218,22 +218,12 @@ items:
     e.g. '<code>1.0.0</code>'.
   example: []
   syntax:
-    content: >-
-      [JsonIgnore]
-
-      public string Version { get; }
+    content: public string Version { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonIgnore>
-
-      Public ReadOnly Property Version As String
+    content.vb: Public ReadOnly Property Version As String
   overload: OpenSettings.Models.ClientInfo.Version*
-  attributes:
-  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
-    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
-    arguments: []
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -569,12 +559,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: OpenSettings.Models.ClientInfo.Name*
-  commentId: Overload:OpenSettings.Models.ClientInfo.Name
-  href: OpenSettings.Models.ClientInfo.html#OpenSettings_Models_ClientInfo_Name
-  name: Name
-  nameWithType: ClientInfo.Name
-  fullName: OpenSettings.Models.ClientInfo.Name
 - uid: OpenSettings.Models.ClientInfo.Id*
   commentId: Overload:OpenSettings.Models.ClientInfo.Id
   href: OpenSettings.Models.ClientInfo.html#OpenSettings_Models_ClientInfo_Id
@@ -595,6 +579,12 @@ references:
   name: Secret
   nameWithType: ClientInfo.Secret
   fullName: OpenSettings.Models.ClientInfo.Secret
+- uid: OpenSettings.Models.ClientInfo.Name*
+  commentId: Overload:OpenSettings.Models.ClientInfo.Name
+  href: OpenSettings.Models.ClientInfo.html#OpenSettings_Models_ClientInfo_Name
+  name: Name
+  nameWithType: ClientInfo.Name
+  fullName: OpenSettings.Models.ClientInfo.Name
 - uid: OpenSettings.Models.ClientInfo.Version*
   commentId: Overload:OpenSettings.Models.ClientInfo.Version
   href: OpenSettings.Models.ClientInfo.html#OpenSettings_Models_ClientInfo_Version

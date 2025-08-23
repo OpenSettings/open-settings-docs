@@ -4,7 +4,6 @@ items:
   commentId: N:OpenSettings.AspNetCore.Models.Requests
   id: OpenSettings.AspNetCore.Models.Requests
   children:
-  - OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
   - OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest
   - OpenSettings.AspNetCore.Models.Requests.CopySettingToRequestBody
   - OpenSettings.AspNetCore.Models.Requests.CopySettingToRequestBodyIdentifier
@@ -29,6 +28,8 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.CreateSettingRequestBodyClass
   - OpenSettings.AspNetCore.Models.Requests.CreateTagRequest
   - OpenSettings.AspNetCore.Models.Requests.CreateTagRequestBody
+  - OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+  - OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody
   - OpenSettings.AspNetCore.Models.Requests.DeleteAppGroupRequest
   - OpenSettings.AspNetCore.Models.Requests.DeleteAppIdentifierMappingRequest
   - OpenSettings.AspNetCore.Models.Requests.DeleteAppRequest
@@ -37,16 +38,21 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.DeleteLicenseRequest
   - OpenSettings.AspNetCore.Models.Requests.DeleteSettingRequest
   - OpenSettings.AspNetCore.Models.Requests.DeleteTagRequest
+  - OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
   - OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest
   - OpenSettings.AspNetCore.Models.Requests.DragItemSortOrderRequest
   - OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequest
   - OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequestBody
+  - OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest
+  - OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody
+  - OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient
   - OpenSettings.AspNetCore.Models.Requests.GetAppGroupRequest
   - OpenSettings.AspNetCore.Models.Requests.GetAppGroupsRequest
   - OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingByAppAndIdentifierRequest
   - OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingsRequest
   - OpenSettings.AspNetCore.Models.Requests.GetAppRequest
   - OpenSettings.AspNetCore.Models.Requests.GetAppsRequest
+  - OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest
   - OpenSettings.AspNetCore.Models.Requests.GetConfigurationByAppAndIdentifierRequest
   - OpenSettings.AspNetCore.Models.Requests.GetGroupedAppDataByAppAndIdentifierRequest
   - OpenSettings.AspNetCore.Models.Requests.GetGroupedAppDataByAppRequest
@@ -56,7 +62,8 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.GetInstancesByAppAndIdentifierRequest
   - OpenSettings.AspNetCore.Models.Requests.GetInstancesByAppRequest
   - OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
-  - OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+  - OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
+  - OpenSettings.AspNetCore.Models.Requests.GetMeRequest
   - OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest
   - OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest
   - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
@@ -72,6 +79,9 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.GetTagRequest
   - OpenSettings.AspNetCore.Models.Requests.GetTagsRequest
   - OpenSettings.AspNetCore.Models.Requests.GetUserNotificationsRequest
+  - OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+  - OpenSettings.AspNetCore.Models.Requests.LoginRequest
+  - OpenSettings.AspNetCore.Models.Requests.LogoutRequest
   - OpenSettings.AspNetCore.Models.Requests.MarkNotificationAsRequest
   - OpenSettings.AspNetCore.Models.Requests.MarkNotificationsAsOpenedRequest
   - OpenSettings.AspNetCore.Models.Requests.PatchConfigurationRequest
@@ -105,6 +115,7 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.UpdateTagRequest
   - OpenSettings.AspNetCore.Models.Requests.UpdateTagRequestBody
   - OpenSettings.AspNetCore.Models.Requests.UpdateTagSortOrderRequest
+  - OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
   langs:
   - csharp
   - vb
@@ -115,12 +126,6 @@ items:
   assemblies:
   - OpenSettings.AspNetCore
 references:
-- uid: OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
-  commentId: T:OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
-  href: OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse.html
-  name: AuthenticatedResponse
-  nameWithType: AuthenticatedResponse
-  fullName: OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
 - uid: OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -288,6 +293,20 @@ references:
   name: CreateTagRequestBody
   nameWithType: CreateTagRequestBody
   fullName: OpenSettings.AspNetCore.Models.Requests.CreateTagRequestBody
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest.html
+  name: CreateUserRequest
+  nameWithType: CreateUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody.html
+  name: CreateUserRequestBody
+  nameWithType: CreateUserRequestBody
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody
 - uid: OpenSettings.AspNetCore.Models.Requests.DeleteAppIdentifierMappingRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.DeleteAppIdentifierMappingRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -344,6 +363,13 @@ references:
   name: DeleteTagRequest
   nameWithType: DeleteTagRequest
   fullName: OpenSettings.AspNetCore.Models.Requests.DeleteTagRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest.html
+  name: DeleteUserRequest
+  nameWithType: DeleteUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
 - uid: OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -372,6 +398,27 @@ references:
   name: FetchAppDataRequestBody
   nameWithType: FetchAppDataRequestBody
   fullName: OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequestBody
+- uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest.html
+  name: GenerateMachineToMachineTokenRequest
+  nameWithType: GenerateMachineToMachineTokenRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody.html
+  name: GenerateMachineToMachineTokenRequestBody
+  nameWithType: GenerateMachineToMachineTokenRequestBody
+  fullName: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody
+- uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient.html
+  name: GenerateMachineToMachineTokenRequestBodyClient
+  nameWithType: GenerateMachineToMachineTokenRequestBodyClient
+  fullName: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient
 - uid: OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingByAppAndIdentifierRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.GetAppIdentifierMappingByAppAndIdentifierRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -400,6 +447,12 @@ references:
   name: GetAppsRequest
   nameWithType: GetAppsRequest
   fullName: OpenSettings.AspNetCore.Models.Requests.GetAppsRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest
+  href: OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest.html
+  name: GetAuthStatusRequest
+  nameWithType: GetAuthStatusRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest
 - uid: OpenSettings.AspNetCore.Models.Requests.GetConfigurationByAppAndIdentifierRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.GetConfigurationByAppAndIdentifierRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -462,13 +515,20 @@ references:
   name: GetInstancesByAppRequest
   nameWithType: GetInstancesByAppRequest
   fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesByAppRequest
-- uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
-  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
   parent: OpenSettings.AspNetCore.Models.Requests
-  href: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest.html
-  name: GetLocalSettingRequest
-  nameWithType: GetLocalSettingRequest
-  fullName: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+  href: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest.html
+  name: GetLocalSettingsRequest
+  nameWithType: GetLocalSettingsRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetMeRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GetMeRequest.html
+  name: GetMeRequest
+  nameWithType: GetMeRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
 - uid: OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -588,6 +648,27 @@ references:
   name: GetUserNotificationsRequest
   nameWithType: GetUserNotificationsRequest
   fullName: OpenSettings.AspNetCore.Models.Requests.GetUserNotificationsRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GetUserRequest.html
+  name: GetUserRequest
+  nameWithType: GetUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.LoginRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.LoginRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.LoginRequest.html
+  name: LoginRequest
+  nameWithType: LoginRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.LoginRequest
+- uid: OpenSettings.AspNetCore.Models.Requests.LogoutRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.LogoutRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.LogoutRequest.html
+  name: LogoutRequest
+  nameWithType: LogoutRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.LogoutRequest
 - uid: OpenSettings.AspNetCore.Models.Requests.MarkNotificationAsRequest
   commentId: T:OpenSettings.AspNetCore.Models.Requests.MarkNotificationAsRequest
   parent: OpenSettings.AspNetCore.Models.Requests
@@ -818,6 +899,13 @@ references:
   name: UpdateTagRequestBody
   nameWithType: UpdateTagRequestBody
   fullName: OpenSettings.AspNetCore.Models.Requests.UpdateTagRequestBody
+- uid: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest.html
+  name: UpdateUserRequest
+  nameWithType: UpdateUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
 - uid: OpenSettings.AspNetCore.Models.Requests
   commentId: N:OpenSettings.AspNetCore.Models.Requests
   href: OpenSettings.html

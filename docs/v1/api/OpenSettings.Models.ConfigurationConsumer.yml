@@ -7,6 +7,7 @@ items:
   children:
   - OpenSettings.Models.ConfigurationConsumer.IsRedisActive
   - OpenSettings.Models.ConfigurationConsumer.PollingSettingsWorker
+  - OpenSettings.Models.ConfigurationConsumer.ProviderUrl
   - OpenSettings.Models.ConfigurationConsumer.RequestEncodings
   langs:
   - csharp
@@ -39,6 +40,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.ConfigurationConsumer.ProviderUrl
+  commentId: P:OpenSettings.Models.ConfigurationConsumer.ProviderUrl
+  id: ProviderUrl
+  parent: OpenSettings.Models.ConfigurationConsumer
+  langs:
+  - csharp
+  - vb
+  name: ProviderUrl
+  nameWithType: ConfigurationConsumer.ProviderUrl
+  fullName: OpenSettings.Models.ConfigurationConsumer.ProviderUrl
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigurationConsumer.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderUrl
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationConsumer.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public string ProviderUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProviderUrl As String
+  overload: OpenSettings.Models.ConfigurationConsumer.ProviderUrl*
 - uid: OpenSettings.Models.ConfigurationConsumer.RequestEncodings
   commentId: P:OpenSettings.Models.ConfigurationConsumer.RequestEncodings
   id: RequestEncodings
@@ -57,7 +87,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RequestEncodings
     path: ../../../open-settings/src/OpenSettings/Models/ConfigurationConsumer.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -86,7 +116,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsRedisActive
     path: ../../../open-settings/src/OpenSettings/Models/ConfigurationConsumer.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -115,7 +145,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PollingSettingsWorker
     path: ../../../open-settings/src/OpenSettings/Models/ConfigurationConsumer.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -386,6 +416,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Models.ConfigurationConsumer.ProviderUrl*
+  commentId: Overload:OpenSettings.Models.ConfigurationConsumer.ProviderUrl
+  href: OpenSettings.Models.ConfigurationConsumer.html#OpenSettings_Models_ConfigurationConsumer_ProviderUrl
+  name: ProviderUrl
+  nameWithType: ConfigurationConsumer.ProviderUrl
+  fullName: OpenSettings.Models.ConfigurationConsumer.ProviderUrl
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: OpenSettings.Models.ConfigurationConsumer.RequestEncodings*
   commentId: Overload:OpenSettings.Models.ConfigurationConsumer.RequestEncodings
   href: OpenSettings.Models.ConfigurationConsumer.html#OpenSettings_Models_ConfigurationConsumer_RequestEncodings

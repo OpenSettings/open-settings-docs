@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IInstanceUrlResolverService
+  commentId: T:OpenSettings.Services.Interfaces.IInstanceUrlResolverService
+  id: IInstanceUrlResolverService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls
+  langs:
+  - csharp
+  - vb
+  name: IInstanceUrlResolverService
+  nameWithType: IInstanceUrlResolverService
+  fullName: OpenSettings.Services.Interfaces.IInstanceUrlResolverService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstanceUrlResolverService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IInstanceUrlResolverService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstanceUrlResolverService.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Provides functionality to resolve the Urls for the current instance of the application.
+
+    This interface defines a contract for services that can determine the Urls
+
+    where the application is accessible.
+  example: []
+  syntax:
+    content: public interface IInstanceUrlResolverService
+    content.vb: Public Interface IInstanceUrlResolverService
+- uid: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls
+  commentId: M:OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls
+  id: ResolveUrls
+  parent: OpenSettings.Services.Interfaces.IInstanceUrlResolverService
+  langs:
+  - csharp
+  - vb
+  name: ResolveUrls()
+  nameWithType: IInstanceUrlResolverService.ResolveUrls()
+  fullName: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IInstanceUrlResolverService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ResolveUrls
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IInstanceUrlResolverService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Resolves the Urls for the current instance of the application.
+
+    This method retrieves a collection of Urls that the application is 
+
+    accessible through, such as base addresses or endpoints.
+  example: []
+  syntax:
+    content: string[] ResolveUrls()
+    return:
+      type: System.String[]
+      description: >-
+        An array of strings representing the Urls of the current instance.
+
+        Each string in the array is a full Url (e.g., "http://ipaddress:5000").
+    content.vb: Function ResolveUrls() As String()
+  overload: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls*
+  commentId: Overload:OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls
+  href: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.html#OpenSettings_Services_Interfaces_IInstanceUrlResolverService_ResolveUrls
+  name: ResolveUrls
+  nameWithType: IInstanceUrlResolverService.ResolveUrls
+  fullName: OpenSettings.Services.Interfaces.IInstanceUrlResolverService.ResolveUrls
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

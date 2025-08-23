@@ -4,22 +4,23 @@ items:
   commentId: N:OpenSettings.Services.Rest.Interfaces
   id: OpenSettings.Services.Rest.Interfaces
   children:
-  - OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
-  - OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
-  - OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
-  - OpenSettings.Services.Rest.Interfaces.IAppsRestService
-  - OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
-  - OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
-  - OpenSettings.Services.Rest.Interfaces.IInstancesRestService
-  - OpenSettings.Services.Rest.Interfaces.ILicensesRestService
-  - OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  - OpenSettings.Services.Rest.Interfaces.IAppGroupRestService
+  - OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService
+  - OpenSettings.Services.Rest.Interfaces.IAppRestService
+  - OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService
+  - OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  - OpenSettings.Services.Rest.Interfaces.IConfigurationRestService
+  - OpenSettings.Services.Rest.Interfaces.IIdentifierRestService
+  - OpenSettings.Services.Rest.Interfaces.IInstanceRestService
+  - OpenSettings.Services.Rest.Interfaces.ILicenseRestService
+  - OpenSettings.Services.Rest.Interfaces.INotificationRestService
   - OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
   - OpenSettings.Services.Rest.Interfaces.IProviderRestService
-  - OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
-  - OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
+  - OpenSettings.Services.Rest.Interfaces.ISettingClassRestService
+  - OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService
   - OpenSettings.Services.Rest.Interfaces.ISettingsRestService
-  - OpenSettings.Services.Rest.Interfaces.ITagsRestService
-  - OpenSettings.Services.Rest.Interfaces.IUsersRestService
+  - OpenSettings.Services.Rest.Interfaces.ITagRestService
+  - OpenSettings.Services.Rest.Interfaces.IUserRestService
   langs:
   - csharp
   - vb
@@ -30,69 +31,75 @@ items:
   assemblies:
   - OpenSettings
 references:
-- uid: OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IAppGroupRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppGroupRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService.html
-  name: IAppGroupsRestService
-  nameWithType: IAppGroupsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
+  href: OpenSettings.Services.Rest.Interfaces.IAppGroupRestService.html
+  name: IAppGroupRestService
+  nameWithType: IAppGroupRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppGroupRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService.html
-  name: IAppIdentifierMappingsRestService
-  nameWithType: IAppIdentifierMappingsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IAppsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppsRestService
+  href: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService.html
+  name: IAppIdentifierMappingRestService
+  nameWithType: IAppIdentifierMappingRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IAppRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IAppsRestService.html
-  name: IAppsRestService
-  nameWithType: IAppsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IAppsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
+  href: OpenSettings.Services.Rest.Interfaces.IAppRestService.html
+  name: IAppRestService
+  nameWithType: IAppRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService.html
-  name: IAppTagMappingsRestService
-  nameWithType: IAppTagMappingsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
+  href: OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService.html
+  name: IAppTagMappingRestService
+  nameWithType: IAppTagMappingRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  href: OpenSettings.Services.Rest.Interfaces.IAuthRestService.html
+  name: IAuthRestService
+  nameWithType: IAuthRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAuthRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IConfigurationRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IConfigurationRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService.html
-  name: IConfigurationsRestService
-  nameWithType: IConfigurationsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
+  href: OpenSettings.Services.Rest.Interfaces.IConfigurationRestService.html
+  name: IConfigurationRestService
+  nameWithType: IConfigurationRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IConfigurationRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IIdentifierRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IIdentifierRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService.html
-  name: IIdentifiersRestService
-  nameWithType: IIdentifiersRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IInstancesRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IInstancesRestService
+  href: OpenSettings.Services.Rest.Interfaces.IIdentifierRestService.html
+  name: IIdentifierRestService
+  nameWithType: IIdentifierRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IIdentifierRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IInstanceRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IInstanceRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IInstancesRestService.html
-  name: IInstancesRestService
-  nameWithType: IInstancesRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IInstancesRestService
-- uid: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  href: OpenSettings.Services.Rest.Interfaces.IInstanceRestService.html
+  name: IInstanceRestService
+  nameWithType: IInstanceRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IInstanceRestService
+- uid: OpenSettings.Services.Rest.Interfaces.ILicenseRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ILicenseRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.ILicensesRestService.html
-  name: ILicensesRestService
-  nameWithType: ILicensesRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
-- uid: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  href: OpenSettings.Services.Rest.Interfaces.ILicenseRestService.html
+  name: ILicenseRestService
+  nameWithType: ILicenseRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ILicenseRestService
+- uid: OpenSettings.Services.Rest.Interfaces.INotificationRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.INotificationRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.INotificationsRestService.html
-  name: INotificationsRestService
-  nameWithType: INotificationsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
+  href: OpenSettings.Services.Rest.Interfaces.INotificationRestService.html
+  name: INotificationRestService
+  nameWithType: INotificationRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.INotificationRestService
 - uid: OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
   commentId: T:OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
   parent: OpenSettings.Services.Rest.Interfaces
@@ -107,20 +114,20 @@ references:
   name: IProviderRestService
   nameWithType: IProviderRestService
   fullName: OpenSettings.Services.Rest.Interfaces.IProviderRestService
-- uid: OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
+- uid: OpenSettings.Services.Rest.Interfaces.ISettingClassRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ISettingClassRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService.html
-  name: ISettingClassesRestService
-  nameWithType: ISettingClassesRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
-- uid: OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
+  href: OpenSettings.Services.Rest.Interfaces.ISettingClassRestService.html
+  name: ISettingClassRestService
+  nameWithType: ISettingClassRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ISettingClassRestService
+- uid: OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService.html
-  name: ISettingHistoriesRestService
-  nameWithType: ISettingHistoriesRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
+  href: OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService.html
+  name: ISettingHistoryRestService
+  nameWithType: ISettingHistoryRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService
 - uid: OpenSettings.Services.Rest.Interfaces.ISettingsRestService
   commentId: T:OpenSettings.Services.Rest.Interfaces.ISettingsRestService
   parent: OpenSettings.Services.Rest.Interfaces
@@ -128,20 +135,20 @@ references:
   name: ISettingsRestService
   nameWithType: ISettingsRestService
   fullName: OpenSettings.Services.Rest.Interfaces.ISettingsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.ITagsRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.ITagsRestService
+- uid: OpenSettings.Services.Rest.Interfaces.ITagRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ITagRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.ITagsRestService.html
-  name: ITagsRestService
-  nameWithType: ITagsRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.ITagsRestService
-- uid: OpenSettings.Services.Rest.Interfaces.IUsersRestService
-  commentId: T:OpenSettings.Services.Rest.Interfaces.IUsersRestService
+  href: OpenSettings.Services.Rest.Interfaces.ITagRestService.html
+  name: ITagRestService
+  nameWithType: ITagRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ITagRestService
+- uid: OpenSettings.Services.Rest.Interfaces.IUserRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IUserRestService
   parent: OpenSettings.Services.Rest.Interfaces
-  href: OpenSettings.Services.Rest.Interfaces.IUsersRestService.html
-  name: IUsersRestService
-  nameWithType: IUsersRestService
-  fullName: OpenSettings.Services.Rest.Interfaces.IUsersRestService
+  href: OpenSettings.Services.Rest.Interfaces.IUserRestService.html
+  name: IUserRestService
+  nameWithType: IUserRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IUserRestService
 - uid: OpenSettings.Services.Rest.Interfaces
   commentId: N:OpenSettings.Services.Rest.Interfaces
   href: OpenSettings.html

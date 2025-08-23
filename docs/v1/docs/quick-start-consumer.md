@@ -49,7 +49,7 @@ builder.Services
 var app = builder.Build();
 
 app.UseRouting();
-app.UseOpenSettings(); // Updates instance status when the application starts or stops.
+app.UseOpenSettings(); // Updates instance status when the application starts or stops & serves OpenSettings Spa.
 app.MapControllers();
 
 await app.RunAsync();

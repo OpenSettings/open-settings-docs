@@ -5,7 +5,7 @@ items:
   id: LicensesController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicensesService)
+  - OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicenseService)
   - OpenSettings.AspNetCore.Controllers.v1.LicensesController.DeleteLicense(OpenSettings.AspNetCore.Models.Requests.DeleteLicenseRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.LicensesController.GetCurrentLicense(System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.LicensesController.GetPaginatedLicenses(OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest,System.Threading.CancellationToken)
@@ -217,16 +217,16 @@ items:
     arguments:
     - type: System.String
       value: v1/licenses
-- uid: OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicensesService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicensesService)
-  id: '#ctor(OpenSettings.Services.Interfaces.ILicensesService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicenseService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor(OpenSettings.Services.Interfaces.ILicenseService)
+  id: '#ctor(OpenSettings.Services.Interfaces.ILicenseService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.LicensesController
   langs:
   - csharp
   - vb
-  name: LicensesController(ILicensesService)
-  nameWithType: LicensesController.LicensesController(ILicensesService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.LicensesController.LicensesController(OpenSettings.Services.Interfaces.ILicensesService)
+  name: LicensesController(ILicenseService)
+  nameWithType: LicensesController.LicensesController(ILicenseService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.LicensesController.LicensesController(OpenSettings.Services.Interfaces.ILicenseService)
   type: Constructor
   source:
     remote:
@@ -240,15 +240,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public LicensesController(ILicensesService licenseService)
+    content: public LicensesController(ILicenseService licenseService)
     parameters:
     - id: licenseService
-      type: OpenSettings.Services.Interfaces.ILicensesService
-    content.vb: Public Sub New(licenseService As ILicensesService)
+      type: OpenSettings.Services.Interfaces.ILicenseService
+    content.vb: Public Sub New(licenseService As ILicenseService)
   overload: OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor*
-  nameWithType.vb: LicensesController.New(ILicensesService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.LicensesController.New(OpenSettings.Services.Interfaces.ILicensesService)
-  name.vb: New(ILicensesService)
+  nameWithType.vb: LicensesController.New(ILicenseService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.LicensesController.New(OpenSettings.Services.Interfaces.ILicenseService)
+  name.vb: New(ILicenseService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.LicensesController.GetPaginatedLicenses(OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.LicensesController.GetPaginatedLicenses(OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest,System.Threading.CancellationToken)
   id: GetPaginatedLicenses(OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest,System.Threading.CancellationToken)
@@ -9058,20 +9058,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.LicensesController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.LicensesController.html#OpenSettings_AspNetCore_Controllers_v1_LicensesController__ctor_OpenSettings_Services_Interfaces_ILicensesService_
+  href: OpenSettings.AspNetCore.Controllers.v1.LicensesController.html#OpenSettings_AspNetCore_Controllers_v1_LicensesController__ctor_OpenSettings_Services_Interfaces_ILicenseService_
   name: LicensesController
   nameWithType: LicensesController.LicensesController
   fullName: OpenSettings.AspNetCore.Controllers.v1.LicensesController.LicensesController
   nameWithType.vb: LicensesController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.LicensesController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.ILicensesService
-  commentId: T:OpenSettings.Services.Interfaces.ILicensesService
+- uid: OpenSettings.Services.Interfaces.ILicenseService
+  commentId: T:OpenSettings.Services.Interfaces.ILicenseService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.ILicensesService.html
-  name: ILicensesService
-  nameWithType: ILicensesService
-  fullName: OpenSettings.Services.Interfaces.ILicensesService
+  href: OpenSettings.Services.Interfaces.ILicenseService.html
+  name: ILicenseService
+  nameWithType: ILicenseService
+  fullName: OpenSettings.Services.Interfaces.ILicenseService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

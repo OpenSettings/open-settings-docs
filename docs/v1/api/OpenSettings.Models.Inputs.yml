@@ -18,6 +18,7 @@ items:
   - OpenSettings.Models.Inputs.CreateNotificationInput
   - OpenSettings.Models.Inputs.CreateSettingInput
   - OpenSettings.Models.Inputs.CreateTagInput
+  - OpenSettings.Models.Inputs.CreateUserInput
   - OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
   - OpenSettings.Models.Inputs.DeleteAppInput
   - OpenSettings.Models.Inputs.DeleteGroupInput
@@ -27,14 +28,18 @@ items:
   - OpenSettings.Models.Inputs.DeleteNotificationInput
   - OpenSettings.Models.Inputs.DeleteSettingInput
   - OpenSettings.Models.Inputs.DeleteTagInput
+  - OpenSettings.Models.Inputs.DeleteUserInput
   - OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
   - OpenSettings.Models.Inputs.DragItemSortOrderInput
   - OpenSettings.Models.Inputs.FetchAppDataInput
+  - OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+  - OpenSettings.Models.Inputs.GenerateTokenForUserInput
   - OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
   - OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
   - OpenSettings.Models.Inputs.GetAppInput
   - OpenSettings.Models.Inputs.GetAppInstanceStatusInput
   - OpenSettings.Models.Inputs.GetAppsInput
+  - OpenSettings.Models.Inputs.GetAuthStatusInput
   - OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
   - OpenSettings.Models.Inputs.GetGroupInput
   - OpenSettings.Models.Inputs.GetGroupedAppDataByAppAndIdentifierInput
@@ -43,8 +48,11 @@ items:
   - OpenSettings.Models.Inputs.GetGroupsInput
   - OpenSettings.Models.Inputs.GetIdentifierInput
   - OpenSettings.Models.Inputs.GetIdentifiersInput
+  - OpenSettings.Models.Inputs.GetIdentityInput
   - OpenSettings.Models.Inputs.GetInstancesDataInput
   - OpenSettings.Models.Inputs.GetInstancesInput
+  - OpenSettings.Models.Inputs.GetMeInput
+  - OpenSettings.Models.Inputs.GetMeInputIncludes
   - OpenSettings.Models.Inputs.GetNotificationsInput
   - OpenSettings.Models.Inputs.GetOrCreateUserInput
   - OpenSettings.Models.Inputs.GetPaginatedInput
@@ -61,7 +69,10 @@ items:
   - OpenSettings.Models.Inputs.GetSettingsLastUpdatedComputedIdentifiersInput
   - OpenSettings.Models.Inputs.GetTagInput
   - OpenSettings.Models.Inputs.GetTagsInput
+  - OpenSettings.Models.Inputs.GetUserInput
   - OpenSettings.Models.Inputs.GetUserNotificationsInput
+  - OpenSettings.Models.Inputs.LoginInput
+  - OpenSettings.Models.Inputs.LogoutInput
   - OpenSettings.Models.Inputs.MarkNotificationAsInput
   - OpenSettings.Models.Inputs.MarkNotificationsAsOpenedInput
   - OpenSettings.Models.Inputs.PatchConfigurationInput
@@ -90,6 +101,7 @@ items:
   - OpenSettings.Models.Inputs.UpdateSettingInput
   - OpenSettings.Models.Inputs.UpdateTagInput
   - OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+  - OpenSettings.Models.Inputs.UpdateUserInput
   langs:
   - csharp
   - vb
@@ -197,6 +209,13 @@ references:
   name: CreateTagInput
   nameWithType: CreateTagInput
   fullName: OpenSettings.Models.Inputs.CreateTagInput
+- uid: OpenSettings.Models.Inputs.CreateUserInput
+  commentId: T:OpenSettings.Models.Inputs.CreateUserInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.CreateUserInput.html
+  name: CreateUserInput
+  nameWithType: CreateUserInput
+  fullName: OpenSettings.Models.Inputs.CreateUserInput
 - uid: OpenSettings.Models.Inputs.DeleteAppInput
   commentId: T:OpenSettings.Models.Inputs.DeleteAppInput
   parent: OpenSettings.Models.Inputs
@@ -260,6 +279,13 @@ references:
   name: DeleteTagInput
   nameWithType: DeleteTagInput
   fullName: OpenSettings.Models.Inputs.DeleteTagInput
+- uid: OpenSettings.Models.Inputs.DeleteUserInput
+  commentId: T:OpenSettings.Models.Inputs.DeleteUserInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.DeleteUserInput.html
+  name: DeleteUserInput
+  nameWithType: DeleteUserInput
+  fullName: OpenSettings.Models.Inputs.DeleteUserInput
 - uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
   commentId: T:OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
   parent: OpenSettings.Models.Inputs
@@ -274,6 +300,19 @@ references:
   name: DragItemSortOrderInput
   nameWithType: DragItemSortOrderInput
   fullName: OpenSettings.Models.Inputs.DragItemSortOrderInput
+- uid: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+  commentId: T:OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GenerateTokenForMachineInput.html
+  name: GenerateTokenForMachineInput
+  nameWithType: GenerateTokenForMachineInput
+  fullName: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+- uid: OpenSettings.Models.Inputs.GenerateTokenForUserInput
+  commentId: T:OpenSettings.Models.Inputs.GenerateTokenForUserInput
+  href: OpenSettings.Models.Inputs.GenerateTokenForUserInput.html
+  name: GenerateTokenForUserInput
+  nameWithType: GenerateTokenForUserInput
+  fullName: OpenSettings.Models.Inputs.GenerateTokenForUserInput
 - uid: OpenSettings.Models.Inputs.GetAppInput
   commentId: T:OpenSettings.Models.Inputs.GetAppInput
   parent: OpenSettings.Models.Inputs
@@ -308,6 +347,12 @@ references:
   name: GetAppsInput
   nameWithType: GetAppsInput
   fullName: OpenSettings.Models.Inputs.GetAppsInput
+- uid: OpenSettings.Models.Inputs.GetAuthStatusInput
+  commentId: T:OpenSettings.Models.Inputs.GetAuthStatusInput
+  href: OpenSettings.Models.Inputs.GetAuthStatusInput.html
+  name: GetAuthStatusInput
+  nameWithType: GetAuthStatusInput
+  fullName: OpenSettings.Models.Inputs.GetAuthStatusInput
 - uid: OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
   commentId: T:OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
   parent: OpenSettings.Models.Inputs
@@ -350,6 +395,12 @@ references:
   name: GetGroupsInput
   nameWithType: GetGroupsInput
   fullName: OpenSettings.Models.Inputs.GetGroupsInput
+- uid: OpenSettings.Models.Inputs.GetIdentityInput
+  commentId: T:OpenSettings.Models.Inputs.GetIdentityInput
+  href: OpenSettings.Models.Inputs.GetIdentityInput.html
+  name: GetIdentityInput
+  nameWithType: GetIdentityInput
+  fullName: OpenSettings.Models.Inputs.GetIdentityInput
 - uid: OpenSettings.Models.Inputs.GetInstancesDataInput
   commentId: T:OpenSettings.Models.Inputs.GetInstancesDataInput
   href: OpenSettings.Models.Inputs.GetInstancesDataInput.html
@@ -363,6 +414,20 @@ references:
   name: GetInstancesInput
   nameWithType: GetInstancesInput
   fullName: OpenSettings.Models.Inputs.GetInstancesInput
+- uid: OpenSettings.Models.Inputs.GetMeInput
+  commentId: T:OpenSettings.Models.Inputs.GetMeInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetMeInput.html
+  name: GetMeInput
+  nameWithType: GetMeInput
+  fullName: OpenSettings.Models.Inputs.GetMeInput
+- uid: OpenSettings.Models.Inputs.GetMeInputIncludes
+  commentId: T:OpenSettings.Models.Inputs.GetMeInputIncludes
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetMeInputIncludes.html
+  name: GetMeInputIncludes
+  nameWithType: GetMeInputIncludes
+  fullName: OpenSettings.Models.Inputs.GetMeInputIncludes
 - uid: OpenSettings.Models.Inputs.GetNotificationsInput
   commentId: T:OpenSettings.Models.Inputs.GetNotificationsInput
   parent: OpenSettings.Models.Inputs
@@ -488,6 +553,13 @@ references:
   name: GetTagsInput
   nameWithType: GetTagsInput
   fullName: OpenSettings.Models.Inputs.GetTagsInput
+- uid: OpenSettings.Models.Inputs.GetUserInput
+  commentId: T:OpenSettings.Models.Inputs.GetUserInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetUserInput.html
+  name: GetUserInput
+  nameWithType: GetUserInput
+  fullName: OpenSettings.Models.Inputs.GetUserInput
 - uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
   commentId: T:OpenSettings.Models.Inputs.GetUserNotificationsInput
   parent: OpenSettings.Models.Inputs
@@ -495,6 +567,20 @@ references:
   name: GetUserNotificationsInput
   nameWithType: GetUserNotificationsInput
   fullName: OpenSettings.Models.Inputs.GetUserNotificationsInput
+- uid: OpenSettings.Models.Inputs.LoginInput
+  commentId: T:OpenSettings.Models.Inputs.LoginInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.LoginInput.html
+  name: LoginInput
+  nameWithType: LoginInput
+  fullName: OpenSettings.Models.Inputs.LoginInput
+- uid: OpenSettings.Models.Inputs.LogoutInput
+  commentId: T:OpenSettings.Models.Inputs.LogoutInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.LogoutInput.html
+  name: LogoutInput
+  nameWithType: LogoutInput
+  fullName: OpenSettings.Models.Inputs.LogoutInput
 - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
   commentId: T:OpenSettings.Models.Inputs.MarkNotificationAsInput
   parent: OpenSettings.Models.Inputs
@@ -695,6 +781,13 @@ references:
   name: UpdateTagSortOrderInput
   nameWithType: UpdateTagSortOrderInput
   fullName: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
+- uid: OpenSettings.Models.Inputs.UpdateUserInput
+  commentId: T:OpenSettings.Models.Inputs.UpdateUserInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.UpdateUserInput.html
+  name: UpdateUserInput
+  nameWithType: UpdateUserInput
+  fullName: OpenSettings.Models.Inputs.UpdateUserInput
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
   href: OpenSettings.html

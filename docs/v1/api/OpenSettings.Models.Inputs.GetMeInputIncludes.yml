@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Inputs.GetMeInputIncludes
+  commentId: T:OpenSettings.Models.Inputs.GetMeInputIncludes
+  id: GetMeInputIncludes
+  parent: OpenSettings.Models.Inputs
+  children:
+  - OpenSettings.Models.Inputs.GetMeInputIncludes.Claims
+  - OpenSettings.Models.Inputs.GetMeInputIncludes.None
+  langs:
+  - csharp
+  - vb
+  name: GetMeInputIncludes
+  nameWithType: GetMeInputIncludes
+  fullName: OpenSettings.Models.Inputs.GetMeInputIncludes
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetMeInputIncludes
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum GetMeInputIncludes
+    content.vb: >-
+      <Flags>
+
+      Public Enum GetMeInputIncludes
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Models.Inputs.GetMeInputIncludes.None
+  commentId: F:OpenSettings.Models.Inputs.GetMeInputIncludes.None
+  id: None
+  parent: OpenSettings.Models.Inputs.GetMeInputIncludes
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GetMeInputIncludes.None
+  fullName: OpenSettings.Models.Inputs.GetMeInputIncludes.None
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: None
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: None = 0
+    return:
+      type: OpenSettings.Models.Inputs.GetMeInputIncludes
+- uid: OpenSettings.Models.Inputs.GetMeInputIncludes.Claims
+  commentId: F:OpenSettings.Models.Inputs.GetMeInputIncludes.Claims
+  id: Claims
+  parent: OpenSettings.Models.Inputs.GetMeInputIncludes
+  langs:
+  - csharp
+  - vb
+  name: Claims
+  nameWithType: GetMeInputIncludes.Claims
+  fullName: OpenSettings.Models.Inputs.GetMeInputIncludes.Claims
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Claims
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/GetMeInputIncludes.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: Claims = 1
+    return:
+      type: OpenSettings.Models.Inputs.GetMeInputIncludes
+references:
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: OpenSettings.Models.Inputs.GetMeInputIncludes
+  commentId: T:OpenSettings.Models.Inputs.GetMeInputIncludes
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetMeInputIncludes.html
+  name: GetMeInputIncludes
+  nameWithType: GetMeInputIncludes
+  fullName: OpenSettings.Models.Inputs.GetMeInputIncludes

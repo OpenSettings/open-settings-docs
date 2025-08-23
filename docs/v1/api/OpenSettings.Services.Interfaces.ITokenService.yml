@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ITokenService
+  commentId: T:OpenSettings.Services.Interfaces.ITokenService
+  id: ITokenService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync(OpenSettings.Models.Inputs.GenerateTokenForMachineInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken(System.String)
+  - OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken(System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  langs:
+  - csharp
+  - vb
+  name: ITokenService
+  nameWithType: ITokenService
+  fullName: OpenSettings.Services.Interfaces.ITokenService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ITokenService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITokenService.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Defines methods for handling and managing OpenSettings token validation and refresh functionality.
+
+    This service provides functionality for checking token expiration, reading JWT tokens, and refreshing tokens.
+  example: []
+  syntax:
+    content: public interface ITokenService
+    content.vb: Public Interface ITokenService
+- uid: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken(System.String)
+  commentId: M:OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken(System.String)
+  id: ReadJwtToken(System.String)
+  parent: OpenSettings.Services.Interfaces.ITokenService
+  langs:
+  - csharp
+  - vb
+  name: ReadJwtToken(string)
+  nameWithType: ITokenService.ReadJwtToken(string)
+  fullName: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReadJwtToken
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITokenService.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Reads the specified access token and returns the corresponding <xref href="System.IdentityModel.Tokens.Jwt.JwtSecurityToken" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: JwtSecurityToken ReadJwtToken(string accessToken)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The access token.
+    return:
+      type: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+      description: ''
+    content.vb: Function ReadJwtToken(accessToken As String) As JwtSecurityToken
+  overload: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken*
+  nameWithType.vb: ITokenService.ReadJwtToken(String)
+  fullName.vb: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken(String)
+  name.vb: ReadJwtToken(String)
+- uid: OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken(System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken(System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  id: WriteJwtToken(System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  parent: OpenSettings.Services.Interfaces.ITokenService
+  langs:
+  - csharp
+  - vb
+  name: WriteJwtToken(JwtSecurityToken)
+  nameWithType: ITokenService.WriteJwtToken(JwtSecurityToken)
+  fullName: OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken(System.IdentityModel.Tokens.Jwt.JwtSecurityToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: WriteJwtToken
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITokenService.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Writes the specified JWT security token and returns the corresponding access token.
+  example: []
+  syntax:
+    content: string WriteJwtToken(JwtSecurityToken jwtSecurityToken)
+    parameters:
+    - id: jwtSecurityToken
+      type: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+      description: The jwt security token.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function WriteJwtToken(jwtSecurityToken As JwtSecurityToken) As String
+  overload: OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken*
+- uid: OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync(OpenSettings.Models.Inputs.GenerateTokenForMachineInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync(OpenSettings.Models.Inputs.GenerateTokenForMachineInput,System.Threading.CancellationToken)
+  id: GenerateTokenForMachineAsync(OpenSettings.Models.Inputs.GenerateTokenForMachineInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITokenService
+  langs:
+  - csharp
+  - vb
+  name: GenerateTokenForMachineAsync(GenerateTokenForMachineInput, CancellationToken)
+  nameWithType: ITokenService.GenerateTokenForMachineAsync(GenerateTokenForMachineInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync(OpenSettings.Models.Inputs.GenerateTokenForMachineInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GenerateTokenForMachineAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITokenService.cs
+    startLine: 35
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Generates a new token based on the provided input parameters.
+  example: []
+  syntax:
+    content: Task<IResponse<GenerateTokenResponse>> GenerateTokenForMachineAsync(GenerateTokenForMachineInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+      description: The input parameters required to generate the token.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GenerateTokenResponse}}
+      description: A task of <xref href="Ogu.Response.Abstractions.IResponse%601" data-throw-if-not-resolved="false"></xref> that used to generate the token.
+    content.vb: Function GenerateTokenForMachineAsync(input As GenerateTokenForMachineInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of GenerateTokenResponse))
+  overload: OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync*
+- uid: OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync(System.Threading.CancellationToken)
+  id: GetPublicJwksAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ITokenService
+  langs:
+  - csharp
+  - vb
+  name: GetPublicJwksAsync(CancellationToken)
+  nameWithType: ITokenService.GetPublicJwksAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ITokenService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPublicJwksAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ITokenService.cs
+    startLine: 53
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<string> GetPublicJwksAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetPublicJwksAsync(cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+  commentId: T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+  parent: System.IdentityModel.Tokens.Jwt
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytoken
+  name: JwtSecurityToken
+  nameWithType: JwtSecurityToken
+  fullName: System.IdentityModel.Tokens.Jwt.JwtSecurityToken
+- uid: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken
+  href: OpenSettings.Services.Interfaces.ITokenService.html#OpenSettings_Services_Interfaces_ITokenService_ReadJwtToken_System_String_
+  name: ReadJwtToken
+  nameWithType: ITokenService.ReadJwtToken
+  fullName: OpenSettings.Services.Interfaces.ITokenService.ReadJwtToken
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IdentityModel.Tokens.Jwt
+  commentId: N:System.IdentityModel.Tokens.Jwt
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IdentityModel.Tokens.Jwt
+  nameWithType: System.IdentityModel.Tokens.Jwt
+  fullName: System.IdentityModel.Tokens.Jwt
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel
+  - name: .
+  - uid: System.IdentityModel.Tokens
+    name: Tokens
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens
+  - name: .
+  - uid: System.IdentityModel.Tokens.Jwt
+    name: Jwt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel
+  - name: .
+  - uid: System.IdentityModel.Tokens
+    name: Tokens
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens
+  - name: .
+  - uid: System.IdentityModel.Tokens.Jwt
+    name: Jwt
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken
+  href: OpenSettings.Services.Interfaces.ITokenService.html#OpenSettings_Services_Interfaces_ITokenService_WriteJwtToken_System_IdentityModel_Tokens_Jwt_JwtSecurityToken_
+  name: WriteJwtToken
+  nameWithType: ITokenService.WriteJwtToken
+  fullName: OpenSettings.Services.Interfaces.ITokenService.WriteJwtToken
+- uid: Ogu.Response.Abstractions.IResponse`1
+  commentId: T:Ogu.Response.Abstractions.IResponse`1
+  isExternal: true
+  name: IResponse<TData>
+  nameWithType: IResponse<TData>
+  fullName: Ogu.Response.Abstractions.IResponse<TData>
+  nameWithType.vb: IResponse(Of TData)
+  fullName.vb: Ogu.Response.Abstractions.IResponse(Of TData)
+  name.vb: IResponse(Of TData)
+  spec.csharp:
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: <
+  - name: TData
+  - name: '>'
+  spec.vb:
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TData
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync
+  href: OpenSettings.Services.Interfaces.ITokenService.html#OpenSettings_Services_Interfaces_ITokenService_GenerateTokenForMachineAsync_OpenSettings_Models_Inputs_GenerateTokenForMachineInput_System_Threading_CancellationToken_
+  name: GenerateTokenForMachineAsync
+  nameWithType: ITokenService.GenerateTokenForMachineAsync
+  fullName: OpenSettings.Services.Interfaces.ITokenService.GenerateTokenForMachineAsync
+- uid: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+  commentId: T:OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GenerateTokenForMachineInput.html
+  name: GenerateTokenForMachineInput
+  nameWithType: GenerateTokenForMachineInput
+  fullName: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GenerateTokenResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.GenerateTokenResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse<GenerateTokenResponse>>
+  nameWithType: Task<IResponse<GenerateTokenResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.GenerateTokenResponse>>
+  nameWithType.vb: Task(Of IResponse(Of GenerateTokenResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.GenerateTokenResponse))
+  name.vb: Task(Of IResponse(Of GenerateTokenResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.GenerateTokenResponse
+    name: GenerateTokenResponse
+    href: OpenSettings.Models.Responses.GenerateTokenResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GenerateTokenResponse
+    name: GenerateTokenResponse
+    href: OpenSettings.Models.Responses.GenerateTokenResponse.html
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync
+  href: OpenSettings.Services.Interfaces.ITokenService.html#OpenSettings_Services_Interfaces_ITokenService_GetPublicJwksAsync_System_Threading_CancellationToken_
+  name: GetPublicJwksAsync
+  nameWithType: ITokenService.GetPublicJwksAsync
+  fullName: OpenSettings.Services.Interfaces.ITokenService.GetPublicJwksAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

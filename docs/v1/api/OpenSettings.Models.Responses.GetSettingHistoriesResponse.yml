@@ -10,9 +10,9 @@ items:
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.Data
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.Id
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredById
+  - OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.Slug
-  - OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
   - OpenSettings.Models.Responses.GetSettingHistoriesResponse.Version
   langs:
   - csharp
@@ -219,35 +219,6 @@ items:
       type: System.Nullable{System.Guid}
     content.vb: Public Property RestoredById As Guid?
   overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredById*
-- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
-  commentId: P:OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
-  id: RowVersion
-  parent: OpenSettings.Models.Responses.GetSettingHistoriesResponse
-  langs:
-  - csharp
-  - vb
-  name: RowVersion
-  nameWithType: GetSettingHistoriesResponse.RowVersion
-  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: RowVersion
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
-    startLine: 18
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public byte[] RowVersion { get; set; }
-    parameters: []
-    return:
-      type: System.Byte[]
-    content.vb: Public Property RowVersion As Byte()
-  overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion*
 - uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
   commentId: P:OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
   id: CreatedOn
@@ -266,7 +237,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -277,35 +248,64 @@ items:
       type: System.DateTime
     content.vb: Public Property CreatedOn As Date
   overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn*
-- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
-  commentId: P:OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
-  id: UpdatedOn
+- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
+  commentId: P:OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
+  id: RestoredOn
   parent: OpenSettings.Models.Responses.GetSettingHistoriesResponse
   langs:
   - csharp
   - vb
-  name: UpdatedOn
-  nameWithType: GetSettingHistoriesResponse.UpdatedOn
-  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
+  name: RestoredOn
+  nameWithType: GetSettingHistoriesResponse.RestoredOn
+  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: UpdatedOn
+    id: RestoredOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime? RestoredOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property RestoredOn As Date?
+  overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn*
+- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
+  commentId: P:OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
+  id: RowVersion
+  parent: OpenSettings.Models.Responses.GetSettingHistoriesResponse
+  langs:
+  - csharp
+  - vb
+  name: RowVersion
+  nameWithType: GetSettingHistoriesResponse.RowVersion
+  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingHistoriesResponse.cs
     startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public DateTime? UpdatedOn { get; set; }
+    content: public byte[] RowVersion { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.DateTime}
-    content.vb: Public Property UpdatedOn As Date?
-  overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn*
+      type: System.Byte[]
+    content.vb: Public Property RowVersion As Byte()
+  overload: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -669,6 +669,52 @@ references:
   name: RestoredById
   nameWithType: GetSettingHistoriesResponse.RestoredById
   fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredById
+- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
+  href: OpenSettings.Models.Responses.GetSettingHistoriesResponse.html#OpenSettings_Models_Responses_GetSettingHistoriesResponse_CreatedOn
+  name: CreatedOn
+  nameWithType: GetSettingHistoriesResponse.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
+  href: OpenSettings.Models.Responses.GetSettingHistoriesResponse.html#OpenSettings_Models_Responses_GetSettingHistoriesResponse_RestoredOn
+  name: RestoredOn
+  nameWithType: GetSettingHistoriesResponse.RestoredOn
+  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RestoredOn
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
 - uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion*
   commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoriesResponse.RowVersion
   href: OpenSettings.Models.Responses.GetSettingHistoriesResponse.html#OpenSettings_Models_Responses_GetSettingHistoriesResponse_RowVersion
@@ -698,49 +744,3 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.byte
   - name: (
   - name: )
-- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
-  href: OpenSettings.Models.Responses.GetSettingHistoriesResponse.html#OpenSettings_Models_Responses_GetSettingHistoriesResponse_CreatedOn
-  name: CreatedOn
-  nameWithType: GetSettingHistoriesResponse.CreatedOn
-  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.CreatedOn
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
-- uid: OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
-  href: OpenSettings.Models.Responses.GetSettingHistoriesResponse.html#OpenSettings_Models_Responses_GetSettingHistoriesResponse_UpdatedOn
-  name: UpdatedOn
-  nameWithType: GetSettingHistoriesResponse.UpdatedOn
-  fullName: OpenSettings.Models.Responses.GetSettingHistoriesResponse.UpdatedOn
-- uid: System.Nullable{System.DateTime}
-  commentId: T:System.Nullable{System.DateTime}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime?
-  nameWithType: DateTime?
-  fullName: System.DateTime?
-  nameWithType.vb: Date?
-  fullName.vb: Date?
-  name.vb: Date?
-  spec.csharp:
-  - uid: System.DateTime
-    name: DateTime
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.datetime
-  - name: '?'
-  spec.vb:
-  - uid: System.DateTime
-    name: Date
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.datetime
-  - name: '?'

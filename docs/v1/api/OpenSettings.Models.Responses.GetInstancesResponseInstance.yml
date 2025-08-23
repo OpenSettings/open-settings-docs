@@ -12,6 +12,7 @@ items:
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.Name
+  - OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
   - OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn
@@ -164,35 +165,6 @@ items:
       type: System.String
     content.vb: Public Property Name As String
   overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.Name*
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
-  commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
-  id: Urls
-  parent: OpenSettings.Models.Responses.GetInstancesResponseInstance
-  langs:
-  - csharp
-  - vb
-  name: Urls
-  nameWithType: GetInstancesResponseInstance.Urls
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Urls
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 15
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public string[] Urls { get; set; }
-    parameters: []
-    return:
-      type: System.String[]
-    content.vb: Public Property Urls As String()
-  overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls*
 - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
   commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
   id: IsActive
@@ -211,7 +183,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsActive
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -240,7 +212,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MachineName
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -251,35 +223,6 @@ items:
       type: System.String
     content.vb: Public Property MachineName As String
   overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName*
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
-  commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
-  id: ReloadStrategies
-  parent: OpenSettings.Models.Responses.GetInstancesResponseInstance
-  langs:
-  - csharp
-  - vb
-  name: ReloadStrategies
-  nameWithType: GetInstancesResponseInstance.ReloadStrategies
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: ReloadStrategies
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 21
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public List<ReloadStrategy> ReloadStrategies { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
-    content.vb: Public Property ReloadStrategies As List(Of ReloadStrategy)
-  overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies*
 - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
   commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
   id: ServiceType
@@ -298,7 +241,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceType
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 23
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -327,7 +270,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 25
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -338,6 +281,35 @@ items:
       type: System.String
     content.vb: Public Property Version As String
   overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.Version*
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
+  commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Models.Responses.GetInstancesResponseInstance
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: GetInstancesResponseInstance.PackVersion
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion*
 - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
   commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
   id: CreatedOn
@@ -356,7 +328,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -385,7 +357,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
-    startLine: 29
+    startLine: 27
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -396,6 +368,64 @@ items:
       type: System.Nullable{System.DateTime}
     content.vb: Public Property UpdatedOn As Date?
   overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn*
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
+  commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
+  id: Urls
+  parent: OpenSettings.Models.Responses.GetInstancesResponseInstance
+  langs:
+  - csharp
+  - vb
+  name: Urls
+  nameWithType: GetInstancesResponseInstance.Urls
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Urls
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+    startLine: 29
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string[] Urls { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Urls As String()
+  overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls*
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
+  commentId: P:OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
+  id: ReloadStrategies
+  parent: OpenSettings.Models.Responses.GetInstancesResponseInstance
+  langs:
+  - csharp
+  - vb
+  name: ReloadStrategies
+  nameWithType: GetInstancesResponseInstance.ReloadStrategies
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReloadStrategies
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetInstancesResponseInstance.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public List<ReloadStrategy> ReloadStrategies { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+    content.vb: Public Property ReloadStrategies As List(Of ReloadStrategy)
+  overload: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -699,6 +729,150 @@ references:
   name: Name
   nameWithType: GetInstancesResponseInstance.Name
   fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.Name
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_IsActive
+  name: IsActive
+  nameWithType: GetInstancesResponseInstance.IsActive
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_MachineName
+  name: MachineName
+  nameWithType: GetInstancesResponseInstance.MachineName
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_ServiceType
+  name: ServiceType
+  nameWithType: GetInstancesResponseInstance.ServiceType
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
+- uid: OpenSettings.Models.ServiceType
+  commentId: T:OpenSettings.Models.ServiceType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ServiceType.html
+  name: ServiceType
+  nameWithType: ServiceType
+  fullName: OpenSettings.Models.ServiceType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.Version*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.Version
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_Version
+  name: Version
+  nameWithType: GetInstancesResponseInstance.Version
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.Version
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_PackVersion
+  name: PackVersion
+  nameWithType: GetInstancesResponseInstance.PackVersion
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.PackVersion
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_CreatedOn
+  name: CreatedOn
+  nameWithType: GetInstancesResponseInstance.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn
+  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_UpdatedOn
+  name: UpdatedOn
+  nameWithType: GetInstancesResponseInstance.UpdatedOn
+  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls*
   commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.Urls
   href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_Urls
@@ -728,29 +902,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_IsActive
-  name: IsActive
-  nameWithType: GetInstancesResponseInstance.IsActive
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.IsActive
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_MachineName
-  name: MachineName
-  nameWithType: GetInstancesResponseInstance.MachineName
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.MachineName
 - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies*
   commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.ReloadStrategies
   href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_ReloadStrategies
@@ -855,118 +1006,3 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_ServiceType
-  name: ServiceType
-  nameWithType: GetInstancesResponseInstance.ServiceType
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.ServiceType
-- uid: OpenSettings.Models.ServiceType
-  commentId: T:OpenSettings.Models.ServiceType
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.ServiceType.html
-  name: ServiceType
-  nameWithType: ServiceType
-  fullName: OpenSettings.Models.ServiceType
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.Version*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.Version
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_Version
-  name: Version
-  nameWithType: GetInstancesResponseInstance.Version
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.Version
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_CreatedOn
-  name: CreatedOn
-  nameWithType: GetInstancesResponseInstance.CreatedOn
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.CreatedOn
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
-- uid: OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn
-  href: OpenSettings.Models.Responses.GetInstancesResponseInstance.html#OpenSettings_Models_Responses_GetInstancesResponseInstance_UpdatedOn
-  name: UpdatedOn
-  nameWithType: GetInstancesResponseInstance.UpdatedOn
-  fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance.UpdatedOn
-- uid: System.Nullable{System.DateTime}
-  commentId: T:System.Nullable{System.DateTime}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime?
-  nameWithType: DateTime?
-  fullName: System.DateTime?
-  nameWithType.vb: Date?
-  fullName.vb: Date?
-  name.vb: Date?
-  spec.csharp:
-  - uid: System.DateTime
-    name: DateTime
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.datetime
-  - name: '?'
-  spec.vb:
-  - uid: System.DateTime
-    name: Date
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.datetime
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )

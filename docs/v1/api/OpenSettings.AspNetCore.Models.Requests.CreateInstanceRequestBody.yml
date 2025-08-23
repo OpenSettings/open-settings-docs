@@ -11,10 +11,10 @@ items:
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.Environment
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IdentifierName
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.InstanceName
-  - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IsActive
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.MachineName
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.ReloadStrategies
+  - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.ServiceType
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.Urls
   - OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.Version
@@ -252,35 +252,35 @@ items:
       type: System.Boolean
     content.vb: Public Property IsActive As Boolean
   overload: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IsActive*
-- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
-  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
-  id: IpAddress
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
+  id: RemoteIpAddress
   parent: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody
   langs:
   - csharp
   - vb
-  name: IpAddress
-  nameWithType: CreateInstanceRequestBody.IpAddress
-  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
+  name: RemoteIpAddress
+  nameWithType: CreateInstanceRequestBody.RemoteIpAddress
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
   type: Property
   source:
     remote:
       path: src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequestBody.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: IpAddress
+    id: RemoteIpAddress
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateInstanceRequestBody.cs
     startLine: 22
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Models.Requests
   syntax:
-    content: public string IpAddress { get; set; }
+    content: public string RemoteIpAddress { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property IpAddress As String
-  overload: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress*
+    content.vb: Public Property RemoteIpAddress As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress*
 - uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.MachineName
   commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.MachineName
   id: MachineName
@@ -797,12 +797,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress*
-  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
-  href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateInstanceRequestBody_IpAddress
-  name: IpAddress
-  nameWithType: CreateInstanceRequestBody.IpAddress
-  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.IpAddress
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
+  href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateInstanceRequestBody_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: CreateInstanceRequestBody.RemoteIpAddress
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.RemoteIpAddress
 - uid: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.MachineName*
   commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.MachineName
   href: OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateInstanceRequestBody_MachineName

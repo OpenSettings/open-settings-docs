@@ -191,35 +191,6 @@ items:
       type: System.Boolean
     content.vb: Public Property DataRestored As Boolean
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.DataRestored*
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
-  id: Class
-  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting
-  langs:
-  - csharp
-  - vb
-  name: Class
-  nameWithType: GetGroupedAppDataResponseSetting.Class
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Class
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
-    startLine: 16
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public GetGroupedAppDataResponseSettingClass Class { get; set; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
-    content.vb: Public Property [Class] As GetGroupedAppDataResponseSettingClass
-  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.StoreInSeparateFile
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.StoreInSeparateFile
   id: StoreInSeparateFile
@@ -238,7 +209,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -267,7 +238,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
-    startLine: 20
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -296,7 +267,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -307,6 +278,35 @@ items:
       type: OpenSettings.Models.RegistrationMode
     content.vb: Public Property RegistrationMode As RegistrationMode
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.RegistrationMode*
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
+  id: Class
+  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting
+  langs:
+  - csharp
+  - vb
+  name: Class
+  nameWithType: GetGroupedAppDataResponseSetting.Class
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Class
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseSetting.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetGroupedAppDataResponseSettingClass Class { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
+    content.vb: Public Property [Class] As GetGroupedAppDataResponseSettingClass
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.RowVersion
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.RowVersion
   id: RowVersion
@@ -664,19 +664,6 @@ references:
   name: DataRestored
   nameWithType: GetGroupedAppDataResponseSetting.DataRestored
   fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.DataRestored
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseSetting_Class
-  name: Class
-  nameWithType: GetGroupedAppDataResponseSetting.Class
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
-  commentId: T:OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
-  parent: OpenSettings.Models.Responses
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass.html
-  name: GetGroupedAppDataResponseSettingClass
-  nameWithType: GetGroupedAppDataResponseSettingClass
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.StoreInSeparateFile*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.StoreInSeparateFile
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseSetting_StoreInSeparateFile
@@ -775,6 +762,19 @@ references:
   - uid: OpenSettings.Models
     name: Models
     href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseSetting_Class
+  name: Class
+  nameWithType: GetGroupedAppDataResponseSetting.Class
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.Class
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
+  commentId: T:OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass.html
+  name: GetGroupedAppDataResponseSettingClass
+  nameWithType: GetGroupedAppDataResponseSettingClass
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseSettingClass
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.RowVersion*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.RowVersion
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseSetting.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseSetting_RowVersion

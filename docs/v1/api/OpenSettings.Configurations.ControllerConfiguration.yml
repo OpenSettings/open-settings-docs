@@ -7,8 +7,8 @@ items:
   children:
   - OpenSettings.Configurations.ControllerConfiguration.#ctor
   - OpenSettings.Configurations.ControllerConfiguration.AllowFromExploring
-  - OpenSettings.Configurations.ControllerConfiguration.Authorize
-  - OpenSettings.Configurations.ControllerConfiguration.OAuth2
+  - OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
+  - OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
   - OpenSettings.Configurations.ControllerConfiguration.Route
   langs:
   - csharp
@@ -126,7 +126,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AllowFromExploring
     path: ../../../open-settings/src/OpenSettings/Configurations/ControllerConfiguration.cs
-    startLine: 29
+    startLine: 33
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -134,8 +134,7 @@ items:
     Specifies whether the open settings controller's endpoints should be exposed in
 
     Api documentation (e.g., for Swagger or other Api explorers).
-
-    <p>The default value is '<code>false</code>'.</p>
+  remarks: The default value is '<code>false</code>'.
   example: []
   syntax:
     content: public bool AllowFromExploring { get; set; }
@@ -144,25 +143,25 @@ items:
       type: System.Boolean
     content.vb: Public Property AllowFromExploring As Boolean
   overload: OpenSettings.Configurations.ControllerConfiguration.AllowFromExploring*
-- uid: OpenSettings.Configurations.ControllerConfiguration.Authorize
-  commentId: P:OpenSettings.Configurations.ControllerConfiguration.Authorize
-  id: Authorize
+- uid: OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
+  commentId: P:OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
+  id: RequiresAuthentication
   parent: OpenSettings.Configurations.ControllerConfiguration
   langs:
   - csharp
   - vb
-  name: Authorize
-  nameWithType: ControllerConfiguration.Authorize
-  fullName: OpenSettings.Configurations.ControllerConfiguration.Authorize
+  name: RequiresAuthentication
+  nameWithType: ControllerConfiguration.RequiresAuthentication
+  fullName: OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
   type: Property
   source:
     remote:
       path: src/OpenSettings/Configurations/ControllerConfiguration.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Authorize
+    id: RequiresAuthentication
     path: ../../../open-settings/src/OpenSettings/Configurations/ControllerConfiguration.cs
-    startLine: 40
+    startLine: 55
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -180,48 +179,62 @@ items:
     </p>
 
     <p>The default value is '<code>false</code>'.</p>
+  remarks: >-
+    Middleware should be registered in the following order to ensure authentication works: 
+
+    <pre><code class="lang-csharp">app.UseRouting();
+
+    app.UseAuthentication();
+
+    app.UseAuthorization();
+
+    app.UseOpenSettings();
+
+    app.MapControllers();</code></pre>
+
+    For more information, see <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-9.0#middleware-order">Asp.Net Core Middleware Order</a>
   example: []
   syntax:
-    content: public bool Authorize { get; set; }
+    content: public bool RequiresAuthentication { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property Authorize As Boolean
-  overload: OpenSettings.Configurations.ControllerConfiguration.Authorize*
-- uid: OpenSettings.Configurations.ControllerConfiguration.OAuth2
-  commentId: P:OpenSettings.Configurations.ControllerConfiguration.OAuth2
-  id: OAuth2
+    content.vb: Public Property RequiresAuthentication As Boolean
+  overload: OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication*
+- uid: OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
+  commentId: P:OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
+  id: OpenIdConnect
   parent: OpenSettings.Configurations.ControllerConfiguration
   langs:
   - csharp
   - vb
-  name: OAuth2
-  nameWithType: ControllerConfiguration.OAuth2
-  fullName: OpenSettings.Configurations.ControllerConfiguration.OAuth2
+  name: OpenIdConnect
+  nameWithType: ControllerConfiguration.OpenIdConnect
+  fullName: OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
   type: Property
   source:
     remote:
       path: src/OpenSettings/Configurations/ControllerConfiguration.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: OAuth2
+    id: OpenIdConnect
     path: ../../../open-settings/src/OpenSettings/Configurations/ControllerConfiguration.cs
-    startLine: 46
+    startLine: 61
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
   summary: >-
-    Gets or sets OAuth2 configuration for the open settings controller, allowing for 
+    Gets or sets OpenIdConnect configuration for the open settings controller, allowing for 
 
-    more detailed configuration of authentication and authorization using OAuth2.
+    more detailed configuration of authentication and authorization using OpenIdConnect.
   example: []
   syntax:
-    content: public OAuth2Configuration OAuth2 { get; set; }
+    content: public OpenIdConnectConfiguration OpenIdConnect { get; set; }
     parameters: []
     return:
-      type: OpenSettings.Configurations.OAuth2Configuration
-    content.vb: Public Property OAuth2 As OAuth2Configuration
-  overload: OpenSettings.Configurations.ControllerConfiguration.OAuth2*
+      type: OpenSettings.Configurations.OpenIdConnectConfiguration
+    content.vb: Public Property OpenIdConnect As OpenIdConnectConfiguration
+  overload: OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect*
 references:
 - uid: OpenSettings.Configurations
   commentId: N:OpenSettings.Configurations
@@ -532,22 +545,22 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Configurations.ControllerConfiguration.Authorize*
-  commentId: Overload:OpenSettings.Configurations.ControllerConfiguration.Authorize
-  href: OpenSettings.Configurations.ControllerConfiguration.html#OpenSettings_Configurations_ControllerConfiguration_Authorize
-  name: Authorize
-  nameWithType: ControllerConfiguration.Authorize
-  fullName: OpenSettings.Configurations.ControllerConfiguration.Authorize
-- uid: OpenSettings.Configurations.ControllerConfiguration.OAuth2*
-  commentId: Overload:OpenSettings.Configurations.ControllerConfiguration.OAuth2
-  href: OpenSettings.Configurations.ControllerConfiguration.html#OpenSettings_Configurations_ControllerConfiguration_OAuth2
-  name: OAuth2
-  nameWithType: ControllerConfiguration.OAuth2
-  fullName: OpenSettings.Configurations.ControllerConfiguration.OAuth2
-- uid: OpenSettings.Configurations.OAuth2Configuration
-  commentId: T:OpenSettings.Configurations.OAuth2Configuration
+- uid: OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication*
+  commentId: Overload:OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
+  href: OpenSettings.Configurations.ControllerConfiguration.html#OpenSettings_Configurations_ControllerConfiguration_RequiresAuthentication
+  name: RequiresAuthentication
+  nameWithType: ControllerConfiguration.RequiresAuthentication
+  fullName: OpenSettings.Configurations.ControllerConfiguration.RequiresAuthentication
+- uid: OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect*
+  commentId: Overload:OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
+  href: OpenSettings.Configurations.ControllerConfiguration.html#OpenSettings_Configurations_ControllerConfiguration_OpenIdConnect
+  name: OpenIdConnect
+  nameWithType: ControllerConfiguration.OpenIdConnect
+  fullName: OpenSettings.Configurations.ControllerConfiguration.OpenIdConnect
+- uid: OpenSettings.Configurations.OpenIdConnectConfiguration
+  commentId: T:OpenSettings.Configurations.OpenIdConnectConfiguration
   parent: OpenSettings.Configurations
-  href: OpenSettings.Configurations.OAuth2Configuration.html
-  name: OAuth2Configuration
-  nameWithType: OAuth2Configuration
-  fullName: OpenSettings.Configurations.OAuth2Configuration
+  href: OpenSettings.Configurations.OpenIdConnectConfiguration.html
+  name: OpenIdConnectConfiguration
+  nameWithType: OpenIdConnectConfiguration
+  fullName: OpenSettings.Configurations.OpenIdConnectConfiguration

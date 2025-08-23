@@ -5,7 +5,7 @@ items:
   id: SettingsController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoriesService)
+  - OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoryService)
   - OpenSettings.AspNetCore.Controllers.v1.SettingsController.CopySettingTo(OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.SettingsController.CreateSetting(OpenSettings.AspNetCore.Models.Requests.CreateSettingRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.SettingsController.DeleteSetting(OpenSettings.AspNetCore.Models.Requests.DeleteSettingRequest,System.Threading.CancellationToken)
@@ -222,16 +222,16 @@ items:
     arguments:
     - type: System.String
       value: v1/settings
-- uid: OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  id: '#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoriesService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoryService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoryService)
+  id: '#ctor(OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.ISettingHistoryService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.SettingsController
   langs:
   - csharp
   - vb
-  name: SettingsController(ISettingsService, ISettingHistoriesService)
-  nameWithType: SettingsController.SettingsController(ISettingsService, ISettingHistoriesService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.SettingsController.SettingsController(OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.ISettingHistoriesService)
+  name: SettingsController(ISettingsService, ISettingHistoryService)
+  nameWithType: SettingsController.SettingsController(ISettingsService, ISettingHistoryService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.SettingsController.SettingsController(OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.ISettingHistoryService)
   type: Constructor
   source:
     remote:
@@ -245,17 +245,17 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public SettingsController(ISettingsService settingsService, ISettingHistoriesService settingHistoriesService)
+    content: public SettingsController(ISettingsService settingsService, ISettingHistoryService settingHistoryService)
     parameters:
     - id: settingsService
       type: OpenSettings.Services.Interfaces.ISettingsService
-    - id: settingHistoriesService
-      type: OpenSettings.Services.Interfaces.ISettingHistoriesService
-    content.vb: Public Sub New(settingsService As ISettingsService, settingHistoriesService As ISettingHistoriesService)
+    - id: settingHistoryService
+      type: OpenSettings.Services.Interfaces.ISettingHistoryService
+    content.vb: Public Sub New(settingsService As ISettingsService, settingHistoryService As ISettingHistoryService)
   overload: OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor*
-  nameWithType.vb: SettingsController.New(ISettingsService, ISettingHistoriesService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.SettingsController.New(OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  name.vb: New(ISettingsService, ISettingHistoriesService)
+  nameWithType.vb: SettingsController.New(ISettingsService, ISettingHistoryService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.SettingsController.New(OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.ISettingHistoryService)
+  name.vb: New(ISettingsService, ISettingHistoryService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.SettingsController.CreateSetting(OpenSettings.AspNetCore.Models.Requests.CreateSettingRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingsController.CreateSetting(OpenSettings.AspNetCore.Models.Requests.CreateSettingRequest,System.Threading.CancellationToken)
   id: CreateSetting(OpenSettings.AspNetCore.Models.Requests.CreateSettingRequest,System.Threading.CancellationToken)
@@ -647,7 +647,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateSettingData
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/SettingsController.cs
-    startLine: 178
+    startLine: 177
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -9307,7 +9307,7 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.SettingsController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.SettingsController.html#OpenSettings_AspNetCore_Controllers_v1_SettingsController__ctor_OpenSettings_Services_Interfaces_ISettingsService_OpenSettings_Services_Interfaces_ISettingHistoriesService_
+  href: OpenSettings.AspNetCore.Controllers.v1.SettingsController.html#OpenSettings_AspNetCore_Controllers_v1_SettingsController__ctor_OpenSettings_Services_Interfaces_ISettingsService_OpenSettings_Services_Interfaces_ISettingHistoryService_
   name: SettingsController
   nameWithType: SettingsController.SettingsController
   fullName: OpenSettings.AspNetCore.Controllers.v1.SettingsController.SettingsController
@@ -9321,13 +9321,13 @@ references:
   name: ISettingsService
   nameWithType: ISettingsService
   fullName: OpenSettings.Services.Interfaces.ISettingsService
-- uid: OpenSettings.Services.Interfaces.ISettingHistoriesService
-  commentId: T:OpenSettings.Services.Interfaces.ISettingHistoriesService
+- uid: OpenSettings.Services.Interfaces.ISettingHistoryService
+  commentId: T:OpenSettings.Services.Interfaces.ISettingHistoryService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.ISettingHistoriesService.html
-  name: ISettingHistoriesService
-  nameWithType: ISettingHistoriesService
-  fullName: OpenSettings.Services.Interfaces.ISettingHistoriesService
+  href: OpenSettings.Services.Interfaces.ISettingHistoryService.html
+  name: ISettingHistoryService
+  nameWithType: ISettingHistoryService
+  fullName: OpenSettings.Services.Interfaces.ISettingHistoryService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

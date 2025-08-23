@@ -1,0 +1,747 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  commentId: T:OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  id: SyncAppDataResilienceConfiguration
+  parent: OpenSettings.Configurations
+  children:
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+  - OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+  langs:
+  - csharp
+  - vb
+  name: SyncAppDataResilienceConfiguration
+  nameWithType: SyncAppDataResilienceConfiguration
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SyncAppDataResilienceConfiguration
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Configuration for resilience settings when synchronizing application data.
+  example: []
+  syntax:
+    content: public class SyncAppDataResilienceConfiguration
+    content.vb: Public Class SyncAppDataResilienceConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+  id: TotalTimeout
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TotalTimeout
+  nameWithType: SyncAppDataResilienceConfiguration.TotalTimeout
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TotalTimeout
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the total timeout for the sync app data operation.
+
+    This is the maximum time allowed for the entire operation to complete, including all retries.
+  remarks: >-
+    The default value is '<code>null</code>' which refer to indefinite timeout.
+
+    If the total timeout is reached, a <xref href="OpenSettings.Exceptions.TotalTimeoutExceededException" data-throw-if-not-resolved="false"></xref> will be thrown.
+  example: []
+  syntax:
+    content: public TimeSpan? TotalTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property TotalTimeout As TimeSpan?
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout*
+  exceptions:
+  - type: OpenSettings.Exceptions.TotalTimeoutExceededException
+    commentId: T:OpenSettings.Exceptions.TotalTimeoutExceededException
+    description: When the total timeout is reached.
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  id: MaxRetryAttempts
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxRetryAttempts
+  nameWithType: SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MaxRetryAttempts
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 44
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the maximum number of retries for initial syncing data. The retry behavior is determined as follows:
+
+    <ul><li>
+            <code>0</code> or any negative value other than <code>-1</code>: No retries (operation will fail immediately on failure).
+        </li><li>
+            <code>-1</code>: Infinite retries (operation will continue retrying until success).
+        </li><li>
+            Any positive integer: Retry up to the specified number of attempts.
+        </li></ul>
+    <p>
+
+    By default, the value is <code>-1</code>, which means infinite retries. Negative values other than <code>-1</code> are interpreted as "no retries" (equivalent to <code>0</code> retries), while <code>-1</code> signifies infinite retries. 
+
+    If set to a positive value, the system will attempt the operation that many times before giving up.
+
+    </p>
+
+    <remarks>
+
+    If the maximum retry attempts is reached, a <xref href="OpenSettings.Exceptions.MaxRetryExceededException" data-throw-if-not-resolved="false"></xref> will be thrown.
+
+    </remarks>
+  example: []
+  syntax:
+    content: public int MaxRetryAttempts { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRetryAttempts As Integer
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts*
+  exceptions:
+  - type: OpenSettings.Exceptions.MaxRetryExceededException
+    commentId: T:OpenSettings.Exceptions.MaxRetryExceededException
+    description: When the max retry attempts is reached.
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+  id: AttemptTimeout
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AttemptTimeout
+  nameWithType: SyncAppDataResilienceConfiguration.AttemptTimeout
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AttemptTimeout
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 52
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the timeout for each individual attempt to sync app data.
+  remarks: The default value is '<code>null</code>' which refer to indefinite timeout.
+  example: []
+  syntax:
+    content: public TimeSpan? AttemptTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property AttemptTimeout As TimeSpan?
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout*
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  id: BackoffType
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: BackoffType
+  nameWithType: SyncAppDataResilienceConfiguration.BackoffType
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: BackoffType
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 57
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the type of backoff strategy to use for retrying failed sync app data operations.
+  example: []
+  syntax:
+    content: public DelayBackoffType BackoffType { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.DelayBackoffType
+    content.vb: Public Property BackoffType As DelayBackoffType
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType*
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+  id: RetryDelay
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RetryDelay
+  nameWithType: SyncAppDataResilienceConfiguration.RetryDelay
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RetryDelay
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: Gets or sets the delay time between retry attempts when a sync app data operation fails.
+  example: []
+  syntax:
+    content: public TimeSpan RetryDelay { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: The timespan to wait before retrying a failed sync app data operation. The default value is <code>1000ms</code>.
+    content.vb: Public Property RetryDelay As TimeSpan
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay*
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+  id: MaxRetryDelay
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxRetryDelay
+  nameWithType: SyncAppDataResilienceConfiguration.MaxRetryDelay
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MaxRetryDelay
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 71
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets the maximum delay time between retry attempts when a sync app data operation fails.
+
+    Only used if <xref href="OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType" data-throw-if-not-resolved="false"></xref> is set to <xref href="OpenSettings.Models.DelayBackoffType.Linear" data-throw-if-not-resolved="false"></xref> or <xref href="OpenSettings.Models.DelayBackoffType.Exponential" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public TimeSpan? MaxRetryDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property MaxRetryDelay As TimeSpan?
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay*
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+  id: UseJitter
+  parent: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseJitter
+  nameWithType: SyncAppDataResilienceConfiguration.UseJitter
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UseJitter
+    path: ../../../open-settings/src/OpenSettings/Configurations/SyncAppDataResilienceConfiguration.cs
+    startLine: 77
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Configurations
+  summary: >-
+    Gets or sets a value indicating whether to use jitter in the delay between retry attempts.
+
+    The jitter uses a random factor to vary the delay time, which can help to avoid thundering herd problems in distributed systems.
+  example: []
+  syntax:
+    content: public bool UseJitter { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseJitter As Boolean
+  overload: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter*
+references:
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Exceptions.TotalTimeoutExceededException
+  commentId: T:OpenSettings.Exceptions.TotalTimeoutExceededException
+  name: TotalTimeoutExceededException
+  nameWithType: TotalTimeoutExceededException
+  fullName: OpenSettings.Exceptions.TotalTimeoutExceededException
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_TotalTimeout
+  name: TotalTimeout
+  nameWithType: SyncAppDataResilienceConfiguration.TotalTimeout
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.TotalTimeout
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Exceptions.MaxRetryExceededException
+  commentId: T:OpenSettings.Exceptions.MaxRetryExceededException
+  href: OpenSettings.Exceptions.MaxRetryExceededException.html
+  name: MaxRetryExceededException
+  nameWithType: MaxRetryExceededException
+  fullName: OpenSettings.Exceptions.MaxRetryExceededException
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_MaxRetryAttempts
+  name: MaxRetryAttempts
+  nameWithType: SyncAppDataResilienceConfiguration.MaxRetryAttempts
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryAttempts
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_AttemptTimeout
+  name: AttemptTimeout
+  nameWithType: SyncAppDataResilienceConfiguration.AttemptTimeout
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.AttemptTimeout
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_BackoffType
+  name: BackoffType
+  nameWithType: SyncAppDataResilienceConfiguration.BackoffType
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+- uid: OpenSettings.Models.DelayBackoffType
+  commentId: T:OpenSettings.Models.DelayBackoffType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.DelayBackoffType.html
+  name: DelayBackoffType
+  nameWithType: DelayBackoffType
+  fullName: OpenSettings.Models.DelayBackoffType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_RetryDelay
+  name: RetryDelay
+  nameWithType: SyncAppDataResilienceConfiguration.RetryDelay
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.RetryDelay
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  commentId: P:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_BackoffType
+  name: BackoffType
+  nameWithType: SyncAppDataResilienceConfiguration.BackoffType
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.BackoffType
+- uid: OpenSettings.Models.DelayBackoffType.Linear
+  commentId: F:OpenSettings.Models.DelayBackoffType.Linear
+  href: OpenSettings.Models.DelayBackoffType.html#OpenSettings_Models_DelayBackoffType_Linear
+  name: Linear
+  nameWithType: DelayBackoffType.Linear
+  fullName: OpenSettings.Models.DelayBackoffType.Linear
+- uid: OpenSettings.Models.DelayBackoffType.Exponential
+  commentId: F:OpenSettings.Models.DelayBackoffType.Exponential
+  href: OpenSettings.Models.DelayBackoffType.html#OpenSettings_Models_DelayBackoffType_Exponential
+  name: Exponential
+  nameWithType: DelayBackoffType.Exponential
+  fullName: OpenSettings.Models.DelayBackoffType.Exponential
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_MaxRetryDelay
+  name: MaxRetryDelay
+  nameWithType: SyncAppDataResilienceConfiguration.MaxRetryDelay
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.MaxRetryDelay
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter*
+  commentId: Overload:OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html#OpenSettings_Configurations_SyncAppDataResilienceConfiguration_UseJitter
+  name: UseJitter
+  nameWithType: SyncAppDataResilienceConfiguration.UseJitter
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.UseJitter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -5,7 +5,11 @@ items:
   id: OpenSettings.Models
   children:
   - OpenSettings.Models.AppType
-  - OpenSettings.Models.CacheModel
+  - OpenSettings.Models.AuthMethod
+  - OpenSettings.Models.AuthType
+  - OpenSettings.Models.CacheEntry
+  - OpenSettings.Models.CacheEntryKey
+  - OpenSettings.Models.CallerType
   - OpenSettings.Models.ClientInfo
   - OpenSettings.Models.ConcurrencyConflict
   - OpenSettings.Models.ConcurrencyConflictInfo
@@ -18,6 +22,7 @@ items:
   - OpenSettings.Models.ConfigurationSpa
   - OpenSettings.Models.ConflictModel
   - OpenSettings.Models.DataAccessType
+  - OpenSettings.Models.DelayBackoffType
   - OpenSettings.Models.FileMergeResult
   - OpenSettings.Models.FileModel
   - OpenSettings.Models.GeneratedSettingData
@@ -27,17 +32,20 @@ items:
   - OpenSettings.Models.LicenseEdition
   - OpenSettings.Models.NotificationSource
   - OpenSettings.Models.NotificationType
-  - OpenSettings.Models.OAuth2Info
+  - OpenSettings.Models.OpenIdConnectInfo
   - OpenSettings.Models.OpenSettingsAssemblyInfo
   - OpenSettings.Models.OpenSettingsConfigModel
   - OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1
   - OpenSettings.Models.OpenSettingsConfigsDataModel
   - OpenSettings.Models.Operation
+  - OpenSettings.Models.PackInfo
   - OpenSettings.Models.PagingInfo
   - OpenSettings.Models.PropertyInfoHelperModel
   - OpenSettings.Models.ProviderInfo
   - OpenSettings.Models.ProviderInfoClient
   - OpenSettings.Models.ProviderRegistryScheme
+  - OpenSettings.Models.ProviderRegistryType
+  - OpenSettings.Models.ProviderTokenInfo
   - OpenSettings.Models.RedisInfo
   - OpenSettings.Models.RedisMessage
   - OpenSettings.Models.RedisMessageType
@@ -48,6 +56,8 @@ items:
   - OpenSettings.Models.ServiceType
   - OpenSettings.Models.SetSortOrderPosition
   - OpenSettings.Models.SortDirection
+  - OpenSettings.Models.TokenKeySet
+  - OpenSettings.Models.TokenKeySetSigningKey
   langs:
   - csharp
   - vb
@@ -65,13 +75,41 @@ references:
   name: AppType
   nameWithType: AppType
   fullName: OpenSettings.Models.AppType
-- uid: OpenSettings.Models.CacheModel
-  commentId: T:OpenSettings.Models.CacheModel
+- uid: OpenSettings.Models.AuthMethod
+  commentId: T:OpenSettings.Models.AuthMethod
   parent: OpenSettings.Models
-  href: OpenSettings.Models.CacheModel.html
-  name: CacheModel
-  nameWithType: CacheModel
-  fullName: OpenSettings.Models.CacheModel
+  href: OpenSettings.Models.AuthMethod.html
+  name: AuthMethod
+  nameWithType: AuthMethod
+  fullName: OpenSettings.Models.AuthMethod
+- uid: OpenSettings.Models.AuthType
+  commentId: T:OpenSettings.Models.AuthType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.AuthType.html
+  name: AuthType
+  nameWithType: AuthType
+  fullName: OpenSettings.Models.AuthType
+- uid: OpenSettings.Models.CacheEntry
+  commentId: T:OpenSettings.Models.CacheEntry
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntry.html
+  name: CacheEntry
+  nameWithType: CacheEntry
+  fullName: OpenSettings.Models.CacheEntry
+- uid: OpenSettings.Models.CacheEntryKey
+  commentId: T:OpenSettings.Models.CacheEntryKey
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntryKey.html
+  name: CacheEntryKey
+  nameWithType: CacheEntryKey
+  fullName: OpenSettings.Models.CacheEntryKey
+- uid: OpenSettings.Models.CallerType
+  commentId: T:OpenSettings.Models.CallerType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CallerType.html
+  name: CallerType
+  nameWithType: CallerType
+  fullName: OpenSettings.Models.CallerType
 - uid: OpenSettings.Models.ClientInfo
   commentId: T:OpenSettings.Models.ClientInfo
   parent: OpenSettings.Models
@@ -152,6 +190,13 @@ references:
   name: DataAccessType
   nameWithType: DataAccessType
   fullName: OpenSettings.Models.DataAccessType
+- uid: OpenSettings.Models.DelayBackoffType
+  commentId: T:OpenSettings.Models.DelayBackoffType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.DelayBackoffType.html
+  name: DelayBackoffType
+  nameWithType: DelayBackoffType
+  fullName: OpenSettings.Models.DelayBackoffType
 - uid: OpenSettings.Models.FileMergeResult
   commentId: T:OpenSettings.Models.FileMergeResult
   href: OpenSettings.Models.FileMergeResult.html
@@ -211,13 +256,13 @@ references:
   name: NotificationType
   nameWithType: NotificationType
   fullName: OpenSettings.Models.NotificationType
-- uid: OpenSettings.Models.OAuth2Info
-  commentId: T:OpenSettings.Models.OAuth2Info
+- uid: OpenSettings.Models.OpenIdConnectInfo
+  commentId: T:OpenSettings.Models.OpenIdConnectInfo
   parent: OpenSettings.Models
-  href: OpenSettings.Models.OAuth2Info.html
-  name: OAuth2Info
-  nameWithType: OAuth2Info
-  fullName: OpenSettings.Models.OAuth2Info
+  href: OpenSettings.Models.OpenIdConnectInfo.html
+  name: OpenIdConnectInfo
+  nameWithType: OpenIdConnectInfo
+  fullName: OpenSettings.Models.OpenIdConnectInfo
 - uid: OpenSettings.Models.OpenSettingsAssemblyInfo
   commentId: T:OpenSettings.Models.OpenSettingsAssemblyInfo
   parent: OpenSettings.Models
@@ -269,6 +314,13 @@ references:
   name: Operation
   nameWithType: Operation
   fullName: OpenSettings.Models.Operation
+- uid: OpenSettings.Models.PackInfo
+  commentId: T:OpenSettings.Models.PackInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.PackInfo.html
+  name: PackInfo
+  nameWithType: PackInfo
+  fullName: OpenSettings.Models.PackInfo
 - uid: OpenSettings.Models.PagingInfo
   commentId: T:OpenSettings.Models.PagingInfo
   parent: OpenSettings.Models
@@ -304,6 +356,19 @@ references:
   name: ProviderRegistryScheme
   nameWithType: ProviderRegistryScheme
   fullName: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryType
+  commentId: T:OpenSettings.Models.ProviderRegistryType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryType.html
+  name: ProviderRegistryType
+  nameWithType: ProviderRegistryType
+  fullName: OpenSettings.Models.ProviderRegistryType
+- uid: OpenSettings.Models.ProviderTokenInfo
+  commentId: T:OpenSettings.Models.ProviderTokenInfo
+  href: OpenSettings.Models.ProviderTokenInfo.html
+  name: ProviderTokenInfo
+  nameWithType: ProviderTokenInfo
+  fullName: OpenSettings.Models.ProviderTokenInfo
 - uid: OpenSettings.Models.RedisInfo
   commentId: T:OpenSettings.Models.RedisInfo
   parent: OpenSettings.Models
@@ -373,6 +438,19 @@ references:
   name: SortDirection
   nameWithType: SortDirection
   fullName: OpenSettings.Models.SortDirection
+- uid: OpenSettings.Models.TokenKeySet
+  commentId: T:OpenSettings.Models.TokenKeySet
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.TokenKeySet.html
+  name: TokenKeySet
+  nameWithType: TokenKeySet
+  fullName: OpenSettings.Models.TokenKeySet
+- uid: OpenSettings.Models.TokenKeySetSigningKey
+  commentId: T:OpenSettings.Models.TokenKeySetSigningKey
+  href: OpenSettings.Models.TokenKeySetSigningKey.html
+  name: TokenKeySetSigningKey
+  nameWithType: TokenKeySetSigningKey
+  fullName: OpenSettings.Models.TokenKeySetSigningKey
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
   href: OpenSettings.html

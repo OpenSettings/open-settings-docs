@@ -5,15 +5,10 @@ items:
   id: GetOpenSettingsNotificationsResponse
   parent: OpenSettings.Models.Responses
   children:
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
-  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
+  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
+  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
+  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
+  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
   langs:
   - csharp
   - vb
@@ -45,267 +40,122 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
-  id: Id
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
+  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
+  id: CacheControl
   parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
   langs:
   - csharp
   - vb
-  name: Id
-  nameWithType: GetOpenSettingsNotificationsResponse.Id
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
+  name: CacheControl
+  nameWithType: GetOpenSettingsNotificationsResponse.CacheControl
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Id
+    id: CacheControl
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
     startLine: 7
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public Guid Id { get; set; }
+    content: public string CacheControl { get; set; }
     parameters: []
     return:
-      type: System.Guid
-    content.vb: Public Property Id As Guid
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
-  id: Title
+      type: System.String
+    content.vb: Public Property CacheControl As String
+  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl*
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
+  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
+  id: Expires
   parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
   langs:
   - csharp
   - vb
-  name: Title
-  nameWithType: GetOpenSettingsNotificationsResponse.Title
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
+  name: Expires
+  nameWithType: GetOpenSettingsNotificationsResponse.Expires
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Title
+    id: Expires
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
     startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public string Title { get; set; }
+    content: public string Expires { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Title As String
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
-  id: Message
+    content.vb: Public Property Expires As String
+  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires*
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
+  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
+  id: IsFaulted
   parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
   langs:
   - csharp
   - vb
-  name: Message
-  nameWithType: GetOpenSettingsNotificationsResponse.Message
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
+  name: IsFaulted
+  nameWithType: GetOpenSettingsNotificationsResponse.IsFaulted
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Message
+    id: IsFaulted
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
     startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public string Message { get; set; }
+    content: public bool IsFaulted { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property Message As String
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
-  id: Type
+      type: System.Boolean
+    content.vb: Public Property IsFaulted As Boolean
+  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted*
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
+  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
+  id: IdToNotification
   parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
   langs:
   - csharp
   - vb
-  name: Type
-  nameWithType: GetOpenSettingsNotificationsResponse.Type
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
+  name: IdToNotification
+  nameWithType: GetOpenSettingsNotificationsResponse.IdToNotification
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Type
+    id: IdToNotification
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
     startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public NotificationType Type { get; set; }
+    content: public Dictionary<Guid, GetOpenSettingsNotificationsResponseNotification> IdToNotification { get; set; }
     parameters: []
     return:
-      type: OpenSettings.Models.NotificationType
-    content.vb: Public Property Type As NotificationType
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-  id: Metadata
-  parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
-  langs:
-  - csharp
-  - vb
-  name: Metadata
-  nameWithType: GetOpenSettingsNotificationsResponse.Metadata
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Metadata
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-    startLine: 15
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public Dictionary<string, object> Metadata { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.Dictionary{System.String,System.Object}
-    content.vb: Public Property Metadata As Dictionary(Of String, Object)
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-  id: CreatedOn
-  parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
-  langs:
-  - csharp
-  - vb
-  name: CreatedOn
-  nameWithType: GetOpenSettingsNotificationsResponse.CreatedOn
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: CreatedOn
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-    startLine: 17
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public DateTime CreatedOn { get; set; }
-    parameters: []
-    return:
-      type: System.DateTime
-    content.vb: Public Property CreatedOn As Date
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-  id: ExpiresIn
-  parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
-  langs:
-  - csharp
-  - vb
-  name: ExpiresIn
-  nameWithType: GetOpenSettingsNotificationsResponse.ExpiresIn
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: ExpiresIn
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-    startLine: 19
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public TimeSpan? ExpiresIn { get; set; }
-    parameters: []
-    return:
-      type: System.Nullable{System.TimeSpan}
-    content.vb: Public Property ExpiresIn As TimeSpan?
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-  id: IsExpired
-  parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
-  langs:
-  - csharp
-  - vb
-  name: IsExpired
-  nameWithType: GetOpenSettingsNotificationsResponse.IsExpired
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: IsExpired
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-    startLine: 21
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public bool IsExpired { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsExpired As Boolean
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired*
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy
-  commentId: P:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy
-  id: CreatedBy
-  parent: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
-  langs:
-  - csharp
-  - vb
-  name: CreatedBy
-  nameWithType: GetOpenSettingsNotificationsResponse.CreatedBy
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: CreatedBy
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetOpenSettingsNotificationsResponse.cs
-    startLine: 23
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public string CreatedBy { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property CreatedBy As String
-  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy*
+      type: System.Collections.Generic.Dictionary{System.Guid,OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification}
+    content.vb: Public Property IdToNotification As Dictionary(Of Guid, GetOpenSettingsNotificationsResponseNotification)
+  overload: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -574,26 +424,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Id
-  name: Id
-  nameWithType: GetOpenSettingsNotificationsResponse.Id
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Id
-- uid: System.Guid
-  commentId: T:System.Guid
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.guid
-  name: Guid
-  nameWithType: Guid
-  fullName: System.Guid
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Title
-  name: Title
-  nameWithType: GetOpenSettingsNotificationsResponse.Title
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Title
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl*
+  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
+  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_CacheControl
+  name: CacheControl
+  nameWithType: GetOpenSettingsNotificationsResponse.CacheControl
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CacheControl
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -605,80 +441,61 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Message
-  name: Message
-  nameWithType: GetOpenSettingsNotificationsResponse.Message
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Message
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Type
-  name: Type
-  nameWithType: GetOpenSettingsNotificationsResponse.Type
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Type
-- uid: OpenSettings.Models.NotificationType
-  commentId: T:OpenSettings.Models.NotificationType
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.NotificationType.html
-  name: NotificationType
-  nameWithType: NotificationType
-  fullName: OpenSettings.Models.NotificationType
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Metadata
-  name: Metadata
-  nameWithType: GetOpenSettingsNotificationsResponse.Metadata
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Metadata
-- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires*
+  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
+  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_Expires
+  name: Expires
+  nameWithType: GetOpenSettingsNotificationsResponse.Expires
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.Expires
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted*
+  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
+  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_IsFaulted
+  name: IsFaulted
+  nameWithType: GetOpenSettingsNotificationsResponse.IsFaulted
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsFaulted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification*
+  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
+  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_IdToNotification
+  name: IdToNotification
+  nameWithType: GetOpenSettingsNotificationsResponse.IdToNotification
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IdToNotification
+- uid: System.Collections.Generic.Dictionary{System.Guid,OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  name: Dictionary<string, object>
-  nameWithType: Dictionary<string, object>
-  fullName: System.Collections.Generic.Dictionary<string, object>
-  nameWithType.vb: Dictionary(Of String, Object)
-  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
-  name.vb: Dictionary(Of String, Object)
+  name: Dictionary<Guid, GetOpenSettingsNotificationsResponseNotification>
+  nameWithType: Dictionary<Guid, GetOpenSettingsNotificationsResponseNotification>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification>
+  nameWithType.vb: Dictionary(Of Guid, GetOpenSettingsNotificationsResponseNotification)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification)
+  name.vb: Dictionary(Of Guid, GetOpenSettingsNotificationsResponseNotification)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
-  - uid: System.String
-    name: string
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
+    name: GetOpenSettingsNotificationsResponseNotification
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
@@ -688,16 +505,15 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.String
-    name: String
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
+    name: GetOpenSettingsNotificationsResponseNotification
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification.html
   - name: )
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2
@@ -770,97 +586,3 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_CreatedOn
-  name: CreatedOn
-  nameWithType: GetOpenSettingsNotificationsResponse.CreatedOn
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedOn
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_ExpiresIn
-  name: ExpiresIn
-  nameWithType: GetOpenSettingsNotificationsResponse.ExpiresIn
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.ExpiresIn
-- uid: System.Nullable{System.TimeSpan}
-  commentId: T:System.Nullable{System.TimeSpan}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.timespan
-  name: TimeSpan?
-  nameWithType: TimeSpan?
-  fullName: System.TimeSpan?
-  spec.csharp:
-  - uid: System.TimeSpan
-    name: TimeSpan
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.timespan
-  - name: '?'
-  spec.vb:
-  - uid: System.TimeSpan
-    name: TimeSpan
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.timespan
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_IsExpired
-  name: IsExpired
-  nameWithType: GetOpenSettingsNotificationsResponse.IsExpired
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.IsExpired
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy*
-  commentId: Overload:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy
-  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html#OpenSettings_Models_Responses_GetOpenSettingsNotificationsResponse_CreatedBy
-  name: CreatedBy
-  nameWithType: GetOpenSettingsNotificationsResponse.CreatedBy
-  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.CreatedBy

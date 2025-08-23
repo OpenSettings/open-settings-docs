@@ -5,7 +5,7 @@ items:
   id: OpenSettingsSpaMiddleware
   parent: OpenSettings.AspNetCore.Spa
   children:
-  - OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)
+  - OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
   - OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
   langs:
   - csharp
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsSpaMiddleware
     path: ../../../open-settings/src/OpenSettings.AspNetCore.Spa/OpenSettingsSpaMiddleware.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - OpenSettings.AspNetCore.Spa
   namespace: OpenSettings.AspNetCore.Spa
@@ -40,16 +40,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)
-  commentId: M:OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)
-  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)'
+- uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  commentId: M:OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  id: '#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Http.RequestDelegate,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)'
   parent: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware
   langs:
   - csharp
   - vb
-  name: OpenSettingsSpaMiddleware(RequestDelegate, OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IHostingEnvironment, ILoggerFactory)
-  nameWithType: OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware(RequestDelegate, OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IHostingEnvironment, ILoggerFactory)
-  fullName: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, Microsoft.AspNetCore.Hosting.IHostingEnvironment, Microsoft.Extensions.Logging.ILoggerFactory)
+  name: OpenSettingsSpaMiddleware(IOpenSettingsMemoryCache, IHostingEnvironment, ILoggerFactory, RequestDelegate, OpenSettingsConfiguration, ProviderInfo)
+  nameWithType: OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware(IOpenSettingsMemoryCache, IHostingEnvironment, ILoggerFactory, RequestDelegate, OpenSettingsConfiguration, ProviderInfo)
+  fullName: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache, Microsoft.AspNetCore.Hosting.IHostingEnvironment, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Http.RequestDelegate, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
   type: Constructor
   source:
     remote:
@@ -58,38 +58,38 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings.AspNetCore.Spa/OpenSettingsSpaMiddleware.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - OpenSettings.AspNetCore.Spa
   namespace: OpenSettings.AspNetCore.Spa
   summary: Initializes a new instance of the <xref href="OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public OpenSettingsSpaMiddleware(RequestDelegate requestDelegate, OpenSettingsMemoryCache openSettingsMemoryCache, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo, IHostingEnvironment hostingEnv, ILoggerFactory loggerFactory)
+    content: public OpenSettingsSpaMiddleware(IOpenSettingsMemoryCache openSettingsMemoryCache, IHostingEnvironment hostingEnv, ILoggerFactory loggerFactory, RequestDelegate requestDelegate, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo)
     parameters:
-    - id: requestDelegate
-      type: Microsoft.AspNetCore.Http.RequestDelegate
-      description: The request delegate.
     - id: openSettingsMemoryCache
-      type: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
+      type: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
       description: In-memory cache for Open Settings.
-    - id: openSettingsConfiguration
-      type: OpenSettings.Configurations.OpenSettingsConfiguration
-      description: Configuration for Open Settings.
-    - id: providerInfo
-      type: OpenSettings.Models.ProviderInfo
-      description: Provider information.
     - id: hostingEnv
       type: Microsoft.AspNetCore.Hosting.IHostingEnvironment
       description: Web hosting environment.
     - id: loggerFactory
       type: Microsoft.Extensions.Logging.ILoggerFactory
       description: Factory for creating loggers.
-    content.vb: Public Sub New(requestDelegate As RequestDelegate, openSettingsMemoryCache As OpenSettingsMemoryCache, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo, hostingEnv As IHostingEnvironment, loggerFactory As ILoggerFactory)
+    - id: requestDelegate
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+      description: The request delegate.
+    - id: openSettingsConfiguration
+      type: OpenSettings.Configurations.OpenSettingsConfiguration
+      description: Configuration for Open Settings.
+    - id: providerInfo
+      type: OpenSettings.Models.ProviderInfo
+      description: Provider information.
+    content.vb: Public Sub New(openSettingsMemoryCache As IOpenSettingsMemoryCache, hostingEnv As IHostingEnvironment, loggerFactory As ILoggerFactory, requestDelegate As RequestDelegate, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo)
   overload: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor*
-  nameWithType.vb: OpenSettingsSpaMiddleware.New(RequestDelegate, OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IHostingEnvironment, ILoggerFactory)
-  fullName.vb: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate, OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, Microsoft.AspNetCore.Hosting.IHostingEnvironment, Microsoft.Extensions.Logging.ILoggerFactory)
-  name.vb: New(RequestDelegate, OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IHostingEnvironment, ILoggerFactory)
+  nameWithType.vb: OpenSettingsSpaMiddleware.New(IOpenSettingsMemoryCache, IHostingEnvironment, ILoggerFactory, RequestDelegate, OpenSettingsConfiguration, ProviderInfo)
+  fullName.vb: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.New(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache, Microsoft.AspNetCore.Hosting.IHostingEnvironment, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Http.RequestDelegate, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
+  name.vb: New(IOpenSettingsMemoryCache, IHostingEnvironment, ILoggerFactory, RequestDelegate, OpenSettingsConfiguration, ProviderInfo)
 - uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
   commentId: M:OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
   id: Invoke(Microsoft.AspNetCore.Http.HttpContext)
@@ -108,7 +108,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Invoke
     path: ../../../open-settings/src/OpenSettings.AspNetCore.Spa/OpenSettingsSpaMiddleware.cs
-    startLine: 109
+    startLine: 142
   assemblies:
   - OpenSettings.AspNetCore.Spa
   namespace: OpenSettings.AspNetCore.Spa
@@ -397,42 +397,20 @@ references:
   fullName: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware
 - uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.#ctor
-  href: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.html#OpenSettings_AspNetCore_Spa_OpenSettingsSpaMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_Microsoft_AspNetCore_Hosting_IHostingEnvironment_Microsoft_Extensions_Logging_ILoggerFactory_
+  href: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.html#OpenSettings_AspNetCore_Spa_OpenSettingsSpaMiddleware__ctor_OpenSettings_Services_Interfaces_IOpenSettingsMemoryCache_Microsoft_AspNetCore_Hosting_IHostingEnvironment_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_AspNetCore_Http_RequestDelegate_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_
   name: OpenSettingsSpaMiddleware
   nameWithType: OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware
   fullName: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.OpenSettingsSpaMiddleware
   nameWithType.vb: OpenSettingsSpaMiddleware.New
   fullName.vb: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.New
   name.vb: New
-- uid: Microsoft.AspNetCore.Http.RequestDelegate
-  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
-  parent: Microsoft.AspNetCore.Http
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.requestdelegate
-  name: RequestDelegate
-  nameWithType: RequestDelegate
-  fullName: Microsoft.AspNetCore.Http.RequestDelegate
-- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  commentId: T:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  parent: OpenSettings.Services.MemoryCache
-  href: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.html
-  name: OpenSettingsMemoryCache
-  nameWithType: OpenSettingsMemoryCache
-  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration
-  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
-  parent: OpenSettings.Configurations
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
-  name: OpenSettingsConfiguration
-  nameWithType: OpenSettingsConfiguration
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
-- uid: OpenSettings.Models.ProviderInfo
-  commentId: T:OpenSettings.Models.ProviderInfo
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.ProviderInfo.html
-  name: ProviderInfo
-  nameWithType: ProviderInfo
-  fullName: OpenSettings.Models.ProviderInfo
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  commentId: T:OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache.html
+  name: IOpenSettingsMemoryCache
+  nameWithType: IOpenSettingsMemoryCache
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
 - uid: Microsoft.AspNetCore.Hosting.IHostingEnvironment
   commentId: T:Microsoft.AspNetCore.Hosting.IHostingEnvironment
   parent: Microsoft.AspNetCore.Hosting
@@ -449,49 +427,34 @@ references:
   name: ILoggerFactory
   nameWithType: ILoggerFactory
   fullName: Microsoft.Extensions.Logging.ILoggerFactory
-- uid: Microsoft.AspNetCore.Http
-  commentId: N:Microsoft.AspNetCore.Http
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft
-  name: Microsoft.AspNetCore.Http
-  nameWithType: Microsoft.AspNetCore.Http
-  fullName: Microsoft.AspNetCore.Http
-  spec.csharp:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
-  - name: .
-  - uid: Microsoft.AspNetCore.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
-  spec.vb:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
-  - name: .
-  - uid: Microsoft.AspNetCore.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
-- uid: OpenSettings.Services.MemoryCache
-  commentId: N:OpenSettings.Services.MemoryCache
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.requestdelegate
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration
+  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
+  name: OpenSettingsConfiguration
+  nameWithType: OpenSettingsConfiguration
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
+- uid: OpenSettings.Models.ProviderInfo
+  commentId: T:OpenSettings.Models.ProviderInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderInfo.html
+  name: ProviderInfo
+  nameWithType: ProviderInfo
+  fullName: OpenSettings.Models.ProviderInfo
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html
-  name: OpenSettings.Services.MemoryCache
-  nameWithType: OpenSettings.Services.MemoryCache
-  fullName: OpenSettings.Services.MemoryCache
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
   spec.csharp:
   - uid: OpenSettings
     name: OpenSettings
@@ -501,9 +464,9 @@ references:
     name: Services
     href: OpenSettings.Services.html
   - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
   spec.vb:
   - uid: OpenSettings
     name: OpenSettings
@@ -513,53 +476,9 @@ references:
     name: Services
     href: OpenSettings.Services.html
   - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
-- uid: OpenSettings.Configurations
-  commentId: N:OpenSettings.Configurations
-  href: OpenSettings.html
-  name: OpenSettings.Configurations
-  nameWithType: OpenSettings.Configurations
-  fullName: OpenSettings.Configurations
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
 - uid: Microsoft.AspNetCore.Hosting
   commentId: N:Microsoft.AspNetCore.Hosting
   isExternal: true
@@ -634,6 +553,87 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
 - uid: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.Invoke*
   commentId: Overload:OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.Invoke
   href: OpenSettings.AspNetCore.Spa.OpenSettingsSpaMiddleware.html#OpenSettings_AspNetCore_Spa_OpenSettingsSpaMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_

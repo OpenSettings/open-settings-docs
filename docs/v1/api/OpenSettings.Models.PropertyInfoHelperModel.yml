@@ -9,8 +9,10 @@ items:
   - OpenSettings.Models.PropertyInfoHelperModel.CanBeNull
   - OpenSettings.Models.PropertyInfoHelperModel.CreatePropertyInfo(System.Type,System.Collections.Generic.HashSet{System.Type})
   - OpenSettings.Models.PropertyInfoHelperModel.GenericTypeArguments
+  - OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute
   - OpenSettings.Models.PropertyInfoHelperModel.IsComplexType
   - OpenSettings.Models.PropertyInfoHelperModel.IsGenericType
+  - OpenSettings.Models.PropertyInfoHelperModel.IsStringType
   - OpenSettings.Models.PropertyInfoHelperModel.Name
   - OpenSettings.Models.PropertyInfoHelperModel.Properties
   - OpenSettings.Models.PropertyInfoHelperModel.TypeFullName
@@ -31,7 +33,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PropertyInfoHelperModel
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 6
+    startLine: 8
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -66,7 +68,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Name
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -95,7 +97,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TypeIdentifier
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -124,7 +126,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TypeName
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -153,7 +155,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TypeFullName
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -182,7 +184,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TypeNamespace
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -211,7 +213,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsComplexType
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -240,7 +242,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsGenericType
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -269,7 +271,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CanBeNull
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -298,7 +300,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GenericTypeArguments
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -327,7 +329,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Attributes
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -356,7 +358,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Properties
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -385,7 +387,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatePropertyInfo
     path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -403,6 +405,62 @@ items:
   nameWithType.vb: PropertyInfoHelperModel.CreatePropertyInfo(Type, HashSet(Of Type))
   fullName.vb: OpenSettings.Models.PropertyInfoHelperModel.CreatePropertyInfo(System.Type, System.Collections.Generic.HashSet(Of System.Type))
   name.vb: CreatePropertyInfo(Type, HashSet(Of Type))
+- uid: OpenSettings.Models.PropertyInfoHelperModel.IsStringType
+  commentId: M:OpenSettings.Models.PropertyInfoHelperModel.IsStringType
+  id: IsStringType
+  parent: OpenSettings.Models.PropertyInfoHelperModel
+  langs:
+  - csharp
+  - vb
+  name: IsStringType()
+  nameWithType: PropertyInfoHelperModel.IsStringType()
+  fullName: OpenSettings.Models.PropertyInfoHelperModel.IsStringType()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/PropertyInfoHelperModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsStringType
+    path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
+    startLine: 96
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public bool IsStringType()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsStringType() As Boolean
+  overload: OpenSettings.Models.PropertyInfoHelperModel.IsStringType*
+- uid: OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute
+  commentId: M:OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute
+  id: HasSecretTextAttribute
+  parent: OpenSettings.Models.PropertyInfoHelperModel
+  langs:
+  - csharp
+  - vb
+  name: HasSecretTextAttribute()
+  nameWithType: PropertyInfoHelperModel.HasSecretTextAttribute()
+  fullName: OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute()
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/PropertyInfoHelperModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HasSecretTextAttribute
+    path: ../../../open-settings/src/OpenSettings/Models/PropertyInfoHelperModel.cs
+    startLine: 101
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public bool HasSecretTextAttribute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasSecretTextAttribute() As Boolean
+  overload: OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute*
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -976,3 +1034,15 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: OpenSettings.Models.PropertyInfoHelperModel.IsStringType*
+  commentId: Overload:OpenSettings.Models.PropertyInfoHelperModel.IsStringType
+  href: OpenSettings.Models.PropertyInfoHelperModel.html#OpenSettings_Models_PropertyInfoHelperModel_IsStringType
+  name: IsStringType
+  nameWithType: PropertyInfoHelperModel.IsStringType
+  fullName: OpenSettings.Models.PropertyInfoHelperModel.IsStringType
+- uid: OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute*
+  commentId: Overload:OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute
+  href: OpenSettings.Models.PropertyInfoHelperModel.html#OpenSettings_Models_PropertyInfoHelperModel_HasSecretTextAttribute
+  name: HasSecretTextAttribute
+  nameWithType: PropertyInfoHelperModel.HasSecretTextAttribute
+  fullName: OpenSettings.Models.PropertyInfoHelperModel.HasSecretTextAttribute

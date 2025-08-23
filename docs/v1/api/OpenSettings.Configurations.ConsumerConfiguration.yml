@@ -25,7 +25,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConsumerConfiguration
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 13
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderUrl
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RequestEncodings
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -120,7 +120,7 @@ items:
       description: >-
         A <xref href="System.Collections.Generic.HashSet%601" data-throw-if-not-resolved="false"></xref> representing the encodings that the consumer requests 
 
-        from the provider service. This collection is initialized with a default size (6)
+        from the provider service. This collection is initialized with a default constant size (6).
     content.vb: Public Property RequestEncodings As HashSet(Of CompressionType)
   overload: OpenSettings.Configurations.ConsumerConfiguration.RequestEncodings*
 - uid: OpenSettings.Configurations.ConsumerConfiguration.IsRedisActive
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsRedisActive
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 57
+    startLine: 56
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -174,7 +174,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SkipInitialSyncAppData
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 70
+    startLine: 69
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -212,7 +212,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PollingSettingsWorker
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 78
+    startLine: 77
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -244,7 +244,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigureHttpClient
     path: ../../../open-settings/src/OpenSettings/Configurations/ConsumerConfiguration.cs
-    startLine: 90
+    startLine: 85
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations

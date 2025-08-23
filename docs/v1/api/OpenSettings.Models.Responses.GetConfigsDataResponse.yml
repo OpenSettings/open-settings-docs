@@ -5,6 +5,7 @@ items:
   id: GetConfigsDataResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetConfigsDataResponse.Age
   - OpenSettings.Models.Responses.GetConfigsDataResponse.CacheControl
   - OpenSettings.Models.Responses.GetConfigsDataResponse.Data
   - OpenSettings.Models.Responses.GetConfigsDataResponse.Expires
@@ -57,10 +58,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CacheControl
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetConfigsDataResponse.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: e.g. "public, max-age=3600"
+  example: []
   syntax:
     content: public string CacheControl { get; set; }
     parameters: []
@@ -86,10 +89,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Expires
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetConfigsDataResponse.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: e.g. "Thu, 26 Jun 2025 14:14:56 GMT"
+  example: []
   syntax:
     content: public string Expires { get; set; }
     parameters: []
@@ -97,6 +102,40 @@ items:
       type: System.String
     content.vb: Public Property Expires As String
   overload: OpenSettings.Models.Responses.GetConfigsDataResponse.Expires*
+- uid: OpenSettings.Models.Responses.GetConfigsDataResponse.Age
+  commentId: P:OpenSettings.Models.Responses.GetConfigsDataResponse.Age
+  id: Age
+  parent: OpenSettings.Models.Responses.GetConfigsDataResponse
+  langs:
+  - csharp
+  - vb
+  name: Age
+  nameWithType: GetConfigsDataResponse.Age
+  fullName: OpenSettings.Models.Responses.GetConfigsDataResponse.Age
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetConfigsDataResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Age
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetConfigsDataResponse.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  summary: >-
+    A non-negative integer that represents the time in seconds for which the object was in a cache.
+
+    e.g. 0
+  example: []
+  syntax:
+    content: public int Age { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Age As Integer
+  overload: OpenSettings.Models.Responses.GetConfigsDataResponse.Age*
 - uid: OpenSettings.Models.Responses.GetConfigsDataResponse.Data
   commentId: P:OpenSettings.Models.Responses.GetConfigsDataResponse.Data
   id: Data
@@ -115,7 +154,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Data
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetConfigsDataResponse.cs
-    startLine: 10
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -417,6 +456,23 @@ references:
   name: Expires
   nameWithType: GetConfigsDataResponse.Expires
   fullName: OpenSettings.Models.Responses.GetConfigsDataResponse.Expires
+- uid: OpenSettings.Models.Responses.GetConfigsDataResponse.Age*
+  commentId: Overload:OpenSettings.Models.Responses.GetConfigsDataResponse.Age
+  href: OpenSettings.Models.Responses.GetConfigsDataResponse.html#OpenSettings_Models_Responses_GetConfigsDataResponse_Age
+  name: Age
+  nameWithType: GetConfigsDataResponse.Age
+  fullName: OpenSettings.Models.Responses.GetConfigsDataResponse.Age
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: OpenSettings.Models.Responses.GetConfigsDataResponse.Data*
   commentId: Overload:OpenSettings.Models.Responses.GetConfigsDataResponse.Data
   href: OpenSettings.Models.Responses.GetConfigsDataResponse.html#OpenSettings_Models_Responses_GetConfigsDataResponse_Data

@@ -5,6 +5,7 @@ items:
   id: IProviderService
   parent: OpenSettings.Services.Interfaces
   children:
+  - OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
   langs:
   - csharp
@@ -58,6 +59,37 @@ items:
       type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.ProviderInfo}}
     content.vb: Function GetProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of ProviderInfo))
   overload: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync*
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  id: GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IProviderService
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryProviderAsync(CancellationToken)
+  nameWithType: IProviderService.GetPrimaryProviderAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IProviderService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPrimaryProviderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IProviderService.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse> GetPrimaryProviderAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetPrimaryProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
@@ -240,3 +272,42 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync
+  href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  name: GetPrimaryProviderAsync
+  nameWithType: IProviderService.GetPrimaryProviderAsync
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: )

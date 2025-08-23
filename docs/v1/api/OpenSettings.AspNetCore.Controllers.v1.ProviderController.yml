@@ -6,7 +6,8 @@ items:
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
   - OpenSettings.AspNetCore.Controllers.v1.ProviderController.#ctor(OpenSettings.Services.Interfaces.IProviderService)
-  - OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo(System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider(System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -27,11 +28,11 @@ items:
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
     content: >-
-      [Route("v1")]
+      [Route("v1/provider")]
 
       public class ProviderController : ControllerBase
     content.vb: >-
-      <Route("v1")>
+      <Route("v1/provider")>
 
       Public Class ProviderController Inherits ControllerBase
   inheritance:
@@ -213,7 +214,7 @@ items:
     ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: v1
+      value: v1/provider
 - uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.#ctor(OpenSettings.Services.Interfaces.IProviderService)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.ProviderController.#ctor(OpenSettings.Services.Interfaces.IProviderService)
   id: '#ctor(OpenSettings.Services.Interfaces.IProviderService)'
@@ -246,23 +247,23 @@ items:
   nameWithType.vb: ProviderController.New(IProviderService)
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.ProviderController.New(OpenSettings.Services.Interfaces.IProviderService)
   name.vb: New(IProviderService)
-- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo(System.Threading.CancellationToken)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo(System.Threading.CancellationToken)
-  id: GetProviderInfo(System.Threading.CancellationToken)
+- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider(System.Threading.CancellationToken)
+  id: GetProvider(System.Threading.CancellationToken)
   parent: OpenSettings.AspNetCore.Controllers.v1.ProviderController
   langs:
   - csharp
   - vb
-  name: GetProviderInfo(CancellationToken)
-  nameWithType: ProviderController.GetProviderInfo(CancellationToken)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo(System.Threading.CancellationToken)
+  name: GetProvider(CancellationToken)
+  nameWithType: ProviderController.GetProvider(CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
       path: src/OpenSettings.AspNetCore/Controllers/v1/ProviderController.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: GetProviderInfo
+    id: GetProvider
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/ProviderController.cs
     startLine: 19
   assemblies:
@@ -270,29 +271,27 @@ items:
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
     content: >-
-      [HttpGet("provider")]
+      [HttpGet]
 
       [Authorize(AuthenticationSchemes = "OpenSettingsBasicAuth")]
 
-      public Task<IActionResult> GetProviderInfo(CancellationToken cancellationToken)
+      public Task<IActionResult> GetProvider(CancellationToken cancellationToken)
     parameters:
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
       type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
     content.vb: >-
-      <HttpGet("provider")>
+      <HttpGet>
 
       <Authorize(AuthenticationSchemes:="OpenSettingsBasicAuth")>
 
-      Public Function GetProviderInfo(cancellationToken As CancellationToken) As Task(Of IActionResult)
-  overload: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo*
+      Public Function GetProvider(cancellationToken As CancellationToken) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider*
   attributes:
   - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
-    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: provider
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
   - type: Microsoft.AspNetCore.Authorization.AuthorizeAttribute
     ctor: Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
     arguments: []
@@ -300,6 +299,49 @@ items:
     - name: AuthenticationSchemes
       type: System.String
       value: OpenSettingsBasicAuth
+- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider(System.Threading.CancellationToken)
+  id: GetPrimaryProvider(System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.ProviderController
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryProvider(CancellationToken)
+  nameWithType: ProviderController.GetPrimaryProvider(CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/ProviderController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPrimaryProvider
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/ProviderController.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpGet("primary")]
+
+      public Task<IActionResult> GetPrimaryProvider(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("primary")>
+
+      Public Function GetPrimaryProvider(cancellationToken As CancellationToken) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: primary
 references:
 - uid: OpenSettings.AspNetCore.Controllers.v1
   commentId: N:OpenSettings.AspNetCore.Controllers.v1
@@ -8977,12 +9019,12 @@ references:
   - uid: OpenSettings.Services.Interfaces
     name: Interfaces
     href: OpenSettings.Services.Interfaces.html
-- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo
-  href: OpenSettings.AspNetCore.Controllers.v1.ProviderController.html#OpenSettings_AspNetCore_Controllers_v1_ProviderController_GetProviderInfo_System_Threading_CancellationToken_
-  name: GetProviderInfo
-  nameWithType: ProviderController.GetProviderInfo
-  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProviderInfo
+- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider
+  href: OpenSettings.AspNetCore.Controllers.v1.ProviderController.html#OpenSettings_AspNetCore_Controllers_v1_ProviderController_GetProvider_System_Threading_CancellationToken_
+  name: GetProvider
+  nameWithType: ProviderController.GetProvider
+  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetProvider
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading
@@ -9118,3 +9160,9 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider
+  href: OpenSettings.AspNetCore.Controllers.v1.ProviderController.html#OpenSettings_AspNetCore_Controllers_v1_ProviderController_GetPrimaryProvider_System_Threading_CancellationToken_
+  name: GetPrimaryProvider
+  nameWithType: ProviderController.GetPrimaryProvider
+  fullName: OpenSettings.AspNetCore.Controllers.v1.ProviderController.GetPrimaryProvider

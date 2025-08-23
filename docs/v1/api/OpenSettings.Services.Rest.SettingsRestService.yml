@@ -5,7 +5,7 @@ items:
   id: SettingsRestService
   parent: OpenSettings.Services.Rest
   children:
-  - OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.HttpClient,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  - OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
   - OpenSettings.Services.Rest.SettingsRestService.CopySettingToAsync(OpenSettings.Models.Inputs.CopySettingToInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Rest.SettingsRestService.CreateSettingAsync(OpenSettings.Models.Inputs.CreateSettingInput,System.Threading.CancellationToken)
   - OpenSettings.Services.Rest.SettingsRestService.DeleteSettingAsync(OpenSettings.Models.Inputs.DeleteSettingInput,System.Threading.CancellationToken)
@@ -31,7 +31,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingsRestService
     path: ../../../open-settings/src/OpenSettings/Services/Rest/SettingsRestService.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -50,16 +50,16 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.HttpClient,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  commentId: M:OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.HttpClient,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  id: '#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.HttpClient,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)'
+- uid: OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  commentId: M:OpenSettings.Services.Rest.SettingsRestService.#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
+  id: '#ctor(OpenSettings.Services.Interfaces.IDataChangeService,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)'
   parent: OpenSettings.Services.Rest.SettingsRestService
   langs:
   - csharp
   - vb
-  name: SettingsRestService(IDataChangeService, HttpClient, OpenSettingsConfiguration, ProviderInfo)
-  nameWithType: SettingsRestService.SettingsRestService(IDataChangeService, HttpClient, OpenSettingsConfiguration, ProviderInfo)
-  fullName: OpenSettings.Services.Rest.SettingsRestService.SettingsRestService(OpenSettings.Services.Interfaces.IDataChangeService, System.Net.Http.HttpClient, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
+  name: SettingsRestService(IDataChangeService, IHttpClientFactory, OpenSettingsConfiguration, ProviderInfo)
+  nameWithType: SettingsRestService.SettingsRestService(IDataChangeService, IHttpClientFactory, OpenSettingsConfiguration, ProviderInfo)
+  fullName: OpenSettings.Services.Rest.SettingsRestService.SettingsRestService(OpenSettings.Services.Interfaces.IDataChangeService, System.Net.Http.IHttpClientFactory, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
   type: Constructor
   source:
     remote:
@@ -73,21 +73,21 @@ items:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   syntax:
-    content: public SettingsRestService(IDataChangeService dataChangeService, HttpClient httpClient, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo)
+    content: public SettingsRestService(IDataChangeService dataChangeService, IHttpClientFactory httpClientFactory, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo)
     parameters:
     - id: dataChangeService
       type: OpenSettings.Services.Interfaces.IDataChangeService
-    - id: httpClient
-      type: System.Net.Http.HttpClient
+    - id: httpClientFactory
+      type: System.Net.Http.IHttpClientFactory
     - id: openSettingsConfiguration
       type: OpenSettings.Configurations.OpenSettingsConfiguration
     - id: providerInfo
       type: OpenSettings.Models.ProviderInfo
-    content.vb: Public Sub New(dataChangeService As IDataChangeService, httpClient As HttpClient, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo)
+    content.vb: Public Sub New(dataChangeService As IDataChangeService, httpClientFactory As IHttpClientFactory, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo)
   overload: OpenSettings.Services.Rest.SettingsRestService.#ctor*
-  nameWithType.vb: SettingsRestService.New(IDataChangeService, HttpClient, OpenSettingsConfiguration, ProviderInfo)
-  fullName.vb: OpenSettings.Services.Rest.SettingsRestService.New(OpenSettings.Services.Interfaces.IDataChangeService, System.Net.Http.HttpClient, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
-  name.vb: New(IDataChangeService, HttpClient, OpenSettingsConfiguration, ProviderInfo)
+  nameWithType.vb: SettingsRestService.New(IDataChangeService, IHttpClientFactory, OpenSettingsConfiguration, ProviderInfo)
+  fullName.vb: OpenSettings.Services.Rest.SettingsRestService.New(OpenSettings.Services.Interfaces.IDataChangeService, System.Net.Http.IHttpClientFactory, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
+  name.vb: New(IDataChangeService, IHttpClientFactory, OpenSettingsConfiguration, ProviderInfo)
 - uid: OpenSettings.Services.Rest.SettingsRestService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Rest.SettingsRestService.GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
   id: GetSettingsByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetSettingsByAppAndIdentifierInput,System.Threading.CancellationToken)
@@ -812,7 +812,7 @@ references:
     href: OpenSettings.Services.Interfaces.html
 - uid: OpenSettings.Services.Rest.SettingsRestService.#ctor*
   commentId: Overload:OpenSettings.Services.Rest.SettingsRestService.#ctor
-  href: OpenSettings.Services.Rest.SettingsRestService.html#OpenSettings_Services_Rest_SettingsRestService__ctor_OpenSettings_Services_Interfaces_IDataChangeService_System_Net_Http_HttpClient_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_
+  href: OpenSettings.Services.Rest.SettingsRestService.html#OpenSettings_Services_Rest_SettingsRestService__ctor_OpenSettings_Services_Interfaces_IDataChangeService_System_Net_Http_IHttpClientFactory_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_
   name: SettingsRestService
   nameWithType: SettingsRestService.SettingsRestService
   fullName: OpenSettings.Services.Rest.SettingsRestService.SettingsRestService
@@ -826,14 +826,14 @@ references:
   name: IDataChangeService
   nameWithType: IDataChangeService
   fullName: OpenSettings.Services.Interfaces.IDataChangeService
-- uid: System.Net.Http.HttpClient
-  commentId: T:System.Net.Http.HttpClient
+- uid: System.Net.Http.IHttpClientFactory
+  commentId: T:System.Net.Http.IHttpClientFactory
   parent: System.Net.Http
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
-  name: HttpClient
-  nameWithType: HttpClient
-  fullName: System.Net.Http.HttpClient
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: System.Net.Http.IHttpClientFactory
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration
   commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
   parent: OpenSettings.Configurations

@@ -9,7 +9,7 @@ items:
   - OpenSettings.Models.AppType.Java
   - OpenSettings.Models.AppType.NodeJs
   - OpenSettings.Models.AppType.Python
-  - OpenSettings.Models.AppType.Unknown
+  - OpenSettings.Models.AppType.Unset
   langs:
   - csharp
   - vb
@@ -31,30 +31,30 @@ items:
   syntax:
     content: public enum AppType
     content.vb: Public Enum AppType
-- uid: OpenSettings.Models.AppType.Unknown
-  commentId: F:OpenSettings.Models.AppType.Unknown
-  id: Unknown
+- uid: OpenSettings.Models.AppType.Unset
+  commentId: F:OpenSettings.Models.AppType.Unset
+  id: Unset
   parent: OpenSettings.Models.AppType
   langs:
   - csharp
   - vb
-  name: Unknown
-  nameWithType: AppType.Unknown
-  fullName: OpenSettings.Models.AppType.Unknown
+  name: Unset
+  nameWithType: AppType.Unset
+  fullName: OpenSettings.Models.AppType.Unset
   type: Field
   source:
     remote:
       path: src/OpenSettings/Models/AppType.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Unknown
+    id: Unset
     path: ../../../open-settings/src/OpenSettings/Models/AppType.cs
     startLine: 4
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
   syntax:
-    content: Unknown = 0
+    content: Unset = 0
     return:
       type: OpenSettings.Models.AppType
 - uid: OpenSettings.Models.AppType.Dotnet

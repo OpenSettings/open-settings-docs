@@ -65,7 +65,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetLocalSettingOrDefault
     path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -88,6 +88,9 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if <code class="typeparamref">T</code> is null.
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown if <code class="typeparamref">T</code> is not actual type.
   nameWithType.vb: SettingsProvider.GetLocalSettingOrDefault(Of T)()
   fullName.vb: OpenSettings.SettingsProvider.GetLocalSettingOrDefault(Of T)()
   name.vb: GetLocalSettingOrDefault(Of T)()
@@ -109,7 +112,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetLocalSettingOrDefault
     path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -151,7 +154,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetLocalSettingOrDefault
     path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -196,7 +199,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetRegistrationMode
     path: ../../../open-settings/src/OpenSettings/SettingsProvider.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -481,6 +484,13 @@ references:
   name: ArgumentNullException
   nameWithType: ArgumentNullException
   fullName: System.ArgumentNullException
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
 - uid: OpenSettings.SettingsProvider.GetLocalSettingOrDefault*
   commentId: Overload:OpenSettings.SettingsProvider.GetLocalSettingOrDefault
   href: OpenSettings.SettingsProvider.html#OpenSettings_SettingsProvider_GetLocalSettingOrDefault__1

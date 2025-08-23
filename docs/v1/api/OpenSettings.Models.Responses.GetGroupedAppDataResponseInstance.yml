@@ -9,11 +9,11 @@ items:
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.DynamicId
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Environment
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Id
-  - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.MachineName
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Name
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+  - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RowVersion
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ServiceType
   - OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.UpdatedOn
@@ -166,35 +166,6 @@ items:
       type: System.String
     content.vb: Public Property Version As String
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Version*
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
-  id: Urls
-  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
-  langs:
-  - csharp
-  - vb
-  name: Urls
-  nameWithType: GetGroupedAppDataResponseInstance.Urls
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Urls
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 15
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public string[] Urls { get; set; }
-    parameters: []
-    return:
-      type: System.String[]
-    content.vb: Public Property Urls As String()
-  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive
   id: IsActive
@@ -213,7 +184,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsActive
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -224,35 +195,35 @@ items:
       type: System.Boolean
     content.vb: Public Property IsActive As Boolean
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive*
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
-  id: IpAddress
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
+  id: RemoteIpAddress
   parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
   langs:
   - csharp
   - vb
-  name: IpAddress
-  nameWithType: GetGroupedAppDataResponseInstance.IpAddress
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
+  name: RemoteIpAddress
+  nameWithType: GetGroupedAppDataResponseInstance.RemoteIpAddress
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: IpAddress
+    id: RemoteIpAddress
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public string IpAddress { get; set; }
+    content: public string RemoteIpAddress { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property IpAddress As String
-  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress*
+    content.vb: Public Property RemoteIpAddress As String
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.MachineName
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.MachineName
   id: MachineName
@@ -271,7 +242,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MachineName
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 21
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -300,7 +271,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Environment
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -311,35 +282,6 @@ items:
       type: System.String
     content.vb: Public Property Environment As String
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Environment*
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
-  id: ReloadStrategies
-  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
-  langs:
-  - csharp
-  - vb
-  name: ReloadStrategies
-  nameWithType: GetGroupedAppDataResponseInstance.ReloadStrategies
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: ReloadStrategies
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 25
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public List<ReloadStrategy> ReloadStrategies { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
-    content.vb: Public Property ReloadStrategies As List(Of ReloadStrategy)
-  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ServiceType
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ServiceType
   id: ServiceType
@@ -358,7 +300,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceType
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 27
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -387,7 +329,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 29
+    startLine: 25
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -416,7 +358,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
-    startLine: 31
+    startLine: 27
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -427,6 +369,64 @@ items:
       type: System.Nullable{System.DateTime}
     content.vb: Public Property UpdatedOn As Date?
   overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.UpdatedOn*
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
+  id: Urls
+  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
+  langs:
+  - csharp
+  - vb
+  name: Urls
+  nameWithType: GetGroupedAppDataResponseInstance.Urls
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Urls
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
+    startLine: 29
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string[] Urls { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Urls As String()
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls*
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+  id: ReloadStrategies
+  parent: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance
+  langs:
+  - csharp
+  - vb
+  name: ReloadStrategies
+  nameWithType: GetGroupedAppDataResponseInstance.ReloadStrategies
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReloadStrategies
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppDataResponseInstance.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public List<ReloadStrategy> ReloadStrategies { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+    content.vb: Public Property ReloadStrategies As List(Of ReloadStrategy)
+  overload: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies*
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RowVersion
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RowVersion
   id: RowVersion
@@ -759,35 +759,6 @@ references:
   name: Version
   nameWithType: GetGroupedAppDataResponseInstance.Version
   fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Version
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_Urls
-  name: Urls
-  nameWithType: GetGroupedAppDataResponseInstance.Urls
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
-- uid: System.String[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
-  nameWithType.vb: String()
-  fullName.vb: String()
-  name.vb: String()
-  spec.csharp:
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: (
-  - name: )
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IsActive
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_IsActive
@@ -805,12 +776,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_IpAddress
-  name: IpAddress
-  nameWithType: GetGroupedAppDataResponseInstance.IpAddress
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.IpAddress
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: GetGroupedAppDataResponseInstance.RemoteIpAddress
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RemoteIpAddress
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.MachineName*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.MachineName
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_MachineName
@@ -823,110 +794,6 @@ references:
   name: Environment
   nameWithType: GetGroupedAppDataResponseInstance.Environment
   fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Environment
-- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
-  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_ReloadStrategies
-  name: ReloadStrategies
-  nameWithType: GetGroupedAppDataResponseInstance.ReloadStrategies
-  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
-- uid: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
-  commentId: T:System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<ReloadStrategy>
-  nameWithType: List<ReloadStrategy>
-  fullName: System.Collections.Generic.List<OpenSettings.Models.ReloadStrategy>
-  nameWithType.vb: List(Of ReloadStrategy)
-  fullName.vb: System.Collections.Generic.List(Of OpenSettings.Models.ReloadStrategy)
-  name.vb: List(Of ReloadStrategy)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - uid: OpenSettings.Models.ReloadStrategy
-    name: ReloadStrategy
-    href: OpenSettings.Models.ReloadStrategy.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: OpenSettings.Models.ReloadStrategy
-    name: ReloadStrategy
-    href: OpenSettings.Models.ReloadStrategy.html
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ServiceType*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ServiceType
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_ServiceType
@@ -1036,6 +903,139 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_Urls
+  name: Urls
+  nameWithType: GetGroupedAppDataResponseInstance.Urls
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.Urls
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+  href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_ReloadStrategies
+  name: ReloadStrategies
+  nameWithType: GetGroupedAppDataResponseInstance.ReloadStrategies
+  fullName: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.ReloadStrategies
+- uid: System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+  commentId: T:System.Collections.Generic.List{OpenSettings.Models.ReloadStrategy}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ReloadStrategy>
+  nameWithType: List<ReloadStrategy>
+  fullName: System.Collections.Generic.List<OpenSettings.Models.ReloadStrategy>
+  nameWithType.vb: List(Of ReloadStrategy)
+  fullName.vb: System.Collections.Generic.List(Of OpenSettings.Models.ReloadStrategy)
+  name.vb: List(Of ReloadStrategy)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: OpenSettings.Models.ReloadStrategy
+    name: ReloadStrategy
+    href: OpenSettings.Models.ReloadStrategy.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.ReloadStrategy
+    name: ReloadStrategy
+    href: OpenSettings.Models.ReloadStrategy.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RowVersion*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.RowVersion
   href: OpenSettings.Models.Responses.GetGroupedAppDataResponseInstance.html#OpenSettings_Models_Responses_GetGroupedAppDataResponseInstance_RowVersion

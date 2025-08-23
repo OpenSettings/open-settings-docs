@@ -5,8 +5,8 @@ items:
   id: LicenseProvider
   parent: OpenSettings
   children:
-  - OpenSettings.LicenseProvider.CurrentLicense
   - OpenSettings.LicenseProvider.Instance
+  - OpenSettings.LicenseProvider.License
   langs:
   - csharp
   - vb
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseProvider
     path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
-    startLine: 21
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -58,7 +58,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Instance
     path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
-    startLine: 26
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -69,25 +69,25 @@ items:
     return:
       type: OpenSettings.LicenseProvider
     content.vb: Public Shared ReadOnly Instance As LicenseProvider
-- uid: OpenSettings.LicenseProvider.CurrentLicense
-  commentId: P:OpenSettings.LicenseProvider.CurrentLicense
-  id: CurrentLicense
+- uid: OpenSettings.LicenseProvider.License
+  commentId: P:OpenSettings.LicenseProvider.License
+  id: License
   parent: OpenSettings.LicenseProvider
   langs:
   - csharp
   - vb
-  name: CurrentLicense
-  nameWithType: LicenseProvider.CurrentLicense
-  fullName: OpenSettings.LicenseProvider.CurrentLicense
+  name: License
+  nameWithType: LicenseProvider.License
+  fullName: OpenSettings.LicenseProvider.License
   type: Property
   source:
     remote:
       path: src/OpenSettings/LicenseProvider.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: CurrentLicense
+    id: License
     path: ../../../open-settings/src/OpenSettings/LicenseProvider.cs
-    startLine: 38
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -99,12 +99,12 @@ items:
     <xref href="OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder%2cOpenSettings.Configurations.OpenSettingsConfiguration%2cSystem.Func%7bMicrosoft.Extensions.Configuration.IConfiguration%2cSystem.Threading.Tasks.Task%7d%2cSystem.Type%5b%5d)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public License CurrentLicense { get; }
+    content: public License License { get; }
     parameters: []
     return:
       type: OpenSettings.Models.License
-    content.vb: Public Property CurrentLicense As License
-  overload: OpenSettings.LicenseProvider.CurrentLicense*
+    content.vb: Public Property License As License
+  overload: OpenSettings.LicenseProvider.License*
 references:
 - uid: OpenSettings
   commentId: N:OpenSettings
@@ -514,12 +514,12 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: OpenSettings.LicenseProvider.CurrentLicense*
-  commentId: Overload:OpenSettings.LicenseProvider.CurrentLicense
-  href: OpenSettings.LicenseProvider.html#OpenSettings_LicenseProvider_CurrentLicense
-  name: CurrentLicense
-  nameWithType: LicenseProvider.CurrentLicense
-  fullName: OpenSettings.LicenseProvider.CurrentLicense
+- uid: OpenSettings.LicenseProvider.License*
+  commentId: Overload:OpenSettings.LicenseProvider.License
+  href: OpenSettings.LicenseProvider.html#OpenSettings_LicenseProvider_License
+  name: License
+  nameWithType: LicenseProvider.License
+  fullName: OpenSettings.LicenseProvider.License
 - uid: OpenSettings.Models.License
   commentId: T:OpenSettings.Models.License
   parent: OpenSettings.Models

@@ -23,7 +23,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: FileMergeResult
     path: ../../../open-settings/src/OpenSettings/Models/FileMergeResult.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -58,16 +58,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Data
     path: ../../../open-settings/src/OpenSettings/Models/FileMergeResult.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
   syntax:
-    content: public Dictionary<string, object> Data { get; set; }
+    content: public Dictionary<string, JsonElement> Data { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.Dictionary{System.String,System.Object}
-    content.vb: Public Property Data As Dictionary(Of String, Object)
+      type: System.Collections.Generic.Dictionary{System.String,System.Text.Json.JsonElement}
+    content.vb: Public Property Data As Dictionary(Of String, JsonElement)
   overload: OpenSettings.Models.FileMergeResult.Data*
 - uid: OpenSettings.Models.FileMergeResult.Files
   commentId: P:OpenSettings.Models.FileMergeResult.Files
@@ -87,7 +87,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Files
     path: ../../../open-settings/src/OpenSettings/Models/FileMergeResult.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -116,7 +116,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Name
     path: ../../../open-settings/src/OpenSettings/Models/FileMergeResult.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -145,7 +145,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoredInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Models/FileMergeResult.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -422,17 +422,17 @@ references:
   name: Data
   nameWithType: FileMergeResult.Data
   fullName: OpenSettings.Models.FileMergeResult.Data
-- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+- uid: System.Collections.Generic.Dictionary{System.String,System.Text.Json.JsonElement}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Text.Json.JsonElement}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.Dictionary`2
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
-  name: Dictionary<string, object>
-  nameWithType: Dictionary<string, object>
-  fullName: System.Collections.Generic.Dictionary<string, object>
-  nameWithType.vb: Dictionary(Of String, Object)
-  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
-  name.vb: Dictionary(Of String, Object)
+  name: Dictionary<string, JsonElement>
+  nameWithType: Dictionary<string, JsonElement>
+  fullName: System.Collections.Generic.Dictionary<string, System.Text.Json.JsonElement>
+  nameWithType.vb: Dictionary(Of String, JsonElement)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Text.Json.JsonElement)
+  name.vb: Dictionary(Of String, JsonElement)
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
@@ -445,10 +445,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: object
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.Dictionary`2
@@ -464,10 +464,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: Object
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement
   - name: )
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2

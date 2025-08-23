@@ -7,6 +7,7 @@ items:
   children:
   - OpenSettings.Models.ProviderInfoClient.Id
   - OpenSettings.Models.ProviderInfoClient.Name
+  - OpenSettings.Models.ProviderInfoClient.Version
   langs:
   - csharp
   - vb
@@ -21,10 +22,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderInfoClient
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfoClient.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Represents information about a client.
+  example: []
   syntax:
     content: public class ProviderInfoClient
     content.vb: Public Class ProviderInfoClient
@@ -56,10 +59,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Id
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfoClient.cs
-    startLine: 6
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Gets or sets the unique identifier for the client.
+  example: []
   syntax:
     content: public Guid Id { get; set; }
     parameters: []
@@ -85,10 +90,13 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Name
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfoClient.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Gets or sets the client's name.
+  remarks: e.g. "OpenSettings.Api"
+  example: []
   syntax:
     content: public string Name { get; set; }
     parameters: []
@@ -96,6 +104,38 @@ items:
       type: System.String
     content.vb: Public Property Name As String
   overload: OpenSettings.Models.ProviderInfoClient.Name*
+- uid: OpenSettings.Models.ProviderInfoClient.Version
+  commentId: P:OpenSettings.Models.ProviderInfoClient.Version
+  id: Version
+  parent: OpenSettings.Models.ProviderInfoClient
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ProviderInfoClient.Version
+  fullName: OpenSettings.Models.ProviderInfoClient.Version
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfoClient.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Version
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfoClient.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets the client's version.
+  remarks: e.g. "1.0.0"
+  example: []
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: OpenSettings.Models.ProviderInfoClient.Version*
 references:
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
@@ -387,3 +427,9 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: OpenSettings.Models.ProviderInfoClient.Version*
+  commentId: Overload:OpenSettings.Models.ProviderInfoClient.Version
+  href: OpenSettings.Models.ProviderInfoClient.html#OpenSettings_Models_ProviderInfoClient_Version
+  name: Version
+  nameWithType: ProviderInfoClient.Version
+  fullName: OpenSettings.Models.ProviderInfoClient.Version

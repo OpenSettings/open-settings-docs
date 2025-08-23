@@ -21,7 +21,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFileAttribute
     path: ../../../open-settings/src/OpenSettings/Attributes/StoreInSeparateFileAttribute.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Attributes
@@ -45,6 +45,10 @@ items:
       <AttributeUsage(AttributeTargets.Class)>
 
       Public Class StoreInSeparateFileAttribute Inherits Attribute
+  exceptions:
+  - type: OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
+    commentId: T:OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
+    description: Thrown in runtime if attribute not assigned to property of the string type.
   inheritance:
   - System.Object
   - System.Attribute
@@ -115,7 +119,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Attributes/StoreInSeparateFileAttribute.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Attributes
@@ -150,7 +154,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Attributes/StoreInSeparateFileAttribute.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Attributes
@@ -170,6 +174,12 @@ references:
   name: IgnoreOnFileChange
   nameWithType: StoreInSeparateFileAttribute.IgnoreOnFileChange
   fullName: OpenSettings.Attributes.StoreInSeparateFileAttribute.IgnoreOnFileChange
+- uid: OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
+  commentId: T:OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
+  href: OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException.html
+  name: InvalidSecretTextAttributeUsageException
+  nameWithType: InvalidSecretTextAttributeUsageException
+  fullName: OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
 - uid: OpenSettings.Attributes
   commentId: N:OpenSettings.Attributes
   href: OpenSettings.html

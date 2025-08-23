@@ -6,7 +6,7 @@ items:
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
   - OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.#ctor(OpenSettings.Services.Interfaces.ILocalSettingsService)
-  - OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -246,23 +246,23 @@ items:
   nameWithType.vb: LocalSettingsController.New(ILocalSettingsService)
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.New(OpenSettings.Services.Interfaces.ILocalSettingsService)
   name.vb: New(ILocalSettingsService)
-- uid: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest,System.Threading.CancellationToken)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest,System.Threading.CancellationToken)
-  id: GetLocalSetting(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest,System.Threading.CancellationToken)
+- uid: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest,System.Threading.CancellationToken)
+  id: GetLocalSettings(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest,System.Threading.CancellationToken)
   parent: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController
   langs:
   - csharp
   - vb
-  name: GetLocalSetting(GetLocalSettingRequest, CancellationToken)
-  nameWithType: LocalSettingsController.GetLocalSetting(GetLocalSettingRequest, CancellationToken)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest, System.Threading.CancellationToken)
+  name: GetLocalSettings(GetLocalSettingsRequest, CancellationToken)
+  nameWithType: LocalSettingsController.GetLocalSettings(GetLocalSettingsRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings(OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
       path: src/OpenSettings.AspNetCore/Controllers/v1/LocalSettingsController.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: GetLocalSetting
+    id: GetLocalSettings
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/LocalSettingsController.cs
     startLine: 18
   assemblies:
@@ -272,10 +272,10 @@ items:
     content: >-
       [HttpGet("{ComputedIdentifier:guid}")]
 
-      public Task<IActionResult> GetLocalSetting(GetLocalSettingRequest request, CancellationToken cancellationToken)
+      public Task<IActionResult> GetLocalSettings(GetLocalSettingsRequest request, CancellationToken cancellationToken)
     parameters:
     - id: request
-      type: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+      type: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
     - id: cancellationToken
       type: System.Threading.CancellationToken
     return:
@@ -283,8 +283,8 @@ items:
     content.vb: >-
       <HttpGet("{ComputedIdentifier:guid}")>
 
-      Public Function GetLocalSetting(request As GetLocalSettingRequest, cancellationToken As CancellationToken) As Task(Of IActionResult)
-  overload: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting*
+      Public Function GetLocalSettings(request As GetLocalSettingsRequest, cancellationToken As CancellationToken) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings*
   attributes:
   - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
     ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
@@ -8968,19 +8968,19 @@ references:
   - uid: OpenSettings.Services.Interfaces
     name: Interfaces
     href: OpenSettings.Services.Interfaces.html
-- uid: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting
-  href: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.html#OpenSettings_AspNetCore_Controllers_v1_LocalSettingsController_GetLocalSetting_OpenSettings_AspNetCore_Models_Requests_GetLocalSettingRequest_System_Threading_CancellationToken_
-  name: GetLocalSetting
-  nameWithType: LocalSettingsController.GetLocalSetting
-  fullName: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSetting
-- uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
-  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+- uid: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings
+  href: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.html#OpenSettings_AspNetCore_Controllers_v1_LocalSettingsController_GetLocalSettings_OpenSettings_AspNetCore_Models_Requests_GetLocalSettingsRequest_System_Threading_CancellationToken_
+  name: GetLocalSettings
+  nameWithType: LocalSettingsController.GetLocalSettings
+  fullName: OpenSettings.AspNetCore.Controllers.v1.LocalSettingsController.GetLocalSettings
+- uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
   parent: OpenSettings.AspNetCore.Models.Requests
-  href: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest.html
-  name: GetLocalSettingRequest
-  nameWithType: GetLocalSettingRequest
-  fullName: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
+  href: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest.html
+  name: GetLocalSettingsRequest
+  nameWithType: GetLocalSettingsRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
 - uid: System.Threading.CancellationToken
   commentId: T:System.Threading.CancellationToken
   parent: System.Threading

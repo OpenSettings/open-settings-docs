@@ -5,7 +5,8 @@ items:
   id: ProviderRestService
   parent: OpenSettings.Services.Rest
   children:
-  - OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
+  - OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.IHttpClientFactory)
+  - OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
   - OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
   langs:
   - csharp
@@ -40,16 +41,16 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
-  commentId: M:OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.HttpClient)
-  id: '#ctor(System.Net.Http.HttpClient)'
+- uid: OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.IHttpClientFactory)
+  commentId: M:OpenSettings.Services.Rest.ProviderRestService.#ctor(System.Net.Http.IHttpClientFactory)
+  id: '#ctor(System.Net.Http.IHttpClientFactory)'
   parent: OpenSettings.Services.Rest.ProviderRestService
   langs:
   - csharp
   - vb
-  name: ProviderRestService(HttpClient)
-  nameWithType: ProviderRestService.ProviderRestService(HttpClient)
-  fullName: OpenSettings.Services.Rest.ProviderRestService.ProviderRestService(System.Net.Http.HttpClient)
+  name: ProviderRestService(IHttpClientFactory)
+  nameWithType: ProviderRestService.ProviderRestService(IHttpClientFactory)
+  fullName: OpenSettings.Services.Rest.ProviderRestService.ProviderRestService(System.Net.Http.IHttpClientFactory)
   type: Constructor
   source:
     remote:
@@ -58,20 +59,20 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
   syntax:
-    content: public ProviderRestService(HttpClient httpClient)
+    content: public ProviderRestService(IHttpClientFactory httpClientFactory)
     parameters:
-    - id: httpClient
-      type: System.Net.Http.HttpClient
-    content.vb: Public Sub New(httpClient As HttpClient)
+    - id: httpClientFactory
+      type: System.Net.Http.IHttpClientFactory
+    content.vb: Public Sub New(httpClientFactory As IHttpClientFactory)
   overload: OpenSettings.Services.Rest.ProviderRestService.#ctor*
-  nameWithType.vb: ProviderRestService.New(HttpClient)
-  fullName.vb: OpenSettings.Services.Rest.ProviderRestService.New(System.Net.Http.HttpClient)
-  name.vb: New(HttpClient)
+  nameWithType.vb: ProviderRestService.New(IHttpClientFactory)
+  fullName.vb: OpenSettings.Services.Rest.ProviderRestService.New(System.Net.Http.IHttpClientFactory)
+  name.vb: New(IHttpClientFactory)
 - uid: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync(System.Threading.CancellationToken)
   id: GetProviderAsync(System.Threading.CancellationToken)
@@ -90,7 +91,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetProviderAsync
     path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Rest
@@ -106,6 +107,40 @@ items:
   overload: OpenSettings.Services.Rest.ProviderRestService.GetProviderAsync*
   implements:
   - OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  id: GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Rest.ProviderRestService
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryProviderAsync(CancellationToken)
+  nameWithType: ProviderRestService.GetPrimaryProviderAsync(CancellationToken)
+  fullName: OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/ProviderRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPrimaryProviderAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/ProviderRestService.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest
+  example: []
+  syntax:
+    content: public Task<IResponse> GetPrimaryProviderAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Public Function GetPrimaryProviderAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
 references:
 - uid: OpenSettings.Services.Rest
   commentId: N:OpenSettings.Services.Rest
@@ -434,21 +469,21 @@ references:
     href: OpenSettings.Services.Interfaces.html
 - uid: OpenSettings.Services.Rest.ProviderRestService.#ctor*
   commentId: Overload:OpenSettings.Services.Rest.ProviderRestService.#ctor
-  href: OpenSettings.Services.Rest.ProviderRestService.html#OpenSettings_Services_Rest_ProviderRestService__ctor_System_Net_Http_HttpClient_
+  href: OpenSettings.Services.Rest.ProviderRestService.html#OpenSettings_Services_Rest_ProviderRestService__ctor_System_Net_Http_IHttpClientFactory_
   name: ProviderRestService
   nameWithType: ProviderRestService.ProviderRestService
   fullName: OpenSettings.Services.Rest.ProviderRestService.ProviderRestService
   nameWithType.vb: ProviderRestService.New
   fullName.vb: OpenSettings.Services.Rest.ProviderRestService.New
   name.vb: New
-- uid: System.Net.Http.HttpClient
-  commentId: T:System.Net.Http.HttpClient
+- uid: System.Net.Http.IHttpClientFactory
+  commentId: T:System.Net.Http.IHttpClientFactory
   parent: System.Net.Http
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
-  name: HttpClient
-  nameWithType: HttpClient
-  fullName: System.Net.Http.HttpClient
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: System.Net.Http.IHttpClientFactory
 - uid: System.Net.Http
   commentId: N:System.Net.Http
   isExternal: true
@@ -665,3 +700,70 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync*
+  commentId: Overload:OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync
+  href: OpenSettings.Services.Rest.ProviderRestService.html#OpenSettings_Services_Rest_ProviderRestService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  name: GetPrimaryProviderAsync
+  nameWithType: ProviderRestService.GetPrimaryProviderAsync
+  fullName: OpenSettings.Services.Rest.ProviderRestService.GetPrimaryProviderAsync
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IProviderService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  name: GetPrimaryProviderAsync(CancellationToken)
+  nameWithType: IProviderService.GetPrimaryProviderAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+    name: GetPrimaryProviderAsync
+    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+    name: GetPrimaryProviderAsync
+    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: )

@@ -82,7 +82,7 @@ Hardcoding connection strings in the code is not recommended. Instead, store it 
       "Id": "adbdf741-bb4d-4673-b2a8-23e677fcf454",
       "Secret": "4294a5e3-0839-4358-a03d-1ac52585ae5f"
     },
-    "Selection": 1
+    "Selection": 1 // (Provider)
   }
 }
 ```

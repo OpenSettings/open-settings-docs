@@ -48,14 +48,14 @@ Instead of managing configurations manually, **why not store them in persistent 
 
 ## Key Features & Benefits  
 
-### 🖥️ **Settings Page**  
+### 🔹 **Settings Page**  
 OpenSettings provides a **user-friendly UI** where settings can be managed **with just a few clicks**.  
 
 No need to manually edit config files—simply update values in the **dashboard**!  
 
 ![Introduction Setting List Page](../assets/images/introduction-setting-list-page.png)
 
-### 🔧 **Three Core Libraries**  
+### 🔹 **Three Core Libraries**  
 OpenSettings is built as a **modular system** with three main components:  
 
 1️⃣ **OpenSettings** → The **core library** responsible for managing settings logic.
@@ -68,14 +68,14 @@ OpenSettings is built as a **modular system** with three main components:
 
 The OpenSettings library can run as either a **Provider** or a **Consumer**, depending on how an application retrieves configuration values.  
 
-### **Provider Mode 🏗️**  
+### 🔹 **Provider Mode**  
 A **Provider** is responsible for **fetching and storing data in a persistent storage**.  
 
 Example:  
 - You have an **`EmailSender.Api`** service that needs email-related settings.  
 - If `EmailSender.Api` directly **connects to the database/storage**, it acts as a **Provider**.  
 
-### **Consumer Mode 🏭**  
+### 🔹 **Consumer Mode**  
 A **Consumer** retrieves settings **from a Provider service** instead of accessing storage directly.  
 
 Example:  

@@ -6,7 +6,6 @@ items:
   parent: OpenSettings.Helpers
   children:
   - OpenSettings.Helpers.VersionHelper.GetPackInfo(System.Reflection.Assembly)
-  - OpenSettings.Helpers.VersionHelper.GetPackInfo(System.String)
   langs:
   - csharp
   - vb
@@ -21,7 +20,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: VersionHelper
     path: ../../../open-settings/src/OpenSettings/Helpers/VersionHelper.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -43,53 +42,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Helpers.VersionHelper.GetPackInfo(System.String)
-  commentId: M:OpenSettings.Helpers.VersionHelper.GetPackInfo(System.String)
-  id: GetPackInfo(System.String)
-  parent: OpenSettings.Helpers.VersionHelper
-  langs:
-  - csharp
-  - vb
-  name: GetPackInfo(string)
-  nameWithType: VersionHelper.GetPackInfo(string)
-  fullName: OpenSettings.Helpers.VersionHelper.GetPackInfo(string)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings/Helpers/VersionHelper.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: GetPackInfo
-    path: ../../../open-settings/src/OpenSettings/Helpers/VersionHelper.cs
-    startLine: 24
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Helpers
-  summary: >-
-    Parses a version string and calculates its corresponding score.
-
-    Determines whether the version is a preview version or a stable version.
-  example: []
-  syntax:
-    content: public static (long Score, bool IsPreview) GetPackInfo(string packVersion)
-    parameters:
-    - id: packVersion
-      type: System.String
-      description: >-
-        The version string to parse. Can be in the format 'major.minor.patch' for stable versions 
-            or 'major.minor.patch-preview.previewNo.runNo.runAttempt' for preview versions.
-    return:
-      type: System.ValueTuple{System.Int64,System.Boolean}
-      description: A tuple with the pack version score (long) and a boolean indicating if it's a preview version.
-    content.vb: Public Shared Function GetPackInfo(packVersion As String) As (Score As Long, IsPreview As Boolean)
-  overload: OpenSettings.Helpers.VersionHelper.GetPackInfo*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: Thrown if the version format is invalid.
-  nameWithType.vb: VersionHelper.GetPackInfo(String)
-  fullName.vb: OpenSettings.Helpers.VersionHelper.GetPackInfo(String)
-  name.vb: GetPackInfo(String)
 - uid: OpenSettings.Helpers.VersionHelper.GetPackInfo(System.Reflection.Assembly)
   commentId: M:OpenSettings.Helpers.VersionHelper.GetPackInfo(System.Reflection.Assembly)
   id: GetPackInfo(System.Reflection.Assembly)
@@ -109,7 +61,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetPackInfo
     path: ../../../open-settings/src/OpenSettings/Helpers/VersionHelper.cs
-    startLine: 68
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -119,15 +71,15 @@ items:
     Extracts the version from the assembly's informational version attribute.
   example: []
   syntax:
-    content: public static (string PackVersion, long Score, bool IsPreview) GetPackInfo(this Assembly assembly)
+    content: public static PackInfo GetPackInfo(this Assembly assembly)
     parameters:
     - id: assembly
       type: System.Reflection.Assembly
       description: The assembly from which to retrieve the version information.
     return:
-      type: System.ValueTuple{System.String,System.Int64,System.Boolean}
+      type: OpenSettings.Models.PackInfo
       description: A tuple containing the pack version string, the pack version's score (long), and a boolean indicating if it's a preview version.
-    content.vb: Public Shared Function GetPackInfo(assembly As Assembly) As (PackVersion As String, Score As Long, IsPreview As Boolean)
+    content.vb: Public Shared Function GetPackInfo(assembly As Assembly) As PackInfo
   overload: OpenSettings.Helpers.VersionHelper.GetPackInfo*
   exceptions:
   - type: System.ArgumentException
@@ -402,97 +354,10 @@ references:
   fullName: System.ArgumentException
 - uid: OpenSettings.Helpers.VersionHelper.GetPackInfo*
   commentId: Overload:OpenSettings.Helpers.VersionHelper.GetPackInfo
-  href: OpenSettings.Helpers.VersionHelper.html#OpenSettings_Helpers_VersionHelper_GetPackInfo_System_String_
+  href: OpenSettings.Helpers.VersionHelper.html#OpenSettings_Helpers_VersionHelper_GetPackInfo_System_Reflection_Assembly_
   name: GetPackInfo
   nameWithType: VersionHelper.GetPackInfo
   fullName: OpenSettings.Helpers.VersionHelper.GetPackInfo
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System.ValueTuple{System.Int64,System.Boolean}
-  commentId: T:System.ValueTuple{System.Int64,System.Boolean}
-  parent: System
-  definition: System.ValueTuple`2
-  href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: (long Score, bool IsPreview)
-  nameWithType: (long Score, bool IsPreview)
-  fullName: (long Score, bool IsPreview)
-  nameWithType.vb: (Score As Long, IsPreview As Boolean)
-  fullName.vb: (Score As Long, IsPreview As Boolean)
-  name.vb: (Score As Long, IsPreview As Boolean)
-  spec.csharp:
-  - name: (
-  - uid: System.Int64
-    name: long
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int64
-  - name: " "
-  - uid: System.ValueTuple{System.Int64,System.Boolean}.Score
-    name: Score
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.boolean-.score
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: " "
-  - uid: System.ValueTuple{System.Int64,System.Boolean}.IsPreview
-    name: IsPreview
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.boolean-.ispreview
-  - name: )
-  spec.vb:
-  - name: (
-  - uid: System.ValueTuple{System.Int64,System.Boolean}.Score
-    name: Score
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.boolean-.score
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.Int64
-    name: Long
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int64
-  - name: ','
-  - name: " "
-  - uid: System.ValueTuple{System.Int64,System.Boolean}.IsPreview
-    name: IsPreview
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64,system.boolean-.ispreview
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-- uid: System.ValueTuple`2
-  commentId: T:System.ValueTuple`2
-  name: (T1, T2)
-  nameWithType: (T1, T2)
-  fullName: (T1, T2)
-  spec.csharp:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: )
-  spec.vb:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: )
 - uid: System.Reflection.Assembly
   commentId: T:System.Reflection.Assembly
   parent: System.Reflection
@@ -501,85 +366,13 @@ references:
   name: Assembly
   nameWithType: Assembly
   fullName: System.Reflection.Assembly
-- uid: System.ValueTuple{System.String,System.Int64,System.Boolean}
-  commentId: T:System.ValueTuple{System.String,System.Int64,System.Boolean}
-  parent: System
-  definition: System.ValueTuple`3
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: (string PackVersion, long Score, bool IsPreview)
-  nameWithType: (string PackVersion, long Score, bool IsPreview)
-  fullName: (string PackVersion, long Score, bool IsPreview)
-  nameWithType.vb: (PackVersion As String, Score As Long, IsPreview As Boolean)
-  fullName.vb: (PackVersion As String, Score As Long, IsPreview As Boolean)
-  name.vb: (PackVersion As String, Score As Long, IsPreview As Boolean)
-  spec.csharp:
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.PackVersion
-    name: PackVersion
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.packversion
-  - name: ','
-  - name: " "
-  - uid: System.Int64
-    name: long
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int64
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.Score
-    name: Score
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.score
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.IsPreview
-    name: IsPreview
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.ispreview
-  - name: )
-  spec.vb:
-  - name: (
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.PackVersion
-    name: PackVersion
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.packversion
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.Score
-    name: Score
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.score
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.Int64
-    name: Long
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int64
-  - name: ','
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.Int64,System.Boolean}.IsPreview
-    name: IsPreview
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.int64,system.boolean-.ispreview
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
+- uid: OpenSettings.Models.PackInfo
+  commentId: T:OpenSettings.Models.PackInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.PackInfo.html
+  name: PackInfo
+  nameWithType: PackInfo
+  fullName: OpenSettings.Models.PackInfo
 - uid: System.Reflection
   commentId: N:System.Reflection
   isExternal: true
@@ -607,28 +400,25 @@ references:
     name: Reflection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.reflection
-- uid: System.ValueTuple`3
-  commentId: T:System.ValueTuple`3
-  name: (T1, T2, T3)
-  nameWithType: (T1, T2, T3)
-  fullName: (T1, T2, T3)
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
   spec.csharp:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: ','
-  - name: " "
-  - name: T3
-  - name: )
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
   spec.vb:
-  - name: (
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: ','
-  - name: " "
-  - name: T3
-  - name: )
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html

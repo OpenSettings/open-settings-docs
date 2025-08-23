@@ -17,6 +17,7 @@ items:
   - OpenSettings.Errors.DuplicateSetting
   - OpenSettings.Errors.DuplicateSortOrder
   - OpenSettings.Errors.DuplicateTargetSetting
+  - OpenSettings.Errors.GenerateTokenNotSupportedWhileRunningInConsumerMode
   - OpenSettings.Errors.GeneratedSettingFileNotFound
   - OpenSettings.Errors.GroupAlreadyExists
   - OpenSettings.Errors.GroupNotFound
@@ -43,12 +44,16 @@ items:
   - OpenSettings.Errors.MinSortOrderReached
   - OpenSettings.Errors.MismatchedClientId
   - OpenSettings.Errors.MismatchedClientName
+  - OpenSettings.Errors.MissingOpenIdConnectAuthority
   - OpenSettings.Errors.NameAlreadyExists
   - OpenSettings.Errors.NoChanges
   - OpenSettings.Errors.NotificationAlreadyExists
   - OpenSettings.Errors.NotificationExpired
   - OpenSettings.Errors.NotificationNotFound
+  - OpenSettings.Errors.PrimaryProviderNotFound
   - OpenSettings.Errors.ReferenceIdMustNotEmpty
+  - OpenSettings.Errors.RefreshTokenNotFound
+  - OpenSettings.Errors.RefreshTokenNotSupportedWhileRunningInConsumerMode
   - OpenSettings.Errors.RegistrationModeConfigureNotSupported
   - OpenSettings.Errors.RegistrationModeSingletonNotSupported
   - OpenSettings.Errors.SettingNotFound
@@ -63,6 +68,8 @@ items:
   - OpenSettings.Errors.TargetGroupNotFound
   - OpenSettings.Errors.TargetIdentifierNotFound
   - OpenSettings.Errors.TargetTagNotFound
+  - OpenSettings.Errors.TokenExpired
+  - OpenSettings.Errors.TokenRefreshNotAllowedYet
   - OpenSettings.Errors.UnrecognizedLicenseEdition
   - OpenSettings.Errors.UserNotFound
   - OpenSettings.Errors.UserNotMatched
@@ -534,6 +541,32 @@ items:
     content: InvalidRoutePrefix = 40016
     return:
       type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TokenRefreshNotAllowedYet
+  commentId: F:OpenSettings.Errors.TokenRefreshNotAllowedYet
+  id: TokenRefreshNotAllowedYet
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TokenRefreshNotAllowedYet
+  nameWithType: Errors.TokenRefreshNotAllowedYet
+  fullName: OpenSettings.Errors.TokenRefreshNotAllowedYet
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TokenRefreshNotAllowedYet
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 63
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TokenRefreshNotAllowedYet = 40301
+    return:
+      type: OpenSettings.Errors
 - uid: OpenSettings.Errors.InvalidCredentials
   commentId: F:OpenSettings.Errors.InvalidCredentials
   id: InvalidCredentials
@@ -552,12 +585,38 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InvalidCredentials
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 65
+    startLine: 68
   assemblies:
   - OpenSettings
   namespace: OpenSettings
   syntax:
     content: InvalidCredentials = 40100
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.TokenExpired
+  commentId: F:OpenSettings.Errors.TokenExpired
+  id: TokenExpired
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: TokenExpired
+  nameWithType: Errors.TokenExpired
+  fullName: OpenSettings.Errors.TokenExpired
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TokenExpired
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 72
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: TokenExpired = 40300
     return:
       type: OpenSettings.Errors
 - uid: OpenSettings.Errors.IdentifierNotFound
@@ -578,7 +637,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 71
+    startLine: 77
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -604,7 +663,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceIdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 74
+    startLine: 80
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -630,7 +689,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetIdentifierNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 77
+    startLine: 83
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -656,7 +715,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: HistoryNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 80
+    startLine: 86
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -682,7 +741,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 83
+    startLine: 89
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -708,7 +767,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 86
+    startLine: 92
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -734,7 +793,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 89
+    startLine: 95
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -760,7 +819,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 92
+    startLine: 98
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -786,7 +845,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 95
+    startLine: 101
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -812,7 +871,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 98
+    startLine: 104
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -838,7 +897,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceGroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 101
+    startLine: 107
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -864,7 +923,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetGroupNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 104
+    startLine: 110
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -890,7 +949,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetAppNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 107
+    startLine: 113
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -916,7 +975,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SourceTagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 110
+    startLine: 116
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -942,7 +1001,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TargetTagNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 113
+    startLine: 119
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -968,7 +1027,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MappingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 116
+    startLine: 122
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -994,7 +1053,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigurationNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 119
+    startLine: 125
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1020,7 +1079,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LocalSettingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 122
+    startLine: 128
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1046,7 +1105,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NotificationNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 125
+    startLine: 131
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1072,7 +1131,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GeneratedSettingFileNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 128
+    startLine: 134
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1098,7 +1157,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 131
+    startLine: 137
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1124,12 +1183,64 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppIdentifierMappingNotFound
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 134
+    startLine: 140
   assemblies:
   - OpenSettings
   namespace: OpenSettings
   syntax:
     content: AppIdentifierMappingNotFound = 40421
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.PrimaryProviderNotFound
+  commentId: F:OpenSettings.Errors.PrimaryProviderNotFound
+  id: PrimaryProviderNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: PrimaryProviderNotFound
+  nameWithType: Errors.PrimaryProviderNotFound
+  fullName: OpenSettings.Errors.PrimaryProviderNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PrimaryProviderNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 143
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: PrimaryProviderNotFound = 40422
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.RefreshTokenNotFound
+  commentId: F:OpenSettings.Errors.RefreshTokenNotFound
+  id: RefreshTokenNotFound
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenNotFound
+  nameWithType: Errors.RefreshTokenNotFound
+  fullName: OpenSettings.Errors.RefreshTokenNotFound
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RefreshTokenNotFound
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 146
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: RefreshTokenNotFound = 40423
     return:
       type: OpenSettings.Errors
 - uid: OpenSettings.Errors.ConfigSourceNotSupported
@@ -1150,7 +1261,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigSourceNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 139
+    startLine: 151
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1176,7 +1287,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationModeSingletonNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 142
+    startLine: 154
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1202,7 +1313,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationModeConfigureNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 145
+    startLine: 157
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1228,7 +1339,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChangeNotSupported
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 148
+    startLine: 160
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1254,7 +1365,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NameAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 153
+    startLine: 165
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1280,7 +1391,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SlugAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 156
+    startLine: 168
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1306,7 +1417,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GroupAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 159
+    startLine: 171
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1332,7 +1443,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 162
+    startLine: 174
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1358,7 +1469,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: TagAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 165
+    startLine: 177
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1384,7 +1495,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MappingAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 168
+    startLine: 180
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1410,7 +1521,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateSortOrder
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 171
+    startLine: 183
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1436,7 +1547,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateSetting
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 174
+    startLine: 186
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1462,7 +1573,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateTargetSetting
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 177
+    startLine: 189
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1488,7 +1599,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DuplicateComputedIdentifier
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 180
+    startLine: 192
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1514,7 +1625,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: HistoryAlreadyRestored
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 183
+    startLine: 195
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1540,7 +1651,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: NotificationAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 186
+    startLine: 198
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1566,7 +1677,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 189
+    startLine: 201
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1592,7 +1703,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceAlreadyExists
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 192
+    startLine: 204
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1618,7 +1729,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DbUpdateException
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 197
+    startLine: 209
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1644,7 +1755,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ContentFetchFailed
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 200
+    startLine: 212
   assemblies:
   - OpenSettings
   namespace: OpenSettings
@@ -1670,12 +1781,90 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataChangeNotificationFailed
     path: ../../../open-settings/src/OpenSettings/Errors.cs
-    startLine: 203
+    startLine: 215
   assemblies:
   - OpenSettings
   namespace: OpenSettings
   syntax:
     content: DataChangeNotificationFailed = 50002
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.GenerateTokenNotSupportedWhileRunningInConsumerMode
+  commentId: F:OpenSettings.Errors.GenerateTokenNotSupportedWhileRunningInConsumerMode
+  id: GenerateTokenNotSupportedWhileRunningInConsumerMode
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: GenerateTokenNotSupportedWhileRunningInConsumerMode
+  nameWithType: Errors.GenerateTokenNotSupportedWhileRunningInConsumerMode
+  fullName: OpenSettings.Errors.GenerateTokenNotSupportedWhileRunningInConsumerMode
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GenerateTokenNotSupportedWhileRunningInConsumerMode
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 218
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: GenerateTokenNotSupportedWhileRunningInConsumerMode = 50003
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.RefreshTokenNotSupportedWhileRunningInConsumerMode
+  commentId: F:OpenSettings.Errors.RefreshTokenNotSupportedWhileRunningInConsumerMode
+  id: RefreshTokenNotSupportedWhileRunningInConsumerMode
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenNotSupportedWhileRunningInConsumerMode
+  nameWithType: Errors.RefreshTokenNotSupportedWhileRunningInConsumerMode
+  fullName: OpenSettings.Errors.RefreshTokenNotSupportedWhileRunningInConsumerMode
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RefreshTokenNotSupportedWhileRunningInConsumerMode
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 221
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: RefreshTokenNotSupportedWhileRunningInConsumerMode = 50003
+    return:
+      type: OpenSettings.Errors
+- uid: OpenSettings.Errors.MissingOpenIdConnectAuthority
+  commentId: F:OpenSettings.Errors.MissingOpenIdConnectAuthority
+  id: MissingOpenIdConnectAuthority
+  parent: OpenSettings.Errors
+  langs:
+  - csharp
+  - vb
+  name: MissingOpenIdConnectAuthority
+  nameWithType: Errors.MissingOpenIdConnectAuthority
+  fullName: OpenSettings.Errors.MissingOpenIdConnectAuthority
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Errors.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MissingOpenIdConnectAuthority
+    path: ../../../open-settings/src/OpenSettings/Errors.cs
+    startLine: 224
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings
+  syntax:
+    content: MissingOpenIdConnectAuthority = 50005
     return:
       type: OpenSettings.Errors
 references:

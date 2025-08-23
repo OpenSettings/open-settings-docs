@@ -8,7 +8,7 @@ items:
   - OpenSettings.Helpers.JsonHelper.DefaultJsonDocumentOptions
   - OpenSettings.Helpers.JsonHelper.DefaultJsonSerializerOptions
   - OpenSettings.Helpers.JsonHelper.DefaultJsonWriterOptions
-  - OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Helpers.JsonHelper.GetJsonFileAsync``1(System.String,System.Threading.CancellationToken)
   - OpenSettings.Helpers.JsonHelper.Merge(System.String,System.String)
   - OpenSettings.Helpers.JsonHelper.Merge(System.Text.Json.JsonDocument,System.Text.Json.JsonDocument)
   - OpenSettings.Helpers.JsonHelper.MergeFileAsync(System.String,System.String,System.Threading.CancellationToken)
@@ -138,16 +138,16 @@ items:
       type: System.Text.Json.JsonSerializerOptions
     content.vb: Public Shared ReadOnly Property DefaultJsonSerializerOptions As JsonSerializerOptions
   overload: OpenSettings.Helpers.JsonHelper.DefaultJsonSerializerOptions*
-- uid: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(System.String,System.Threading.CancellationToken)
-  commentId: M:OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(System.String,System.Threading.CancellationToken)
-  id: GetJsonFileAsync(System.String,System.Threading.CancellationToken)
+- uid: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Helpers.JsonHelper.GetJsonFileAsync``1(System.String,System.Threading.CancellationToken)
+  id: GetJsonFileAsync``1(System.String,System.Threading.CancellationToken)
   parent: OpenSettings.Helpers.JsonHelper
   langs:
   - csharp
   - vb
-  name: GetJsonFileAsync(string, CancellationToken)
-  nameWithType: JsonHelper.GetJsonFileAsync(string, CancellationToken)
-  fullName: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(string, System.Threading.CancellationToken)
+  name: GetJsonFileAsync<TValue>(string, CancellationToken)
+  nameWithType: JsonHelper.GetJsonFileAsync<TValue>(string, CancellationToken)
+  fullName: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync<TValue>(string, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -163,22 +163,24 @@ items:
   summary: Reads a JSON file asynchronously and returns it as a dictionary.
   example: []
   syntax:
-    content: public static Task<Dictionary<string, object>> GetJsonFileAsync(string filePath, CancellationToken cancellationToken = default)
+    content: public static Task<Dictionary<string, TValue>> GetJsonFileAsync<TValue>(string filePath, CancellationToken cancellationToken = default)
     parameters:
     - id: filePath
       type: System.String
       description: The file path of the JSON file to read.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: A cancellation token to support cancellation of the operation.
+      description: A cancellation token to cancel the operation.
+    typeParameters:
+    - id: TValue
     return:
-      type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
+      type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,{TValue}}}
       description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> containing a <b>Dictionary&lt;string, object&gt;</b> with the JSON data.
-    content.vb: Public Shared Function GetJsonFileAsync(filePath As String, cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, Object))
+    content.vb: Public Shared Function GetJsonFileAsync(Of TValue)(filePath As String, cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, TValue))
   overload: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync*
-  nameWithType.vb: JsonHelper.GetJsonFileAsync(String, CancellationToken)
-  fullName.vb: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(String, System.Threading.CancellationToken)
-  name.vb: GetJsonFileAsync(String, CancellationToken)
+  nameWithType.vb: JsonHelper.GetJsonFileAsync(Of TValue)(String, CancellationToken)
+  fullName.vb: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync(Of TValue)(String, System.Threading.CancellationToken)
+  name.vb: GetJsonFileAsync(Of TValue)(String, CancellationToken)
 - uid: OpenSettings.Helpers.JsonHelper.MergeFileAsync(System.String,System.String,System.Threading.CancellationToken)
   commentId: M:OpenSettings.Helpers.JsonHelper.MergeFileAsync(System.String,System.String,System.Threading.CancellationToken)
   id: MergeFileAsync(System.String,System.String,System.Threading.CancellationToken)
@@ -214,7 +216,7 @@ items:
       description: The file path of the patch JSON file to apply.
     - id: cancellationToken
       type: System.Threading.CancellationToken
-      description: A cancellation token to support cancellation of the operation.
+      description: A cancellation token to cancel the operation.
     return:
       type: System.Threading.Tasks.Task{OpenSettings.Models.JsonMergeResult}
       description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, with the result as a <xref href="OpenSettings.Models.JsonMergeResult" data-throw-if-not-resolved="false"></xref>.
@@ -652,7 +654,7 @@ references:
   fullName: System.Threading.Tasks.Task
 - uid: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync*
   commentId: Overload:OpenSettings.Helpers.JsonHelper.GetJsonFileAsync
-  href: OpenSettings.Helpers.JsonHelper.html#OpenSettings_Helpers_JsonHelper_GetJsonFileAsync_System_String_System_Threading_CancellationToken_
+  href: OpenSettings.Helpers.JsonHelper.html#OpenSettings_Helpers_JsonHelper_GetJsonFileAsync__1_System_String_System_Threading_CancellationToken_
   name: GetJsonFileAsync
   nameWithType: JsonHelper.GetJsonFileAsync
   fullName: OpenSettings.Helpers.JsonHelper.GetJsonFileAsync
@@ -675,17 +677,17 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
-  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Object}}
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,{TValue}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,``0}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<Dictionary<string, object>>
-  nameWithType: Task<Dictionary<string, object>>
-  fullName: System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, object>>
-  nameWithType.vb: Task(Of Dictionary(Of String, Object))
-  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.Dictionary(Of String, Object))
-  name.vb: Task(Of Dictionary(Of String, Object))
+  name: Task<Dictionary<string, TValue>>
+  nameWithType: Task<Dictionary<string, TValue>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, TValue>>
+  nameWithType.vb: Task(Of Dictionary(Of String, TValue))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.Dictionary(Of String, TValue))
+  name.vb: Task(Of Dictionary(Of String, TValue))
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
@@ -703,10 +705,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: TValue
   - name: '>'
   - name: '>'
   spec.vb:
@@ -730,10 +729,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: TValue
   - name: )
   - name: )
 - uid: System.Threading.Tasks

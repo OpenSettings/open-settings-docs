@@ -1,0 +1,2743 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.CacheEntryKey
+  commentId: T:OpenSettings.Models.CacheEntryKey
+  id: CacheEntryKey
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.CacheEntryKey.#ctor(System.String,OpenSettings.Models.CacheEntry)
+  - OpenSettings.Models.CacheEntryKey.Key
+  langs:
+  - csharp
+  - vb
+  name: CacheEntryKey
+  nameWithType: CacheEntryKey
+  fullName: OpenSettings.Models.CacheEntryKey
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntryKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CacheEntryKey
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntryKey.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a key for caching purposes.
+  example: []
+  syntax:
+    content: public class CacheEntryKey
+    content.vb: Public Class CacheEntryKey
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{{TItem}}},System.Threading.CancellationToken)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{{TItem}}})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,{TItem}})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,{TItem}})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},System.Threading.CancellationToken)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem},Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem},System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  - OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{T}@)
+- uid: OpenSettings.Models.CacheEntryKey.#ctor(System.String,OpenSettings.Models.CacheEntry)
+  commentId: M:OpenSettings.Models.CacheEntryKey.#ctor(System.String,OpenSettings.Models.CacheEntry)
+  id: '#ctor(System.String,OpenSettings.Models.CacheEntry)'
+  parent: OpenSettings.Models.CacheEntryKey
+  langs:
+  - csharp
+  - vb
+  name: CacheEntryKey(string, CacheEntry)
+  nameWithType: CacheEntryKey.CacheEntryKey(string, CacheEntry)
+  fullName: OpenSettings.Models.CacheEntryKey.CacheEntryKey(string, OpenSettings.Models.CacheEntry)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntryKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntryKey.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntryKey" data-throw-if-not-resolved="false"></xref> class with the specified key and reference cache model.
+  example: []
+  syntax:
+    content: public CacheEntryKey(string key, CacheEntry cacheEntry)
+    parameters:
+    - id: key
+      type: System.String
+      description: The cache key.
+    - id: cacheEntry
+      type: OpenSettings.Models.CacheEntry
+      description: The cache model which key generated from.
+    content.vb: Public Sub New(key As String, cacheEntry As CacheEntry)
+  overload: OpenSettings.Models.CacheEntryKey.#ctor*
+  nameWithType.vb: CacheEntryKey.New(String, CacheEntry)
+  fullName.vb: OpenSettings.Models.CacheEntryKey.New(String, OpenSettings.Models.CacheEntry)
+  name.vb: New(String, CacheEntry)
+- uid: OpenSettings.Models.CacheEntryKey.Key
+  commentId: P:OpenSettings.Models.CacheEntryKey.Key
+  id: Key
+  parent: OpenSettings.Models.CacheEntryKey
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: CacheEntryKey.Key
+  fullName: OpenSettings.Models.CacheEntryKey.Key
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntryKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Key
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntryKey.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public string Key { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Key As String
+  overload: OpenSettings.Models.CacheEntryKey.Key*
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{{TItem}}},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  name: GetOrCreateAsync<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, Task<TItem>>, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, Task<TItem>>, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.Tasks.Task<TItem>>, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, Task(Of TItem)), CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.Tasks.Task(Of TItem)), System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, Task(Of TItem)), CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{{TItem}}})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  name: GetOrCreateAsync<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, Task<TItem>>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, Task<TItem>>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Threading.Tasks.Task<TItem>>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, Task(Of TItem)))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Threading.Tasks.Task(Of TItem)))
+  name.vb: GetOrCreateAsync(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, Task(Of TItem)))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,{TItem}})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  name: GetOrCreate<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, TItem>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreate<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, TItem>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, TItem>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreate(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, TItem))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,{TItem}})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  name: GetOrCreate<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, TItem>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreate<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, TItem>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry, TItem>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreate(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Microsoft.Extensions.Caching.Memory.ICacheEntry, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, TItem))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  name: Remove(CacheEntryKey, IDistributedCache)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IDistributedCache)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  name: Remove(CacheEntryKey, IMemoryCache)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  name: Remove(CacheEntryKey, IMemoryCache, Func<object, bool>)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache, Func<object, bool>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<object, bool>)
+  nameWithType.vb: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache, Func(Of Object, Boolean))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Object, Boolean))
+  name.vb: Remove(CacheEntryKey, IMemoryCache, Func(Of Object, Boolean))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  name: RemoveAsync(CacheEntryKey, IDistributedCache, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.RemoveAsync(CacheEntryKey, IDistributedCache, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+    name: RemoveAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+    name: RemoveAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  name: SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  name: SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  name: Set<TItem>(CacheEntryKey, IDistributedCache, TItem)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IDistributedCache, TItem)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  name.vb: Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,{TItem},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  name: Set<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem},Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    name: MemoryCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    name: MemoryCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{TItem},System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem, Action<ICacheEntry>)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem, Action<ICacheEntry>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, System.Action<Microsoft.Extensions.Caching.Memory.ICacheEntry>)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, Action(Of ICacheEntry))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, System.Action(Of Microsoft.Extensions.Caching.Memory.ICacheEntry))
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, Action(Of ICacheEntry))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: )
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  name: TryGetValue(CacheEntryKey, IMemoryCache, out object)
+  nameWithType: CacheEntryKeyExtensions.TryGetValue(CacheEntryKey, IMemoryCache, out object)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, out object)
+  nameWithType.vb: CacheEntryKeyExtensions.TryGetValue(CacheEntryKey, IMemoryCache, Object)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, Object)
+  name.vb: TryGetValue(CacheEntryKey, IMemoryCache, Object)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenSettings.Models.CacheEntryKey.OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,{T}@)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  parent: OpenSettings.Extensions.CacheEntryKeyExtensions
+  definition: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  name: TryGetValue<T>(CacheEntryKey, IMemoryCache, out T)
+  nameWithType: CacheEntryKeyExtensions.TryGetValue<T>(CacheEntryKey, IMemoryCache, out T)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue<T>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, out T)
+  nameWithType.vb: CacheEntryKeyExtensions.TryGetValue(Of T)(CacheEntryKey, IMemoryCache, T)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(Of T)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, T)
+  name.vb: TryGetValue(Of T)(CacheEntryKey, IMemoryCache, T)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  name: GetOrCreateAsync<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, Task<TItem>>, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, Task<TItem>>, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.Tasks.Task<TItem>>, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, Task(Of TItem)), CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.Tasks.Task(Of TItem)), System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, Task(Of TItem)), CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions
+  commentId: T:OpenSettings.Extensions.CacheEntryKeyExtensions
+  parent: OpenSettings.Extensions
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html
+  name: CacheEntryKeyExtensions
+  nameWithType: CacheEntryKeyExtensions
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  name: GetOrCreateAsync<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, Task<TItem>>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, Task<TItem>>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Threading.Tasks.Task<TItem>>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, Task(Of TItem)))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Threading.Tasks.Task(Of TItem)))
+  name.vb: GetOrCreateAsync(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, Task(Of TItem)))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Threading.Tasks.Task{``0}})
+    name: GetOrCreateAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_System_Threading_Tasks_Task___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  name: GetOrCreate<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, TItem>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreate<TItem>(CacheEntryKey, IDistributedCache, Func<DistributedCacheEntryOptions, TItem>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, TItem>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreate(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheEntryKey, IDistributedCache, Func(Of DistributedCacheEntryOptions, TItem))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Func_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  name: GetOrCreate<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, TItem>)
+  nameWithType: CacheEntryKeyExtensions.GetOrCreate<TItem>(CacheEntryKey, IMemoryCache, Func<ICacheEntry, TItem>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry, TItem>)
+  nameWithType.vb: CacheEntryKeyExtensions.GetOrCreate(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Microsoft.Extensions.Caching.Memory.ICacheEntry, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheEntryKey, IMemoryCache, Func(Of ICacheEntry, TItem))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.GetOrCreate``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
+    name: GetOrCreate
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_GetOrCreate__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  name: Remove(CacheEntryKey, IDistributedCache)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IDistributedCache)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  name: Remove(CacheEntryKey, IMemoryCache)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  name: Remove(CacheEntryKey, IMemoryCache, Func<object, bool>)
+  nameWithType: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache, Func<object, bool>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<object, bool>)
+  nameWithType.vb: CacheEntryKeyExtensions.Remove(CacheEntryKey, IMemoryCache, Func(Of Object, Boolean))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of Object, Boolean))
+  name.vb: Remove(CacheEntryKey, IMemoryCache, Func(Of Object, Boolean))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Remove(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{System.Object,System.Boolean})
+    name: Remove
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Remove_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_System_Object_System_Boolean__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  name: RemoveAsync(CacheEntryKey, IDistributedCache, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.RemoveAsync(CacheEntryKey, IDistributedCache, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+    name: RemoveAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.RemoveAsync(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Threading.CancellationToken)
+    name: RemoveAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_RemoveAsync_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  name: SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  name: SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  nameWithType: CacheEntryKeyExtensions.SetAsync<TItem>(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  nameWithType.vb: CacheEntryKeyExtensions.SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of TItem)(CacheEntryKey, IDistributedCache, TItem, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.SetAsync``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+    name: SetAsync
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_SetAsync__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  name: Set<TItem>(CacheEntryKey, IDistributedCache, TItem)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IDistributedCache, TItem)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  name.vb: Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  name: Set<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: Set(Of TItem)(CacheEntryKey, IDistributedCache, TItem, DistributedCacheEntryOptions)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    name: IDistributedCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, MemoryCacheEntryOptions)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    name: MemoryCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    name: MemoryCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  name: Set<TItem>(CacheEntryKey, IMemoryCache, TItem, Action<ICacheEntry>)
+  nameWithType: CacheEntryKeyExtensions.Set<TItem>(CacheEntryKey, IMemoryCache, TItem, Action<ICacheEntry>)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.Set<TItem>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, System.Action<Microsoft.Extensions.Caching.Memory.ICacheEntry>)
+  nameWithType.vb: CacheEntryKeyExtensions.Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, Action(Of ICacheEntry))
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.Set(Of TItem)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem, System.Action(Of Microsoft.Extensions.Caching.Memory.ICacheEntry))
+  name.vb: Set(Of TItem)(CacheEntryKey, IMemoryCache, TItem, Action(Of ICacheEntry))
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.Set``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0,System.Action{Microsoft.Extensions.Caching.Memory.ICacheEntry})
+    name: Set
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_Set__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_System_Action_Microsoft_Extensions_Caching_Memory_ICacheEntry__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.ICacheEntry
+    name: ICacheEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.icacheentry
+  - name: )
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  name: TryGetValue(CacheEntryKey, IMemoryCache, out object)
+  nameWithType: CacheEntryKeyExtensions.TryGetValue(CacheEntryKey, IMemoryCache, out object)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, out object)
+  nameWithType.vb: CacheEntryKeyExtensions.TryGetValue(CacheEntryKey, IMemoryCache, Object)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, Object)
+  name.vb: TryGetValue(CacheEntryKey, IMemoryCache, Object)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  commentId: M:OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  isExternal: true
+  href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  name: TryGetValue<T>(CacheEntryKey, IMemoryCache, out T)
+  nameWithType: CacheEntryKeyExtensions.TryGetValue<T>(CacheEntryKey, IMemoryCache, out T)
+  fullName: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue<T>(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, out T)
+  nameWithType.vb: CacheEntryKeyExtensions.TryGetValue(Of T)(CacheEntryKey, IMemoryCache, T)
+  fullName.vb: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue(Of T)(OpenSettings.Models.CacheEntryKey, Microsoft.Extensions.Caching.Memory.IMemoryCache, T)
+  name.vb: TryGetValue(Of T)(CacheEntryKey, IMemoryCache, T)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions.TryGetValue``1(OpenSettings.Models.CacheEntryKey,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+    name: TryGetValue
+    href: OpenSettings.Extensions.CacheEntryKeyExtensions.html#OpenSettings_Extensions_CacheEntryKeyExtensions_TryGetValue__1_OpenSettings_Models_CacheEntryKey_Microsoft_Extensions_Caching_Memory_IMemoryCache___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    href: OpenSettings.Models.CacheEntryKey.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    name: IMemoryCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Extensions
+  commentId: N:OpenSettings.Extensions
+  href: OpenSettings.html
+  name: OpenSettings.Extensions
+  nameWithType: OpenSettings.Extensions
+  fullName: OpenSettings.Extensions
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
+- uid: OpenSettings.Models.CacheEntryKey
+  commentId: T:OpenSettings.Models.CacheEntryKey
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntryKey.html
+  name: CacheEntryKey
+  nameWithType: CacheEntryKey
+  fullName: OpenSettings.Models.CacheEntryKey
+- uid: OpenSettings.Models.CacheEntryKey.#ctor*
+  commentId: Overload:OpenSettings.Models.CacheEntryKey.#ctor
+  href: OpenSettings.Models.CacheEntryKey.html#OpenSettings_Models_CacheEntryKey__ctor_System_String_OpenSettings_Models_CacheEntry_
+  name: CacheEntryKey
+  nameWithType: CacheEntryKey.CacheEntryKey
+  fullName: OpenSettings.Models.CacheEntryKey.CacheEntryKey
+  nameWithType.vb: CacheEntryKey.New
+  fullName.vb: OpenSettings.Models.CacheEntryKey.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.CacheEntry
+  commentId: T:OpenSettings.Models.CacheEntry
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntry.html
+  name: CacheEntry
+  nameWithType: CacheEntry
+  fullName: OpenSettings.Models.CacheEntry
+- uid: OpenSettings.Models.CacheEntryKey.Key*
+  commentId: Overload:OpenSettings.Models.CacheEntryKey.Key
+  href: OpenSettings.Models.CacheEntryKey.html#OpenSettings_Models_CacheEntryKey_Key
+  name: Key
+  nameWithType: CacheEntryKey.Key
+  fullName: OpenSettings.Models.CacheEntryKey.Key

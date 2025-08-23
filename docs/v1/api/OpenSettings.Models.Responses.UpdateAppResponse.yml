@@ -132,35 +132,6 @@ items:
       type: System.String
     content.vb: Public Property Slug As String
   overload: OpenSettings.Models.Responses.UpdateAppResponse.Slug*
-- uid: OpenSettings.Models.Responses.UpdateAppResponse.Group
-  commentId: P:OpenSettings.Models.Responses.UpdateAppResponse.Group
-  id: Group
-  parent: OpenSettings.Models.Responses.UpdateAppResponse
-  langs:
-  - csharp
-  - vb
-  name: Group
-  nameWithType: UpdateAppResponse.Group
-  fullName: OpenSettings.Models.Responses.UpdateAppResponse.Group
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/UpdateAppResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Group
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateAppResponse.cs
-    startLine: 12
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public GetGroupedAppsResponseAppGroup Group { get; set; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-    content.vb: Public Property Group As GetGroupedAppsResponseAppGroup
-  overload: OpenSettings.Models.Responses.UpdateAppResponse.Group*
 - uid: OpenSettings.Models.Responses.UpdateAppResponse.Description
   commentId: P:OpenSettings.Models.Responses.UpdateAppResponse.Description
   id: Description
@@ -179,7 +150,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Description
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateAppResponse.cs
-    startLine: 14
+    startLine: 12
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -208,7 +179,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ImageUrl
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateAppResponse.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -237,7 +208,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: WikiUrl
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateAppResponse.cs
-    startLine: 18
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -248,6 +219,35 @@ items:
       type: System.String
     content.vb: Public Property WikiUrl As String
   overload: OpenSettings.Models.Responses.UpdateAppResponse.WikiUrl*
+- uid: OpenSettings.Models.Responses.UpdateAppResponse.Group
+  commentId: P:OpenSettings.Models.Responses.UpdateAppResponse.Group
+  id: Group
+  parent: OpenSettings.Models.Responses.UpdateAppResponse
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: UpdateAppResponse.Group
+  fullName: OpenSettings.Models.Responses.UpdateAppResponse.Group
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/UpdateAppResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Group
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateAppResponse.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetGroupedAppsResponseAppGroup Group { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
+    content.vb: Public Property Group As GetGroupedAppsResponseAppGroup
+  overload: OpenSettings.Models.Responses.UpdateAppResponse.Group*
 - uid: OpenSettings.Models.Responses.UpdateAppResponse.Tags
   commentId: P:OpenSettings.Models.Responses.UpdateAppResponse.Tags
   id: Tags
@@ -603,19 +603,6 @@ references:
   name: Slug
   nameWithType: UpdateAppResponse.Slug
   fullName: OpenSettings.Models.Responses.UpdateAppResponse.Slug
-- uid: OpenSettings.Models.Responses.UpdateAppResponse.Group*
-  commentId: Overload:OpenSettings.Models.Responses.UpdateAppResponse.Group
-  href: OpenSettings.Models.Responses.UpdateAppResponse.html#OpenSettings_Models_Responses_UpdateAppResponse_Group
-  name: Group
-  nameWithType: UpdateAppResponse.Group
-  fullName: OpenSettings.Models.Responses.UpdateAppResponse.Group
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-  commentId: T:OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-  parent: OpenSettings.Models.Responses
-  href: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.html
-  name: GetGroupedAppsResponseAppGroup
-  nameWithType: GetGroupedAppsResponseAppGroup
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
 - uid: OpenSettings.Models.Responses.UpdateAppResponse.Description*
   commentId: Overload:OpenSettings.Models.Responses.UpdateAppResponse.Description
   href: OpenSettings.Models.Responses.UpdateAppResponse.html#OpenSettings_Models_Responses_UpdateAppResponse_Description
@@ -634,6 +621,19 @@ references:
   name: WikiUrl
   nameWithType: UpdateAppResponse.WikiUrl
   fullName: OpenSettings.Models.Responses.UpdateAppResponse.WikiUrl
+- uid: OpenSettings.Models.Responses.UpdateAppResponse.Group*
+  commentId: Overload:OpenSettings.Models.Responses.UpdateAppResponse.Group
+  href: OpenSettings.Models.Responses.UpdateAppResponse.html#OpenSettings_Models_Responses_UpdateAppResponse_Group
+  name: Group
+  nameWithType: UpdateAppResponse.Group
+  fullName: OpenSettings.Models.Responses.UpdateAppResponse.Group
+- uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
+  commentId: T:OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.html
+  name: GetGroupedAppsResponseAppGroup
+  nameWithType: GetGroupedAppsResponseAppGroup
+  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
 - uid: OpenSettings.Models.Responses.UpdateAppResponse.Tags*
   commentId: Overload:OpenSettings.Models.Responses.UpdateAppResponse.Tags
   href: OpenSettings.Models.Responses.UpdateAppResponse.html#OpenSettings_Models_Responses_UpdateAppResponse_Tags

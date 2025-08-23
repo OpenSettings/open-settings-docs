@@ -5,7 +5,7 @@ items:
   id: NotificationsController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationsService)
+  - OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationService)
   - OpenSettings.AspNetCore.Controllers.v1.NotificationsController.CreateNotification(OpenSettings.AspNetCore.Models.Requests.CreateNotificationRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.NotificationsController.DispatchNotificationsToUsers(OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.NotificationsController.GetNotifications(OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest,System.Threading.CancellationToken)
@@ -220,16 +220,16 @@ items:
     arguments:
     - type: System.String
       value: v1/notifications
-- uid: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationsService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationsService)
-  id: '#ctor(OpenSettings.Services.Interfaces.INotificationsService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor(OpenSettings.Services.Interfaces.INotificationService)
+  id: '#ctor(OpenSettings.Services.Interfaces.INotificationService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.NotificationsController
   langs:
   - csharp
   - vb
-  name: NotificationsController(INotificationsService)
-  nameWithType: NotificationsController.NotificationsController(INotificationsService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.NotificationsController(OpenSettings.Services.Interfaces.INotificationsService)
+  name: NotificationsController(INotificationService)
+  nameWithType: NotificationsController.NotificationsController(INotificationService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.NotificationsController(OpenSettings.Services.Interfaces.INotificationService)
   type: Constructor
   source:
     remote:
@@ -243,15 +243,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public NotificationsController(INotificationsService notificationsService)
+    content: public NotificationsController(INotificationService notificationService)
     parameters:
-    - id: notificationsService
-      type: OpenSettings.Services.Interfaces.INotificationsService
-    content.vb: Public Sub New(notificationsService As INotificationsService)
+    - id: notificationService
+      type: OpenSettings.Services.Interfaces.INotificationService
+    content.vb: Public Sub New(notificationService As INotificationService)
   overload: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor*
-  nameWithType.vb: NotificationsController.New(INotificationsService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.New(OpenSettings.Services.Interfaces.INotificationsService)
-  name.vb: New(INotificationsService)
+  nameWithType.vb: NotificationsController.New(INotificationService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.New(OpenSettings.Services.Interfaces.INotificationService)
+  name.vb: New(INotificationService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.GetNotifications(OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.NotificationsController.GetNotifications(OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest,System.Threading.CancellationToken)
   id: GetNotifications(OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest,System.Threading.CancellationToken)
@@ -9196,20 +9196,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.NotificationsController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.html#OpenSettings_AspNetCore_Controllers_v1_NotificationsController__ctor_OpenSettings_Services_Interfaces_INotificationsService_
+  href: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.html#OpenSettings_AspNetCore_Controllers_v1_NotificationsController__ctor_OpenSettings_Services_Interfaces_INotificationService_
   name: NotificationsController
   nameWithType: NotificationsController.NotificationsController
   fullName: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.NotificationsController
   nameWithType.vb: NotificationsController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.NotificationsController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.INotificationsService
-  commentId: T:OpenSettings.Services.Interfaces.INotificationsService
+- uid: OpenSettings.Services.Interfaces.INotificationService
+  commentId: T:OpenSettings.Services.Interfaces.INotificationService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.INotificationsService.html
-  name: INotificationsService
-  nameWithType: INotificationsService
-  fullName: OpenSettings.Services.Interfaces.INotificationsService
+  href: OpenSettings.Services.Interfaces.INotificationService.html
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: OpenSettings.Services.Interfaces.INotificationService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

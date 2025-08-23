@@ -5,6 +5,7 @@ items:
   id: GetPaginatedLicensesResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor
   - OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense[])
   - OpenSettings.Models.Responses.GetPaginatedLicensesResponse.Licenses
   - OpenSettings.Models.Responses.GetPaginatedLicensesResponse.PagingInfo
@@ -39,6 +40,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.GetPaginatedLicensesResponse
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedLicensesResponse()
+  nameWithType: GetPaginatedLicensesResponse.GetPaginatedLicensesResponse()
+  fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.GetPaginatedLicensesResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedLicensesResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetPaginatedLicensesResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor*
+  nameWithType.vb: GetPaginatedLicensesResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense[])
   commentId: M:OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense[])
   id: '#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense[])'
@@ -57,7 +87,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponse.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -93,16 +123,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PagingInfo
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponse.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public PagingInfo PagingInfo { get; }
+    content: public PagingInfo PagingInfo { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.PagingInfo
-    content.vb: Public ReadOnly Property PagingInfo As PagingInfo
+    content.vb: Public Property PagingInfo As PagingInfo
   overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.PagingInfo*
 - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.Licenses
   commentId: P:OpenSettings.Models.Responses.GetPaginatedLicensesResponse.Licenses
@@ -122,16 +152,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Licenses
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedLicensesResponse.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public GetPaginatedLicensesResponseLicense[] Licenses { get; }
+    content: public GetPaginatedLicensesResponseLicense[] Licenses { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense[]
-    content.vb: Public ReadOnly Property Licenses As GetPaginatedLicensesResponseLicense()
+    content.vb: Public Property Licenses As GetPaginatedLicensesResponseLicense()
   overload: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.Licenses*
 references:
 - uid: OpenSettings.Models.Responses
@@ -403,7 +433,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.GetPaginatedLicensesResponse.#ctor
-  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponse__ctor_OpenSettings_Models_Inputs_GetPaginatedInput_System_Int32_OpenSettings_Models_Responses_GetPaginatedLicensesResponseLicense___
+  href: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.html#OpenSettings_Models_Responses_GetPaginatedLicensesResponse__ctor
   name: GetPaginatedLicensesResponse
   nameWithType: GetPaginatedLicensesResponse.GetPaginatedLicensesResponse
   fullName: OpenSettings.Models.Responses.GetPaginatedLicensesResponse.GetPaginatedLicensesResponse

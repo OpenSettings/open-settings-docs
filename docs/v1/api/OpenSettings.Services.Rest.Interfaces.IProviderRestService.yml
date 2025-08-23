@@ -28,6 +28,7 @@ items:
     content.vb: Public Interface IProviderRestService Inherits IProviderService
   inheritedMembers:
   - OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
 references:
 - uid: OpenSettings.Services.Rest.Interfaces
   commentId: N:OpenSettings.Services.Rest.Interfaces
@@ -89,6 +90,34 @@ references:
   - uid: OpenSettings.Services.Interfaces.IProviderService.GetProviderAsync(System.Threading.CancellationToken)
     name: GetProviderAsync
     href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetProviderAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IProviderService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  name: GetPrimaryProviderAsync(CancellationToken)
+  nameWithType: IProviderService.GetPrimaryProviderAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+    name: GetPrimaryProviderAsync
+    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IProviderService.GetPrimaryProviderAsync(System.Threading.CancellationToken)
+    name: GetPrimaryProviderAsync
+    href: OpenSettings.Services.Interfaces.IProviderService.html#OpenSettings_Services_Interfaces_IProviderService_GetPrimaryProviderAsync_System_Threading_CancellationToken_
   - name: (
   - uid: System.Threading.CancellationToken
     name: CancellationToken

@@ -5,7 +5,13 @@ items:
   id: UsersController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUsersService)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUserService)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser(OpenSettings.AspNetCore.Models.Requests.CreateUserRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser(OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers(OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser(OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest,System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -20,17 +26,17 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UsersController
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
-    startLine: 5
+    startLine: 11
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
     content: >-
-      [Route("v1")]
+      [Route("v1/users")]
 
       public class UsersController : ControllerBase
     content.vb: >-
-      <Route("v1")>
+      <Route("v1/users")>
 
       Public Class UsersController Inherits ControllerBase
   inheritance:
@@ -212,17 +218,17 @@ items:
     ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: v1
-- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUsersService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUsersService)
-  id: '#ctor(OpenSettings.Services.Interfaces.IUsersService)'
+      value: v1/users
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUserService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor(OpenSettings.Services.Interfaces.IUserService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IUserService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
   langs:
   - csharp
   - vb
-  name: UsersController(IUsersService)
-  nameWithType: UsersController.UsersController(IUsersService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.UsersController(OpenSettings.Services.Interfaces.IUsersService)
+  name: UsersController(IUserService)
+  nameWithType: UsersController.UsersController(IUserService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.UsersController(OpenSettings.Services.Interfaces.IUserService)
   type: Constructor
   source:
     remote:
@@ -231,20 +237,288 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public UsersController(IUsersService usersService)
+    content: public UsersController(IUserService userService)
     parameters:
-    - id: usersService
-      type: OpenSettings.Services.Interfaces.IUsersService
-    content.vb: Public Sub New(usersService As IUsersService)
+    - id: userService
+      type: OpenSettings.Services.Interfaces.IUserService
+    content.vb: Public Sub New(userService As IUserService)
   overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor*
-  nameWithType.vb: UsersController.New(IUsersService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.UsersController.New(OpenSettings.Services.Interfaces.IUsersService)
-  name.vb: New(IUsersService)
+  nameWithType.vb: UsersController.New(IUserService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.UsersController.New(OpenSettings.Services.Interfaces.IUserService)
+  name.vb: New(IUserService)
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser(OpenSettings.AspNetCore.Models.Requests.CreateUserRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser(OpenSettings.AspNetCore.Models.Requests.CreateUserRequest,System.Threading.CancellationToken)
+  id: CreateUser(OpenSettings.AspNetCore.Models.Requests.CreateUserRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: CreateUser(CreateUserRequest, CancellationToken)
+  nameWithType: UsersController.CreateUser(CreateUserRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser(OpenSettings.AspNetCore.Models.Requests.CreateUserRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateUser
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 21
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpPost]
+
+      public Task<IActionResult> CreateUser(CreateUserRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpPost>
+
+      Public Function CreateUser(request As CreateUserRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers(OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers(OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest,System.Threading.CancellationToken)
+  id: GetPaginatedUsers(OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedUsers(GetPaginatedRequest, CancellationToken)
+  nameWithType: UsersController.GetPaginatedUsers(GetPaginatedRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers(OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedUsers
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 41
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpGet("paginated")]
+
+      public Task<IActionResult> GetPaginatedUsers(GetPaginatedRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("paginated")>
+
+      Public Function GetPaginatedUsers(request As GetPaginatedRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: paginated
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  id: GetUserById(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: GetUserById(GetUserRequest, CancellationToken)
+  nameWithType: UsersController.GetUserById(GetUserRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById(OpenSettings.AspNetCore.Models.Requests.GetUserRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetUserById
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 56
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpGet("{UserIdOrSlug}")]
+
+      public Task<IActionResult> GetUserById(GetUserRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("{UserIdOrSlug}")>
+
+      Public Function GetUserById(request As GetUserRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{UserIdOrSlug}'
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  id: GetUserBySlug(OpenSettings.AspNetCore.Models.Requests.GetUserRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: GetUserBySlug(GetUserRequest, CancellationToken)
+  nameWithType: UsersController.GetUserBySlug(GetUserRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug(OpenSettings.AspNetCore.Models.Requests.GetUserRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetUserBySlug
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 69
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpGet("slug/{UserIdOrSlug}")]
+
+      public Task<IActionResult> GetUserBySlug(GetUserRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("slug/{UserIdOrSlug}")>
+
+      Public Function GetUserBySlug(request As GetUserRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: slug/{UserIdOrSlug}
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser(OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser(OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest,System.Threading.CancellationToken)
+  id: UpdateUser(OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: UpdateUser(UpdateUserRequest, CancellationToken)
+  nameWithType: UsersController.UpdateUser(UpdateUserRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser(OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdateUser
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 82
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpPut("{UserId}")]
+
+      public Task<IActionResult> UpdateUser(UpdateUserRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpPut("{UserId}")>
+
+      Public Function UpdateUser(request As UpdateUserRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPutAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPutAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{UserId}'
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser(OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser(OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest,System.Threading.CancellationToken)
+  id: DeleteUser(OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest,System.Threading.CancellationToken)
+  parent: OpenSettings.AspNetCore.Controllers.v1.UsersController
+  langs:
+  - csharp
+  - vb
+  name: DeleteUser(DeleteUserRequest, CancellationToken)
+  nameWithType: UsersController.DeleteUser(DeleteUserRequest, CancellationToken)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser(OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DeleteUser
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/UsersController.cs
+    startLine: 98
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Controllers.v1
+  syntax:
+    content: >-
+      [HttpDelete("{UserId}")]
+
+      public Task<IActionResult> DeleteUser(DeleteUserRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpDelete("{UserId}")>
+
+      Public Function DeleteUser(request As DeleteUserRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{UserId}'
 references:
 - uid: OpenSettings.AspNetCore.Controllers.v1
   commentId: N:OpenSettings.AspNetCore.Controllers.v1
@@ -8878,20 +9152,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController__ctor_OpenSettings_Services_Interfaces_IUsersService_
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController__ctor_OpenSettings_Services_Interfaces_IUserService_
   name: UsersController
   nameWithType: UsersController.UsersController
   fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.UsersController
   nameWithType.vb: UsersController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.UsersController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.IUsersService
-  commentId: T:OpenSettings.Services.Interfaces.IUsersService
+- uid: OpenSettings.Services.Interfaces.IUserService
+  commentId: T:OpenSettings.Services.Interfaces.IUserService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IUsersService.html
-  name: IUsersService
-  nameWithType: IUsersService
-  fullName: OpenSettings.Services.Interfaces.IUsersService
+  href: OpenSettings.Services.Interfaces.IUserService.html
+  name: IUserService
+  nameWithType: IUserService
+  fullName: OpenSettings.Services.Interfaces.IUserService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html
@@ -8922,3 +9196,247 @@ references:
   - uid: OpenSettings.Services.Interfaces
     name: Interfaces
     href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_CreateUser_OpenSettings_AspNetCore_Models_Requests_CreateUserRequest_System_Threading_CancellationToken_
+  name: CreateUser
+  nameWithType: UsersController.CreateUser
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.CreateUser
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest.html
+  name: CreateUserRequest
+  nameWithType: CreateUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: )
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_GetPaginatedUsers_OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_System_Threading_CancellationToken_
+  name: GetPaginatedUsers
+  nameWithType: UsersController.GetPaginatedUsers
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetPaginatedUsers
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html
+  name: GetPaginatedRequest
+  nameWithType: GetPaginatedRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_GetUserById_OpenSettings_AspNetCore_Models_Requests_GetUserRequest_System_Threading_CancellationToken_
+  name: GetUserById
+  nameWithType: UsersController.GetUserById
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserById
+- uid: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GetUserRequest.html
+  name: GetUserRequest
+  nameWithType: GetUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_GetUserBySlug_OpenSettings_AspNetCore_Models_Requests_GetUserRequest_System_Threading_CancellationToken_
+  name: GetUserBySlug
+  nameWithType: UsersController.GetUserBySlug
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.GetUserBySlug
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_UpdateUser_OpenSettings_AspNetCore_Models_Requests_UpdateUserRequest_System_Threading_CancellationToken_
+  name: UpdateUser
+  nameWithType: UsersController.UpdateUser
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.UpdateUser
+- uid: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest.html
+  name: UpdateUserRequest
+  nameWithType: UpdateUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+- uid: OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser
+  href: OpenSettings.AspNetCore.Controllers.v1.UsersController.html#OpenSettings_AspNetCore_Controllers_v1_UsersController_DeleteUser_OpenSettings_AspNetCore_Models_Requests_DeleteUserRequest_System_Threading_CancellationToken_
+  name: DeleteUser
+  nameWithType: UsersController.DeleteUser
+  fullName: OpenSettings.AspNetCore.Controllers.v1.UsersController.DeleteUser
+- uid: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest.html
+  name: DeleteUserRequest
+  nameWithType: DeleteUserRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest

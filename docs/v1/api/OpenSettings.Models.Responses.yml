@@ -21,6 +21,8 @@ items:
   - OpenSettings.Models.Responses.ErrorDto
   - OpenSettings.Models.Responses.FetchAppDataResponse
   - OpenSettings.Models.Responses.FetchAppDataResponseSetting
+  - OpenSettings.Models.Responses.GenerateTokenResponse
+  - OpenSettings.Models.Responses.GenerateTokenResponseToken
   - OpenSettings.Models.Responses.GetAppGroupResponse
   - OpenSettings.Models.Responses.GetAppGroupsResponse
   - OpenSettings.Models.Responses.GetAppGroupsResponseGroup
@@ -60,9 +62,11 @@ items:
   - OpenSettings.Models.Responses.GetIdentifiersResponse
   - OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier
   - OpenSettings.Models.Responses.GetInstancesResponseInstance
+  - OpenSettings.Models.Responses.GetMeResponse
   - OpenSettings.Models.Responses.GetNotificationsResponse
   - OpenSettings.Models.Responses.GetNotificationsResponseNotification
   - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+  - OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
   - OpenSettings.Models.Responses.GetOrCreateResponse
   - OpenSettings.Models.Responses.GetOrCreateUserResponse
   - OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
@@ -70,6 +74,7 @@ items:
   - OpenSettings.Models.Responses.GetPaginatedLicensesResponse
   - OpenSettings.Models.Responses.GetPaginatedLicensesResponseLicense
   - OpenSettings.Models.Responses.GetPaginatedTagsResponse
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse
   - OpenSettings.Models.Responses.GetRegisteredAppResponse
   - OpenSettings.Models.Responses.GetSettingByIdResponse
   - OpenSettings.Models.Responses.GetSettingByIdResponseClass
@@ -96,6 +101,7 @@ items:
   - OpenSettings.Models.Responses.RestoreSettingHistoryResponse
   - OpenSettings.Models.Responses.RestoreSettingHistoryResponseSetting
   - OpenSettings.Models.Responses.SyncAppDataResponse
+  - OpenSettings.Models.Responses.SyncAppDataResponseClient
   - OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
   - OpenSettings.Models.Responses.SyncAppDataResponseSetting
   - OpenSettings.Models.Responses.UpdateAppGroupResponse
@@ -215,6 +221,19 @@ references:
   name: FetchAppDataResponseSetting
   nameWithType: FetchAppDataResponseSetting
   fullName: OpenSettings.Models.Responses.FetchAppDataResponseSetting
+- uid: OpenSettings.Models.Responses.GenerateTokenResponse
+  commentId: T:OpenSettings.Models.Responses.GenerateTokenResponse
+  href: OpenSettings.Models.Responses.GenerateTokenResponse.html
+  name: GenerateTokenResponse
+  nameWithType: GenerateTokenResponse
+  fullName: OpenSettings.Models.Responses.GenerateTokenResponse
+- uid: OpenSettings.Models.Responses.GenerateTokenResponseToken
+  commentId: T:OpenSettings.Models.Responses.GenerateTokenResponseToken
+  parent: OpenSettings.Models.Responses
+  href: OpenSettings.Models.Responses.GenerateTokenResponseToken.html
+  name: GenerateTokenResponseToken
+  nameWithType: GenerateTokenResponseToken
+  fullName: OpenSettings.Models.Responses.GenerateTokenResponseToken
 - uid: OpenSettings.Models.Responses.GetAppIdentifierMappingByAppAndIdentifierResponse
   commentId: T:OpenSettings.Models.Responses.GetAppIdentifierMappingByAppAndIdentifierResponse
   href: OpenSettings.Models.Responses.GetAppIdentifierMappingByAppAndIdentifierResponse.html
@@ -460,6 +479,12 @@ references:
   name: GetInstancesResponseInstance
   nameWithType: GetInstancesResponseInstance
   fullName: OpenSettings.Models.Responses.GetInstancesResponseInstance
+- uid: OpenSettings.Models.Responses.GetMeResponse
+  commentId: T:OpenSettings.Models.Responses.GetMeResponse
+  href: OpenSettings.Models.Responses.GetMeResponse.html
+  name: GetMeResponse
+  nameWithType: GetMeResponse
+  fullName: OpenSettings.Models.Responses.GetMeResponse
 - uid: OpenSettings.Models.Responses.GetNotificationsResponse
   commentId: T:OpenSettings.Models.Responses.GetNotificationsResponse
   href: OpenSettings.Models.Responses.GetNotificationsResponse.html
@@ -478,6 +503,12 @@ references:
   name: GetOpenSettingsNotificationsResponse
   nameWithType: GetOpenSettingsNotificationsResponse
   fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+- uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
+  commentId: T:OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
+  href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification.html
+  name: GetOpenSettingsNotificationsResponseNotification
+  nameWithType: GetOpenSettingsNotificationsResponseNotification
+  fullName: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
 - uid: OpenSettings.Models.Responses.GetOrCreateResponse
   commentId: T:OpenSettings.Models.Responses.GetOrCreateResponse
   href: OpenSettings.Models.Responses.GetOrCreateResponse.html
@@ -520,6 +551,12 @@ references:
   name: GetPaginatedTagsResponse
   nameWithType: GetPaginatedTagsResponse
   fullName: OpenSettings.Models.Responses.GetPaginatedTagsResponse
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  commentId: T:OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html
+  name: GetPrimaryProviderResponse
+  nameWithType: GetPrimaryProviderResponse
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse
 - uid: OpenSettings.Models.Responses.GetRegisteredAppResponse
   commentId: T:OpenSettings.Models.Responses.GetRegisteredAppResponse
   href: OpenSettings.Models.Responses.GetRegisteredAppResponse.html
@@ -720,6 +757,12 @@ references:
   name: SyncAppDataResponse
   nameWithType: SyncAppDataResponse
   fullName: OpenSettings.Models.Responses.SyncAppDataResponse
+- uid: OpenSettings.Models.Responses.SyncAppDataResponseClient
+  commentId: T:OpenSettings.Models.Responses.SyncAppDataResponseClient
+  href: OpenSettings.Models.Responses.SyncAppDataResponseClient.html
+  name: SyncAppDataResponseClient
+  nameWithType: SyncAppDataResponseClient
+  fullName: OpenSettings.Models.Responses.SyncAppDataResponseClient
 - uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
   commentId: T:OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
   parent: OpenSettings.Models.Responses

@@ -58,10 +58,13 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ClientName
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetRegisteredAppResponse.cs
-    startLine: 4
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: The unique identifier of the client application.
+  remarks: May contains empty if the client is not registered.
+  example: []
   syntax:
     content: public string ClientName { get; set; }
     parameters: []
@@ -87,10 +90,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsRegistered
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetRegisteredAppResponse.cs
-    startLine: 6
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: Indicates whether the client is registered in the OpenSettings.
+  example: []
   syntax:
     content: public bool IsRegistered { get; set; }
     parameters: []
@@ -116,10 +121,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsClientIdUnique
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetRegisteredAppResponse.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: Indicates whether the client id is unique in the OpenSettings.
+  example: []
   syntax:
     content: public bool IsClientIdUnique { get; set; }
     parameters: []
@@ -145,10 +152,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsClientSecretMatched
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetRegisteredAppResponse.cs
-    startLine: 10
+    startLine: 25
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
+  summary: Indicates whether the client secret matches the one stored in the OpenSettings.
+  example: []
   syntax:
     content: public bool IsClientSecretMatched { get; set; }
     parameters: []

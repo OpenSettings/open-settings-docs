@@ -7,6 +7,7 @@ items:
   children:
   - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -95,6 +96,37 @@ items:
   nameWithType.vb: IOpenSettingsService.GetConfigsDataAsync(String, CancellationToken)
   fullName.vb: OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(String, System.Threading.CancellationToken)
   name.vb: GetConfigsDataAsync(String, CancellationToken)
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  id: GetNotificationsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationsAsync(CancellationToken)
+  nameWithType: IOpenSettingsService.GetNotificationsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetNotificationsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IOpenSettingsService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<GetOpenSettingsNotificationsResponse> GetNotificationsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+    content.vb: Function GetNotificationsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of GetOpenSettingsNotificationsResponse)
+  overload: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
@@ -322,3 +354,42 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  name: GetNotificationsAsync
+  nameWithType: IOpenSettingsService.GetNotificationsAsync
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetOpenSettingsNotificationsResponse>
+  nameWithType: Task<GetOpenSettingsNotificationsResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse>
+  nameWithType.vb: Task(Of GetOpenSettingsNotificationsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse)
+  name.vb: Task(Of GetOpenSettingsNotificationsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+    name: GetOpenSettingsNotificationsResponse
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+    name: GetOpenSettingsNotificationsResponse
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html
+  - name: )

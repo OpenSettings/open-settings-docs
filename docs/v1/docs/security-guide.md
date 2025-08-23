@@ -17,7 +17,7 @@ To protect controllers, enable the OpenSettings controller configuration from th
 > [!TIP]
 > Don’t forget to press the Save button on the right side of the section. A restart is required after saving for the changes to take effect.
 
-If your application acts as a **consumer** and `Authorize = false`, this does **not** necessarily mean the service is insecure, as the **ultimate decision depends on the provider**.
+If your application acts as a **consumer** and `RequiresAuthentication = false`, this does **not** necessarily mean the service is insecure, as the **ultimate decision depends on the provider**.
 
 ---
 
@@ -25,14 +25,14 @@ If your application acts as a **consumer** and `Authorize = false`, this does **
 
 The following table illustrates different authorization configurations and their outcomes:  
 
-| **Provider (Authorize)** | **Consumer (Authorize)** | **Final Authorization Behavior** |
+| **Provider (RequiresAuthentication)** | **Consumer (RequiresAuthentication)** | **Final Authorization Behavior** |
 |--------------------------|--------------------------|----------------------------------|
 | ✅ `true`               | ❌ `false`              | 🔒 `true` for both Consumer & Provider |
 | ❌ `false`              | ✅ `true`               | 🔒 `true` for Consumer, ❌ `false` for Provider |
 | ❌ `false`              | ❌ `false`              | ⚠️ `false` (⚠️ Insecure: Anyone can access controllers) |
 | ✅ `true`               | ✅ `true`               | 🔒 `true` for both Consumer & Provider |
 
-When `Authorize = true`, accessing the OpenSettings controllers or settings page requires authentication. If authentication is needed, the settings page will automatically redirect users to a **login page**.  
+When `RequiresAuthentication = true`, accessing the OpenSettings controllers or settings page requires authentication. If authentication is needed, the settings page will automatically redirect users to a **login page**.  
 
 ## 🔹 Authentication Credentials  
 
@@ -72,9 +72,9 @@ A typical pipeline setup looks like this:
 ```csharp
 ...
 app.UseRouting();
-app.UseOpenSettings();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseOpenSettings();
 app.MapControllers();
 ...
 ```

@@ -5,6 +5,7 @@ items:
   id: GetTagsResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetTagsResponse.#ctor
   - OpenSettings.Models.Responses.GetTagsResponse.#ctor(OpenSettings.Models.Responses.GetTagsResponseTag[])
   - OpenSettings.Models.Responses.GetTagsResponse.MaxSortOrder
   - OpenSettings.Models.Responses.GetTagsResponse.MinSortOrder
@@ -40,6 +41,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetTagsResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.GetTagsResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.GetTagsResponse
+  langs:
+  - csharp
+  - vb
+  name: GetTagsResponse()
+  nameWithType: GetTagsResponse.GetTagsResponse()
+  fullName: OpenSettings.Models.Responses.GetTagsResponse.GetTagsResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetTagsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetTagsResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetTagsResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.GetTagsResponse.#ctor*
+  nameWithType.vb: GetTagsResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.GetTagsResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.GetTagsResponse.#ctor(OpenSettings.Models.Responses.GetTagsResponseTag[])
   commentId: M:OpenSettings.Models.Responses.GetTagsResponse.#ctor(OpenSettings.Models.Responses.GetTagsResponseTag[])
   id: '#ctor(OpenSettings.Models.Responses.GetTagsResponseTag[])'
@@ -58,7 +88,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetTagsResponse.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -90,16 +120,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MinSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetTagsResponse.cs
-    startLine: 28
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MinSortOrder { get; }
+    content: public int MinSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MinSortOrder As Integer
+    content.vb: Public Property MinSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetTagsResponse.MinSortOrder*
 - uid: OpenSettings.Models.Responses.GetTagsResponse.MaxSortOrder
   commentId: P:OpenSettings.Models.Responses.GetTagsResponse.MaxSortOrder
@@ -119,16 +149,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MaxSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetTagsResponse.cs
-    startLine: 30
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MaxSortOrder { get; }
+    content: public int MaxSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MaxSortOrder As Integer
+    content.vb: Public Property MaxSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetTagsResponse.MaxSortOrder*
 - uid: OpenSettings.Models.Responses.GetTagsResponse.Tags
   commentId: P:OpenSettings.Models.Responses.GetTagsResponse.Tags
@@ -148,16 +178,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Tags
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetTagsResponse.cs
-    startLine: 32
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public GetTagsResponseTag[] Tags { get; }
+    content: public GetTagsResponseTag[] Tags { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.Responses.GetTagsResponseTag[]
-    content.vb: Public ReadOnly Property Tags As GetTagsResponseTag()
+    content.vb: Public Property Tags As GetTagsResponseTag()
   overload: OpenSettings.Models.Responses.GetTagsResponse.Tags*
 references:
 - uid: OpenSettings.Models.Responses
@@ -429,7 +459,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.GetTagsResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.GetTagsResponse.#ctor
-  href: OpenSettings.Models.Responses.GetTagsResponse.html#OpenSettings_Models_Responses_GetTagsResponse__ctor_OpenSettings_Models_Responses_GetTagsResponseTag___
+  href: OpenSettings.Models.Responses.GetTagsResponse.html#OpenSettings_Models_Responses_GetTagsResponse__ctor
   name: GetTagsResponse
   nameWithType: GetTagsResponse.GetTagsResponse
   fullName: OpenSettings.Models.Responses.GetTagsResponse.GetTagsResponse

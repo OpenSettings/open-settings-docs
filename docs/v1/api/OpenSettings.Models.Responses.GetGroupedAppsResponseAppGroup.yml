@@ -8,7 +8,6 @@ items:
   - OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.Id
   - OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.Name
   - OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.SortOrder
-  - OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
   langs:
   - csharp
   - vb
@@ -127,35 +126,6 @@ items:
       type: System.Int32
     content.vb: Public Property SortOrder As Integer
   overload: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.SortOrder*
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
-  id: UngroupedApps
-  parent: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-  langs:
-  - csharp
-  - vb
-  name: UngroupedApps
-  nameWithType: GetGroupedAppsResponseAppGroup.UngroupedApps
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppsResponseAppGroup.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: UngroupedApps
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppsResponseAppGroup.cs
-    startLine: 10
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public static GetGroupedAppsResponseAppGroup UngroupedApps { get; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-    content.vb: Public Shared ReadOnly Property UngroupedApps As GetGroupedAppsResponseAppGroup
-  overload: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -464,16 +434,3 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
-  href: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.html#OpenSettings_Models_Responses_GetGroupedAppsResponseAppGroup_UngroupedApps
-  name: UngroupedApps
-  nameWithType: GetGroupedAppsResponseAppGroup.UngroupedApps
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.UngroupedApps
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-  commentId: T:OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup
-  parent: OpenSettings.Models.Responses
-  href: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup.html
-  name: GetGroupedAppsResponseAppGroup
-  nameWithType: GetGroupedAppsResponseAppGroup
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponseAppGroup

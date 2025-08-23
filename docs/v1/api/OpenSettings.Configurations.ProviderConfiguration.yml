@@ -28,7 +28,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderConfiguration
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -68,12 +68,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 27
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
   summary: >-
-    Initializes a new instance of the <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> class with the default 
+    Initializes a new instance of the <xref href="OpenSettings.Configurations.ProviderConfiguration" data-throw-if-not-resolved="false"></xref> class with the default.
 
     <xref href="OpenSettings.Models.DataAccessType.Orm" data-throw-if-not-resolved="false"></xref> selection.
   example: []
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 37
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -137,7 +137,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Selection
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 60
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -172,7 +172,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Orm
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 82
+    startLine: 55
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -207,7 +207,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Redis
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 90
+    startLine: 63
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -239,7 +239,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsOrmSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 102
+    startLine: 75
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -261,7 +261,7 @@ items:
     content.vb: >-
       <JsonIgnore>
 
-      Public Property IsOrmSelected As Boolean
+      Public ReadOnly Property IsOrmSelected As Boolean
   overload: OpenSettings.Configurations.ProviderConfiguration.IsOrmSelected*
   attributes:
   - type: System.Text.Json.Serialization.JsonIgnoreAttribute
@@ -285,36 +285,23 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LicenseKey
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 123
+    startLine: 107
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
-  summary: >-
-    Gets or sets the license key. This property is ignored in Json serialization.
+  summary: Gets or sets the license key.
+  remarks: >-
+    Behavior:
 
-    If provided, it is used as the primary source for validation.
-
-    If invalid or missing, the system will check for a license key in the project directory.
-
-    If still not found or invalid, it will retrieve the license key from the database.
+    <ul><li></li><li>When provided, it is used as the primary source for license validation.</li><li>If invalid or missing, the system will check for a license key in the project directory ("<code>OpenSettings-License.key</code>").</li><li>If the file is also not found or is invalid, the license key will be retrieved from the database.</li></ul>
   example: []
   syntax:
-    content: >-
-      [JsonIgnore]
-
-      public string LicenseKey { get; set; }
+    content: public string LicenseKey { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <JsonIgnore>
-
-      Public Property LicenseKey As String
+    content.vb: Public Property LicenseKey As String
   overload: OpenSettings.Configurations.ProviderConfiguration.LicenseKey*
-  attributes:
-  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
-    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
-    arguments: []
 - uid: OpenSettings.Configurations.ProviderConfiguration.CompressionType
   commentId: P:OpenSettings.Configurations.ProviderConfiguration.CompressionType
   id: CompressionType
@@ -333,7 +320,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionType
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 132
+    startLine: 115
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -365,11 +352,11 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionLevel
     path: ../../../open-settings/src/OpenSettings/Configurations/ProviderConfiguration.cs
-    startLine: 140
+    startLine: 123
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
-  summary: Gets or sets the compression level used by the provider when storing setting data. Default level is <xref href="System.IO.Compression.CompressionLevel.Fastest" data-throw-if-not-resolved="false"></xref>
+  summary: Gets or sets the compression level used by the provider when storing setting data. Default level is <xref href="System.IO.Compression.CompressionLevel.Fastest" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public CompressionLevel CompressionLevel { get; set; }

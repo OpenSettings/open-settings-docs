@@ -5,6 +5,7 @@ items:
   id: GetPaginatedAppGroupsResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor
   - OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
   - OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
   - OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
@@ -41,6 +42,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedAppGroupsResponse()
+  nameWithType: GetPaginatedAppGroupsResponse.GetPaginatedAppGroupsResponse()
+  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.GetPaginatedAppGroupsResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetPaginatedAppGroupsResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor*
+  nameWithType.vb: GetPaginatedAppGroupsResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
   commentId: M:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)
   id: '#ctor(OpenSettings.Models.Inputs.GetPaginatedInput,System.Int32,OpenSettings.Models.Responses.ModelForPaginatedResponseData[],System.Int32,System.Int32)'
@@ -59,7 +89,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -81,64 +111,6 @@ items:
   nameWithType.vb: GetPaginatedAppGroupsResponse.New(GetPaginatedInput, Integer, ModelForPaginatedResponseData(), Integer, Integer)
   fullName.vb: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.New(OpenSettings.Models.Inputs.GetPaginatedInput, Integer, OpenSettings.Models.Responses.ModelForPaginatedResponseData(), Integer, Integer)
   name.vb: New(GetPaginatedInput, Integer, ModelForPaginatedResponseData(), Integer, Integer)
-- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
-  commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
-  id: PagingInfo
-  parent: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
-  langs:
-  - csharp
-  - vb
-  name: PagingInfo
-  nameWithType: GetPaginatedAppGroupsResponse.PagingInfo
-  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: PagingInfo
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
-    startLine: 15
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public PagingInfo PagingInfo { get; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.PagingInfo
-    content.vb: Public ReadOnly Property PagingInfo As PagingInfo
-  overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo*
-- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
-  commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
-  id: AppGroups
-  parent: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
-  langs:
-  - csharp
-  - vb
-  name: AppGroups
-  nameWithType: GetPaginatedAppGroupsResponse.AppGroups
-  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AppGroups
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
-    startLine: 17
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public ModelForPaginatedResponseData[] AppGroups { get; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
-    content.vb: Public ReadOnly Property AppGroups As ModelForPaginatedResponseData()
-  overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups*
 - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
   commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
   id: MinSortOrder
@@ -162,11 +134,11 @@ items:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MinSortOrder { get; }
+    content: public int MinSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MinSortOrder As Integer
+    content.vb: Public Property MinSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder*
 - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
   commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
@@ -191,12 +163,70 @@ items:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MaxSortOrder { get; }
+    content: public int MaxSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MaxSortOrder As Integer
+    content.vb: Public Property MaxSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder*
+- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
+  id: PagingInfo
+  parent: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
+  langs:
+  - csharp
+  - vb
+  name: PagingInfo
+  nameWithType: GetPaginatedAppGroupsResponse.PagingInfo
+  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PagingInfo
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public PagingInfo PagingInfo { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.PagingInfo
+    content.vb: Public Property PagingInfo As PagingInfo
+  overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo*
+- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
+  commentId: P:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
+  id: AppGroups
+  parent: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse
+  langs:
+  - csharp
+  - vb
+  name: AppGroups
+  nameWithType: GetPaginatedAppGroupsResponse.AppGroups
+  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AppGroups
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPaginatedGroupsResponse.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ModelForPaginatedResponseData[] AppGroups { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.Responses.ModelForPaginatedResponseData[]
+    content.vb: Public Property AppGroups As ModelForPaginatedResponseData()
+  overload: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -467,7 +497,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.#ctor
-  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse__ctor_OpenSettings_Models_Inputs_GetPaginatedInput_System_Int32_OpenSettings_Models_Responses_ModelForPaginatedResponseData___System_Int32_System_Int32_
+  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse__ctor
   name: GetPaginatedAppGroupsResponse
   nameWithType: GetPaginatedAppGroupsResponse.GetPaginatedAppGroupsResponse
   fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.GetPaginatedAppGroupsResponse
@@ -543,6 +573,18 @@ references:
   - uid: OpenSettings.Models.Inputs
     name: Inputs
     href: OpenSettings.Models.Inputs.html
+- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
+  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse_MinSortOrder
+  name: MinSortOrder
+  nameWithType: GetPaginatedAppGroupsResponse.MinSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
+- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder*
+  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
+  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse_MaxSortOrder
+  name: MaxSortOrder
+  nameWithType: GetPaginatedAppGroupsResponse.MaxSortOrder
+  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
 - uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo*
   commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.PagingInfo
   href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse_PagingInfo
@@ -584,15 +626,3 @@ references:
   name: AppGroups
   nameWithType: GetPaginatedAppGroupsResponse.AppGroups
   fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.AppGroups
-- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder*
-  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
-  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse_MinSortOrder
-  name: MinSortOrder
-  nameWithType: GetPaginatedAppGroupsResponse.MinSortOrder
-  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MinSortOrder
-- uid: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder*
-  commentId: Overload:OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder
-  href: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.html#OpenSettings_Models_Responses_GetPaginatedAppGroupsResponse_MaxSortOrder
-  name: MaxSortOrder
-  nameWithType: GetPaginatedAppGroupsResponse.MaxSortOrder
-  fullName: OpenSettings.Models.Responses.GetPaginatedAppGroupsResponse.MaxSortOrder

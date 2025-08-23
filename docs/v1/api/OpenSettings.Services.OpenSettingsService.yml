@@ -5,9 +5,10 @@ items:
   id: OpenSettingsService
   parent: OpenSettings.Services
   children:
-  - OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,System.Net.Http.HttpClient)
+  - OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration)
   - OpenSettings.Services.OpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
   - OpenSettings.Services.OpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.OpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsService
     path: ../../../open-settings/src/OpenSettings/Services/OpenSettingsService.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services
@@ -41,16 +42,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,System.Net.Http.HttpClient)
-  commentId: M:OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,System.Net.Http.HttpClient)
-  id: '#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,System.Net.Http.HttpClient)'
+- uid: OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration)
+  commentId: M:OpenSettings.Services.OpenSettingsService.#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration)
+  id: '#ctor(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache,System.Net.Http.IHttpClientFactory,OpenSettings.Configurations.OpenSettingsConfiguration)'
   parent: OpenSettings.Services.OpenSettingsService
   langs:
   - csharp
   - vb
-  name: OpenSettingsService(OpenSettingsMemoryCache, HttpClient)
-  nameWithType: OpenSettingsService.OpenSettingsService(OpenSettingsMemoryCache, HttpClient)
-  fullName: OpenSettings.Services.OpenSettingsService.OpenSettingsService(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, System.Net.Http.HttpClient)
+  name: OpenSettingsService(IOpenSettingsMemoryCache, IHttpClientFactory, OpenSettingsConfiguration)
+  nameWithType: OpenSettingsService.OpenSettingsService(IOpenSettingsMemoryCache, IHttpClientFactory, OpenSettingsConfiguration)
+  fullName: OpenSettings.Services.OpenSettingsService.OpenSettingsService(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache, System.Net.Http.IHttpClientFactory, OpenSettings.Configurations.OpenSettingsConfiguration)
   type: Constructor
   source:
     remote:
@@ -59,22 +60,24 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Services/OpenSettingsService.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services
   syntax:
-    content: public OpenSettingsService(OpenSettingsMemoryCache memoryCache, HttpClient httpClient)
+    content: public OpenSettingsService(IOpenSettingsMemoryCache openSettingsMemoryCache, IHttpClientFactory httpClientFactory, OpenSettingsConfiguration openSettingsConfiguration)
     parameters:
-    - id: memoryCache
-      type: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-    - id: httpClient
-      type: System.Net.Http.HttpClient
-    content.vb: Public Sub New(memoryCache As OpenSettingsMemoryCache, httpClient As HttpClient)
+    - id: openSettingsMemoryCache
+      type: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+    - id: httpClientFactory
+      type: System.Net.Http.IHttpClientFactory
+    - id: openSettingsConfiguration
+      type: OpenSettings.Configurations.OpenSettingsConfiguration
+    content.vb: Public Sub New(openSettingsMemoryCache As IOpenSettingsMemoryCache, httpClientFactory As IHttpClientFactory, openSettingsConfiguration As OpenSettingsConfiguration)
   overload: OpenSettings.Services.OpenSettingsService.#ctor*
-  nameWithType.vb: OpenSettingsService.New(OpenSettingsMemoryCache, HttpClient)
-  fullName.vb: OpenSettings.Services.OpenSettingsService.New(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, System.Net.Http.HttpClient)
-  name.vb: New(OpenSettingsMemoryCache, HttpClient)
+  nameWithType.vb: OpenSettingsService.New(IOpenSettingsMemoryCache, IHttpClientFactory, OpenSettingsConfiguration)
+  fullName.vb: OpenSettings.Services.OpenSettingsService.New(OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache, System.Net.Http.IHttpClientFactory, OpenSettings.Configurations.OpenSettingsConfiguration)
+  name.vb: New(IOpenSettingsMemoryCache, IHttpClientFactory, OpenSettingsConfiguration)
 - uid: OpenSettings.Services.OpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
   commentId: M:OpenSettings.Services.OpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
   id: GetConfigsAsync(System.Threading.CancellationToken)
@@ -93,7 +96,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetConfigsAsync
     path: ../../../open-settings/src/OpenSettings/Services/OpenSettingsService.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services
@@ -127,7 +130,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetConfigsDataAsync
     path: ../../../open-settings/src/OpenSettings/Services/OpenSettingsService.cs
-    startLine: 54
+    startLine: 59
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services
@@ -148,6 +151,40 @@ items:
   nameWithType.vb: OpenSettingsService.GetConfigsDataAsync(String, CancellationToken)
   fullName.vb: OpenSettings.Services.OpenSettingsService.GetConfigsDataAsync(String, System.Threading.CancellationToken)
   name.vb: GetConfigsDataAsync(String, CancellationToken)
+- uid: OpenSettings.Services.OpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.OpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  id: GetNotificationsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.OpenSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationsAsync(CancellationToken)
+  nameWithType: OpenSettingsService.GetNotificationsAsync(CancellationToken)
+  fullName: OpenSettings.Services.OpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/OpenSettingsService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetNotificationsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/OpenSettingsService.cs
+    startLine: 140
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services
+  example: []
+  syntax:
+    content: public Task<GetOpenSettingsNotificationsResponse> GetNotificationsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+    content.vb: Public Function GetNotificationsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of GetOpenSettingsNotificationsResponse)
+  overload: OpenSettings.Services.OpenSettingsService.GetNotificationsAsync*
+  implements:
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
 references:
 - uid: OpenSettings.Services
   commentId: N:OpenSettings.Services
@@ -447,58 +484,35 @@ references:
     href: OpenSettings.Services.Interfaces.html
 - uid: OpenSettings.Services.OpenSettingsService.#ctor*
   commentId: Overload:OpenSettings.Services.OpenSettingsService.#ctor
-  href: OpenSettings.Services.OpenSettingsService.html#OpenSettings_Services_OpenSettingsService__ctor_OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache_System_Net_Http_HttpClient_
+  href: OpenSettings.Services.OpenSettingsService.html#OpenSettings_Services_OpenSettingsService__ctor_OpenSettings_Services_Interfaces_IOpenSettingsMemoryCache_System_Net_Http_IHttpClientFactory_OpenSettings_Configurations_OpenSettingsConfiguration_
   name: OpenSettingsService
   nameWithType: OpenSettingsService.OpenSettingsService
   fullName: OpenSettings.Services.OpenSettingsService.OpenSettingsService
   nameWithType.vb: OpenSettingsService.New
   fullName.vb: OpenSettings.Services.OpenSettingsService.New
   name.vb: New
-- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  commentId: T:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  parent: OpenSettings.Services.MemoryCache
-  href: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.html
-  name: OpenSettingsMemoryCache
-  nameWithType: OpenSettingsMemoryCache
-  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-- uid: System.Net.Http.HttpClient
-  commentId: T:System.Net.Http.HttpClient
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  commentId: T:OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache.html
+  name: IOpenSettingsMemoryCache
+  nameWithType: IOpenSettingsMemoryCache
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+- uid: System.Net.Http.IHttpClientFactory
+  commentId: T:System.Net.Http.IHttpClientFactory
   parent: System.Net.Http
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
-  name: HttpClient
-  nameWithType: HttpClient
-  fullName: System.Net.Http.HttpClient
-- uid: OpenSettings.Services.MemoryCache
-  commentId: N:OpenSettings.Services.MemoryCache
-  href: OpenSettings.html
-  name: OpenSettings.Services.MemoryCache
-  nameWithType: OpenSettings.Services.MemoryCache
-  fullName: OpenSettings.Services.MemoryCache
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: System.Net.Http.IHttpClientFactory
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration
+  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
+  name: OpenSettingsConfiguration
+  nameWithType: OpenSettingsConfiguration
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
 - uid: System.Net.Http
   commentId: N:System.Net.Http
   isExternal: true
@@ -536,6 +550,28 @@ references:
     name: Http
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
 - uid: OpenSettings.Services.OpenSettingsService.GetConfigsAsync*
   commentId: Overload:OpenSettings.Services.OpenSettingsService.GetConfigsAsync
   href: OpenSettings.Services.OpenSettingsService.html#OpenSettings_Services_OpenSettingsService_GetConfigsAsync_System_Threading_CancellationToken_
@@ -795,4 +831,71 @@ references:
   - uid: OpenSettings.Models.Responses.GetConfigsDataResponse
     name: GetConfigsDataResponse
     href: OpenSettings.Models.Responses.GetConfigsDataResponse.html
+  - name: )
+- uid: OpenSettings.Services.OpenSettingsService.GetNotificationsAsync*
+  commentId: Overload:OpenSettings.Services.OpenSettingsService.GetNotificationsAsync
+  href: OpenSettings.Services.OpenSettingsService.html#OpenSettings_Services_OpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  name: GetNotificationsAsync
+  nameWithType: OpenSettingsService.GetNotificationsAsync
+  fullName: OpenSettings.Services.OpenSettingsService.GetNotificationsAsync
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  name: GetNotificationsAsync(CancellationToken)
+  nameWithType: IOpenSettingsService.GetNotificationsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetOpenSettingsNotificationsResponse>
+  nameWithType: Task<GetOpenSettingsNotificationsResponse>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse>
+  nameWithType.vb: Task(Of GetOpenSettingsNotificationsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse)
+  name.vb: Task(Of GetOpenSettingsNotificationsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+    name: GetOpenSettingsNotificationsResponse
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
+    name: GetOpenSettingsNotificationsResponse
+    href: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse.html
   - name: )

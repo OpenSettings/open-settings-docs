@@ -190,35 +190,6 @@ items:
       type: OpenSettings.Models.NotificationSource
     content.vb: Public Property Source As NotificationSource
   overload: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Source*
-- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
-  commentId: P:OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
-  id: Metadata
-  parent: OpenSettings.Models.Responses.GetNotificationsResponseNotification
-  langs:
-  - csharp
-  - vb
-  name: Metadata
-  nameWithType: GetNotificationsResponseNotification.Metadata
-  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Metadata
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
-    startLine: 17
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public Dictionary<string, object> Metadata { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.Dictionary{System.String,System.Object}
-    content.vb: Public Property Metadata As Dictionary(Of String, Object)
-  overload: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata*
 - uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
   commentId: P:OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
   id: IsExpired
@@ -237,7 +208,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsExpired
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -266,7 +237,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
-    startLine: 21
+    startLine: 19
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -295,7 +266,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatorName
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -306,6 +277,35 @@ items:
       type: System.String
     content.vb: Public Property CreatorName As String
   overload: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName*
+- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
+  commentId: P:OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
+  id: Metadata
+  parent: OpenSettings.Models.Responses.GetNotificationsResponseNotification
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: GetNotificationsResponseNotification.Metadata
+  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Metadata
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetNotificationsResponseNotification.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Dictionary<string, object> Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Property Metadata As Dictionary(Of String, Object)
+  overload: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -659,6 +659,46 @@ references:
   name: NotificationSource
   nameWithType: NotificationSource
   fullName: OpenSettings.Models.NotificationSource
+- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired*
+  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
+  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_IsExpired
+  name: IsExpired
+  nameWithType: GetNotificationsResponseNotification.IsExpired
+  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn
+  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_CreatedOn
+  name: CreatedOn
+  nameWithType: GetNotificationsResponseNotification.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName*
+  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName
+  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_CreatorName
+  name: CreatorName
+  nameWithType: GetNotificationsResponseNotification.CreatorName
+  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName
 - uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata*
   commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.Metadata
   href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_Metadata
@@ -783,43 +823,3 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired*
-  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
-  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_IsExpired
-  name: IsExpired
-  nameWithType: GetNotificationsResponseNotification.IsExpired
-  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.IsExpired
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn
-  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_CreatedOn
-  name: CreatedOn
-  nameWithType: GetNotificationsResponseNotification.CreatedOn
-  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatedOn
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.datetime
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
-- uid: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName*
-  commentId: Overload:OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName
-  href: OpenSettings.Models.Responses.GetNotificationsResponseNotification.html#OpenSettings_Models_Responses_GetNotificationsResponseNotification_CreatorName
-  name: CreatorName
-  nameWithType: GetNotificationsResponseNotification.CreatorName
-  fullName: OpenSettings.Models.Responses.GetNotificationsResponseNotification.CreatorName

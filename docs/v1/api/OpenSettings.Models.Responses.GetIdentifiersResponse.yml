@@ -5,6 +5,7 @@ items:
   id: GetIdentifiersResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor
   - OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor(OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier[])
   - OpenSettings.Models.Responses.GetIdentifiersResponse.Identifiers
   - OpenSettings.Models.Responses.GetIdentifiersResponse.MaxSortOrder
@@ -40,6 +41,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.GetIdentifiersResponse
+  langs:
+  - csharp
+  - vb
+  name: GetIdentifiersResponse()
+  nameWithType: GetIdentifiersResponse.GetIdentifiersResponse()
+  fullName: OpenSettings.Models.Responses.GetIdentifiersResponse.GetIdentifiersResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetIdentifiersResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor*
+  nameWithType.vb: GetIdentifiersResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.GetIdentifiersResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor(OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier[])
   commentId: M:OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor(OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier[])
   id: '#ctor(OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier[])'
@@ -58,7 +88,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -90,16 +120,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MinSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
-    startLine: 28
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MinSortOrder { get; }
+    content: public int MinSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MinSortOrder As Integer
+    content.vb: Public Property MinSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetIdentifiersResponse.MinSortOrder*
 - uid: OpenSettings.Models.Responses.GetIdentifiersResponse.MaxSortOrder
   commentId: P:OpenSettings.Models.Responses.GetIdentifiersResponse.MaxSortOrder
@@ -119,16 +149,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MaxSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
-    startLine: 30
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MaxSortOrder { get; }
+    content: public int MaxSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MaxSortOrder As Integer
+    content.vb: Public Property MaxSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetIdentifiersResponse.MaxSortOrder*
 - uid: OpenSettings.Models.Responses.GetIdentifiersResponse.Identifiers
   commentId: P:OpenSettings.Models.Responses.GetIdentifiersResponse.Identifiers
@@ -148,16 +178,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Identifiers
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetIdentifiersResponse.cs
-    startLine: 32
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public GetIdentifiersResponseIdentifier[] Identifiers { get; }
+    content: public GetIdentifiersResponseIdentifier[] Identifiers { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.Responses.GetIdentifiersResponseIdentifier[]
-    content.vb: Public ReadOnly Property Identifiers As GetIdentifiersResponseIdentifier()
+    content.vb: Public Property Identifiers As GetIdentifiersResponseIdentifier()
   overload: OpenSettings.Models.Responses.GetIdentifiersResponse.Identifiers*
 references:
 - uid: OpenSettings.Models.Responses
@@ -429,7 +459,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.GetIdentifiersResponse.#ctor
-  href: OpenSettings.Models.Responses.GetIdentifiersResponse.html#OpenSettings_Models_Responses_GetIdentifiersResponse__ctor_OpenSettings_Models_Responses_GetIdentifiersResponseIdentifier___
+  href: OpenSettings.Models.Responses.GetIdentifiersResponse.html#OpenSettings_Models_Responses_GetIdentifiersResponse__ctor
   name: GetIdentifiersResponse
   nameWithType: GetIdentifiersResponse.GetIdentifiersResponse
   fullName: OpenSettings.Models.Responses.GetIdentifiersResponse.GetIdentifiersResponse

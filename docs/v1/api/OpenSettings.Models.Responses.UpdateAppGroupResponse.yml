@@ -5,6 +5,7 @@ items:
   id: UpdateAppGroupResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor
   - OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.Guid},System.DateTime,System.Byte[])
   - OpenSettings.Models.Responses.UpdateAppGroupResponse.Name
   - OpenSettings.Models.Responses.UpdateAppGroupResponse.RowVersion
@@ -43,6 +44,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.UpdateAppGroupResponse
+  langs:
+  - csharp
+  - vb
+  name: UpdateAppGroupResponse()
+  nameWithType: UpdateAppGroupResponse.UpdateAppGroupResponse()
+  fullName: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdateAppGroupResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public UpdateAppGroupResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor*
+  nameWithType.vb: UpdateAppGroupResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.UpdateAppGroupResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.Guid},System.DateTime,System.Byte[])
   commentId: M:OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.Guid},System.DateTime,System.Byte[])
   id: '#ctor(System.String,System.String,System.Int32,System.Nullable{System.Guid},System.DateTime,System.Byte[])'
@@ -61,7 +91,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -103,16 +133,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Name
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 16
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public string Name { get; }
+    content: public string Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Name As String
+    content.vb: Public Property Name As String
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.Name*
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.Slug
   commentId: P:OpenSettings.Models.Responses.UpdateAppGroupResponse.Slug
@@ -132,16 +162,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Slug
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public string Slug { get; }
+    content: public string Slug { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Slug As String
+    content.vb: Public Property Slug As String
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.Slug*
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.SortOrder
   commentId: P:OpenSettings.Models.Responses.UpdateAppGroupResponse.SortOrder
@@ -161,16 +191,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 20
+    startLine: 24
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int SortOrder { get; }
+    content: public int SortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property SortOrder As Integer
+    content.vb: Public Property SortOrder As Integer
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.SortOrder*
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedById
   commentId: P:OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedById
@@ -190,16 +220,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedById
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 22
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public Guid? UpdatedById { get; }
+    content: public Guid? UpdatedById { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Guid}
-    content.vb: Public ReadOnly Property UpdatedById As Guid?
+    content.vb: Public Property UpdatedById As Guid?
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedById*
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedOn
   commentId: P:OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedOn
@@ -219,16 +249,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 24
+    startLine: 28
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public DateTime UpdatedOn { get; }
+    content: public DateTime UpdatedOn { get; set; }
     parameters: []
     return:
       type: System.DateTime
-    content.vb: Public ReadOnly Property UpdatedOn As Date
+    content.vb: Public Property UpdatedOn As Date
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdatedOn*
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.RowVersion
   commentId: P:OpenSettings.Models.Responses.UpdateAppGroupResponse.RowVersion
@@ -248,16 +278,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Models/Responses/UpdateGroupResponse.cs
-    startLine: 26
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public byte[] RowVersion { get; }
+    content: public byte[] RowVersion { get; set; }
     parameters: []
     return:
       type: System.Byte[]
-    content.vb: Public ReadOnly Property RowVersion As Byte()
+    content.vb: Public Property RowVersion As Byte()
   overload: OpenSettings.Models.Responses.UpdateAppGroupResponse.RowVersion*
 references:
 - uid: OpenSettings.Models.Responses
@@ -529,7 +559,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.UpdateAppGroupResponse.#ctor
-  href: OpenSettings.Models.Responses.UpdateAppGroupResponse.html#OpenSettings_Models_Responses_UpdateAppGroupResponse__ctor_System_String_System_String_System_Int32_System_Nullable_System_Guid__System_DateTime_System_Byte___
+  href: OpenSettings.Models.Responses.UpdateAppGroupResponse.html#OpenSettings_Models_Responses_UpdateAppGroupResponse__ctor
   name: UpdateAppGroupResponse
   nameWithType: UpdateAppGroupResponse.UpdateAppGroupResponse
   fullName: OpenSettings.Models.Responses.UpdateAppGroupResponse.UpdateAppGroupResponse

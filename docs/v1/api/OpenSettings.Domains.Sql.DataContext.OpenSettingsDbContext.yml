@@ -11,15 +11,20 @@ items:
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.AppTagMappings
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Apps
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Configurations
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Detach(System.Object)
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DetachRange(System.Object[])
-  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration)
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration,Microsoft.Extensions.Logging.ILoggerFactory)
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Identifiers
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Instances
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Licenses
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Locks
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Notifications
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.SettingClasses
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.SettingHistories
   - OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Settings
@@ -50,7 +55,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsDbContext
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -142,7 +147,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -177,7 +182,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppGroups
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 23
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -208,7 +213,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppIdentifierMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -239,7 +244,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Apps
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -270,7 +275,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppTagMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -301,7 +306,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Configurations
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -332,7 +337,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Identifiers
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -363,7 +368,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Instances
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -394,7 +399,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Locks
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -425,7 +430,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Notifications
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 63
+    startLine: 66
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -456,7 +461,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingClasses
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -487,7 +492,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingHistories
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -518,7 +523,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Settings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 78
+    startLine: 81
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -549,7 +554,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Tags
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 83
+    startLine: 86
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -580,7 +585,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserClaimMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 88
+    startLine: 91
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -611,7 +616,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserClaims
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 93
+    startLine: 96
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -642,7 +647,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserGroupClaimMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 98
+    startLine: 101
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -673,7 +678,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserGroupMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 103
+    startLine: 106
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -704,7 +709,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserGroupNotificationMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 108
+    startLine: 111
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -735,7 +740,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserGroups
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 113
+    startLine: 116
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -766,7 +771,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserNotificationMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 118
+    startLine: 121
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -797,7 +802,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserRoleClaimMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 123
+    startLine: 126
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -828,7 +833,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserRoleGroupMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 128
+    startLine: 131
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -859,7 +864,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserRoleMappings
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 133
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -890,7 +895,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UserRoles
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 138
+    startLine: 141
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -921,7 +926,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Users
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 143
+    startLine: 146
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -952,7 +957,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Licenses
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 148
+    startLine: 151
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -965,6 +970,161 @@ items:
       type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.LicenseSqlModel}
     content.vb: Public Property Licenses As DbSet(Of LicenseSqlModel)
   overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Licenses*
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
+  commentId: P:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
+  id: ProviderRegistries
+  parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+  langs:
+  - csharp
+  - vb
+  name: ProviderRegistries
+  nameWithType: OpenSettingsDbContext.ProviderRegistries
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderRegistries
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+    startLine: 156
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.DataContext
+  summary: Gets or sets the <xref href="Microsoft.EntityFrameworkCore.DbSet%601" data-throw-if-not-resolved="false"></xref> for managing ProviderRegistries.
+  example: []
+  syntax:
+    content: public DbSet<ProviderRegistrySqlModel> ProviderRegistries { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel}
+    content.vb: Public Property ProviderRegistries As DbSet(Of ProviderRegistrySqlModel)
+  overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries*
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
+  commentId: P:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
+  id: GlobalConfigurations
+  parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfigurations
+  nameWithType: OpenSettingsDbContext.GlobalConfigurations
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GlobalConfigurations
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+    startLine: 161
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.DataContext
+  summary: Gets or sets the <xref href="Microsoft.EntityFrameworkCore.DbSet%601" data-throw-if-not-resolved="false"></xref> for managing GlobalConfigurations.
+  example: []
+  syntax:
+    content: public DbSet<GlobalConfigurationSqlModel> GlobalConfigurations { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel}
+    content.vb: Public Property GlobalConfigurations As DbSet(Of GlobalConfigurationSqlModel)
+  overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations*
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+  commentId: P:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+  id: GlobalConfigurationHistories
+  parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfigurationHistories
+  nameWithType: OpenSettingsDbContext.GlobalConfigurationHistories
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GlobalConfigurationHistories
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+    startLine: 166
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.DataContext
+  summary: Gets or sets the <xref href="Microsoft.EntityFrameworkCore.DbSet%601" data-throw-if-not-resolved="false"></xref> for managing GlobalConfigurationHistories.
+  example: []
+  syntax:
+    content: public DbSet<GlobalConfigurationHistorySqlModel> GlobalConfigurationHistories { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel}
+    content.vb: Public Property GlobalConfigurationHistories As DbSet(Of GlobalConfigurationHistorySqlModel)
+  overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories*
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
+  commentId: P:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
+  id: LoginEntries
+  parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+  langs:
+  - csharp
+  - vb
+  name: LoginEntries
+  nameWithType: OpenSettingsDbContext.LoginEntries
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LoginEntries
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+    startLine: 171
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.DataContext
+  summary: Gets or sets the <xref href="Microsoft.EntityFrameworkCore.DbSet%601" data-throw-if-not-resolved="false"></xref> for managing LoginEntries.
+  example: []
+  syntax:
+    content: public DbSet<LoginEntrySqlModel> LoginEntries { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel}
+    content.vb: Public Property LoginEntries As DbSet(Of LoginEntrySqlModel)
+  overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries*
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
+  commentId: P:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
+  id: DataProtectionKeys
+  parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
+  langs:
+  - csharp
+  - vb
+  name: DataProtectionKeys
+  nameWithType: OpenSettingsDbContext.DataProtectionKeys
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DataProtectionKeys
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
+    startLine: 176
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.DataContext
+  summary: Gets or sets the <xref href="Microsoft.EntityFrameworkCore.DbSet%601" data-throw-if-not-resolved="false"></xref> for managing DataProtectionKeys.
+  example: []
+  syntax:
+    content: public DbSet<DataProtectionKey> DataProtectionKeys { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.DataProtectionKey}
+    content.vb: Public Property DataProtectionKeys As DbSet(Of DataProtectionKey)
+  overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys*
 - uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Detach(System.Object)
   commentId: M:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Detach(System.Object)
   id: Detach(System.Object)
@@ -983,7 +1143,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Detach
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 150
+    startLine: 178
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -1015,7 +1175,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DetachRange
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 155
+    startLine: 183
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -1047,7 +1207,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OnModelCreating
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 163
+    startLine: 191
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
@@ -1076,16 +1236,16 @@ items:
     content.vb: Protected Overrides Sub OnModelCreating(modelBuilder As ModelBuilder)
   overridden: Microsoft.EntityFrameworkCore.DbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.OnModelCreating*
-- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration)
-  commentId: M:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration)
-  id: GetInstance(OpenSettings.Configurations.ProviderConfiguration)
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration,Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration,Microsoft.Extensions.Logging.ILoggerFactory)
+  id: GetInstance(OpenSettings.Configurations.ProviderConfiguration,Microsoft.Extensions.Logging.ILoggerFactory)
   parent: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
   langs:
   - csharp
   - vb
-  name: GetInstance(ProviderConfiguration)
-  nameWithType: OpenSettingsDbContext.GetInstance(ProviderConfiguration)
-  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration)
+  name: GetInstance(ProviderConfiguration, ILoggerFactory)
+  nameWithType: OpenSettingsDbContext.GetInstance(ProviderConfiguration, ILoggerFactory)
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance(OpenSettings.Configurations.ProviderConfiguration, Microsoft.Extensions.Logging.ILoggerFactory)
   type: Method
   source:
     remote:
@@ -1094,18 +1254,20 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstance
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/DataContext/OpenSettingsDbContext.cs
-    startLine: 170
+    startLine: 198
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.DataContext
   syntax:
-    content: public static OpenSettingsDbContext GetInstance(ProviderConfiguration provider)
+    content: public static OpenSettingsDbContext GetInstance(ProviderConfiguration provider, ILoggerFactory loggerFactory)
     parameters:
     - id: provider
       type: OpenSettings.Configurations.ProviderConfiguration
+    - id: loggerFactory
+      type: Microsoft.Extensions.Logging.ILoggerFactory
     return:
       type: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext
-    content.vb: Public Shared Function GetInstance(provider As ProviderConfiguration) As OpenSettingsDbContext
+    content.vb: Public Shared Function GetInstance(provider As ProviderConfiguration, loggerFactory As ILoggerFactory) As OpenSettingsDbContext
   overload: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance*
 references:
 - uid: OpenSettings.Domains.Sql.DataContext
@@ -4446,6 +4608,201 @@ references:
     name: LicenseSqlModel
     href: OpenSettings.Domains.Sql.Entities.LicenseSqlModel.html
   - name: )
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries*
+  commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_ProviderRegistries
+  name: ProviderRegistries
+  nameWithType: OpenSettingsDbContext.ProviderRegistries
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.ProviderRegistries
+- uid: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<ProviderRegistrySqlModel>
+  nameWithType: DbSet<ProviderRegistrySqlModel>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel>
+  nameWithType.vb: DbSet(Of ProviderRegistrySqlModel)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel)
+  name.vb: DbSet(Of ProviderRegistrySqlModel)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+    name: ProviderRegistrySqlModel
+    href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+    name: ProviderRegistrySqlModel
+    href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html
+  - name: )
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations*
+  commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_GlobalConfigurations
+  name: GlobalConfigurations
+  nameWithType: OpenSettingsDbContext.GlobalConfigurations
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurations
+- uid: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<GlobalConfigurationSqlModel>
+  nameWithType: DbSet<GlobalConfigurationSqlModel>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel>
+  nameWithType.vb: DbSet(Of GlobalConfigurationSqlModel)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel)
+  name.vb: DbSet(Of GlobalConfigurationSqlModel)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
+    name: GlobalConfigurationSqlModel
+    href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
+    name: GlobalConfigurationSqlModel
+    href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel.html
+  - name: )
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories*
+  commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_GlobalConfigurationHistories
+  name: GlobalConfigurationHistories
+  nameWithType: OpenSettingsDbContext.GlobalConfigurationHistories
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GlobalConfigurationHistories
+- uid: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<GlobalConfigurationHistorySqlModel>
+  nameWithType: DbSet<GlobalConfigurationHistorySqlModel>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel>
+  nameWithType.vb: DbSet(Of GlobalConfigurationHistorySqlModel)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel)
+  name.vb: DbSet(Of GlobalConfigurationHistorySqlModel)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+    name: GlobalConfigurationHistorySqlModel
+    href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+    name: GlobalConfigurationHistorySqlModel
+    href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel.html
+  - name: )
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries*
+  commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_LoginEntries
+  name: LoginEntries
+  nameWithType: OpenSettingsDbContext.LoginEntries
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.LoginEntries
+- uid: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<LoginEntrySqlModel>
+  nameWithType: DbSet<LoginEntrySqlModel>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel>
+  nameWithType.vb: DbSet(Of LoginEntrySqlModel)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel)
+  name.vb: DbSet(Of LoginEntrySqlModel)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+    name: LoginEntrySqlModel
+    href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+    name: LoginEntrySqlModel
+    href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html
+  - name: )
+- uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys*
+  commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_DataProtectionKeys
+  name: DataProtectionKeys
+  nameWithType: OpenSettingsDbContext.DataProtectionKeys
+  fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.DataProtectionKeys
+- uid: Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.DataProtectionKey}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{OpenSettings.Domains.Sql.Entities.DataProtectionKey}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<DataProtectionKey>
+  nameWithType: DbSet<DataProtectionKey>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<OpenSettings.Domains.Sql.Entities.DataProtectionKey>
+  nameWithType.vb: DbSet(Of DataProtectionKey)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of OpenSettings.Domains.Sql.Entities.DataProtectionKey)
+  name.vb: DbSet(Of DataProtectionKey)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+    name: DataProtectionKey
+    href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+    name: DataProtectionKey
+    href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html
+  - name: )
 - uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Detach*
   commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.Detach
   href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_Detach_System_Object_
@@ -4556,7 +4913,7 @@ references:
   fullName: Microsoft.EntityFrameworkCore.ModelBuilder
 - uid: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance*
   commentId: Overload:OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance
-  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_GetInstance_OpenSettings_Configurations_ProviderConfiguration_
+  href: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.html#OpenSettings_Domains_Sql_DataContext_OpenSettingsDbContext_GetInstance_OpenSettings_Configurations_ProviderConfiguration_Microsoft_Extensions_Logging_ILoggerFactory_
   name: GetInstance
   nameWithType: OpenSettingsDbContext.GetInstance
   fullName: OpenSettings.Domains.Sql.DataContext.OpenSettingsDbContext.GetInstance
@@ -4567,6 +4924,14 @@ references:
   name: ProviderConfiguration
   nameWithType: ProviderConfiguration
   fullName: OpenSettings.Configurations.ProviderConfiguration
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
 - uid: OpenSettings.Configurations
   commentId: N:OpenSettings.Configurations
   href: OpenSettings.html
@@ -4589,3 +4954,40 @@ references:
   - uid: OpenSettings.Configurations
     name: Configurations
     href: OpenSettings.Configurations.html
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging

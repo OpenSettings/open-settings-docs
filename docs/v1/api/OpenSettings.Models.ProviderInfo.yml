@@ -5,14 +5,11 @@ items:
   id: ProviderInfo
   parent: OpenSettings.Models
   children:
-  - OpenSettings.Models.ProviderInfo.Authorize
   - OpenSettings.Models.ProviderInfo.Client
-  - OpenSettings.Models.ProviderInfo.IsPreviewVersion
-  - OpenSettings.Models.ProviderInfo.OAuth2
-  - OpenSettings.Models.ProviderInfo.PackVersion
-  - OpenSettings.Models.ProviderInfo.PackVersionScore
+  - OpenSettings.Models.ProviderInfo.OpenIdConnect
+  - OpenSettings.Models.ProviderInfo.PackInfo
   - OpenSettings.Models.ProviderInfo.Redis
-  - OpenSettings.Models.ProviderInfo.Version
+  - OpenSettings.Models.ProviderInfo.RequiresAuthentication
   langs:
   - csharp
   - vb
@@ -34,7 +31,7 @@ items:
   summary: >-
     Represents information about a provider, including client details, authorization status, version information,
 
-    and configuration related to OpenSettings, OAuth2, and Redis.
+    and configuration related to OpenSettings, OpenIdConnect, and Redis.
   example: []
   syntax:
     content: public class ProviderInfo
@@ -49,6 +46,37 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.ProviderInfo.RequiresAuthentication
+  commentId: P:OpenSettings.Models.ProviderInfo.RequiresAuthentication
+  id: RequiresAuthentication
+  parent: OpenSettings.Models.ProviderInfo
+  langs:
+  - csharp
+  - vb
+  name: RequiresAuthentication
+  nameWithType: ProviderInfo.RequiresAuthentication
+  fullName: OpenSettings.Models.ProviderInfo.RequiresAuthentication
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderInfo.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RequiresAuthentication
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Gets or sets a value indicating whether authentication is required for this provider.
+  example: []
+  syntax:
+    content: public bool RequiresAuthentication { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RequiresAuthentication As Boolean
+  overload: OpenSettings.Models.ProviderInfo.RequiresAuthentication*
 - uid: OpenSettings.Models.ProviderInfo.Client
   commentId: P:OpenSettings.Models.ProviderInfo.Client
   id: Client
@@ -67,7 +95,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Client
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -80,198 +108,68 @@ items:
       type: OpenSettings.Models.ProviderInfoClient
     content.vb: Public Property Client As ProviderInfoClient
   overload: OpenSettings.Models.ProviderInfo.Client*
-- uid: OpenSettings.Models.ProviderInfo.Authorize
-  commentId: P:OpenSettings.Models.ProviderInfo.Authorize
-  id: Authorize
+- uid: OpenSettings.Models.ProviderInfo.PackInfo
+  commentId: P:OpenSettings.Models.ProviderInfo.PackInfo
+  id: PackInfo
   parent: OpenSettings.Models.ProviderInfo
   langs:
   - csharp
   - vb
-  name: Authorize
-  nameWithType: ProviderInfo.Authorize
-  fullName: OpenSettings.Models.ProviderInfo.Authorize
+  name: PackInfo
+  nameWithType: ProviderInfo.PackInfo
+  fullName: OpenSettings.Models.ProviderInfo.PackInfo
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/ProviderInfo.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Authorize
+    id: PackInfo
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 16
+    startLine: 21
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
-  summary: Gets or sets a value indicating whether the provider is authorized.
+  summary: Gets or sets the pack information for OpenSettings, including version, score, and whether it is a preview version.
   example: []
   syntax:
-    content: public bool Authorize { get; set; }
+    content: public PackInfo PackInfo { get; set; }
     parameters: []
     return:
-      type: System.Boolean
-    content.vb: Public Property Authorize As Boolean
-  overload: OpenSettings.Models.ProviderInfo.Authorize*
-- uid: OpenSettings.Models.ProviderInfo.Version
-  commentId: P:OpenSettings.Models.ProviderInfo.Version
-  id: Version
+      type: OpenSettings.Models.PackInfo
+    content.vb: Public Property PackInfo As PackInfo
+  overload: OpenSettings.Models.ProviderInfo.PackInfo*
+- uid: OpenSettings.Models.ProviderInfo.OpenIdConnect
+  commentId: P:OpenSettings.Models.ProviderInfo.OpenIdConnect
+  id: OpenIdConnect
   parent: OpenSettings.Models.ProviderInfo
   langs:
   - csharp
   - vb
-  name: Version
-  nameWithType: ProviderInfo.Version
-  fullName: OpenSettings.Models.ProviderInfo.Version
+  name: OpenIdConnect
+  nameWithType: ProviderInfo.OpenIdConnect
+  fullName: OpenSettings.Models.ProviderInfo.OpenIdConnect
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/ProviderInfo.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Version
+    id: OpenIdConnect
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
-  summary: Gets or sets the client's version.
-  remarks: e.g. "1.0.0"
+  summary: Gets or sets the OpenIdConnect configuration for the provider.
   example: []
   syntax:
-    content: public string Version { get; set; }
+    content: public OpenIdConnectInfo OpenIdConnect { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property Version As String
-  overload: OpenSettings.Models.ProviderInfo.Version*
-- uid: OpenSettings.Models.ProviderInfo.PackVersion
-  commentId: P:OpenSettings.Models.ProviderInfo.PackVersion
-  id: PackVersion
-  parent: OpenSettings.Models.ProviderInfo
-  langs:
-  - csharp
-  - vb
-  name: PackVersion
-  nameWithType: ProviderInfo.PackVersion
-  fullName: OpenSettings.Models.ProviderInfo.PackVersion
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/ProviderInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: PackVersion
-    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 32
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Gets or sets the version of the OpenSettings.
-  remarks: e.g. "1.0.0"
-  example: []
-  syntax:
-    content: public string PackVersion { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property PackVersion As String
-  overload: OpenSettings.Models.ProviderInfo.PackVersion*
-- uid: OpenSettings.Models.ProviderInfo.PackVersionScore
-  commentId: P:OpenSettings.Models.ProviderInfo.PackVersionScore
-  id: PackVersionScore
-  parent: OpenSettings.Models.ProviderInfo
-  langs:
-  - csharp
-  - vb
-  name: PackVersionScore
-  nameWithType: ProviderInfo.PackVersionScore
-  fullName: OpenSettings.Models.ProviderInfo.PackVersionScore
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/ProviderInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: PackVersionScore
-    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 41
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: >-
-    Gets or sets the numerical score of the OpenSettings version, used for comparing versions.
-
-    A higher score indicates a more recent version.
-  remarks: e.g. "1000000500000"
-  example: []
-  syntax:
-    content: public long PackVersionScore { get; set; }
-    parameters: []
-    return:
-      type: System.Int64
-    content.vb: Public Property PackVersionScore As Long
-  overload: OpenSettings.Models.ProviderInfo.PackVersionScore*
-- uid: OpenSettings.Models.ProviderInfo.IsPreviewVersion
-  commentId: P:OpenSettings.Models.ProviderInfo.IsPreviewVersion
-  id: IsPreviewVersion
-  parent: OpenSettings.Models.ProviderInfo
-  langs:
-  - csharp
-  - vb
-  name: IsPreviewVersion
-  nameWithType: ProviderInfo.IsPreviewVersion
-  fullName: OpenSettings.Models.ProviderInfo.IsPreviewVersion
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/ProviderInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: IsPreviewVersion
-    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 46
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Specifies whether the OpenSettings version is a preview version.
-  example: []
-  syntax:
-    content: public bool IsPreviewVersion { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsPreviewVersion As Boolean
-  overload: OpenSettings.Models.ProviderInfo.IsPreviewVersion*
-- uid: OpenSettings.Models.ProviderInfo.OAuth2
-  commentId: P:OpenSettings.Models.ProviderInfo.OAuth2
-  id: OAuth2
-  parent: OpenSettings.Models.ProviderInfo
-  langs:
-  - csharp
-  - vb
-  name: OAuth2
-  nameWithType: ProviderInfo.OAuth2
-  fullName: OpenSettings.Models.ProviderInfo.OAuth2
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/ProviderInfo.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: OAuth2
-    path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 51
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models
-  summary: Gets or sets the OAuth2 configuration for the provider.
-  example: []
-  syntax:
-    content: public OAuth2Info OAuth2 { get; set; }
-    parameters: []
-    return:
-      type: OpenSettings.Models.OAuth2Info
-    content.vb: Public Property OAuth2 As OAuth2Info
-  overload: OpenSettings.Models.ProviderInfo.OAuth2*
+      type: OpenSettings.Models.OpenIdConnectInfo
+    content.vb: Public Property OpenIdConnect As OpenIdConnectInfo
+  overload: OpenSettings.Models.ProviderInfo.OpenIdConnect*
 - uid: OpenSettings.Models.ProviderInfo.Redis
   commentId: P:OpenSettings.Models.ProviderInfo.Redis
   id: Redis
@@ -290,7 +188,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Redis
     path: ../../../open-settings/src/OpenSettings/Models/ProviderInfo.cs
-    startLine: 56
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -563,6 +461,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Models.ProviderInfo.RequiresAuthentication*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.RequiresAuthentication
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_RequiresAuthentication
+  name: RequiresAuthentication
+  nameWithType: ProviderInfo.RequiresAuthentication
+  fullName: OpenSettings.Models.ProviderInfo.RequiresAuthentication
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: OpenSettings.Models.ProviderInfo.Client*
   commentId: Overload:OpenSettings.Models.ProviderInfo.Client
   href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Client
@@ -576,82 +491,32 @@ references:
   name: ProviderInfoClient
   nameWithType: ProviderInfoClient
   fullName: OpenSettings.Models.ProviderInfoClient
-- uid: OpenSettings.Models.ProviderInfo.Authorize*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.Authorize
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Authorize
-  name: Authorize
-  nameWithType: ProviderInfo.Authorize
-  fullName: OpenSettings.Models.ProviderInfo.Authorize
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: OpenSettings.Models.ProviderInfo.Version*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.Version
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Version
-  name: Version
-  nameWithType: ProviderInfo.Version
-  fullName: OpenSettings.Models.ProviderInfo.Version
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: OpenSettings.Models.ProviderInfo.PackVersion*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.PackVersion
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_PackVersion
-  name: PackVersion
-  nameWithType: ProviderInfo.PackVersion
-  fullName: OpenSettings.Models.ProviderInfo.PackVersion
-- uid: OpenSettings.Models.ProviderInfo.PackVersionScore*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.PackVersionScore
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_PackVersionScore
-  name: PackVersionScore
-  nameWithType: ProviderInfo.PackVersionScore
-  fullName: OpenSettings.Models.ProviderInfo.PackVersionScore
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
-- uid: OpenSettings.Models.ProviderInfo.IsPreviewVersion*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.IsPreviewVersion
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_IsPreviewVersion
-  name: IsPreviewVersion
-  nameWithType: ProviderInfo.IsPreviewVersion
-  fullName: OpenSettings.Models.ProviderInfo.IsPreviewVersion
-- uid: OpenSettings.Models.ProviderInfo.OAuth2*
-  commentId: Overload:OpenSettings.Models.ProviderInfo.OAuth2
-  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_OAuth2
-  name: OAuth2
-  nameWithType: ProviderInfo.OAuth2
-  fullName: OpenSettings.Models.ProviderInfo.OAuth2
-- uid: OpenSettings.Models.OAuth2Info
-  commentId: T:OpenSettings.Models.OAuth2Info
+- uid: OpenSettings.Models.ProviderInfo.PackInfo*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.PackInfo
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_PackInfo
+  name: PackInfo
+  nameWithType: ProviderInfo.PackInfo
+  fullName: OpenSettings.Models.ProviderInfo.PackInfo
+- uid: OpenSettings.Models.PackInfo
+  commentId: T:OpenSettings.Models.PackInfo
   parent: OpenSettings.Models
-  href: OpenSettings.Models.OAuth2Info.html
-  name: OAuth2Info
-  nameWithType: OAuth2Info
-  fullName: OpenSettings.Models.OAuth2Info
+  href: OpenSettings.Models.PackInfo.html
+  name: PackInfo
+  nameWithType: PackInfo
+  fullName: OpenSettings.Models.PackInfo
+- uid: OpenSettings.Models.ProviderInfo.OpenIdConnect*
+  commentId: Overload:OpenSettings.Models.ProviderInfo.OpenIdConnect
+  href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_OpenIdConnect
+  name: OpenIdConnect
+  nameWithType: ProviderInfo.OpenIdConnect
+  fullName: OpenSettings.Models.ProviderInfo.OpenIdConnect
+- uid: OpenSettings.Models.OpenIdConnectInfo
+  commentId: T:OpenSettings.Models.OpenIdConnectInfo
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.OpenIdConnectInfo.html
+  name: OpenIdConnectInfo
+  nameWithType: OpenIdConnectInfo
+  fullName: OpenSettings.Models.OpenIdConnectInfo
 - uid: OpenSettings.Models.ProviderInfo.Redis*
   commentId: Overload:OpenSettings.Models.ProviderInfo.Redis
   href: OpenSettings.Models.ProviderInfo.html#OpenSettings_Models_ProviderInfo_Redis

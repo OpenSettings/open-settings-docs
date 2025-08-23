@@ -39,35 +39,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
-  commentId: P:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
-  id: GroupNameToApps
-  parent: OpenSettings.Models.Responses.GetGroupedAppsResponse
-  langs:
-  - csharp
-  - vb
-  name: GroupNameToApps
-  nameWithType: GetGroupedAppsResponse.GroupNameToApps
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: GroupNameToApps
-    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
-    startLine: 6
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Models.Responses
-  syntax:
-    content: public Dictionary<string, GetGroupedAppsResponseApp[]> GroupNameToApps { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.Dictionary{System.String,OpenSettings.Models.Responses.GetGroupedAppsResponseApp[]}
-    content.vb: Public Property GroupNameToApps As Dictionary(Of String, GetGroupedAppsResponseApp())
-  overload: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps*
 - uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
   commentId: P:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
   id: GroupsCount
@@ -86,7 +57,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GroupsCount
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
-    startLine: 8
+    startLine: 6
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -115,7 +86,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppsCount
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
-    startLine: 10
+    startLine: 8
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -126,6 +97,35 @@ items:
       type: System.Int32
     content.vb: Public Property AppsCount As Integer
   overload: OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount*
+- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
+  commentId: P:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
+  id: GroupNameToApps
+  parent: OpenSettings.Models.Responses.GetGroupedAppsResponse
+  langs:
+  - csharp
+  - vb
+  name: GroupNameToApps
+  nameWithType: GetGroupedAppsResponse.GroupNameToApps
+  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GroupNameToApps
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupedAppsResponse.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Dictionary<string, GetGroupedAppsResponseApp[]> GroupNameToApps { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,OpenSettings.Models.Responses.GetGroupedAppsResponseApp[]}
+    content.vb: Public Property GroupNameToApps As Dictionary(Of String, GetGroupedAppsResponseApp())
+  overload: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -394,6 +394,29 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
+  href: OpenSettings.Models.Responses.GetGroupedAppsResponse.html#OpenSettings_Models_Responses_GetGroupedAppsResponse_GroupsCount
+  name: GroupsCount
+  nameWithType: GetGroupedAppsResponse.GroupsCount
+  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount*
+  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount
+  href: OpenSettings.Models.Responses.GetGroupedAppsResponse.html#OpenSettings_Models_Responses_GetGroupedAppsResponse_AppsCount
+  name: AppsCount
+  nameWithType: GetGroupedAppsResponse.AppsCount
+  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount
 - uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps*
   commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupNameToApps
   href: OpenSettings.Models.Responses.GetGroupedAppsResponse.html#OpenSettings_Models_Responses_GetGroupedAppsResponse_GroupNameToApps
@@ -520,26 +543,3 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
-  href: OpenSettings.Models.Responses.GetGroupedAppsResponse.html#OpenSettings_Models_Responses_GetGroupedAppsResponse_GroupsCount
-  name: GroupsCount
-  nameWithType: GetGroupedAppsResponse.GroupsCount
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.GroupsCount
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount*
-  commentId: Overload:OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount
-  href: OpenSettings.Models.Responses.GetGroupedAppsResponse.html#OpenSettings_Models_Responses_GetGroupedAppsResponse_AppsCount
-  name: AppsCount
-  nameWithType: GetGroupedAppsResponse.AppsCount
-  fullName: OpenSettings.Models.Responses.GetGroupedAppsResponse.AppsCount

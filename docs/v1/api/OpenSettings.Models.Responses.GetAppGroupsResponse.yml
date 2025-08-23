@@ -5,6 +5,7 @@ items:
   id: GetAppGroupsResponse
   parent: OpenSettings.Models.Responses
   children:
+  - OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor
   - OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor(OpenSettings.Models.Responses.GetAppGroupsResponseGroup[])
   - OpenSettings.Models.Responses.GetAppGroupsResponse.AppGroups
   - OpenSettings.Models.Responses.GetAppGroupsResponse.MaxSortOrder
@@ -40,6 +41,35 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor
+  commentId: M:OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor
+  id: '#ctor'
+  parent: OpenSettings.Models.Responses.GetAppGroupsResponse
+  langs:
+  - csharp
+  - vb
+  name: GetAppGroupsResponse()
+  nameWithType: GetAppGroupsResponse.GetAppGroupsResponse()
+  fullName: OpenSettings.Models.Responses.GetAppGroupsResponse.GetAppGroupsResponse()
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetGroupsResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupsResponse.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public GetAppGroupsResponse()
+    content.vb: Public Sub New()
+  overload: OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor*
+  nameWithType.vb: GetAppGroupsResponse.New()
+  fullName.vb: OpenSettings.Models.Responses.GetAppGroupsResponse.New()
+  name.vb: New()
 - uid: OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor(OpenSettings.Models.Responses.GetAppGroupsResponseGroup[])
   commentId: M:OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor(OpenSettings.Models.Responses.GetAppGroupsResponseGroup[])
   id: '#ctor(OpenSettings.Models.Responses.GetAppGroupsResponseGroup[])'
@@ -58,7 +88,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupsResponse.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -90,16 +120,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MinSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupsResponse.cs
-    startLine: 28
+    startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MinSortOrder { get; }
+    content: public int MinSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MinSortOrder As Integer
+    content.vb: Public Property MinSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetAppGroupsResponse.MinSortOrder*
 - uid: OpenSettings.Models.Responses.GetAppGroupsResponse.MaxSortOrder
   commentId: P:OpenSettings.Models.Responses.GetAppGroupsResponse.MaxSortOrder
@@ -119,16 +149,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MaxSortOrder
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupsResponse.cs
-    startLine: 30
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public int MaxSortOrder { get; }
+    content: public int MaxSortOrder { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property MaxSortOrder As Integer
+    content.vb: Public Property MaxSortOrder As Integer
   overload: OpenSettings.Models.Responses.GetAppGroupsResponse.MaxSortOrder*
 - uid: OpenSettings.Models.Responses.GetAppGroupsResponse.AppGroups
   commentId: P:OpenSettings.Models.Responses.GetAppGroupsResponse.AppGroups
@@ -148,16 +178,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppGroups
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetGroupsResponse.cs
-    startLine: 32
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public GetAppGroupsResponseGroup[] AppGroups { get; }
+    content: public GetAppGroupsResponseGroup[] AppGroups { get; set; }
     parameters: []
     return:
       type: OpenSettings.Models.Responses.GetAppGroupsResponseGroup[]
-    content.vb: Public ReadOnly Property AppGroups As GetAppGroupsResponseGroup()
+    content.vb: Public Property AppGroups As GetAppGroupsResponseGroup()
   overload: OpenSettings.Models.Responses.GetAppGroupsResponse.AppGroups*
 references:
 - uid: OpenSettings.Models.Responses
@@ -429,7 +459,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor*
   commentId: Overload:OpenSettings.Models.Responses.GetAppGroupsResponse.#ctor
-  href: OpenSettings.Models.Responses.GetAppGroupsResponse.html#OpenSettings_Models_Responses_GetAppGroupsResponse__ctor_OpenSettings_Models_Responses_GetAppGroupsResponseGroup___
+  href: OpenSettings.Models.Responses.GetAppGroupsResponse.html#OpenSettings_Models_Responses_GetAppGroupsResponse__ctor
   name: GetAppGroupsResponse
   nameWithType: GetAppGroupsResponse.GetAppGroupsResponse
   fullName: OpenSettings.Models.Responses.GetAppGroupsResponse.GetAppGroupsResponse

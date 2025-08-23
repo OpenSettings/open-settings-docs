@@ -23,8 +23,7 @@ items:
   - OpenSettings.Configurations.OpenSettingsConfiguration.Selection
   - OpenSettings.Configurations.OpenSettingsConfiguration.Spa
   - OpenSettings.Configurations.OpenSettingsConfiguration.StoreInSeparateFile
-  - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+  - OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
   langs:
   - csharp
   - vb
@@ -39,7 +38,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: OpenSettingsConfiguration
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -81,7 +80,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -115,7 +114,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -160,7 +159,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceDynamicId
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -191,7 +190,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceName
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 59
+    startLine: 58
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -228,7 +227,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierName
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -270,7 +269,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Client
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -304,7 +303,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Selection
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 116
+    startLine: 115
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -335,7 +334,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Consumer
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 137
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -367,7 +366,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Provider
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 145
+    startLine: 144
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -399,7 +398,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Controller
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 153
+    startLine: 152
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -431,7 +430,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Spa
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 161
+    startLine: 160
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -445,91 +444,37 @@ items:
       description: A <xref href="OpenSettings.Configurations.SpaConfiguration" data-throw-if-not-resolved="false"></xref> object that holds the configuration for the OpenSettings Spa.
     content.vb: Public Property Spa As SpaConfiguration
   overload: OpenSettings.Configurations.OpenSettingsConfiguration.Spa*
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  id: SyncAppDataMaxRetryCount
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
+  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
+  id: SyncAppDataResilience
   parent: OpenSettings.Configurations.OpenSettingsConfiguration
   langs:
   - csharp
   - vb
-  name: SyncAppDataMaxRetryCount
-  nameWithType: OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
+  name: SyncAppDataResilience
+  nameWithType: OpenSettingsConfiguration.SyncAppDataResilience
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
   type: Property
   source:
     remote:
       path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: SyncAppDataMaxRetryCount
+    id: SyncAppDataResilience
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 184
+    startLine: 165
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
-  summary: >-
-    Gets or sets the maximum number of retries for initial syncing data. The retry behavior is determined as follows:
-
-    <ul><li>
-            <code>0</code> or any negative value other than <code>-1</code>: No retries (operation will fail immediately on failure).
-        </li><li>
-            <code>-1</code>: Infinite retries (operation will continue retrying until success).
-        </li><li>
-            Any positive integer: Retry up to the specified number of attempts.
-        </li></ul>
-    <p>
-
-    By default, the value is <code>-1</code>, which means infinite retries. Negative values other than <code>-1</code> are interpreted as "no retries" (equivalent to <code>0</code> retries), while <code>-1</code> signifies infinite retries. 
-
-    If set to a positive value, the system will attempt the operation that many times before giving up.
-
-    </p>
-
-    <remarks>
-
-    If the maximum retry count is reached, a <xref href="OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException" data-throw-if-not-resolved="false"></xref> will be thrown.
-
-    </remarks>
+  summary: Gets or sets the resilience configuration for synchronizing application data.
   example: []
   syntax:
-    content: public int SyncAppDataMaxRetryCount { get; set; }
+    content: public SyncAppDataResilienceConfiguration SyncAppDataResilience { get; set; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public Property SyncAppDataMaxRetryCount As Integer
-  overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount*
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  id: SyncAppDataRetryDelayMilliseconds
-  parent: OpenSettings.Configurations.OpenSettingsConfiguration
-  langs:
-  - csharp
-  - vb
-  name: SyncAppDataRetryDelayMilliseconds
-  nameWithType: OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  type: Property
-  source:
-    remote:
-      path: src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: SyncAppDataRetryDelayMilliseconds
-    path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 192
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Configurations
-  summary: Gets or sets the delay time in milliseconds between retry attempts when a sync app data operation fails.
-  example: []
-  syntax:
-    content: public int SyncAppDataRetryDelayMilliseconds { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-      description: The number of milliseconds to wait before retrying a failed sync app data operation. The default value is 1000 milliseconds.
-    content.vb: Public Property SyncAppDataRetryDelayMilliseconds As Integer
-  overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds*
+      type: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+    content.vb: Public Property SyncAppDataResilience As SyncAppDataResilienceConfiguration
+  overload: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience*
 - uid: OpenSettings.Configurations.OpenSettingsConfiguration.Operation
   commentId: P:OpenSettings.Configurations.OpenSettingsConfiguration.Operation
   id: Operation
@@ -548,7 +493,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Operation
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 199
+    startLine: 172
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -583,7 +528,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: StoreInSeparateFile
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 211
+    startLine: 184
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -625,7 +570,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IgnoreOnFileChange
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 228
+    startLine: 201
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -676,7 +621,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RegistrationMode
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 237
+    startLine: 210
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -711,7 +656,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsConsumerSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 247
+    startLine: 220
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -759,7 +704,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsProviderSelected
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 258
+    startLine: 231
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
@@ -807,11 +752,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LoggerFactory
     path: ../../../open-settings/src/OpenSettings/Configurations/OpenSettingsConfiguration.cs
-    startLine: 266
+    startLine: 254
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Configurations
-  summary: An optional logger factory used for logging information during the settings building process.
+  summary: An optional logger factory used for logging information during the building process.
+  remarks: >-
+    Behavior:
+
+    <ul><li><code>null</code> (default), OpenSettings will attempt to resolve <xref href="Microsoft.Extensions.Logging.ILoggerFactory" data-throw-if-not-resolved="false"></xref> from DI,
+        or fallback to <xref href="Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance" data-throw-if-not-resolved="false"></xref> if none is registered.</li><li>Assign a custom <xref href="Microsoft.Extensions.Logging.ILoggerFactory" data-throw-if-not-resolved="false"></xref>, OpenSettings uses the provided logger factory.</li><li>Assign <xref href="Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance" data-throw-if-not-resolved="false"></xref> explicitly, disables logging entirely.</li></ul>
   example: []
   syntax:
     content: >-
@@ -1265,35 +1215,19 @@ references:
   name: Spa
   nameWithType: OpenSettingsConfiguration.Spa
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.Spa
-- uid: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
-  commentId: T:OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
-  href: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException.html
-  name: SyncAppDataMaxRetryExceededException
-  nameWithType: SyncAppDataMaxRetryExceededException
-  fullName: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount*
-  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataMaxRetryCount
-  name: SyncAppDataMaxRetryCount
-  nameWithType: OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataMaxRetryCount
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds*
-  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataRetryDelayMilliseconds
-  name: SyncAppDataRetryDelayMilliseconds
-  nameWithType: OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataRetryDelayMilliseconds
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_SyncAppDataResilience
+  name: SyncAppDataResilience
+  nameWithType: OpenSettingsConfiguration.SyncAppDataResilience
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.SyncAppDataResilience
+- uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  commentId: T:OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.SyncAppDataResilienceConfiguration.html
+  name: SyncAppDataResilienceConfiguration
+  nameWithType: SyncAppDataResilienceConfiguration
+  fullName: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
 - uid: OpenSettings.Models.Operation.ReadOrInitialize
   commentId: F:OpenSettings.Models.Operation.ReadOrInitialize
   href: OpenSettings.Models.Operation.html#OpenSettings_Models_Operation_ReadOrInitialize
@@ -1478,12 +1412,6 @@ references:
   name: IsProviderSelected
   nameWithType: OpenSettingsConfiguration.IsProviderSelected
   fullName: OpenSettings.Configurations.OpenSettingsConfiguration.IsProviderSelected
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory*
-  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_LoggerFactory
-  name: LoggerFactory
-  nameWithType: OpenSettingsConfiguration.LoggerFactory
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
 - uid: Microsoft.Extensions.Logging.ILoggerFactory
   commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
   parent: Microsoft.Extensions.Logging
@@ -1492,6 +1420,19 @@ references:
   name: ILoggerFactory
   nameWithType: ILoggerFactory
   fullName: Microsoft.Extensions.Logging.ILoggerFactory
+- uid: Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance
+  commentId: F:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.abstractions.nullloggerfactory.instance
+  name: Instance
+  nameWithType: NullLoggerFactory.Instance
+  fullName: Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance
+- uid: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory*
+  commentId: Overload:OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
+  href: OpenSettings.Configurations.OpenSettingsConfiguration.html#OpenSettings_Configurations_OpenSettingsConfiguration_LoggerFactory
+  name: LoggerFactory
+  nameWithType: OpenSettingsConfiguration.LoggerFactory
+  fullName: OpenSettings.Configurations.OpenSettingsConfiguration.LoggerFactory
 - uid: Microsoft.Extensions.Logging
   commentId: N:Microsoft.Extensions.Logging
   isExternal: true

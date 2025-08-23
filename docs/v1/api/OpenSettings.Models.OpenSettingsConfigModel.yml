@@ -61,11 +61,11 @@ items:
   - OpenSettings
   namespace: OpenSettings.Models
   syntax:
-    content: public int ExpiresInSeconds { get; set; }
+    content: public double ExpiresInSeconds { get; set; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public Property ExpiresInSeconds As Integer
+      type: System.Double
+    content.vb: Public Property ExpiresInSeconds As Double
   overload: OpenSettings.Models.OpenSettingsConfigModel.ExpiresInSeconds*
 - uid: OpenSettings.Models.OpenSettingsConfigModel.Data
   commentId: P:OpenSettings.Models.OpenSettingsConfigModel.Data
@@ -362,17 +362,17 @@ references:
   name: ExpiresInSeconds
   nameWithType: OpenSettingsConfigModel.ExpiresInSeconds
   fullName: OpenSettings.Models.OpenSettingsConfigModel.ExpiresInSeconds
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: System.Double
+  commentId: T:System.Double
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
 - uid: OpenSettings.Models.OpenSettingsConfigModel.Data*
   commentId: Overload:OpenSettings.Models.OpenSettingsConfigModel.Data
   href: OpenSettings.Models.OpenSettingsConfigModel.html#OpenSettings_Models_OpenSettingsConfigModel_Data

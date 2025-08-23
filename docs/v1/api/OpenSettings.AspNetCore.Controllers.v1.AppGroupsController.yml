@@ -5,7 +5,7 @@ items:
   id: AppGroupsController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupsService)
+  - OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupService)
   - OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.CreateGroup(OpenSettings.AspNetCore.Models.Requests.CreateAppGroupRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.DeleteGroup(OpenSettings.AspNetCore.Models.Requests.DeleteAppGroupRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.DeleteUnmappedGroups(System.Threading.CancellationToken)
@@ -224,16 +224,16 @@ items:
     arguments:
     - type: System.String
       value: v1/app-groups
-- uid: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupsService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupsService)
-  id: '#ctor(OpenSettings.Services.Interfaces.IAppGroupsService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor(OpenSettings.Services.Interfaces.IAppGroupService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IAppGroupService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController
   langs:
   - csharp
   - vb
-  name: AppGroupsController(IAppGroupsService)
-  nameWithType: AppGroupsController.AppGroupsController(IAppGroupsService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.AppGroupsController(OpenSettings.Services.Interfaces.IAppGroupsService)
+  name: AppGroupsController(IAppGroupService)
+  nameWithType: AppGroupsController.AppGroupsController(IAppGroupService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.AppGroupsController(OpenSettings.Services.Interfaces.IAppGroupService)
   type: Constructor
   source:
     remote:
@@ -247,15 +247,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public AppGroupsController(IAppGroupsService appGroupsService)
+    content: public AppGroupsController(IAppGroupService appGroupsService)
     parameters:
     - id: appGroupsService
-      type: OpenSettings.Services.Interfaces.IAppGroupsService
-    content.vb: Public Sub New(appGroupsService As IAppGroupsService)
+      type: OpenSettings.Services.Interfaces.IAppGroupService
+    content.vb: Public Sub New(appGroupsService As IAppGroupService)
   overload: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor*
-  nameWithType.vb: AppGroupsController.New(IAppGroupsService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.New(OpenSettings.Services.Interfaces.IAppGroupsService)
-  name.vb: New(IAppGroupsService)
+  nameWithType.vb: AppGroupsController.New(IAppGroupService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.New(OpenSettings.Services.Interfaces.IAppGroupService)
+  name.vb: New(IAppGroupService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.GetGroups(OpenSettings.AspNetCore.Models.Requests.GetAppGroupsRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.GetGroups(OpenSettings.AspNetCore.Models.Requests.GetAppGroupsRequest,System.Threading.CancellationToken)
   id: GetGroups(OpenSettings.AspNetCore.Models.Requests.GetAppGroupsRequest,System.Threading.CancellationToken)
@@ -9373,20 +9373,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.html#OpenSettings_AspNetCore_Controllers_v1_AppGroupsController__ctor_OpenSettings_Services_Interfaces_IAppGroupsService_
+  href: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.html#OpenSettings_AspNetCore_Controllers_v1_AppGroupsController__ctor_OpenSettings_Services_Interfaces_IAppGroupService_
   name: AppGroupsController
   nameWithType: AppGroupsController.AppGroupsController
   fullName: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.AppGroupsController
   nameWithType.vb: AppGroupsController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppGroupsController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.IAppGroupsService
-  commentId: T:OpenSettings.Services.Interfaces.IAppGroupsService
+- uid: OpenSettings.Services.Interfaces.IAppGroupService
+  commentId: T:OpenSettings.Services.Interfaces.IAppGroupService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IAppGroupsService.html
-  name: IAppGroupsService
-  nameWithType: IAppGroupsService
-  fullName: OpenSettings.Services.Interfaces.IAppGroupsService
+  href: OpenSettings.Services.Interfaces.IAppGroupService.html
+  name: IAppGroupService
+  nameWithType: IAppGroupService
+  fullName: OpenSettings.Services.Interfaces.IAppGroupService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

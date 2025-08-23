@@ -5,8 +5,6 @@ items:
   id: ServiceCollectionExtensions
   parent: OpenSettings.Extensions
   children:
-  - OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  - OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
   - OpenSettings.Extensions.ServiceCollectionExtensions.ConfigureOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   langs:
   - csharp
@@ -22,7 +20,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceCollectionExtensions
     path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
@@ -60,12 +58,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ConfigureOpenSettings
     path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Extensions
   summary: >-
-    Configures OpenSettings for the application by iterating over the <xref href="OpenSettings.Constants.FullNameToLocalSetting" data-throw-if-not-resolved="false"></xref>
+    Configures OpenSettings for the application by iterating over the <xref href="OpenSettings.OpenSettingsDefaults.Caches.FullNameToLocalSetting" data-throw-if-not-resolved="false"></xref>
 
     and registering each setting type in the <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> based on the configuration.
 
@@ -95,91 +93,6 @@ items:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if <code class="paramref">services</code> is null.
-- uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  id: AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo)
-  isExtensionMethod: true
-  parent: OpenSettings.Extensions.ServiceCollectionExtensions
-  langs:
-  - csharp
-  - vb
-  name: AddOpenSettings(IServiceCollection, OpenSettingsConfiguration, ProviderInfo)
-  nameWithType: ServiceCollectionExtensions.AddOpenSettings(IServiceCollection, OpenSettingsConfiguration, ProviderInfo)
-  fullName: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: AddOpenSettings
-    path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 70
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Extensions
-  summary: >-
-    Adds OpenSettings services to the application's <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>. This registers services
-
-    necessary to run OpenSettings, based on the inherited <xref href="OpenSettings.Services.Interfaces.ISettings" data-throw-if-not-resolved="false"></xref> types and the registration type.
-  example: []
-  syntax:
-    content: public static IServiceCollection AddOpenSettings(this IServiceCollection services, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo)
-    parameters:
-    - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> to which OpenSettings services will be added.
-    - id: openSettingsConfiguration
-      type: OpenSettings.Configurations.OpenSettingsConfiguration
-      description: 'The configuration that governs the behavior of OpenSettings (such as the service type: Provider or Consumer).'
-    - id: providerInfo
-      type: OpenSettings.Models.ProviderInfo
-      description: Information about the provider being registered.
-    return:
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> with OpenSettings services registered.
-    content.vb: Public Shared Function AddOpenSettings(services As IServiceCollection, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo) As IServiceCollection
-  overload: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Thrown if <code class="paramref">services</code> or <code class="paramref">openSettingsConfiguration</code> is null.
-- uid: OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
-  commentId: M:OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
-  id: Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection,System.Type)
-  isExtensionMethod: true
-  parent: OpenSettings.Extensions.ServiceCollectionExtensions
-  langs:
-  - csharp
-  - vb
-  name: Configure(IServiceCollection, IConfigurationSection, Type)
-  nameWithType: ServiceCollectionExtensions.Configure(IServiceCollection, IConfigurationSection, Type)
-  fullName: OpenSettings.Extensions.ServiceCollectionExtensions.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfigurationSection, System.Type)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: Configure
-    path: ../../../open-settings/src/OpenSettings/Extensions/ServiceCollectionExtensions.cs
-    startLine: 313
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Extensions
-  syntax:
-    content: public static IServiceCollection Configure(this IServiceCollection services, IConfigurationSection section, Type optionsType)
-    parameters:
-    - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    - id: section
-      type: Microsoft.Extensions.Configuration.IConfigurationSection
-    - id: optionsType
-      type: System.Type
-    return:
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    content.vb: Public Shared Function Configure(services As IServiceCollection, section As IConfigurationSection, optionsType As Type) As IServiceCollection
-  overload: OpenSettings.Extensions.ServiceCollectionExtensions.Configure*
 references:
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
@@ -485,11 +398,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: OpenSettings.Constants.FullNameToLocalSetting
-  commentId: P:OpenSettings.Constants.FullNameToLocalSetting
+- uid: OpenSettings.OpenSettingsDefaults.Caches.FullNameToLocalSetting
+  commentId: P:OpenSettings.OpenSettingsDefaults.Caches.FullNameToLocalSetting
   name: FullNameToLocalSetting
-  nameWithType: Constants.FullNameToLocalSetting
-  fullName: OpenSettings.Constants.FullNameToLocalSetting
+  nameWithType: OpenSettingsDefaults.Caches.FullNameToLocalSetting
+  fullName: OpenSettings.OpenSettingsDefaults.Caches.FullNameToLocalSetting
 - uid: OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
   commentId: M:OpenSettings.Extensions.HostBuilderExtensions.UseOpenSettingsAsync(Microsoft.Extensions.Hosting.IHostBuilder,OpenSettings.Configurations.OpenSettingsConfiguration,System.Type[])
   isExternal: true
@@ -608,126 +521,3 @@ references:
     name: Configuration
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
-- uid: OpenSettings.Services.Interfaces.ISettings
-  commentId: T:OpenSettings.Services.Interfaces.ISettings
-  parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: OpenSettings.Services.Interfaces.ISettings
-- uid: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings*
-  commentId: Overload:OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings
-  href: OpenSettings.Extensions.ServiceCollectionExtensions.html#OpenSettings_Extensions_ServiceCollectionExtensions_AddOpenSettings_Microsoft_Extensions_DependencyInjection_IServiceCollection_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_
-  name: AddOpenSettings
-  nameWithType: ServiceCollectionExtensions.AddOpenSettings
-  fullName: OpenSettings.Extensions.ServiceCollectionExtensions.AddOpenSettings
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration
-  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
-  parent: OpenSettings.Configurations
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
-  name: OpenSettingsConfiguration
-  nameWithType: OpenSettingsConfiguration
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
-- uid: OpenSettings.Models.ProviderInfo
-  commentId: T:OpenSettings.Models.ProviderInfo
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.ProviderInfo.html
-  name: ProviderInfo
-  nameWithType: ProviderInfo
-  fullName: OpenSettings.Models.ProviderInfo
-- uid: OpenSettings.Services.Interfaces
-  commentId: N:OpenSettings.Services.Interfaces
-  href: OpenSettings.html
-  name: OpenSettings.Services.Interfaces
-  nameWithType: OpenSettings.Services.Interfaces
-  fullName: OpenSettings.Services.Interfaces
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Interfaces.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Services
-    name: Services
-    href: OpenSettings.Services.html
-  - name: .
-  - uid: OpenSettings.Services.Interfaces
-    name: Interfaces
-    href: OpenSettings.Services.Interfaces.html
-- uid: OpenSettings.Configurations
-  commentId: N:OpenSettings.Configurations
-  href: OpenSettings.html
-  name: OpenSettings.Configurations
-  nameWithType: OpenSettings.Configurations
-  fullName: OpenSettings.Configurations
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-- uid: OpenSettings.Extensions.ServiceCollectionExtensions.Configure*
-  commentId: Overload:OpenSettings.Extensions.ServiceCollectionExtensions.Configure
-  href: OpenSettings.Extensions.ServiceCollectionExtensions.html#OpenSettings_Extensions_ServiceCollectionExtensions_Configure_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfigurationSection_System_Type_
-  name: Configure
-  nameWithType: ServiceCollectionExtensions.Configure
-  fullName: OpenSettings.Extensions.ServiceCollectionExtensions.Configure
-- uid: Microsoft.Extensions.Configuration.IConfigurationSection
-  commentId: T:Microsoft.Extensions.Configuration.IConfigurationSection
-  parent: Microsoft.Extensions.Configuration
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationsection
-  name: IConfigurationSection
-  nameWithType: IConfigurationSection
-  fullName: Microsoft.Extensions.Configuration.IConfigurationSection
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.type
-  name: Type
-  nameWithType: Type
-  fullName: System.Type

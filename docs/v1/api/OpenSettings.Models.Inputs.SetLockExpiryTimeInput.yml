@@ -5,7 +5,7 @@ items:
   id: SetLockExpiryTimeInput
   parent: OpenSettings.Models.Inputs
   children:
-  - OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
+  - OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
   - OpenSettings.Models.Inputs.SetLockExpiryTimeInput.Key
   - OpenSettings.Models.Inputs.SetLockExpiryTimeInput.Owner
   langs:
@@ -97,35 +97,35 @@ items:
       type: System.String
     content.vb: Public Property Owner As String
   overload: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.Owner*
-- uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
-  commentId: P:OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
-  id: ExpiryTime
+- uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
+  commentId: P:OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
+  id: ExpiryDate
   parent: OpenSettings.Models.Inputs.SetLockExpiryTimeInput
   langs:
   - csharp
   - vb
-  name: ExpiryTime
-  nameWithType: SetLockExpiryTimeInput.ExpiryTime
-  fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
+  name: ExpiryDate
+  nameWithType: SetLockExpiryTimeInput.ExpiryDate
+  fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Inputs/SetLockExpiryTimeInput.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: ExpiryTime
+    id: ExpiryDate
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SetLockExpiryTimeInput.cs
     startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
   syntax:
-    content: public DateTime ExpiryTime { get; set; }
+    content: public DateTime ExpiryDate { get; set; }
     parameters: []
     return:
       type: System.DateTime
-    content.vb: Public Property ExpiryTime As Date
-  overload: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime*
+    content.vb: Public Property ExpiryDate As Date
+  overload: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate*
 references:
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
@@ -417,12 +417,12 @@ references:
   name: Owner
   nameWithType: SetLockExpiryTimeInput.Owner
   fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.Owner
-- uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime*
-  commentId: Overload:OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
-  href: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.html#OpenSettings_Models_Inputs_SetLockExpiryTimeInput_ExpiryTime
-  name: ExpiryTime
-  nameWithType: SetLockExpiryTimeInput.ExpiryTime
-  fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryTime
+- uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate*
+  commentId: Overload:OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
+  href: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.html#OpenSettings_Models_Inputs_SetLockExpiryTimeInput_ExpiryDate
+  name: ExpiryDate
+  nameWithType: SetLockExpiryTimeInput.ExpiryDate
+  fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.ExpiryDate
 - uid: System.DateTime
   commentId: T:System.DateTime
   parent: System

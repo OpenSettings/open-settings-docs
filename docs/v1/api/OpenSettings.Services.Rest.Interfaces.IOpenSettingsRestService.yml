@@ -29,6 +29,7 @@ items:
   inheritedMembers:
   - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsAsync(System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.IOpenSettingsService.GetConfigsDataAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
 references:
 - uid: OpenSettings.Services.Rest.Interfaces
   commentId: N:OpenSettings.Services.Rest.Interfaces
@@ -134,6 +135,34 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IOpenSettingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  name: GetNotificationsAsync(CancellationToken)
+  nameWithType: IOpenSettingsService.GetNotificationsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsService.GetNotificationsAsync(System.Threading.CancellationToken)
+    name: GetNotificationsAsync
+    href: OpenSettings.Services.Interfaces.IOpenSettingsService.html#OpenSettings_Services_Interfaces_IOpenSettingsService_GetNotificationsAsync_System_Threading_CancellationToken_
+  - name: (
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     isExternal: true

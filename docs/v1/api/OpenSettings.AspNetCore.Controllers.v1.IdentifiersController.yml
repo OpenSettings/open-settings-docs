@@ -5,7 +5,7 @@ items:
   id: IdentifiersController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifiersService)
+  - OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifierService)
   - OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.CreateIdentifier(OpenSettings.AspNetCore.Models.Requests.CreateIdentifierRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.DeleteIdentifier(OpenSettings.AspNetCore.Models.Requests.DeleteIdentifierRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.DeleteUnmappedIdentifiers(System.Threading.CancellationToken)
@@ -224,16 +224,16 @@ items:
     arguments:
     - type: System.String
       value: v1/identifiers
-- uid: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifiersService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifiersService)
-  id: '#ctor(OpenSettings.Services.Interfaces.IIdentifiersService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifierService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor(OpenSettings.Services.Interfaces.IIdentifierService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IIdentifierService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController
   langs:
   - csharp
   - vb
-  name: IdentifiersController(IIdentifiersService)
-  nameWithType: IdentifiersController.IdentifiersController(IIdentifiersService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.IdentifiersController(OpenSettings.Services.Interfaces.IIdentifiersService)
+  name: IdentifiersController(IIdentifierService)
+  nameWithType: IdentifiersController.IdentifiersController(IIdentifierService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.IdentifiersController(OpenSettings.Services.Interfaces.IIdentifierService)
   type: Constructor
   source:
     remote:
@@ -247,15 +247,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public IdentifiersController(IIdentifiersService identifiersService)
+    content: public IdentifiersController(IIdentifierService identifierService)
     parameters:
-    - id: identifiersService
-      type: OpenSettings.Services.Interfaces.IIdentifiersService
-    content.vb: Public Sub New(identifiersService As IIdentifiersService)
+    - id: identifierService
+      type: OpenSettings.Services.Interfaces.IIdentifierService
+    content.vb: Public Sub New(identifierService As IIdentifierService)
   overload: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor*
-  nameWithType.vb: IdentifiersController.New(IIdentifiersService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.New(OpenSettings.Services.Interfaces.IIdentifiersService)
-  name.vb: New(IIdentifiersService)
+  nameWithType.vb: IdentifiersController.New(IIdentifierService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.New(OpenSettings.Services.Interfaces.IIdentifierService)
+  name.vb: New(IIdentifierService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.GetIdentifiers(OpenSettings.AspNetCore.Models.Requests.GetIdentifiersRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.GetIdentifiers(OpenSettings.AspNetCore.Models.Requests.GetIdentifiersRequest,System.Threading.CancellationToken)
   id: GetIdentifiers(OpenSettings.AspNetCore.Models.Requests.GetIdentifiersRequest,System.Threading.CancellationToken)
@@ -628,7 +628,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateIdentifierSortOrder
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/IdentifiersController.cs
-    startLine: 144
+    startLine: 148
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -673,7 +673,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DragIdentifier
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/IdentifiersController.cs
-    startLine: 163
+    startLine: 167
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -718,7 +718,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReorderIdentifiers
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/IdentifiersController.cs
-    startLine: 183
+    startLine: 187
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -9373,20 +9373,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.html#OpenSettings_AspNetCore_Controllers_v1_IdentifiersController__ctor_OpenSettings_Services_Interfaces_IIdentifiersService_
+  href: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.html#OpenSettings_AspNetCore_Controllers_v1_IdentifiersController__ctor_OpenSettings_Services_Interfaces_IIdentifierService_
   name: IdentifiersController
   nameWithType: IdentifiersController.IdentifiersController
   fullName: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.IdentifiersController
   nameWithType.vb: IdentifiersController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.IdentifiersController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.IIdentifiersService
-  commentId: T:OpenSettings.Services.Interfaces.IIdentifiersService
+- uid: OpenSettings.Services.Interfaces.IIdentifierService
+  commentId: T:OpenSettings.Services.Interfaces.IIdentifierService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IIdentifiersService.html
-  name: IIdentifiersService
-  nameWithType: IIdentifiersService
-  fullName: OpenSettings.Services.Interfaces.IIdentifiersService
+  href: OpenSettings.Services.Interfaces.IIdentifierService.html
+  name: IIdentifierService
+  nameWithType: IIdentifierService
+  fullName: OpenSettings.Services.Interfaces.IIdentifierService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

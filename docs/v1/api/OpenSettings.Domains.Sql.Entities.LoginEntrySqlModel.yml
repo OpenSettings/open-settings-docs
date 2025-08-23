@@ -1,0 +1,1402 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  id: LoginEntrySqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+  langs:
+  - csharp
+  - vb
+  name: LoginEntrySqlModel
+  nameWithType: LoginEntrySqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LoginEntrySqlModel
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: >-
+      [Table("LoginEntries")]
+
+      public class LoginEntrySqlModel : EntityBase<Guid>
+    content.vb: >-
+      <Table("LoginEntries")>
+
+      Public Class LoginEntrySqlModel Inherits EntityBase(Of Guid)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LoginEntries
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+  id: StateId
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: StateId
+  nameWithType: LoginEntrySqlModel.StateId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StateId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The state id which relevant to login.
+  example: []
+  syntax:
+    content: public Guid StateId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property StateId As Guid
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+  id: Issuer
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Issuer
+  nameWithType: LoginEntrySqlModel.Issuer
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Issuer
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The issuer which created the login entry.
+  example: []
+  syntax:
+    content: public Guid Issuer { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Issuer As Guid
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+  id: Audience
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Audience
+  nameWithType: LoginEntrySqlModel.Audience
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Audience
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The audience which initiated the login.
+  example: []
+  syntax:
+    content: public Guid Audience { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Audience As Guid
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+  id: ProviderRegistryId
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: ProviderRegistryId
+  nameWithType: LoginEntrySqlModel.ProviderRegistryId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderRegistryId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 30
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    The instance id of the provider service which processed the login.
+
+    This comes from <xref href="OpenSettings.Services.ProviderCoordinationTimedService.ProviderRegistryId" data-throw-if-not-resolved="false"></xref> which corresponds the ProviderRegistry's id field.
+  example: []
+  syntax:
+    content: public Guid? ProviderRegistryId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property ProviderRegistryId As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+  id: UserId
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: LoginEntrySqlModel.UserId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 32
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public Guid? UserId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property UserId As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+  id: RemoteIpAddress
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: RemoteIpAddress
+  nameWithType: LoginEntrySqlModel.RemoteIpAddress
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RemoteIpAddress
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 34
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string RemoteIpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RemoteIpAddress As String
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+  id: UserAgent
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserAgent
+  nameWithType: LoginEntrySqlModel.UserAgent
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserAgent
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 36
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string UserAgent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserAgent As String
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+  id: AuthType
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: AuthType
+  nameWithType: LoginEntrySqlModel.AuthType
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AuthType
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 38
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public AuthType AuthType { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.AuthType
+    content.vb: Public Property AuthType As AuthType
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+  id: AuthMethod
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: AuthMethod
+  nameWithType: LoginEntrySqlModel.AuthMethod
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AuthMethod
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 40
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public AuthMethod AuthMethod { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.AuthMethod
+    content.vb: Public Property AuthMethod As AuthMethod
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+  id: AccessToken
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: AccessToken
+  nameWithType: LoginEntrySqlModel.AccessToken
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AccessToken
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 42
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string AccessToken { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AccessToken As String
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+  id: AccessTokenExpiryDate
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenExpiryDate
+  nameWithType: LoginEntrySqlModel.AccessTokenExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AccessTokenExpiryDate
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 44
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public DateTimeOffset? AccessTokenExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property AccessTokenExpiryDate As DateTimeOffset?
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+  id: RefreshToken
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: RefreshToken
+  nameWithType: LoginEntrySqlModel.RefreshToken
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RefreshToken
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 46
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string RefreshToken { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RefreshToken As String
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+  id: RefreshTokenExpiryDate
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenExpiryDate
+  nameWithType: LoginEntrySqlModel.RefreshTokenExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RefreshTokenExpiryDate
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 48
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public DateTimeOffset? RefreshTokenExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property RefreshTokenExpiryDate As DateTimeOffset?
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+  id: Scopes
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Scopes
+  nameWithType: LoginEntrySqlModel.Scopes
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Scopes
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 50
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string Scopes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scopes As String
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+  id: IsSuccessful
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: IsSuccessful
+  nameWithType: LoginEntrySqlModel.IsSuccessful
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsSuccessful
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 55
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Specify whether login completed successfully.
+  example: []
+  syntax:
+    content: public bool IsSuccessful { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSuccessful As Boolean
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+  id: Metadata
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: LoginEntrySqlModel.Metadata
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Metadata
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 60
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Additional metadata associated with the login entry, stored as key-value pairs.
+  example: []
+  syntax:
+    content: public Dictionary<string, object> Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Property Metadata As Dictionary(Of String, Object)
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata*
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+  id: User
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: LoginEntrySqlModel.User
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: User
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The user who logged in.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("UserId")]
+
+      public virtual UserSqlModel User { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.UserSqlModel
+    content.vb: >-
+      <ForeignKey("UserId")>
+
+      Public Overridable Property User As UserSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UserId
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+  commentId: P:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+  id: ProviderRegistry
+  parent: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: ProviderRegistry
+  nameWithType: LoginEntrySqlModel.ProviderRegistry
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderRegistry
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LoginEntrySqlModel.cs
+    startLine: 68
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: >-
+      [ForeignKey("ProviderRegistryId")]
+
+      public virtual ProviderRegistrySqlModel ProviderRegistry { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+    content.vb: >-
+      <ForeignKey("ProviderRegistryId")>
+
+      Public Overridable Property ProviderRegistry As ProviderRegistrySqlModel
+  overload: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ProviderRegistryId
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<Guid>
+  nameWithType: EntityBase<Guid>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>
+  nameWithType.vb: EntityBase(Of Guid)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid)
+  name.vb: EntityBase(Of Guid)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<Guid>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.Id
+  nameWithType.vb: EntityBase(Of Guid).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<Guid>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.CreatedOn
+  nameWithType.vb: EntityBase(Of Guid).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<Guid>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Guid).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_StateId
+  name: StateId
+  nameWithType: LoginEntrySqlModel.StateId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.StateId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_Issuer
+  name: Issuer
+  nameWithType: LoginEntrySqlModel.Issuer
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Issuer
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_Audience
+  name: Audience
+  nameWithType: LoginEntrySqlModel.Audience
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Audience
+- uid: OpenSettings.Services.ProviderCoordinationTimedService.ProviderRegistryId
+  commentId: P:OpenSettings.Services.ProviderCoordinationTimedService.ProviderRegistryId
+  name: ProviderRegistryId
+  nameWithType: ProviderCoordinationTimedService.ProviderRegistryId
+  fullName: OpenSettings.Services.ProviderCoordinationTimedService.ProviderRegistryId
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_ProviderRegistryId
+  name: ProviderRegistryId
+  nameWithType: LoginEntrySqlModel.ProviderRegistryId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistryId
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_UserId
+  name: UserId
+  nameWithType: LoginEntrySqlModel.UserId
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserId
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: LoginEntrySqlModel.RemoteIpAddress
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RemoteIpAddress
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_UserAgent
+  name: UserAgent
+  nameWithType: LoginEntrySqlModel.UserAgent
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.UserAgent
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_AuthType
+  name: AuthType
+  nameWithType: LoginEntrySqlModel.AuthType
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthType
+- uid: OpenSettings.Models.AuthType
+  commentId: T:OpenSettings.Models.AuthType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.AuthType.html
+  name: AuthType
+  nameWithType: AuthType
+  fullName: OpenSettings.Models.AuthType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_AuthMethod
+  name: AuthMethod
+  nameWithType: LoginEntrySqlModel.AuthMethod
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AuthMethod
+- uid: OpenSettings.Models.AuthMethod
+  commentId: T:OpenSettings.Models.AuthMethod
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.AuthMethod.html
+  name: AuthMethod
+  nameWithType: AuthMethod
+  fullName: OpenSettings.Models.AuthMethod
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_AccessToken
+  name: AccessToken
+  nameWithType: LoginEntrySqlModel.AccessToken
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessToken
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_AccessTokenExpiryDate
+  name: AccessTokenExpiryDate
+  nameWithType: LoginEntrySqlModel.AccessTokenExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.AccessTokenExpiryDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_RefreshToken
+  name: RefreshToken
+  nameWithType: LoginEntrySqlModel.RefreshToken
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshToken
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_RefreshTokenExpiryDate
+  name: RefreshTokenExpiryDate
+  nameWithType: LoginEntrySqlModel.RefreshTokenExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.RefreshTokenExpiryDate
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_Scopes
+  name: Scopes
+  nameWithType: LoginEntrySqlModel.Scopes
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Scopes
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_IsSuccessful
+  name: IsSuccessful
+  nameWithType: LoginEntrySqlModel.IsSuccessful
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.IsSuccessful
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_Metadata
+  name: Metadata
+  nameWithType: LoginEntrySqlModel.Metadata
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.Metadata
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_User
+  name: User
+  nameWithType: LoginEntrySqlModel.User
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.User
+- uid: OpenSettings.Domains.Sql.Entities.UserSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.UserSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.UserSqlModel.html
+  name: UserSqlModel
+  nameWithType: UserSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.UserSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html#OpenSettings_Domains_Sql_Entities_LoginEntrySqlModel_ProviderRegistry
+  name: ProviderRegistry
+  nameWithType: LoginEntrySqlModel.ProviderRegistry
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.ProviderRegistry
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html
+  name: ProviderRegistrySqlModel
+  nameWithType: ProviderRegistrySqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel

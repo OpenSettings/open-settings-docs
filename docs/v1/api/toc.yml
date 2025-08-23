@@ -4,9 +4,6 @@ items:
   name: OpenSettings
   type: Namespace
   items:
-  - uid: OpenSettings.Constants
-    name: Constants
-    type: Class
   - uid: OpenSettings.Errors
     name: Errors
     type: Enum
@@ -59,6 +56,9 @@ items:
   - uid: OpenSettings.AspNetCore.Controllers.v1.TagsController
     name: TagsController
     type: Class
+  - uid: OpenSettings.AspNetCore.Controllers.v1.TokenController
+    name: TokenController
+    type: Class
   - uid: OpenSettings.AspNetCore.Controllers.v1.UsersController
     name: UsersController
     type: Class
@@ -76,9 +76,6 @@ items:
   name: OpenSettings.AspNetCore.Models.Requests
   type: Namespace
   items:
-  - uid: OpenSettings.AspNetCore.Models.Requests.AuthenticatedResponse
-    name: AuthenticatedResponse
-    type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.CopySettingToRequest
     name: CopySettingToRequest
     type: Class
@@ -151,6 +148,12 @@ items:
   - uid: OpenSettings.AspNetCore.Models.Requests.CreateTagRequestBody
     name: CreateTagRequestBody
     type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateUserRequest
+    name: CreateUserRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateUserRequestBody
+    name: CreateUserRequestBody
+    type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.DeleteAppGroupRequest
     name: DeleteAppGroupRequest
     type: Class
@@ -175,6 +178,9 @@ items:
   - uid: OpenSettings.AspNetCore.Models.Requests.DeleteTagRequest
     name: DeleteTagRequest
     type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.DeleteUserRequest
+    name: DeleteUserRequest
+    type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.DispatchNotificationsToUsersRequest
     name: DispatchNotificationsToUsersRequest
     type: Class
@@ -186,6 +192,15 @@ items:
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.FetchAppDataRequestBody
     name: FetchAppDataRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequest
+    name: GenerateMachineToMachineTokenRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBody
+    name: GenerateMachineToMachineTokenRequestBody
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GenerateMachineToMachineTokenRequestBodyClient
+    name: GenerateMachineToMachineTokenRequestBodyClient
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.GetAppGroupRequest
     name: GetAppGroupRequest
@@ -204,6 +219,9 @@ items:
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.GetAppsRequest
     name: GetAppsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetAuthStatusRequest
+    name: GetAuthStatusRequest
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.GetConfigurationByAppAndIdentifierRequest
     name: GetConfigurationByAppAndIdentifierRequest
@@ -232,8 +250,11 @@ items:
   - uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
     name: GetInstancesDataRequest
     type: Class
-  - uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingRequest
-    name: GetLocalSettingRequest
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetLocalSettingsRequest
+    name: GetLocalSettingsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
+    name: GetMeRequest
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.GetNotificationsRequest
     name: GetNotificationsRequest
@@ -279,6 +300,15 @@ items:
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.GetUserNotificationsRequest
     name: GetUserNotificationsRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.GetUserRequest
+    name: GetUserRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.LoginRequest
+    name: LoginRequest
+    type: Class
+  - uid: OpenSettings.AspNetCore.Models.Requests.LogoutRequest
+    name: LogoutRequest
     type: Class
   - uid: OpenSettings.AspNetCore.Models.Requests.MarkNotificationAsRequest
     name: MarkNotificationAsRequest
@@ -379,23 +409,9 @@ items:
   - uid: OpenSettings.AspNetCore.Models.Requests.UpdateTagSortOrderRequest
     name: UpdateTagSortOrderRequest
     type: Class
-- uid: OpenSettings.AspNetCore.Models.Responses
-  name: OpenSettings.AspNetCore.Models.Responses
-  type: Namespace
-  items:
-  - uid: OpenSettings.AspNetCore.Models.Responses.RefreshTokenResponse
-    name: RefreshTokenResponse
+  - uid: OpenSettings.AspNetCore.Models.Requests.UpdateUserRequest
+    name: UpdateUserRequest
     type: Class
-- uid: OpenSettings.AspNetCore.Services.Interfaces
-  name: OpenSettings.AspNetCore.Services.Interfaces
-  type: Namespace
-  items:
-  - uid: OpenSettings.AspNetCore.Services.Interfaces.IInstanceUrlResolverService
-    name: IInstanceUrlResolverService
-    type: Interface
-  - uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
-    name: IOpenSettingsTokenService
-    type: Interface
 - uid: OpenSettings.AspNetCore.Spa
   name: OpenSettings.AspNetCore.Spa
   type: Namespace
@@ -413,6 +429,9 @@ items:
   - uid: OpenSettings.Attributes.RegistrationModeAttribute
     name: RegistrationModeAttribute
     type: Class
+  - uid: OpenSettings.Attributes.SecretTextAttribute
+    name: SecretTextAttribute
+    type: Class
   - uid: OpenSettings.Attributes.StoreInSeparateFileAttribute
     name: StoreInSeparateFileAttribute
     type: Class
@@ -426,8 +445,8 @@ items:
   - uid: OpenSettings.Configurations.ControllerConfiguration
     name: ControllerConfiguration
     type: Class
-  - uid: OpenSettings.Configurations.OAuth2Configuration
-    name: OAuth2Configuration
+  - uid: OpenSettings.Configurations.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
     type: Class
   - uid: OpenSettings.Configurations.OpenSettingsConfiguration
     name: OpenSettingsConfiguration
@@ -446,6 +465,9 @@ items:
     type: Class
   - uid: OpenSettings.Configurations.SpaConfiguration
     name: SpaConfiguration
+    type: Class
+  - uid: OpenSettings.Configurations.SyncAppDataResilienceConfiguration
+    name: SyncAppDataResilienceConfiguration
     type: Class
 - uid: OpenSettings.Domains.Redis.DataContext
   name: OpenSettings.Domains.Redis.DataContext
@@ -486,8 +508,17 @@ items:
   - uid: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
     name: ConfigurationSqlModel
     type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+    name: DataProtectionKey
+    type: Class
   - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
     name: EntityBase<TId>
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+    name: GlobalConfigurationHistorySqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
+    name: GlobalConfigurationSqlModel
     type: Class
   - uid: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
     name: IdentifierSqlModel
@@ -500,6 +531,9 @@ items:
     type: Class
   - uid: OpenSettings.Domains.Sql.Entities.LockSqlModel
     name: LockSqlModel
+    type: Class
+  - uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+    name: LoginEntrySqlModel
     type: Class
   - uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
     name: NotificationSqlModel
@@ -559,27 +593,30 @@ items:
   name: OpenSettings.Exceptions
   type: Namespace
   items:
+  - uid: OpenSettings.Exceptions.AttemptTimeoutExceededException
+    name: AttemptTimeoutExceededException
+    type: Class
   - uid: OpenSettings.Exceptions.DuplicateSettingsNameException
     name: DuplicateSettingsNameException
     type: Class
+  - uid: OpenSettings.Exceptions.InvalidSecretTextAttributeUsageException
+    name: InvalidSecretTextAttributeUsageException
+    type: Class
+  - uid: OpenSettings.Exceptions.MaxRetryExceededException
+    name: MaxRetryExceededException
+    type: Class
   - uid: OpenSettings.Exceptions.MissingConfigurationWhenSkipInitialSyncAppDataException
     name: MissingConfigurationWhenSkipInitialSyncAppDataException
-    type: Class
-  - uid: OpenSettings.Exceptions.SyncAppDataMaxRetryExceededException
-    name: SyncAppDataMaxRetryExceededException
     type: Class
 - uid: OpenSettings.Extensions
   name: OpenSettings.Extensions
   type: Namespace
   items:
-  - uid: OpenSettings.Extensions.CacheModelExtensions
-    name: CacheModelExtensions
+  - uid: OpenSettings.Extensions.CacheEntryKeyExtensions
+    name: CacheEntryKeyExtensions
     type: Class
   - uid: OpenSettings.Extensions.ConfigurationBuilderExtensions
     name: ConfigurationBuilderExtensions
-    type: Class
-  - uid: OpenSettings.Extensions.DictionaryExtensions
-    name: DictionaryExtensions
     type: Class
   - uid: OpenSettings.Extensions.HostBuilderExtensions
     name: HostBuilderExtensions
@@ -606,6 +643,9 @@ items:
   - uid: OpenSettings.Helpers.JsonHelper
     name: JsonHelper
     type: Class
+  - uid: OpenSettings.Helpers.RsaPkcs8Helper
+    name: RsaPkcs8Helper
+    type: Class
   - uid: OpenSettings.Helpers.VersionHelper
     name: VersionHelper
     type: Class
@@ -616,9 +656,21 @@ items:
   - uid: OpenSettings.Models.AppType
     name: AppType
     type: Enum
-  - uid: OpenSettings.Models.CacheModel
-    name: CacheModel
+  - uid: OpenSettings.Models.AuthMethod
+    name: AuthMethod
+    type: Enum
+  - uid: OpenSettings.Models.AuthType
+    name: AuthType
+    type: Enum
+  - uid: OpenSettings.Models.CacheEntry
+    name: CacheEntry
     type: Class
+  - uid: OpenSettings.Models.CacheEntryKey
+    name: CacheEntryKey
+    type: Class
+  - uid: OpenSettings.Models.CallerType
+    name: CallerType
+    type: Enum
   - uid: OpenSettings.Models.ClientInfo
     name: ClientInfo
     type: Class
@@ -655,6 +707,9 @@ items:
   - uid: OpenSettings.Models.DataAccessType
     name: DataAccessType
     type: Enum
+  - uid: OpenSettings.Models.DelayBackoffType
+    name: DelayBackoffType
+    type: Enum
   - uid: OpenSettings.Models.FileMergeResult
     name: FileMergeResult
     type: Class
@@ -682,8 +737,8 @@ items:
   - uid: OpenSettings.Models.NotificationType
     name: NotificationType
     type: Enum
-  - uid: OpenSettings.Models.OAuth2Info
-    name: OAuth2Info
+  - uid: OpenSettings.Models.OpenIdConnectInfo
+    name: OpenIdConnectInfo
     type: Class
   - uid: OpenSettings.Models.OpenSettingsAssemblyInfo
     name: OpenSettingsAssemblyInfo
@@ -700,6 +755,9 @@ items:
   - uid: OpenSettings.Models.Operation
     name: Operation
     type: Enum
+  - uid: OpenSettings.Models.PackInfo
+    name: PackInfo
+    type: Class
   - uid: OpenSettings.Models.PagingInfo
     name: PagingInfo
     type: Class
@@ -715,6 +773,12 @@ items:
   - uid: OpenSettings.Models.ProviderRegistryScheme
     name: ProviderRegistryScheme
     type: Enum
+  - uid: OpenSettings.Models.ProviderRegistryType
+    name: ProviderRegistryType
+    type: Enum
+  - uid: OpenSettings.Models.ProviderTokenInfo
+    name: ProviderTokenInfo
+    type: Class
   - uid: OpenSettings.Models.RedisInfo
     name: RedisInfo
     type: Class
@@ -745,6 +809,12 @@ items:
   - uid: OpenSettings.Models.SortDirection
     name: SortDirection
     type: Enum
+  - uid: OpenSettings.Models.TokenKeySet
+    name: TokenKeySet
+    type: Class
+  - uid: OpenSettings.Models.TokenKeySetSigningKey
+    name: TokenKeySetSigningKey
+    type: Class
 - uid: OpenSettings.Models.Inputs
   name: OpenSettings.Models.Inputs
   type: Namespace
@@ -791,6 +861,9 @@ items:
   - uid: OpenSettings.Models.Inputs.CreateTagInput
     name: CreateTagInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.CreateUserInput
+    name: CreateUserInput
+    type: Class
   - uid: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
     name: DeleteAppIdentifierMappingInput
     type: Class
@@ -818,6 +891,9 @@ items:
   - uid: OpenSettings.Models.Inputs.DeleteTagInput
     name: DeleteTagInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.DeleteUserInput
+    name: DeleteUserInput
+    type: Class
   - uid: OpenSettings.Models.Inputs.DispatchNotificationsToUsersInput
     name: DispatchNotificationsToUsersInput
     type: Class
@@ -826,6 +902,12 @@ items:
     type: Class
   - uid: OpenSettings.Models.Inputs.FetchAppDataInput
     name: FetchAppDataInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GenerateTokenForMachineInput
+    name: GenerateTokenForMachineInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GenerateTokenForUserInput
+    name: GenerateTokenForUserInput
     type: Class
   - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
     name: GetAppIdentifierMappingByAppAndIdentifierInput
@@ -841,6 +923,9 @@ items:
     type: Class
   - uid: OpenSettings.Models.Inputs.GetAppsInput
     name: GetAppsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetAuthStatusInput
+    name: GetAuthStatusInput
     type: Class
   - uid: OpenSettings.Models.Inputs.GetConfigurationByAppAndIdentifierInput
     name: GetConfigurationByAppAndIdentifierInput
@@ -866,12 +951,21 @@ items:
   - uid: OpenSettings.Models.Inputs.GetIdentifiersInput
     name: GetIdentifiersInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.GetIdentityInput
+    name: GetIdentityInput
+    type: Class
   - uid: OpenSettings.Models.Inputs.GetInstancesDataInput
     name: GetInstancesDataInput
     type: Class
   - uid: OpenSettings.Models.Inputs.GetInstancesInput
     name: GetInstancesInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.GetMeInput
+    name: GetMeInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.GetMeInputIncludes
+    name: GetMeInputIncludes
+    type: Enum
   - uid: OpenSettings.Models.Inputs.GetNotificationsInput
     name: GetNotificationsInput
     type: Class
@@ -920,8 +1014,17 @@ items:
   - uid: OpenSettings.Models.Inputs.GetTagsInput
     name: GetTagsInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.GetUserInput
+    name: GetUserInput
+    type: Class
   - uid: OpenSettings.Models.Inputs.GetUserNotificationsInput
     name: GetUserNotificationsInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.LoginInput
+    name: LoginInput
+    type: Class
+  - uid: OpenSettings.Models.Inputs.LogoutInput
+    name: LogoutInput
     type: Class
   - uid: OpenSettings.Models.Inputs.MarkNotificationAsInput
     name: MarkNotificationAsInput
@@ -1007,6 +1110,9 @@ items:
   - uid: OpenSettings.Models.Inputs.UpdateTagSortOrderInput
     name: UpdateTagSortOrderInput
     type: Class
+  - uid: OpenSettings.Models.Inputs.UpdateUserInput
+    name: UpdateUserInput
+    type: Class
 - uid: OpenSettings.Models.Responses
   name: OpenSettings.Models.Responses
   type: Namespace
@@ -1061,6 +1167,12 @@ items:
     type: Class
   - uid: OpenSettings.Models.Responses.FetchAppDataResponseSetting
     name: FetchAppDataResponseSetting
+    type: Class
+  - uid: OpenSettings.Models.Responses.GenerateTokenResponse
+    name: GenerateTokenResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GenerateTokenResponseToken
+    name: GenerateTokenResponseToken
     type: Class
   - uid: OpenSettings.Models.Responses.GetAppGroupResponse
     name: GetAppGroupResponse
@@ -1179,6 +1291,9 @@ items:
   - uid: OpenSettings.Models.Responses.GetInstancesResponseInstance
     name: GetInstancesResponseInstance
     type: Class
+  - uid: OpenSettings.Models.Responses.GetMeResponse
+    name: GetMeResponse
+    type: Class
   - uid: OpenSettings.Models.Responses.GetNotificationsResponse
     name: GetNotificationsResponse
     type: Class
@@ -1187,6 +1302,9 @@ items:
     type: Class
   - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponse
     name: GetOpenSettingsNotificationsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetOpenSettingsNotificationsResponseNotification
+    name: GetOpenSettingsNotificationsResponseNotification
     type: Class
   - uid: OpenSettings.Models.Responses.GetOrCreateResponse
     name: GetOrCreateResponse
@@ -1208,6 +1326,9 @@ items:
     type: Class
   - uid: OpenSettings.Models.Responses.GetPaginatedTagsResponse
     name: GetPaginatedTagsResponse
+    type: Class
+  - uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+    name: GetPrimaryProviderResponse
     type: Class
   - uid: OpenSettings.Models.Responses.GetRegisteredAppResponse
     name: GetRegisteredAppResponse
@@ -1287,6 +1408,9 @@ items:
   - uid: OpenSettings.Models.Responses.SyncAppDataResponse
     name: SyncAppDataResponse
     type: Class
+  - uid: OpenSettings.Models.Responses.SyncAppDataResponseClient
+    name: SyncAppDataResponseClient
+    type: Class
   - uid: OpenSettings.Models.Responses.SyncAppDataResponseConfiguration
     name: SyncAppDataResponseConfiguration
     type: Class
@@ -1343,53 +1467,77 @@ items:
   name: OpenSettings.Services.Interfaces
   type: Namespace
   items:
-  - uid: OpenSettings.Services.Interfaces.IAppGroupsService
-    name: IAppGroupsService
+  - uid: OpenSettings.Services.Interfaces.IAppGroupService
+    name: IAppGroupService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
-    name: IAppIdentifierMappingsService
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingService
+    name: IAppIdentifierMappingService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IAppTagMappingsService
-    name: IAppTagMappingsService
+  - uid: OpenSettings.Services.Interfaces.IAppService
+    name: IAppService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IAppsService
-    name: IAppsService
+  - uid: OpenSettings.Services.Interfaces.IAppTagMappingService
+    name: IAppTagMappingService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IConfigurationsService
-    name: IConfigurationsService
+  - uid: OpenSettings.Services.Interfaces.IAuthService
+    name: IAuthService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IConfigurationService
+    name: IConfigurationService
     type: Interface
   - uid: OpenSettings.Services.Interfaces.IDataChangeService
     name: IDataChangeService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IIdentifiersService
-    name: IIdentifiersService
+  - uid: OpenSettings.Services.Interfaces.IGlobalConfigurationService
+    name: IGlobalConfigurationService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IInstancesService
-    name: IInstancesService
+  - uid: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService
+    name: IGlobalConfigurationSqlService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.ILicensesService
-    name: ILicensesService
+  - uid: OpenSettings.Services.Interfaces.IIdentifierService
+    name: IIdentifierService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IInstanceService
+    name: IInstanceService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IInstanceUrlResolverService
+    name: IInstanceUrlResolverService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.ILicenseService
+    name: ILicenseService
     type: Interface
   - uid: OpenSettings.Services.Interfaces.ILocalSettingsService
     name: ILocalSettingsService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.ILocksService
-    name: ILocksService
+  - uid: OpenSettings.Services.Interfaces.ILockService
+    name: ILockService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.INotificationsService
-    name: INotificationsService
+  - uid: OpenSettings.Services.Interfaces.INotificationService
+    name: INotificationService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+    name: IOpenSettingsMemoryCache
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IOpenSettingsNotificationSyncTimedService
+    name: IOpenSettingsNotificationSyncTimedService
     type: Interface
   - uid: OpenSettings.Services.Interfaces.IOpenSettingsService
     name: IOpenSettingsService
     type: Interface
+  - uid: OpenSettings.Services.Interfaces.IPollingSettingTimedService
+    name: IPollingSettingTimedService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IProviderCoordinationTimedService
+    name: IProviderCoordinationTimedService
+    type: Interface
   - uid: OpenSettings.Services.Interfaces.IProviderService
     name: IProviderService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.ISettingClassesService
-    name: ISettingClassesService
+  - uid: OpenSettings.Services.Interfaces.ISettingClassService
+    name: ISettingClassService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.ISettingHistoriesService
-    name: ISettingHistoriesService
+  - uid: OpenSettings.Services.Interfaces.ISettingHistoryService
+    name: ISettingHistoryService
     type: Interface
   - uid: OpenSettings.Services.Interfaces.ISettings
     name: ISettings
@@ -1400,52 +1548,48 @@ items:
   - uid: OpenSettings.Services.Interfaces.ITagsService
     name: ITagsService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IUserNotificationMappingsService
-    name: IUserNotificationMappingsService
+  - uid: OpenSettings.Services.Interfaces.ITokenRestService
+    name: ITokenRestService
     type: Interface
-  - uid: OpenSettings.Services.Interfaces.IUsersService
-    name: IUsersService
+  - uid: OpenSettings.Services.Interfaces.ITokenService
+    name: ITokenService
     type: Interface
-- uid: OpenSettings.Services.MemoryCache
-  name: OpenSettings.Services.MemoryCache
-  type: Namespace
-  items:
-  - uid: OpenSettings.Services.MemoryCache.MemoryCacheKeys
-    name: MemoryCacheKeys
-    type: Class
-  - uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-    name: OpenSettingsMemoryCache
-    type: Class
+  - uid: OpenSettings.Services.Interfaces.IUserNotificationMappingService
+    name: IUserNotificationMappingService
+    type: Interface
+  - uid: OpenSettings.Services.Interfaces.IUserService
+    name: IUserService
+    type: Interface
 - uid: OpenSettings.Services.Rest
   name: OpenSettings.Services.Rest
   type: Namespace
   items:
-  - uid: OpenSettings.Services.Rest.AppGroupsRestService
-    name: AppGroupsRestService
+  - uid: OpenSettings.Services.Rest.AppGroupRestService
+    name: AppGroupRestService
     type: Class
   - uid: OpenSettings.Services.Rest.AppIdentifierMappingsRestService
     name: AppIdentifierMappingsRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.AppTagMappingsRestService
-    name: AppTagMappingsRestService
+  - uid: OpenSettings.Services.Rest.AppRestService
+    name: AppRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.AppsRestService
-    name: AppsRestService
+  - uid: OpenSettings.Services.Rest.AppTagMappingRestService
+    name: AppTagMappingRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.ConfigurationsRestService
-    name: ConfigurationsRestService
+  - uid: OpenSettings.Services.Rest.ConfigurationRestService
+    name: ConfigurationRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.IdentifiersRestService
-    name: IdentifiersRestService
+  - uid: OpenSettings.Services.Rest.IdentifierRestService
+    name: IdentifierRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.InstancesRestService
-    name: InstancesRestService
+  - uid: OpenSettings.Services.Rest.InstanceRestService
+    name: InstanceRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.LicensesRestService
-    name: LicensesRestService
+  - uid: OpenSettings.Services.Rest.LicenseRestService
+    name: LicenseRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.NotificationsRestService
-    name: NotificationsRestService
+  - uid: OpenSettings.Services.Rest.NotificationRestService
+    name: NotificationRestService
     type: Class
   - uid: OpenSettings.Services.Rest.OpenSettingsRestService
     name: OpenSettingsRestService
@@ -1456,17 +1600,17 @@ items:
   - uid: OpenSettings.Services.Rest.QueryBuilder
     name: QueryBuilder
     type: Class
-  - uid: OpenSettings.Services.Rest.SettingClassesRestService
-    name: SettingClassesRestService
+  - uid: OpenSettings.Services.Rest.SettingClassRestService
+    name: SettingClassRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.SettingHistoriesRestService
-    name: SettingHistoriesRestService
+  - uid: OpenSettings.Services.Rest.SettingHistoryRestService
+    name: SettingHistoryRestService
     type: Class
   - uid: OpenSettings.Services.Rest.SettingsRestService
     name: SettingsRestService
     type: Class
-  - uid: OpenSettings.Services.Rest.TagsRestService
-    name: TagsRestService
+  - uid: OpenSettings.Services.Rest.TagRestService
+    name: TagRestService
     type: Class
   - uid: OpenSettings.Services.Rest.UsersRestService
     name: UsersRestService
@@ -1475,32 +1619,35 @@ items:
   name: OpenSettings.Services.Rest.Interfaces
   type: Namespace
   items:
-  - uid: OpenSettings.Services.Rest.Interfaces.IAppGroupsRestService
-    name: IAppGroupsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppGroupRestService
+    name: IAppGroupRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
-    name: IAppIdentifierMappingsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingRestService
+    name: IAppIdentifierMappingRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IAppTagMappingsRestService
-    name: IAppTagMappingsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppRestService
+    name: IAppRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IAppsRestService
-    name: IAppsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IAppTagMappingRestService
+    name: IAppTagMappingRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IConfigurationsRestService
-    name: IConfigurationsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IAuthRestService
+    name: IAuthRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IIdentifiersRestService
-    name: IIdentifiersRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IConfigurationRestService
+    name: IConfigurationRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IInstancesRestService
-    name: IInstancesRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IIdentifierRestService
+    name: IIdentifierRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
-    name: ILicensesRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IInstanceRestService
+    name: IInstanceRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.INotificationsRestService
-    name: INotificationsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.ILicenseRestService
+    name: ILicenseRestService
+    type: Interface
+  - uid: OpenSettings.Services.Rest.Interfaces.INotificationRestService
+    name: INotificationRestService
     type: Interface
   - uid: OpenSettings.Services.Rest.Interfaces.IOpenSettingsRestService
     name: IOpenSettingsRestService
@@ -1508,26 +1655,26 @@ items:
   - uid: OpenSettings.Services.Rest.Interfaces.IProviderRestService
     name: IProviderRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.ISettingClassesRestService
-    name: ISettingClassesRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.ISettingClassRestService
+    name: ISettingClassRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.ISettingHistoriesRestService
-    name: ISettingHistoriesRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.ISettingHistoryRestService
+    name: ISettingHistoryRestService
     type: Interface
   - uid: OpenSettings.Services.Rest.Interfaces.ISettingsRestService
     name: ISettingsRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.ITagsRestService
-    name: ITagsRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.ITagRestService
+    name: ITagRestService
     type: Interface
-  - uid: OpenSettings.Services.Rest.Interfaces.IUsersRestService
-    name: IUsersRestService
+  - uid: OpenSettings.Services.Rest.Interfaces.IUserRestService
+    name: IUserRestService
     type: Interface
 - uid: OpenSettings.Services.Sql.Interfaces
   name: OpenSettings.Services.Sql.Interfaces
   type: Namespace
   items:
-  - uid: OpenSettings.Services.Sql.Interfaces.IUserNotificationMappingsSqlService
-    name: IUserNotificationMappingsSqlService
+  - uid: OpenSettings.Services.Sql.Interfaces.IUserNotificationMappingSqlService
+    name: IUserNotificationMappingSqlService
     type: Interface
 memberLayout: SamePage

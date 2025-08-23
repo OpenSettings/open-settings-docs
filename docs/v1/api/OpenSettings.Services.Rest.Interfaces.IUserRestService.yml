@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IUserRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IUserRestService
+  id: IUserRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IUserRestService
+  nameWithType: IUserRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IUserRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/IUserRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IUserRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/IUserRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IUserRestService : IUserService'
+    content.vb: Public Interface IUserRestService Inherits IUserService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetOrCreateUserAsync_OpenSettings_Models_Inputs_GetOrCreateUserInput_System_Threading_CancellationToken_
+  name: GetOrCreateUserAsync(GetOrCreateUserInput, CancellationToken)
+  nameWithType: IUserService.GetOrCreateUserAsync(GetOrCreateUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+    name: GetOrCreateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetOrCreateUserAsync_OpenSettings_Models_Inputs_GetOrCreateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput
+    name: GetOrCreateUserInput
+    href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetOrCreateUserAsync(OpenSettings.Models.Inputs.GetOrCreateUserInput,System.Threading.CancellationToken)
+    name: GetOrCreateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetOrCreateUserAsync_OpenSettings_Models_Inputs_GetOrCreateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput
+    name: GetOrCreateUserInput
+    href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_CreateUserAsync_OpenSettings_Models_Inputs_CreateUserInput_System_Threading_CancellationToken_
+  name: CreateUserAsync(CreateUserInput, CancellationToken)
+  nameWithType: IUserService.CreateUserAsync(CreateUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput,System.Threading.CancellationToken)
+    name: CreateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_CreateUserAsync_OpenSettings_Models_Inputs_CreateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateUserInput
+    name: CreateUserInput
+    href: OpenSettings.Models.Inputs.CreateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.CreateUserAsync(OpenSettings.Models.Inputs.CreateUserInput,System.Threading.CancellationToken)
+    name: CreateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_CreateUserAsync_OpenSettings_Models_Inputs_CreateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateUserInput
+    name: CreateUserInput
+    href: OpenSettings.Models.Inputs.CreateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetPaginatedUsersAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  name: GetPaginatedUsersAsync(GetPaginatedInput, CancellationToken)
+  nameWithType: IUserService.GetPaginatedUsersAsync(GetPaginatedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+    name: GetPaginatedUsersAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetPaginatedUsersAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedInput
+    name: GetPaginatedInput
+    href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetPaginatedUsersAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+    name: GetPaginatedUsersAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetPaginatedUsersAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedInput
+    name: GetPaginatedInput
+    href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserByIdAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  name: GetUserByIdAsync(GetUserInput, CancellationToken)
+  nameWithType: IUserService.GetUserByIdAsync(GetUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+    name: GetUserByIdAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserByIdAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserInput
+    name: GetUserInput
+    href: OpenSettings.Models.Inputs.GetUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetUserByIdAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+    name: GetUserByIdAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserByIdAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserInput
+    name: GetUserInput
+    href: OpenSettings.Models.Inputs.GetUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserBySlugAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  name: GetUserBySlugAsync(GetUserInput, CancellationToken)
+  nameWithType: IUserService.GetUserBySlugAsync(GetUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+    name: GetUserBySlugAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserBySlugAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserInput
+    name: GetUserInput
+    href: OpenSettings.Models.Inputs.GetUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.GetUserBySlugAsync(OpenSettings.Models.Inputs.GetUserInput,System.Threading.CancellationToken)
+    name: GetUserBySlugAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_GetUserBySlugAsync_OpenSettings_Models_Inputs_GetUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetUserInput
+    name: GetUserInput
+    href: OpenSettings.Models.Inputs.GetUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_UpdateUserAsync_OpenSettings_Models_Inputs_UpdateUserInput_System_Threading_CancellationToken_
+  name: UpdateUserAsync(UpdateUserInput, CancellationToken)
+  nameWithType: IUserService.UpdateUserAsync(UpdateUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput,System.Threading.CancellationToken)
+    name: UpdateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_UpdateUserAsync_OpenSettings_Models_Inputs_UpdateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateUserInput
+    name: UpdateUserInput
+    href: OpenSettings.Models.Inputs.UpdateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.UpdateUserAsync(OpenSettings.Models.Inputs.UpdateUserInput,System.Threading.CancellationToken)
+    name: UpdateUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_UpdateUserAsync_OpenSettings_Models_Inputs_UpdateUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateUserInput
+    name: UpdateUserInput
+    href: OpenSettings.Models.Inputs.UpdateUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IUserService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_DeleteUserAsync_OpenSettings_Models_Inputs_DeleteUserInput_System_Threading_CancellationToken_
+  name: DeleteUserAsync(DeleteUserInput, CancellationToken)
+  nameWithType: IUserService.DeleteUserAsync(DeleteUserInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput,System.Threading.CancellationToken)
+    name: DeleteUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_DeleteUserAsync_OpenSettings_Models_Inputs_DeleteUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteUserInput
+    name: DeleteUserInput
+    href: OpenSettings.Models.Inputs.DeleteUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IUserService.DeleteUserAsync(OpenSettings.Models.Inputs.DeleteUserInput,System.Threading.CancellationToken)
+    name: DeleteUserAsync
+    href: OpenSettings.Services.Interfaces.IUserService.html#OpenSettings_Services_Interfaces_IUserService_DeleteUserAsync_OpenSettings_Models_Inputs_DeleteUserInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteUserInput
+    name: DeleteUserInput
+    href: OpenSettings.Models.Inputs.DeleteUserInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IUserService
+  commentId: T:OpenSettings.Services.Interfaces.IUserService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IUserService.html
+  name: IUserService
+  nameWithType: IUserService
+  fullName: OpenSettings.Services.Interfaces.IUserService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

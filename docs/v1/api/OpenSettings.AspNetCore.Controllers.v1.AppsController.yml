@@ -5,7 +5,7 @@ items:
   id: AppsController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppsService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstancesService,OpenSettings.Services.Interfaces.IAppIdentifierMappingsService,OpenSettings.Services.Interfaces.IConfigurationsService)
+  - OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstanceService,OpenSettings.Services.Interfaces.IAppIdentifierMappingService,OpenSettings.Services.Interfaces.IConfigurationService)
   - OpenSettings.AspNetCore.Controllers.v1.AppsController.CreateApp(OpenSettings.AspNetCore.Models.Requests.CreateAppRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.AppsController.CreateAppIdentifierMapping(OpenSettings.AspNetCore.Models.Requests.CreateAppIdentifierMappingRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.AppsController.CreateInstance(OpenSettings.AspNetCore.Models.Requests.CreateInstanceRequest)
@@ -52,7 +52,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AppsController
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -245,16 +245,16 @@ items:
     arguments:
     - type: System.String
       value: v1/apps
-- uid: OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppsService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstancesService,OpenSettings.Services.Interfaces.IAppIdentifierMappingsService,OpenSettings.Services.Interfaces.IConfigurationsService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppsService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstancesService,OpenSettings.Services.Interfaces.IAppIdentifierMappingsService,OpenSettings.Services.Interfaces.IConfigurationsService)
-  id: '#ctor(OpenSettings.Services.Interfaces.IAppsService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstancesService,OpenSettings.Services.Interfaces.IAppIdentifierMappingsService,OpenSettings.Services.Interfaces.IConfigurationsService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstanceService,OpenSettings.Services.Interfaces.IAppIdentifierMappingService,OpenSettings.Services.Interfaces.IConfigurationService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor(OpenSettings.Services.Interfaces.IAppService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstanceService,OpenSettings.Services.Interfaces.IAppIdentifierMappingService,OpenSettings.Services.Interfaces.IConfigurationService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IAppService,OpenSettings.Services.Interfaces.ISettingsService,OpenSettings.Services.Interfaces.IInstanceService,OpenSettings.Services.Interfaces.IAppIdentifierMappingService,OpenSettings.Services.Interfaces.IConfigurationService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.AppsController
   langs:
   - csharp
   - vb
-  name: AppsController(IAppsService, ISettingsService, IInstancesService, IAppIdentifierMappingsService, IConfigurationsService)
-  nameWithType: AppsController.AppsController(IAppsService, ISettingsService, IInstancesService, IAppIdentifierMappingsService, IConfigurationsService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AppsController.AppsController(OpenSettings.Services.Interfaces.IAppsService, OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.IInstancesService, OpenSettings.Services.Interfaces.IAppIdentifierMappingsService, OpenSettings.Services.Interfaces.IConfigurationsService)
+  name: AppsController(IAppService, ISettingsService, IInstanceService, IAppIdentifierMappingService, IConfigurationService)
+  nameWithType: AppsController.AppsController(IAppService, ISettingsService, IInstanceService, IAppIdentifierMappingService, IConfigurationService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AppsController.AppsController(OpenSettings.Services.Interfaces.IAppService, OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.IInstanceService, OpenSettings.Services.Interfaces.IAppIdentifierMappingService, OpenSettings.Services.Interfaces.IConfigurationService)
   type: Constructor
   source:
     remote:
@@ -263,28 +263,28 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public AppsController(IAppsService appsService, ISettingsService settingsService, IInstancesService instancesService, IAppIdentifierMappingsService appIdentifierMappingsService, IConfigurationsService configurationsService)
+    content: public AppsController(IAppService appsService, ISettingsService settingService, IInstanceService instancesService, IAppIdentifierMappingService appIdentifierMappingsService, IConfigurationService configurationsService)
     parameters:
     - id: appsService
-      type: OpenSettings.Services.Interfaces.IAppsService
-    - id: settingsService
+      type: OpenSettings.Services.Interfaces.IAppService
+    - id: settingService
       type: OpenSettings.Services.Interfaces.ISettingsService
     - id: instancesService
-      type: OpenSettings.Services.Interfaces.IInstancesService
+      type: OpenSettings.Services.Interfaces.IInstanceService
     - id: appIdentifierMappingsService
-      type: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+      type: OpenSettings.Services.Interfaces.IAppIdentifierMappingService
     - id: configurationsService
-      type: OpenSettings.Services.Interfaces.IConfigurationsService
-    content.vb: Public Sub New(appsService As IAppsService, settingsService As ISettingsService, instancesService As IInstancesService, appIdentifierMappingsService As IAppIdentifierMappingsService, configurationsService As IConfigurationsService)
+      type: OpenSettings.Services.Interfaces.IConfigurationService
+    content.vb: Public Sub New(appsService As IAppService, settingService As ISettingsService, instancesService As IInstanceService, appIdentifierMappingsService As IAppIdentifierMappingService, configurationsService As IConfigurationService)
   overload: OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor*
-  nameWithType.vb: AppsController.New(IAppsService, ISettingsService, IInstancesService, IAppIdentifierMappingsService, IConfigurationsService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppsController.New(OpenSettings.Services.Interfaces.IAppsService, OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.IInstancesService, OpenSettings.Services.Interfaces.IAppIdentifierMappingsService, OpenSettings.Services.Interfaces.IConfigurationsService)
-  name.vb: New(IAppsService, ISettingsService, IInstancesService, IAppIdentifierMappingsService, IConfigurationsService)
+  nameWithType.vb: AppsController.New(IAppService, ISettingsService, IInstanceService, IAppIdentifierMappingService, IConfigurationService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppsController.New(OpenSettings.Services.Interfaces.IAppService, OpenSettings.Services.Interfaces.ISettingsService, OpenSettings.Services.Interfaces.IInstanceService, OpenSettings.Services.Interfaces.IAppIdentifierMappingService, OpenSettings.Services.Interfaces.IConfigurationService)
+  name.vb: New(IAppService, ISettingsService, IInstanceService, IAppIdentifierMappingService, IConfigurationService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.AppsController.GetApps(OpenSettings.AspNetCore.Models.Requests.GetAppsRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppsController.GetApps(OpenSettings.AspNetCore.Models.Requests.GetAppsRequest,System.Threading.CancellationToken)
   id: GetApps(OpenSettings.AspNetCore.Models.Requests.GetAppsRequest,System.Threading.CancellationToken)
@@ -303,7 +303,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetApps
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -346,7 +346,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreateApp
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -389,7 +389,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedApps
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 87
+    startLine: 88
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -434,7 +434,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: FetchAppData
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 104
+    startLine: 105
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -479,13 +479,15 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SyncAppData
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 128
+    startLine: 129
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
     content: >-
       [HttpPost("{ClientId:guid}/identifiers/{IdentifierName}/sync-data")]
+
+      [Authorize(AuthenticationSchemes = "OpenSettingsBasicAuth")]
 
       public Task<IActionResult> SyncAppData(SyncAppDataRequest request, CancellationToken cancellationToken = default)
     parameters:
@@ -498,6 +500,8 @@ items:
     content.vb: >-
       <HttpPost("{ClientId:guid}/identifiers/{IdentifierName}/sync-data")>
 
+      <Authorize(AuthenticationSchemes:="OpenSettingsBasicAuth")>
+
       Public Function SyncAppData(request As SyncAppDataRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
   overload: OpenSettings.AspNetCore.Controllers.v1.AppsController.SyncAppData*
   attributes:
@@ -506,6 +510,13 @@ items:
     arguments:
     - type: System.String
       value: '{ClientId:guid}/identifiers/{IdentifierName}/sync-data'
+  - type: Microsoft.AspNetCore.Authorization.AuthorizeAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AuthenticationSchemes
+      type: System.String
+      value: OpenSettingsBasicAuth
 - uid: OpenSettings.AspNetCore.Controllers.v1.AppsController.GetAppById(OpenSettings.AspNetCore.Models.Requests.GetAppRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.AppsController.GetAppById(OpenSettings.AspNetCore.Models.Requests.GetAppRequest,System.Threading.CancellationToken)
   id: GetAppById(OpenSettings.AspNetCore.Models.Requests.GetAppRequest,System.Threading.CancellationToken)
@@ -524,7 +535,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppById
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 160
+    startLine: 161
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -569,7 +580,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppBySlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 176
+    startLine: 177
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -614,7 +625,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateApp
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 192
+    startLine: 193
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -659,7 +670,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteApp
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 227
+    startLine: 228
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -704,7 +715,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 245
+    startLine: 246
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -749,7 +760,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 258
+    startLine: 259
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -794,7 +805,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 271
+    startLine: 272
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -839,7 +850,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 288
+    startLine: 289
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -884,7 +895,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreateInstance
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 305
+    startLine: 306
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -927,7 +938,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateInstance
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 335
+    startLine: 336
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -970,7 +981,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetRegisteredApp
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 358
+    startLine: 359
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1015,7 +1026,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppIdentifierMappingsByAppId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 380
+    startLine: 376
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1060,7 +1071,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppIdentifierMappingsByAppSlugAsync
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 394
+    startLine: 390
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1105,7 +1116,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreateAppIdentifierMapping
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 410
+    startLine: 406
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1150,7 +1161,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppIdentifierMappingByAppIdAndIdentifierId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 435
+    startLine: 431
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1195,7 +1206,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetAppIdentifierMappingByAppSlugAndIdentifierSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 452
+    startLine: 448
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1240,7 +1251,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetConfigurationByAppIdAndIdentifierId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 469
+    startLine: 465
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1285,7 +1296,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: PatchConfiguration
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 486
+    startLine: 482
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1330,7 +1341,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteAppIdentifierMapping
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 505
+    startLine: 501
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1375,7 +1386,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppIdAndIdentifierId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 524
+    startLine: 520
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1420,7 +1431,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInstancesByAppSlugAndIdentifierSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 541
+    startLine: 537
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1465,7 +1476,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingsByAppIdAndIdentifierId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 558
+    startLine: 554
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1510,7 +1521,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingsByAppSlugAndIdentifierSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 576
+    startLine: 572
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1555,7 +1566,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdateAppIdentifierMappingSortOrder
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 595
+    startLine: 591
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1600,7 +1611,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppIdAndIdentifierId
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 614
+    startLine: 610
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1645,7 +1656,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetGroupedAppDataByAppSlugAndIdentifierSlug
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 627
+    startLine: 623
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -1690,7 +1701,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingsData
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AppsController.cs
-    startLine: 641
+    startLine: 637
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -10350,20 +10361,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AppsController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.AppsController.html#OpenSettings_AspNetCore_Controllers_v1_AppsController__ctor_OpenSettings_Services_Interfaces_IAppsService_OpenSettings_Services_Interfaces_ISettingsService_OpenSettings_Services_Interfaces_IInstancesService_OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_OpenSettings_Services_Interfaces_IConfigurationsService_
+  href: OpenSettings.AspNetCore.Controllers.v1.AppsController.html#OpenSettings_AspNetCore_Controllers_v1_AppsController__ctor_OpenSettings_Services_Interfaces_IAppService_OpenSettings_Services_Interfaces_ISettingsService_OpenSettings_Services_Interfaces_IInstanceService_OpenSettings_Services_Interfaces_IAppIdentifierMappingService_OpenSettings_Services_Interfaces_IConfigurationService_
   name: AppsController
   nameWithType: AppsController.AppsController
   fullName: OpenSettings.AspNetCore.Controllers.v1.AppsController.AppsController
   nameWithType.vb: AppsController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AppsController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.IAppsService
-  commentId: T:OpenSettings.Services.Interfaces.IAppsService
+- uid: OpenSettings.Services.Interfaces.IAppService
+  commentId: T:OpenSettings.Services.Interfaces.IAppService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IAppsService.html
-  name: IAppsService
-  nameWithType: IAppsService
-  fullName: OpenSettings.Services.Interfaces.IAppsService
+  href: OpenSettings.Services.Interfaces.IAppService.html
+  name: IAppService
+  nameWithType: IAppService
+  fullName: OpenSettings.Services.Interfaces.IAppService
 - uid: OpenSettings.Services.Interfaces.ISettingsService
   commentId: T:OpenSettings.Services.Interfaces.ISettingsService
   parent: OpenSettings.Services.Interfaces
@@ -10371,27 +10382,27 @@ references:
   name: ISettingsService
   nameWithType: ISettingsService
   fullName: OpenSettings.Services.Interfaces.ISettingsService
-- uid: OpenSettings.Services.Interfaces.IInstancesService
-  commentId: T:OpenSettings.Services.Interfaces.IInstancesService
+- uid: OpenSettings.Services.Interfaces.IInstanceService
+  commentId: T:OpenSettings.Services.Interfaces.IInstanceService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IInstancesService.html
-  name: IInstancesService
-  nameWithType: IInstancesService
-  fullName: OpenSettings.Services.Interfaces.IInstancesService
-- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
-  commentId: T:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  href: OpenSettings.Services.Interfaces.IInstanceService.html
+  name: IInstanceService
+  nameWithType: IInstanceService
+  fullName: OpenSettings.Services.Interfaces.IInstanceService
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingService
+  commentId: T:OpenSettings.Services.Interfaces.IAppIdentifierMappingService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html
-  name: IAppIdentifierMappingsService
-  nameWithType: IAppIdentifierMappingsService
-  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
-- uid: OpenSettings.Services.Interfaces.IConfigurationsService
-  commentId: T:OpenSettings.Services.Interfaces.IConfigurationsService
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingService.html
+  name: IAppIdentifierMappingService
+  nameWithType: IAppIdentifierMappingService
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingService
+- uid: OpenSettings.Services.Interfaces.IConfigurationService
+  commentId: T:OpenSettings.Services.Interfaces.IConfigurationService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IConfigurationsService.html
-  name: IConfigurationsService
-  nameWithType: IConfigurationsService
-  fullName: OpenSettings.Services.Interfaces.IConfigurationsService
+  href: OpenSettings.Services.Interfaces.IConfigurationService.html
+  name: IConfigurationService
+  nameWithType: IConfigurationService
+  fullName: OpenSettings.Services.Interfaces.IConfigurationService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

@@ -5,13 +5,10 @@ items:
   id: AuthController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(System.String,System.String,System.String)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(System.String,System.String)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken(System.Threading.CancellationToken)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo(System.String,System.String,System.String)
-  - OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI(System.String,System.Threading.CancellationToken)
+  - OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.Interfaces.IAuthService)
+  - OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe(OpenSettings.AspNetCore.Models.Requests.GetMeRequest)
+  - OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(OpenSettings.AspNetCore.Models.Requests.LoginRequest)
+  - OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(OpenSettings.AspNetCore.Models.Requests.LogoutRequest)
   langs:
   - csharp
   - vb
@@ -26,7 +23,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AuthController
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 20
+    startLine: 10
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -219,16 +216,16 @@ items:
     arguments:
     - type: System.String
       value: v1/auth
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)
-  id: '#ctor(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache,OpenSettings.Configurations.OpenSettingsConfiguration,OpenSettings.Models.ProviderInfo,OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService,System.Net.Http.IHttpClientFactory)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.Interfaces.IAuthService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor(OpenSettings.Services.Interfaces.IAuthService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IAuthService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
   langs:
   - csharp
   - vb
-  name: AuthController(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-  nameWithType: AuthController.AuthController(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
+  name: AuthController(IAuthService)
+  nameWithType: AuthController.AuthController(IAuthService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController(OpenSettings.Services.Interfaces.IAuthService)
   type: Constructor
   source:
     remote:
@@ -237,212 +234,80 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: .ctor
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 30
+    startLine: 15
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public AuthController(OpenSettingsMemoryCache openSettingsMemoryCache, OpenSettingsConfiguration openSettingsConfiguration, ProviderInfo providerInfo, IOpenSettingsTokenService tokenService, IHttpClientFactory httpClientFactory)
+    content: public AuthController(IAuthService authService)
     parameters:
-    - id: openSettingsMemoryCache
-      type: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-    - id: openSettingsConfiguration
-      type: OpenSettings.Configurations.OpenSettingsConfiguration
-    - id: providerInfo
-      type: OpenSettings.Models.ProviderInfo
-    - id: tokenService
-      type: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
-    - id: httpClientFactory
-      type: System.Net.Http.IHttpClientFactory
-    content.vb: Public Sub New(openSettingsMemoryCache As OpenSettingsMemoryCache, openSettingsConfiguration As OpenSettingsConfiguration, providerInfo As ProviderInfo, tokenService As IOpenSettingsTokenService, httpClientFactory As IHttpClientFactory)
+    - id: authService
+      type: OpenSettings.Services.Interfaces.IAuthService
+    content.vb: Public Sub New(authService As IAuthService)
   overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor*
-  nameWithType.vb: AuthController.New(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.New(OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache, OpenSettings.Configurations.OpenSettingsConfiguration, OpenSettings.Models.ProviderInfo, OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService, System.Net.Http.IHttpClientFactory)
-  name.vb: New(OpenSettingsMemoryCache, OpenSettingsConfiguration, ProviderInfo, IOpenSettingsTokenService, IHttpClientFactory)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(System.String)
-  id: Authenticated(System.String)
+  nameWithType.vb: AuthController.New(IAuthService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.New(OpenSettings.Services.Interfaces.IAuthService)
+  name.vb: New(IAuthService)
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe(OpenSettings.AspNetCore.Models.Requests.GetMeRequest)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe(OpenSettings.AspNetCore.Models.Requests.GetMeRequest)
+  id: GetMe(OpenSettings.AspNetCore.Models.Requests.GetMeRequest)
   parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
   langs:
   - csharp
   - vb
-  name: Authenticated(string)
-  nameWithType: AuthController.Authenticated(string)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(string)
+  name: GetMe(GetMeRequest)
+  nameWithType: AuthController.GetMe(GetMeRequest)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe(OpenSettings.AspNetCore.Models.Requests.GetMeRequest)
   type: Method
   source:
     remote:
       path: src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: Authenticated
+    id: GetMe
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 45
+    startLine: 20
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
     content: >-
-      [HttpPost("authenticated")]
+      [HttpPost("me")]
 
       [AllowAnonymous]
 
-      public Task<IActionResult> Authenticated(string uuid)
+      public Task<IActionResult> GetMe(GetMeRequest request)
     parameters:
-    - id: uuid
-      type: System.String
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
     return:
       type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
     content.vb: >-
-      <HttpPost("authenticated")>
+      <HttpPost("me")>
 
       <AllowAnonymous>
 
-      Public Function Authenticated(uuid As String) As Task(Of IActionResult)
-  overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated*
+      Public Function GetMe(request As GetMeRequest) As Task(Of IActionResult)
+  overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe*
   attributes:
   - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
     ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: authenticated
+      value: me
   - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
     ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
     arguments: []
-  nameWithType.vb: AuthController.Authenticated(String)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated(String)
-  name.vb: Authenticated(String)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI(System.String,System.Threading.CancellationToken)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI(System.String,System.Threading.CancellationToken)
-  id: WhoAmI(System.String,System.Threading.CancellationToken)
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(OpenSettings.AspNetCore.Models.Requests.LoginRequest)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(OpenSettings.AspNetCore.Models.Requests.LoginRequest)
+  id: Login(OpenSettings.AspNetCore.Models.Requests.LoginRequest)
   parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
   langs:
   - csharp
   - vb
-  name: WhoAmI(string, CancellationToken)
-  nameWithType: AuthController.WhoAmI(string, CancellationToken)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI(string, System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: WhoAmI
-    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 84
-  assemblies:
-  - OpenSettings.AspNetCore
-  namespace: OpenSettings.AspNetCore.Controllers.v1
-  syntax:
-    content: >-
-      [HttpGet("who-am-i")]
-
-      public Task<IActionResult> WhoAmI(string claimTypes, CancellationToken cancellationToken)
-    parameters:
-    - id: claimTypes
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-    return:
-      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
-    content.vb: >-
-      <HttpGet("who-am-i")>
-
-      Public Function WhoAmI(claimTypes As String, cancellationToken As CancellationToken) As Task(Of IActionResult)
-  overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI*
-  attributes:
-  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
-    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: who-am-i
-  nameWithType.vb: AuthController.WhoAmI(String, CancellationToken)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI(String, System.Threading.CancellationToken)
-  name.vb: WhoAmI(String, CancellationToken)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo(System.String,System.String,System.String)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo(System.String,System.String,System.String)
-  id: ReturnTo(System.String,System.String,System.String)
-  parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
-  langs:
-  - csharp
-  - vb
-  name: ReturnTo(string, string, string)
-  nameWithType: AuthController.ReturnTo(string, string, string)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo(string, string, string)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: ReturnTo
-    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 148
-  assemblies:
-  - OpenSettings.AspNetCore
-  namespace: OpenSettings.AspNetCore.Controllers.v1
-  syntax:
-    content: >-
-      [HttpGet("return-to")]
-
-      [AllowAnonymous]
-
-      public IActionResult ReturnTo(string returnUrl, string accessToken, string uuid)
-    parameters:
-    - id: returnUrl
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: accessToken
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: uuid
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    return:
-      type: Microsoft.AspNetCore.Mvc.IActionResult
-    content.vb: >-
-      <HttpGet("return-to")>
-
-      <AllowAnonymous>
-
-      Public Function ReturnTo(returnUrl As String, accessToken As String, uuid As String) As IActionResult
-  overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo*
-  attributes:
-  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
-    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: return-to
-  - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
-    ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
-    arguments: []
-  nameWithType.vb: AuthController.ReturnTo(String, String, String)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo(String, String, String)
-  name.vb: ReturnTo(String, String, String)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(System.String,System.String,System.String)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(System.String,System.String,System.String)
-  id: Login(System.String,System.String,System.String)
-  parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
-  langs:
-  - csharp
-  - vb
-  name: Login(string, string, string)
-  nameWithType: AuthController.Login(string, string, string)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(string, string, string)
+  name: Login(LoginRequest)
+  nameWithType: AuthController.Login(LoginRequest)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(OpenSettings.AspNetCore.Models.Requests.LoginRequest)
   type: Method
   source:
     remote:
@@ -451,7 +316,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Login
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 160
+    startLine: 33
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -461,26 +326,10 @@ items:
 
       [AllowAnonymous]
 
-      public Task<IActionResult> Login(string returnUrl, string apiUrl, string uuid)
+      public Task<IActionResult> Login(LoginRequest request)
     parameters:
-    - id: returnUrl
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: apiUrl
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: uuid
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.LoginRequest
     return:
       type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
     content.vb: >-
@@ -488,7 +337,7 @@ items:
 
       <AllowAnonymous>
 
-      Public Function Login(returnUrl As String, apiUrl As String, uuid As String) As Task(Of IActionResult)
+      Public Function Login(request As LoginRequest) As Task(Of IActionResult)
   overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login*
   attributes:
   - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
@@ -499,19 +348,16 @@ items:
   - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
     ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
     arguments: []
-  nameWithType.vb: AuthController.Login(String, String, String)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login(String, String, String)
-  name.vb: Login(String, String, String)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(System.String,System.String)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(System.String,System.String)
-  id: Logout(System.String,System.String)
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(OpenSettings.AspNetCore.Models.Requests.LogoutRequest)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(OpenSettings.AspNetCore.Models.Requests.LogoutRequest)
+  id: Logout(OpenSettings.AspNetCore.Models.Requests.LogoutRequest)
   parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
   langs:
   - csharp
   - vb
-  name: Logout(string, string)
-  nameWithType: AuthController.Logout(string, string)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(string, string)
+  name: Logout(LogoutRequest)
+  nameWithType: AuthController.Logout(LogoutRequest)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(OpenSettings.AspNetCore.Models.Requests.LogoutRequest)
   type: Method
   source:
     remote:
@@ -520,7 +366,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Logout
     path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 244
+    startLine: 48
   assemblies:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
@@ -530,20 +376,10 @@ items:
 
       [AllowAnonymous]
 
-      public Task<IActionResult> Logout(string returnUrl, string apiUrl)
+      public Task<IActionResult> Logout(LogoutRequest request)
     parameters:
-    - id: returnUrl
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
-    - id: apiUrl
-      type: System.String
-      attributes:
-      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
-        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
-        arguments: []
+    - id: request
+      type: OpenSettings.AspNetCore.Models.Requests.LogoutRequest
     return:
       type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
     content.vb: >-
@@ -551,7 +387,7 @@ items:
 
       <AllowAnonymous>
 
-      Public Function Logout(returnUrl As String, apiUrl As String) As Task(Of IActionResult)
+      Public Function Logout(request As LogoutRequest) As Task(Of IActionResult)
   overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout*
   attributes:
   - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
@@ -562,63 +398,6 @@ items:
   - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
     ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
     arguments: []
-  nameWithType.vb: AuthController.Logout(String, String)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout(String, String)
-  name.vb: Logout(String, String)
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken(System.Threading.CancellationToken)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken(System.Threading.CancellationToken)
-  id: RefreshToken(System.Threading.CancellationToken)
-  parent: OpenSettings.AspNetCore.Controllers.v1.AuthController
-  langs:
-  - csharp
-  - vb
-  name: RefreshToken(CancellationToken)
-  nameWithType: AuthController.RefreshToken(CancellationToken)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken(System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: RefreshToken
-    path: ../../../open-settings/src/OpenSettings.AspNetCore/Controllers/v1/AuthController.cs
-    startLine: 294
-  assemblies:
-  - OpenSettings.AspNetCore
-  namespace: OpenSettings.AspNetCore.Controllers.v1
-  syntax:
-    content: >-
-      [HttpPost("refresh-token")]
-
-      [Authorize(AuthenticationSchemes = "OpenSettingsOAuth2JwtBearer")]
-
-      public Task<IActionResult> RefreshToken(CancellationToken cancellationToken = default)
-    parameters:
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-    return:
-      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
-    content.vb: >-
-      <HttpPost("refresh-token")>
-
-      <Authorize(AuthenticationSchemes:="OpenSettingsOAuth2JwtBearer")>
-
-      Public Function RefreshToken(cancellationToken As CancellationToken = Nothing) As Task(Of IActionResult)
-  overload: OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken*
-  attributes:
-  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
-    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: refresh-token
-  - type: Microsoft.AspNetCore.Authorization.AuthorizeAttribute
-    ctor: Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: AuthenticationSchemes
-      type: System.String
-      value: OpenSettingsOAuth2JwtBearer
 references:
 - uid: OpenSettings.AspNetCore.Controllers.v1
   commentId: N:OpenSettings.AspNetCore.Controllers.v1
@@ -9252,55 +9031,26 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController__ctor_OpenSettings_Services_MemoryCache_OpenSettingsMemoryCache_OpenSettings_Configurations_OpenSettingsConfiguration_OpenSettings_Models_ProviderInfo_OpenSettings_AspNetCore_Services_Interfaces_IOpenSettingsTokenService_System_Net_Http_IHttpClientFactory_
+  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController__ctor_OpenSettings_Services_Interfaces_IAuthService_
   name: AuthController
   nameWithType: AuthController.AuthController
   fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.AuthController
   nameWithType.vb: AuthController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.AuthController.New
   name.vb: New
-- uid: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  commentId: T:OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-  parent: OpenSettings.Services.MemoryCache
-  href: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache.html
-  name: OpenSettingsMemoryCache
-  nameWithType: OpenSettingsMemoryCache
-  fullName: OpenSettings.Services.MemoryCache.OpenSettingsMemoryCache
-- uid: OpenSettings.Configurations.OpenSettingsConfiguration
-  commentId: T:OpenSettings.Configurations.OpenSettingsConfiguration
-  parent: OpenSettings.Configurations
-  href: OpenSettings.Configurations.OpenSettingsConfiguration.html
-  name: OpenSettingsConfiguration
-  nameWithType: OpenSettingsConfiguration
-  fullName: OpenSettings.Configurations.OpenSettingsConfiguration
-- uid: OpenSettings.Models.ProviderInfo
-  commentId: T:OpenSettings.Models.ProviderInfo
-  parent: OpenSettings.Models
-  href: OpenSettings.Models.ProviderInfo.html
-  name: ProviderInfo
-  nameWithType: ProviderInfo
-  fullName: OpenSettings.Models.ProviderInfo
-- uid: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
-  commentId: T:OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
-  parent: OpenSettings.AspNetCore.Services.Interfaces
-  href: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService.html
-  name: IOpenSettingsTokenService
-  nameWithType: IOpenSettingsTokenService
-  fullName: OpenSettings.AspNetCore.Services.Interfaces.IOpenSettingsTokenService
-- uid: System.Net.Http.IHttpClientFactory
-  commentId: T:System.Net.Http.IHttpClientFactory
-  parent: System.Net.Http
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory
-  name: IHttpClientFactory
-  nameWithType: IHttpClientFactory
-  fullName: System.Net.Http.IHttpClientFactory
-- uid: OpenSettings.Services.MemoryCache
-  commentId: N:OpenSettings.Services.MemoryCache
+- uid: OpenSettings.Services.Interfaces.IAuthService
+  commentId: T:OpenSettings.Services.Interfaces.IAuthService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: OpenSettings.Services.Interfaces.IAuthService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html
-  name: OpenSettings.Services.MemoryCache
-  nameWithType: OpenSettings.Services.MemoryCache
-  fullName: OpenSettings.Services.MemoryCache
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
   spec.csharp:
   - uid: OpenSettings
     name: OpenSettings
@@ -9310,9 +9060,9 @@ references:
     name: Services
     href: OpenSettings.Services.html
   - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
   spec.vb:
   - uid: OpenSettings
     name: OpenSettings
@@ -9322,145 +9072,22 @@ references:
     name: Services
     href: OpenSettings.Services.html
   - name: .
-  - uid: OpenSettings.Services.MemoryCache
-    name: MemoryCache
-    href: OpenSettings.Services.MemoryCache.html
-- uid: OpenSettings.Configurations
-  commentId: N:OpenSettings.Configurations
-  href: OpenSettings.html
-  name: OpenSettings.Configurations
-  nameWithType: OpenSettings.Configurations
-  fullName: OpenSettings.Configurations
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Configurations
-    name: Configurations
-    href: OpenSettings.Configurations.html
-- uid: OpenSettings.Models
-  commentId: N:OpenSettings.Models
-  href: OpenSettings.html
-  name: OpenSettings.Models
-  nameWithType: OpenSettings.Models
-  fullName: OpenSettings.Models
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.Models
-    name: Models
-    href: OpenSettings.Models.html
-- uid: OpenSettings.AspNetCore.Services.Interfaces
-  commentId: N:OpenSettings.AspNetCore.Services.Interfaces
-  href: OpenSettings.html
-  name: OpenSettings.AspNetCore.Services.Interfaces
-  nameWithType: OpenSettings.AspNetCore.Services.Interfaces
-  fullName: OpenSettings.AspNetCore.Services.Interfaces
-  spec.csharp:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.AspNetCore
-    name: AspNetCore
-    href: OpenSettings.AspNetCore.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Services
-    name: Services
-    href: OpenSettings.AspNetCore.Services.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Services.Interfaces
+  - uid: OpenSettings.Services.Interfaces
     name: Interfaces
-    href: OpenSettings.AspNetCore.Services.Interfaces.html
-  spec.vb:
-  - uid: OpenSettings
-    name: OpenSettings
-    href: OpenSettings.html
-  - name: .
-  - uid: OpenSettings.AspNetCore
-    name: AspNetCore
-    href: OpenSettings.AspNetCore.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Services
-    name: Services
-    href: OpenSettings.AspNetCore.Services.html
-  - name: .
-  - uid: OpenSettings.AspNetCore.Services.Interfaces
-    name: Interfaces
-    href: OpenSettings.AspNetCore.Services.Interfaces.html
-- uid: System.Net.Http
-  commentId: N:System.Net.Http
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Net.Http
-  nameWithType: System.Net.Http
-  fullName: System.Net.Http
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Net
-    name: Net
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net
-  - name: .
-  - uid: System.Net.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net.http
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Net
-    name: Net
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net
-  - name: .
-  - uid: System.Net.Http
-    name: Http
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.net.http
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_Authenticated_System_String_
-  name: Authenticated
-  nameWithType: AuthController.Authenticated
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Authenticated
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe*
+  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe
+  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_GetMe_OpenSettings_AspNetCore_Models_Requests_GetMeRequest_
+  name: GetMe
+  nameWithType: AuthController.GetMe
+  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.GetMe
+- uid: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetMeRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.GetMeRequest.html
+  name: GetMeRequest
+  nameWithType: GetMeRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetMeRequest
 - uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
   commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
   parent: System.Threading.Tasks
@@ -9496,6 +9123,44 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
   - name: )
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
 - uid: System.Threading.Tasks.Task`1
   commentId: T:System.Threading.Tasks.Task`1
   isExternal: true
@@ -9561,76 +9226,29 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_WhoAmI_System_String_System_Threading_CancellationToken_
-  name: WhoAmI
-  nameWithType: AuthController.WhoAmI
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.WhoAmI
-- uid: System.Threading.CancellationToken
-  commentId: T:System.Threading.CancellationToken
-  parent: System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
-  name: CancellationToken
-  nameWithType: CancellationToken
-  fullName: System.Threading.CancellationToken
-- uid: System.Threading
-  commentId: N:System.Threading
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading
-  nameWithType: System.Threading
-  fullName: System.Threading
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_ReturnTo_System_String_System_String_System_String_
-  name: ReturnTo
-  nameWithType: AuthController.ReturnTo
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.ReturnTo
-- uid: Microsoft.AspNetCore.Mvc.IActionResult
-  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
-  parent: Microsoft.AspNetCore.Mvc
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
-  name: IActionResult
-  nameWithType: IActionResult
-  fullName: Microsoft.AspNetCore.Mvc.IActionResult
 - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.Login
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_Login_System_String_System_String_System_String_
+  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_Login_OpenSettings_AspNetCore_Models_Requests_LoginRequest_
   name: Login
   nameWithType: AuthController.Login
   fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Login
+- uid: OpenSettings.AspNetCore.Models.Requests.LoginRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.LoginRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.LoginRequest.html
+  name: LoginRequest
+  nameWithType: LoginRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.LoginRequest
 - uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_Logout_System_String_System_String_
+  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_Logout_OpenSettings_AspNetCore_Models_Requests_LogoutRequest_
   name: Logout
   nameWithType: AuthController.Logout
   fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.Logout
-- uid: OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken*
-  commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken
-  href: OpenSettings.AspNetCore.Controllers.v1.AuthController.html#OpenSettings_AspNetCore_Controllers_v1_AuthController_RefreshToken_System_Threading_CancellationToken_
-  name: RefreshToken
-  nameWithType: AuthController.RefreshToken
-  fullName: OpenSettings.AspNetCore.Controllers.v1.AuthController.RefreshToken
+- uid: OpenSettings.AspNetCore.Models.Requests.LogoutRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.LogoutRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.LogoutRequest.html
+  name: LogoutRequest
+  nameWithType: LogoutRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.LogoutRequest

@@ -15,10 +15,11 @@ items:
   - OpenSettings.Models.Inputs.CreateInstanceInput.Environment
   - OpenSettings.Models.Inputs.CreateInstanceInput.IdentifierName
   - OpenSettings.Models.Inputs.CreateInstanceInput.InstanceName
-  - OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
   - OpenSettings.Models.Inputs.CreateInstanceInput.IsActive
   - OpenSettings.Models.Inputs.CreateInstanceInput.MachineName
+  - OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
   - OpenSettings.Models.Inputs.CreateInstanceInput.ReloadStrategies
+  - OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
   - OpenSettings.Models.Inputs.CreateInstanceInput.ServiceType
   - OpenSettings.Models.Inputs.CreateInstanceInput.Urls
   - OpenSettings.Models.Inputs.CreateInstanceInput.Version
@@ -136,7 +137,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ClientId
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -165,7 +166,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ClientSecret
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -194,7 +195,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: InstanceName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -223,7 +224,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IdentifierName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -252,7 +253,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DynamicId
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -281,7 +282,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Urls
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -310,7 +311,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -321,6 +322,35 @@ items:
       type: System.String
     content.vb: Public Property Version As String
   overload: OpenSettings.Models.Inputs.CreateInstanceInput.Version*
+- uid: OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
+  commentId: P:OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Models.Inputs.CreateInstanceInput
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: CreateInstanceInput.PackVersion
+  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
+    startLine: 44
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion*
 - uid: OpenSettings.Models.Inputs.CreateInstanceInput.IsActive
   commentId: P:OpenSettings.Models.Inputs.CreateInstanceInput.IsActive
   id: IsActive
@@ -339,7 +369,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsActive
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -350,35 +380,35 @@ items:
       type: System.Boolean
     content.vb: Public Property IsActive As Boolean
   overload: OpenSettings.Models.Inputs.CreateInstanceInput.IsActive*
-- uid: OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
-  commentId: P:OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
-  id: IpAddress
+- uid: OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
+  commentId: P:OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
+  id: RemoteIpAddress
   parent: OpenSettings.Models.Inputs.CreateInstanceInput
   langs:
   - csharp
   - vb
-  name: IpAddress
-  nameWithType: CreateInstanceInput.IpAddress
-  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
+  name: RemoteIpAddress
+  nameWithType: CreateInstanceInput.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: IpAddress
+    id: RemoteIpAddress
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 45
+    startLine: 48
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
   syntax:
-    content: public string IpAddress { get; set; }
+    content: public string RemoteIpAddress { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property IpAddress As String
-  overload: OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress*
+    content.vb: Public Property RemoteIpAddress As String
+  overload: OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress*
 - uid: OpenSettings.Models.Inputs.CreateInstanceInput.MachineName
   commentId: P:OpenSettings.Models.Inputs.CreateInstanceInput.MachineName
   id: MachineName
@@ -397,7 +427,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MachineName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 47
+    startLine: 50
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -426,7 +456,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Environment
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 49
+    startLine: 52
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -455,7 +485,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReloadStrategies
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 51
+    startLine: 54
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -484,7 +514,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -513,7 +543,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataAccessType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 55
+    startLine: 58
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -542,7 +572,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/CreateInstanceInput.cs
-    startLine: 57
+    startLine: 60
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -954,18 +984,24 @@ references:
   name: Version
   nameWithType: CreateInstanceInput.Version
   fullName: OpenSettings.Models.Inputs.CreateInstanceInput.Version
+- uid: OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion*
+  commentId: Overload:OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
+  href: OpenSettings.Models.Inputs.CreateInstanceInput.html#OpenSettings_Models_Inputs_CreateInstanceInput_PackVersion
+  name: PackVersion
+  nameWithType: CreateInstanceInput.PackVersion
+  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.PackVersion
 - uid: OpenSettings.Models.Inputs.CreateInstanceInput.IsActive*
   commentId: Overload:OpenSettings.Models.Inputs.CreateInstanceInput.IsActive
   href: OpenSettings.Models.Inputs.CreateInstanceInput.html#OpenSettings_Models_Inputs_CreateInstanceInput_IsActive
   name: IsActive
   nameWithType: CreateInstanceInput.IsActive
   fullName: OpenSettings.Models.Inputs.CreateInstanceInput.IsActive
-- uid: OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress*
-  commentId: Overload:OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
-  href: OpenSettings.Models.Inputs.CreateInstanceInput.html#OpenSettings_Models_Inputs_CreateInstanceInput_IpAddress
-  name: IpAddress
-  nameWithType: CreateInstanceInput.IpAddress
-  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.IpAddress
+- uid: OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress*
+  commentId: Overload:OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
+  href: OpenSettings.Models.Inputs.CreateInstanceInput.html#OpenSettings_Models_Inputs_CreateInstanceInput_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: CreateInstanceInput.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.CreateInstanceInput.RemoteIpAddress
 - uid: OpenSettings.Models.Inputs.CreateInstanceInput.MachineName*
   commentId: Overload:OpenSettings.Models.Inputs.CreateInstanceInput.MachineName
   href: OpenSettings.Models.Inputs.CreateInstanceInput.html#OpenSettings_Models_Inputs_CreateInstanceInput_MachineName

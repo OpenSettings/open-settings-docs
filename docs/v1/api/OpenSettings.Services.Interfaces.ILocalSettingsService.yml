@@ -6,7 +6,7 @@ items:
   parent: OpenSettings.Services.Interfaces
   children:
   - OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(System.String)
-  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
   - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource[])
   - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync(System.IServiceProvider,System.Guid,System.Threading.CancellationToken,OpenSettings.Models.ConfigSource[])
   - OpenSettings.Services.Interfaces.ILocalSettingsService.GetSettingAsync``1(System.IServiceProvider,OpenSettings.Models.ConfigSource[])
@@ -25,15 +25,17 @@ items:
   type: Interface
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: ILocalSettingsService
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 10
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 13
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
+  summary: Provides methods to manage and retrieve local settings in an application.
+  example: []
   syntax:
     content: public interface ILocalSettingsService
     content.vb: Public Interface ILocalSettingsService
@@ -50,12 +52,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 20
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -100,12 +102,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSetting
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 27
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -137,12 +139,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 41
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 44
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -187,12 +189,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 56
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 59
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -240,12 +242,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 68
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 71
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -285,12 +287,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 81
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 84
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -333,12 +335,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingDataChangeNotifiedAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 89
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 92
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -371,12 +373,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReloadSettingsAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 98
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 101
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -416,12 +418,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReloadSettingsAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 106
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 109
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -455,12 +457,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
     id: DeleteSettings
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 118
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 121
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -486,25 +488,25 @@ items:
   nameWithType.vb: ILocalSettingsService.DeleteSettings(String)
   fullName.vb: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings(String)
   name.vb: DeleteSettings(String)
-- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
-  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
-  id: GetLocalSettingAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
+  id: GetLocalSettingsAsync(System.IServiceProvider,System.Guid,OpenSettings.Models.ConfigSource,System.Threading.CancellationToken)
   parent: OpenSettings.Services.Interfaces.ILocalSettingsService
   langs:
   - csharp
   - vb
-  name: GetLocalSettingAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
-  nameWithType: ILocalSettingsService.GetLocalSettingAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
-  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync(System.IServiceProvider, System.Guid, OpenSettings.Models.ConfigSource, System.Threading.CancellationToken)
+  name: GetLocalSettingsAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
+  nameWithType: ILocalSettingsService.GetLocalSettingsAsync(IServiceProvider, Guid, ConfigSource, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync(System.IServiceProvider, System.Guid, OpenSettings.Models.ConfigSource, System.Threading.CancellationToken)
   type: Method
   source:
     remote:
-      path: src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
+      path: src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: GetLocalSettingAsync
-    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingsService.cs
-    startLine: 133
+    id: GetLocalSettingsAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocalSettingService.cs
+    startLine: 136
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Services.Interfaces
@@ -516,7 +518,7 @@ items:
     If the operation is successful, the retrieved setting is available in the <code>Data</code> field of the response.
   example: []
   syntax:
-    content: Task<IResponse> GetLocalSettingAsync(IServiceProvider serviceProvider, Guid computedIdentifier, ConfigSource configSource, CancellationToken cancellationToken = default)
+    content: Task<IResponse> GetLocalSettingsAsync(IServiceProvider serviceProvider, Guid computedIdentifier, ConfigSource configSource, CancellationToken cancellationToken = default)
     parameters:
     - id: serviceProvider
       type: System.IServiceProvider
@@ -536,8 +538,8 @@ items:
         A task representing the asynchronous operation. The result contains a JSON response with the 
 
         retrieved local setting or an error message if the setting is not found.
-    content.vb: Function GetLocalSettingAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, configSource As ConfigSource, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
-  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync*
+    content.vb: Function GetLocalSettingsAsync(serviceProvider As IServiceProvider, computedIdentifier As Guid, configSource As ConfigSource, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync*
 references:
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
@@ -933,12 +935,12 @@ references:
   name: DeleteSettings
   nameWithType: ILocalSettingsService.DeleteSettings
   fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.DeleteSettings
-- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync*
-  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync
-  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_GetLocalSettingAsync_System_IServiceProvider_System_Guid_OpenSettings_Models_ConfigSource_System_Threading_CancellationToken_
-  name: GetLocalSettingAsync
-  nameWithType: ILocalSettingsService.GetLocalSettingAsync
-  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingAsync
+- uid: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync
+  href: OpenSettings.Services.Interfaces.ILocalSettingsService.html#OpenSettings_Services_Interfaces_ILocalSettingsService_GetLocalSettingsAsync_System_IServiceProvider_System_Guid_OpenSettings_Models_ConfigSource_System_Threading_CancellationToken_
+  name: GetLocalSettingsAsync
+  nameWithType: ILocalSettingsService.GetLocalSettingsAsync
+  fullName: OpenSettings.Services.Interfaces.ILocalSettingsService.GetLocalSettingsAsync
 - uid: OpenSettings.Models.ConfigSource
   commentId: T:OpenSettings.Models.ConfigSource
   parent: OpenSettings.Models

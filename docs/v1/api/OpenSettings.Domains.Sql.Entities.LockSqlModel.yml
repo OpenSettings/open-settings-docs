@@ -5,7 +5,7 @@ items:
   id: LockSqlModel
   parent: OpenSettings.Domains.Sql.Entities
   children:
-  - OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
+  - OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
   - OpenSettings.Domains.Sql.Entities.LockSqlModel.Key
   - OpenSettings.Domains.Sql.Entities.LockSqlModel.Owner
   langs:
@@ -115,23 +115,23 @@ items:
       type: System.String
     content.vb: Public Property Owner As String
   overload: OpenSettings.Domains.Sql.Entities.LockSqlModel.Owner*
-- uid: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
-  commentId: P:OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
-  id: ExpiryTime
+- uid: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
+  id: ExpiryDate
   parent: OpenSettings.Domains.Sql.Entities.LockSqlModel
   langs:
   - csharp
   - vb
-  name: ExpiryTime
-  nameWithType: LockSqlModel.ExpiryTime
-  fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
+  name: ExpiryDate
+  nameWithType: LockSqlModel.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
   type: Property
   source:
     remote:
       path: src/OpenSettings/Domains/Sql/Entities/LockSqlModel.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: ExpiryTime
+    id: ExpiryDate
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/LockSqlModel.cs
     startLine: 24
   assemblies:
@@ -140,12 +140,12 @@ items:
   summary: The expiry time of the lock.
   example: []
   syntax:
-    content: public DateTime ExpiryTime { get; set; }
+    content: public DateTime ExpiryDate { get; set; }
     parameters: []
     return:
       type: System.DateTime
-    content.vb: Public Property ExpiryTime As Date
-  overload: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime*
+    content.vb: Public Property ExpiryDate As Date
+  overload: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate*
 references:
 - uid: OpenSettings.Domains.Sql.Entities
   commentId: N:OpenSettings.Domains.Sql.Entities
@@ -445,12 +445,12 @@ references:
   name: Owner
   nameWithType: LockSqlModel.Owner
   fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel.Owner
-- uid: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
-  href: OpenSettings.Domains.Sql.Entities.LockSqlModel.html#OpenSettings_Domains_Sql_Entities_LockSqlModel_ExpiryTime
-  name: ExpiryTime
-  nameWithType: LockSqlModel.ExpiryTime
-  fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryTime
+- uid: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
+  href: OpenSettings.Domains.Sql.Entities.LockSqlModel.html#OpenSettings_Domains_Sql_Entities_LockSqlModel_ExpiryDate
+  name: ExpiryDate
+  nameWithType: LockSqlModel.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel.ExpiryDate
 - uid: System.DateTime
   commentId: T:System.DateTime
   parent: System

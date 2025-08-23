@@ -5,7 +5,7 @@ items:
   id: SettingHistoriesController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoriesService)
+  - OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoryService)
   - OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.GetSettingHistoryById(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.GetSettingHistoryBySlug(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryRequest,System.Threading.CancellationToken)
   - OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.GetSettingHistoryData(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryDataRequest,System.Threading.CancellationToken)
@@ -217,16 +217,16 @@ items:
     arguments:
     - type: System.String
       value: v1/setting-histories
-- uid: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  id: '#ctor(OpenSettings.Services.Interfaces.ISettingHistoriesService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoryService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor(OpenSettings.Services.Interfaces.ISettingHistoryService)
+  id: '#ctor(OpenSettings.Services.Interfaces.ISettingHistoryService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController
   langs:
   - csharp
   - vb
-  name: SettingHistoriesController(ISettingHistoriesService)
-  nameWithType: SettingHistoriesController.SettingHistoriesController(ISettingHistoriesService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.SettingHistoriesController(OpenSettings.Services.Interfaces.ISettingHistoriesService)
+  name: SettingHistoriesController(ISettingHistoryService)
+  nameWithType: SettingHistoriesController.SettingHistoriesController(ISettingHistoryService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.SettingHistoriesController(OpenSettings.Services.Interfaces.ISettingHistoryService)
   type: Constructor
   source:
     remote:
@@ -240,15 +240,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public SettingHistoriesController(ISettingHistoriesService settingHistoriesService)
+    content: public SettingHistoriesController(ISettingHistoryService settingHistoryService)
     parameters:
-    - id: settingHistoriesService
-      type: OpenSettings.Services.Interfaces.ISettingHistoriesService
-    content.vb: Public Sub New(settingHistoriesService As ISettingHistoriesService)
+    - id: settingHistoryService
+      type: OpenSettings.Services.Interfaces.ISettingHistoryService
+    content.vb: Public Sub New(settingHistoryService As ISettingHistoryService)
   overload: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor*
-  nameWithType.vb: SettingHistoriesController.New(ISettingHistoriesService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.New(OpenSettings.Services.Interfaces.ISettingHistoriesService)
-  name.vb: New(ISettingHistoriesService)
+  nameWithType.vb: SettingHistoriesController.New(ISettingHistoryService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.New(OpenSettings.Services.Interfaces.ISettingHistoryService)
+  name.vb: New(ISettingHistoryService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.GetSettingHistoryData(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryDataRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.GetSettingHistoryData(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryDataRequest,System.Threading.CancellationToken)
   id: GetSettingHistoryData(OpenSettings.AspNetCore.Models.Requests.GetSettingHistoryDataRequest,System.Threading.CancellationToken)
@@ -9062,20 +9062,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.html#OpenSettings_AspNetCore_Controllers_v1_SettingHistoriesController__ctor_OpenSettings_Services_Interfaces_ISettingHistoriesService_
+  href: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.html#OpenSettings_AspNetCore_Controllers_v1_SettingHistoriesController__ctor_OpenSettings_Services_Interfaces_ISettingHistoryService_
   name: SettingHistoriesController
   nameWithType: SettingHistoriesController.SettingHistoriesController
   fullName: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.SettingHistoriesController
   nameWithType.vb: SettingHistoriesController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.SettingHistoriesController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.ISettingHistoriesService
-  commentId: T:OpenSettings.Services.Interfaces.ISettingHistoriesService
+- uid: OpenSettings.Services.Interfaces.ISettingHistoryService
+  commentId: T:OpenSettings.Services.Interfaces.ISettingHistoryService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.ISettingHistoriesService.html
-  name: ISettingHistoriesService
-  nameWithType: ISettingHistoriesService
-  fullName: OpenSettings.Services.Interfaces.ISettingHistoriesService
+  href: OpenSettings.Services.Interfaces.ISettingHistoryService.html
+  name: ISettingHistoryService
+  nameWithType: ISettingHistoryService
+  fullName: OpenSettings.Services.Interfaces.ISettingHistoryService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

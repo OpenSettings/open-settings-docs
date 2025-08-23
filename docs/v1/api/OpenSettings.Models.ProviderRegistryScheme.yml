@@ -9,7 +9,9 @@ items:
   - OpenSettings.Models.ProviderRegistryScheme.Http
   - OpenSettings.Models.ProviderRegistryScheme.Https
   - OpenSettings.Models.ProviderRegistryScheme.Tcp
+  - OpenSettings.Models.ProviderRegistryScheme.Unset
   - OpenSettings.Models.ProviderRegistryScheme.WebSocket
+  - OpenSettings.Models.ProviderRegistryScheme.WebSocketSecure
   langs:
   - csharp
   - vb
@@ -24,13 +26,43 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderRegistryScheme
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 6
+    startLine: 5
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Represents the communication scheme used for provider registry entries.
+  example: []
   syntax:
     content: public enum ProviderRegistryScheme
     content.vb: Public Enum ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.Unset
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.Unset
+  id: Unset
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: ProviderRegistryScheme.Unset
+  fullName: OpenSettings.Models.ProviderRegistryScheme.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Not set or unknown scheme.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
 - uid: OpenSettings.Models.ProviderRegistryScheme.Tcp
   commentId: F:OpenSettings.Models.ProviderRegistryScheme.Tcp
   id: Tcp
@@ -49,10 +81,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Tcp
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 8
+    startLine: 15
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Transmission Control Protocol (TCP).
+  example: []
   syntax:
     content: Tcp = 1
     return:
@@ -75,10 +109,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Grpc
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 9
+    startLine: 20
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: gRPC communication protocol.
+  example: []
   syntax:
     content: Grpc = 2
     return:
@@ -101,10 +137,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Http
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 10
+    startLine: 25
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: HyperText Transfer Protocol.
+  example: []
   syntax:
     content: Http = 3
     return:
@@ -127,10 +165,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Https
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 11
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: Secure HyperText Transfer Protocol.
+  example: []
   syntax:
     content: Https = 4
     return:
@@ -153,12 +193,42 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: WebSocket
     path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
-    startLine: 12
+    startLine: 35
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
+  summary: WebSocket protocol.
+  example: []
   syntax:
     content: WebSocket = 5
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.ProviderRegistryScheme.WebSocketSecure
+  commentId: F:OpenSettings.Models.ProviderRegistryScheme.WebSocketSecure
+  id: WebSocketSecure
+  parent: OpenSettings.Models.ProviderRegistryScheme
+  langs:
+  - csharp
+  - vb
+  name: WebSocketSecure
+  nameWithType: ProviderRegistryScheme.WebSocketSecure
+  fullName: OpenSettings.Models.ProviderRegistryScheme.WebSocketSecure
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryScheme.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: WebSocketSecure
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryScheme.cs
+    startLine: 40
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Secure WebSocket protocol (WSS).
+  example: []
+  syntax:
+    content: WebSocketSecure = 6
     return:
       type: OpenSettings.Models.ProviderRegistryScheme
 references:

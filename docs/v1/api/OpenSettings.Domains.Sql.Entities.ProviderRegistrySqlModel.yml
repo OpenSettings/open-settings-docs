@@ -5,11 +5,18 @@ items:
   id: ProviderRegistrySqlModel
   parent: OpenSettings.Domains.Sql.Entities
   children:
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Port
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
+  - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
   langs:
   - csharp
   - vb
@@ -24,25 +31,27 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ProviderRegistrySqlModel
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents a registry entry for a provider instance, used to track metadata within the system.
+  example: []
   syntax:
     content: >-
       [Table("ProviderRegistries")]
 
-      public class ProviderRegistrySqlModel : EntityBase<int>
+      public class ProviderRegistrySqlModel : EntityBase<Guid>
     content.vb: >-
       <Table("ProviderRegistries")>
 
-      Public Class ProviderRegistrySqlModel Inherits EntityBase(Of Integer)
+      Public Class ProviderRegistrySqlModel Inherits EntityBase(Of Guid)
   inheritance:
   - System.Object
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   inheritedMembers:
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -56,6 +65,131 @@ items:
     arguments:
     - type: System.String
       value: ProviderRegistries
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
+  id: Type
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ProviderRegistrySqlModel.Type
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Type
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The type of the provider registered in the system.
+  example: []
+  syntax:
+    content: public ProviderRegistryType Type { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ProviderRegistryType
+    content.vb: Public Property Type As ProviderRegistryType
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  id: ClientId
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: ProviderRegistrySqlModel.ClientId
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ClientId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The unique identifier of the app.
+  example: []
+  syntax:
+    content: public Guid ClientId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ClientId As Guid
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
+  id: ClientIdLowercase
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: ClientIdLowercase
+  nameWithType: ProviderRegistrySqlModel.ClientIdLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ClientIdLowercase
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The lowercase version of the <xref href="OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId" data-throw-if-not-resolved="false"></xref>, typically used for case-insensitive comparisons.
+  example: []
+  syntax:
+    content: public string ClientIdLowercase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClientIdLowercase As String
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
+  id: InstanceDynamicId
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: InstanceDynamicId
+  nameWithType: ProviderRegistrySqlModel.InstanceDynamicId
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: InstanceDynamicId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The dynamic identifier of the instance.
+  remarks: The referenced id in the `dbo.Instances` table may not exist if the instance has been deleted.
+  example: []
+  syntax:
+    content: public string InstanceDynamicId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstanceDynamicId As String
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId*
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
   commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
   id: Scheme
@@ -74,10 +208,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Scheme
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 9
+    startLine: 36
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: The communication scheme used by the provider (e.g., HTTP, gRPC).
+  example: []
   syntax:
     content: public ProviderRegistryScheme Scheme { get; set; }
     parameters: []
@@ -103,10 +239,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Host
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 11
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: The host address of the provider instance.
+  example: []
   syntax:
     content: public string Host { get; set; }
     parameters: []
@@ -132,10 +270,12 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Port
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 13
+    startLine: 46
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: The network port on which the provider is running.
+  example: []
   syntax:
     content: public int Port { get; set; }
     parameters: []
@@ -143,6 +283,105 @@ items:
       type: System.Int32
     content.vb: Public Property Port As Integer
   overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Port*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
+  id: Region
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Region
+  nameWithType: ProviderRegistrySqlModel.Region
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Region
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 51
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The region where the provider is deployed or operating.
+  example: []
+  syntax:
+    content: public string Region { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Region As String
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
+  id: Version
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ProviderRegistrySqlModel.Version
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Version
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 57
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    The version of the instance.
+
+    e.g. '<code>1.0.0</code>'
+  example: []
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version*
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: ProviderRegistrySqlModel.PackVersion
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
+    startLine: 63
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    The version of the OpenSettings pack used by the provider.
+
+    e.g. '<code>1.0.0-preview.1.0.1</code>'.
+  example: []
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion*
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn
   commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn
   id: LastHeartbeatOn
@@ -161,16 +400,21 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: LastHeartbeatOn
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 15
+    startLine: 69
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    The timestamp of the last successful heartbeat sent by the provider.
+
+    Used for determining availability and liveness.
+  example: []
   syntax:
-    content: public DateTime? LastHeartbeatOn { get; set; }
+    content: public DateTime LastHeartbeatOn { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.DateTime}
-    content.vb: Public Property LastHeartbeatOn As Date?
+      type: System.DateTime
+    content.vb: Public Property LastHeartbeatOn As Date
   overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn*
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
   commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
@@ -190,7 +434,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: UpdatedOn
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/ProviderRegistrySqlModel.cs
-    startLine: 17
+    startLine: 71
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -208,7 +452,7 @@ items:
       <NotMapped>
 
       Public Overrides Property UpdatedOn As Date?
-  overridden: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  overridden: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
   overload: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn*
   attributes:
   - type: System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute
@@ -264,26 +508,26 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
-  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   parent: OpenSettings.Domains.Sql.Entities
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
-  name: EntityBase<int>
-  nameWithType: EntityBase<int>
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>
-  nameWithType.vb: EntityBase(Of Integer)
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer)
-  name.vb: EntityBase(Of Integer)
+  name: EntityBase<Guid>
+  nameWithType: EntityBase<Guid>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>
+  nameWithType.vb: EntityBase(Of Guid)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid)
+  name.vb: EntityBase(Of Guid)
   spec.csharp:
   - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
     name: EntityBase
     href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
   - name: <
-  - uid: System.Int32
-    name: int
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: '>'
   spec.vb:
   - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
@@ -292,31 +536,31 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Int32
-    name: Integer
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: )
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
   name: Id
-  nameWithType: EntityBase<int>.Id
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.Id
-  nameWithType.vb: EntityBase(Of Integer).Id
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).Id
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  nameWithType: EntityBase<Guid>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.Id
+  nameWithType.vb: EntityBase(Of Guid).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
   name: CreatedOn
-  nameWithType: EntityBase<int>.CreatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.CreatedOn
-  nameWithType.vb: EntityBase(Of Integer).CreatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).CreatedOn
+  nameWithType: EntityBase<Guid>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.CreatedOn
+  nameWithType.vb: EntityBase(Of Guid).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).CreatedOn
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -584,19 +828,19 @@ references:
   fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
   nameWithType.vb: EntityBase(Of TId).CreatedOn
   fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
-- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
-  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Scheme
-  name: Scheme
-  nameWithType: ProviderRegistrySqlModel.Scheme
-  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
-- uid: OpenSettings.Models.ProviderRegistryScheme
-  commentId: T:OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Type
+  name: Type
+  nameWithType: ProviderRegistrySqlModel.Type
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Type
+- uid: OpenSettings.Models.ProviderRegistryType
+  commentId: T:OpenSettings.Models.ProviderRegistryType
   parent: OpenSettings.Models
-  href: OpenSettings.Models.ProviderRegistryScheme.html
-  name: ProviderRegistryScheme
-  nameWithType: ProviderRegistryScheme
-  fullName: OpenSettings.Models.ProviderRegistryScheme
+  href: OpenSettings.Models.ProviderRegistryType.html
+  name: ProviderRegistryType
+  nameWithType: ProviderRegistryType
+  fullName: OpenSettings.Models.ProviderRegistryType
 - uid: OpenSettings.Models
   commentId: N:OpenSettings.Models
   href: OpenSettings.html
@@ -619,12 +863,32 @@ references:
   - uid: OpenSettings.Models
     name: Models
     href: OpenSettings.Models.html
-- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host
-  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Host
-  name: Host
-  nameWithType: ProviderRegistrySqlModel.Host
-  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_ClientId
+  name: ClientId
+  nameWithType: ProviderRegistrySqlModel.ClientId
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  commentId: P:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_ClientId
+  name: ClientId
+  nameWithType: ProviderRegistrySqlModel.ClientId
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientId
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_ClientIdLowercase
+  name: ClientIdLowercase
+  nameWithType: ProviderRegistrySqlModel.ClientIdLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.ClientIdLowercase
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -636,6 +900,31 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_InstanceDynamicId
+  name: InstanceDynamicId
+  nameWithType: ProviderRegistrySqlModel.InstanceDynamicId
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.InstanceDynamicId
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Scheme
+  name: Scheme
+  nameWithType: ProviderRegistrySqlModel.Scheme
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Scheme
+- uid: OpenSettings.Models.ProviderRegistryScheme
+  commentId: T:OpenSettings.Models.ProviderRegistryScheme
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryScheme.html
+  name: ProviderRegistryScheme
+  nameWithType: ProviderRegistryScheme
+  fullName: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Host
+  name: Host
+  nameWithType: ProviderRegistrySqlModel.Host
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Host
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Port*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Port
   href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Port
@@ -653,12 +942,57 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Region
+  name: Region
+  nameWithType: ProviderRegistrySqlModel.Region
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Region
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_Version
+  name: Version
+  nameWithType: ProviderRegistrySqlModel.Version
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.Version
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_PackVersion
+  name: PackVersion
+  nameWithType: ProviderRegistrySqlModel.PackVersion
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.PackVersion
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn
   href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_LastHeartbeatOn
   name: LastHeartbeatOn
   nameWithType: ProviderRegistrySqlModel.LastHeartbeatOn
   fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.LastHeartbeatOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<Guid>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Guid).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_UpdatedOn
+  name: UpdatedOn
+  nameWithType: ProviderRegistrySqlModel.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
 - uid: System.Nullable{System.DateTime}
   commentId: T:System.Nullable{System.DateTime}
   parent: System
@@ -682,6 +1016,14 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.datetime
   - name: '?'
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1
   isExternal: true
@@ -710,27 +1052,3 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
-  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
-  name: UpdatedOn
-  nameWithType: EntityBase<int>.UpdatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.UpdatedOn
-  nameWithType.vb: EntityBase(Of Integer).UpdatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).UpdatedOn
-- uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn*
-  commentId: Overload:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
-  href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html#OpenSettings_Domains_Sql_Entities_ProviderRegistrySqlModel_UpdatedOn
-  name: UpdatedOn
-  nameWithType: ProviderRegistrySqlModel.UpdatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.UpdatedOn
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
-  name: UpdatedOn
-  nameWithType: EntityBase<TId>.UpdatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
-  nameWithType.vb: EntityBase(Of TId).UpdatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn

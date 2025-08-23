@@ -9,8 +9,8 @@ items:
   - OpenSettings.Models.Inputs.UpdateInstanceInput.ClientSecret
   - OpenSettings.Models.Inputs.UpdateInstanceInput.IdentifierName
   - OpenSettings.Models.Inputs.UpdateInstanceInput.InstanceName
-  - OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
   - OpenSettings.Models.Inputs.UpdateInstanceInput.IsActive
+  - OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
   - OpenSettings.Models.Inputs.UpdateInstanceInput.UpdatedById
   - OpenSettings.Models.Inputs.UpdateInstanceInput.Urls
   langs:
@@ -218,35 +218,35 @@ items:
       type: System.Boolean
     content.vb: Public Property IsActive As Boolean
   overload: OpenSettings.Models.Inputs.UpdateInstanceInput.IsActive*
-- uid: OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
-  commentId: P:OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
-  id: IpAddress
+- uid: OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
+  commentId: P:OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
+  id: RemoteIpAddress
   parent: OpenSettings.Models.Inputs.UpdateInstanceInput
   langs:
   - csharp
   - vb
-  name: IpAddress
-  nameWithType: UpdateInstanceInput.IpAddress
-  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
+  name: RemoteIpAddress
+  nameWithType: UpdateInstanceInput.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Inputs/UpdateInstanceInput.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: IpAddress
+    id: RemoteIpAddress
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/UpdateInstanceInput.cs
     startLine: 18
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
   syntax:
-    content: public string IpAddress { get; set; }
+    content: public string RemoteIpAddress { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property IpAddress As String
-  overload: OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress*
+    content.vb: Public Property RemoteIpAddress As String
+  overload: OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress*
 - uid: OpenSettings.Models.Inputs.UpdateInstanceInput.UpdatedById
   commentId: P:OpenSettings.Models.Inputs.UpdateInstanceInput.UpdatedById
   id: UpdatedById
@@ -633,12 +633,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress*
-  commentId: Overload:OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
-  href: OpenSettings.Models.Inputs.UpdateInstanceInput.html#OpenSettings_Models_Inputs_UpdateInstanceInput_IpAddress
-  name: IpAddress
-  nameWithType: UpdateInstanceInput.IpAddress
-  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput.IpAddress
+- uid: OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress*
+  commentId: Overload:OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
+  href: OpenSettings.Models.Inputs.UpdateInstanceInput.html#OpenSettings_Models_Inputs_UpdateInstanceInput_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: UpdateInstanceInput.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.UpdateInstanceInput.RemoteIpAddress
 - uid: OpenSettings.Models.Inputs.UpdateInstanceInput.UpdatedById*
   commentId: Overload:OpenSettings.Models.Inputs.UpdateInstanceInput.UpdatedById
   href: OpenSettings.Models.Inputs.UpdateInstanceInput.html#OpenSettings_Models_Inputs_UpdateInstanceInput_UpdatedById

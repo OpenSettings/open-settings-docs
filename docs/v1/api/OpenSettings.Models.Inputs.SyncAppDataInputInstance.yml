@@ -9,10 +9,11 @@ items:
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.DynamicId
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.Environment
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.InstanceName
-  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
+  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.ReloadStrategies
+  - OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.ServiceType
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.Urls
   - OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
@@ -163,6 +164,35 @@ items:
       type: System.String
     content.vb: Public Property Version As String
   overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version*
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: SyncAppDataInputInstance.PackVersion
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Inputs
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion*
 - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
   commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
   id: IsActive
@@ -181,7 +211,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsActive
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -192,25 +222,25 @@ items:
       type: System.Boolean
     content.vb: Public Property IsActive As Boolean
   overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive*
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
-  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
-  id: IpAddress
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
+  commentId: P:OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
+  id: RemoteIpAddress
   parent: OpenSettings.Models.Inputs.SyncAppDataInputInstance
   langs:
   - csharp
   - vb
-  name: IpAddress
-  nameWithType: SyncAppDataInputInstance.IpAddress
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+  name: RemoteIpAddress
+  nameWithType: SyncAppDataInputInstance.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: IpAddress
+    id: RemoteIpAddress
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -218,15 +248,15 @@ items:
     content: >-
       [JsonIgnore]
 
-      public string IpAddress { get; set; }
+      public string RemoteIpAddress { get; set; }
     parameters: []
     return:
       type: System.String
     content.vb: >-
       <JsonIgnore>
 
-      Public Property IpAddress As String
-  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress*
+      Public Property RemoteIpAddress As String
+  overload: OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress*
   attributes:
   - type: System.Text.Json.Serialization.JsonIgnoreAttribute
     ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
@@ -249,7 +279,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: MachineName
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -278,7 +308,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Environment
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -307,7 +337,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ReloadStrategies
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -336,7 +366,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ServiceType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -365,7 +395,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: DataAccessType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/SyncAppDataInputInstance.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
@@ -702,6 +732,12 @@ references:
   name: Version
   nameWithType: SyncAppDataInputInstance.Version
   fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.Version
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
+  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_PackVersion
+  name: PackVersion
+  nameWithType: SyncAppDataInputInstance.PackVersion
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.PackVersion
 - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive*
   commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IsActive
   href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_IsActive
@@ -719,12 +755,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress*
-  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
-  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_IpAddress
-  name: IpAddress
-  nameWithType: SyncAppDataInputInstance.IpAddress
-  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.IpAddress
+- uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress*
+  commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
+  href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_RemoteIpAddress
+  name: RemoteIpAddress
+  nameWithType: SyncAppDataInputInstance.RemoteIpAddress
+  fullName: OpenSettings.Models.Inputs.SyncAppDataInputInstance.RemoteIpAddress
 - uid: OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName*
   commentId: Overload:OpenSettings.Models.Inputs.SyncAppDataInputInstance.MachineName
   href: OpenSettings.Models.Inputs.SyncAppDataInputInstance.html#OpenSettings_Models_Inputs_SyncAppDataInputInstance_MachineName

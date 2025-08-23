@@ -7,6 +7,7 @@ items:
   children:
   - OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.AbsoluteExpiration
   - OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.Data
+  - OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds
   langs:
   - csharp
   - vb
@@ -74,6 +75,37 @@ items:
   overload: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.Data*
   nameWithType.vb: OpenSettingsConfigsDataCacheModel(Of T).Data
   fullName.vb: OpenSettings.Models.OpenSettingsConfigsDataCacheModel(Of T).Data
+- uid: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds
+  commentId: P:OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds
+  id: ExpiresInSeconds
+  parent: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1
+  langs:
+  - csharp
+  - vb
+  name: ExpiresInSeconds
+  nameWithType: OpenSettingsConfigsDataCacheModel<T>.ExpiresInSeconds
+  fullName: OpenSettings.Models.OpenSettingsConfigsDataCacheModel<T>.ExpiresInSeconds
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/OpenSettingsConfigDataCacheModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiresInSeconds
+    path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsConfigDataCacheModel.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public double ExpiresInSeconds { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ExpiresInSeconds As Double
+  overload: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds*
+  nameWithType.vb: OpenSettingsConfigsDataCacheModel(Of T).ExpiresInSeconds
+  fullName.vb: OpenSettings.Models.OpenSettingsConfigsDataCacheModel(Of T).ExpiresInSeconds
 - uid: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.AbsoluteExpiration
   commentId: P:OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.AbsoluteExpiration
   id: AbsoluteExpiration
@@ -92,7 +124,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: AbsoluteExpiration
     path: ../../../open-settings/src/OpenSettings/Models/OpenSettingsConfigDataCacheModel.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
@@ -383,6 +415,25 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds*
+  commentId: Overload:OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.ExpiresInSeconds
+  href: OpenSettings.Models.OpenSettingsConfigsDataCacheModel-1.html#OpenSettings_Models_OpenSettingsConfigsDataCacheModel_1_ExpiresInSeconds
+  name: ExpiresInSeconds
+  nameWithType: OpenSettingsConfigsDataCacheModel<T>.ExpiresInSeconds
+  fullName: OpenSettings.Models.OpenSettingsConfigsDataCacheModel<T>.ExpiresInSeconds
+  nameWithType.vb: OpenSettingsConfigsDataCacheModel(Of T).ExpiresInSeconds
+  fullName.vb: OpenSettings.Models.OpenSettingsConfigsDataCacheModel(Of T).ExpiresInSeconds
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
 - uid: OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.AbsoluteExpiration*
   commentId: Overload:OpenSettings.Models.OpenSettingsConfigsDataCacheModel`1.AbsoluteExpiration
   href: OpenSettings.Models.OpenSettingsConfigsDataCacheModel-1.html#OpenSettings_Models_OpenSettingsConfigsDataCacheModel_1_AbsoluteExpiration

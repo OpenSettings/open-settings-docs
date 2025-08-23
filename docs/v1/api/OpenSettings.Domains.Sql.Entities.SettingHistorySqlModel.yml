@@ -12,11 +12,13 @@ items:
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Data
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredBy
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById
+  - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RowVersion
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Setting
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SettingId
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Slug
+  - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
   - OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Version
   langs:
   - csharp
@@ -42,18 +44,17 @@ items:
     content: >-
       [Table("SettingHistories")]
 
-      public class SettingHistorySqlModel : EntityBase<int>
+      public class SettingHistorySqlModel : EntityBase<Guid>
     content.vb: >-
       <Table("SettingHistories")>
 
-      Public Class SettingHistorySqlModel Inherits EntityBase(Of Integer)
+      Public Class SettingHistorySqlModel Inherits EntityBase(Of Guid)
   inheritance:
   - System.Object
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   inheritedMembers:
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
-  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -116,16 +117,11 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SerializerType
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
-  summary: >-
-    Defines the serialization type used for data serialization and deserialization.
-
-    Currently, only <xref href="OpenSettings.Models.SerializerType.Json" data-throw-if-not-resolved="false"></xref> is supported.
-
-    Future support for other formats may be added.
+  summary: Defines the serialization type used for data serialization and deserialization.
   example: []
   syntax:
     content: public SerializerType SerializerType { get; set; }
@@ -152,7 +148,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionType
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 30
+    startLine: 28
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -186,7 +182,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CompressionLevel
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 35
+    startLine: 33
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -217,7 +213,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Version
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 40
+    startLine: 38
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -248,7 +244,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Slug
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 46
+    startLine: 44
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -282,7 +278,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: SettingId
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 51
+    startLine: 49
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -313,7 +309,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 56
+    startLine: 54
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -326,6 +322,79 @@ items:
       type: System.Nullable{System.Guid}
     content.vb: Public Property CreatedById As Guid?
   overload: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.CreatedById*
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
+  id: UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel
+  langs:
+  - csharp
+  - vb
+  name: UpdatedOn
+  nameWithType: SettingHistorySqlModel.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UpdatedOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+    startLine: 56
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the entity was last updated, or <code>null</code> if never updated.
+  example: []
+  syntax:
+    content: >-
+      [NotMapped]
+
+      public override DateTime? UpdatedOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: >-
+      <NotMapped>
+
+      Public Overrides Property UpdatedOn As Date?
+  overridden: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  overload: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
+  id: RestoredOn
+  parent: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel
+  langs:
+  - csharp
+  - vb
+  name: RestoredOn
+  nameWithType: SettingHistorySqlModel.RestoredOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RestoredOn
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
+    startLine: 62
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The date and time when the entity was last restored, or <code>null</code> if never restored.
+  example: []
+  syntax:
+    content: public DateTime? RestoredOn { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property RestoredOn As Date?
+  overload: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn*
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById
   commentId: P:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById
   id: RestoredById
@@ -344,7 +413,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RestoredById
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 61
+    startLine: 67
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -375,7 +444,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RowVersion
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 67
+    startLine: 73
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -409,7 +478,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Setting
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 69
+    startLine: 75
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -450,7 +519,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: CreatedBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 75
+    startLine: 81
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -493,7 +562,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: RestoredBy
     path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/SettingHistorySqlModel.cs
-    startLine: 81
+    startLine: 87
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Domains.Sql.Entities
@@ -568,26 +637,26 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
-  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   parent: OpenSettings.Domains.Sql.Entities
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
-  name: EntityBase<int>
-  nameWithType: EntityBase<int>
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>
-  nameWithType.vb: EntityBase(Of Integer)
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer)
-  name.vb: EntityBase(Of Integer)
+  name: EntityBase<Guid>
+  nameWithType: EntityBase<Guid>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>
+  nameWithType.vb: EntityBase(Of Guid)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid)
+  name.vb: EntityBase(Of Guid)
   spec.csharp:
   - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
     name: EntityBase
     href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
   - name: <
-  - uid: System.Int32
-    name: int
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: '>'
   spec.vb:
   - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
@@ -596,41 +665,31 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Int32
-    name: Integer
+  - uid: System.Guid
+    name: Guid
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: )
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
   name: Id
-  nameWithType: EntityBase<int>.Id
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.Id
-  nameWithType.vb: EntityBase(Of Integer).Id
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).Id
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  nameWithType: EntityBase<Guid>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.Id
+  nameWithType.vb: EntityBase(Of Guid).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
   definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
   name: CreatedOn
-  nameWithType: EntityBase<int>.CreatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.CreatedOn
-  nameWithType.vb: EntityBase(Of Integer).CreatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).CreatedOn
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
-  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
-  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
-  name: UpdatedOn
-  nameWithType: EntityBase<int>.UpdatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.UpdatedOn
-  nameWithType.vb: EntityBase(Of Integer).UpdatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).UpdatedOn
+  nameWithType: EntityBase<Guid>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.CreatedOn
+  nameWithType.vb: EntityBase(Of Guid).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).CreatedOn
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -898,14 +957,6 @@ references:
   fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
   nameWithType.vb: EntityBase(Of TId).CreatedOn
   fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
-- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
-  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
-  name: UpdatedOn
-  nameWithType: EntityBase<TId>.UpdatedOn
-  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
-  nameWithType.vb: EntityBase(Of TId).UpdatedOn
-  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Data*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.Data
   href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_Data
@@ -935,12 +986,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.byte
   - name: (
   - name: )
-- uid: OpenSettings.Models.SerializerType.Json
-  commentId: F:OpenSettings.Models.SerializerType.Json
-  href: OpenSettings.Models.SerializerType.html#OpenSettings_Models_SerializerType_Json
-  name: Json
-  nameWithType: SerializerType.Json
-  fullName: OpenSettings.Models.SerializerType.Json
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.SerializerType
   href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_SerializerType
@@ -1198,6 +1243,59 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<Guid>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Guid).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_UpdatedOn
+  name: UpdatedOn
+  nameWithType: SettingHistorySqlModel.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.UpdatedOn
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
+  href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_RestoredOn
+  name: RestoredOn
+  nameWithType: SettingHistorySqlModel.RestoredOn
+  fullName: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredOn
 - uid: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById*
   commentId: Overload:OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.RestoredById
   href: OpenSettings.Domains.Sql.Entities.SettingHistorySqlModel.html#OpenSettings_Domains_Sql_Entities_SettingHistorySqlModel_RestoredById

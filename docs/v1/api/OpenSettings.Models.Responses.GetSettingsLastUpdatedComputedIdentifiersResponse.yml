@@ -20,7 +20,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetSettingsLastUpdatedComputedIdentifiersResponse
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingsLastUpdatedComputedIdentifiersResponse.cs
-    startLine: 6
+    startLine: 5
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
@@ -55,16 +55,16 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: ComputedIdentifierToUpdatedOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingsLastUpdatedComputedIdentifiersResponse.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public IEnumerable<KeyValuePair<Guid, DateTime>> ComputedIdentifierToUpdatedOn { get; set; }
+    content: public Dictionary<Guid, DateTime> ComputedIdentifierToUpdatedOn { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Guid,System.DateTime}}
-    content.vb: Public Property ComputedIdentifierToUpdatedOn As IEnumerable(Of KeyValuePair(Of Guid, Date))
+      type: System.Collections.Generic.Dictionary{System.Guid,System.DateTime}
+    content.vb: Public Property ComputedIdentifierToUpdatedOn As Dictionary(Of Guid, Date)
   overload: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse.ComputedIdentifierToUpdatedOn*
 references:
 - uid: OpenSettings.Models.Responses
@@ -340,27 +340,22 @@ references:
   name: ComputedIdentifierToUpdatedOn
   nameWithType: GetSettingsLastUpdatedComputedIdentifiersResponse.ComputedIdentifierToUpdatedOn
   fullName: OpenSettings.Models.Responses.GetSettingsLastUpdatedComputedIdentifiersResponse.ComputedIdentifierToUpdatedOn
-- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Guid,System.DateTime}}
-  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Guid,System.DateTime}}
+- uid: System.Collections.Generic.Dictionary{System.Guid,System.DateTime}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,System.DateTime}
   parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<KeyValuePair<Guid, DateTime>>
-  nameWithType: IEnumerable<KeyValuePair<Guid, DateTime>>
-  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Guid, System.DateTime>>
-  nameWithType.vb: IEnumerable(Of KeyValuePair(Of Guid, Date))
-  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.Guid, Date))
-  name.vb: IEnumerable(Of KeyValuePair(Of Guid, Date))
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Guid, DateTime>
+  nameWithType: Dictionary<Guid, DateTime>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, System.DateTime>
+  nameWithType.vb: Dictionary(Of Guid, Date)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, Date)
+  name.vb: Dictionary(Of Guid, Date)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: System.Collections.Generic.KeyValuePair`2
-    name: KeyValuePair
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
   - uid: System.Guid
     name: Guid
@@ -373,19 +368,11 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.datetime
   - name: '>'
-  - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Collections.Generic.KeyValuePair`2
-    name: KeyValuePair
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: (
   - name: Of
   - name: " "
@@ -400,34 +387,39 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.datetime
   - name: )
-  - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: <
-  - name: T
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic

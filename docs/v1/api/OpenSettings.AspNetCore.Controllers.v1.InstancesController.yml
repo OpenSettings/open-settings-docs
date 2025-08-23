@@ -5,7 +5,7 @@ items:
   id: InstancesController
   parent: OpenSettings.AspNetCore.Controllers.v1
   children:
-  - OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstancesService)
+  - OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstanceService)
   - OpenSettings.AspNetCore.Controllers.v1.InstancesController.DeleteInstance(OpenSettings.AspNetCore.Models.Requests.DeleteInstanceRequest,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -214,16 +214,16 @@ items:
     arguments:
     - type: System.String
       value: v1/instances
-- uid: OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstancesService)
-  commentId: M:OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstancesService)
-  id: '#ctor(OpenSettings.Services.Interfaces.IInstancesService)'
+- uid: OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstanceService)
+  commentId: M:OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor(OpenSettings.Services.Interfaces.IInstanceService)
+  id: '#ctor(OpenSettings.Services.Interfaces.IInstanceService)'
   parent: OpenSettings.AspNetCore.Controllers.v1.InstancesController
   langs:
   - csharp
   - vb
-  name: InstancesController(IInstancesService)
-  nameWithType: InstancesController.InstancesController(IInstancesService)
-  fullName: OpenSettings.AspNetCore.Controllers.v1.InstancesController.InstancesController(OpenSettings.Services.Interfaces.IInstancesService)
+  name: InstancesController(IInstanceService)
+  nameWithType: InstancesController.InstancesController(IInstanceService)
+  fullName: OpenSettings.AspNetCore.Controllers.v1.InstancesController.InstancesController(OpenSettings.Services.Interfaces.IInstanceService)
   type: Constructor
   source:
     remote:
@@ -237,15 +237,15 @@ items:
   - OpenSettings.AspNetCore
   namespace: OpenSettings.AspNetCore.Controllers.v1
   syntax:
-    content: public InstancesController(IInstancesService instancesService)
+    content: public InstancesController(IInstanceService instancesService)
     parameters:
     - id: instancesService
-      type: OpenSettings.Services.Interfaces.IInstancesService
-    content.vb: Public Sub New(instancesService As IInstancesService)
+      type: OpenSettings.Services.Interfaces.IInstanceService
+    content.vb: Public Sub New(instancesService As IInstanceService)
   overload: OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor*
-  nameWithType.vb: InstancesController.New(IInstancesService)
-  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.InstancesController.New(OpenSettings.Services.Interfaces.IInstancesService)
-  name.vb: New(IInstancesService)
+  nameWithType.vb: InstancesController.New(IInstanceService)
+  fullName.vb: OpenSettings.AspNetCore.Controllers.v1.InstancesController.New(OpenSettings.Services.Interfaces.IInstanceService)
+  name.vb: New(IInstanceService)
 - uid: OpenSettings.AspNetCore.Controllers.v1.InstancesController.DeleteInstance(OpenSettings.AspNetCore.Models.Requests.DeleteInstanceRequest,System.Threading.CancellationToken)
   commentId: M:OpenSettings.AspNetCore.Controllers.v1.InstancesController.DeleteInstance(OpenSettings.AspNetCore.Models.Requests.DeleteInstanceRequest,System.Threading.CancellationToken)
   id: DeleteInstance(OpenSettings.AspNetCore.Models.Requests.DeleteInstanceRequest,System.Threading.CancellationToken)
@@ -8924,20 +8924,20 @@ references:
   - name: )
 - uid: OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor*
   commentId: Overload:OpenSettings.AspNetCore.Controllers.v1.InstancesController.#ctor
-  href: OpenSettings.AspNetCore.Controllers.v1.InstancesController.html#OpenSettings_AspNetCore_Controllers_v1_InstancesController__ctor_OpenSettings_Services_Interfaces_IInstancesService_
+  href: OpenSettings.AspNetCore.Controllers.v1.InstancesController.html#OpenSettings_AspNetCore_Controllers_v1_InstancesController__ctor_OpenSettings_Services_Interfaces_IInstanceService_
   name: InstancesController
   nameWithType: InstancesController.InstancesController
   fullName: OpenSettings.AspNetCore.Controllers.v1.InstancesController.InstancesController
   nameWithType.vb: InstancesController.New
   fullName.vb: OpenSettings.AspNetCore.Controllers.v1.InstancesController.New
   name.vb: New
-- uid: OpenSettings.Services.Interfaces.IInstancesService
-  commentId: T:OpenSettings.Services.Interfaces.IInstancesService
+- uid: OpenSettings.Services.Interfaces.IInstanceService
+  commentId: T:OpenSettings.Services.Interfaces.IInstanceService
   parent: OpenSettings.Services.Interfaces
-  href: OpenSettings.Services.Interfaces.IInstancesService.html
-  name: IInstancesService
-  nameWithType: IInstancesService
-  fullName: OpenSettings.Services.Interfaces.IInstancesService
+  href: OpenSettings.Services.Interfaces.IInstanceService.html
+  name: IInstanceService
+  nameWithType: IInstanceService
+  fullName: OpenSettings.Services.Interfaces.IInstanceService
 - uid: OpenSettings.Services.Interfaces
   commentId: N:OpenSettings.Services.Interfaces
   href: OpenSettings.html

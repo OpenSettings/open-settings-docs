@@ -9,11 +9,15 @@ items:
   - OpenSettings.Domains.Sql.Entities.AppSqlModel
   - OpenSettings.Domains.Sql.Entities.AppTagMappingSqlModel
   - OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey
   - OpenSettings.Domains.Sql.Entities.EntityBase`1
+  - OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+  - OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
   - OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
   - OpenSettings.Domains.Sql.Entities.InstanceSqlModel
   - OpenSettings.Domains.Sql.Entities.LicenseSqlModel
   - OpenSettings.Domains.Sql.Entities.LockSqlModel
+  - OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
   - OpenSettings.Domains.Sql.Entities.NotificationSqlModel
   - OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
   - OpenSettings.Domains.Sql.Entities.SettingClassSqlModel
@@ -74,6 +78,12 @@ references:
   name: ConfigurationSqlModel
   nameWithType: ConfigurationSqlModel
   fullName: OpenSettings.Domains.Sql.Entities.ConfigurationSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  commentId: T:OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html
+  name: DataProtectionKey
+  nameWithType: DataProtectionKey
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey
 - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
   commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
   href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
@@ -99,6 +109,19 @@ references:
   - name: " "
   - name: TId
   - name: )
+- uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+  href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel.html
+  name: GlobalConfigurationHistorySqlModel
+  nameWithType: GlobalConfigurationHistorySqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.GlobalConfigurationHistorySqlModel
+- uid: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel.html
+  name: GlobalConfigurationSqlModel
+  nameWithType: GlobalConfigurationSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.GlobalConfigurationSqlModel
 - uid: OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
   commentId: T:OpenSettings.Domains.Sql.Entities.IdentifierSqlModel
   parent: OpenSettings.Domains.Sql.Entities
@@ -125,6 +148,12 @@ references:
   name: LockSqlModel
   nameWithType: LockSqlModel
   fullName: OpenSettings.Domains.Sql.Entities.LockSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
+  href: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel.html
+  name: LoginEntrySqlModel
+  nameWithType: LoginEntrySqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.LoginEntrySqlModel
 - uid: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
   commentId: T:OpenSettings.Domains.Sql.Entities.NotificationSqlModel
   parent: OpenSettings.Domains.Sql.Entities
@@ -134,6 +163,7 @@ references:
   fullName: OpenSettings.Domains.Sql.Entities.NotificationSqlModel
 - uid: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
   commentId: T:OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel
+  parent: OpenSettings.Domains.Sql.Entities
   href: OpenSettings.Domains.Sql.Entities.ProviderRegistrySqlModel.html
   name: ProviderRegistrySqlModel
   nameWithType: ProviderRegistrySqlModel

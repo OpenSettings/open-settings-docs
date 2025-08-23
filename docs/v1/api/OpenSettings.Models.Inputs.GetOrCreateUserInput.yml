@@ -5,8 +5,8 @@ items:
   id: GetOrCreateUserInput
   parent: OpenSettings.Models.Inputs
   children:
-  - OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,System.String)
-  - OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
+  - OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,OpenSettings.Models.AuthType)
+  - OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType
   - OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal
   langs:
   - csharp
@@ -39,16 +39,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,System.String)
-  commentId: M:OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,System.String)
-  id: '#ctor(System.Security.Claims.ClaimsPrincipal,System.String)'
+- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,OpenSettings.Models.AuthType)
+  commentId: M:OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor(System.Security.Claims.ClaimsPrincipal,OpenSettings.Models.AuthType)
+  id: '#ctor(System.Security.Claims.ClaimsPrincipal,OpenSettings.Models.AuthType)'
   parent: OpenSettings.Models.Inputs.GetOrCreateUserInput
   langs:
   - csharp
   - vb
-  name: GetOrCreateUserInput(ClaimsPrincipal, string)
-  nameWithType: GetOrCreateUserInput.GetOrCreateUserInput(ClaimsPrincipal, string)
-  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.GetOrCreateUserInput(System.Security.Claims.ClaimsPrincipal, string)
+  name: GetOrCreateUserInput(ClaimsPrincipal, AuthType)
+  nameWithType: GetOrCreateUserInput.GetOrCreateUserInput(ClaimsPrincipal, AuthType)
+  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.GetOrCreateUserInput(System.Security.Claims.ClaimsPrincipal, OpenSettings.Models.AuthType)
   type: Constructor
   source:
     remote:
@@ -62,17 +62,17 @@ items:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
   syntax:
-    content: public GetOrCreateUserInput(ClaimsPrincipal principal, string authScheme)
+    content: public GetOrCreateUserInput(ClaimsPrincipal principal, AuthType authType)
     parameters:
     - id: principal
       type: System.Security.Claims.ClaimsPrincipal
-    - id: authScheme
-      type: System.String
-    content.vb: Public Sub New(principal As ClaimsPrincipal, authScheme As String)
+    - id: authType
+      type: OpenSettings.Models.AuthType
+    content.vb: Public Sub New(principal As ClaimsPrincipal, authType As AuthType)
   overload: OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor*
-  nameWithType.vb: GetOrCreateUserInput.New(ClaimsPrincipal, String)
-  fullName.vb: OpenSettings.Models.Inputs.GetOrCreateUserInput.New(System.Security.Claims.ClaimsPrincipal, String)
-  name.vb: New(ClaimsPrincipal, String)
+  nameWithType.vb: GetOrCreateUserInput.New(ClaimsPrincipal, AuthType)
+  fullName.vb: OpenSettings.Models.Inputs.GetOrCreateUserInput.New(System.Security.Claims.ClaimsPrincipal, OpenSettings.Models.AuthType)
+  name.vb: New(ClaimsPrincipal, AuthType)
 - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal
   commentId: P:OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal
   id: Principal
@@ -102,35 +102,35 @@ items:
       type: System.Security.Claims.ClaimsPrincipal
     content.vb: Public ReadOnly Property Principal As ClaimsPrincipal
   overload: OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal*
-- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
-  commentId: P:OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
-  id: AuthScheme
+- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType
+  commentId: P:OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType
+  id: AuthType
   parent: OpenSettings.Models.Inputs.GetOrCreateUserInput
   langs:
   - csharp
   - vb
-  name: AuthScheme
-  nameWithType: GetOrCreateUserInput.AuthScheme
-  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
+  name: AuthType
+  nameWithType: GetOrCreateUserInput.AuthType
+  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Inputs/GetOrCreateUserInput.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: AuthScheme
+    id: AuthType
     path: ../../../open-settings/src/OpenSettings/Models/Inputs/GetOrCreateUserInput.cs
     startLine: 14
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Inputs
   syntax:
-    content: public string AuthScheme { get; }
+    content: public AuthType AuthType { get; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property AuthScheme As String
-  overload: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme*
+      type: OpenSettings.Models.AuthType
+    content.vb: Public ReadOnly Property AuthType As AuthType
+  overload: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType*
 references:
 - uid: OpenSettings.Models.Inputs
   commentId: N:OpenSettings.Models.Inputs
@@ -401,7 +401,7 @@ references:
   fullName: System
 - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor*
   commentId: Overload:OpenSettings.Models.Inputs.GetOrCreateUserInput.#ctor
-  href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html#OpenSettings_Models_Inputs_GetOrCreateUserInput__ctor_System_Security_Claims_ClaimsPrincipal_System_String_
+  href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html#OpenSettings_Models_Inputs_GetOrCreateUserInput__ctor_System_Security_Claims_ClaimsPrincipal_OpenSettings_Models_AuthType_
   name: GetOrCreateUserInput
   nameWithType: GetOrCreateUserInput.GetOrCreateUserInput
   fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.GetOrCreateUserInput
@@ -416,17 +416,13 @@ references:
   name: ClaimsPrincipal
   nameWithType: ClaimsPrincipal
   fullName: System.Security.Claims.ClaimsPrincipal
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+- uid: OpenSettings.Models.AuthType
+  commentId: T:OpenSettings.Models.AuthType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.AuthType.html
+  name: AuthType
+  nameWithType: AuthType
+  fullName: OpenSettings.Models.AuthType
 - uid: System.Security.Claims
   commentId: N:System.Security.Claims
   isExternal: true
@@ -464,15 +460,37 @@ references:
     name: Claims
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.security.claims
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
 - uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal*
   commentId: Overload:OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal
   href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html#OpenSettings_Models_Inputs_GetOrCreateUserInput_Principal
   name: Principal
   nameWithType: GetOrCreateUserInput.Principal
   fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.Principal
-- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme*
-  commentId: Overload:OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
-  href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html#OpenSettings_Models_Inputs_GetOrCreateUserInput_AuthScheme
-  name: AuthScheme
-  nameWithType: GetOrCreateUserInput.AuthScheme
-  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthScheme
+- uid: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType*
+  commentId: Overload:OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType
+  href: OpenSettings.Models.Inputs.GetOrCreateUserInput.html#OpenSettings_Models_Inputs_GetOrCreateUserInput_AuthType
+  name: AuthType
+  nameWithType: GetOrCreateUserInput.AuthType
+  fullName: OpenSettings.Models.Inputs.GetOrCreateUserInput.AuthType

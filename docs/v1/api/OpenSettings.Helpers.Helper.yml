@@ -5,9 +5,11 @@ items:
   id: Helper
   parent: OpenSettings.Helpers
   children:
-  - OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   - OpenSettings.Helpers.Helper.GetEnvironmentName
+  - OpenSettings.Helpers.Helper.GetExpiryTime(System.String)
+  - OpenSettings.Helpers.Helper.GetExpiryTimeOffset(System.String)
   - OpenSettings.Helpers.Helper.GetInitials(System.String)
+  - OpenSettings.Helpers.Helper.GetPublicCacheControlValue(System.Double)
   - OpenSettings.Helpers.Helper.IsMigrationEnabled
   langs:
   - csharp
@@ -23,7 +25,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Helper
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 24
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -60,7 +62,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetInitials
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 31
+    startLine: 23
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -80,53 +82,6 @@ items:
   nameWithType.vb: Helper.GetInitials(String)
   fullName.vb: OpenSettings.Helpers.Helper.GetInitials(String)
   name.vb: GetInitials(String)
-- uid: OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  commentId: M:OpenSettings.Helpers.Helper.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  id: DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  isExtensionMethod: true
-  parent: OpenSettings.Helpers.Helper
-  langs:
-  - csharp
-  - vb
-  name: DistinctBy<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>)
-  nameWithType: Helper.DistinctBy<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>)
-  fullName: OpenSettings.Helpers.Helper.DistinctBy<TSource, TKey>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TKey>)
-  type: Method
-  source:
-    remote:
-      path: src/OpenSettings/Helpers/Helper.cs
-      branch: master
-      repo: https://github.com/OpenSettings/open-settings.git
-    id: DistinctBy
-    path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 49
-  assemblies:
-  - OpenSettings
-  namespace: OpenSettings.Helpers
-  summary: Returns distinct elements from a sequence based on a specified key selector.
-  example: []
-  syntax:
-    content: public static IEnumerable<TSource> DistinctBy<TSource, TKey>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector)
-    parameters:
-    - id: source
-      type: System.Collections.Generic.IEnumerable{{TSource}}
-      description: The sequence to remove duplicates from.
-    - id: keySelector
-      type: System.Func{{TSource},{TKey}}
-      description: A function that extracts the key for each element.
-    typeParameters:
-    - id: TSource
-      description: The type of elements in the source sequence.
-    - id: TKey
-      description: The type of the key used for distinct comparisons.
-    return:
-      type: System.Collections.Generic.IEnumerable{{TSource}}
-      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing distinct elements from the source sequence.
-    content.vb: Public Shared Function DistinctBy(Of TSource, TKey)(source As IEnumerable(Of TSource), keySelector As Func(Of TSource, TKey)) As IEnumerable(Of TSource)
-  overload: OpenSettings.Helpers.Helper.DistinctBy*
-  nameWithType.vb: Helper.DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
-  fullName.vb: OpenSettings.Helpers.Helper.DistinctBy(Of TSource, TKey)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TKey))
-  name.vb: DistinctBy(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey))
 - uid: OpenSettings.Helpers.Helper.IsMigrationEnabled
   commentId: P:OpenSettings.Helpers.Helper.IsMigrationEnabled
   id: IsMigrationEnabled
@@ -145,7 +100,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: IsMigrationEnabled
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 87
+    startLine: 34
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -161,6 +116,40 @@ items:
       type: System.Boolean
     content.vb: Public Shared ReadOnly Property IsMigrationEnabled As Boolean
   overload: OpenSettings.Helpers.Helper.IsMigrationEnabled*
+- uid: OpenSettings.Helpers.Helper.GetPublicCacheControlValue(System.Double)
+  commentId: M:OpenSettings.Helpers.Helper.GetPublicCacheControlValue(System.Double)
+  id: GetPublicCacheControlValue(System.Double)
+  parent: OpenSettings.Helpers.Helper
+  langs:
+  - csharp
+  - vb
+  name: GetPublicCacheControlValue(double)
+  nameWithType: Helper.GetPublicCacheControlValue(double)
+  fullName: OpenSettings.Helpers.Helper.GetPublicCacheControlValue(double)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Helpers/Helper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPublicCacheControlValue
+    path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
+    startLine: 36
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Helpers
+  syntax:
+    content: public static string GetPublicCacheControlValue(double expiresInSeconds)
+    parameters:
+    - id: expiresInSeconds
+      type: System.Double
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetPublicCacheControlValue(expiresInSeconds As Double) As String
+  overload: OpenSettings.Helpers.Helper.GetPublicCacheControlValue*
+  nameWithType.vb: Helper.GetPublicCacheControlValue(Double)
+  fullName.vb: OpenSettings.Helpers.Helper.GetPublicCacheControlValue(Double)
+  name.vb: GetPublicCacheControlValue(Double)
 - uid: OpenSettings.Helpers.Helper.GetEnvironmentName
   commentId: M:OpenSettings.Helpers.Helper.GetEnvironmentName
   id: GetEnvironmentName
@@ -179,7 +168,7 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: GetEnvironmentName
     path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
-    startLine: 95
+    startLine: 47
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Helpers
@@ -197,6 +186,102 @@ items:
       description: The detected environment name or "Production" if none are found.
     content.vb: Public Shared Function GetEnvironmentName() As String
   overload: OpenSettings.Helpers.Helper.GetEnvironmentName*
+- uid: OpenSettings.Helpers.Helper.GetExpiryTime(System.String)
+  commentId: M:OpenSettings.Helpers.Helper.GetExpiryTime(System.String)
+  id: GetExpiryTime(System.String)
+  parent: OpenSettings.Helpers.Helper
+  langs:
+  - csharp
+  - vb
+  name: GetExpiryTime(string)
+  nameWithType: Helper.GetExpiryTime(string)
+  fullName: OpenSettings.Helpers.Helper.GetExpiryTime(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Helpers/Helper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetExpiryTime
+    path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
+    startLine: 101
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Helpers
+  summary: Parses an HTTP-date formatted expiration string (RFC1123 format) into a UTC <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static DateTime GetExpiryTime(string expires)
+    parameters:
+    - id: expires
+      type: System.String
+      description: The expiration time as a string in RFC1123 ("R") format.
+    return:
+      type: System.DateTime
+      description: A <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> object representing the expiration time in UTC.
+    content.vb: Public Shared Function GetExpiryTime(expires As String) As Date
+  overload: OpenSettings.Helpers.Helper.GetExpiryTime*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: ''
+  nameWithType.vb: Helper.GetExpiryTime(String)
+  fullName.vb: OpenSettings.Helpers.Helper.GetExpiryTime(String)
+  name.vb: GetExpiryTime(String)
+- uid: OpenSettings.Helpers.Helper.GetExpiryTimeOffset(System.String)
+  commentId: M:OpenSettings.Helpers.Helper.GetExpiryTimeOffset(System.String)
+  id: GetExpiryTimeOffset(System.String)
+  parent: OpenSettings.Helpers.Helper
+  langs:
+  - csharp
+  - vb
+  name: GetExpiryTimeOffset(string)
+  nameWithType: Helper.GetExpiryTimeOffset(string)
+  fullName: OpenSettings.Helpers.Helper.GetExpiryTimeOffset(string)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Helpers/Helper.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetExpiryTimeOffset
+    path: ../../../open-settings/src/OpenSettings/Helpers/Helper.cs
+    startLine: 114
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Helpers
+  summary: Parses an HTTP-date formatted expiration string (RFC1123 format) into a UTC <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static DateTimeOffset GetExpiryTimeOffset(string expires)
+    parameters:
+    - id: expires
+      type: System.String
+      description: Expiry time in RFC1123 format e.g. "Thu, 26 Jun 2025 14:14:56 GMT".
+    return:
+      type: System.DateTimeOffset
+      description: A <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> object representing the expiration time in UTC.
+    content.vb: Public Shared Function GetExpiryTimeOffset(expires As String) As DateTimeOffset
+  overload: OpenSettings.Helpers.Helper.GetExpiryTimeOffset*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: ''
+  nameWithType.vb: Helper.GetExpiryTimeOffset(String)
+  fullName.vb: OpenSettings.Helpers.Helper.GetExpiryTimeOffset(String)
+  name.vb: GetExpiryTimeOffset(String)
 references:
 - uid: OpenSettings.Helpers
   commentId: N:OpenSettings.Helpers
@@ -474,175 +559,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: OpenSettings.Helpers.Helper.DistinctBy*
-  commentId: Overload:OpenSettings.Helpers.Helper.DistinctBy
-  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_DistinctBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
-  name: DistinctBy
-  nameWithType: Helper.DistinctBy
-  fullName: OpenSettings.Helpers.Helper.DistinctBy
-- uid: System.Collections.Generic.IEnumerable{{TSource}}
-  commentId: T:System.Collections.Generic.IEnumerable{``0}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<TSource>
-  nameWithType: IEnumerable<TSource>
-  fullName: System.Collections.Generic.IEnumerable<TSource>
-  nameWithType.vb: IEnumerable(Of TSource)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of TSource)
-  name.vb: IEnumerable(Of TSource)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: TSource
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TSource
-  - name: )
-- uid: System.Func{{TSource},{TKey}}
-  commentId: T:System.Func{``0,``1}
-  parent: System
-  definition: System.Func`2
-  href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Func<TSource, TKey>
-  nameWithType: Func<TSource, TKey>
-  fullName: System.Func<TSource, TKey>
-  nameWithType.vb: Func(Of TSource, TKey)
-  fullName.vb: System.Func(Of TSource, TKey)
-  name.vb: Func(Of TSource, TKey)
-  spec.csharp:
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - name: TSource
-  - name: ','
-  - name: " "
-  - name: TKey
-  - name: '>'
-  spec.vb:
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TSource
-  - name: ','
-  - name: " "
-  - name: TKey
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: System.Func`2
-  commentId: T:System.Func`2
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Func<T, TResult>
-  nameWithType: Func<T, TResult>
-  fullName: System.Func<T, TResult>
-  nameWithType.vb: Func(Of T, TResult)
-  fullName.vb: System.Func(Of T, TResult)
-  name.vb: Func(Of T, TResult)
-  spec.csharp:
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - name: T
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: '>'
-  spec.vb:
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: )
 - uid: OpenSettings.Helpers.Helper.IsMigrationEnabled*
   commentId: Overload:OpenSettings.Helpers.Helper.IsMigrationEnabled
   href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_IsMigrationEnabled
@@ -660,9 +576,78 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: OpenSettings.Helpers.Helper.GetPublicCacheControlValue*
+  commentId: Overload:OpenSettings.Helpers.Helper.GetPublicCacheControlValue
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetPublicCacheControlValue_System_Double_
+  name: GetPublicCacheControlValue
+  nameWithType: Helper.GetPublicCacheControlValue
+  fullName: OpenSettings.Helpers.Helper.GetPublicCacheControlValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
 - uid: OpenSettings.Helpers.Helper.GetEnvironmentName*
   commentId: Overload:OpenSettings.Helpers.Helper.GetEnvironmentName
   href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetEnvironmentName
   name: GetEnvironmentName
   nameWithType: Helper.GetEnvironmentName
   fullName: OpenSettings.Helpers.Helper.GetEnvironmentName
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: OpenSettings.Helpers.Helper.GetExpiryTime*
+  commentId: Overload:OpenSettings.Helpers.Helper.GetExpiryTime
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetExpiryTime_System_String_
+  name: GetExpiryTime
+  nameWithType: Helper.GetExpiryTime
+  fullName: OpenSettings.Helpers.Helper.GetExpiryTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: OpenSettings.Helpers.Helper.GetExpiryTimeOffset*
+  commentId: Overload:OpenSettings.Helpers.Helper.GetExpiryTimeOffset
+  href: OpenSettings.Helpers.Helper.html#OpenSettings_Helpers_Helper_GetExpiryTimeOffset_System_String_
+  name: GetExpiryTimeOffset
+  nameWithType: Helper.GetExpiryTimeOffset
+  fullName: OpenSettings.Helpers.Helper.GetExpiryTimeOffset

@@ -44,7 +44,7 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Provid
 
 ```csharp
 // Configure database storage (InMemory for this example)
-openSettingsProviderConfiguration.Provider.Orm.ConfigureDbContext = optsBuilder =>
+openSettingsConfiguration.Provider.Orm.ConfigureDbContext = optsBuilder =>
 {
     optsBuilder.UseInMemoryDatabase("OpenSettings");
 };
@@ -71,7 +71,7 @@ var openSettingsConfiguration = new OpenSettingsConfiguration(ServiceType.Consum
 ### 1️⃣ Enable OpenSettings In The Host Builder
 
 ```csharp
-await builder.Host.UseOpenSettingsAsync(openSettingsProviderConfiguration);
+await builder.Host.UseOpenSettingsAsync(openSettingsConfiguration);
 ```
 
 ### 2️⃣ Add OpenSettings Controllers
@@ -89,7 +89,7 @@ Ensure OpenSettings is registered in the pipeline **between** `UseRouting` and `
 ...
 app.UseRouting();
 
-app.UseOpenSettings(); // Updates instance status when the application starts or stops.
+app.UseOpenSettings(); // Updates instance status when the application starts or stops & serve OpenSettings Spa.
 
 app.MapControllers();
 ...

@@ -9,10 +9,10 @@ items:
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.CreatedOn
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.Data
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredById
+  - OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.RowVersion
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.SettingId
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.Slug
-  - OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
   - OpenSettings.Models.Responses.GetSettingHistoryResponse.Version
   langs:
   - csharp
@@ -277,35 +277,35 @@ items:
       type: System.DateTime
     content.vb: Public Property CreatedOn As Date
   overload: OpenSettings.Models.Responses.GetSettingHistoryResponse.CreatedOn*
-- uid: OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
-  commentId: P:OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
-  id: UpdatedOn
+- uid: OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
+  commentId: P:OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
+  id: RestoredOn
   parent: OpenSettings.Models.Responses.GetSettingHistoryResponse
   langs:
   - csharp
   - vb
-  name: UpdatedOn
-  nameWithType: GetSettingHistoryResponse.UpdatedOn
-  fullName: OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
+  name: RestoredOn
+  nameWithType: GetSettingHistoryResponse.RestoredOn
+  fullName: OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
   type: Property
   source:
     remote:
       path: src/OpenSettings/Models/Responses/GetSettingHistoryResponse.cs
       branch: master
       repo: https://github.com/OpenSettings/open-settings.git
-    id: UpdatedOn
+    id: RestoredOn
     path: ../../../open-settings/src/OpenSettings/Models/Responses/GetSettingHistoryResponse.cs
     startLine: 22
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models.Responses
   syntax:
-    content: public DateTime? UpdatedOn { get; set; }
+    content: public DateTime? RestoredOn { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.DateTime}
-    content.vb: Public Property UpdatedOn As Date?
-  overload: OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn*
+    content.vb: Public Property RestoredOn As Date?
+  overload: OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn*
 references:
 - uid: OpenSettings.Models.Responses
   commentId: N:OpenSettings.Models.Responses
@@ -715,12 +715,12 @@ references:
   nameWithType.vb: Date
   fullName.vb: Date
   name.vb: Date
-- uid: OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn*
-  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
-  href: OpenSettings.Models.Responses.GetSettingHistoryResponse.html#OpenSettings_Models_Responses_GetSettingHistoryResponse_UpdatedOn
-  name: UpdatedOn
-  nameWithType: GetSettingHistoryResponse.UpdatedOn
-  fullName: OpenSettings.Models.Responses.GetSettingHistoryResponse.UpdatedOn
+- uid: OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
+  href: OpenSettings.Models.Responses.GetSettingHistoryResponse.html#OpenSettings_Models_Responses_GetSettingHistoryResponse_RestoredOn
+  name: RestoredOn
+  nameWithType: GetSettingHistoryResponse.RestoredOn
+  fullName: OpenSettings.Models.Responses.GetSettingHistoryResponse.RestoredOn
 - uid: System.Nullable{System.DateTime}
   commentId: T:System.Nullable{System.DateTime}
   parent: System

@@ -6,6 +6,7 @@ items:
   parent: OpenSettings.Models
   children:
   - OpenSettings.Models.SerializerType.Json
+  - OpenSettings.Models.SerializerType.Unset
   langs:
   - csharp
   - vb
@@ -32,6 +33,34 @@ items:
   syntax:
     content: public enum SerializerType
     content.vb: Public Enum SerializerType
+- uid: OpenSettings.Models.SerializerType.Unset
+  commentId: F:OpenSettings.Models.SerializerType.Unset
+  id: Unset
+  parent: OpenSettings.Models.SerializerType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: SerializerType.Unset
+  fullName: OpenSettings.Models.SerializerType.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/SerializerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/SerializerType.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents an unset or default serialization format.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.SerializerType
 - uid: OpenSettings.Models.SerializerType.Json
   commentId: F:OpenSettings.Models.SerializerType.Json
   id: Json
@@ -50,17 +79,14 @@ items:
       repo: https://github.com/OpenSettings/open-settings.git
     id: Json
     path: ../../../open-settings/src/OpenSettings/Models/SerializerType.cs
-    startLine: 12
+    startLine: 16
   assemblies:
   - OpenSettings
   namespace: OpenSettings.Models
-  summary: >-
-    Represents the Json serialization format.
-
-    This is the default serialization format.
+  summary: Represents the Json serialization format.
   example: []
   syntax:
-    content: Json = 0
+    content: Json = 1
     return:
       type: OpenSettings.Models.SerializerType
 references:
