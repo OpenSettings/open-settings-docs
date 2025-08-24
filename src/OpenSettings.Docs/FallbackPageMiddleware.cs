@@ -69,7 +69,7 @@ namespace OpenSettings.Docs
 
             if (requestInfo.RequestPath.EndsWith('/'))
             {
-                httpContext.Response.Redirect(requestInfo.RequestPath.TrimEnd(('/')));
+                httpContext.Response.Redirect(requestInfo.RequestPath.TrimEnd('/'));
                 return;
             }
 
