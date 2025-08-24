@@ -29,7 +29,7 @@ If you're using a different database, replace this package with the appropriate 
 
 ---
 
-## 🏗 Setting Up
+## 🔹 Setting Up
 
 Now, let's configure OpenSettings for the **Consumer** application and use **InMemory** storage.
 

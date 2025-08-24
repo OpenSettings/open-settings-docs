@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.DependencyInjection;
 using OpenSettings.Docs;
 
@@ -14,6 +15,10 @@ const string jsonExtension = ".json";
 var maxAge300 = new CacheControl(300);
 var maxAge600 = new CacheControl(600);
 
+var options = new RewriteOptions()
+    .AddRewrite(@"^(v1/docs/[^\.\s/]+)$", "$1.html", skipRemainingRules: true);
+
+app.UseRewriter(options);
 app.UseDefaultFiles();
 app.UseStaticFiles(new StaticFileOptions
 {

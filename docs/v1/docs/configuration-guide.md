@@ -25,21 +25,23 @@ This guide explains how to configure OpenSettings.
 
 ### Client
 
-| **Property**        | **Definition**                                                          | **Use Case**                                            |
-|---------------------|-------------------------------------------------------------------------|---------------------------------------------------------|
-| **Name**            | Name of the client. Must be unique. Default is entry assembly's name.   | Identifies the client, e.g., `OpenSettings.Api`.        |
-| **Id**              | Unique GUID of the client. Each app must have its own ID.               | Unique identification for the app.                      |
-| **Secret**          | Unique GUID secret for the client.                                      | Unique secret key for authentication.                   |
-| **Version**         | Client version (numerical values only, no `v` prefix). Default is entry assembly's version. | Example: `1.0.0`.                   |
+| **Property**        | **Definition**                                                                                                  | **Use Case**                                            |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Name**            | Name of the client. Must be unique. Default is entry assembly's name.                                           | Identifies the client, e.g., `OpenSettings.Api`.        |
+| **Id**              | Unique GUID of the client. Each app must have its own ID.                                                       | Unique identification for the app.                      |
+| **Secret**          | Unique GUID secret for the client.                                                                              | Unique secret key for authentication.                   |
+| **Version**         | Client version (numerical values only, no `v` prefix). Default is entry assembly's version.                     | Example: `1.0.0`.                                       |                                                         
 
 ---
 
 ### Selection (ServiceType)
 - **Definition:** Specifies whether the service acts as a Provider or Consumer. Available values: `Provider`, `Consumer`.
 
+---
+
 #### Consumer Configuration
 
-| **Property**              | **Definition**                                                                             | **Use Case**                                              |
+| **Property**              | **Definition**                                                                             | **Use Case**                                                                                                                                     |
 |---------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **ProviderUrl**           | The URL of the provider for fetching and syncing data.                                     | Used to connect to the provider API (e.g., `https://.../api/settings`).                                                                          |
 | **RequestEncodings**      | Desired encodings for the data. Provider decides whether to send them.                     | Controls the data encoding preferences.                                                                                                          |
@@ -50,23 +52,26 @@ This guide explains how to configure OpenSettings.
 | **- StartsIn**            | Time span to wait before starting the first polling. Default is `TimeSpan.FromMinutes(5)`. |                                                                                                                                                  |
 | **- Period**              | Time span between each polling interval. Default is `TimeSpan.FromMinutes(5)`.             |                                                                                                                                                  |
 
+---
+
 #### Provider Configuration
 
-| **Property**                   | **Definition**                                                                             | **Use Case**                                                                                                                                      |
-|--------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Selection (DataAccessType)** | Data access strategy. Currently, it can only be `Orm`.                                     | Defines the data access type.                                                                                                                     |
-| **Orm**                        | ORM configuration.                                                                         |                                                                                                                                                   |
-| **- ConfigureDbContext**       | Callback to configure the DB context. Each provider must adjust the DB and settings used.  |                                                                                                                                                   |
-| **- EnablePooling**            | Whether DBContext pooling is enabled.                                                      |                                                                                                                                                   |
-| **- PoolSize**                 | Pool size when DBContext pooling is enabled.                                               | Default pool size is used.                                                                                                                        |
-| **- DbProviderName**           | Configured DBContext provider name (internally set, not meant to change).                  |                                                                                                                                                   |
-| **Redis**                      | Redis configuration.                                                                       |                                                                                                                                                   |
-| **- IsActive**                 | Flag to indicate if Redis is activated.                                                    |                                                                                                                                                   |
-| **- Configuration**            | Redis configuration string for connections.                                                | See Redis [configuration options](https://stackexchange.github.io/StackExchange.Redis/Configuration.html#configuration-options).                  |
-| **- Channel**                  | The Redis channel used for communication. Default is `Settings`.                           |                                                                                                                                                   |
-| **LicenseKey**                 | The OpenSettings license key. Leave empty for the community edition. For more info see [License Setup Guide](license-setup-guide.md). |                                                                                                        |
-| **CompressionType**            | 0 (None) - 1 (Snappy) - 2 (Deflate) - 3 (Gzip) - 4 (Zstd) - 5 (Brotli)                     |                                                                                                                                                   |
-| **CompressionLevel**           | 0 (Optimal) - 1 (Fastest) - 2 (NoCompression)                                              |                                                                                                                                                   |
+| **Property**                   | **Definition**                                                                                                                        | **Use Case**                                                                                                                                      |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Selection (DataAccessType)** | Data access strategy. Currently, it can only be `Orm`.                                                                                | Defines the data access type.                                                                                                                     |
+| **Orm**                        | ORM configuration.                                                                                                                    |                                                                                                                                                   |
+| **- ConfigureDbContext**       | Callback to configure the DB context. Each provider must adjust the DB and settings used.                                             |                                                                                                                                                   |
+| **- EnablePooling**            | Whether DBContext pooling is enabled.                                                                                                 |                                                                                                                                                   |
+| **- PoolSize**                 | Pool size when DBContext pooling is enabled.                                                                                          | Default pool size is used.                                                                                                                        |
+| **- DbProviderName**           | Configured DBContext provider name (internally set, not meant to change).                                                             |                                                                                                                                                   |
+| **Redis**                      | Redis configuration.                                                                                                                  |                                                                                                                                                   |
+| **- IsActive**                 | Flag to indicate if Redis is activated.                                                                                               |                                                                                                                                                   |
+| **- Configuration**            | Redis configuration string for connections.                                                                                           | See Redis [configuration options](https://stackexchange.github.io/StackExchange.Redis/Configuration.html#configuration-options).                  |
+| **- Channel**                  | The Redis channel used for communication. Default is `Settings`.                                                                      |                                                                                                                                                   |
+| **LicenseKey**                 | The OpenSettings license key. Leave empty for the community edition. For more info see [License Setup Guide](license-setup-guide.md). |                                                                                                                                                   |
+| **CompressionType**            | 0 (None) - 1 (Snappy) - 2 (Deflate) - 3 (Gzip) - 4 (Zstd) - 5 (Brotli)                                                                |                                                                                                                                                   |
+| **CompressionLevel**           | 0 (Optimal) - 1 (Fastest) - 2 (NoCompression)                                                                                         |                                                                                                                                                   |
+
 ---
 
 ### Controller Configuration
@@ -77,36 +82,36 @@ This guide explains how to configure OpenSettings.
 | **Route**                   | Base route for the service controller’s endpoints.                                         | `api/settings`                                           |
 | **AllowFromExploring**      | Whether the controller’s endpoints should be exposed in API documentation (e.g., Swagger). | `false`                                                  |
 | **RequiresAuthentication**  | Whether authentication is required. When `true`, authentication is enforced.               | `false`                                                  |
-| **OpenIdConnect**           | OpenIdConnect configuration for authentication and authorization.                                 |                                                          |
-| **- Authority**             | The OpenIdConnect provider’s authority URL.                                                       |                                                          |
-| **- ClientId**              | The OpenIdConnect client ID.                                                                      |                                                          |
-| **- ClientSecret**          | The OpenIdConnect client secret.                                                                  |                                                          |
+| **OpenIdConnect**           | OpenIdConnect configuration for authentication and authorization.                          |                                                          |
+| **- Authority**             | The OpenIdConnect provider’s authority URL.                                                |                                                          |
+| **- ClientId**              | The OpenIdConnect client ID.                                                               |                                                          |
+| **- ClientSecret**          | The OpenIdConnect client secret.                                                           |                                                          |
 | **- SignedOutRedirectUri**  | URI to redirect to after sign-out. Default is `null`.                                      | `null`                                                   |
 | **- AllowOfflineAccess**    | Whether offline access is allowed.                                                         |                                                          |
-| **- IsActive**              | Whether the OpenIdConnect configuration is active.                                                |                                                          |
+| **- IsActive**              | Whether the OpenIdConnect configuration is active.                                         |                                                          |
 
 #### Spa Configuration
 
-| **Property**     | **Definition**                                                                                                           | **Default**                                                  |
-|------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **RoutePrefix**  | Prefix used to access the OpenSettings page.                                                                               | `settings`                                                   |
-| **IndexStream**  | Function that returns a `Stream` representing the index HTML file for the OpenSettings SPA.                                | Default embedded `OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html`.                              |
-| **DocumentTitle**| Title of the settings page, used in the HTML `<title>` element and displayed in the browser's title bar.                   | `OpenSettings Spa`                                           |
-| **IsActive**     | Indicating whether the open settings Spa (Single Page Application) is active.                                              |   `true`                                           |
+| **Property**     | **Definition**                                                                                                             | **Default**                                                                                   |
+|------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **RoutePrefix**  | Prefix used to access the OpenSettings page.                                                                               | `settings`                                                                                    |
+| **IndexStream**  | Function that returns a `Stream` representing the index HTML file for the OpenSettings SPA.                                | Default embedded `OpenSettings.AspNetCore.Spa.open_settings_spa_dist.browser.index.html`.     |
+| **DocumentTitle**| Title of the settings page, used in the HTML `<title>` element and displayed in the browser's title bar.                   | `OpenSettings Spa`                                                                            |
+| **IsActive**     | Indicating whether the open settings Spa (Single Page Application) is active.                                              |   `true`                                                                                      |
 
 ---
 
 #### SyncAppDataResilience Configuration
 
-| **Property**     | **Definition**                                                                                                           | **Default**                                                  |
+| **Property**     | **Definition**                                                                                                            | **Default**                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **TotalTimeout**  | Prefix used to access the OpenSettings page.                                                                               | `null`                                                   |
-| **MaxRetryAttempts**  | Maximum number of retries for initial data sync. Default is `-1` for infinite retries.                            | `-1`                              |
-| **AttemptTimeout**| null = Infinite | TimeSpan (e.g. "00:00:30" for 30 seconds).                   | `null`                                           |
-| **BackoffType**     | 0 (Constant) - 1 (Linear) - 2 (Exponential)                                            |   `0`                                           |
-| **RetryDelay**     | Delay between retry attempts when sync fails.                                              |   `00:00:01`                                           |
-| **MaxRetryDelay**     | null = No maximum delay | TimeSpan (e.g. "00:00:10" for 10 seconds)                                        |   `null`                                           |
-| **UseJitter**     | Adds a random factor to vary the delay time, which can help to avoid thundering herd problems. |   `false`                                           |
+| **TotalTimeout**  | Prefix used to access the OpenSettings page.                                                                             | `null`                                                       |
+| **MaxRetryAttempts**  | Maximum number of retries for initial data sync. Default is `-1` for infinite retries.                               | `-1`                                                         |
+| **AttemptTimeout**| null = Infinite | TimeSpan (e.g. "00:00:30" for 30 seconds).                                                             | `null`                                                       |
+| **BackoffType**     | 0 (Constant) - 1 (Linear) - 2 (Exponential)                                                                            | `0`                                                          |
+| **RetryDelay**     | Delay between retry attempts when sync fails.                                                                           | `00:00:01`                                                   |
+| **MaxRetryDelay**     | null = No maximum delay | TimeSpan (e.g. "00:00:10" for 10 seconds)                                                  | `null`                                                       |
+| **UseJitter**     | Adds a random factor to vary the delay time, which can help to avoid thundering herd problems.                           | `false`                                                      |
 
 ---
 

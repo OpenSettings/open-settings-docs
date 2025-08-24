@@ -20,7 +20,7 @@ cd Consumer.Api
 dotnet add package OpenSettings.AspNetCore
 ```
 
-## 🏗 Setting Up
+## 🔹 Setting Up
 
 Now, let's configure OpenSettings for the **Consumer** application.
 
