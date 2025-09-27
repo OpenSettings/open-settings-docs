@@ -17,7 +17,7 @@ This command should return details about the Docker engine. If Docker isn't runn
 Clone this repo and spin it up:
 ```bash
 git clone https://github.com/OpenSettings/open-settings-samples.git
-cd open-settings-samples/versions/v1/quick-starts/4-quick-start-provider-docker
+cd open-settings-samples/versions/v2/quick-starts/4-quick-start-provider-docker
 docker-compose up -d
 ```
 

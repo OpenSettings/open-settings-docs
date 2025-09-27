@@ -115,7 +115,7 @@ Clone the repository and run the application instantly:
 
 ```bash
 git clone git@github.com:OpenSettings/open-settings-samples.git
-cd open-settings-samples/versions/v1/quick-starts/2-quick-start-consumer/src/OpenSettings.Api/
+cd open-settings-samples/versions/v2/quick-starts/2-quick-start-consumer/src/OpenSettings.Api/
 dotnet run
 cd ../Consumer.Api/
 dotnet run
