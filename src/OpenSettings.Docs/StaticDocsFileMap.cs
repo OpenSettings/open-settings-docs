@@ -69,7 +69,7 @@ namespace OpenSettings.Docs
                             relativePathsWithExtension.Add(f.RelativePathWithExtension);
                             flattenedRelativePathsWithExtension.Add(f.RelativePathWithExtension);
 
-                            if (!f.IsHtmlFile)
+                            if (!f.IsHtmlFile || f.RelativePath.EndsWith("toc"))
                             {
                                 return f;
                             }

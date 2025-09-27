@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService
+  commentId: T:OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService
+  id: IGlobalConfigurationSqlService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IGlobalConfigurationSqlService
+  nameWithType: IGlobalConfigurationSqlService
+  fullName: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IGlobalConfigurationSqlService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IGlobalConfigurationSqlService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IGlobalConfigurationSqlService.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: 'public interface IGlobalConfigurationSqlService : IGlobalConfigurationService'
+    content.vb: Public Interface IGlobalConfigurationSqlService Inherits IGlobalConfigurationService
+- uid: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync(System.Threading.CancellationToken)
+  id: GetOrCreateTokenKeySetAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateTokenKeySetAsync(CancellationToken)
+  nameWithType: IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IGlobalConfigurationSqlService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateTokenKeySetAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IGlobalConfigurationSqlService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<TokenKeySet> GetOrCreateTokenKeySetAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{OpenSettings.Models.TokenKeySet}
+    content.vb: Function GetOrCreateTokenKeySetAsync(cancellationToken As CancellationToken) As Task(Of TokenKeySet)
+  overload: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync
+  href: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.html#OpenSettings_Services_Interfaces_IGlobalConfigurationSqlService_GetOrCreateTokenKeySetAsync_System_Threading_CancellationToken_
+  name: GetOrCreateTokenKeySetAsync
+  nameWithType: IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync
+  fullName: OpenSettings.Services.Interfaces.IGlobalConfigurationSqlService.GetOrCreateTokenKeySetAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{OpenSettings.Models.TokenKeySet}
+  commentId: T:System.Threading.Tasks.Task{OpenSettings.Models.TokenKeySet}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TokenKeySet>
+  nameWithType: Task<TokenKeySet>
+  fullName: System.Threading.Tasks.Task<OpenSettings.Models.TokenKeySet>
+  nameWithType.vb: Task(Of TokenKeySet)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenSettings.Models.TokenKeySet)
+  name.vb: Task(Of TokenKeySet)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenSettings.Models.TokenKeySet
+    name: TokenKeySet
+    href: OpenSettings.Models.TokenKeySet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.TokenKeySet
+    name: TokenKeySet
+    href: OpenSettings.Models.TokenKeySet.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

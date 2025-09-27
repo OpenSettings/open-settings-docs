@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.MoveDirection
+  commentId: T:OpenSettings.Models.MoveDirection
+  id: MoveDirection
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.MoveDirection.Down
+  - OpenSettings.Models.MoveDirection.Up
+  langs:
+  - csharp
+  - vb
+  name: MoveDirection
+  nameWithType: MoveDirection
+  fullName: OpenSettings.Models.MoveDirection
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/MoveDirection.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MoveDirection
+    path: ../../../open-settings/src/OpenSettings/Models/MoveDirection.cs
+    startLine: 2
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum MoveDirection
+    content.vb: Public Enum MoveDirection
+- uid: OpenSettings.Models.MoveDirection.Up
+  commentId: F:OpenSettings.Models.MoveDirection.Up
+  id: Up
+  parent: OpenSettings.Models.MoveDirection
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: MoveDirection.Up
+  fullName: OpenSettings.Models.MoveDirection.Up
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/MoveDirection.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Up
+    path: ../../../open-settings/src/OpenSettings/Models/MoveDirection.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Move forward top - [-] decrease sort order.
+  example: []
+  syntax:
+    content: Up = 1
+    return:
+      type: OpenSettings.Models.MoveDirection
+- uid: OpenSettings.Models.MoveDirection.Down
+  commentId: F:OpenSettings.Models.MoveDirection.Down
+  id: Down
+  parent: OpenSettings.Models.MoveDirection
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: MoveDirection.Down
+  fullName: OpenSettings.Models.MoveDirection.Down
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/MoveDirection.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Down
+    path: ../../../open-settings/src/OpenSettings/Models/MoveDirection.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Move forward bottom - [+] increase sort order.
+  example: []
+  syntax:
+    content: Down = 2
+    return:
+      type: OpenSettings.Models.MoveDirection
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.MoveDirection
+  commentId: T:OpenSettings.Models.MoveDirection
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.MoveDirection.html
+  name: MoveDirection
+  nameWithType: MoveDirection
+  fullName: OpenSettings.Models.MoveDirection

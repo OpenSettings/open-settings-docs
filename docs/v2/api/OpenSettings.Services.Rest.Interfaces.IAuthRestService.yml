@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  id: IAuthRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAuthRestService
+  nameWithType: IAuthRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAuthRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/IAuthRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAuthRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/IAuthRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IAuthRestService : IAuthService'
+    content.vb: Public Interface IAuthRestService Inherits IAuthService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAuthService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_GetMeAsync_OpenSettings_Models_Inputs_GetMeInput_System_Threading_CancellationToken_
+  name: GetMeAsync(GetMeInput, CancellationToken)
+  nameWithType: IAuthService.GetMeAsync(GetMeInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput,System.Threading.CancellationToken)
+    name: GetMeAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_GetMeAsync_OpenSettings_Models_Inputs_GetMeInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetMeInput
+    name: GetMeInput
+    href: OpenSettings.Models.Inputs.GetMeInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.GetMeAsync(OpenSettings.Models.Inputs.GetMeInput,System.Threading.CancellationToken)
+    name: GetMeAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_GetMeAsync_OpenSettings_Models_Inputs_GetMeInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetMeInput
+    name: GetMeInput
+    href: OpenSettings.Models.Inputs.GetMeInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAuthService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LoginAsync_OpenSettings_Models_Inputs_LoginInput_System_Threading_CancellationToken_
+  name: LoginAsync(LoginInput, CancellationToken)
+  nameWithType: IAuthService.LoginAsync(LoginInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput,System.Threading.CancellationToken)
+    name: LoginAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LoginAsync_OpenSettings_Models_Inputs_LoginInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.LoginInput
+    name: LoginInput
+    href: OpenSettings.Models.Inputs.LoginInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.LoginAsync(OpenSettings.Models.Inputs.LoginInput,System.Threading.CancellationToken)
+    name: LoginAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LoginAsync_OpenSettings_Models_Inputs_LoginInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.LoginInput
+    name: LoginInput
+    href: OpenSettings.Models.Inputs.LoginInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAuthService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LogoutAsync_OpenSettings_Models_Inputs_LogoutInput_System_Threading_CancellationToken_
+  name: LogoutAsync(LogoutInput, CancellationToken)
+  nameWithType: IAuthService.LogoutAsync(LogoutInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput,System.Threading.CancellationToken)
+    name: LogoutAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LogoutAsync_OpenSettings_Models_Inputs_LogoutInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.LogoutInput
+    name: LogoutInput
+    href: OpenSettings.Models.Inputs.LogoutInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAuthService.LogoutAsync(OpenSettings.Models.Inputs.LogoutInput,System.Threading.CancellationToken)
+    name: LogoutAsync
+    href: OpenSettings.Services.Interfaces.IAuthService.html#OpenSettings_Services_Interfaces_IAuthService_LogoutAsync_OpenSettings_Models_Inputs_LogoutInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.LogoutInput
+    name: LogoutInput
+    href: OpenSettings.Models.Inputs.LogoutInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAuthService
+  commentId: T:OpenSettings.Services.Interfaces.IAuthService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: OpenSettings.Services.Interfaces.IAuthService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

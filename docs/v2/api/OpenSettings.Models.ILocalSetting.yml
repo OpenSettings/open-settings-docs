@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ILocalSetting
+  commentId: T:OpenSettings.Models.ILocalSetting
+  id: ILocalSetting
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ILocalSetting.ComputedIdentifier
+  - OpenSettings.Models.ILocalSetting.FilePath
+  - OpenSettings.Models.ILocalSetting.GeneratedFilePath
+  - OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+  - OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+  - OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+  - OpenSettings.Models.ILocalSetting.Instance
+  - OpenSettings.Models.ILocalSetting.IsPreDataExists
+  - OpenSettings.Models.ILocalSetting.RegistrationMode
+  - OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+  - OpenSettings.Models.ILocalSetting.Type
+  langs:
+  - csharp
+  - vb
+  name: ILocalSetting
+  nameWithType: ILocalSetting
+  fullName: OpenSettings.Models.ILocalSetting
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ILocalSetting
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public interface ILocalSetting
+    content.vb: Public Interface ILocalSetting
+- uid: OpenSettings.Models.ILocalSetting.Type
+  commentId: P:OpenSettings.Models.ILocalSetting.Type
+  id: Type
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ILocalSetting.Type
+  fullName: OpenSettings.Models.ILocalSetting.Type
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Type
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Type Type { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property Type As Type
+  overload: OpenSettings.Models.ILocalSetting.Type*
+- uid: OpenSettings.Models.ILocalSetting.ComputedIdentifier
+  commentId: P:OpenSettings.Models.ILocalSetting.ComputedIdentifier
+  id: ComputedIdentifier
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: ComputedIdentifier
+  nameWithType: ILocalSetting.ComputedIdentifier
+  fullName: OpenSettings.Models.ILocalSetting.ComputedIdentifier
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ComputedIdentifier
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Guid ComputedIdentifier { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property ComputedIdentifier As Guid
+  overload: OpenSettings.Models.ILocalSetting.ComputedIdentifier*
+- uid: OpenSettings.Models.ILocalSetting.Instance
+  commentId: P:OpenSettings.Models.ILocalSetting.Instance
+  id: Instance
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ILocalSetting.Instance
+  fullName: OpenSettings.Models.ILocalSetting.Instance
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Instance
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: object Instance { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property Instance As Object
+  overload: OpenSettings.Models.ILocalSetting.Instance*
+- uid: OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+  commentId: P:OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+  id: HasStoreInSeparateFileAttribute
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: HasStoreInSeparateFileAttribute
+  nameWithType: ILocalSetting.HasStoreInSeparateFileAttribute
+  fullName: OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HasStoreInSeparateFileAttribute
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: bool HasStoreInSeparateFileAttribute { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasStoreInSeparateFileAttribute As Boolean
+  overload: OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute*
+- uid: OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+  commentId: P:OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+  id: StoreInSeparateFile
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: StoreInSeparateFile
+  nameWithType: ILocalSetting.StoreInSeparateFile
+  fullName: OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: StoreInSeparateFile
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: bool StoreInSeparateFile { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property StoreInSeparateFile As Boolean
+  overload: OpenSettings.Models.ILocalSetting.StoreInSeparateFile*
+- uid: OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+  commentId: P:OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+  id: IgnoreOnFileChange
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOnFileChange
+  nameWithType: ILocalSetting.IgnoreOnFileChange
+  fullName: OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IgnoreOnFileChange
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: bool? IgnoreOnFileChange { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: ReadOnly Property IgnoreOnFileChange As Boolean?
+  overload: OpenSettings.Models.ILocalSetting.IgnoreOnFileChange*
+- uid: OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+  commentId: P:OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+  id: HasRegistrationModeAttribute
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: HasRegistrationModeAttribute
+  nameWithType: ILocalSetting.HasRegistrationModeAttribute
+  fullName: OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: HasRegistrationModeAttribute
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: bool HasRegistrationModeAttribute { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasRegistrationModeAttribute As Boolean
+  overload: OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute*
+- uid: OpenSettings.Models.ILocalSetting.RegistrationMode
+  commentId: P:OpenSettings.Models.ILocalSetting.RegistrationMode
+  id: RegistrationMode
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: RegistrationMode
+  nameWithType: ILocalSetting.RegistrationMode
+  fullName: OpenSettings.Models.ILocalSetting.RegistrationMode
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RegistrationMode
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: RegistrationMode RegistrationMode { get; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.RegistrationMode
+    content.vb: ReadOnly Property RegistrationMode As RegistrationMode
+  overload: OpenSettings.Models.ILocalSetting.RegistrationMode*
+- uid: OpenSettings.Models.ILocalSetting.FilePath
+  commentId: P:OpenSettings.Models.ILocalSetting.FilePath
+  id: FilePath
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: ILocalSetting.FilePath
+  fullName: OpenSettings.Models.ILocalSetting.FilePath
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: FilePath
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: string FilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property FilePath As String
+  overload: OpenSettings.Models.ILocalSetting.FilePath*
+- uid: OpenSettings.Models.ILocalSetting.GeneratedFilePath
+  commentId: P:OpenSettings.Models.ILocalSetting.GeneratedFilePath
+  id: GeneratedFilePath
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: GeneratedFilePath
+  nameWithType: ILocalSetting.GeneratedFilePath
+  fullName: OpenSettings.Models.ILocalSetting.GeneratedFilePath
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GeneratedFilePath
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: string GeneratedFilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property GeneratedFilePath As String
+  overload: OpenSettings.Models.ILocalSetting.GeneratedFilePath*
+- uid: OpenSettings.Models.ILocalSetting.IsPreDataExists
+  commentId: P:OpenSettings.Models.ILocalSetting.IsPreDataExists
+  id: IsPreDataExists
+  parent: OpenSettings.Models.ILocalSetting
+  langs:
+  - csharp
+  - vb
+  name: IsPreDataExists
+  nameWithType: ILocalSetting.IsPreDataExists
+  fullName: OpenSettings.Models.ILocalSetting.IsPreDataExists
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ILocalSetting.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IsPreDataExists
+    path: ../../../open-settings/src/OpenSettings/Models/ILocalSetting.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: bool IsPreDataExists { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsPreDataExists As Boolean
+  overload: OpenSettings.Models.ILocalSetting.IsPreDataExists*
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ILocalSetting.Type*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.Type
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_Type
+  name: Type
+  nameWithType: ILocalSetting.Type
+  fullName: OpenSettings.Models.ILocalSetting.Type
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.ILocalSetting.ComputedIdentifier*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.ComputedIdentifier
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_ComputedIdentifier
+  name: ComputedIdentifier
+  nameWithType: ILocalSetting.ComputedIdentifier
+  fullName: OpenSettings.Models.ILocalSetting.ComputedIdentifier
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Models.ILocalSetting.Instance*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.Instance
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_Instance
+  name: Instance
+  nameWithType: ILocalSetting.Instance
+  fullName: OpenSettings.Models.ILocalSetting.Instance
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_HasStoreInSeparateFileAttribute
+  name: HasStoreInSeparateFileAttribute
+  nameWithType: ILocalSetting.HasStoreInSeparateFileAttribute
+  fullName: OpenSettings.Models.ILocalSetting.HasStoreInSeparateFileAttribute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenSettings.Models.ILocalSetting.StoreInSeparateFile*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_StoreInSeparateFile
+  name: StoreInSeparateFile
+  nameWithType: ILocalSetting.StoreInSeparateFile
+  fullName: OpenSettings.Models.ILocalSetting.StoreInSeparateFile
+- uid: OpenSettings.Models.ILocalSetting.IgnoreOnFileChange*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_IgnoreOnFileChange
+  name: IgnoreOnFileChange
+  nameWithType: ILocalSetting.IgnoreOnFileChange
+  fullName: OpenSettings.Models.ILocalSetting.IgnoreOnFileChange
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_HasRegistrationModeAttribute
+  name: HasRegistrationModeAttribute
+  nameWithType: ILocalSetting.HasRegistrationModeAttribute
+  fullName: OpenSettings.Models.ILocalSetting.HasRegistrationModeAttribute
+- uid: OpenSettings.Models.ILocalSetting.RegistrationMode*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.RegistrationMode
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_RegistrationMode
+  name: RegistrationMode
+  nameWithType: ILocalSetting.RegistrationMode
+  fullName: OpenSettings.Models.ILocalSetting.RegistrationMode
+- uid: OpenSettings.Models.RegistrationMode
+  commentId: T:OpenSettings.Models.RegistrationMode
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.RegistrationMode.html
+  name: RegistrationMode
+  nameWithType: RegistrationMode
+  fullName: OpenSettings.Models.RegistrationMode
+- uid: OpenSettings.Models.ILocalSetting.FilePath*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.FilePath
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_FilePath
+  name: FilePath
+  nameWithType: ILocalSetting.FilePath
+  fullName: OpenSettings.Models.ILocalSetting.FilePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.ILocalSetting.GeneratedFilePath*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.GeneratedFilePath
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_GeneratedFilePath
+  name: GeneratedFilePath
+  nameWithType: ILocalSetting.GeneratedFilePath
+  fullName: OpenSettings.Models.ILocalSetting.GeneratedFilePath
+- uid: OpenSettings.Models.ILocalSetting.IsPreDataExists*
+  commentId: Overload:OpenSettings.Models.ILocalSetting.IsPreDataExists
+  href: OpenSettings.Models.ILocalSetting.html#OpenSettings_Models_ILocalSetting_IsPreDataExists
+  name: IsPreDataExists
+  nameWithType: ILocalSetting.IsPreDataExists
+  fullName: OpenSettings.Models.ILocalSetting.IsPreDataExists

@@ -1,0 +1,471 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  id: GetInstancesDataRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  children:
+  - OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+  - OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+  - OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesDataRequest
+  nameWithType: GetInstancesDataRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetInstancesDataRequest
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public class GetInstancesDataRequest
+    content.vb: Public Class GetInstancesDataRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+  id: ClientId
+  parent: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: GetInstancesDataRequest.ClientId
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ClientId
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [FromRoute]
+
+      public Guid ClientId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <FromRoute>
+
+      Public Property ClientId As Guid
+  overload: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+  id: IdentifierId
+  parent: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  langs:
+  - csharp
+  - vb
+  name: IdentifierId
+  nameWithType: GetInstancesDataRequest.IdentifierId
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IdentifierId
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [FromQuery]
+
+      public string IdentifierId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <FromQuery>
+
+      Public Property IdentifierId As String
+  overload: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids
+  id: Ids
+  parent: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest
+  langs:
+  - csharp
+  - vb
+  name: Ids
+  nameWithType: GetInstancesDataRequest.Ids
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Ids
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetInstancesDataRequest.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [FromQuery]
+
+      public string Ids { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <FromQuery>
+
+      Public Property Ids As String
+  overload: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+    arguments: []
+references:
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+  href: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.html#OpenSettings_AspNetCore_Models_Requests_GetInstancesDataRequest_ClientId
+  name: ClientId
+  nameWithType: GetInstancesDataRequest.ClientId
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.ClientId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+  href: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.html#OpenSettings_AspNetCore_Models_Requests_GetInstancesDataRequest_IdentifierId
+  name: IdentifierId
+  nameWithType: GetInstancesDataRequest.IdentifierId
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.IdentifierId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids
+  href: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.html#OpenSettings_AspNetCore_Models_Requests_GetInstancesDataRequest_Ids
+  name: Ids
+  nameWithType: GetInstancesDataRequest.Ids
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetInstancesDataRequest.Ids

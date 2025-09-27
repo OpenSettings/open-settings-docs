@@ -1,0 +1,772 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  commentId: T:OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  id: DataProtectionKey
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+  - OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+  langs:
+  - csharp
+  - vb
+  name: DataProtectionKey
+  nameWithType: DataProtectionKey
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DataProtectionKey
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: >-
+      [Table("DataProtectionKeys")]
+
+      public class DataProtectionKey : EntityBase<int>
+    content.vb: >-
+      <Table("DataProtectionKeys")>
+
+      Public Class DataProtectionKey Inherits EntityBase(Of Integer)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DataProtectionKeys
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+  id: KeyId
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: KeyId
+  nameWithType: DataProtectionKey.KeyId
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: KeyId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public Guid KeyId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property KeyId As Guid
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+  id: MasterKey
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: MasterKey
+  nameWithType: DataProtectionKey.MasterKey
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: MasterKey
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The master key which is an unencrypted form.
+  example: []
+  syntax:
+    content: public string MasterKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MasterKey As String
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+  id: FriendlyName
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: FriendlyName
+  nameWithType: DataProtectionKey.FriendlyName
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: FriendlyName
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The friendly name of the <xref href="OpenSettings.Domains.Sql.Entities.DataProtectionKey" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string FriendlyName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FriendlyName As String
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+  id: Xml
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: Xml
+  nameWithType: DataProtectionKey.Xml
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Xml
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 23
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The XML representation of the <xref href="OpenSettings.Domains.Sql.Entities.DataProtectionKey" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string Xml { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Xml As String
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+  id: EncryptionAlgorithm
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: EncryptionAlgorithm
+  nameWithType: DataProtectionKey.EncryptionAlgorithm
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: EncryptionAlgorithm
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 25
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string EncryptionAlgorithm { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EncryptionAlgorithm As String
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+  id: ValidationAlgorithm
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: ValidationAlgorithm
+  nameWithType: DataProtectionKey.ValidationAlgorithm
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ValidationAlgorithm
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 27
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public string ValidationAlgorithm { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ValidationAlgorithm As String
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+  id: ActivationDate
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: ActivationDate
+  nameWithType: DataProtectionKey.ActivationDate
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ActivationDate
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 29
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public DateTime ActivationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ActivationDate As Date
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate*
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate
+  commentId: P:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate
+  id: ExpiryDate
+  parent: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  langs:
+  - csharp
+  - vb
+  name: ExpiryDate
+  nameWithType: DataProtectionKey.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ExpiryDate
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/DataProtectionKey.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public DateTime ExpiryDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ExpiryDate As Date
+  overload: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate*
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<int>
+  nameWithType: EntityBase<int>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>
+  nameWithType.vb: EntityBase(Of Integer)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer)
+  name.vb: EntityBase(Of Integer)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<int>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.Id
+  nameWithType.vb: EntityBase(Of Integer).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<int>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.CreatedOn
+  nameWithType.vb: EntityBase(Of Integer).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Int32}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<int>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<int>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Integer).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of Integer).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_KeyId
+  name: KeyId
+  nameWithType: DataProtectionKey.KeyId
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.KeyId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_MasterKey
+  name: MasterKey
+  nameWithType: DataProtectionKey.MasterKey
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.MasterKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  commentId: T:OpenSettings.Domains.Sql.Entities.DataProtectionKey
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html
+  name: DataProtectionKey
+  nameWithType: DataProtectionKey
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_FriendlyName
+  name: FriendlyName
+  nameWithType: DataProtectionKey.FriendlyName
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.FriendlyName
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_Xml
+  name: Xml
+  nameWithType: DataProtectionKey.Xml
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.Xml
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_EncryptionAlgorithm
+  name: EncryptionAlgorithm
+  nameWithType: DataProtectionKey.EncryptionAlgorithm
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.EncryptionAlgorithm
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_ValidationAlgorithm
+  name: ValidationAlgorithm
+  nameWithType: DataProtectionKey.ValidationAlgorithm
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ValidationAlgorithm
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_ActivationDate
+  name: ActivationDate
+  nameWithType: DataProtectionKey.ActivationDate
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ActivationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate
+  href: OpenSettings.Domains.Sql.Entities.DataProtectionKey.html#OpenSettings_Domains_Sql_Entities_DataProtectionKey_ExpiryDate
+  name: ExpiryDate
+  nameWithType: DataProtectionKey.ExpiryDate
+  fullName: OpenSettings.Domains.Sql.Entities.DataProtectionKey.ExpiryDate

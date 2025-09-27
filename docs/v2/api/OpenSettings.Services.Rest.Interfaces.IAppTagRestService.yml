@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IAppTagRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppTagRestService
+  id: IAppTagRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAppTagRestService
+  nameWithType: IAppTagRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppTagRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/ITagRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAppTagRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/ITagRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IAppTagRestService : IAppTagService'
+    content.vb: Public Interface IAppTagRestService Inherits IAppTagService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Nullable{System.Guid})
+  - OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetPaginatedAppTagsAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  name: GetPaginatedAppTagsAsync(GetPaginatedInput, CancellationToken)
+  nameWithType: IAppTagService.GetPaginatedAppTagsAsync(GetPaginatedInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+    name: GetPaginatedAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetPaginatedAppTagsAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedInput
+    name: GetPaginatedInput
+    href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetPaginatedAppTagsAsync(OpenSettings.Models.Inputs.GetPaginatedInput,System.Threading.CancellationToken)
+    name: GetPaginatedAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetPaginatedAppTagsAsync_OpenSettings_Models_Inputs_GetPaginatedInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedInput
+    name: GetPaginatedInput
+    href: OpenSettings.Models.Inputs.GetPaginatedInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteUnmappedAppTagsAsync_System_Threading_CancellationToken_
+  name: DeleteUnmappedAppTagsAsync(CancellationToken)
+  nameWithType: IAppTagService.DeleteUnmappedAppTagsAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+    name: DeleteUnmappedAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteUnmappedAppTagsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteUnmappedAppTagsAsync(System.Threading.CancellationToken)
+    name: DeleteUnmappedAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteUnmappedAppTagsAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagsAsync_OpenSettings_Models_Inputs_GetAppTagsInput_System_Threading_CancellationToken_
+  name: GetAppTagsAsync(GetAppTagsInput, CancellationToken)
+  nameWithType: IAppTagService.GetAppTagsAsync(GetAppTagsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput,System.Threading.CancellationToken)
+    name: GetAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagsAsync_OpenSettings_Models_Inputs_GetAppTagsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagsInput
+    name: GetAppTagsInput
+    href: OpenSettings.Models.Inputs.GetAppTagsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagsAsync(OpenSettings.Models.Inputs.GetAppTagsInput,System.Threading.CancellationToken)
+    name: GetAppTagsAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagsAsync_OpenSettings_Models_Inputs_GetAppTagsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagsInput
+    name: GetAppTagsInput
+    href: OpenSettings.Models.Inputs.GetAppTagsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_CreateAppTagAsync_OpenSettings_Models_Inputs_CreateAppTagInput_System_Threading_CancellationToken_
+  name: CreateAppTagAsync(CreateAppTagInput, CancellationToken)
+  nameWithType: IAppTagService.CreateAppTagAsync(CreateAppTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput,System.Threading.CancellationToken)
+    name: CreateAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_CreateAppTagAsync_OpenSettings_Models_Inputs_CreateAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppTagInput
+    name: CreateAppTagInput
+    href: OpenSettings.Models.Inputs.CreateAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.CreateAppTagAsync(OpenSettings.Models.Inputs.CreateAppTagInput,System.Threading.CancellationToken)
+    name: CreateAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_CreateAppTagAsync_OpenSettings_Models_Inputs_CreateAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppTagInput
+    name: CreateAppTagInput
+    href: OpenSettings.Models.Inputs.CreateAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagByIdAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  name: GetAppTagByIdAsync(GetAppTagInput, CancellationToken)
+  nameWithType: IAppTagService.GetAppTagByIdAsync(GetAppTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+    name: GetAppTagByIdAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagByIdAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagInput
+    name: GetAppTagInput
+    href: OpenSettings.Models.Inputs.GetAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagByIdAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+    name: GetAppTagByIdAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagByIdAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagInput
+    name: GetAppTagInput
+    href: OpenSettings.Models.Inputs.GetAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagBySlugAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  name: GetAppTagBySlugAsync(GetAppTagInput, CancellationToken)
+  nameWithType: IAppTagService.GetAppTagBySlugAsync(GetAppTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+    name: GetAppTagBySlugAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagBySlugAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagInput
+    name: GetAppTagInput
+    href: OpenSettings.Models.Inputs.GetAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetAppTagBySlugAsync(OpenSettings.Models.Inputs.GetAppTagInput,System.Threading.CancellationToken)
+    name: GetAppTagBySlugAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetAppTagBySlugAsync_OpenSettings_Models_Inputs_GetAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppTagInput
+    name: GetAppTagInput
+    href: OpenSettings.Models.Inputs.GetAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagAsync_OpenSettings_Models_Inputs_UpdateAppTagInput_System_Threading_CancellationToken_
+  name: UpdateAppTagAsync(UpdateAppTagInput, CancellationToken)
+  nameWithType: IAppTagService.UpdateAppTagAsync(UpdateAppTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput,System.Threading.CancellationToken)
+    name: UpdateAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagAsync_OpenSettings_Models_Inputs_UpdateAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppTagInput
+    name: UpdateAppTagInput
+    href: OpenSettings.Models.Inputs.UpdateAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagAsync(OpenSettings.Models.Inputs.UpdateAppTagInput,System.Threading.CancellationToken)
+    name: UpdateAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagAsync_OpenSettings_Models_Inputs_UpdateAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppTagInput
+    name: UpdateAppTagInput
+    href: OpenSettings.Models.Inputs.UpdateAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteAppTagAsync_OpenSettings_Models_Inputs_DeleteAppTagInput_System_Threading_CancellationToken_
+  name: DeleteAppTagAsync(DeleteAppTagInput, CancellationToken)
+  nameWithType: IAppTagService.DeleteAppTagAsync(DeleteAppTagInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput,System.Threading.CancellationToken)
+    name: DeleteAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteAppTagAsync_OpenSettings_Models_Inputs_DeleteAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppTagInput
+    name: DeleteAppTagInput
+    href: OpenSettings.Models.Inputs.DeleteAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DeleteAppTagAsync(OpenSettings.Models.Inputs.DeleteAppTagInput,System.Threading.CancellationToken)
+    name: DeleteAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DeleteAppTagAsync_OpenSettings_Models_Inputs_DeleteAppTagInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppTagInput
+    name: DeleteAppTagInput
+    href: OpenSettings.Models.Inputs.DeleteAppTagInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppTagSortOrderInput_System_Threading_CancellationToken_
+  name: UpdateAppTagSortOrderAsync(UpdateAppTagSortOrderInput, CancellationToken)
+  nameWithType: IAppTagService.UpdateAppTagSortOrderAsync(UpdateAppTagSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput,System.Threading.CancellationToken)
+    name: UpdateAppTagSortOrderAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppTagSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput
+    name: UpdateAppTagSortOrderInput
+    href: OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.UpdateAppTagSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput,System.Threading.CancellationToken)
+    name: UpdateAppTagSortOrderAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_UpdateAppTagSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppTagSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput
+    name: UpdateAppTagSortOrderInput
+    href: OpenSettings.Models.Inputs.UpdateAppTagSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DragAppTagAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  name: DragAppTagAsync(DragItemSortOrderInput, CancellationToken)
+  nameWithType: IAppTagService.DragAppTagAsync(DragItemSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+    name: DragAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DragAppTagAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    name: DragItemSortOrderInput
+    href: OpenSettings.Models.Inputs.DragItemSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.DragAppTagAsync(OpenSettings.Models.Inputs.DragItemSortOrderInput,System.Threading.CancellationToken)
+    name: DragAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_DragAppTagAsync_OpenSettings_Models_Inputs_DragItemSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DragItemSortOrderInput
+    name: DragItemSortOrderInput
+    href: OpenSettings.Models.Inputs.DragItemSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Nullable{System.Guid})
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Nullable{System.Guid})
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_ReorderAppTagAsync_System_Nullable_System_Guid__
+  name: ReorderAppTagAsync(Guid?)
+  nameWithType: IAppTagService.ReorderAppTagAsync(Guid?)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Guid?)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Nullable{System.Guid})
+    name: ReorderAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_ReorderAppTagAsync_System_Nullable_System_Guid__
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.ReorderAppTagAsync(System.Nullable{System.Guid})
+    name: ReorderAppTagAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_ReorderAppTagAsync_System_Nullable_System_Guid__
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppTagService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  name: GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  nameWithType: IAppTagService.GetOrCreateAsync(string, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(string, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  nameWithType.vb: IAppTagService.GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(String, OpenSettings.Models.SetSortOrderPosition, System.Guid?, System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(String, SetSortOrderPosition, Guid?, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Models.SetSortOrderPosition
+    name: SetSortOrderPosition
+    href: OpenSettings.Models.SetSortOrderPosition.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppTagService.GetOrCreateAsync(System.String,OpenSettings.Models.SetSortOrderPosition,System.Nullable{System.Guid},System.Threading.CancellationToken)
+    name: GetOrCreateAsync
+    href: OpenSettings.Services.Interfaces.IAppTagService.html#OpenSettings_Services_Interfaces_IAppTagService_GetOrCreateAsync_System_String_OpenSettings_Models_SetSortOrderPosition_System_Nullable_System_Guid__System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: OpenSettings.Models.SetSortOrderPosition
+    name: SetSortOrderPosition
+    href: OpenSettings.Models.SetSortOrderPosition.html
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppTagService
+  commentId: T:OpenSettings.Services.Interfaces.IAppTagService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IAppTagService.html
+  name: IAppTagService
+  nameWithType: IAppTagService
+  fullName: OpenSettings.Services.Interfaces.IAppTagService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

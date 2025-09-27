@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  id: ILicensesRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ILicensesRestService
+  nameWithType: ILicensesRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.ILicensesRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/ILicenseRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ILicensesRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/ILicenseRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface ILicensesRestService : ILicensesService'
+    content.vb: Public Interface ILicensesRestService Inherits ILicensesService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  name: GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  nameWithType: ILicensesService.GetPaginatedLicensesAsync(GetPaginatedLicensesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+    name: GetPaginatedLicensesAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+    name: GetPaginatedLicensesInput
+    href: OpenSettings.Models.Inputs.GetPaginatedLicensesInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetPaginatedLicensesAsync(OpenSettings.Models.Inputs.GetPaginatedLicensesInput,System.Threading.CancellationToken)
+    name: GetPaginatedLicensesAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetPaginatedLicensesAsync_OpenSettings_Models_Inputs_GetPaginatedLicensesInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetPaginatedLicensesInput
+    name: GetPaginatedLicensesInput
+    href: OpenSettings.Models.Inputs.GetPaginatedLicensesInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  name: GetCurrentLicenseAsync(CancellationToken)
+  nameWithType: ILicensesService.GetCurrentLicenseAsync(CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+    name: GetCurrentLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.GetCurrentLicenseAsync(System.Threading.CancellationToken)
+    name: GetCurrentLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_GetCurrentLicenseAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  name: SaveLicenseAsync(string, CancellationToken)
+  nameWithType: ILicensesService.SaveLicenseAsync(string, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: ILicensesService.SaveLicenseAsync(String, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(String, System.Threading.CancellationToken)
+  name.vb: SaveLicenseAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+    name: SaveLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.SaveLicenseAsync(System.String,System.Threading.CancellationToken)
+    name: SaveLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_SaveLicenseAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILicensesService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  name: DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  nameWithType: ILicensesService.DeleteLicenseAsync(DeleteLicenseInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+    name: DeleteLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+    name: DeleteLicenseInput
+    href: OpenSettings.Models.Inputs.DeleteLicenseInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.ILicensesService.DeleteLicenseAsync(OpenSettings.Models.Inputs.DeleteLicenseInput,System.Threading.CancellationToken)
+    name: DeleteLicenseAsync
+    href: OpenSettings.Services.Interfaces.ILicensesService.html#OpenSettings_Services_Interfaces_ILicensesService_DeleteLicenseAsync_OpenSettings_Models_Inputs_DeleteLicenseInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteLicenseInput
+    name: DeleteLicenseInput
+    href: OpenSettings.Models.Inputs.DeleteLicenseInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ILicensesService
+  commentId: T:OpenSettings.Services.Interfaces.ILicensesService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ILicensesService.html
+  name: ILicensesService
+  nameWithType: ILicensesService
+  fullName: OpenSettings.Services.Interfaces.ILicensesService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

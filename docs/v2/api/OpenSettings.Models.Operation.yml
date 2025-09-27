@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Operation
+  commentId: T:OpenSettings.Models.Operation
+  id: Operation
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.Operation.Read
+  - OpenSettings.Models.Operation.ReadOrInitialize
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: Operation
+  fullName: OpenSettings.Models.Operation
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/Operation.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Operation
+    path: ../../../open-settings/src/OpenSettings/Models/Operation.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Defines the types of operations that can be performed on the settings initialization.
+  example: []
+  syntax:
+    content: public enum Operation
+    content.vb: Public Enum Operation
+- uid: OpenSettings.Models.Operation.ReadOrInitialize
+  commentId: F:OpenSettings.Models.Operation.ReadOrInitialize
+  id: ReadOrInitialize
+  parent: OpenSettings.Models.Operation
+  langs:
+  - csharp
+  - vb
+  name: ReadOrInitialize
+  nameWithType: Operation.ReadOrInitialize
+  fullName: OpenSettings.Models.Operation.ReadOrInitialize
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Operation.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReadOrInitialize
+    path: ../../../open-settings/src/OpenSettings/Models/Operation.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Reads from the settings file if it exists, or initializes a new instance if it does not.
+
+    The data is then processed and latest setting data is retrieved.
+  example: []
+  syntax:
+    content: ReadOrInitialize = 1
+    return:
+      type: OpenSettings.Models.Operation
+- uid: OpenSettings.Models.Operation.Read
+  commentId: F:OpenSettings.Models.Operation.Read
+  id: Read
+  parent: OpenSettings.Models.Operation
+  langs:
+  - csharp
+  - vb
+  name: Read
+  nameWithType: Operation.Read
+  fullName: OpenSettings.Models.Operation.Read
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/Operation.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Read
+    path: ../../../open-settings/src/OpenSettings/Models/Operation.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Reads from the settings file, maps the data to the appropriate settings.
+
+    The data is then processed and latest setting data is retrieved.
+  example: []
+  syntax:
+    content: Read = 2
+    return:
+      type: OpenSettings.Models.Operation
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Operation
+  commentId: T:OpenSettings.Models.Operation
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.Operation.html
+  name: Operation
+  nameWithType: Operation
+  fullName: OpenSettings.Models.Operation

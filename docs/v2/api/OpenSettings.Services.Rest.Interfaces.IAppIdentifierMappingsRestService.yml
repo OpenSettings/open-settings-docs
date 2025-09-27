@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
+  commentId: T:OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
+  id: IAppIdentifierMappingsRestService
+  parent: OpenSettings.Services.Rest.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAppIdentifierMappingsRestService
+  nameWithType: IAppIdentifierMappingsRestService
+  fullName: OpenSettings.Services.Rest.Interfaces.IAppIdentifierMappingsRestService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Rest/Interfaces/IAppIdentifierMappingsRestService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAppIdentifierMappingsRestService
+    path: ../../../open-settings/src/OpenSettings/Services/Rest/Interfaces/IAppIdentifierMappingsRestService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Rest.Interfaces
+  syntax:
+    content: 'public interface IAppIdentifierMappingsRestService : IAppIdentifierMappingsService'
+    content.vb: Public Interface IAppIdentifierMappingsRestService Inherits IAppIdentifierMappingsService
+  inheritedMembers:
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Rest.Interfaces
+  commentId: N:OpenSettings.Services.Rest.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Rest.Interfaces
+  nameWithType: OpenSettings.Services.Rest.Interfaces
+  fullName: OpenSettings.Services.Rest.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Rest
+    name: Rest
+    href: OpenSettings.Services.Rest.html
+  - name: .
+  - uid: OpenSettings.Services.Rest.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Rest.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_CreateAppIdentifierMappingAsync_OpenSettings_Models_Inputs_CreateAppIdentifierMappingInput_System_Threading_CancellationToken_
+  name: CreateAppIdentifierMappingAsync(CreateAppIdentifierMappingInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(CreateAppIdentifierMappingInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput,System.Threading.CancellationToken)
+    name: CreateAppIdentifierMappingAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_CreateAppIdentifierMappingAsync_OpenSettings_Models_Inputs_CreateAppIdentifierMappingInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput
+    name: CreateAppIdentifierMappingInput
+    href: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.CreateAppIdentifierMappingAsync(OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput,System.Threading.CancellationToken)
+    name: CreateAppIdentifierMappingAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_CreateAppIdentifierMappingAsync_OpenSettings_Models_Inputs_CreateAppIdentifierMappingInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput
+    name: CreateAppIdentifierMappingInput
+    href: OpenSettings.Models.Inputs.CreateAppIdentifierMappingInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(GetAppIdentifierMappingByAppAndIdentifierInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(GetAppIdentifierMappingByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingByAppIdAndIdentifierIdAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
+    name: GetAppIdentifierMappingByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppIdAndIdentifierIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingByAppIdAndIdentifierIdAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppIdAndIdentifierIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
+    name: GetAppIdentifierMappingByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  name: GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(GetAppIdentifierMappingByAppAndIdentifierInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(GetAppIdentifierMappingByAppAndIdentifierInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
+    name: GetAppIdentifierMappingByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingByAppSlugAndIdentifierSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingByAppAndIdentifierInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput
+    name: GetAppIdentifierMappingByAppAndIdentifierInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingByAppAndIdentifierInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_DeleteAppIdentifierMappingAsync_OpenSettings_Models_Inputs_DeleteAppIdentifierMappingInput_System_Threading_CancellationToken_
+  name: DeleteAppIdentifierMappingAsync(DeleteAppIdentifierMappingInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(DeleteAppIdentifierMappingInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
+    name: DeleteAppIdentifierMappingAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_DeleteAppIdentifierMappingAsync_OpenSettings_Models_Inputs_DeleteAppIdentifierMappingInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
+    name: DeleteAppIdentifierMappingInput
+    href: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.DeleteAppIdentifierMappingAsync(OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput,System.Threading.CancellationToken)
+    name: DeleteAppIdentifierMappingAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_DeleteAppIdentifierMappingAsync_OpenSettings_Models_Inputs_DeleteAppIdentifierMappingInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput
+    name: DeleteAppIdentifierMappingInput
+    href: OpenSettings.Models.Inputs.DeleteAppIdentifierMappingInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  name: GetAppIdentifierMappingsByAppIdAsync(GetAppIdentifierMappingsInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(GetAppIdentifierMappingsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingsByAppIdAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
+    name: GetAppIdentifierMappingsInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppIdAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingsByAppIdAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppIdAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
+    name: GetAppIdentifierMappingsInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  name: GetAppIdentifierMappingsByAppSlugAsync(GetAppIdentifierMappingsInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(GetAppIdentifierMappingsInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingsByAppSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
+    name: GetAppIdentifierMappingsInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.GetAppIdentifierMappingsByAppSlugAsync(OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput,System.Threading.CancellationToken)
+    name: GetAppIdentifierMappingsByAppSlugAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_GetAppIdentifierMappingsByAppSlugAsync_OpenSettings_Models_Inputs_GetAppIdentifierMappingsInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput
+    name: GetAppIdentifierMappingsInput
+    href: OpenSettings.Models.Inputs.GetAppIdentifierMappingsInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  isExternal: true
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_UpdateAppIdentifierMappingSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppIdentifierMappingSortOrderInput_System_Threading_CancellationToken_
+  name: UpdateAppIdentifierMappingSortOrderAsync(UpdateAppIdentifierMappingSortOrderInput, CancellationToken)
+  nameWithType: IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(UpdateAppIdentifierMappingSortOrderInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
+    name: UpdateAppIdentifierMappingSortOrderAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_UpdateAppIdentifierMappingSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppIdentifierMappingSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput
+    name: UpdateAppIdentifierMappingSortOrderInput
+    href: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.UpdateAppIdentifierMappingSortOrderAsync(OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput,System.Threading.CancellationToken)
+    name: UpdateAppIdentifierMappingSortOrderAsync
+    href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html#OpenSettings_Services_Interfaces_IAppIdentifierMappingsService_UpdateAppIdentifierMappingSortOrderAsync_OpenSettings_Models_Inputs_UpdateAppIdentifierMappingSortOrderInput_System_Threading_CancellationToken_
+  - name: (
+  - uid: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput
+    name: UpdateAppIdentifierMappingSortOrderInput
+    href: OpenSettings.Models.Inputs.UpdateAppIdentifierMappingSortOrderInput.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  commentId: T:OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService.html
+  name: IAppIdentifierMappingsService
+  nameWithType: IAppIdentifierMappingsService
+  fullName: OpenSettings.Services.Interfaces.IAppIdentifierMappingsService
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html

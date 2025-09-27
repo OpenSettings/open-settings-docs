@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IPollingSettingTimedService
+  commentId: T:OpenSettings.Services.Interfaces.IPollingSettingTimedService
+  id: IPollingSettingTimedService
+  parent: OpenSettings.Services.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IPollingSettingTimedService
+  nameWithType: IPollingSettingTimedService
+  fullName: OpenSettings.Services.Interfaces.IPollingSettingTimedService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IPollingSettingTimedService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IPollingSettingTimedService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IPollingSettingTimedService.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: 'public interface IPollingSettingTimedService : ITimedHostedService, IHostedService'
+    content.vb: Public Interface IPollingSettingTimedService Inherits ITimedHostedService, IHostedService
+  inheritedMembers:
+  - Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action{Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions})
+  - Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action{Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions})
+  commentId: M:Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action{Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions})
+  parent: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: UpdateOptions(Action<TimedHostedServiceOptions>)
+  nameWithType: ITimedHostedService.UpdateOptions(Action<TimedHostedServiceOptions>)
+  fullName: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action<Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions>)
+  nameWithType.vb: ITimedHostedService.UpdateOptions(Action(Of TimedHostedServiceOptions))
+  fullName.vb: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action(Of Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions))
+  name.vb: UpdateOptions(Action(Of TimedHostedServiceOptions))
+  spec.csharp:
+  - uid: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action{Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions})
+    name: UpdateOptions
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions
+    name: TimedHostedServiceOptions
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService.UpdateOptions(System.Action{Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions})
+    name: UpdateOptions
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Extensions.Hosting.HostedServices.TimedHostedServiceOptions
+    name: TimedHostedServiceOptions
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  name: StartAsync(CancellationToken)
+  nameWithType: IHostedService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: IHostedService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService
+  commentId: T:Ogu.Extensions.Hosting.HostedServices.ITimedHostedService
+  parent: Ogu.Extensions.Hosting.HostedServices
+  isExternal: true
+  name: ITimedHostedService
+  nameWithType: ITimedHostedService
+  fullName: Ogu.Extensions.Hosting.HostedServices.ITimedHostedService
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: Ogu.Extensions.Hosting.HostedServices
+  commentId: N:Ogu.Extensions.Hosting.HostedServices
+  isExternal: true
+  name: Ogu.Extensions.Hosting.HostedServices
+  nameWithType: Ogu.Extensions.Hosting.HostedServices
+  fullName: Ogu.Extensions.Hosting.HostedServices
+  spec.csharp:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions.Hosting.HostedServices
+    name: HostedServices
+    isExternal: true
+  spec.vb:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions
+    name: Extensions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+  - name: .
+  - uid: Ogu.Extensions.Hosting.HostedServices
+    name: HostedServices
+    isExternal: true
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting

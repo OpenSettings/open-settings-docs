@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  commentId: T:OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  id: IOpenSettingsMemoryCache
+  parent: OpenSettings.Services.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IOpenSettingsMemoryCache
+  nameWithType: IOpenSettingsMemoryCache
+  fullName: OpenSettings.Services.Interfaces.IOpenSettingsMemoryCache
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IOpenSettingsMemoryCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IOpenSettingsMemoryCache
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IOpenSettingsMemoryCache.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: Represents a memory cache specifically for OpenSettings. To avoid conflicts with the default <xref href="Microsoft.Extensions.Caching.Memory.IMemoryCache" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public interface IOpenSettingsMemoryCache : IMemoryCache, IDisposable'
+    content.vb: Public Interface IOpenSettingsMemoryCache Inherits IMemoryCache, IDisposable
+  inheritedMembers:
+  - Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(System.Object,System.Object@)
+  - Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
+  - Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(System.Object)
+  - System.IDisposable.Dispose
+references:
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(System.Object,System.Object@)
+  commentId: M:Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(System.Object,System.Object@)
+  parent: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.trygetvalue
+  name: TryGetValue(object, out object)
+  nameWithType: IMemoryCache.TryGetValue(object, out object)
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(object, out object)
+  nameWithType.vb: IMemoryCache.TryGetValue(Object, Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(Object, Object)
+  name.vb: TryGetValue(Object, Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.TryGetValue(System.Object,System.Object@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.trygetvalue
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
+  commentId: M:Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
+  parent: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.createentry
+  name: CreateEntry(object)
+  nameWithType: IMemoryCache.CreateEntry(object)
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(object)
+  nameWithType.vb: IMemoryCache.CreateEntry(Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(Object)
+  name.vb: CreateEntry(Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
+    name: CreateEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.createentry
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
+    name: CreateEntry
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.createentry
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(System.Object)
+  commentId: M:Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(System.Object)
+  parent: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.remove
+  name: Remove(object)
+  nameWithType: IMemoryCache.Remove(object)
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(object)
+  nameWithType.vb: IMemoryCache.Remove(Object)
+  fullName.vb: Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(Object)
+  name.vb: Remove(Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.remove
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.Memory.IMemoryCache.Remove(System.Object)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache.remove
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,999 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  id: UserRoleSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  children:
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+  - OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+  langs:
+  - csharp
+  - vb
+  name: UserRoleSqlModel
+  nameWithType: UserRoleSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserRoleSqlModel
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: Represents a user role entity.
+  example: []
+  syntax:
+    content: 'public class UserRoleSqlModel : EntityBase<Guid>'
+    content.vb: Public Class UserRoleSqlModel Inherits EntityBase(Of Guid)
+  inheritance:
+  - System.Object
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  inheritedMembers:
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  - OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  id: Name
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UserRoleSqlModel.Name
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Name
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 13
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The name of the user role.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+  id: NameLowercase
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: NameLowercase
+  nameWithType: UserRoleSqlModel.NameLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NameLowercase
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The lowercase version of the <xref href="OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name" data-throw-if-not-resolved="false"></xref>, typically used for case-insensitive comparisons.
+  example: []
+  syntax:
+    content: public string NameLowercase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NameLowercase As String
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+  id: Slug
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Slug
+  nameWithType: UserRoleSqlModel.Slug
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Slug
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: >-
+    An url friendly version of the <xref href="OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name" data-throw-if-not-resolved="false"></xref>, generated by trimming, converting to lowercase,  
+
+    and replacing spaces or special characters with hyphens (using <xref href="OpenSettings.Extensions.InternalExtensions.ToSlug(System.String)" data-throw-if-not-resolved="false"></xref> extension method).
+  example: []
+  syntax:
+    content: public string Slug { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Slug As String
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+  id: TenantId
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: TenantId
+  nameWithType: UserRoleSqlModel.TenantId
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TenantId
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public Guid? TenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property TenantId As Guid?
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+  id: Tenant
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: Tenant
+  nameWithType: UserRoleSqlModel.Tenant
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Tenant
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 28
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  syntax:
+    content: public virtual TenantSqlModel Tenant { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Domains.Sql.Entities.TenantSqlModel
+    content.vb: Public Overridable Property Tenant As TenantSqlModel
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+  id: UserRoleUserClaimMappings
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserRoleUserClaimMappings
+  nameWithType: UserRoleSqlModel.UserRoleUserClaimMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserRoleUserClaimMappings
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 33
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The collection of user role-claim mappings associated with this user role.
+  example: []
+  syntax:
+    content: public virtual ICollection<UserRoleUserClaimMappingSqlModel> UserRoleUserClaimMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel}
+    content.vb: Public Overridable Property UserRoleUserClaimMappings As ICollection(Of UserRoleUserClaimMappingSqlModel)
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+  id: UserRoleMappings
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserRoleMappings
+  nameWithType: UserRoleSqlModel.UserRoleMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserRoleMappings
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 38
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The collection of user-role mappings associated with this user role.
+  example: []
+  syntax:
+    content: public virtual ICollection<UserRoleMappingSqlModel> UserRoleMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel}
+    content.vb: Public Overridable Property UserRoleMappings As ICollection(Of UserRoleMappingSqlModel)
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings*
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+  id: UserRoleUserGroupMappings
+  parent: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel
+  langs:
+  - csharp
+  - vb
+  name: UserRoleUserGroupMappings
+  nameWithType: UserRoleSqlModel.UserRoleUserGroupMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: UserRoleUserGroupMappings
+    path: ../../../open-settings/src/OpenSettings/Domains/Sql/Entities/UserRoleSqlModel.cs
+    startLine: 43
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Sql.Entities
+  summary: The collection of role-group mappings associated with this user role.
+  example: []
+  syntax:
+    content: public virtual ICollection<UserRoleUserGroupMappingSqlModel> UserRoleUserGroupMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel}
+    content.vb: Public Overridable Property UserRoleUserGroupMappings As ICollection(Of UserRoleUserGroupMappingSqlModel)
+  overload: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings*
+references:
+- uid: OpenSettings.Domains.Sql.Entities
+  commentId: N:OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Sql.Entities
+  nameWithType: OpenSettings.Domains.Sql.Entities
+  fullName: OpenSettings.Domains.Sql.Entities
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql
+    name: Sql
+    href: OpenSettings.Domains.Sql.html
+  - name: .
+  - uid: OpenSettings.Domains.Sql.Entities
+    name: Entities
+    href: OpenSettings.Domains.Sql.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  parent: OpenSettings.Domains.Sql.Entities
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<Guid>
+  nameWithType: EntityBase<Guid>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>
+  nameWithType.vb: EntityBase(Of Guid)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid)
+  name.vb: EntityBase(Of Guid)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.Id
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<Guid>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.Id
+  nameWithType.vb: EntityBase(Of Guid).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.CreatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<Guid>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.CreatedOn
+  nameWithType.vb: EntityBase(Of Guid).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}.UpdatedOn
+  parent: OpenSettings.Domains.Sql.Entities.EntityBase{System.Guid}
+  definition: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<Guid>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<System.Guid>.UpdatedOn
+  nameWithType.vb: EntityBase(Of Guid).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of System.Guid).UpdatedOn
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+  commentId: T:OpenSettings.Domains.Sql.Entities.EntityBase`1
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  name: EntityBase<TId>
+  nameWithType: EntityBase<TId>
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>
+  nameWithType.vb: EntityBase(Of TId)
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId)
+  name.vb: EntityBase(Of TId)
+  spec.csharp:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: OpenSettings.Domains.Sql.Entities.EntityBase`1
+    name: EntityBase
+    href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.Id
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_Id
+  name: Id
+  nameWithType: EntityBase<TId>.Id
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.Id
+  nameWithType.vb: EntityBase(Of TId).Id
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).Id
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.CreatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_CreatedOn
+  name: CreatedOn
+  nameWithType: EntityBase<TId>.CreatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.CreatedOn
+  nameWithType.vb: EntityBase(Of TId).CreatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).CreatedOn
+- uid: OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  commentId: P:OpenSettings.Domains.Sql.Entities.EntityBase`1.UpdatedOn
+  href: OpenSettings.Domains.Sql.Entities.EntityBase-1.html#OpenSettings_Domains_Sql_Entities_EntityBase_1_UpdatedOn
+  name: UpdatedOn
+  nameWithType: EntityBase<TId>.UpdatedOn
+  fullName: OpenSettings.Domains.Sql.Entities.EntityBase<TId>.UpdatedOn
+  nameWithType.vb: EntityBase(Of TId).UpdatedOn
+  fullName.vb: OpenSettings.Domains.Sql.Entities.EntityBase(Of TId).UpdatedOn
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_Name
+  name: Name
+  nameWithType: UserRoleSqlModel.Name
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  commentId: P:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_Name
+  name: Name
+  nameWithType: UserRoleSqlModel.Name
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Name
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_NameLowercase
+  name: NameLowercase
+  nameWithType: UserRoleSqlModel.NameLowercase
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.NameLowercase
+- uid: OpenSettings.Extensions.InternalExtensions.ToSlug(System.String)
+  commentId: M:OpenSettings.Extensions.InternalExtensions.ToSlug(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ToSlug(string)
+  nameWithType: InternalExtensions.ToSlug(string)
+  fullName: OpenSettings.Extensions.InternalExtensions.ToSlug(string)
+  nameWithType.vb: InternalExtensions.ToSlug(String)
+  fullName.vb: OpenSettings.Extensions.InternalExtensions.ToSlug(String)
+  name.vb: ToSlug(String)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.InternalExtensions.ToSlug(System.String)
+    name: ToSlug
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.InternalExtensions.ToSlug(System.String)
+    name: ToSlug
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_Slug
+  name: Slug
+  nameWithType: UserRoleSqlModel.Slug
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Slug
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_TenantId
+  name: TenantId
+  nameWithType: UserRoleSqlModel.TenantId
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.TenantId
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_Tenant
+  name: Tenant
+  nameWithType: UserRoleSqlModel.Tenant
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.Tenant
+- uid: OpenSettings.Domains.Sql.Entities.TenantSqlModel
+  commentId: T:OpenSettings.Domains.Sql.Entities.TenantSqlModel
+  parent: OpenSettings.Domains.Sql.Entities
+  href: OpenSettings.Domains.Sql.Entities.TenantSqlModel.html
+  name: TenantSqlModel
+  nameWithType: TenantSqlModel
+  fullName: OpenSettings.Domains.Sql.Entities.TenantSqlModel
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_UserRoleUserClaimMappings
+  name: UserRoleUserClaimMappings
+  nameWithType: UserRoleSqlModel.UserRoleUserClaimMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserClaimMappings
+- uid: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel}
+  commentId: T:System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<UserRoleUserClaimMappingSqlModel>
+  nameWithType: ICollection<UserRoleUserClaimMappingSqlModel>
+  fullName: System.Collections.Generic.ICollection<OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel>
+  nameWithType.vb: ICollection(Of UserRoleUserClaimMappingSqlModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel)
+  name.vb: ICollection(Of UserRoleUserClaimMappingSqlModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel
+    name: UserRoleUserClaimMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel
+    name: UserRoleUserClaimMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleUserClaimMappingSqlModel.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_UserRoleMappings
+  name: UserRoleMappings
+  nameWithType: UserRoleSqlModel.UserRoleMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleMappings
+- uid: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel}
+  commentId: T:System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<UserRoleMappingSqlModel>
+  nameWithType: ICollection<UserRoleMappingSqlModel>
+  fullName: System.Collections.Generic.ICollection<OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel>
+  nameWithType.vb: ICollection(Of UserRoleMappingSqlModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel)
+  name.vb: ICollection(Of UserRoleMappingSqlModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel
+    name: UserRoleMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel
+    name: UserRoleMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleMappingSqlModel.html
+  - name: )
+- uid: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings*
+  commentId: Overload:OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+  href: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.html#OpenSettings_Domains_Sql_Entities_UserRoleSqlModel_UserRoleUserGroupMappings
+  name: UserRoleUserGroupMappings
+  nameWithType: UserRoleSqlModel.UserRoleUserGroupMappings
+  fullName: OpenSettings.Domains.Sql.Entities.UserRoleSqlModel.UserRoleUserGroupMappings
+- uid: System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel}
+  commentId: T:System.Collections.Generic.ICollection{OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<UserRoleUserGroupMappingSqlModel>
+  nameWithType: ICollection<UserRoleUserGroupMappingSqlModel>
+  fullName: System.Collections.Generic.ICollection<OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel>
+  nameWithType.vb: ICollection(Of UserRoleUserGroupMappingSqlModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel)
+  name.vb: ICollection(Of UserRoleUserGroupMappingSqlModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel
+    name: UserRoleUserGroupMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel
+    name: UserRoleUserGroupMappingSqlModel
+    href: OpenSettings.Domains.Sql.Entities.UserRoleUserGroupMappingSqlModel.html
+  - name: )

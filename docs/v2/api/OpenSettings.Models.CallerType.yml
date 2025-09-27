@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.CallerType
+  commentId: T:OpenSettings.Models.CallerType
+  id: CallerType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.CallerType.Service
+  - OpenSettings.Models.CallerType.Spa
+  - OpenSettings.Models.CallerType.Unset
+  langs:
+  - csharp
+  - vb
+  name: CallerType
+  nameWithType: CallerType
+  fullName: OpenSettings.Models.CallerType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/CallerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CallerType
+    path: ../../../open-settings/src/OpenSettings/Models/CallerType.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents the type of caller making a request to the OpenSettings.
+  example: []
+  syntax:
+    content: public enum CallerType
+    content.vb: Public Enum CallerType
+- uid: OpenSettings.Models.CallerType.Unset
+  commentId: F:OpenSettings.Models.CallerType.Unset
+  id: Unset
+  parent: OpenSettings.Models.CallerType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: CallerType.Unset
+  fullName: OpenSettings.Models.CallerType.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/CallerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/CallerType.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Unset caller type, used when the type is not specified.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.CallerType
+- uid: OpenSettings.Models.CallerType.Spa
+  commentId: F:OpenSettings.Models.CallerType.Spa
+  id: Spa
+  parent: OpenSettings.Models.CallerType
+  langs:
+  - csharp
+  - vb
+  name: Spa
+  nameWithType: CallerType.Spa
+  fullName: OpenSettings.Models.CallerType.Spa
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/CallerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Spa
+    path: ../../../open-settings/src/OpenSettings/Models/CallerType.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a Single Page Application (SPA) client.
+  example: []
+  syntax:
+    content: Spa = 1
+    return:
+      type: OpenSettings.Models.CallerType
+- uid: OpenSettings.Models.CallerType.Service
+  commentId: F:OpenSettings.Models.CallerType.Service
+  id: Service
+  parent: OpenSettings.Models.CallerType
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: CallerType.Service
+  fullName: OpenSettings.Models.CallerType.Service
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/CallerType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Service
+    path: ../../../open-settings/src/OpenSettings/Models/CallerType.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a backend service client.
+  example: []
+  syntax:
+    content: Service = 2
+    return:
+      type: OpenSettings.Models.CallerType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.CallerType
+  commentId: T:OpenSettings.Models.CallerType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CallerType.html
+  name: CallerType
+  nameWithType: CallerType
+  fullName: OpenSettings.Models.CallerType

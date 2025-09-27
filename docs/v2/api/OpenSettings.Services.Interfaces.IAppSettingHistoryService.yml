@@ -1,0 +1,495 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  commentId: T:OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  id: IAppSettingHistoryService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync(OpenSettings.Models.Inputs.GetAppSettingHistoriesInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAppSettingHistoryService
+  nameWithType: IAppSettingHistoryService
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IAppSettingHistoryService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IAppSettingHistoryService
+    content.vb: Public Interface IAppSettingHistoryService
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput,System.Threading.CancellationToken)
+  id: GetAppSettingHistoryDataAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  langs:
+  - csharp
+  - vb
+  name: GetAppSettingHistoryDataAsync(GetAppSettingHistoryDataInput, CancellationToken)
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryDataAsync(GetAppSettingHistoryDataInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAppSettingHistoryDataAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse> GetAppSettingHistoryDataAsync(GetAppSettingHistoryDataInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppSettingHistoryDataAsync(input As GetAppSettingHistoryDataInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync*
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  id: GetAppSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  langs:
+  - csharp
+  - vb
+  name: GetAppSettingHistoryByIdAsync(GetAppSettingHistoryInput, CancellationToken)
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryByIdAsync(GetAppSettingHistoryInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAppSettingHistoryByIdAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse> GetAppSettingHistoryByIdAsync(GetAppSettingHistoryInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetAppSettingHistoryInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppSettingHistoryByIdAsync(input As GetAppSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync*
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  id: GetAppSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  langs:
+  - csharp
+  - vb
+  name: GetAppSettingHistoryBySlugAsync(GetAppSettingHistoryInput, CancellationToken)
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync(GetAppSettingHistoryInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync(OpenSettings.Models.Inputs.GetAppSettingHistoryInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAppSettingHistoryBySlugAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse> GetAppSettingHistoryBySlugAsync(GetAppSettingHistoryInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetAppSettingHistoryInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppSettingHistoryBySlugAsync(input As GetAppSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync*
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync(OpenSettings.Models.Inputs.GetAppSettingHistoriesInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync(OpenSettings.Models.Inputs.GetAppSettingHistoriesInput,System.Threading.CancellationToken)
+  id: GetAppSettingHistoriesAsync(OpenSettings.Models.Inputs.GetAppSettingHistoriesInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  langs:
+  - csharp
+  - vb
+  name: GetAppSettingHistoriesAsync(GetAppSettingHistoriesInput, CancellationToken)
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoriesAsync(GetAppSettingHistoriesInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync(OpenSettings.Models.Inputs.GetAppSettingHistoriesInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetAppSettingHistoriesAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse> GetAppSettingHistoriesAsync(GetAppSettingHistoriesInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.GetAppSettingHistoriesInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+    content.vb: Function GetAppSettingHistoriesAsync(input As GetAppSettingHistoriesInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse)
+  overload: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync*
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput,System.Threading.CancellationToken)
+  id: RestoreAppSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IAppSettingHistoryService
+  langs:
+  - csharp
+  - vb
+  name: RestoreAppSettingHistoryAsync(RestoreAppSettingHistoryInput, CancellationToken)
+  nameWithType: IAppSettingHistoryService.RestoreAppSettingHistoryAsync(RestoreAppSettingHistoryInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync(OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: RestoreAppSettingHistoryAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IAppSettingHistoryService.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<IResponse<RestoreAppSettingHistoryResponse>> RestoreAppSettingHistoryAsync(RestoreAppSettingHistoryInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse}}
+    content.vb: Function RestoreAppSettingHistoryAsync(input As RestoreAppSettingHistoryInput, cancellationToken As CancellationToken = Nothing) As Task(Of IResponse(Of RestoreAppSettingHistoryResponse))
+  overload: OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync
+  href: OpenSettings.Services.Interfaces.IAppSettingHistoryService.html#OpenSettings_Services_Interfaces_IAppSettingHistoryService_GetAppSettingHistoryDataAsync_OpenSettings_Models_Inputs_GetAppSettingHistoryDataInput_System_Threading_CancellationToken_
+  name: GetAppSettingHistoryDataAsync
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryDataAsync
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryDataAsync
+- uid: OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput
+  commentId: T:OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput.html
+  name: GetAppSettingHistoryDataInput
+  nameWithType: GetAppSettingHistoryDataInput
+  fullName: OpenSettings.Models.Inputs.GetAppSettingHistoryDataInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse>
+  nameWithType: Task<IResponse>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse>
+  nameWithType.vb: Task(Of IResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse)
+  name.vb: Task(Of IResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse
+    name: IResponse
+    isExternal: true
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync
+  href: OpenSettings.Services.Interfaces.IAppSettingHistoryService.html#OpenSettings_Services_Interfaces_IAppSettingHistoryService_GetAppSettingHistoryByIdAsync_OpenSettings_Models_Inputs_GetAppSettingHistoryInput_System_Threading_CancellationToken_
+  name: GetAppSettingHistoryByIdAsync
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryByIdAsync
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryByIdAsync
+- uid: OpenSettings.Models.Inputs.GetAppSettingHistoryInput
+  commentId: T:OpenSettings.Models.Inputs.GetAppSettingHistoryInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetAppSettingHistoryInput.html
+  name: GetAppSettingHistoryInput
+  nameWithType: GetAppSettingHistoryInput
+  fullName: OpenSettings.Models.Inputs.GetAppSettingHistoryInput
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync
+  href: OpenSettings.Services.Interfaces.IAppSettingHistoryService.html#OpenSettings_Services_Interfaces_IAppSettingHistoryService_GetAppSettingHistoryBySlugAsync_OpenSettings_Models_Inputs_GetAppSettingHistoryInput_System_Threading_CancellationToken_
+  name: GetAppSettingHistoryBySlugAsync
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoryBySlugAsync
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync
+  href: OpenSettings.Services.Interfaces.IAppSettingHistoryService.html#OpenSettings_Services_Interfaces_IAppSettingHistoryService_GetAppSettingHistoriesAsync_OpenSettings_Models_Inputs_GetAppSettingHistoriesInput_System_Threading_CancellationToken_
+  name: GetAppSettingHistoriesAsync
+  nameWithType: IAppSettingHistoryService.GetAppSettingHistoriesAsync
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.GetAppSettingHistoriesAsync
+- uid: OpenSettings.Models.Inputs.GetAppSettingHistoriesInput
+  commentId: T:OpenSettings.Models.Inputs.GetAppSettingHistoriesInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.GetAppSettingHistoriesInput.html
+  name: GetAppSettingHistoriesInput
+  nameWithType: GetAppSettingHistoriesInput
+  fullName: OpenSettings.Models.Inputs.GetAppSettingHistoriesInput
+- uid: OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync
+  href: OpenSettings.Services.Interfaces.IAppSettingHistoryService.html#OpenSettings_Services_Interfaces_IAppSettingHistoryService_RestoreAppSettingHistoryAsync_OpenSettings_Models_Inputs_RestoreAppSettingHistoryInput_System_Threading_CancellationToken_
+  name: RestoreAppSettingHistoryAsync
+  nameWithType: IAppSettingHistoryService.RestoreAppSettingHistoryAsync
+  fullName: OpenSettings.Services.Interfaces.IAppSettingHistoryService.RestoreAppSettingHistoryAsync
+- uid: OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput
+  commentId: T:OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput.html
+  name: RestoreAppSettingHistoryInput
+  nameWithType: RestoreAppSettingHistoryInput
+  fullName: OpenSettings.Models.Inputs.RestoreAppSettingHistoryInput
+- uid: System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse}}
+  commentId: T:System.Threading.Tasks.Task{Ogu.Response.Abstractions.IResponse{OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IResponse<RestoreAppSettingHistoryResponse>>
+  nameWithType: Task<IResponse<RestoreAppSettingHistoryResponse>>
+  fullName: System.Threading.Tasks.Task<Ogu.Response.Abstractions.IResponse<OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse>>
+  nameWithType.vb: Task(Of IResponse(Of RestoreAppSettingHistoryResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of Ogu.Response.Abstractions.IResponse(Of OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse))
+  name.vb: Task(Of IResponse(Of RestoreAppSettingHistoryResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: <
+  - uid: OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse
+    name: RestoreAppSettingHistoryResponse
+    href: OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Ogu.Response.Abstractions.IResponse`1
+    name: IResponse
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse
+    name: RestoreAppSettingHistoryResponse
+    href: OpenSettings.Models.Responses.RestoreAppSettingHistoryResponse.html
+  - name: )
+  - name: )

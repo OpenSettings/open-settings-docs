@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ISettings
+  commentId: T:OpenSettings.Services.Interfaces.ISettings
+  id: ISettings
+  parent: OpenSettings.Services.Interfaces
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISettings
+  nameWithType: ISettings
+  fullName: OpenSettings.Services.Interfaces.ISettings
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ISettings.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ISettings
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ISettings.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  summary: >-
+    Marker interface used by the OpenSettings library to identify class as part of the settings
+
+    <p>The <xref href="OpenSettings.Services.Interfaces.ISettings" data-throw-if-not-resolved="false"></xref> interface is a core part of the OpenSettings system. Only classes that implement this interface are treated as settings and are recognized by the library as requiring centralized management.</p>
+
+    <p>If a class does not implement this interface, it will not be treated as a setting, and the library will not perform.</p>
+
+    <p>This interface is essential for identifying classes that require configuration management, ensuring that the OpenSettings library can handle them appropriately and manage their state within the system.</p>
+  example: []
+  syntax:
+    content: public interface ISettings
+    content.vb: Public Interface ISettings
+  extensionMethods:
+  - OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault
+  - OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1
+  - OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode
+references:
+- uid: OpenSettings.Services.Interfaces.ISettings
+  commentId: T:OpenSettings.Services.Interfaces.ISettings
+  parent: OpenSettings.Services.Interfaces
+  href: OpenSettings.Services.Interfaces.ISettings.html
+  name: ISettings
+  nameWithType: ISettings
+  fullName: OpenSettings.Services.Interfaces.ISettings
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  parent: OpenSettings.Extensions.SettingsExtensions
+  definition: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  name: GetLocalSettingOrDefault(ISettings)
+  nameWithType: SettingsExtensions.GetLocalSettingOrDefault(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+  parent: OpenSettings.Extensions.SettingsExtensions
+  definition: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  name: GetLocalSettingOrDefault<T>(ISettings)
+  nameWithType: SettingsExtensions.GetLocalSettingOrDefault<T>(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault<T>(OpenSettings.Services.Interfaces.ISettings)
+  nameWithType.vb: SettingsExtensions.GetLocalSettingOrDefault(Of T)(ISettings)
+  fullName.vb: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(Of T)(OpenSettings.Services.Interfaces.ISettings)
+  name.vb: GetLocalSettingOrDefault(Of T)(ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Services.Interfaces.ISettings.OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  parent: OpenSettings.Extensions.SettingsExtensions
+  definition: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  name: GetRegistrationMode(ISettings)
+  nameWithType: SettingsExtensions.GetRegistrationMode(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+    name: GetRegistrationMode
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+    name: GetRegistrationMode
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  name: GetLocalSettingOrDefault(ISettings)
+  nameWithType: SettingsExtensions.GetLocalSettingOrDefault(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Extensions.SettingsExtensions
+  commentId: T:OpenSettings.Extensions.SettingsExtensions
+  parent: OpenSettings.Extensions
+  href: OpenSettings.Extensions.SettingsExtensions.html
+  name: SettingsExtensions
+  nameWithType: SettingsExtensions
+  fullName: OpenSettings.Extensions.SettingsExtensions
+- uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  name: GetLocalSettingOrDefault<T>(ISettings)
+  nameWithType: SettingsExtensions.GetLocalSettingOrDefault<T>(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault<T>(OpenSettings.Services.Interfaces.ISettings)
+  nameWithType.vb: SettingsExtensions.GetLocalSettingOrDefault(Of T)(ISettings)
+  fullName.vb: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault(Of T)(OpenSettings.Services.Interfaces.ISettings)
+  name.vb: GetLocalSettingOrDefault(Of T)(ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetLocalSettingOrDefault``1(OpenSettings.Services.Interfaces.ISettings)
+    name: GetLocalSettingOrDefault
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetLocalSettingOrDefault__1_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  commentId: M:OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  name: GetRegistrationMode(ISettings)
+  nameWithType: SettingsExtensions.GetRegistrationMode(ISettings)
+  fullName: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+  spec.csharp:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+    name: GetRegistrationMode
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+  spec.vb:
+  - uid: OpenSettings.Extensions.SettingsExtensions.GetRegistrationMode(OpenSettings.Services.Interfaces.ISettings)
+    name: GetRegistrationMode
+    href: OpenSettings.Extensions.SettingsExtensions.html#OpenSettings_Extensions_SettingsExtensions_GetRegistrationMode_OpenSettings_Services_Interfaces_ISettings_
+  - name: (
+  - uid: OpenSettings.Services.Interfaces.ISettings
+    name: ISettings
+    href: OpenSettings.Services.Interfaces.ISettings.html
+  - name: )
+- uid: OpenSettings.Extensions
+  commentId: N:OpenSettings.Extensions
+  href: OpenSettings.html
+  name: OpenSettings.Extensions
+  nameWithType: OpenSettings.Extensions
+  fullName: OpenSettings.Extensions
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html

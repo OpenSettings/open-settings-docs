@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ConfigurationProvider
+  commentId: T:OpenSettings.Models.ConfigurationProvider
+  id: ConfigurationProvider
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ConfigurationProvider.CompressionLevel
+  - OpenSettings.Models.ConfigurationProvider.CompressionType
+  - OpenSettings.Models.ConfigurationProvider.Redis
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationProvider
+  nameWithType: ConfigurationProvider
+  fullName: OpenSettings.Models.ConfigurationProvider
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ConfigurationProvider
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationProvider.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public class ConfigurationProvider
+    content.vb: Public Class ConfigurationProvider
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.ConfigurationProvider.Redis
+  commentId: P:OpenSettings.Models.ConfigurationProvider.Redis
+  id: Redis
+  parent: OpenSettings.Models.ConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: Redis
+  nameWithType: ConfigurationProvider.Redis
+  fullName: OpenSettings.Models.ConfigurationProvider.Redis
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Redis
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationProvider.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public RedisConfiguration Redis { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Configurations.RedisConfiguration
+    content.vb: Public Property Redis As RedisConfiguration
+  overload: OpenSettings.Models.ConfigurationProvider.Redis*
+- uid: OpenSettings.Models.ConfigurationProvider.CompressionType
+  commentId: P:OpenSettings.Models.ConfigurationProvider.CompressionType
+  id: CompressionType
+  parent: OpenSettings.Models.ConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: CompressionType
+  nameWithType: ConfigurationProvider.CompressionType
+  fullName: OpenSettings.Models.ConfigurationProvider.CompressionType
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CompressionType
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationProvider.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public CompressionType CompressionType { get; set; }
+    parameters: []
+    return:
+      type: Ogu.Compressions.Abstractions.CompressionType
+    content.vb: Public Property CompressionType As CompressionType
+  overload: OpenSettings.Models.ConfigurationProvider.CompressionType*
+- uid: OpenSettings.Models.ConfigurationProvider.CompressionLevel
+  commentId: P:OpenSettings.Models.ConfigurationProvider.CompressionLevel
+  id: CompressionLevel
+  parent: OpenSettings.Models.ConfigurationProvider
+  langs:
+  - csharp
+  - vb
+  name: CompressionLevel
+  nameWithType: ConfigurationProvider.CompressionLevel
+  fullName: OpenSettings.Models.ConfigurationProvider.CompressionLevel
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigurationProvider.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CompressionLevel
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigurationProvider.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public CompressionLevel CompressionLevel { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Compression.CompressionLevel
+    content.vb: Public Property CompressionLevel As CompressionLevel
+  overload: OpenSettings.Models.ConfigurationProvider.CompressionLevel*
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.ConfigurationProvider.Redis*
+  commentId: Overload:OpenSettings.Models.ConfigurationProvider.Redis
+  href: OpenSettings.Models.ConfigurationProvider.html#OpenSettings_Models_ConfigurationProvider_Redis
+  name: Redis
+  nameWithType: ConfigurationProvider.Redis
+  fullName: OpenSettings.Models.ConfigurationProvider.Redis
+- uid: OpenSettings.Configurations.RedisConfiguration
+  commentId: T:OpenSettings.Configurations.RedisConfiguration
+  parent: OpenSettings.Configurations
+  href: OpenSettings.Configurations.RedisConfiguration.html
+  name: RedisConfiguration
+  nameWithType: RedisConfiguration
+  fullName: OpenSettings.Configurations.RedisConfiguration
+- uid: OpenSettings.Configurations
+  commentId: N:OpenSettings.Configurations
+  href: OpenSettings.html
+  name: OpenSettings.Configurations
+  nameWithType: OpenSettings.Configurations
+  fullName: OpenSettings.Configurations
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Configurations
+    name: Configurations
+    href: OpenSettings.Configurations.html
+- uid: OpenSettings.Models.ConfigurationProvider.CompressionType*
+  commentId: Overload:OpenSettings.Models.ConfigurationProvider.CompressionType
+  href: OpenSettings.Models.ConfigurationProvider.html#OpenSettings_Models_ConfigurationProvider_CompressionType
+  name: CompressionType
+  nameWithType: ConfigurationProvider.CompressionType
+  fullName: OpenSettings.Models.ConfigurationProvider.CompressionType
+- uid: Ogu.Compressions.Abstractions.CompressionType
+  commentId: T:Ogu.Compressions.Abstractions.CompressionType
+  parent: Ogu.Compressions.Abstractions
+  isExternal: true
+  name: CompressionType
+  nameWithType: CompressionType
+  fullName: Ogu.Compressions.Abstractions.CompressionType
+- uid: Ogu.Compressions.Abstractions
+  commentId: N:Ogu.Compressions.Abstractions
+  isExternal: true
+  name: Ogu.Compressions.Abstractions
+  nameWithType: Ogu.Compressions.Abstractions
+  fullName: Ogu.Compressions.Abstractions
+  spec.csharp:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions
+    name: Compressions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Ogu
+    name: Ogu
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions
+    name: Compressions
+    isExternal: true
+  - name: .
+  - uid: Ogu.Compressions.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: OpenSettings.Models.ConfigurationProvider.CompressionLevel*
+  commentId: Overload:OpenSettings.Models.ConfigurationProvider.CompressionLevel
+  href: OpenSettings.Models.ConfigurationProvider.html#OpenSettings_Models_ConfigurationProvider_CompressionLevel
+  name: CompressionLevel
+  nameWithType: ConfigurationProvider.CompressionLevel
+  fullName: OpenSettings.Models.ConfigurationProvider.CompressionLevel
+- uid: System.IO.Compression.CompressionLevel
+  commentId: T:System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel
+  name: CompressionLevel
+  nameWithType: CompressionLevel
+  fullName: System.IO.Compression.CompressionLevel
+- uid: System.IO.Compression
+  commentId: N:System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Compression
+  nameWithType: System.IO.Compression
+  fullName: System.IO.Compression
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression

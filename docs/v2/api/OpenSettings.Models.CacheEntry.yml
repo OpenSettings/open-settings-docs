@@ -1,0 +1,1018 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.CacheEntry
+  commentId: T:OpenSettings.Models.CacheEntry
+  id: CacheEntry
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object[])
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset})
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.#ctor(System.String)
+  - OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset})
+  - OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.TimeSpan})
+  - OpenSettings.Models.CacheEntry.BaseKey
+  - OpenSettings.Models.CacheEntry.GetKey(System.Object[])
+  - OpenSettings.Models.CacheEntry.Options
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry
+  nameWithType: CacheEntry
+  fullName: OpenSettings.Models.CacheEntry
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CacheEntry
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: >-
+    Represents a model for organizing and tracking memory cache keys.
+
+    <p>
+
+    This class is designed to track cache keys in a more organized manner, supporting operations like 
+
+    managing cache key parts and reusing cache details efficiently.
+
+    </p>
+
+    <p>
+
+    The <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class provides functionality for concatenating cache key parts, storing cache keys, 
+
+    and organizing them using a concurrent dictionary for better performance and thread safety.
+
+    </p>
+  example: []
+  syntax:
+    content: public class CacheEntry
+    content.vb: Public Class CacheEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.TimeSpan})
+  id: '#ctor(System.String,System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(string, TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(string, TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(string, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key and relative expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(string baseKey, TimeSpan? absoluteExpirationRelativeToNow)
+    parameters:
+    - id: baseKey
+      type: System.String
+      description: The key used to identify the cache entry.
+    - id: absoluteExpirationRelativeToNow
+      type: System.Nullable{System.TimeSpan}
+      description: The relative expiration time after which the cache entry will expire.
+    content.vb: Public Sub New(baseKey As String, absoluteExpirationRelativeToNow As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(String, TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(String, System.TimeSpan?)
+  name.vb: New(String, TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan})
+  id: '#ctor(System.Object[],System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(object[], TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(object[], TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(object[], System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 31
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key parts and relative expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(object[] keyParts, TimeSpan? absoluteExpirationRelativeToNow)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: An array of key parts used to identify the cache entry.
+    - id: absoluteExpirationRelativeToNow
+      type: System.Nullable{System.TimeSpan}
+      description: The relative expiration time after which the cache entry will expire.
+    content.vb: Public Sub New(keyParts As Object(), absoluteExpirationRelativeToNow As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(Object(), TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(Object(), System.TimeSpan?)
+  name.vb: New(Object(), TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset})
+  id: '#ctor(System.String,System.Nullable{System.DateTimeOffset})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(string, DateTimeOffset?)
+  nameWithType: CacheEntry.CacheEntry(string, DateTimeOffset?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(string, System.DateTimeOffset?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 38
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key and absolute expiration date.
+  example: []
+  syntax:
+    content: public CacheEntry(string baseKey, DateTimeOffset? absoluteExpiration)
+    parameters:
+    - id: baseKey
+      type: System.String
+      description: The key used to identify the cache entry.
+    - id: absoluteExpiration
+      type: System.Nullable{System.DateTimeOffset}
+      description: The absolute expiration date after which the cache entry will expire.
+    content.vb: Public Sub New(baseKey As String, absoluteExpiration As DateTimeOffset?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(String, DateTimeOffset?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(String, System.DateTimeOffset?)
+  name.vb: New(String, DateTimeOffset?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset})
+  id: '#ctor(System.Object[],System.Nullable{System.DateTimeOffset})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(object[], DateTimeOffset?)
+  nameWithType: CacheEntry.CacheEntry(object[], DateTimeOffset?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(object[], System.DateTimeOffset?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 45
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key parts and absolute expiration date.
+  example: []
+  syntax:
+    content: public CacheEntry(object[] keyParts, DateTimeOffset? absoluteExpiration)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: An array of key parts used to identify the cache entry.
+    - id: absoluteExpiration
+      type: System.Nullable{System.DateTimeOffset}
+      description: The absolute expiration date after which the cache entry will expire.
+    content.vb: Public Sub New(keyParts As Object(), absoluteExpiration As DateTimeOffset?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(Object(), DateTimeOffset?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(Object(), System.DateTimeOffset?)
+  name.vb: New(Object(), DateTimeOffset?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  id: '#ctor(System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(string, DateTimeOffset?, TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(string, DateTimeOffset?, TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(string, System.DateTimeOffset?, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 53
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key, absolute expiration date, and sliding expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(string baseKey, DateTimeOffset? absoluteExpiration, TimeSpan? slidingExpiration)
+    parameters:
+    - id: baseKey
+      type: System.String
+      description: The key used to identify the cache entry.
+    - id: absoluteExpiration
+      type: System.Nullable{System.DateTimeOffset}
+      description: The absolute expiration date after which the cache entry will expire.
+    - id: slidingExpiration
+      type: System.Nullable{System.TimeSpan}
+      description: The sliding expiration time after which the cache entry will expire if not accessed.
+    content.vb: Public Sub New(baseKey As String, absoluteExpiration As DateTimeOffset?, slidingExpiration As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(String, DateTimeOffset?, TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(String, System.DateTimeOffset?, System.TimeSpan?)
+  name.vb: New(String, DateTimeOffset?, TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})
+  id: '#ctor(System.Object[],System.Nullable{System.DateTimeOffset},System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(object[], DateTimeOffset?, TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(object[], DateTimeOffset?, TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(object[], System.DateTimeOffset?, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 65
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key parts, absolute expiration date, and sliding expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(object[] keyParts, DateTimeOffset? absoluteExpiration, TimeSpan? slidingExpiration)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: An array of key parts used to identify the cache entry.
+    - id: absoluteExpiration
+      type: System.Nullable{System.DateTimeOffset}
+      description: The absolute expiration date after which the cache entry will expire.
+    - id: slidingExpiration
+      type: System.Nullable{System.TimeSpan}
+      description: The sliding expiration time after which the cache entry will expire if not accessed.
+    content.vb: Public Sub New(keyParts As Object(), absoluteExpiration As DateTimeOffset?, slidingExpiration As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(Object(), DateTimeOffset?, TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(Object(), System.DateTimeOffset?, System.TimeSpan?)
+  name.vb: New(Object(), DateTimeOffset?, TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  id: '#ctor(System.Object,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(object, TimeSpan?, TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(object, TimeSpan?, TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(object, System.TimeSpan?, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 77
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key and relative expiration time, and sliding expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(object baseKey, TimeSpan? absoluteExpirationRelativeToNow, TimeSpan? slidingExpiration)
+    parameters:
+    - id: baseKey
+      type: System.Object
+      description: The key used to identify the cache entry.
+    - id: absoluteExpirationRelativeToNow
+      type: System.Nullable{System.TimeSpan}
+      description: The relative expiration time after which the cache entry will expire.
+    - id: slidingExpiration
+      type: System.Nullable{System.TimeSpan}
+      description: The sliding expiration time after which the cache entry will expire if not accessed.
+    content.vb: Public Sub New(baseKey As Object, absoluteExpirationRelativeToNow As TimeSpan?, slidingExpiration As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(Object, TimeSpan?, TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(Object, System.TimeSpan?, System.TimeSpan?)
+  name.vb: New(Object, TimeSpan?, TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object[],System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  id: '#ctor(System.Object[],System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(object[], TimeSpan?, TimeSpan?)
+  nameWithType: CacheEntry.CacheEntry(object[], TimeSpan?, TimeSpan?)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(object[], System.TimeSpan?, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 89
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key parts, relative expiration time, and sliding expiration time.
+  example: []
+  syntax:
+    content: public CacheEntry(object[] keyParts, TimeSpan? absoluteExpirationRelativeToNow, TimeSpan? slidingExpiration)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: An array of key parts used to identify the cache entry.
+    - id: absoluteExpirationRelativeToNow
+      type: System.Nullable{System.TimeSpan}
+      description: The relative expiration time after which the cache entry will expire.
+    - id: slidingExpiration
+      type: System.Nullable{System.TimeSpan}
+      description: The sliding expiration time after which the cache entry will expire if not accessed.
+    content.vb: Public Sub New(keyParts As Object(), absoluteExpirationRelativeToNow As TimeSpan?, slidingExpiration As TimeSpan?)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(Object(), TimeSpan?, TimeSpan?)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(Object(), System.TimeSpan?, System.TimeSpan?)
+  name.vb: New(Object(), TimeSpan?, TimeSpan?)
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.Object[])
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.Object[])
+  id: '#ctor(System.Object[])'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(params object[])
+  nameWithType: CacheEntry.CacheEntry(params object[])
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(params object[])
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 100
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Initializes a new instance of the <xref href="OpenSettings.Models.CacheEntry" data-throw-if-not-resolved="false"></xref> class with the specified key parts.
+  example: []
+  syntax:
+    content: public CacheEntry(params object[] keyParts)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: An array of key parts used to identify the cache entry.
+    content.vb: Public Sub New(ParamArray keyParts As Object())
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the <code class="paramref">keyParts</code> is null.
+  nameWithType.vb: CacheEntry.New(ParamArray Object())
+  fullName.vb: OpenSettings.Models.CacheEntry.New(ParamArray Object())
+  name.vb: New(ParamArray Object())
+- uid: OpenSettings.Models.CacheEntry.#ctor(System.String)
+  commentId: M:OpenSettings.Models.CacheEntry.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: CacheEntry(string)
+  nameWithType: CacheEntry.CacheEntry(string)
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 121
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public CacheEntry(string baseKey)
+    parameters:
+    - id: baseKey
+      type: System.String
+    content.vb: Public Sub New(baseKey As String)
+  overload: OpenSettings.Models.CacheEntry.#ctor*
+  nameWithType.vb: CacheEntry.New(String)
+  fullName.vb: OpenSettings.Models.CacheEntry.New(String)
+  name.vb: New(String)
+- uid: OpenSettings.Models.CacheEntry.BaseKey
+  commentId: P:OpenSettings.Models.CacheEntry.BaseKey
+  id: BaseKey
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: BaseKey
+  nameWithType: CacheEntry.BaseKey
+  fullName: OpenSettings.Models.CacheEntry.BaseKey
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: BaseKey
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 128
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public string BaseKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property BaseKey As String
+  overload: OpenSettings.Models.CacheEntry.BaseKey*
+- uid: OpenSettings.Models.CacheEntry.Options
+  commentId: P:OpenSettings.Models.CacheEntry.Options
+  id: Options
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: CacheEntry.Options
+  fullName: OpenSettings.Models.CacheEntry.Options
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Options
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 130
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public MemoryCacheEntryOptions Options { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+    content.vb: Public ReadOnly Property Options As MemoryCacheEntryOptions
+  overload: OpenSettings.Models.CacheEntry.Options*
+- uid: OpenSettings.Models.CacheEntry.GetKey(System.Object[])
+  commentId: M:OpenSettings.Models.CacheEntry.GetKey(System.Object[])
+  id: GetKey(System.Object[])
+  parent: OpenSettings.Models.CacheEntry
+  langs:
+  - csharp
+  - vb
+  name: GetKey(params object[])
+  nameWithType: CacheEntry.GetKey(params object[])
+  fullName: OpenSettings.Models.CacheEntry.GetKey(params object[])
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Models/CacheEntry.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetKey
+    path: ../../../open-settings/src/OpenSettings/Models/CacheEntry.cs
+    startLine: 137
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Generates a cache key based on the base key and provided key parts.
+  example: []
+  syntax:
+    content: public CacheEntryKey GetKey(params object[] keyParts)
+    parameters:
+    - id: keyParts
+      type: System.Object[]
+      description: Additional key parts.
+    return:
+      type: OpenSettings.Models.CacheEntryKey
+      description: ''
+    content.vb: Public Function GetKey(ParamArray keyParts As Object()) As CacheEntryKey
+  overload: OpenSettings.Models.CacheEntry.GetKey*
+  nameWithType.vb: CacheEntry.GetKey(ParamArray Object())
+  fullName.vb: OpenSettings.Models.CacheEntry.GetKey(ParamArray Object())
+  name.vb: GetKey(ParamArray Object())
+references:
+- uid: OpenSettings.Models.CacheEntry
+  commentId: T:OpenSettings.Models.CacheEntry
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntry.html
+  name: CacheEntry
+  nameWithType: CacheEntry
+  fullName: OpenSettings.Models.CacheEntry
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.CacheEntry.#ctor*
+  commentId: Overload:OpenSettings.Models.CacheEntry.#ctor
+  href: OpenSettings.Models.CacheEntry.html#OpenSettings_Models_CacheEntry__ctor_System_String_System_Nullable_System_TimeSpan__
+  name: CacheEntry
+  nameWithType: CacheEntry.CacheEntry
+  fullName: OpenSettings.Models.CacheEntry.CacheEntry
+  nameWithType.vb: CacheEntry.New
+  fullName.vb: OpenSettings.Models.CacheEntry.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: OpenSettings.Models.CacheEntry.BaseKey*
+  commentId: Overload:OpenSettings.Models.CacheEntry.BaseKey
+  href: OpenSettings.Models.CacheEntry.html#OpenSettings_Models_CacheEntry_BaseKey
+  name: BaseKey
+  nameWithType: CacheEntry.BaseKey
+  fullName: OpenSettings.Models.CacheEntry.BaseKey
+- uid: OpenSettings.Models.CacheEntry.Options*
+  commentId: Overload:OpenSettings.Models.CacheEntry.Options
+  href: OpenSettings.Models.CacheEntry.html#OpenSettings_Models_CacheEntry_Options
+  name: Options
+  nameWithType: CacheEntry.Options
+  fullName: OpenSettings.Models.CacheEntry.Options
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  commentId: T:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions
+  name: MemoryCacheEntryOptions
+  nameWithType: MemoryCacheEntryOptions
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: OpenSettings.Models.CacheEntry.GetKey*
+  commentId: Overload:OpenSettings.Models.CacheEntry.GetKey
+  href: OpenSettings.Models.CacheEntry.html#OpenSettings_Models_CacheEntry_GetKey_System_Object___
+  name: GetKey
+  nameWithType: CacheEntry.GetKey
+  fullName: OpenSettings.Models.CacheEntry.GetKey
+- uid: OpenSettings.Models.CacheEntryKey
+  commentId: T:OpenSettings.Models.CacheEntryKey
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheEntryKey.html
+  name: CacheEntryKey
+  nameWithType: CacheEntryKey
+  fullName: OpenSettings.Models.CacheEntryKey

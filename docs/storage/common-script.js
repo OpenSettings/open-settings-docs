@@ -81,7 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Versions dropdown 
 
-    var versions = ["1"];
+    let versions;
+
+    try {
+        versions = JSON.parse('%(Versions)');
+    }
+    catch {
+        versions = ["1", "2"];
+    }
 
     function addVersionDropdown() {
         var navbar = document.querySelector('.icons');
@@ -171,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     warnDiv.querySelector("button").addEventListener("click", () => {
         warnDiv.remove();
-      });
+    });
 
     const contentDiv = document.querySelector(".content");
     if (contentDiv) {

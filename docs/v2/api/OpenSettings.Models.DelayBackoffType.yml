@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.DelayBackoffType
+  commentId: T:OpenSettings.Models.DelayBackoffType
+  id: DelayBackoffType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.DelayBackoffType.Constant
+  - OpenSettings.Models.DelayBackoffType.Exponential
+  - OpenSettings.Models.DelayBackoffType.Linear
+  langs:
+  - csharp
+  - vb
+  name: DelayBackoffType
+  nameWithType: DelayBackoffType
+  fullName: OpenSettings.Models.DelayBackoffType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/DelayBackoffType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DelayBackoffType
+    path: ../../../open-settings/src/OpenSettings/Models/DelayBackoffType.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents the type of delay backoff strategy used for retrying operations.
+  example: []
+  syntax:
+    content: public enum DelayBackoffType
+    content.vb: Public Enum DelayBackoffType
+- uid: OpenSettings.Models.DelayBackoffType.Constant
+  commentId: F:OpenSettings.Models.DelayBackoffType.Constant
+  id: Constant
+  parent: OpenSettings.Models.DelayBackoffType
+  langs:
+  - csharp
+  - vb
+  name: Constant
+  nameWithType: DelayBackoffType.Constant
+  fullName: OpenSettings.Models.DelayBackoffType.Constant
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/DelayBackoffType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Constant
+    path: ../../../open-settings/src/OpenSettings/Models/DelayBackoffType.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Constant backoff is a strategy in which the wait time between retries remains constant for each attempt.
+  example: []
+  syntax:
+    content: Constant = 0
+    return:
+      type: OpenSettings.Models.DelayBackoffType
+- uid: OpenSettings.Models.DelayBackoffType.Linear
+  commentId: F:OpenSettings.Models.DelayBackoffType.Linear
+  id: Linear
+  parent: OpenSettings.Models.DelayBackoffType
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: DelayBackoffType.Linear
+  fullName: OpenSettings.Models.DelayBackoffType.Linear
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/DelayBackoffType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Linear
+    path: ../../../open-settings/src/OpenSettings/Models/DelayBackoffType.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Linear backoff is a strategy in which the wait time between retries increases linearly with each attempt.
+  example: []
+  syntax:
+    content: Linear = 1
+    return:
+      type: OpenSettings.Models.DelayBackoffType
+- uid: OpenSettings.Models.DelayBackoffType.Exponential
+  commentId: F:OpenSettings.Models.DelayBackoffType.Exponential
+  id: Exponential
+  parent: OpenSettings.Models.DelayBackoffType
+  langs:
+  - csharp
+  - vb
+  name: Exponential
+  nameWithType: DelayBackoffType.Exponential
+  fullName: OpenSettings.Models.DelayBackoffType.Exponential
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/DelayBackoffType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Exponential
+    path: ../../../open-settings/src/OpenSettings/Models/DelayBackoffType.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Exponential backoff is a strategy in which the wait time between retries increases exponentially with each attempt.
+  example: []
+  syntax:
+    content: Exponential = 2
+    return:
+      type: OpenSettings.Models.DelayBackoffType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.DelayBackoffType
+  commentId: T:OpenSettings.Models.DelayBackoffType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.DelayBackoffType.html
+  name: DelayBackoffType
+  nameWithType: DelayBackoffType
+  fullName: OpenSettings.Models.DelayBackoffType

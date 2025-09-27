@@ -1,0 +1,977 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
+  commentId: T:OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
+  id: OpenSettingsDistributedRedisCache
+  parent: OpenSettings.Domains.Redis
+  children:
+  - OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsDistributedRedisCache
+  nameWithType: OpenSettingsDistributedRedisCache
+  fullName: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Redis/OpenSettingsDistributedRedisCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OpenSettingsDistributedRedisCache
+    path: ../../../open-settings/src/OpenSettings/Domains/Redis/OpenSettingsDistributedRedisCache.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Redis
+  syntax:
+    content: 'public class OpenSettingsDistributedRedisCache : RedisCache, IDisposable, IOpenSettingsDistributedCache, IDistributedCache'
+    content.vb: Public Class OpenSettingsDistributedRedisCache Inherits RedisCache Implements IDisposable, IOpenSettingsDistributedCache, IDistributedCache
+  inheritance:
+  - System.Object
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  implements:
+  - System.IDisposable
+  - OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  - Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  inheritedMembers:
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(System.String)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(System.String)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(System.String)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  commentId: M:OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions})'
+  parent: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache
+  langs:
+  - csharp
+  - vb
+  name: OpenSettingsDistributedRedisCache(IOptions<RedisCacheOptions>)
+  nameWithType: OpenSettingsDistributedRedisCache.OpenSettingsDistributedRedisCache(IOptions<RedisCacheOptions>)
+  fullName: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.OpenSettingsDistributedRedisCache(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/OpenSettings/Domains/Redis/OpenSettingsDistributedRedisCache.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: .ctor
+    path: ../../../open-settings/src/OpenSettings/Domains/Redis/OpenSettingsDistributedRedisCache.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Domains.Redis
+  syntax:
+    content: public OpenSettingsDistributedRedisCache(IOptions<RedisCacheOptions> optionsAccessor)
+    parameters:
+    - id: optionsAccessor
+      type: Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+    content.vb: Public Sub New(optionsAccessor As IOptions(Of RedisCacheOptions))
+  overload: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor*
+  nameWithType.vb: OpenSettingsDistributedRedisCache.New(IOptions(Of RedisCacheOptions))
+  fullName.vb: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.New(Microsoft.Extensions.Options.IOptions(Of Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions))
+  name.vb: New(IOptions(Of RedisCacheOptions))
+references:
+- uid: OpenSettings.Domains.Redis
+  commentId: N:OpenSettings.Domains.Redis
+  href: OpenSettings.html
+  name: OpenSettings.Domains.Redis
+  nameWithType: OpenSettings.Domains.Redis
+  fullName: OpenSettings.Domains.Redis
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Domains
+    name: Domains
+    href: OpenSettings.Domains.html
+  - name: .
+  - uid: OpenSettings.Domains.Redis
+    name: Redis
+    href: OpenSettings.Domains.Redis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  commentId: T:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache
+  name: RedisCache
+  nameWithType: RedisCache
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  commentId: T:OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+  parent: OpenSettings.Domains.Redis
+  href: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache.html
+  name: IOpenSettingsDistributedCache
+  nameWithType: IOpenSettingsDistributedCache
+  fullName: OpenSettings.Domains.Redis.IOpenSettingsDistributedCache
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(System.String)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(System.String)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.get
+  name: Get(string)
+  nameWithType: RedisCache.Get(string)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(string)
+  nameWithType.vb: RedisCache.Get(String)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(String)
+  name.vb: Get(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(System.String)
+    name: Get
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.get
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Get(System.String)
+    name: Get
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.get
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.getasync
+  name: GetAsync(string, CancellationToken)
+  nameWithType: RedisCache.GetAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: RedisCache.GetAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.getasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(System.String,System.Threading.CancellationToken)
+    name: GetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.getasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.set
+  name: Set(string, byte[], DistributedCacheEntryOptions)
+  nameWithType: RedisCache.Set(string, byte[], DistributedCacheEntryOptions)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(string, byte[], Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  nameWithType.vb: RedisCache.Set(String, Byte(), DistributedCacheEntryOptions)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(String, Byte(), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: Set(String, Byte(), DistributedCacheEntryOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.set
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+    name: Set
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.set
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.setasync
+  name: SetAsync(string, byte[], DistributedCacheEntryOptions, CancellationToken)
+  nameWithType: RedisCache.SetAsync(string, byte[], DistributedCacheEntryOptions, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(string, byte[], Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  nameWithType.vb: RedisCache.SetAsync(String, Byte(), DistributedCacheEntryOptions, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(String, Byte(), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.Threading.CancellationToken)
+  name.vb: SetAsync(String, Byte(), DistributedCacheEntryOptions, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.setasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken)
+    name: SetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.setasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    name: DistributedCacheEntryOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.distributedcacheentryoptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(System.String)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(System.String)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refresh
+  name: Refresh(string)
+  nameWithType: RedisCache.Refresh(string)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(string)
+  nameWithType.vb: RedisCache.Refresh(String)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(String)
+  name.vb: Refresh(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(System.String)
+    name: Refresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refresh
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Refresh(System.String)
+    name: Refresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refresh
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refreshasync
+  name: RefreshAsync(string, CancellationToken)
+  nameWithType: RedisCache.RefreshAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: RedisCache.RefreshAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(String, System.Threading.CancellationToken)
+  name.vb: RefreshAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+    name: RefreshAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refreshasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RefreshAsync(System.String,System.Threading.CancellationToken)
+    name: RefreshAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.refreshasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(System.String)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(System.String)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.remove
+  name: Remove(string)
+  nameWithType: RedisCache.Remove(string)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(string)
+  nameWithType.vb: RedisCache.Remove(String)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(String)
+  name.vb: Remove(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.remove
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.remove
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.removeasync
+  name: RemoveAsync(string, CancellationToken)
+  nameWithType: RedisCache.RemoveAsync(string, CancellationToken)
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: RedisCache.RemoveAsync(String, CancellationToken)
+  fullName.vb: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(String, System.Threading.CancellationToken)
+  name.vb: RemoveAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+    name: RemoveAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.removeasync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(System.String,System.Threading.CancellationToken)
+    name: RemoveAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.removeasync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose
+  commentId: M:Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose
+  parent: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.dispose
+  name: Dispose()
+  nameWithType: RedisCache.Dispose()
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscache.dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Caching.StackExchangeRedis
+  commentId: N:Microsoft.Extensions.Caching.StackExchangeRedis
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.StackExchangeRedis
+  nameWithType: Microsoft.Extensions.Caching.StackExchangeRedis
+  fullName: Microsoft.Extensions.Caching.StackExchangeRedis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis
+    name: StackExchangeRedis
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis
+    name: StackExchangeRedis
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor*
+  commentId: Overload:OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.#ctor
+  href: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.html#OpenSettings_Domains_Redis_OpenSettingsDistributedRedisCache__ctor_Microsoft_Extensions_Options_IOptions_Microsoft_Extensions_Caching_StackExchangeRedis_RedisCacheOptions__
+  name: OpenSettingsDistributedRedisCache
+  nameWithType: OpenSettingsDistributedRedisCache.OpenSettingsDistributedRedisCache
+  fullName: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.OpenSettingsDistributedRedisCache
+  nameWithType.vb: OpenSettingsDistributedRedisCache.New
+  fullName.vb: OpenSettings.Domains.Redis.OpenSettingsDistributedRedisCache.New
+  name.vb: New
+- uid: Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<RedisCacheOptions>
+  nameWithType: IOptions<RedisCacheOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions>
+  nameWithType.vb: IOptions(Of RedisCacheOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions)
+  name.vb: IOptions(Of RedisCacheOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions
+    name: RedisCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscacheoptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions
+    name: RedisCacheOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.stackexchangeredis.rediscacheoptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options

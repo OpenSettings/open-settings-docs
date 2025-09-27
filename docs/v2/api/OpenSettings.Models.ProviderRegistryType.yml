@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ProviderRegistryType
+  commentId: T:OpenSettings.Models.ProviderRegistryType
+  id: ProviderRegistryType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ProviderRegistryType.Master
+  - OpenSettings.Models.ProviderRegistryType.Slave
+  - OpenSettings.Models.ProviderRegistryType.Unset
+  langs:
+  - csharp
+  - vb
+  name: ProviderRegistryType
+  nameWithType: ProviderRegistryType
+  fullName: OpenSettings.Models.ProviderRegistryType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ProviderRegistryType
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryType.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents the type of provider registry entry in the system.
+  example: []
+  syntax:
+    content: public enum ProviderRegistryType
+    content.vb: Public Enum ProviderRegistryType
+- uid: OpenSettings.Models.ProviderRegistryType.Unset
+  commentId: F:OpenSettings.Models.ProviderRegistryType.Unset
+  id: Unset
+  parent: OpenSettings.Models.ProviderRegistryType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: ProviderRegistryType.Unset
+  fullName: OpenSettings.Models.ProviderRegistryType.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryType.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents an unset or undefined provider instance in the registry.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.ProviderRegistryType
+- uid: OpenSettings.Models.ProviderRegistryType.Slave
+  commentId: F:OpenSettings.Models.ProviderRegistryType.Slave
+  id: Slave
+  parent: OpenSettings.Models.ProviderRegistryType
+  langs:
+  - csharp
+  - vb
+  name: Slave
+  nameWithType: ProviderRegistryType.Slave
+  fullName: OpenSettings.Models.ProviderRegistryType.Slave
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Slave
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryType.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a slave provider instance in the registry.
+  example: []
+  syntax:
+    content: Slave = 1
+    return:
+      type: OpenSettings.Models.ProviderRegistryType
+- uid: OpenSettings.Models.ProviderRegistryType.Master
+  commentId: F:OpenSettings.Models.ProviderRegistryType.Master
+  id: Master
+  parent: OpenSettings.Models.ProviderRegistryType
+  langs:
+  - csharp
+  - vb
+  name: Master
+  nameWithType: ProviderRegistryType.Master
+  fullName: OpenSettings.Models.ProviderRegistryType.Master
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ProviderRegistryType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Master
+    path: ../../../open-settings/src/OpenSettings/Models/ProviderRegistryType.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a master provider instance in the registry.
+  example: []
+  syntax:
+    content: Master = 2
+    return:
+      type: OpenSettings.Models.ProviderRegistryType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ProviderRegistryType
+  commentId: T:OpenSettings.Models.ProviderRegistryType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryType.html
+  name: ProviderRegistryType
+  nameWithType: ProviderRegistryType
+  fullName: OpenSettings.Models.ProviderRegistryType

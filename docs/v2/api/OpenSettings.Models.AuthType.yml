@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.AuthType
+  commentId: T:OpenSettings.Models.AuthType
+  id: AuthType
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.AuthType.Machine
+  - OpenSettings.Models.AuthType.OpenIdConnect
+  - OpenSettings.Models.AuthType.Unset
+  langs:
+  - csharp
+  - vb
+  name: AuthType
+  nameWithType: AuthType
+  fullName: OpenSettings.Models.AuthType
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/AuthType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AuthType
+    path: ../../../open-settings/src/OpenSettings/Models/AuthType.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents the type of login used for authentication in OpenSettings.
+  example: []
+  syntax:
+    content: public enum AuthType
+    content.vb: Public Enum AuthType
+- uid: OpenSettings.Models.AuthType.Unset
+  commentId: F:OpenSettings.Models.AuthType.Unset
+  id: Unset
+  parent: OpenSettings.Models.AuthType
+  langs:
+  - csharp
+  - vb
+  name: Unset
+  nameWithType: AuthType.Unset
+  fullName: OpenSettings.Models.AuthType.Unset
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/AuthType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Unset
+    path: ../../../open-settings/src/OpenSettings/Models/AuthType.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents an unset login type, indicating that no specific login type has been defined.
+  example: []
+  syntax:
+    content: Unset = 0
+    return:
+      type: OpenSettings.Models.AuthType
+- uid: OpenSettings.Models.AuthType.OpenIdConnect
+  commentId: F:OpenSettings.Models.AuthType.OpenIdConnect
+  id: OpenIdConnect
+  parent: OpenSettings.Models.AuthType
+  langs:
+  - csharp
+  - vb
+  name: OpenIdConnect
+  nameWithType: AuthType.OpenIdConnect
+  fullName: OpenSettings.Models.AuthType.OpenIdConnect
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/AuthType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OpenIdConnect
+    path: ../../../open-settings/src/OpenSettings/Models/AuthType.cs
+    startLine: 15
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a login type where the user is authenticated via OpenIdConnect flow.
+  example: []
+  syntax:
+    content: OpenIdConnect = 2
+    return:
+      type: OpenSettings.Models.AuthType
+- uid: OpenSettings.Models.AuthType.Machine
+  commentId: F:OpenSettings.Models.AuthType.Machine
+  id: Machine
+  parent: OpenSettings.Models.AuthType
+  langs:
+  - csharp
+  - vb
+  name: Machine
+  nameWithType: AuthType.Machine
+  fullName: OpenSettings.Models.AuthType.Machine
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/AuthType.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Machine
+    path: ../../../open-settings/src/OpenSettings/Models/AuthType.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  summary: Represents a login type where the user is authenticated via a machine account.
+  example: []
+  syntax:
+    content: Machine = 3
+    return:
+      type: OpenSettings.Models.AuthType
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.AuthType
+  commentId: T:OpenSettings.Models.AuthType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.AuthType.html
+  name: AuthType
+  nameWithType: AuthType
+  fullName: OpenSettings.Models.AuthType

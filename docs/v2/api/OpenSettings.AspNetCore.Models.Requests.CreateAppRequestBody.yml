@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  id: CreateAppRequestBody
+  parent: OpenSettings.AspNetCore.Models.Requests
+  children:
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+  - OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+  langs:
+  - csharp
+  - vb
+  name: CreateAppRequestBody
+  nameWithType: CreateAppRequestBody
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreateAppRequestBody
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public class CreateAppRequestBody
+    content.vb: Public Class CreateAppRequestBody
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+  id: DisplayName
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: CreateAppRequestBody.DisplayName
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: DisplayName
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+  id: Slug
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Slug
+  nameWithType: CreateAppRequestBody.Slug
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Slug
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string Slug { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Slug As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+  id: Client
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: CreateAppRequestBody.Client
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Client
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [Required]
+
+      public CreateAppRequestBodyClient Client { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient
+    content.vb: >-
+      <Required>
+
+      Public Property Client As CreateAppRequestBodyClient
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+  id: Group
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: CreateAppRequestBody.Group
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Group
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public CreateAppRequestBodyGroup Group { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup
+    content.vb: Public Property Group As CreateAppRequestBodyGroup
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+  id: Description
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: CreateAppRequestBody.Description
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Description
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+  id: ImageUrl
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: ImageUrl
+  nameWithType: CreateAppRequestBody.ImageUrl
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ImageUrl
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string ImageUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ImageUrl As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+  id: WikiUrl
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: WikiUrl
+  nameWithType: CreateAppRequestBody.WikiUrl
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: WikiUrl
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string WikiUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WikiUrl As String
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl*
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+  id: Tags
+  parent: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: CreateAppRequestBody.Tags
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Tags
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/CreateAppRequestBody.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public CreateAppRequestBodyTag[] Tags { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag[]
+    content.vb: Public Property Tags As CreateAppRequestBodyTag()
+  overload: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags*
+references:
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_DisplayName
+  name: DisplayName
+  nameWithType: CreateAppRequestBody.DisplayName
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_Slug
+  name: Slug
+  nameWithType: CreateAppRequestBody.Slug
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Slug
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_Client
+  name: Client
+  nameWithType: CreateAppRequestBody.Client
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Client
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient.html
+  name: CreateAppRequestBodyClient
+  nameWithType: CreateAppRequestBodyClient
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyClient
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_Group
+  name: Group
+  nameWithType: CreateAppRequestBody.Group
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Group
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup
+  parent: OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup.html
+  name: CreateAppRequestBodyGroup
+  nameWithType: CreateAppRequestBodyGroup
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyGroup
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_Description
+  name: Description
+  nameWithType: CreateAppRequestBody.Description
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Description
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_ImageUrl
+  name: ImageUrl
+  nameWithType: CreateAppRequestBody.ImageUrl
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.ImageUrl
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_WikiUrl
+  name: WikiUrl
+  nameWithType: CreateAppRequestBody.WikiUrl
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.WikiUrl
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.html#OpenSettings_AspNetCore_Models_Requests_CreateAppRequestBody_Tags
+  name: Tags
+  nameWithType: CreateAppRequestBody.Tags
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBody.Tags
+- uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag[]
+  isExternal: true
+  href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag.html
+  name: CreateAppRequestBodyTag[]
+  nameWithType: CreateAppRequestBodyTag[]
+  fullName: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag[]
+  nameWithType.vb: CreateAppRequestBodyTag()
+  fullName.vb: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag()
+  name.vb: CreateAppRequestBodyTag()
+  spec.csharp:
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag
+    name: CreateAppRequestBodyTag
+    href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag
+    name: CreateAppRequestBodyTag
+    href: OpenSettings.AspNetCore.Models.Requests.CreateAppRequestBodyTag.html
+  - name: (
+  - name: )

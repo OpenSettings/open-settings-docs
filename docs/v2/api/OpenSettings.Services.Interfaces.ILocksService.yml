@@ -1,0 +1,373 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.ILocksService
+  commentId: T:OpenSettings.Services.Interfaces.ILocksService
+  id: ILocksService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync(OpenSettings.Models.Inputs.AcquireLockInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync(OpenSettings.Models.Inputs.ReleaseLockInput,System.Threading.CancellationToken)
+  - OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync(OpenSettings.Models.Inputs.SetLockExpiryTimeInput,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ILocksService
+  nameWithType: ILocksService
+  fullName: OpenSettings.Services.Interfaces.ILocksService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocksService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ILocksService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocksService.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface ILocksService
+    content.vb: Public Interface ILocksService
+- uid: OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync(OpenSettings.Models.Inputs.AcquireLockInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync(OpenSettings.Models.Inputs.AcquireLockInput,System.Threading.CancellationToken)
+  id: AcquireLockAsync(OpenSettings.Models.Inputs.AcquireLockInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocksService
+  langs:
+  - csharp
+  - vb
+  name: AcquireLockAsync(AcquireLockInput, CancellationToken)
+  nameWithType: ILocksService.AcquireLockAsync(AcquireLockInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync(OpenSettings.Models.Inputs.AcquireLockInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocksService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: AcquireLockAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocksService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<bool> AcquireLockAsync(AcquireLockInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.AcquireLockInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function AcquireLockAsync(input As AcquireLockInput, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync*
+- uid: OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync(OpenSettings.Models.Inputs.SetLockExpiryTimeInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync(OpenSettings.Models.Inputs.SetLockExpiryTimeInput,System.Threading.CancellationToken)
+  id: SetLockExpiryTimeAsync(OpenSettings.Models.Inputs.SetLockExpiryTimeInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocksService
+  langs:
+  - csharp
+  - vb
+  name: SetLockExpiryTimeAsync(SetLockExpiryTimeInput, CancellationToken)
+  nameWithType: ILocksService.SetLockExpiryTimeAsync(SetLockExpiryTimeInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync(OpenSettings.Models.Inputs.SetLockExpiryTimeInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocksService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SetLockExpiryTimeAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocksService.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task SetLockExpiryTimeAsync(SetLockExpiryTimeInput input, CancellationToken cancellationToken)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.SetLockExpiryTimeInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetLockExpiryTimeAsync(input As SetLockExpiryTimeInput, cancellationToken As CancellationToken) As Task
+  overload: OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync*
+- uid: OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync(OpenSettings.Models.Inputs.ReleaseLockInput,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync(OpenSettings.Models.Inputs.ReleaseLockInput,System.Threading.CancellationToken)
+  id: ReleaseLockAsync(OpenSettings.Models.Inputs.ReleaseLockInput,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.ILocksService
+  langs:
+  - csharp
+  - vb
+  name: ReleaseLockAsync(ReleaseLockInput, CancellationToken)
+  nameWithType: ILocksService.ReleaseLockAsync(ReleaseLockInput, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync(OpenSettings.Models.Inputs.ReleaseLockInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/ILocksService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ReleaseLockAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/ILocksService.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task<bool> ReleaseLockAsync(ReleaseLockInput input, CancellationToken cancellationToken = default)
+    parameters:
+    - id: input
+      type: OpenSettings.Models.Inputs.ReleaseLockInput
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function ReleaseLockAsync(input As ReleaseLockInput, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync*
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync
+  href: OpenSettings.Services.Interfaces.ILocksService.html#OpenSettings_Services_Interfaces_ILocksService_AcquireLockAsync_OpenSettings_Models_Inputs_AcquireLockInput_System_Threading_CancellationToken_
+  name: AcquireLockAsync
+  nameWithType: ILocksService.AcquireLockAsync
+  fullName: OpenSettings.Services.Interfaces.ILocksService.AcquireLockAsync
+- uid: OpenSettings.Models.Inputs.AcquireLockInput
+  commentId: T:OpenSettings.Models.Inputs.AcquireLockInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.AcquireLockInput.html
+  name: AcquireLockInput
+  nameWithType: AcquireLockInput
+  fullName: OpenSettings.Models.Inputs.AcquireLockInput
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: OpenSettings.Models.Inputs
+  commentId: N:OpenSettings.Models.Inputs
+  href: OpenSettings.html
+  name: OpenSettings.Models.Inputs
+  nameWithType: OpenSettings.Models.Inputs
+  fullName: OpenSettings.Models.Inputs
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Inputs
+    name: Inputs
+    href: OpenSettings.Models.Inputs.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync
+  href: OpenSettings.Services.Interfaces.ILocksService.html#OpenSettings_Services_Interfaces_ILocksService_SetLockExpiryTimeAsync_OpenSettings_Models_Inputs_SetLockExpiryTimeInput_System_Threading_CancellationToken_
+  name: SetLockExpiryTimeAsync
+  nameWithType: ILocksService.SetLockExpiryTimeAsync
+  fullName: OpenSettings.Services.Interfaces.ILocksService.SetLockExpiryTimeAsync
+- uid: OpenSettings.Models.Inputs.SetLockExpiryTimeInput
+  commentId: T:OpenSettings.Models.Inputs.SetLockExpiryTimeInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.SetLockExpiryTimeInput.html
+  name: SetLockExpiryTimeInput
+  nameWithType: SetLockExpiryTimeInput
+  fullName: OpenSettings.Models.Inputs.SetLockExpiryTimeInput
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync
+  href: OpenSettings.Services.Interfaces.ILocksService.html#OpenSettings_Services_Interfaces_ILocksService_ReleaseLockAsync_OpenSettings_Models_Inputs_ReleaseLockInput_System_Threading_CancellationToken_
+  name: ReleaseLockAsync
+  nameWithType: ILocksService.ReleaseLockAsync
+  fullName: OpenSettings.Services.Interfaces.ILocksService.ReleaseLockAsync
+- uid: OpenSettings.Models.Inputs.ReleaseLockInput
+  commentId: T:OpenSettings.Models.Inputs.ReleaseLockInput
+  parent: OpenSettings.Models.Inputs
+  href: OpenSettings.Models.Inputs.ReleaseLockInput.html
+  name: ReleaseLockInput
+  nameWithType: ReleaseLockInput
+  fullName: OpenSettings.Models.Inputs.ReleaseLockInput

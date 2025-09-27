@@ -1,0 +1,212 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Services.Interfaces.IDataChangeService
+  commentId: T:OpenSettings.Services.Interfaces.IDataChangeService
+  id: IDataChangeService
+  parent: OpenSettings.Services.Interfaces
+  children:
+  - OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync(System.Guid,System.String,System.Guid,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IDataChangeService
+  nameWithType: IDataChangeService
+  fullName: OpenSettings.Services.Interfaces.IDataChangeService
+  type: Interface
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IDataChangeService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: IDataChangeService
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IDataChangeService.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: public interface IDataChangeService
+    content.vb: Public Interface IDataChangeService
+- uid: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync(System.Guid,System.String,System.Guid,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync(System.Guid,System.String,System.Guid,System.Threading.CancellationToken)
+  id: NotifyChangeAsync(System.Guid,System.String,System.Guid,System.Threading.CancellationToken)
+  parent: OpenSettings.Services.Interfaces.IDataChangeService
+  langs:
+  - csharp
+  - vb
+  name: NotifyChangeAsync(Guid, string, Guid, CancellationToken)
+  nameWithType: IDataChangeService.NotifyChangeAsync(Guid, string, Guid, CancellationToken)
+  fullName: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync(System.Guid, string, System.Guid, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Services/Interfaces/IDataChangeService.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: NotifyChangeAsync
+    path: ../../../open-settings/src/OpenSettings/Services/Interfaces/IDataChangeService.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Services.Interfaces
+  syntax:
+    content: Task NotifyChangeAsync(Guid clientId, string identifierName, Guid classComputedIdentifier, CancellationToken cancellationToken)
+    parameters:
+    - id: clientId
+      type: System.Guid
+    - id: identifierName
+      type: System.String
+    - id: classComputedIdentifier
+      type: System.Guid
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function NotifyChangeAsync(clientId As Guid, identifierName As String, classComputedIdentifier As Guid, cancellationToken As CancellationToken) As Task
+  overload: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync*
+  nameWithType.vb: IDataChangeService.NotifyChangeAsync(Guid, String, Guid, CancellationToken)
+  fullName.vb: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync(System.Guid, String, System.Guid, System.Threading.CancellationToken)
+  name.vb: NotifyChangeAsync(Guid, String, Guid, CancellationToken)
+references:
+- uid: OpenSettings.Services.Interfaces
+  commentId: N:OpenSettings.Services.Interfaces
+  href: OpenSettings.html
+  name: OpenSettings.Services.Interfaces
+  nameWithType: OpenSettings.Services.Interfaces
+  fullName: OpenSettings.Services.Interfaces
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Services
+    name: Services
+    href: OpenSettings.Services.html
+  - name: .
+  - uid: OpenSettings.Services.Interfaces
+    name: Interfaces
+    href: OpenSettings.Services.Interfaces.html
+- uid: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync*
+  commentId: Overload:OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync
+  href: OpenSettings.Services.Interfaces.IDataChangeService.html#OpenSettings_Services_Interfaces_IDataChangeService_NotifyChangeAsync_System_Guid_System_String_System_Guid_System_Threading_CancellationToken_
+  name: NotifyChangeAsync
+  nameWithType: IDataChangeService.NotifyChangeAsync
+  fullName: OpenSettings.Services.Interfaces.IDataChangeService.NotifyChangeAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

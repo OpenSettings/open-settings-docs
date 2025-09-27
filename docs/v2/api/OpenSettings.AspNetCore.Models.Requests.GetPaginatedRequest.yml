@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  commentId: T:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  id: GetPaginatedRequest
+  parent: OpenSettings.AspNetCore.Models.Requests
+  children:
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedRequest
+  nameWithType: GetPaginatedRequest
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPaginatedRequest
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 5
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public class GetPaginatedRequest
+    content.vb: Public Class GetPaginatedRequest
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - OpenSettings.AspNetCore.Models.Requests.GetPaginatedLicensesRequest
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+  id: SearchTerm
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: SearchTerm
+  nameWithType: GetPaginatedRequest.SearchTerm
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SearchTerm
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 7
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string SearchTerm { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SearchTerm As String
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm*
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+  id: SearchBy
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: SearchBy
+  nameWithType: GetPaginatedRequest.SearchBy
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SearchBy
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 9
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string SearchBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SearchBy As String
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy*
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+  id: PageIndex
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: PageIndex
+  nameWithType: GetPaginatedRequest.PageIndex
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PageIndex
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 11
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [FromQuery(Name = "page")]
+
+      public int PageIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <FromQuery(Name:="page")>
+
+      Public Property PageIndex As Integer
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: page
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+  id: PageSize
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: GetPaginatedRequest.PageSize
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PageSize
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: >-
+      [FromQuery(Name = "size")]
+
+      public int PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <FromQuery(Name:="size")>
+
+      Public Property PageSize As Integer
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+    ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: size
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+  id: SortBy
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: SortBy
+  nameWithType: GetPaginatedRequest.SortBy
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SortBy
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 17
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public string SortBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SortBy As String
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy*
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+  commentId: P:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+  id: SortDirection
+  parent: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest
+  langs:
+  - csharp
+  - vb
+  name: SortDirection
+  nameWithType: GetPaginatedRequest.SortDirection
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SortDirection
+    path: ../../../open-settings/src/OpenSettings.AspNetCore/Models/Requests/GetPaginatedRequest.cs
+    startLine: 19
+  assemblies:
+  - OpenSettings.AspNetCore
+  namespace: OpenSettings.AspNetCore.Models.Requests
+  syntax:
+    content: public SortDirection SortDirection { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.SortDirection
+    content.vb: Public Property SortDirection As SortDirection
+  overload: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection*
+references:
+- uid: OpenSettings.AspNetCore.Models.Requests
+  commentId: N:OpenSettings.AspNetCore.Models.Requests
+  href: OpenSettings.html
+  name: OpenSettings.AspNetCore.Models.Requests
+  nameWithType: OpenSettings.AspNetCore.Models.Requests
+  fullName: OpenSettings.AspNetCore.Models.Requests
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.AspNetCore
+    name: AspNetCore
+    href: OpenSettings.AspNetCore.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models
+    name: Models
+    href: OpenSettings.AspNetCore.Models.html
+  - name: .
+  - uid: OpenSettings.AspNetCore.Models.Requests
+    name: Requests
+    href: OpenSettings.AspNetCore.Models.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_SearchTerm
+  name: SearchTerm
+  nameWithType: GetPaginatedRequest.SearchTerm
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchTerm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_SearchBy
+  name: SearchBy
+  nameWithType: GetPaginatedRequest.SearchBy
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SearchBy
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_PageIndex
+  name: PageIndex
+  nameWithType: GetPaginatedRequest.PageIndex
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_PageSize
+  name: PageSize
+  nameWithType: GetPaginatedRequest.PageSize
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.PageSize
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_SortBy
+  name: SortBy
+  nameWithType: GetPaginatedRequest.SortBy
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortBy
+- uid: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection*
+  commentId: Overload:OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+  href: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.html#OpenSettings_AspNetCore_Models_Requests_GetPaginatedRequest_SortDirection
+  name: SortDirection
+  nameWithType: GetPaginatedRequest.SortDirection
+  fullName: OpenSettings.AspNetCore.Models.Requests.GetPaginatedRequest.SortDirection
+- uid: OpenSettings.Models.SortDirection
+  commentId: T:OpenSettings.Models.SortDirection
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.SortDirection.html
+  name: SortDirection
+  nameWithType: SortDirection
+  fullName: OpenSettings.Models.SortDirection
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html

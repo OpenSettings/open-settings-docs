@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+	"metadata": [
+		{
+			"src": [
+				{
+					"src": "../../../open-settings/src",
+					"files": [
+						"**/OpenSettings.csproj",
+						"**/OpenSettings.AspNetCore.csproj",
+						"**/OpenSettings.AspNetCore.Spa.csproj"
+					]
+				}
+			],
+			"output": "api"
+		}
+	],
+	"build": {
+		"sitemap": {
+			"baseUrl": "https://docs.opensettings.net",
+			"priority": 0.5,
+			"changefreq": "daily"
+		},
+		"content": [
+			{
+				"files": [
+					"**/*.{md,yml}"
+				],
+				"exclude": [
+					"_site/**"
+				]
+			}
+		],
+		"resource": [
+			{
+				"files": [
+					"assets/**/*",
+					"logo.svg",
+					"favicon.ico"
+				]
+			}
+		],
+		"output": "../_site/v2",
+		"template": [
+			"default",
+			"modern",
+			"custom-template"
+		],
+		"globalMetadata": {
+			"_appLogoPath": "logo.svg",
+			"_appFooter": "Copyright © 2024 OpenSettings. All rights reserved. <script src='./../common-script.js'></script>",
+			"_appFaviconPath": "favicon.ico",
+			"_appName": "OpenSettings",
+			"_appTitle": "OpenSettings Docs",
+			"_enableSearch": true,
+			"pdf": true
+		}
+	}
+}

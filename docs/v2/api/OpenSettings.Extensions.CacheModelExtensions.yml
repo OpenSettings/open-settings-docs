@@ -1,0 +1,1204 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Extensions.CacheModelExtensions
+  commentId: T:OpenSettings.Extensions.CacheModelExtensions
+  id: CacheModelExtensions
+  parent: OpenSettings.Extensions
+  children:
+  - OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  - OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}})
+  - OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  - OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  - OpenSettings.Extensions.CacheModelExtensions.SetAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  - OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  - OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  - OpenSettings.Extensions.CacheModelExtensions.TryGetValue(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  - OpenSettings.Extensions.CacheModelExtensions.TryGetValue``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  langs:
+  - csharp
+  - vb
+  name: CacheModelExtensions
+  nameWithType: CacheModelExtensions
+  fullName: OpenSettings.Extensions.CacheModelExtensions
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CacheModelExtensions
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: >-
+    Provides extension methods for <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> to interact with both in-memory and distributed caches.
+
+    This includes methods for setting, getting, and creating cached items, as well as handling expiration and callback options.
+  example: []
+  syntax:
+    content: public static class CacheModelExtensions
+    content.vb: Public Module CacheModelExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  id: Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set<TItem>(CacheModel, IMemoryCache, TItem)
+  nameWithType: CacheModelExtensions.Set<TItem>(CacheModel, IMemoryCache, TItem)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.Set<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Set
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 58
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Sets a value with the specified key in the in-memory cache.
+  example: []
+  syntax:
+    content: public static void Set<TItem>(this CacheModel model, IMemoryCache cache, TItem value)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance to store the value.
+    - id: value
+      type: '{TItem}'
+      description: The item to store in the cache.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    content.vb: Public Shared Sub [Set](Of TItem)(model As CacheModel, cache As IMemoryCache, value As TItem)
+  overload: OpenSettings.Extensions.CacheModelExtensions.Set*
+  nameWithType.vb: CacheModelExtensions.Set(Of TItem)(CacheModel, IMemoryCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.Set(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, TItem)
+  name.vb: Set(Of TItem)(CacheModel, IMemoryCache, TItem)
+- uid: OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  id: Set``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set<TItem>(CacheModel, IDistributedCache, TItem)
+  nameWithType: CacheModelExtensions.Set<TItem>(CacheModel, IDistributedCache, TItem)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.Set<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Set
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 80
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Sets a value with the specified key in the cache model.
+  example: []
+  syntax:
+    content: public static void Set<TItem>(this CacheModel model, IDistributedCache cache, TItem value)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: ''
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+      description: Concrete class which implements the <xref href="Microsoft.Extensions.Caching.Distributed.IDistributedCache" data-throw-if-not-resolved="false"></xref>.
+    - id: value
+      type: '{TItem}'
+      description: Item to set.
+    typeParameters:
+    - id: TItem
+      description: Item type to set.
+    content.vb: Public Shared Sub [Set](Of TItem)(model As CacheModel, cache As IDistributedCache, value As TItem)
+  overload: OpenSettings.Extensions.CacheModelExtensions.Set*
+  nameWithType.vb: CacheModelExtensions.Set(Of TItem)(CacheModel, IDistributedCache, TItem)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.Set(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem)
+  name.vb: Set(Of TItem)(CacheModel, IDistributedCache, TItem)
+- uid: OpenSettings.Extensions.CacheModelExtensions.SetAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.SetAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  id: SetAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,``0,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAsync<TItem>(CacheModel, IDistributedCache, TItem, CancellationToken)
+  nameWithType: CacheModelExtensions.SetAsync<TItem>(CacheModel, IDistributedCache, TItem, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.SetAsync<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: SetAsync
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 95
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Asynchronously sets a value with the specified key in the distributed cache.
+  example: []
+  syntax:
+    content: public static Task SetAsync<TItem>(this CacheModel model, IDistributedCache cache, TItem value, CancellationToken cancellationToken = default)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+      description: The distributed cache instance to store the value.
+    - id: value
+      type: '{TItem}'
+      description: The item to store in the cache.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to monitor for cancellation requests.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous set operation.
+    content.vb: Public Shared Function SetAsync(Of TItem)(model As CacheModel, cache As IDistributedCache, value As TItem, cancellationToken As CancellationToken = Nothing) As Task
+  overload: OpenSettings.Extensions.CacheModelExtensions.SetAsync*
+  nameWithType.vb: CacheModelExtensions.SetAsync(Of TItem)(CacheModel, IDistributedCache, TItem, CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.SetAsync(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, TItem, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of TItem)(CacheModel, IDistributedCache, TItem, CancellationToken)
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}})
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}})
+  id: GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}})
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync<TItem>(CacheModel, IMemoryCache, Func<CacheModel, Task<TItem>>)
+  nameWithType: CacheModelExtensions.GetOrCreateAsync<TItem>(CacheModel, IMemoryCache, Func<CacheModel, Task<TItem>>)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<OpenSettings.Models.CacheModel, System.Threading.Tasks.Task<TItem>>)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateAsync
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 109
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Asynchronously gets or creates a value for the specified key in the in-memory cache, using the provided factory function.
+  example: []
+  syntax:
+    content: public static Task<TItem> GetOrCreateAsync<TItem>(this CacheModel model, IMemoryCache cache, Func<CacheModel, Task<TItem>> factory)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance to store the value.
+    - id: factory
+      type: System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{{TItem}}}
+      description: The factory function to generate the value if it does not exist in the cache.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    return:
+      type: System.Threading.Tasks.Task{{TItem}}
+      description: A task that represents the asynchronous get or create operation.
+    content.vb: Public Shared Function GetOrCreateAsync(Of TItem)(model As CacheModel, cache As IMemoryCache, factory As Func(Of CacheModel, Task(Of TItem))) As Task(Of TItem)
+  overload: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync*
+  nameWithType.vb: CacheModelExtensions.GetOrCreateAsync(Of TItem)(CacheModel, IMemoryCache, Func(Of CacheModel, Task(Of TItem)))
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of OpenSettings.Models.CacheModel, System.Threading.Tasks.Task(Of TItem)))
+  name.vb: GetOrCreateAsync(Of TItem)(CacheModel, IMemoryCache, Func(Of CacheModel, Task(Of TItem)))
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  id: GetOrCreateAsync``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateAsync<TItem>(CacheModel, IDistributedCache, Func<CacheModel, Task<TItem>>, CancellationToken)
+  nameWithType: CacheModelExtensions.GetOrCreateAsync<TItem>(CacheModel, IDistributedCache, Func<CacheModel, Task<TItem>>, CancellationToken)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<OpenSettings.Models.CacheModel, System.Threading.Tasks.Task<TItem>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreateAsync
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 138
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Asynchronously gets or creates a value for the specified key in the distributed cache, using the provided factory function.
+  example: []
+  syntax:
+    content: public static Task<TItem> GetOrCreateAsync<TItem>(this CacheModel model, IDistributedCache cache, Func<CacheModel, Task<TItem>> factory, CancellationToken cancellationToken = default)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+      description: The distributed cache instance to store the value.
+    - id: factory
+      type: System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{{TItem}}}
+      description: The factory function to generate the value if it does not exist in the cache.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token to monitor for cancellation requests.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    return:
+      type: System.Threading.Tasks.Task{{TItem}}
+      description: A task that represents the asynchronous get or create operation.
+    content.vb: Public Shared Function GetOrCreateAsync(Of TItem)(model As CacheModel, cache As IDistributedCache, factory As Func(Of CacheModel, Task(Of TItem)), cancellationToken As CancellationToken = Nothing) As Task(Of TItem)
+  overload: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync*
+  nameWithType.vb: CacheModelExtensions.GetOrCreateAsync(Of TItem)(CacheModel, IDistributedCache, Func(Of CacheModel, Task(Of TItem)), CancellationToken)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of OpenSettings.Models.CacheModel, System.Threading.Tasks.Task(Of TItem)), System.Threading.CancellationToken)
+  name.vb: GetOrCreateAsync(Of TItem)(CacheModel, IDistributedCache, Func(Of CacheModel, Task(Of TItem)), CancellationToken)
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  id: GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate<TItem>(CacheModel, IMemoryCache, Func<CacheModel, TItem>)
+  nameWithType: CacheModelExtensions.GetOrCreate<TItem>(CacheModel, IMemoryCache, Func<CacheModel, TItem>)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func<OpenSettings.Models.CacheModel, TItem>)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreate
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 167
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Gets or creates a value for the specified key in the in-memory cache, using the provided factory function.
+  example: []
+  syntax:
+    content: public static TItem GetOrCreate<TItem>(this CacheModel model, IMemoryCache cache, Func<CacheModel, TItem> factory)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance to store the value.
+    - id: factory
+      type: System.Func{OpenSettings.Models.CacheModel,{TItem}}
+      description: The factory function to generate the value if it does not exist in the cache.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    return:
+      type: '{TItem}'
+      description: The cached or newly created value.
+    content.vb: Public Shared Function GetOrCreate(Of TItem)(model As CacheModel, cache As IMemoryCache, factory As Func(Of CacheModel, TItem)) As TItem
+  overload: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate*
+  nameWithType.vb: CacheModelExtensions.GetOrCreate(Of TItem)(CacheModel, IMemoryCache, Func(Of CacheModel, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Func(Of OpenSettings.Models.CacheModel, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheModel, IMemoryCache, Func(Of CacheModel, TItem))
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  id: GetOrCreate``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.Func{OpenSettings.Models.CacheModel,``0})
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate<TItem>(CacheModel, IDistributedCache, Func<CacheModel, TItem>)
+  nameWithType: CacheModelExtensions.GetOrCreate<TItem>(CacheModel, IDistributedCache, Func<CacheModel, TItem>)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate<TItem>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func<OpenSettings.Models.CacheModel, TItem>)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetOrCreate
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 195
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Gets or creates a value for the specified key in the distributed cache, using the provided factory function.
+  example: []
+  syntax:
+    content: public static TItem GetOrCreate<TItem>(this CacheModel model, IDistributedCache cache, Func<CacheModel, TItem> factory)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+      description: The distributed cache instance to store the value.
+    - id: factory
+      type: System.Func{OpenSettings.Models.CacheModel,{TItem}}
+      description: The factory function to generate the value if it does not exist in the cache.
+    typeParameters:
+    - id: TItem
+      description: The type of the item to be cached.
+    return:
+      type: '{TItem}'
+      description: The cached or newly created value.
+    content.vb: Public Shared Function GetOrCreate(Of TItem)(model As CacheModel, cache As IDistributedCache, factory As Func(Of CacheModel, TItem)) As TItem
+  overload: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate*
+  nameWithType.vb: CacheModelExtensions.GetOrCreate(Of TItem)(CacheModel, IDistributedCache, Func(Of CacheModel, TItem))
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate(Of TItem)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.Func(Of OpenSettings.Models.CacheModel, TItem))
+  name.vb: GetOrCreate(Of TItem)(CacheModel, IDistributedCache, Func(Of CacheModel, TItem))
+- uid: OpenSettings.Extensions.CacheModelExtensions.TryGetValue(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.TryGetValue(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  id: TryGetValue(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object@)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(CacheModel, IMemoryCache, out object)
+  nameWithType: CacheModelExtensions.TryGetValue(CacheModel, IMemoryCache, out object)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.TryGetValue(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, out object)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TryGetValue
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 223
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Attempts to get a value for the specified key from the in-memory cache.
+  example: []
+  syntax:
+    content: public static bool TryGetValue(this CacheModel model, IMemoryCache cache, out object value)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance to retrieve the value from.
+    - id: value
+      type: System.Object
+      description: The retrieved value, if found.
+    return:
+      type: System.Boolean
+      description: True if the value was found; otherwise, false.
+    content.vb: Public Shared Function TryGetValue(model As CacheModel, cache As IMemoryCache, value As Object) As Boolean
+  overload: OpenSettings.Extensions.CacheModelExtensions.TryGetValue*
+  nameWithType.vb: CacheModelExtensions.TryGetValue(CacheModel, IMemoryCache, Object)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.TryGetValue(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, Object)
+  name.vb: TryGetValue(CacheModel, IMemoryCache, Object)
+- uid: OpenSettings.Extensions.CacheModelExtensions.TryGetValue``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  commentId: M:OpenSettings.Extensions.CacheModelExtensions.TryGetValue``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  id: TryGetValue``1(OpenSettings.Models.CacheModel,Microsoft.Extensions.Caching.Memory.IMemoryCache,``0@)
+  isExtensionMethod: true
+  parent: OpenSettings.Extensions.CacheModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue<T>(CacheModel, IMemoryCache, out T)
+  nameWithType: CacheModelExtensions.TryGetValue<T>(CacheModel, IMemoryCache, out T)
+  fullName: OpenSettings.Extensions.CacheModelExtensions.TryGetValue<T>(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, out T)
+  type: Method
+  source:
+    remote:
+      path: src/OpenSettings/Extensions/CacheModelExtensions.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: TryGetValue
+    path: ../../../open-settings/src/OpenSettings/Extensions/CacheModelExtensions.cs
+    startLine: 243
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Extensions
+  summary: Attempts to get a strongly typed value for the specified key from the in-memory cache.
+  example: []
+  syntax:
+    content: public static bool TryGetValue<T>(this CacheModel model, IMemoryCache cache, out T value)
+    parameters:
+    - id: model
+      type: OpenSettings.Models.CacheModel
+      description: The <xref href="OpenSettings.Models.CacheModel" data-throw-if-not-resolved="false"></xref> representing the cache settings.
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+      description: The in-memory cache instance to retrieve the value from.
+    - id: value
+      type: '{T}'
+      description: The retrieved value, if found.
+    typeParameters:
+    - id: T
+      description: The type of the value to retrieve.
+    return:
+      type: System.Boolean
+      description: True if the value was found; otherwise, false.
+    content.vb: Public Shared Function TryGetValue(Of T)(model As CacheModel, cache As IMemoryCache, value As T) As Boolean
+  overload: OpenSettings.Extensions.CacheModelExtensions.TryGetValue*
+  nameWithType.vb: CacheModelExtensions.TryGetValue(Of T)(CacheModel, IMemoryCache, T)
+  fullName.vb: OpenSettings.Extensions.CacheModelExtensions.TryGetValue(Of T)(OpenSettings.Models.CacheModel, Microsoft.Extensions.Caching.Memory.IMemoryCache, T)
+  name.vb: TryGetValue(Of T)(CacheModel, IMemoryCache, T)
+references:
+- uid: OpenSettings.Models.CacheModel
+  commentId: T:OpenSettings.Models.CacheModel
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.CacheModel.html
+  name: CacheModel
+  nameWithType: CacheModel
+  fullName: OpenSettings.Models.CacheModel
+- uid: OpenSettings.Extensions
+  commentId: N:OpenSettings.Extensions
+  href: OpenSettings.html
+  name: OpenSettings.Extensions
+  nameWithType: OpenSettings.Extensions
+  fullName: OpenSettings.Extensions
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Extensions
+    name: Extensions
+    href: OpenSettings.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Extensions.CacheModelExtensions.Set*
+  commentId: Overload:OpenSettings.Extensions.CacheModelExtensions.Set
+  href: OpenSettings.Extensions.CacheModelExtensions.html#OpenSettings_Extensions_CacheModelExtensions_Set__1_OpenSettings_Models_CacheModel_Microsoft_Extensions_Caching_Memory_IMemoryCache___0_
+  name: Set
+  nameWithType: CacheModelExtensions.Set
+  fullName: OpenSettings.Extensions.CacheModelExtensions.Set
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: '{TItem}'
+  commentId: '!:TItem'
+  definition: TItem
+  name: TItem
+  nameWithType: TItem
+  fullName: TItem
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: TItem
+  name: TItem
+  nameWithType: TItem
+  fullName: TItem
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: OpenSettings.Extensions.CacheModelExtensions.SetAsync*
+  commentId: Overload:OpenSettings.Extensions.CacheModelExtensions.SetAsync
+  href: OpenSettings.Extensions.CacheModelExtensions.html#OpenSettings_Extensions_CacheModelExtensions_SetAsync__1_OpenSettings_Models_CacheModel_Microsoft_Extensions_Caching_Distributed_IDistributedCache___0_System_Threading_CancellationToken_
+  name: SetAsync
+  nameWithType: CacheModelExtensions.SetAsync
+  fullName: OpenSettings.Extensions.CacheModelExtensions.SetAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync*
+  commentId: Overload:OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync
+  href: OpenSettings.Extensions.CacheModelExtensions.html#OpenSettings_Extensions_CacheModelExtensions_GetOrCreateAsync__1_OpenSettings_Models_CacheModel_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_OpenSettings_Models_CacheModel_System_Threading_Tasks_Task___0___
+  name: GetOrCreateAsync
+  nameWithType: CacheModelExtensions.GetOrCreateAsync
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreateAsync
+- uid: System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{{TItem}}}
+  commentId: T:System.Func{OpenSettings.Models.CacheModel,System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<CacheModel, Task<TItem>>
+  nameWithType: Func<CacheModel, Task<TItem>>
+  fullName: System.Func<OpenSettings.Models.CacheModel, System.Threading.Tasks.Task<TItem>>
+  nameWithType.vb: Func(Of CacheModel, Task(Of TItem))
+  fullName.vb: System.Func(Of OpenSettings.Models.CacheModel, System.Threading.Tasks.Task(Of TItem))
+  name.vb: Func(Of CacheModel, Task(Of TItem))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenSettings.Models.CacheModel
+    name: CacheModel
+    href: OpenSettings.Models.CacheModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.CacheModel
+    name: CacheModel
+    href: OpenSettings.Models.CacheModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{{TItem}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TItem>
+  nameWithType: Task<TItem>
+  fullName: System.Threading.Tasks.Task<TItem>
+  nameWithType.vb: Task(Of TItem)
+  fullName.vb: System.Threading.Tasks.Task(Of TItem)
+  name.vb: Task(Of TItem)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TItem
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate*
+  commentId: Overload:OpenSettings.Extensions.CacheModelExtensions.GetOrCreate
+  href: OpenSettings.Extensions.CacheModelExtensions.html#OpenSettings_Extensions_CacheModelExtensions_GetOrCreate__1_OpenSettings_Models_CacheModel_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Func_OpenSettings_Models_CacheModel___0__
+  name: GetOrCreate
+  nameWithType: CacheModelExtensions.GetOrCreate
+  fullName: OpenSettings.Extensions.CacheModelExtensions.GetOrCreate
+- uid: System.Func{OpenSettings.Models.CacheModel,{TItem}}
+  commentId: T:System.Func{OpenSettings.Models.CacheModel,``0}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<CacheModel, TItem>
+  nameWithType: Func<CacheModel, TItem>
+  fullName: System.Func<OpenSettings.Models.CacheModel, TItem>
+  nameWithType.vb: Func(Of CacheModel, TItem)
+  fullName.vb: System.Func(Of OpenSettings.Models.CacheModel, TItem)
+  name.vb: Func(Of CacheModel, TItem)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenSettings.Models.CacheModel
+    name: CacheModel
+    href: OpenSettings.Models.CacheModel.html
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenSettings.Models.CacheModel
+    name: CacheModel
+    href: OpenSettings.Models.CacheModel.html
+  - name: ','
+  - name: " "
+  - name: TItem
+  - name: )
+- uid: OpenSettings.Extensions.CacheModelExtensions.TryGetValue*
+  commentId: Overload:OpenSettings.Extensions.CacheModelExtensions.TryGetValue
+  href: OpenSettings.Extensions.CacheModelExtensions.html#OpenSettings_Extensions_CacheModelExtensions_TryGetValue_OpenSettings_Models_CacheModel_Microsoft_Extensions_Caching_Memory_IMemoryCache_System_Object__
+  name: TryGetValue
+  nameWithType: CacheModelExtensions.TryGetValue
+  fullName: OpenSettings.Extensions.CacheModelExtensions.TryGetValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

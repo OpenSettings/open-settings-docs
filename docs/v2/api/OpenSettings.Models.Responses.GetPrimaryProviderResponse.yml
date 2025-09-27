@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  commentId: T:OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  id: GetPrimaryProviderResponse
+  parent: OpenSettings.Models.Responses
+  children:
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+  - OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryProviderResponse
+  nameWithType: GetPrimaryProviderResponse
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  type: Class
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: GetPrimaryProviderResponse
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public class GetPrimaryProviderResponse
+    content.vb: Public Class GetPrimaryProviderResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+  id: Id
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: GetPrimaryProviderResponse.Id
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Id
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+  id: Type
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: GetPrimaryProviderResponse.Type
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Type
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ProviderRegistryType Type { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ProviderRegistryType
+    content.vb: Public Property Type As ProviderRegistryType
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+  id: ClientId
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: GetPrimaryProviderResponse.ClientId
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ClientId
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public Guid ClientId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ClientId As Guid
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+  id: Scheme
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Scheme
+  nameWithType: GetPrimaryProviderResponse.Scheme
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Scheme
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public ProviderRegistryScheme Scheme { get; set; }
+    parameters: []
+    return:
+      type: OpenSettings.Models.ProviderRegistryScheme
+    content.vb: Public Property Scheme As ProviderRegistryScheme
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+  id: Host
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: GetPrimaryProviderResponse.Host
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Host
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Host { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Host As String
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+  id: Port
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: GetPrimaryProviderResponse.Port
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Port
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 16
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+  id: Region
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Region
+  nameWithType: GetPrimaryProviderResponse.Region
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Region
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 18
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Region { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Region As String
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+  id: Version
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: GetPrimaryProviderResponse.Version
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Version
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 20
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+  id: PackVersion
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: PackVersion
+  nameWithType: GetPrimaryProviderResponse.PackVersion
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: PackVersion
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 22
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public string PackVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackVersion As String
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+  id: LastHeartbeatOn
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: LastHeartbeatOn
+  nameWithType: GetPrimaryProviderResponse.LastHeartbeatOn
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: LastHeartbeatOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 24
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime LastHeartbeatOn { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property LastHeartbeatOn As Date
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn*
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn
+  commentId: P:OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn
+  id: CreatedOn
+  parent: OpenSettings.Models.Responses.GetPrimaryProviderResponse
+  langs:
+  - csharp
+  - vb
+  name: CreatedOn
+  nameWithType: GetPrimaryProviderResponse.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn
+  type: Property
+  source:
+    remote:
+      path: src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: CreatedOn
+    path: ../../../open-settings/src/OpenSettings/Models/Responses/GetPrimaryProviderResponse.cs
+    startLine: 26
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models.Responses
+  syntax:
+    content: public DateTime CreatedOn { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedOn As Date
+  overload: OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn*
+references:
+- uid: OpenSettings.Models.Responses
+  commentId: N:OpenSettings.Models.Responses
+  href: OpenSettings.html
+  name: OpenSettings.Models.Responses
+  nameWithType: OpenSettings.Models.Responses
+  fullName: OpenSettings.Models.Responses
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  - name: .
+  - uid: OpenSettings.Models.Responses
+    name: Responses
+    href: OpenSettings.Models.Responses.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Id
+  name: Id
+  nameWithType: GetPrimaryProviderResponse.Id
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Type
+  name: Type
+  nameWithType: GetPrimaryProviderResponse.Type
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Type
+- uid: OpenSettings.Models.ProviderRegistryType
+  commentId: T:OpenSettings.Models.ProviderRegistryType
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryType.html
+  name: ProviderRegistryType
+  nameWithType: ProviderRegistryType
+  fullName: OpenSettings.Models.ProviderRegistryType
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_ClientId
+  name: ClientId
+  nameWithType: GetPrimaryProviderResponse.ClientId
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.ClientId
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Scheme
+  name: Scheme
+  nameWithType: GetPrimaryProviderResponse.Scheme
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Scheme
+- uid: OpenSettings.Models.ProviderRegistryScheme
+  commentId: T:OpenSettings.Models.ProviderRegistryScheme
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ProviderRegistryScheme.html
+  name: ProviderRegistryScheme
+  nameWithType: ProviderRegistryScheme
+  fullName: OpenSettings.Models.ProviderRegistryScheme
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Host
+  name: Host
+  nameWithType: GetPrimaryProviderResponse.Host
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Host
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Port
+  name: Port
+  nameWithType: GetPrimaryProviderResponse.Port
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Region
+  name: Region
+  nameWithType: GetPrimaryProviderResponse.Region
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Region
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_Version
+  name: Version
+  nameWithType: GetPrimaryProviderResponse.Version
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.Version
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_PackVersion
+  name: PackVersion
+  nameWithType: GetPrimaryProviderResponse.PackVersion
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.PackVersion
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_LastHeartbeatOn
+  name: LastHeartbeatOn
+  nameWithType: GetPrimaryProviderResponse.LastHeartbeatOn
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.LastHeartbeatOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn*
+  commentId: Overload:OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn
+  href: OpenSettings.Models.Responses.GetPrimaryProviderResponse.html#OpenSettings_Models_Responses_GetPrimaryProviderResponse_CreatedOn
+  name: CreatedOn
+  nameWithType: GetPrimaryProviderResponse.CreatedOn
+  fullName: OpenSettings.Models.Responses.GetPrimaryProviderResponse.CreatedOn

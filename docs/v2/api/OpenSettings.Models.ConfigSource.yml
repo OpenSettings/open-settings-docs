@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenSettings.Models.ConfigSource
+  commentId: T:OpenSettings.Models.ConfigSource
+  id: ConfigSource
+  parent: OpenSettings.Models
+  children:
+  - OpenSettings.Models.ConfigSource.File
+  - OpenSettings.Models.ConfigSource.Local
+  - OpenSettings.Models.ConfigSource.Options
+  - OpenSettings.Models.ConfigSource.OptionsMonitor
+  - OpenSettings.Models.ConfigSource.OptionsSnapshot
+  - OpenSettings.Models.ConfigSource.Singleton
+  langs:
+  - csharp
+  - vb
+  name: ConfigSource
+  nameWithType: ConfigSource
+  fullName: OpenSettings.Models.ConfigSource
+  type: Enum
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: ConfigSource
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 2
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: public enum ConfigSource
+    content.vb: Public Enum ConfigSource
+- uid: OpenSettings.Models.ConfigSource.File
+  commentId: F:OpenSettings.Models.ConfigSource.File
+  id: File
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: ConfigSource.File
+  fullName: OpenSettings.Models.ConfigSource.File
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: File
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 4
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: File = 1
+    return:
+      type: OpenSettings.Models.ConfigSource
+- uid: OpenSettings.Models.ConfigSource.Local
+  commentId: F:OpenSettings.Models.ConfigSource.Local
+  id: Local
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: ConfigSource.Local
+  fullName: OpenSettings.Models.ConfigSource.Local
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Local
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 6
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Local = 2
+    return:
+      type: OpenSettings.Models.ConfigSource
+- uid: OpenSettings.Models.ConfigSource.Singleton
+  commentId: F:OpenSettings.Models.ConfigSource.Singleton
+  id: Singleton
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: ConfigSource.Singleton
+  fullName: OpenSettings.Models.ConfigSource.Singleton
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Singleton
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 8
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Singleton = 3
+    return:
+      type: OpenSettings.Models.ConfigSource
+- uid: OpenSettings.Models.ConfigSource.Options
+  commentId: F:OpenSettings.Models.ConfigSource.Options
+  id: Options
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ConfigSource.Options
+  fullName: OpenSettings.Models.ConfigSource.Options
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: Options
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 10
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: Options = 4
+    return:
+      type: OpenSettings.Models.ConfigSource
+- uid: OpenSettings.Models.ConfigSource.OptionsSnapshot
+  commentId: F:OpenSettings.Models.ConfigSource.OptionsSnapshot
+  id: OptionsSnapshot
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: OptionsSnapshot
+  nameWithType: ConfigSource.OptionsSnapshot
+  fullName: OpenSettings.Models.ConfigSource.OptionsSnapshot
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OptionsSnapshot
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 12
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: OptionsSnapshot = 5
+    return:
+      type: OpenSettings.Models.ConfigSource
+- uid: OpenSettings.Models.ConfigSource.OptionsMonitor
+  commentId: F:OpenSettings.Models.ConfigSource.OptionsMonitor
+  id: OptionsMonitor
+  parent: OpenSettings.Models.ConfigSource
+  langs:
+  - csharp
+  - vb
+  name: OptionsMonitor
+  nameWithType: ConfigSource.OptionsMonitor
+  fullName: OpenSettings.Models.ConfigSource.OptionsMonitor
+  type: Field
+  source:
+    remote:
+      path: src/OpenSettings/Models/ConfigSource.cs
+      branch: master
+      repo: https://github.com/OpenSettings/open-settings.git
+    id: OptionsMonitor
+    path: ../../../open-settings/src/OpenSettings/Models/ConfigSource.cs
+    startLine: 14
+  assemblies:
+  - OpenSettings
+  namespace: OpenSettings.Models
+  syntax:
+    content: OptionsMonitor = 6
+    return:
+      type: OpenSettings.Models.ConfigSource
+references:
+- uid: OpenSettings.Models
+  commentId: N:OpenSettings.Models
+  href: OpenSettings.html
+  name: OpenSettings.Models
+  nameWithType: OpenSettings.Models
+  fullName: OpenSettings.Models
+  spec.csharp:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+  spec.vb:
+  - uid: OpenSettings
+    name: OpenSettings
+    href: OpenSettings.html
+  - name: .
+  - uid: OpenSettings.Models
+    name: Models
+    href: OpenSettings.Models.html
+- uid: OpenSettings.Models.ConfigSource
+  commentId: T:OpenSettings.Models.ConfigSource
+  parent: OpenSettings.Models
+  href: OpenSettings.Models.ConfigSource.html
+  name: ConfigSource
+  nameWithType: ConfigSource
+  fullName: OpenSettings.Models.ConfigSource
